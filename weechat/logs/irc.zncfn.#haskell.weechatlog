@@ -1169,3 +1169,12 @@
 2013-03-14 12:22:19	shachaf	I think you mean unsafeInterleaveIO, not unsafePerformIO.
 2013-03-14 12:22:26	mauke	that's what you're saying you want to do
 2013-03-14 12:22:37	absence	mauke: that's what i'm saying i DONT want :)
+2013-03-14 12:22:45	-->	killy9999 (~killy@terminal-1-163.retsat1.com.pl) has joined #haskell
+2013-03-14 12:22:48	mauke	yes, but you're contradicting yourself
+2013-03-14 12:23:30	absence	maybe, but i'm still not saying i want to perform IO from pure code
+2013-03-14 12:23:40	-->	Sculptor (~Sculptor@89.110.220.62) has joined #haskell
+2013-03-14 12:23:40	<--	Sculptor (~Sculptor@89.110.220.62) has quit (Changing host)
+2013-03-14 12:23:40	-->	Sculptor (~Sculptor@unaffiliated/sculptor) has joined #haskell
+2013-03-14 12:23:51	-->	EddyC (~eddyc@dsl-087-195-217-071.solcon.nl) has joined #haskell
+2013-03-14 12:23:59	-->	conehead (~conehead@unaffiliated/conehead) has joined #haskell
+2013-03-14 12:24:04	shachaf	What is it that you want to avoid, and what is it that you want to do, and how are they different?

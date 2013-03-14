@@ -2291,3 +2291,23 @@
 2013-03-14 12:22:09	Prokurent	guize
 2013-03-14 12:22:26	gtmanfred	Aegir: you have to figure out how your disk is setup to boot... and follow the correc tmethod on the grub2 wiki
 2013-03-14 12:22:34	gtmanfred	Aegir: use whichever you want, i use syslinux
+2013-03-14 12:22:46	<--	mychris (~mychris@p5DC7DB7C.dip.t-dialin.net) has quit (Read error: No route to host)
+2013-03-14 12:23:02	Aegir	gtmanfred: I'll just go with syslinux, that's what I had before and it worked fine.
+2013-03-14 12:23:12	gtmanfred	sounds good
+2013-03-14 12:23:16	<--	Touhou11 (c28182f2@gateway/web/freenode/ip.194.129.130.242) has left #archlinux
+2013-03-14 12:23:17	gtmanfred	don't forget to change the default config
+2013-03-14 12:23:24	Aegir	you mean /boot/grub/grub.cfg?
+2013-03-14 12:23:28	<--	chase|Linux (~chase@cpe-72-190-49-155.tx.res.rr.com) has quit (Client Quit)
+2013-03-14 12:23:40	Prokurent	speaking of
+2013-03-14 12:23:40	<--	b4d (~b4d@unaffiliated/b4d) has quit (Ping timeout: 260 seconds)
+2013-03-14 12:23:45	<--	t0rc (~t0rc@unaffiliated/t0rc/x-5233201) has quit (Quit: WeeChat 0.4.0)
+2013-03-14 12:23:47	<--	crw (~crw@unaffiliated/crw) has quit
+2013-03-14 12:23:53	<--	marvin2 (~marvin2@14-200-139-81.static.tpgi.com.au) has quit (Ping timeout: 246 seconds)
+2013-03-14 12:24:00	Prokurent	guize, what are ur favorite linux flavours and distros?
+2013-03-14 12:24:05	AbortRetryFail	i'm still using grub legacy on one box
+2013-03-14 12:24:09	-->	Obese_Kitten (~chase@cpe-72-190-49-155.tx.res.rr.com) has joined #archlinux
+2013-03-14 12:24:17	AbortRetryFail	it doesnt matter if you don't change your bootloader around. 
+2013-03-14 12:24:19	gtmanfred	Aegir: no, i mean /boot/syslinux/syslinux.cfg ... because it is syslinux , not grub
+2013-03-14 12:24:28	gtmanfred	!give Prokurent polls
+2013-03-14 12:24:29	Prokurent	i use syslinux
+2013-03-14 12:24:39	Obese_Kitten	If I want to combine a bunch of text files (all in the same directory) into one, can I just do cat *.txt > whatever.txt?

@@ -666,3 +666,8 @@
 2013-03-14 12:20:12	-->	iiie (~iiie@50-201-74-2-static.hfc.comcastbusiness.net) has joined #django
 2013-03-14 12:20:17	<--	NahimN (~textual@184-94-59-178.dedicated.allstream.net) has quit (Quit: Computer has gone to sleep.)
 2013-03-14 12:21:53	<--	markalanevans (~markalane@cpe-76-172-2-29.socal.res.rr.com) has quit (Quit: markalanevans)
+2013-03-14 12:23:09	tbaxter	Does anyone have any suggestions for a simple way to run simple scheduled tasks? Celery seems way more heavy than I need, so… django-cron? chronograph? Just run them off cron?
+2013-03-14 12:23:09	<--	arturrro (~Artur@94.42.173.57) has quit (Quit: Leaving.)
+2013-03-14 12:23:36	-->	arturrro (~Artur@94.42.173.57) has joined #django
+2013-03-14 12:24:08	<--	optixx (~optixx@optixx.org) has quit (Ping timeout: 252 seconds)
+2013-03-14 12:24:14	<--	arturrro (~Artur@94.42.173.57) has quit (Read error: Connection reset by peer)

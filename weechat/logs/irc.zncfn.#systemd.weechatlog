@@ -345,3 +345,7 @@
 2013-03-14 12:21:43	pitti	ok, I'll investigate
 2013-03-14 12:21:50	mbiebl	no, it runs fine for me without fakeroot
 2013-03-14 12:21:56	mbiebl	and hangs with fakeroot
+2013-03-14 12:23:00	<--	ming_lei (~ming@183.37.195.99) has quit (Ping timeout: 264 seconds)
+2013-03-14 12:23:36	-->	bizhanMona (~bizhan@nat/cisco/x-gyydktzfwtsrjioj) has joined #systemd
+2013-03-14 12:23:53	<--	marvin2 (~marvin2@14-200-139-81.static.tpgi.com.au) has quit (Ping timeout: 246 seconds)
+2013-03-14 12:24:10	mbiebl	pitti: not sure if make check requires a running systemd, I would hope it doesn't
