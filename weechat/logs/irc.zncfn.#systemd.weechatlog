@@ -1,0 +1,121 @@
+2013-03-13 20:04:38	-->	numeral (~numeral@198.23.228.15) has joined #systemd
+2013-03-13 20:04:38	--	Topic for #systemd is "Version 198 released! || http://www.freedesktop.org/software/systemd/systemd-198.tar.xz || http://www.freedesktop.org/wiki/Software/systemd || https://www.youtube.com/watch?v=9UnEV9SPuw8"
+2013-03-13 20:04:38	--	Topic set by poettering (~poetterin@tango.0pointer.de) on Thu, 07 Mar 2013 18:04:25
+2013-03-13 20:04:38	--	Nicks #systemd: [\n _fritz_ _grawity Adys aep akl Alam_Squeeze algernon alub alwaysontherun- AmandaC amessina Apetrini armands_ arnej auke ausbin avar Bertl bigon bizhanMona bjoe2k4 blami blueness bnf_ BogdanR Boohbah bouleetbil boxofrox breiti brian Bruners c0rnel CalimeroTeknik canta cbmuser chengwei_ Choris cinelli CipherWizard cmr coling contradictioned_ dagger danmackay davidstrauss davidz demarchi_ derRichard Diaoul DinCahill dlb76 dougsland dvdhrm eboettcher ecloud else- elxa_ elzapp emmanuelux erbo eternaleye Exio FabianS faen falconindy fatal fcrozat|gone fdo-vcs Firstyear floppym flynd freeedrich| Genolo grawity groundnuty gtmanfred gwmngilfen|afk hachque_ hagebake haraldh heftig heinrich5991 hermier hgb hi117 honschu hspasta hussam Hwkiller Hydrazine_ idkfa Ingmar JackWinter1 Jasper Javafant jave jds2001 jelly1 jenkins-systemd jjardon joemiller jonmasters joshc jpetersen_ JPohlman1 juergbi jwbirdsong k-s[AWAY] KaiSforza Kamilion kangkai kay Kdecherf Ke kelvan kerolasa keruspe kklimonda_ kmacleod koen koniiiik kzak larsks lbt Lektron loswillios mamikk manio marktheunissen master_o1_master mbiebl mcfrisk mclasen mickael9 microcolonel Mithrandir mixi MK_FG moben moltendorf mrec_ msx mue_ muep_ myrde mz|` nakamuray ndim nedko neil nemequ niska` Nisstyre noclaf nokogiri npouillard nucleo numeral oahong Obeliks ocharles ohsix otavio ovitters PaulePanter pdq phako Phase4 Philantrop philips pitti pknirsch plfiorini pocek_ poettering prometheanfire quant r3pek Ratler rektide riddle Riiiis rom1504_ Rondom rworkman Sage_ saltsa_ samkottler samlt seblu semeion SeoZ-work[AWAY] shoragan Skaarj slovdahl sofar speakman ssuominen Svedrin sztanpet tamas theinric thestinger thomasg thorsten` threadlock thrice tibbs tigerfoot timi timtaler- tpepper tridactyla trn uau umuttl vudentz` wdouglas WilliamH wishi woky wwoods ximion xrogaan xtraeme yac zbyszek zdzichuBG ZekeS zeroedout zorael]
+2013-03-13 20:04:38	--	Channel #systemd: 232 nicks (0 ops, 0 halfops, 0 voices, 232 normals)
+2013-03-13 20:05:08	--	Mode #systemd [+ns]
+2013-03-13 20:05:08	--	Channel created on Tue, 13 Apr 2010 20:58:39
+2013-03-13 20:06:30	<--	ovitters (~bkor@i84029.upc-i.chello.nl) has quit (Ping timeout: 240 seconds)
+2013-03-13 20:07:43	<--	jelly1 (~jelly12ge@archlinux/trusteduser/jelly1) has quit (Ping timeout: 264 seconds)
+2013-03-13 20:09:42	-->	marvin2 (~marvin2@14-200-139-81.static.tpgi.com.au) has joined #systemd
+2013-03-13 20:10:24	<--	semeion (~semeion@gateway/tor-sasl/semeion) has quit (Ping timeout: 276 seconds)
+2013-03-13 20:11:30	<--	kzak (~kzak@109.54.broadband13.iol.cz) has quit (Ping timeout: 264 seconds)
+2013-03-13 20:14:16	mbiebl	zbyszek: 427b47c4abaf4b5820e3532bf6993c7abe66703c breaks my build
+2013-03-13 20:14:37	mbiebl	src/tmpfiles/tmpfiles.c:221:13: error: ‘MAX_HANDLE_SZ’ undeclared (first use in this function)
+2013-03-13 20:17:20	zbyszek	mbiebl: are you sure that it's 427b47c4ab? It only touches src/systemctl/systemctl.c
+2013-03-13 20:18:18	<--	emmanuelux (~emmanuelu@vau92-2-82-228-217-1.fbx.proxad.net) has quit (Remote host closed the connection)
+2013-03-13 20:18:37	mbiebl	ah, sorry, seems to be 99d680acf192a7193c3de73b525ffbc24c25cca8
+2013-03-13 20:18:50	mbiebl	kay's work
+2013-03-13 20:19:00	<--	freeedrich| (friedrich@perplexa.be) has quit (Ping timeout: 240 seconds)
+2013-03-13 20:19:24	<--	marvin2 (~marvin2@14-200-139-81.static.tpgi.com.au) has quit (Ping timeout: 264 seconds)
+2013-03-13 20:21:11	<--	marktheunissen (~marktheun@108-218-137-207.lightspeed.austtx.sbcglobal.net) has quit (Quit: marktheunissen)
+2013-03-13 20:22:04	zbyszek	mbiebl: https://gist.github.com/anonymous/5157783?
+2013-03-13 20:22:10		[http://is.gd/fgOogN]
+2013-03-13 20:22:51	-->	ISF_ (~ivan@187.64.222.221) has joined #systemd
+2013-03-13 20:22:53	-->	semeion (~semeion@gateway/tor-sasl/semeion) has joined #systemd
+2013-03-13 20:24:06	-->	freeedrich| (friedrich@perplexa.be) has joined #systemd
+2013-03-13 20:27:00	mbiebl	zbyszek: yeah, does the trick, thanks
+2013-03-13 20:28:24	fdo-vcs	systemd zbyszek master * d39efe7 src/tmpfiles/tmpfiles.c
+2013-03-13 20:28:24	fdo-vcs	systemd tmpfiles: add missing missing.h include
+2013-03-13 20:31:19	-->	Md (~md@freenode/staff/md) has joined #systemd
+2013-03-13 20:34:59	jenkins-systemd	Project build-master build #661: SUCCESS in 3 min 7 sec: http://systemd.getpantheon.com:8080/jenkins/job/build-master/661/
+2013-03-13 20:35:05		[http://is.gd/XGpEqb]
+2013-03-13 20:46:06	-->	marvin2 (~marvin2@14-200-139-81.static.tpgi.com.au) has joined #systemd
+2013-03-13 20:50:14	-->	ming_lei (~ming@183.37.194.72) has joined #systemd
+2013-03-13 20:52:59	-->	master_of_master (~master_of@p4FF24BF0.dip.t-dialin.net) has joined #systemd
+2013-03-13 20:56:15	<--	marvin2 (~marvin2@14-200-139-81.static.tpgi.com.au) has quit (Ping timeout: 245 seconds)
+2013-03-13 20:56:19	<--	master_o1_master (~master_of@p4FF24CAD.dip.t-dialin.net) has quit (Ping timeout: 264 seconds)
+2013-03-13 20:56:53	-->	holtmann (~holtmann@coyote.holtmann.net) has joined #systemd
+2013-03-13 20:59:10	coling	kay, if you're still awake, do I need to do anything specific to get the firmware timings?
+2013-03-13 20:59:23	coling	using systemd 198 and gummiboot 26
+2013-03-13 21:03:02	<--	aep (~aep@libqxt/developer/aep) has quit (Ping timeout: 272 seconds)
+2013-03-13 21:05:31	-->	aep (~aep@libqxt/developer/aep) has joined #systemd
+2013-03-13 21:06:17	-->	mesx (~mesx@5.45.181.177) has joined #systemd
+2013-03-13 21:09:46	-->	eliasp (~quassel@2a02:8070:8226:8801:21d:60ff:fe65:c34d) has joined #systemd
+2013-03-13 21:09:51	eliasp	hi
+2013-03-13 21:10:11	mesx	Hi folks, I'm struggling with understing .timer and OnCalendar, my question iz if I use weekly → Mon *-*-* 00:00:00 will .timer be activated if computer isnt on Mon but on Thu :)  
+2013-03-13 21:11:32	eliasp	when using systemd 198 or git, I can't build a lot of other software linking to libsystemd-login.so… they're all failing like this: http://paste.kde.org/695702/
+2013-03-13 21:11:41	<--	nemequ (~nemequ@2001:4800:7810:512:562c:1f:ff04:cd61) has left #systemd ("Ex-Chat")
+2013-03-13 21:11:50	eliasp	does anyone know what's the problem here?
+2013-03-13 21:12:07	<--	idkfa (~idkfa@idkfa.g-service.ru) has quit (Read error: Connection reset by peer)
+2013-03-13 21:19:58	--	elxa_ is now known as elxa
+2013-03-13 21:23:04	-->	marvin2 (~marvin2@14-200-139-81.static.tpgi.com.au) has joined #systemd
+2013-03-13 21:26:14	<--	hspasta (~Haptic@c-98-220-172-164.hsd1.in.comcast.net) has quit (Ping timeout: 245 seconds)
+2013-03-13 21:26:55	<--	davidz (zeuthen@nat/google/x-eapguxhympcevwci) has quit (Quit: Word of advice: If you meet yourself on the testing track, don't make eye contact.)
+2013-03-13 21:32:21	-->	hspasta (~Haptic@c-98-220-172-164.hsd1.in.comcast.net) has joined #systemd
+2013-03-13 21:32:35	<--	marvin2 (~marvin2@14-200-139-81.static.tpgi.com.au) has quit (Ping timeout: 252 seconds)
+2013-03-13 21:34:37	zbyszek	mesx: No, there's no anacron functionality in systemd timers (yet).
+2013-03-13 21:36:51	zbyszek	eliasp: Should be fixed in git ee465038ce8. Are you sure that you're still seeing it? Please make sure that you're linking against the new libraries.
+2013-03-13 21:38:57	eliasp	zbyszek: I'm actually already using this patch for 198 and it still happens…
+2013-03-13 21:39:38	eliasp	I thought it was related to having built systemd with LDFLAGS="-Wl --as-needed", but building it without it didn't change it… 
+2013-03-13 21:39:53	eliasp	will verify, -Wl --as-needed isn't set in the global profile…
+2013-03-13 21:39:59	eliasp	one moment
+2013-03-13 21:40:26	zbyszek	eliasp: actually we use --as-needed by default, so I don't think that it'll change anything.
+2013-03-13 21:40:59	eliasp	zbyszek: ok
+2013-03-13 21:41:41	eliasp	looks like we have a bug for it in Gentoo: https://bugs.gentoo.org/show_bug.cgi?id=461210
+2013-03-13 21:41:46		[http://is.gd/DU3Jii]
+2013-03-13 21:41:59	eliasp	also pointing upstream to: https://bugs.freedesktop.org/show_bug.cgi?id=62085
+2013-03-13 21:42:04		[http://is.gd/4qtFIR]
+2013-03-13 21:42:53	eliasp	ah, this bug is about the previous issue, not about sd_listen_fds
+2013-03-13 21:42:54	eliasp	sorry
+2013-03-13 21:43:26	eliasp	hmm, ok… the FDO bug also includes sd_listen_fds
+2013-03-13 21:43:32	eliasp	zbyszek: any idea what to do here?
+2013-03-13 21:43:58	zbyszek	eliasp: I think I see the problem, give me a few minutes.
+2013-03-13 21:44:06	eliasp	zbyszek: sure, thanks a lot!
+2013-03-13 21:44:55	-->	araujo (~araujo@190.73.45.171) has joined #systemd
+2013-03-13 21:44:55	<--	araujo (~araujo@190.73.45.171) has quit (Changing host)
+2013-03-13 21:44:55	-->	araujo (~araujo@gentoo/developer/araujo) has joined #systemd
+2013-03-13 21:46:17	<--	hspasta (~Haptic@c-98-220-172-164.hsd1.in.comcast.net) has quit (Read error: Connection reset by peer)
+2013-03-13 21:47:40	-->	master_o1_master (~master_of@p4FF244AC.dip.t-dialin.net) has joined #systemd
+2013-03-13 21:50:55	<--	master_of_master (~master_of@p4FF24BF0.dip.t-dialin.net) has quit (Ping timeout: 264 seconds)
+2013-03-13 21:59:19	-->	marvin2 (~marvin2@14-200-139-81.static.tpgi.com.au) has joined #systemd
+2013-03-13 22:02:43	-->	dhaval (~dhaval@CPEbcc810004cde-CMbcc810004cdb.cpe.net.cable.rogers.com) has joined #systemd
+2013-03-13 22:07:27	zbyszek	eliasp: can you check if https://gist.github.com/5158222 works for you?
+2013-03-13 22:07:32		[http://is.gd/QauaGX]
+2013-03-13 22:07:38	eliasp	zbyszek: sure, one moment
+2013-03-13 22:09:52	<--	marvin2 (~marvin2@14-200-139-81.static.tpgi.com.au) has quit (Ping timeout: 252 seconds)
+2013-03-13 22:14:14	eliasp	zbyszek: great! at least networkmanager built now again… trying now some other packages like udisks2, polkit etc.
+2013-03-13 22:16:15	eliasp	zbyszek: another one… polkit
+2013-03-13 22:17:01	eliasp	zbyszek: and… udisks
+2013-03-13 22:17:09	eliasp	zbyszek: I'd consider this bug to be fixed! ;)
+2013-03-13 22:19:06	zbyszek	Great, I'll add a Tested-by. Are you Elias Probst?
+2013-03-13 22:20:08	eliasp	zbyszek: exactly, I am ;)
+2013-03-13 22:20:23	eliasp	zbyszek: thank you for fixing it
+2013-03-13 22:20:45	zbyszek	eliasp: no problem
+2013-03-13 22:22:47	fdo-vcs	systemd msekleta master * 1609dcb src/systemctl/systemctl.c
+2013-03-13 22:22:47	fdo-vcs	systemd systemctl: remove unused variable
+2013-03-13 22:22:47	fdo-vcs	systemd zbyszek master * d29dd03 Makefile.am
+2013-03-13 22:22:47	fdo-vcs	systemd build-sys: link libsystemd-login also against libsystemd-daemon-internal
+2013-03-13 22:24:54	-->	ovitters (~bkor@i84029.upc-i.chello.nl) has joined #systemd
+2013-03-13 22:26:51	-->	bochecha_ (~bochecha@fedora/bochecha) has joined #systemd
+2013-03-13 22:28:28	-->	elxa_ (~quassel@p5DD27C24.dip.t-dialin.net) has joined #systemd
+2013-03-13 22:29:08	-->	idkfa (~idkfa@2001:67c:e8:12:20e:4ff:feb7:16a6) has joined #systemd
+2013-03-13 22:29:36	<--	elxa (~quassel@p4FCE6CBB.dip.t-dialin.net) has quit (Ping timeout: 264 seconds)
+2013-03-13 22:30:13	--	elxa_ is now known as elxa
+2013-03-13 22:30:53	jenkins-systemd	Project build-master build #662: SUCCESS in 4 min 1 sec: http://systemd.getpantheon.com:8080/jenkins/job/build-master/662/
+2013-03-13 22:30:58		[http://is.gd/aokaTs]
+2013-03-13 22:34:31	--	SeoZ-work[AWAY] is now known as SeoZ
+2013-03-13 22:36:39	-->	marvin2 (~marvin2@14-200-139-81.static.tpgi.com.au) has joined #systemd
+2013-03-13 22:42:40	-->	dvdhrm__ (~david@stgt-5f71a469.pool.mediaWays.net) has joined #systemd
+2013-03-13 22:45:21	<--	idkfa (~idkfa@2001:67c:e8:12:20e:4ff:feb7:16a6) has quit (Remote host closed the connection)
+2013-03-13 22:45:46	<--	dvdhrm (~david@stgt-5f7195f6.pool.mediaWays.net) has quit (Ping timeout: 258 seconds)
+2013-03-13 22:46:16	<--	marvin2 (~marvin2@14-200-139-81.static.tpgi.com.au) has quit (Ping timeout: 272 seconds)
+2013-03-13 22:49:35	<--	ximion (~ximion@pptp-212-201-70-200.pptp.stw-bonn.de) has quit (Quit: QUIT)
+2013-03-13 22:49:43	-->	idkfa (~idkfa@2001:67c:e8:12:20e:4ff:feb7:16a6) has joined #systemd
+2013-03-13 22:58:35	<--	ovitters (~bkor@i84029.upc-i.chello.nl) has quit (Ping timeout: 276 seconds)
+2013-03-13 23:01:05	<--	amessina (~amessina@2001:470:c1dc:7779:d6be:d9ff:fe8d:7c1e) has quit (Quit: Konversation terminated!)
+2013-03-13 23:11:16	-->	ovitters (~bkor@i84029.upc-i.chello.nl) has joined #systemd
+2013-03-13 23:12:52	-->	marvin2 (~marvin2@14-200-139-81.static.tpgi.com.au) has joined #systemd
+2013-03-13 23:23:17	<--	marvin2 (~marvin2@14-200-139-81.static.tpgi.com.au) has quit (Ping timeout: 255 seconds)
+2013-03-13 23:27:26	<--	dhaval (~dhaval@CPEbcc810004cde-CMbcc810004cdb.cpe.net.cable.rogers.com) has quit (Ping timeout: 272 seconds)
+2013-03-13 23:28:06	<--	Md (~md@freenode/staff/md) has quit (Quit: 私のホバークラフト は鰻が一杯です。)

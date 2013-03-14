@@ -1,0 +1,180 @@
+2013-03-13 20:04:38	-->	numeral (~numeral@198.23.228.15) has joined #kde
+2013-03-13 20:04:38	--	Topic for #kde is "KDE SC 4.10 is out! See www.kde.org | http://userbase.kde.org | http://forum.kde.org | Don't flood the channel, use http://paste.kde.org | Distro related questions go in your distro channel | Offtopic in #kde-chat | State your distribution and KDE version when asking questions | Don't delete ~/.kde or ~/.kde4"
+2013-03-13 20:04:38	--	Topic set by neverendingo (neverend@kde/www/imalchow) on Wed, 06 Feb 2013 09:38:35
+2013-03-13 20:04:38	--	Nicks #kde: [@ChanServ _2M1R__ _protagoras271_ _Zaister ABCD abner aboudreault abveritas AciD` Adys ahiemstra aitorpazos Aji-Dahaka alienBOB alk_ almoxarife Almtesh altin amingv Ammler apoi apokryphos- apt aracele ArchGamer Ard1t ArGGu^^ argonel Aristide armands_ armin arthursribeiro Auri az az7_ backjlack badone beasty BeerSerc_ bit-pirate bleomycin BluesKaj BogdanR bonsaikitten boom1992 bootkiller boubbin Brian_H brot Bry8Star BtbN burntoto buscher Caster CESSMASTER chalcedony chasmo chronos chuckf cire cmagina cmr codertux coinspelunk comawhite CosmicB crashmag Cthulhux Cybertinus cyndis d353r7f0x d4 DaemonFC dahlia dani_l Danio danmackay dansushi Darkwing DarthGandalf Daskreech DaZ deathadder denysonique Derega destrudo deufrai dh64 Dhraakellian dijonyummy dk0r dlesage doerner dotCOMmie drdanz Driver_ Droste Dunedan dv_ dvratil_ ealexp edulix2 eeanm egant einar77 elena-IK eljefe__ Elv1313 emilsedgh emma enderw enhydra err-or erry eshlox esing fatalerrors FL1SK FlameReaper flami fling floe foolano freeedrich| fury_ fxrh gavrila__ gdebure Genolo Gentle geomyidae_ gerlos gobostone gpoesia graft Guest27784 hacosta hagebake HandheldPenguin hays_ hdevalence heath heirecka Heis hermier hnsz2002 HonooPC hoodwanked Husar Icewind idoru invariant ironfroggy iserantes ivan`` ivanich_ jachin_cloud JackWinter1 jacky james147 JanKusanagi Janusz1 jarkko^_ jayne_ jazka jehan jemparing_ Jikan jillsmitt__ JLP jrd0 jtalk jthomas__ Juan Jucato julupu jussi jyc k4tfish kaasinees kanniball Kardos kbana kc8hfi khindenburg killown Killsudo kirin` Kitzu kiwicam konadr konelix koshie_ KRF lacerda LapsedPacifist larksyrm larsemil lbt len Lenzoid licensed likewhoa Linex linuxkeitaro LjL lliehu lunitik Maccer Magiobiwan magyar Mamarok marass markand_ masch_ Mathnerd314_ mato_ maybeWTF mcorteel mcurve Mez Miles MissionCritical mithnae_ mixi MJD MoDaXaS mollach monokrome Moult_ mrec_ mrguitar msx mtk muep_ murthy_ Muzer mva MxG Nakato Nakkel_ Natenom neoclust neverendingo Niek_ Nikoli nikosapi nortti npm_ numeral nyloc oberling oget oini_ omeringen ovidiu-florin ozzzy pa padde paddymahoney PaulW2U peppe peremen pete petteyg pfoo PhilSliderS Phr33d0m phunyguy phuzion planetmaker Plastefuchs Prof_Frink promulo Psi|4ward pumphaus qu-bit R_Rios Rasi rdieter remus RingtailedFox Rix rmbell roasted Roin rrix RushPL ryanakca rysiek|pl saigkill SamuraiGhost samxan Sash SaveTheRobots ScytheBlade1 SeySayux shadeslayer shal3r sig_wall silver_hook sinobell sipherdee_ SJr skfin sladen Smile30 smokex soredz Soru spacetime Sparxz_ Sput stackofcats SteveRiley stimpy267 stuffcorpse sungami svuorela swarfega Systemlord_ szal tan Tanktalus Taoki|away tapout task_struct tdfischer tdignan tdn techlife TeslaTest TheFuzzball TheWoozle Ticho_ timi tjablin tm258 Tm_T Tomasu tomcat_berlin tonymc Torch tosky totte trifolio6 tsimpson tsukasa tweakism twobitsprite txwikinger2 u-foka V0id valorie Vash63 vblazquez vdv vHanda vmeson voondo weltzooo wentknweqt wes300 wesbluemarine Weust` whilo white WindPower WinstonSmith withnale wujek ximion xxtjaxx xy yashshah Ycarene yerodin yofel yopher z16a Z_God_Z zaki ZeDestructor zegenie ZenGuy311 zenguy_pc zenlunatic Zephyrus zeratul_ zeroedout zizzfizzix zorael |oop]
+2013-03-13 20:04:38	--	Channel #kde: 393 nicks (1 op, 0 halfops, 0 voices, 392 normals)
+2013-03-13 20:04:38	***	Buffer Playback...
+2013-03-13 20:04:38	lbt	[03:04:34] https://conf.kde.org/en/Akademy2013/cfp/person/edit  .... apparently I live in "ENG" which sorts between East Germany(DD) and Germany (DE)
+2013-03-13 20:04:38	***	Playback Complete.
+2013-03-13 20:04:43		[http://is.gd/d3qnki]
+2013-03-13 20:05:02	--	Mode #kde [+LPcnt]
+2013-03-13 20:05:02	--	Channel created on Sun, 26 Nov 2006 01:42:41
+2013-03-13 20:05:24	<--	altin (~altin@flossk/altin) has quit (Ping timeout: 272 seconds)
+2013-03-13 20:05:34	deufrai	DaZ: I got it
+2013-03-13 20:05:47	DaZ	?:o
+2013-03-13 20:05:47	deufrai	needed to set focus prevention policy to 'none'
+2013-03-13 20:06:13	DaZ	deufrai: tried it and it gets like it was after a while
+2013-03-13 20:06:40	DaZ	though maybe i failed while setting it :v
+2013-03-13 20:06:45	deufrai	I'll see how it goes in a few hours
+2013-03-13 20:07:49	deufrai	TTYL
+2013-03-13 20:09:16	<--	gobostone (~gobostone@ucb-np2-209.colorado.edu) has quit (Quit: Lost terminal)
+2013-03-13 20:09:26	-->	jcolby (~jcolby@d-65-175-233-68.cpe.metrocast.net) has joined #kde
+2013-03-13 20:10:40	-->	boombatower (~boombatow@drupal.org/user/214218/view) has joined #kde
+2013-03-13 20:11:03	<--	gerlos (~quassel@dynamic-adsl-78-15-51-116.clienti.tiscali.it) has quit (Remote host closed the connection)
+2013-03-13 20:11:29	-->	marco (~marco@sm2-84-90-52-191.netvisao.pt) has joined #kde
+2013-03-13 20:11:39	<--	marco (~marco@sm2-84-90-52-191.netvisao.pt) has quit (Client Quit)
+2013-03-13 20:12:43	<--	Psi|4ward (~psi@p3E9C23BB.dip0.t-ipconnect.de) has quit (Quit: Und .... weg ;))
+2013-03-13 20:14:42	<--	deathadder (deathadder@ganjaman.gotadsl.co.uk) has quit (Read error: Connection reset by peer)
+2013-03-13 20:14:54	-->	deathadder (deathadder@ganjaman.gotadsl.co.uk) has joined #kde
+2013-03-13 20:17:36	wes300	there are plans to adobe-flash alternative for KDE browsers (rekonq or konqueror)?
+2013-03-13 20:18:16	-->	juanmabc (~juanmabc@79.109.195.199.dyn.user.ono.com) has joined #kde
+2013-03-13 20:18:23	tosky	wes300: afaik any plugins which implements nsapi should work
+2013-03-13 20:18:47	<--	R_Rios (~croc@hyadesinc/pub/oa) has quit (Ping timeout: 255 seconds)
+2013-03-13 20:18:55	tosky	uhm, no, the acronym is different
+2013-03-13 20:19:00	<--	freeedrich| (friedrich@perplexa.be) has quit (Ping timeout: 240 seconds)
+2013-03-13 20:19:03	<--	jcolby (~jcolby@d-65-175-233-68.cpe.metrocast.net) has quit (Ping timeout: 260 seconds)
+2013-03-13 20:19:21	tosky	oh, yes, NPAPI
+2013-03-13 20:21:53	Jucato	flash player 11 works for me in rekonq
+2013-03-13 20:22:15	Jucato	rekonq 2.2.1 on KDE 4.10.1
+2013-03-13 20:23:11	-->	jcolby (~jcolby@d-65-175-233-68.cpe.metrocast.net) has joined #kde
+2013-03-13 20:23:26	-->	gabriel9 (~gabriel9@14-131-241-92-bl.cable.dyn.broadband.blic.net) has joined #kde
+2013-03-13 20:24:06	-->	freeedrich| (friedrich@perplexa.be) has joined #kde
+2013-03-13 20:25:41	<--	lbt (~david@Maemo/community/contributor/lbt) has left #kde ("Konversation terminated!")
+2013-03-13 20:26:07	Jucato	just tested that it also works in konqueror using KHTML
+2013-03-13 20:26:37	<--	Aristide (~florian@tok69-3-82-226-67-58.fbx.proxad.net) has quit (Quit: Konversation terminated!)
+2013-03-13 20:28:25	-->	LeeJunFan (~junfan@97-83-73-57.dhcp.aldl.mi.charter.com) has joined #kde
+2013-03-13 20:30:29	-->	desti (~desti@dslb-088-078-084-207.pools.arcor-ip.net) has joined #kde
+2013-03-13 20:31:50	<--	gabriel9 (~gabriel9@14-131-241-92-bl.cable.dyn.broadband.blic.net) has quit (Quit: Konversation terminated!)
+2013-03-13 20:33:08	<--	kbana (~quassel@p54922BC4.dip.t-dialin.net) has quit (Remote host closed the connection)
+2013-03-13 20:33:30	wes300	yes flash player works, but in the future... will we have time maybe html5, maybe a new alternative to flash
+2013-03-13 20:36:04	<--	Soru (~soul@199.Red-81-43-183.staticIP.rima-tde.net) has quit (Quit: Konversation terminated!)
+2013-03-13 20:36:42	<--	LeeJunFan (~junfan@97-83-73-57.dhcp.aldl.mi.charter.com) has quit (Ping timeout: 264 seconds)
+2013-03-13 20:38:14	Jucato	rekonq, or rather, webkitkde already supports html5 (video). konq with khtml theoretically supports it, but seems like it's a bit wonky
+2013-03-13 20:38:32	Jucato	(using http://www.w3schools.com/html/tryit.asp?filename=tryhtml5_video_all as a test)
+2013-03-13 20:38:37		[http://is.gd/VhWBt9]
+2013-03-13 20:42:10	wes300	khtml is cool, but I don't say wow khtml is best choice, webkit your "son" is more popular and obviously this reflecting in development.
+2013-03-13 20:43:16	 *	Jucato has no son
+2013-03-13 20:46:32	Jucato	it is also not exactly that easy to get involved in, as a project (too many stakeholders, Qt practically shipping its own version, which is what I think kdewebkit uses, etc.). anyway there is no "management" that dictates who works on what and whether this or that project is killed off. as long as there are people working on it, it will remain there. and khtml can't be yanked off at this point yet because of compatibility within the KDE 4 software
+2013-03-13 20:46:33	Jucato	lifetime
+2013-03-13 20:49:51	<--	tosky (~tosky@176.74.128.57) has quit
+2013-03-13 20:50:18	<--	TheFuzzball (~TheFuzzba@46-64-87-101.zone15.bethere.co.uk) has quit (Quit: Computer has gone to sleep.)
+2013-03-13 20:51:18	-->	Aristide (~florian@tok69-3-82-226-67-58.fbx.proxad.net) has joined #kde
+2013-03-13 20:51:24	-->	wes300_ (~quassel@187.115.42.150) has joined #kde
+2013-03-13 20:51:56	<--	oini_ (~oini@117.194.1.90) has quit (Ping timeout: 258 seconds)
+2013-03-13 20:52:54	<--	wes300 (~quassel@186.212.12.148) has quit (Ping timeout: 272 seconds)
+2013-03-13 20:53:24	<--	backjlack (~quassel@86.127.43.30) has quit (Remote host closed the connection)
+2013-03-13 20:54:12	wes300_	yes khtml is live and is a great project!
+2013-03-13 20:54:58	wes300_	sorry, my connection crashed
+2013-03-13 20:55:41	<--	HonooPC (~honoo-pc@203.106.65.1) has quit (Ping timeout: 255 seconds)
+2013-03-13 20:56:31	-->	OhnooPC (~honoo-pc@203.106.65.1) has joined #kde
+2013-03-13 20:59:14	<--	floe (~flo@e177089219.adsl.alicedsl.de) has quit (Ping timeout: 272 seconds)
+2013-03-13 21:00:07	-->	altin (~altin@flossk/altin) has joined #kde
+2013-03-13 21:02:05	<--	wesbluemarine (~albe123@host125-60-dynamic.16-79-r.retail.telecomitalia.it) has quit (Quit: Konversation terminated!)
+2013-03-13 21:03:12	-->	serafean_ (~martin@238.180.broadband3.iol.cz) has joined #kde
+2013-03-13 21:03:28	zenlunatic	new user here... my mouse cursor is stuck with a red cancelation symbol. i can type and move the mouse but cannot click or get rid of this x
+2013-03-13 21:03:43	-->	Chobobo (~swinchen@strongbad.eece.maine.edu) has joined #kde
+2013-03-13 21:04:09	Chobobo	is there a recommended audio backend?  I have been having some troubles with gstreamer and AC3
+2013-03-13 21:04:19	<--	tomcat_berlin (~thomas@f053002136.adsl.alicedsl.de) has quit (Quit: Konversation terminated!)
+2013-03-13 21:05:25	Chobobo	oh... nevermind, I just got it working with the phonon vlc backend
+2013-03-13 21:06:57	<--	altin (~altin@flossk/altin) has quit (Ping timeout: 276 seconds)
+2013-03-13 21:08:53	<--	boom1992 (~quassel@BA1222.ballee.wh.tu-darmstadt.de) has quit (Remote host closed the connection)
+2013-03-13 21:13:16	<--	drdanz (~quassel@drdanz.it) has quit (Remote host closed the connection)
+2013-03-13 21:13:20	<--	dvratil_ (~Dan@ip4-95-82-187-209.cust.nbox.cz) has quit (Ping timeout: 245 seconds)
+2013-03-13 21:13:44	<--	wes300_ (~quassel@187.115.42.150) has quit (Remote host closed the connection)
+2013-03-13 21:17:40	<--	boombatower (~boombatow@drupal.org/user/214218/view) has quit (Read error: Connection reset by peer)
+2013-03-13 21:17:53	-->	boombatower (~boombatow@drupal.org/user/214218/view) has joined #kde
+2013-03-13 21:17:57	<--	Aristide (~florian@tok69-3-82-226-67-58.fbx.proxad.net) has quit (Quit: Konversation terminated!)
+2013-03-13 21:22:52	<--	boombatower (~boombatow@drupal.org/user/214218/view) has quit (Remote host closed the connection)
+2013-03-13 21:24:57	<--	samxan (~sam@kde/developer/bairagya) has quit (Quit: Konversation terminated!)
+2013-03-13 21:35:07	<--	arthursribeiro (~arthur@177.42.189.33) has quit (Remote host closed the connection)
+2013-03-13 21:42:01	-->	AlexZion (~quassel@187.143.144.109) has joined #kde
+2013-03-13 21:43:59	<--	yashshah (~yash@14.139.122.114) has quit (Read error: Connection reset by peer)
+2013-03-13 21:44:23	-->	yashshah (~yash@14.139.122.114) has joined #kde
+2013-03-13 21:44:56	<--	zenguy_pc (~oracle@pool-100-2-202-98.nycmny.fios.verizon.net) has quit (Quit: Leaving)
+2013-03-13 21:45:40	-->	thiago (~thiago@kde/thiago) has joined #kde
+2013-03-13 21:46:38	-->	JoeSomebody (~JoeSomebo@unaffiliated/joesomebody) has joined #kde
+2013-03-13 21:49:13	-->	zenguy_pc (~oracle@pool-100-2-202-98.nycmny.fios.verizon.net) has joined #kde
+2013-03-13 21:53:19	<--	d353r7f0x (~l337m4573@96-39-125-146.dhcp.oxfr.ma.charter.com) has quit (Ping timeout: 264 seconds)
+2013-03-13 21:57:30	<--	zenguy_pc (~oracle@pool-100-2-202-98.nycmny.fios.verizon.net) has quit (Quit: Leaving)
+2013-03-13 21:58:05	-->	sewa (~sewa@pc-139-67-214-201.cm.vtr.net) has joined #kde
+2013-03-13 21:59:15	sewa	Hi to all, i have a question, there is a way (a simple one?) to show the output of a bash script in a plasmoid? (i've made a script to check the time of the train here in Chile, but i'd like to have it on my desktop) sorry for my english
+2013-03-13 22:02:07	juanmabc	kdialog could trick (no plasmoid, old school qt/kde gui system), konsole plasmoid with a "$ watch bash myscript.sh" could do too, else seems very custom
+2013-03-13 22:02:54	<--	serafean_ (~martin@238.180.broadband3.iol.cz) has quit (Ping timeout: 245 seconds)
+2013-03-13 22:02:55	sewa	atm im using kdialog with notification, i'll try the konsole plasmoid thanks
+2013-03-13 22:04:55	-->	MissyVixen (~MissyVixe@mc32c36d0.tmodns.net) has joined #kde
+2013-03-13 22:06:09	-->	Arno[Slack]`Work (~arnaud@222.46.20.187) has joined #kde
+2013-03-13 22:07:04	Jucato	sewa: you can also save the output of the bash script in a file and use the File Watcher plasmoid
+2013-03-13 22:07:52	-->	groundnuty (~orzech@89-79-239-254.dynamic.chello.pl) has joined #kde
+2013-03-13 22:08:19	sewa	Jucato: thanks! didnt think that
+2013-03-13 22:08:27	groundnuty	hey, I'm trying to move from openbox to kde (archlinux user) is there a *simple* way to experience examples theams?
+2013-03-13 22:08:33	groundnuty	I do hate the defualt look :)
+2013-03-13 22:09:23	groundnuty	also mayby theme is not a right workd here. what ment are 'full configs'
+2013-03-13 22:09:52	juanmabc	system settings, appearance, have fun
+2013-03-13 22:10:31	groundnuty	juanmabc: I kinda wanted to find a lookthat I like and then tewak it
+2013-03-13 22:10:47	sewa	groundnuty: kde-look.org
+2013-03-13 22:10:54	sewa	or get new hot stuff
+2013-03-13 22:11:39	groundnuty	yes, I'm browskign kde-look. my question is: can I download/apply/test all this stuff with soem theme/look-manager?
+2013-03-13 22:12:07	sewa	is built-in
+2013-03-13 22:12:16	sewa	go to syspref>appearance
+2013-03-13 22:12:27	sewa	and click in get hot new stuff under theme or windeco
+2013-03-13 22:12:37	-->	pquast (~pquast@108-92-106-58.lightspeed.cicril.sbcglobal.net) has joined #kde
+2013-03-13 22:12:37	sewa	(sorry for my english btw)
+2013-03-13 22:12:45	<--	pquast (~pquast@108-92-106-58.lightspeed.cicril.sbcglobal.net) has quit (Client Quit)
+2013-03-13 22:13:06	groundnuty	sewa: no problem :) I alwasy get lost in windows clicking :)
+2013-03-13 22:13:40	<--	zeratul_ (~zeratul@cpezg-94-253-129-165-cbl.xnet.hr) has quit (Ping timeout: 260 seconds)
+2013-03-13 22:14:00	-->	Rish (~quassel@117.196.74.175) has joined #kde
+2013-03-13 22:15:48	<--	linuxkeitaro (~emesa@pool-108-15-30-154.bltmmd.fios.verizon.net) has quit
+2013-03-13 22:16:44	groundnuty	but choosing 'colors' and icons wont make my setup exacly as on the picture
+2013-03-13 22:16:58	groundnuty	I kinda wihsed for fill config options, panels, widgets etc
+2013-03-13 22:18:43	juanmabc	to be clear a meta top level theme selection of all the categories icons, widget style, colors, ...
+2013-03-13 22:19:26	groundnuty	juanmabc: is there such 'meta top level selector' ? :)
+2013-03-13 22:21:27	<--	juanmabc (~juanmabc@79.109.195.199.dyn.user.ono.com) has quit (Quit: Peace Out!)
+2013-03-13 22:21:57	<--	sewa (~sewa@pc-139-67-214-201.cm.vtr.net) has quit (Quit: good bye)
+2013-03-13 22:27:36	-->	sharch (~sharch@unaffiliated/superhomem) has joined #kde
+2013-03-13 22:28:16	<--	sharch (~sharch@unaffiliated/superhomem) has quit (Quit: The Lion of Judah shall break every chain)
+2013-03-13 22:30:29	-->	zenguy_pc (~oracle@pool-100-2-202-98.nycmny.fios.verizon.net) has joined #kde
+2013-03-13 22:30:39	-->	jayrulez (~jayrulez@72.252.159.112) has joined #kde
+2013-03-13 22:31:06	ZenGuy311	http://forum.kde.org/viewtopic.php?f=67&t=110294  any ideas?
+2013-03-13 22:31:11		[http://is.gd/uGdhVk]
+2013-03-13 22:37:23	-->	mtu (~mbueker@dslb-188-108-250-090.pools.arcor-ip.net) has joined #kde
+2013-03-13 22:37:48	-->	Heis| (~quassel@p578F6691.dip0.t-ipconnect.de) has joined #kde
+2013-03-13 22:38:28	<--	Arno[Slack]`Work (~arnaud@222.46.20.187) has quit (Remote host closed the connection)
+2013-03-13 22:38:53	mtu	hiyas. i'm getting "connection refused" for opening two hosts on my LAN in dolphin with sftp. from the console, ssh and sftp work, from dolphin fish:// works and sftp://192.168.x.x work, but not sftp://hostname/, i get: "kioclient(5695)/kio (KRun): KRun(0x1575340) ERROR 163 "Connection refused". any ideas?
+2013-03-13 22:39:16	mtu	(this is 4.10.1)
+2013-03-13 22:39:55	-->	Arno[Slack]`Work (~arnaud@222.46.20.187) has joined #kde
+2013-03-13 22:40:14	<--	Rish (~quassel@117.196.74.175) has quit (Remote host closed the connection)
+2013-03-13 22:40:49	ZenGuy311	try user@hostname
+2013-03-13 22:41:04	mtu	ZenGuy311: same
+2013-03-13 22:41:20	mtu	usernames are identical on these hosts in any case
+2013-03-13 22:41:25	<--	trifolio6 (~h@62.43.62.203.dyn.user.ono.com) has quit (Quit: Konversation terminated!)
+2013-03-13 22:41:25	<--	MissyVixen (~MissyVixe@mc32c36d0.tmodns.net) has quit (Read error: Connection reset by peer)
+2013-03-13 22:41:41	-->	MissyVixen (~MissyVixe@mc32c36d0.tmodns.net) has joined #kde
+2013-03-13 22:41:41	<--	Heis (~quassel@p578F6748.dip0.t-ipconnect.de) has quit (Ping timeout: 245 seconds)
+2013-03-13 22:42:18	ZenGuy311	could be a bug
+2013-03-13 22:42:23	mtu	how do i see more error output from dolphin/kio? .xsession-erros contain nothing useful
+2013-03-13 22:44:02	mtu	huh. i'll be damned: sftp://hostname.localdomain works, but sftp://hostname does not
+2013-03-13 22:44:27	<--	MissyVixen (~MissyVixe@mc32c36d0.tmodns.net) has quit (Remote host closed the connection)
+2013-03-13 22:44:55	ZenGuy311	did sftp://hostname work in previous versions? i'm used to just using fish:// and never for local lan
+2013-03-13 22:45:18	mtu	i'm 95% sure it worked
+2013-03-13 22:45:50	ZenGuy311	k, could you file a bug or go #kde-devel and give them a heads up
+2013-03-13 22:46:51	mtu	right, thanks
+2013-03-13 22:49:35	<--	ximion (~ximion@pptp-212-201-70-200.pptp.stw-bonn.de) has quit (Quit: QUIT)
+2013-03-13 22:51:36	-->	mtu_ (~mbueker@dslb-092-076-079-243.pools.arcor-ip.net) has joined #kde
+2013-03-13 22:52:01	<--	buscher (~buscher@konversation/developer/buscher) has quit
+2013-03-13 22:54:36	<--	mtu (~mbueker@dslb-188-108-250-090.pools.arcor-ip.net) has quit (Ping timeout: 245 seconds)
+2013-03-13 22:55:31	--	mtu_ is now known as mtu
+2013-03-13 23:00:36	<--	JoeSomebody (~JoeSomebo@unaffiliated/joesomebody) has quit (Quit: Ex-Chat)
+2013-03-13 23:03:26	-->	maybeArgh (~cl@p5B164E68.dip.t-dialin.net) has joined #kde
+2013-03-13 23:03:47	<--	maybeWTF (~cl@p5B165B87.dip.t-dialin.net) has quit (Ping timeout: 246 seconds)
+2013-03-13 23:05:02	-->	darnir_ (~sauron@111.93.5.194) has joined #kde
+2013-03-13 23:06:27	-->	boombatower (~boombatow@drupal.org/user/214218/view) has joined #kde
+2013-03-13 23:08:10	-->	mollach_ (~davidr@host-92-4-1-179.as43234.net) has joined #kde
+2013-03-13 23:10:12	<--	mollach (~davidr@host-92-4-1-179.as43234.net) has quit (Remote host closed the connection)
+2013-03-13 23:13:32	<--	darnir_ (~sauron@111.93.5.194) has quit (Quit: leaving)
+2013-03-13 23:13:44	<--	mollach_ (~davidr@host-92-4-1-179.as43234.net) has quit (Remote host closed the connection)
+2013-03-13 23:14:21	-->	samurai_black (~quassel@187-126-161-249.user.veloxzone.com.br) has joined #kde
+2013-03-13 23:20:05	-->	PhilSli5 (~kvirc@2a01:e35:2f26:89b0:e4ed:ca16:4af0:694e) has joined #kde
+2013-03-13 23:20:29	<--	PhilSliderS (~kvirc@2a01:e35:2f26:89b0:e4ed:ca16:4af0:694e) has quit (Read error: Connection reset by peer)
+2013-03-13 23:25:01	<--	dh64 (~dh64@174-21-217-209.tukw.qwest.net) has quit (Ping timeout: 245 seconds)
+2013-03-13 23:29:43	<--	Jucato (~jucato@kde/developer/jucato) has quit (Quit: Konversation terminated!)
+2013-03-13 23:33:04	-->	Jucato (~jucato@kde/developer/jucato) has joined #kde

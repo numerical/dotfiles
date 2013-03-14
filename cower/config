@@ -1,0 +1,5 @@
+Color = auto
+
+TargetDir = $HOME/cower
+
+# vim: set noet syn=conf

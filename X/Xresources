@@ -1,0 +1,58 @@
+! file:     ~/.Xdefaults
+! author:   Simon Gomizelj
+! vim:      ft=xdefaults
+! ----------------------------------------------------------------------------
+
+Xft*dpi:       88
+Xft*antialias: true
+Xft*rgba:      vrgb
+
+URxvt*font:              xft:Envy Code R:size=9
+URxvt*buffered:          true
+URxvt*scrollBar:         false
+URxvt*loginShell:        true
+URxvt*saveLines:         262144
+URxvt*boldMode:          true
+URxvt*jumpScroll:        true
+URxvt*scrollTtyKeypress: true
+URxvt*scrollWithBuffer:  false
+URxvt*scrollTtyOutput:   false
+URxvt*urgentOnBell:      true
+URxvt*secondaryWheel:    true
+URxvt*cursorBlink:       false
+URxvt*cursorColor:       #ff9900
+URxvt*cursorColor2:      #000000
+URxvt*depth:             32
+URxvt*background:        rgba:1111/1111/1111/aaaa
+
+URxvt*perl-ext-common:   default,matcher
+URxvt*urlLauncher:       /usr/bin/firefox
+URxvt*matcher.button:    1
+
+*foreground: #ddccbb
+*background: #151515
+
+!black
+*color0:     #3b3d3e
+*color8:     #505354
+!red
+*color1:     #f92672
+*color9:     #ff5995
+!green
+*color2:     #82b414
+*color10:    #b6e354
+!yellow
+*color3:     #fd971f
+*color11:    #feed6c
+!blue
+*color4:     #56c2d6
+*color12:    #8cedff
+!magenta
+*color5:     #8c54fe
+*color13:    #9e6ffe
+!cyan
+*color6:     #6664a7
+*color14:    #888cb1
+!white
+*color7:     #ccccc6
+*color15:    #f8f8f2

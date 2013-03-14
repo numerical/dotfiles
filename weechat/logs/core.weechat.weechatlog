@@ -1,0 +1,52 @@
+2013-03-13 20:04:30	=!=	python: warning, license "Public Domain" for script "facebook_rename" differs from plugin license ("GPL3")
+2013-03-13 20:04:30		python scripts loaded: chanop, colorize_nicks, facebook_rename, shell, shortenurl
+2013-03-13 20:04:30		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer
+2013-03-13 20:16:25	=!=	Error: unknown command "theme" (type /help for help)
+2013-03-13 20:16:26	=!=	No help available, "theme" is not a command or an option
+2013-03-13 20:16:39		[core]
+2013-03-13 20:16:39		  away    color   debug   help    key     mute    quit    save    upgrade wait   
+2013-03-13 20:16:39		  bar     command eval    history layout  plugin  reload  set     uptime  window 
+2013-03-13 20:16:39		  buffer  cursor  filter  input   mouse   proxy   repeat  unset   version
+2013-03-13 20:16:39		[xfer]
+2013-03-13 20:16:39		  me   xfer
+2013-03-13 20:16:39		[script]
+2013-03-13 20:16:39		  script
+2013-03-13 20:16:39		[guile]
+2013-03-13 20:16:39		  guile
+2013-03-13 20:16:39		[aspell]
+2013-03-13 20:16:39		  aspell
+2013-03-13 20:16:39		[ruby]
+2013-03-13 20:16:39		  ruby
+2013-03-13 20:16:39		[lua]
+2013-03-13 20:16:39		  lua
+2013-03-13 20:16:39		[alias]
+2013-03-13 20:16:39		  AAWAY   AMSG    C       CLOSE   IG      KB      MUB     REDRAW  T       unalias WC      WW     
+2013-03-13 20:16:39		  alias   ANICK   CHAT    dc      J       LEAVE   N       SAY     UB      V       WI     
+2013-03-13 20:16:39		  AME     BYE     CL      EXIT    K       M       Q       SIGNOFF UMODE   W       WII    
+2013-03-13 20:16:39		[irc]
+2013-03-13 20:16:39		  admin      dehalfop   invite     lusers     notice     quiet      sapart     summon     voice     
+2013-03-13 20:16:39		  allchan    deop       ison       map        notify     quote      saquit     time       wallchops 
+2013-03-13 20:16:39		  allserv    devoice    join       me         op         reconnect  server     topic      wallops   
+2013-03-13 20:16:39		  ban        die        kick       mode       oper       rehash     service    trace      who       
+2013-03-13 20:16:39		  connect    disconnect kickban    motd       part       restart    servlist   unban      whois     
+2013-03-13 20:16:39		  ctcp       halfop     kill       msg        ping       sajoin     squery     userhost   whowas    
+2013-03-13 20:16:39		  cycle      ignore     links      names      pong       samode     squit      users     
+2013-03-13 20:16:39		  dcc        info       list       nick       query      sanick     stats      version   
+2013-03-13 20:16:39		[perl]
+2013-03-13 20:16:39		  audacious         buffers_whitelist iset              perl              weerock          
+2013-03-13 20:16:39		  banshee           exaile            moc               pytone           
+2013-03-13 20:16:39		  buddylist         highclean         mpc               quodlibet        
+2013-03-13 20:16:39		  buffers_detach    highmon           ncmpcpp           rhythmbox        
+2013-03-13 20:16:39		[logger]
+2013-03-13 20:16:39		  logger
+2013-03-13 20:16:39		[charset]
+2013-03-13 20:16:39		  charset
+2013-03-13 20:16:39		[python]
+2013-03-13 20:16:39		  oban     odeop    okick    omode    oquiet   ounban   ovoice   shell   
+2013-03-13 20:16:39		  obankick odevoice olist    oop      otopic   ounquiet python  
+2013-03-13 20:16:39		[relay]
+2013-03-13 20:16:39		  relay
+2013-03-13 20:16:39		[tcl]
+2013-03-13 20:16:39		  tcl
+2013-03-13 20:16:39		[rmodifier]
+2013-03-13 20:16:39		  rmodifier

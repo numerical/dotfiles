@@ -1,0 +1,351 @@
+2013-03-13 20:04:37	-->	numeral (~numeral@198.23.228.15) has joined #django
+2013-03-13 20:04:37	--	Topic for #django is "1.5 released! https://www.djangoproject.com/weblog/2013/feb/26/15/ || Welcome to #django || Please provide code and __full__ traceback || Logs at: http://django-irc-logs.com/ || Pastebin at: http://dpaste.org || DjangoCon Europe is on: http://2013.djangocon.eu/"
+2013-03-13 20:04:37	--	Topic set by ptone (~ptone@django/committer/ptone) on Tue, 26 Feb 2013 14:56:01
+2013-03-13 20:04:37	--	Nicks #django: [@ChanServ [ilin] [o__o] \u03b5 __machine __main__ _Nord_ _unary aberrant aboudreault Adys aidan ainmosni alextucker andredieb anth0ny AntiSpamMeta apollo13 arbitraryuser askedrelic askhader avelino averell avium Azelphur b3free BabySuperman baccenfutter backjlack baconbeckons BakaKuna Bass5098 baudtack bbrandt belak bigkevmcd Bird|lappy bkowshik blaxter bmcorser bmn BombStrike brewmaster Browser bturner Bubo bulkan caleb_smith carljm carze cd75 cdunklau centran cereal cewing chaingun chance cheese1756 cheshair ChkDigit chrisdevtt chrishas35 chrisjones chronos cjohnston coaster Codewaffle cramm crazedpsyc crobison cronosa cyberj cyberspace- cyphase daenney dali dan_johnsin dannib danux DarkSector davidbrenneman Daviey dddh Defektro delaman deni Derailed derks Dev0n devhost devnieL diegobz digicyc digitalfiz dimadima disturbedmime DLange dlogs dmpayton dodobas dols donnex dpn` dqd drager Draggor dross dstufft Dulcin dxtr echos edong23 EdwardIII ehc elmargol ElPollo_ endra eofs erik` eshlox ex-parrot explodes EyePulp falxx farciarz84 fcoelho felipe ferrouswheel fgallina fhahn fission6 fleetfox flrnk fmcgeough foist forivall fpk^away frb freakboy3742 fredyr FrejConnolly Frosh FunkyBob fxdgear gabrielo gazumps gcbirzan GDorn gerard0 gg7 Gika Goopyo GorillaPatch gremly Guddu gumol hackerdownunder hackeron hahainternet haukur Hawkerz hays_ heedly hefest hekman hive-mind hop hwrd|work hyperair iiie iivvoo impaired insatsu intr1nsic iphelix ircnode0 ironfroggy is_null ivan` j_syk JackSparrow jaddison jamxNL JanC jankly Jarus jayne_ jbn jbub jcarbaugh jdunck jeremy jeremyb_ jeverling jezdez Jikan jjasinski jmoiron jnhghy Jochem johnpaulett jonathanchu jordanmessina josePhoenix joshbaptiste jpk jranck88 js_ jtiai juanriaza jvc26 jwa Jygga k_sze KA Kaimei kallek kanja kanyl Katharsis kenbolton kenny kichawa kimett kklimonda_ klobucar kmt KnightHawk3 koleS koniiiik koobs Kronuz ksa ktcsoz ktosiek kuja kurol l3on L42y lapilofu ldlework LeaChim Leeds leetrout LiamM lietu lighty Linovia lokai loltu lonequid luanp lubyou luminous Luyt m3lvin macgregor MarkusH marmalodak mastergreg matt1s mattmcc maxorator maZtaiR mbrochh McMAGIC--Copy md4d melinath merlin83 mfisher michaelfillier mihasya mikalv milkandtang Milossh mindcruzer minism Mitar mito__ mnaser Mogget Morthez mrhanky mstr murr4y mvt MVXA mythmon myusuf3 mz|` naquad natmaster Neithan newzen nickaugust nicklo nicku nielsle nigelb nihilista niluje NimeshNeema Nistur nkryptic nkuttler nn0101 noah256 NomadJim non_117 NoNaMeNo nseger NullableCX numeral oblikoamorale octarine odinho offbyone ojh ojii|afk olasd OldCoder_ ole Oli ollie optixx optiz0r Osmose1000 ovnicraft pagenoare paltman passy paulproteus pembo13 Petazz pfeifer pgurumur phantomcircuit phix phobi phrame phuzion picasso Pici Pilate pjs poswald psino psyolus ptomblin ptone pwf quantumi Quarryman radez_g0n3 rafales Raisins rakm randomdrake rastem rclsilver rdeguy ready RedXIII res22 resixian restless_being restorer_ rethaw revolunet rgenito riboflavin ric` riddle rizumu rje rmarko RobbieAB robvdl Roconda roidelapluie rotham Rundll rydgel samu schinckel schmilblick scottmizo scottyob sduncan sebleblanc sebleier semarjt Sembei semente seocam sephii setmeaway Seveas sh4wn Sharebear simensen simme siovene sipsniffa sitaktif sjaak_trekhaak slackorama SoftwareMaven spirals sputnikus ssbr ssfrr stephenmcd Steve^ stooj streblo streety su-joc suchbeat sudobangbang Svedrin Synthead tankbusta TDJACR tdy_ TeamMat telex telling Terminus- tga thehandler theneb therick Therion theskumar thiderman ticketbot tigerbreath timg tinio tkd tm8522010 tobias1 TodPunk tomaw tomds tompaw trwired tswett Tuim tuv tvsutton twoface1 Tykling uberj ubernostrum ulope unbit Unode uris urth v0lksman Vadtec VadtecWk vetsin vicep vivekrai wassup willer_ Will| winkey_ witchdoc Wu xpen yac yakamo yardena yassine youngster yuwang zadark Zaha zandauxzan zauberpony zaze ZDBioHazard zedas ZeiP zemanel zeograd zero7 zerok zubha Zuchto {in}cognition]
+2013-03-13 20:04:37	--	Channel #django: 495 nicks (1 op, 0 halfops, 0 voices, 494 normals)
+2013-03-13 20:04:58	--	Mode #django [+cnrt]
+2013-03-13 20:04:58	--	Channel created on Sun, 26 Nov 2006 01:42:41
+2013-03-13 20:04:59	fission6	is it bad to use another model to perform a query in another models method? i need to connect the two through content_type
+2013-03-13 20:05:24	-->	phildini (~phildini@sccc-66-78-236-243.smartcity.com) has joined #django
+2013-03-13 20:05:46	FunkyBob	fission6: wha?
+2013-03-13 20:05:49	<--	kenbolton (~kenbolton@ool-43506689.dyn.optonline.net) has quit (Quit: kenbolton)
+2013-03-13 20:06:21	-->	bojo (~bojo@93-141-2-157.adsl.net.t-com.hr) has joined #django
+2013-03-13 20:07:14	<--	tigerbreath (~tigerbrea@falcon.darkhorse.com) has quit (Quit: tigerbreath)
+2013-03-13 20:08:00	<--	michaelfillier (~Michael@CPE602ad0790985-CM602ad0790982.cpe.net.cable.rogers.com) has quit (Quit: Leaving.)
+2013-03-13 20:08:48	<--	foist (4c41cb9e@gateway/web/freenode/ip.76.65.203.158) has quit (Ping timeout: 245 seconds)
+2013-03-13 20:09:55	fission6	FunkyBob: http://dpaste.org/xVLBa/ trying to do some generic modeling
+2013-03-13 20:09:58	-->	cro (~Adium@mountainviewbc.dsl.xmission.com) has joined #django
+2013-03-13 20:10:26	-->	dirn (~dirn@cpe-74-66-80-8.nyc.res.rr.com) has joined #django
+2013-03-13 20:10:52	-->	dmclain (~textual@75-43-17-191.lightspeed.austtx.sbcglobal.net) has joined #django
+2013-03-13 20:11:13	-->	cernekj (~cernekj@5ac7b2d2.bb.sky.com) has joined #django
+2013-03-13 20:11:19	<--	cernekj (~cernekj@5ac7b2d2.bb.sky.com) has left #django
+2013-03-13 20:12:13	pjs	fission6 nothing wrong with that
+2013-03-13 20:12:19	-->	dlam (~user@adsl-75-61-67-99.dsl.pltn13.sbcglobal.net) has joined #django
+2013-03-13 20:12:22	fission6	yea, thats all i got
+2013-03-13 20:12:29	<--	passy (~pascal@131-238-103-86.dynamic.dsl.tng.de) has quit (Ping timeout: 240 seconds)
+2013-03-13 20:12:30	fission6	gonan add one more point
+2013-03-13 20:12:35	fission6	of functionality and repost
+2013-03-13 20:13:11	-->	lucasicf (~lucas@187-78-81-98.user.veloxzone.com.br) has joined #django
+2013-03-13 20:13:52	lucasicf	does anyone here knows any kind of communication (IRC, mailing list) with the django-debug-toolbar community?
+2013-03-13 20:14:25	-->	mike007 (~mike007@50-90-179-153.res.bhn.net) has joined #django
+2013-03-13 20:14:46	FunkyBob	lucasicf: public repo tickets?
+2013-03-13 20:14:50	-->	FSCV (~FSCV@vpnreactor-static44.den.icastcenter.com) has joined #django
+2013-03-13 20:15:34	<--	dirn (~dirn@cpe-74-66-80-8.nyc.res.rr.com) has quit (Ping timeout: 252 seconds)
+2013-03-13 20:16:44	<--	cro (~Adium@mountainviewbc.dsl.xmission.com) has left #django
+2013-03-13 20:18:32	lucasicf	right, i am checking the tickets, but i'd like to ask some questions about issues I'm not finding in previous tickets... a generic way of communication would be better for that
+2013-03-13 20:19:36	FunkyBob	well, you could ask here... and hope...
+2013-03-13 20:19:43	FunkyBob	I'm not sure who any of the DDT devs are
+2013-03-13 20:19:57	-->	foist (4c41cb9e@gateway/web/freenode/ip.76.65.203.158) has joined #django
+2013-03-13 20:20:41	fission6	pjs so this line is ok http://dpaste.org/xVLBa/#l39
+2013-03-13 20:21:00	foist	I have a bunch of models that all have a FK to the same model. Is there anyway I can query to pull all records that have a certain FK?
+2013-03-13 20:21:10	<--	gremly (~gremly@186.28.168.128) has quit (Quit: WeeChat 0.3.8)
+2013-03-13 20:21:13	<--	baconbeckons (~baconbeck@unaffiliated/baconbeckons) has quit (Quit: baconbeckons)
+2013-03-13 20:21:32	lucasicf	ok, thanks. i'll try to figure out something here checking the code and try to ask if needed
+2013-03-13 20:21:56	mattmcc	foist: No, SQL doesn't work that way.
+2013-03-13 20:23:53	<--	blaxter (~blaxter@83.138.250.5.dyn.user.ono.com) has quit (Quit: foo)
+2013-03-13 20:24:19	-->	zoumpis (~quassel@93-97-255-58.zone5.bethere.co.uk) has joined #django
+2013-03-13 20:24:43	<--	sputnikus (~sputnikus@ip-89-102-7-58.net.upcbroadband.cz) has quit (Ping timeout: 258 seconds)
+2013-03-13 20:26:52	bulkan	hello #django
+2013-03-13 20:27:34	FunkyBob	bulky
+2013-03-13 20:27:41	<--	hyperair (~hyperair@ubuntu/member/hyperair) has quit (Ping timeout: 252 seconds)
+2013-03-13 20:27:45	<--	chrisdevtt (~chrisdevt@ec2-54-241-112-212.us-west-1.compute.amazonaws.com) has quit (Remote host closed the connection)
+2013-03-13 20:27:49	aberrant	gah
+2013-03-13 20:27:56	aberrant	django_tables2 won't sort on non-queryset data.
+2013-03-13 20:27:59	aberrant	that's lame
+2013-03-13 20:28:14	<--	zeograd (~zeograd@pcedev.com) has quit (Ping timeout: 255 seconds)
+2013-03-13 20:28:17	<--	rydgel (~rydgel@APoitiers-654-1-110-116.w92-146.abo.wanadoo.fr) has quit (Quit: Leaving...)
+2013-03-13 20:30:42	<--	xpen (~xpen@125.39.34.51) has quit (Ping timeout: 264 seconds)
+2013-03-13 20:31:16	<--	jdunck (~jdunck@django/committer/jdunck) has quit (Quit: Computer has gone to sleep.)
+2013-03-13 20:31:56	<--	RedXIII (~a@99-101-80-144.lightspeed.dybhfl.sbcglobal.net) has quit (Read error: Connection reset by peer)
+2013-03-13 20:33:24	fission6	anyone have strong feelings against this line http://dpaste.org/xVLBa/#l39
+2013-03-13 20:34:07	-->	eternicode (~andrew@ppp-69-208-158-15.dsl.ipltin.ameritech.net) has joined #django
+2013-03-13 20:34:43	<--	hwrd|work (~textual@unaffiliated/hwrdprkns) has quit (Quit: Computer has gone to sleep.)
+2013-03-13 20:36:19	-->	xpen (~xpen@www25075ue.sakura.ne.jp) has joined #django
+2013-03-13 20:38:14	-->	KrauserIII (~Adium@59-120-145-65.HINET-IP.hinet.net) has joined #django
+2013-03-13 20:39:31	<--	poswald (~poswald@FL1-119-240-191-193.tky.mesh.ad.jp) has quit (Quit: poswald)
+2013-03-13 20:40:28	-->	seagreen (~traveller@9.sub-174-254-145.myvzw.com) has joined #django
+2013-03-13 20:41:14	<--	telex (~telex@freeshell.de) has quit (Remote host closed the connection)
+2013-03-13 20:42:25	bulkan	FunkyBob, haha my name always gets shortened to "bulky" :)
+2013-03-13 20:42:37	-->	telex (~telex@freeshell.de) has joined #django
+2013-03-13 20:43:05	<--	{in}cognition (~think@S010600121724ede5.vc.shawcable.net) has quit (Ping timeout: 252 seconds)
+2013-03-13 20:43:07	pjs	fission6 the method definition? why wouldn't that be ok?
+2013-03-13 20:43:17	fission6	i just added more
+2013-03-13 20:43:22	pjs	fission6 if you're referring to the call to AlertNotification query, yea, it's fine
+2013-03-13 20:43:26	<--	streblo (~streblo@204.28.127.10) has quit (Ping timeout: 246 seconds)
+2013-03-13 20:43:28	<--	EyePulp (~eyepulp@c-67-173-34-83.hsd1.il.comcast.net) has quit (Quit: EyePulp)
+2013-03-13 20:44:34	fission6	pjs how about all this http://dpaste.org/K7OgJ/
+2013-03-13 20:44:42	fission6	trying to build alerting and notification
+2013-03-13 20:44:48	FunkyBob	bulkan: I guess we could call you Khaaaaaan! :P
+2013-03-13 20:45:17	bulkan	:)
+2013-03-13 20:46:09	<--	optixx (~optixx@optixx.org) has quit (Ping timeout: 276 seconds)
+2013-03-13 20:46:14	FunkyBob	so... hm... lightboxed gallery...
+2013-03-13 20:46:40	pjs	fission6 looks fine to me. Note: notifications doesn't return anything, which is probably fine. But if not, there's no reason to use list comprehension there. Since you're generating a list that isn't used or necessary
+2013-03-13 20:47:24	fission6	just need to execute each item http://dpaste.org/AcLLZ/
+2013-03-13 20:47:29	fission6	look at the bottom
+2013-03-13 20:48:04	pjs	fission6 yes, I know what you're doing :) There's no need to generate a list to do that. Just iterate through the notifications queryset
+2013-03-13 20:48:15	-->	optixx (~optixx@optixx.org) has joined #django
+2013-03-13 20:48:20	fission6	with a for loop
+2013-03-13 20:48:25	pjs	Yup
+2013-03-13 20:48:48	fission6	ok. yea i feel l ike all of this is pretty decent / flexible just wanted a code review
+2013-03-13 20:48:49	fission6	thanks
+2013-03-13 20:48:59	-->	mgrouchy (~mgrouchy@dhcp107-17-55-16.hil-sfofhhh.sfo.wayport.net) has joined #django
+2013-03-13 20:49:02	pjs	np
+2013-03-13 20:50:04	-->	ppmt (~ppmt@modemcable076.230-82-70.mc.videotron.ca) has joined #django
+2013-03-13 20:51:12	-->	pzuraq (~pzuraq@eduroam-245-8.ucsc.edu) has joined #django
+2013-03-13 20:51:50	-->	hyperair (hyperair@ubuntu/member/hyperair) has joined #django
+2013-03-13 20:53:24	<--	backjlack (~quassel@86.127.43.30) has quit (Remote host closed the connection)
+2013-03-13 20:54:06	<--	FSCV (~FSCV@vpnreactor-static44.den.icastcenter.com) has quit (Quit: Leaving)
+2013-03-13 20:55:24	<--	seagreen (~traveller@9.sub-174-254-145.myvzw.com) has quit (Ping timeout: 264 seconds)
+2013-03-13 20:56:23	--	sduncan is now known as sduncan_afk
+2013-03-13 20:56:51	-->	seagreen (~traveller@145.sub-174-228-66.myvzw.com) has joined #django
+2013-03-13 20:57:04	<--	ticketbot (~ticketbot@ec2-67-202-51-115.compute-1.amazonaws.com) has quit (Remote host closed the connection)
+2013-03-13 20:57:23	-->	ticketbot (~ticketbot@ec2-107-21-167-113.compute-1.amazonaws.com) has joined #django
+2013-03-13 20:58:36	-->	zzing (~zzing@198-91-217-153.cpe.distributel.net) has joined #django
+2013-03-13 20:59:23	<--	echos (echos@2600:3c01::f03c:91ff:fe96:51a2) has quit (Quit: ZNC - http://znc.in)
+2013-03-13 20:59:33	ppmt	hi all. Can someone help me with a problem my brain can't fix ? It is related to parsing what I think is called a dictionary
+2013-03-13 20:59:37	<--	jordanmessina (~jordanmes@pool-173-75-24-234.pitbpa.fios.verizon.net) has quit (Quit: jordanmessina)
+2013-03-13 21:00:28	pjs	ppmt, please just ask your question
+2013-03-13 21:00:32	<--	ssbr (~scorchsab@python/site-packages/ssbr) has quit (Read error: Connection reset by peer)
+2013-03-13 21:00:48	-->	kushal (~kdas@fedora/kushal) has joined #django
+2013-03-13 21:01:41	<--	erik` (~erik@cavia.solidlinks.nl) has quit (Remote host closed the connection)
+2013-03-13 21:01:46	-->	hypolin (hlin@nat/redhat/x-lxrjaujgzdrhoply) has joined #django
+2013-03-13 21:01:52	-->	erik` (~erik@cavia.solidlinks.nl) has joined #django
+2013-03-13 21:02:00	<--	seagreen (~traveller@145.sub-174-228-66.myvzw.com) has quit (Ping timeout: 264 seconds)
+2013-03-13 21:02:20	ppmt	so I have this view which originally reads a model and is then in a template I displayed all the info about each row. I then decided it would be good if I could highlight in red the item that are more than 30 days old.
+2013-03-13 21:02:26	-->	seagreen (~traveller@250.sub-174-237-0.myvzw.com) has joined #django
+2013-03-13 21:02:49	-->	ssbr (~scorchsab@python/site-packages/ssbr) has joined #django
+2013-03-13 21:03:20	ppmt	Looking around I found that you can't really create variable in a template...so I needed to somehow do that in the view
+2013-03-13 21:04:34	pjs	so you're asking how to create a variable?
+2013-03-13 21:04:54	FunkyBob	ppmt: you could solve this in various ways
+2013-03-13 21:04:58	ppmt	pjs no...here the view I created. http://pastebin.com/H8GCLLGe
+2013-03-13 21:05:00	FunkyBob	1: do the work in the view, as you suggest
+2013-03-13 21:05:05	FunkyBob	2: add a method to the model
+2013-03-13 21:05:18	FunkyBob	3: add a custom template tag/filter
+2013-03-13 21:05:45	pjs	ppmt, I would go with option 2 from FunkyBob
+2013-03-13 21:05:50	<--	koleS (~Adium@c27-123.icpnet.pl) has quit (Quit: Leaving.)
+2013-03-13 21:05:52	FunkyBob	ppmt: don't forget that dicts are unordered
+2013-03-13 21:06:01	ppmt	yes 2 sounds very cool :)
+2013-03-13 21:06:36	-->	echos (echos@2600:3c01::f03c:91ff:fe96:51a2) has joined #django
+2013-03-13 21:06:46	ppmt	FunkyBob, I was not too worried about the order to start...the issue is that my model no longer print the data as I expect...the colour is good but not the item
+2013-03-13 21:06:51	<--	anth0ny (~anth0ny@unaffiliated/anth0ny) has quit (Quit: This computer has gone to sleep)
+2013-03-13 21:07:23	FunkyBob	ppmt: you're probably iterating the dict incorrectly
+2013-03-13 21:07:40	FunkyBob	{% for item, colour in item_pair.items %}  ?
+2013-03-13 21:07:50	ppmt	yes
+2013-03-13 21:08:20	-->	jordanmessina (~jordanmes@pool-173-75-24-234.pitbpa.fios.verizon.net) has joined #django
+2013-03-13 21:08:31	<--	kushal (~kdas@fedora/kushal) has quit (Ping timeout: 260 seconds)
+2013-03-13 21:11:02	ppmt	hold one a minute!!!! I just reloaded and now it works as intended!!!
+2013-03-13 21:12:14	ppmt	Well I am shocked...last night it didn't work and now it works...same code!
+2013-03-13 21:12:22	ppmt	may be I was too tired last night
+2013-03-13 21:13:03	-->	hwrd|work (~textual@unaffiliated/hwrdprkns) has joined #django
+2013-03-13 21:13:48	<--	xpen (~xpen@www25075ue.sakura.ne.jp) has quit (Ping timeout: 272 seconds)
+2013-03-13 21:13:59	<--	milkandtang (~shrubbery@70.102.65.58) has quit (Ping timeout: 240 seconds)
+2013-03-13 21:14:35	<--	chrisjones (~chrisjone@c-98-232-143-4.hsd1.or.comcast.net) has quit
+2013-03-13 21:14:40	-->	xpen (~xpen@221.204.229.75) has joined #django
+2013-03-13 21:14:41	<--	xpen (~xpen@221.204.229.75) has quit (Remote host closed the connection)
+2013-03-13 21:15:11	-->	xpen (~xpen@103-11-143-109.rev.as58436.net) has joined #django
+2013-03-13 21:15:27	ppmt	FunkyBob, so now it works but your method no2 (add a method to the model) seems better....can you point me to some material about it?
+2013-03-13 21:16:08	ppmt	The Django is good but man it is tough to find stuff when you are newbie like me :(
+2013-03-13 21:16:41	<--	seagreen (~traveller@250.sub-174-237-0.myvzw.com) has quit (Ping timeout: 246 seconds)
+2013-03-13 21:16:58	<--	fgallina (~fgallina@24.232.145.144) has quit (Ping timeout: 272 seconds)
+2013-03-13 21:16:59	-->	jjmalina (~jjmalina@cpe-74-66-81-111.nyc.res.rr.com) has joined #django
+2013-03-13 21:17:33	<--	foist (4c41cb9e@gateway/web/freenode/ip.76.65.203.158) has quit (Ping timeout: 245 seconds)
+2013-03-13 21:18:47	-->	seagreen (~traveller@nom0048424.nomadic.ncsu.edu) has joined #django
+2013-03-13 21:19:01	<--	SoftwareMaven (~user@65-130-30-40.slkc.qwest.net) has quit (Ping timeout: 256 seconds)
+2013-03-13 21:19:09	<--	ex-parrot (~ex-parrot@116-90-136-82.static.dsl.unleash.net.nz) has quit (Quit: Leaving.)
+2013-03-13 21:19:26	FunkyBob	ppmt: umm... add a method to your model... call it in y our template...
+2013-03-13 21:19:41	-->	ajhansen (~Thunderbi@87-59-122-49-dynamic.dk.customer.tdc.net) has joined #django
+2013-03-13 21:20:04	<--	rotham (~asus@cpe-76-169-30-41.socal.res.rr.com) has quit (Read error: Connection reset by peer)
+2013-03-13 21:20:40	<--	jtiai (~jtiai@62.240.70.253) has quit (Quit: Lost terminal)
+2013-03-13 21:21:38	<--	slackorama (~user@2610:18:540:4:79a1:3406:7d7c:ade6) has quit (Quit: ERC Version 5.3 (IRC client for Emacs))
+2013-03-13 21:21:50	<--	phildini (~phildini@sccc-66-78-236-243.smartcity.com) has quit (Quit: phildini)
+2013-03-13 21:22:46	<--	mike007 (~mike007@50-90-179-153.res.bhn.net) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2013-03-13 21:23:44	-->	czue (~czue@c-24-218-108-76.hsd1.ma.comcast.net) has joined #django
+2013-03-13 21:25:41	ppmt	FunkyBob, by method you mean as it is explained here : https://docs.djangoproject.com/en/1.5/topics/db/models/
+2013-03-13 21:25:47		[http://is.gd/qm9Fsa]
+2013-03-13 21:27:13	FunkyBob	ppmt: I mean a method... on a class...
+2013-03-13 21:27:18	FunkyBob	basic fucking code
+2013-03-13 21:27:35	FunkyBob	    def age_colour(self):  return......
+2013-03-13 21:27:53	-->	Jakey (~Jakey@unaffiliated/jakey) has joined #django
+2013-03-13 21:27:56	ppmt	FunkyBob, ok thanks
+2013-03-13 21:28:12	<--	heedly (~ed@cpe-024-211-131-109.nc.res.rr.com) has quit (Read error: Operation timed out)
+2013-03-13 21:29:15	-->	EyePulp (~eyepulp@173-18-228-191.client.mchsi.com) has joined #django
+2013-03-13 21:29:59	<--	xpen (~xpen@103-11-143-109.rev.as58436.net) has quit (Remote host closed the connection)
+2013-03-13 21:30:36	-->	garryp (~garryp@75.87.131.212) has joined #django
+2013-03-13 21:32:14	<--	caleb_smith (~csmith@rrcs-108-169-138-218.midsouth.biz.rr.com) has quit (Quit: Leaving.)
+2013-03-13 21:33:18	-->	Bloc (~u2@unaffiliated/bloc) has joined #django
+2013-03-13 21:33:56	<--	fmcgeough (~fmcgeough@c-24-98-132-118.hsd1.ga.comcast.net) has quit (Quit: fmcgeough)
+2013-03-13 21:34:08	<--	nicklo (~nicklo@ppp121-44-38-48.lns20.syd6.internode.on.net) has quit (Quit: nicklo)
+2013-03-13 21:35:24	-->	rydgel (~rydgel@APoitiers-654-1-110-116.w92-146.abo.wanadoo.fr) has joined #django
+2013-03-13 21:37:04	<--	ajhansen (~Thunderbi@87-59-122-49-dynamic.dk.customer.tdc.net) has quit (Quit: ajhansen)
+2013-03-13 21:39:23	lucasicf	does anyone know if django-debug-toolbar is being upgraded to Django 1.5? The setup.py forbids running the tests with Django 1.5. When i change the code to be able to run the tests, just 1 test fail and I'm finding why.
+2013-03-13 21:39:40	<--	__machine (~mrmachine@ppp59-167-136-42.static.internode.on.net) has left #django
+2013-03-13 21:39:44	<--	haukur (~haukur@148-107-22-46.fiber.hringdu.is) has quit (Quit: leaving)
+2013-03-13 21:40:24	<--	rydgel (~rydgel@APoitiers-654-1-110-116.w92-146.abo.wanadoo.fr) has quit (Ping timeout: 272 seconds)
+2013-03-13 21:42:15	-->	heedly (~ed@cpe-024-211-131-109.nc.res.rr.com) has joined #django
+2013-03-13 21:42:38	mattmcc	I would check their bug tracker.
+2013-03-13 21:43:50	-->	nicklo (~nicklo@ppp121-44-38-48.lns20.syd6.internode.on.net) has joined #django
+2013-03-13 21:44:57	ppmt	FunkyBob, I now have a method in the model and it works.  Thanks a lot for your guidance and sorry if I exasperated you.
+2013-03-13 21:46:06	<--	pzuraq (~pzuraq@eduroam-245-8.ucsc.edu) has quit (Remote host closed the connection)
+2013-03-13 21:46:21	FunkyBob	ppmt: here's a tip -- stop expecting magic.  Django is Python
+2013-03-13 21:46:42	<--	rafales (~rafales@ip22-c14.gl.digi.pl) has quit (Quit: rafales)
+2013-03-13 21:47:27	-->	ex-parrot (~ex-parrot@203-173-222-130.dialup.ihug.co.nz) has joined #django
+2013-03-13 21:48:12	-->	pzuraq (~pzuraq@eduroam-245-8.ucsc.edu) has joined #django
+2013-03-13 21:48:14	ppmt	FunkyBob, :)  The problem is am not exactly an expert in Python and not everything is as obvious to me as I would like
+2013-03-13 21:48:31	<--	pzuraq (~pzuraq@eduroam-245-8.ucsc.edu) has quit (Read error: Connection reset by peer)
+2013-03-13 21:49:00	ppmt	I am learning but it takes time
+2013-03-13 21:49:01	-->	pzuraq (~pzuraq@eduroam-245-8.ucsc.edu) has joined #django
+2013-03-13 21:49:22	<--	pzuraq (~pzuraq@eduroam-245-8.ucsc.edu) has quit (Read error: Connection reset by peer)
+2013-03-13 21:49:48	-->	pzuraq (~pzuraq@eduroam-245-8.ucsc.edu) has joined #django
+2013-03-13 21:50:08	<--	pzuraq (~pzuraq@eduroam-245-8.ucsc.edu) has quit (Read error: Connection reset by peer)
+2013-03-13 21:50:18	FunkyBob	ppmt: well... look for the simplest solution
+2013-03-13 21:50:36	-->	pzuraq (~pzuraq@eduroam-245-8.ucsc.edu) has joined #django
+2013-03-13 21:50:56	<--	pzuraq (~pzuraq@eduroam-245-8.ucsc.edu) has quit (Read error: Connection reset by peer)
+2013-03-13 21:50:58	<--	revolunet (~juju@212-198-228-11.rev.numericable.fr) has quit (Quit: revolunet)
+2013-03-13 21:51:16	<--	optixx (~optixx@optixx.org) has quit (Ping timeout: 245 seconds)
+2013-03-13 21:51:23	-->	pzuraq (~pzuraq@eduroam-245-8.ucsc.edu) has joined #django
+2013-03-13 21:51:27	ppmt	FunkyBob, I will try
+2013-03-13 21:51:32	-->	michaeldavis (~michaelda@173-25-202-182.client.mchsi.com) has joined #django
+2013-03-13 21:51:40	<--	pzuraq (~pzuraq@eduroam-245-8.ucsc.edu) has quit (Read error: Connection reset by peer)
+2013-03-13 21:52:13	-->	pzuraq (~pzuraq@eduroam-245-8.ucsc.edu) has joined #django
+2013-03-13 21:52:27	<--	mindcruzer (~mindcruze@149.255.33.155) has quit (Quit: Leaving)
+2013-03-13 21:52:34	<--	pzuraq (~pzuraq@eduroam-245-8.ucsc.edu) has quit (Read error: Connection reset by peer)
+2013-03-13 21:53:00	-->	pzuraq (~pzuraq@eduroam-245-8.ucsc.edu) has joined #django
+2013-03-13 21:53:15	-->	optixx (~optixx@optixx.org) has joined #django
+2013-03-13 21:53:17	<--	pzuraq (~pzuraq@eduroam-245-8.ucsc.edu) has quit (Read error: Connection reset by peer)
+2013-03-13 21:53:48	-->	pzuraq (~pzuraq@eduroam-245-8.ucsc.edu) has joined #django
+2013-03-13 21:54:07	<--	pzuraq (~pzuraq@eduroam-245-8.ucsc.edu) has quit (Read error: Connection reset by peer)
+2013-03-13 21:54:37	-->	pzuraq (~pzuraq@eduroam-245-8.ucsc.edu) has joined #django
+2013-03-13 21:55:01	<--	pzuraq (~pzuraq@eduroam-245-8.ucsc.edu) has quit (Read error: Connection reset by peer)
+2013-03-13 21:55:25	-->	pzuraq (~pzuraq@eduroam-245-8.ucsc.edu) has joined #django
+2013-03-13 21:55:46	<--	pzuraq (~pzuraq@eduroam-245-8.ucsc.edu) has quit (Read error: Connection reset by peer)
+2013-03-13 21:56:13	-->	pzuraq (~pzuraq@eduroam-245-8.ucsc.edu) has joined #django
+2013-03-13 21:56:18	-->	savid (~savid@cpe-76-185-28-213.tx.res.rr.com) has joined #django
+2013-03-13 21:56:28	<--	pzuraq (~pzuraq@eduroam-245-8.ucsc.edu) has quit (Read error: Connection reset by peer)
+2013-03-13 21:57:00	-->	pzuraq (~pzuraq@eduroam-245-8.ucsc.edu) has joined #django
+2013-03-13 21:57:16	<--	pzuraq (~pzuraq@eduroam-245-8.ucsc.edu) has quit (Read error: Connection reset by peer)
+2013-03-13 21:57:48	-->	pzuraq (~pzuraq@eduroam-245-8.ucsc.edu) has joined #django
+2013-03-13 21:58:09	<--	pzuraq (~pzuraq@eduroam-245-8.ucsc.edu) has quit (Read error: Connection reset by peer)
+2013-03-13 21:58:37	-->	pzuraq (~pzuraq@eduroam-245-8.ucsc.edu) has joined #django
+2013-03-13 21:58:56	<--	pzuraq (~pzuraq@eduroam-245-8.ucsc.edu) has quit (Read error: Connection reset by peer)
+2013-03-13 21:59:11	<--	vicep (~andre@a85-139-204-109.cpe.netcabo.pt) has quit (Quit: Leaving)
+2013-03-13 21:59:25	-->	pzuraq (~pzuraq@eduroam-245-8.ucsc.edu) has joined #django
+2013-03-13 21:59:32	<--	forivall (~quassel@208.91.114.4) has quit (Ping timeout: 252 seconds)
+2013-03-13 21:59:46	<--	pzuraq (~pzuraq@eduroam-245-8.ucsc.edu) has quit (Read error: Connection reset by peer)
+2013-03-13 22:00:14	-->	pzuraq (~pzuraq@eduroam-245-8.ucsc.edu) has joined #django
+2013-03-13 22:00:28	<--	pzuraq (~pzuraq@eduroam-245-8.ucsc.edu) has quit (Read error: Connection reset by peer)
+2013-03-13 22:00:58	<--	nicklo (~nicklo@ppp121-44-38-48.lns20.syd6.internode.on.net) has quit (Quit: nicklo)
+2013-03-13 22:01:01	-->	pzuraq (~pzuraq@eduroam-245-8.ucsc.edu) has joined #django
+2013-03-13 22:01:22	<--	pzuraq (~pzuraq@eduroam-245-8.ucsc.edu) has quit (Read error: Connection reset by peer)
+2013-03-13 22:01:24	-->	nicklo (~nicklo@ppp121-44-38-48.lns20.syd6.internode.on.net) has joined #django
+2013-03-13 22:01:48	-->	pzuraq (~pzuraq@eduroam-245-8.ucsc.edu) has joined #django
+2013-03-13 22:02:05	<--	pzuraq (~pzuraq@eduroam-245-8.ucsc.edu) has quit (Read error: Connection reset by peer)
+2013-03-13 22:02:11	<--	zemanel (~zemanel@89.181.246.157) has quit (Quit: D'Artagnan m*f*)
+2013-03-13 22:02:37	-->	pzuraq (~pzuraq@eduroam-245-8.ucsc.edu) has joined #django
+2013-03-13 22:02:52	<--	pzuraq (~pzuraq@eduroam-245-8.ucsc.edu) has quit (Read error: Connection reset by peer)
+2013-03-13 22:03:25	-->	pzuraq (~pzuraq@eduroam-245-8.ucsc.edu) has joined #django
+2013-03-13 22:03:46	<--	pzuraq (~pzuraq@eduroam-245-8.ucsc.edu) has quit (Read error: Connection reset by peer)
+2013-03-13 22:04:12	-->	pzuraq (~pzuraq@eduroam-245-8.ucsc.edu) has joined #django
+2013-03-13 22:04:33	<--	pzuraq (~pzuraq@eduroam-245-8.ucsc.edu) has quit (Read error: Connection reset by peer)
+2013-03-13 22:05:49	-->	rydgel (~rydgel@APoitiers-654-1-110-116.w92-146.abo.wanadoo.fr) has joined #django
+2013-03-13 22:05:50	-->	pzuraq (~pzuraq@eduroam-245-8.ucsc.edu) has joined #django
+2013-03-13 22:05:58	<--	jordanmessina (~jordanmes@pool-173-75-24-234.pitbpa.fios.verizon.net) has quit (Quit: jordanmessina)
+2013-03-13 22:06:06	<--	pzuraq (~pzuraq@eduroam-245-8.ucsc.edu) has quit (Read error: Connection reset by peer)
+2013-03-13 22:06:07	<--	cewing (~cewing@71-35-151-107.tukw.qwest.net) has quit (Quit: snore...)
+2013-03-13 22:06:24	<--	rydgel (~rydgel@APoitiers-654-1-110-116.w92-146.abo.wanadoo.fr) has quit (Read error: No route to host)
+2013-03-13 22:07:51	-->	pzuraq (~pzuraq@eduroam-245-8.ucsc.edu) has joined #django
+2013-03-13 22:08:07	<--	pzuraq (~pzuraq@eduroam-245-8.ucsc.edu) has quit (Read error: Connection reset by peer)
+2013-03-13 22:08:49	<--	spirals (~spirals@unaffiliated/spirals) has quit (Read error: Connection reset by peer)
+2013-03-13 22:08:54	<--	czue (~czue@c-24-218-108-76.hsd1.ma.comcast.net) has quit (Ping timeout: 272 seconds)
+2013-03-13 22:09:01	-->	pzuraq (~pzuraq@eduroam-245-8.ucsc.edu) has joined #django
+2013-03-13 22:09:22	<--	pzuraq (~pzuraq@eduroam-245-8.ucsc.edu) has quit (Read error: Connection reset by peer)
+2013-03-13 22:09:26	-->	dirn (~dirn@cpe-74-66-80-8.nyc.res.rr.com) has joined #django
+2013-03-13 22:09:48	-->	pzuraq (~pzuraq@eduroam-245-8.ucsc.edu) has joined #django
+2013-03-13 22:10:09	<--	pzuraq (~pzuraq@eduroam-245-8.ucsc.edu) has quit (Read error: Connection reset by peer)
+2013-03-13 22:10:15	<--	ktcsoz (~ktcsoz@d-173-44-123-112.cpe.metrocast.net) has quit (Remote host closed the connection)
+2013-03-13 22:10:31	<--	OldCoder_ (~OldCoder_@209.237.22.146) has quit (Remote host closed the connection)
+2013-03-13 22:10:38	-->	pzuraq (~pzuraq@eduroam-245-8.ucsc.edu) has joined #django
+2013-03-13 22:10:56	<--	pzuraq (~pzuraq@eduroam-245-8.ucsc.edu) has quit (Read error: Connection reset by peer)
+2013-03-13 22:11:16	-->	ktcsoz (~ktcsoz@d-173-44-123-112.cpe.metrocast.net) has joined #django
+2013-03-13 22:11:24	-->	pzuraq (~pzuraq@eduroam-245-8.ucsc.edu) has joined #django
+2013-03-13 22:11:42	<--	pzuraq (~pzuraq@eduroam-245-8.ucsc.edu) has quit (Read error: Connection reset by peer)
+2013-03-13 22:12:12	-->	pzuraq (~pzuraq@eduroam-245-8.ucsc.edu) has joined #django
+2013-03-13 22:12:28	<--	pzuraq (~pzuraq@eduroam-245-8.ucsc.edu) has quit (Read error: Connection reset by peer)
+2013-03-13 22:13:00	-->	pzuraq (~pzuraq@eduroam-245-8.ucsc.edu) has joined #django
+2013-03-13 22:13:17	<--	pzuraq (~pzuraq@eduroam-245-8.ucsc.edu) has quit (Read error: Connection reset by peer)
+2013-03-13 22:13:27	-->	spirals (~spirals@unaffiliated/spirals) has joined #django
+2013-03-13 22:13:49	-->	pzuraq (~pzuraq@eduroam-245-8.ucsc.edu) has joined #django
+2013-03-13 22:14:09	<--	pzuraq (~pzuraq@eduroam-245-8.ucsc.edu) has quit (Read error: Connection reset by peer)
+2013-03-13 22:14:19	<--	seagreen (~traveller@nom0048424.nomadic.ncsu.edu) has quit (Ping timeout: 264 seconds)
+2013-03-13 22:14:36	-->	pzuraq (~pzuraq@eduroam-245-8.ucsc.edu) has joined #django
+2013-03-13 22:14:52	<--	pzuraq (~pzuraq@eduroam-245-8.ucsc.edu) has quit (Read error: Connection reset by peer)
+2013-03-13 22:15:25	-->	pzuraq (~pzuraq@eduroam-245-8.ucsc.edu) has joined #django
+2013-03-13 22:15:46	<--	pzuraq (~pzuraq@eduroam-245-8.ucsc.edu) has quit (Read error: Connection reset by peer)
+2013-03-13 22:16:01	<--	dali (~darylanto@eth209.vic.adsl.internode.on.net) has quit (Quit: dali)
+2013-03-13 22:16:12	-->	pzuraq (~pzuraq@eduroam-245-8.ucsc.edu) has joined #django
+2013-03-13 22:16:30	<--	pzuraq (~pzuraq@eduroam-245-8.ucsc.edu) has quit (Read error: Connection reset by peer)
+2013-03-13 22:16:56	-->	pzuraq (~pzuraq@eduroam-245-8.ucsc.edu) has joined #django
+2013-03-13 22:18:36	-->	dali (~darylanto@eth209.vic.adsl.internode.on.net) has joined #django
+2013-03-13 22:25:08	v0lksman	trying to use a custom User model.  I defined USERNAME_FIELD = 'email' on my model but I get this on sync:  FieldError: Unknown field(s) (username) specified for Person
+2013-03-13 22:25:15	<--	pzuraq (~pzuraq@eduroam-245-8.ucsc.edu) has quit (Ping timeout: 256 seconds)
+2013-03-13 22:26:21	<--	garryp (~garryp@75.87.131.212) has quit (Remote host closed the connection)
+2013-03-13 22:27:01	-->	garryp (~garryp@75.87.131.212) has joined #django
+2013-03-13 22:27:12	<--	iiie (~iiie@sccc-66-78-236-243.smartcity.com) has quit (Ping timeout: 264 seconds)
+2013-03-13 22:27:30	-->	anth0ny (~anth0ny@unaffiliated/anth0ny) has joined #django
+2013-03-13 22:30:49	-->	pzuraq (~pzuraq@eduroam-245-8.ucsc.edu) has joined #django
+2013-03-13 22:31:16	FunkyBob	ah... can hear the noise from the grand prix now...
+2013-03-13 22:32:40	-->	anth0ny_ (~anth0ny@unaffiliated/anth0ny) has joined #django
+2013-03-13 22:34:34	-->	l0st1 (~l0st1@ool-457e3e81.dyn.optonline.net) has joined #django
+2013-03-13 22:35:02	<--	fission6 (~fission6@cpe-74-69-111-201.rochester.res.rr.com) has quit (Quit: fission6)
+2013-03-13 22:36:46	<--	anth0ny (~anth0ny@unaffiliated/anth0ny) has quit (Ping timeout: 272 seconds)
+2013-03-13 22:40:47	<--	k_sze (~Kira@n219079122203.netvigator.com) has quit (Ping timeout: 258 seconds)
+2013-03-13 22:40:49	v0lksman	any tips on where I've gone wrong?  http://dpaste.org/pOZHq/
+2013-03-13 22:41:12	<--	cramm (~ramiro@grulic/root/cramm) has quit (Quit: Leaving)
+2013-03-13 22:46:58	<--	lucasicf (~lucas@187-78-81-98.user.veloxzone.com.br) has quit (Quit: Konversation terminated!)
+2013-03-13 22:50:25	-->	robbyoconnor (~wakawaka@guifications/user/r0bby) has joined #django
+2013-03-13 22:51:18	nkryptic	v0lksman: is the error from syncdb?  if so, can you paste the full traceback from "./manage.py syncdb --traceback" then
+2013-03-13 22:53:44	-->	seagreen (~traveller@nom0048424.nomadic.ncsu.edu) has joined #django
+2013-03-13 22:54:56	<--	Therion (~dean@68-114-137-48.dhcp.jcsn.tn.charter.com) has quit (Quit: !fooP)
+2013-03-13 22:55:50	-->	ianawilson (~ianawilso@cpe-184-153-122-32.rochester.res.rr.com) has joined #django
+2013-03-13 22:55:54	-->	xpen (~xpen@103-11-143-109.rev.as58436.net) has joined #django
+2013-03-13 22:57:32	<--	gazumps (~anonymous@S0106002618185fee.vc.shawcable.net) has quit (Quit: gazumps)
+2013-03-13 22:59:30	<--	zauberpony (~oxy@cl-1609.dus-01.de.sixxs.net) has quit (Ping timeout: 264 seconds)
+2013-03-13 23:00:50	-->	milkandtang (~shrubbery@173-11-9-217-oregon.hfc.comcastbusiness.net) has joined #django
+2013-03-13 23:02:18	v0lksman	nkryptic: ahhh!  thanks!  was wondering how to get a trace...it's a third party module causing the issue I believe
+2013-03-13 23:04:04	-->	marsam (~mario@190.222.171.63) has joined #django
+2013-03-13 23:04:57	-->	les_sylvains (~les_sylva@modemcable225.23-162-184.mc.videotron.ca) has joined #django
+2013-03-13 23:07:53	<--	Raisins (~Raisins@c-98-210-184-159.hsd1.ca.comcast.net) has quit (Quit: Raisins)
+2013-03-13 23:08:09	-->	hoot (~hoot@90.150.124.79) has joined #django
+2013-03-13 23:08:31	-->	nedbat (~nedbat@python/psf/nedbat) has joined #django
+2013-03-13 23:08:42	<--	jcarbaugh (~jcarbaugh@216-15-37-167.c3-0.gth-ubr1.lnh-gth.md.cable.rcn.com) has quit
+2013-03-13 23:10:05	<--	jjmalina (~jjmalina@cpe-74-66-81-111.nyc.res.rr.com) has quit (Quit: jjmalina)
+2013-03-13 23:13:05	-->	bmonty (~anonymous@udp215499uds.hawaiiantel.net) has joined #django
+2013-03-13 23:14:20	<--	seagreen (~traveller@nom0048424.nomadic.ncsu.edu) has quit (Ping timeout: 260 seconds)
+2013-03-13 23:14:44	bulkan	DRY: create an app for it
+2013-03-13 23:15:09	<--	les_sylvains (~les_sylva@modemcable225.23-162-184.mc.videotron.ca) has quit (Quit: Leaving)
+2013-03-13 23:19:21	timg	django.core.exceptions.ImproperlyConfigured: Error loading MySQLdb module: No module named MySQLdb
+2013-03-13 23:19:27	<--	dali (~darylanto@eth209.vic.adsl.internode.on.net) has quit (Quit: dali)
+2013-03-13 23:19:40	timg	Why would this happen in one django project but not another? Both of them are using the same virtualenv
+2013-03-13 23:19:47	timg	This is when trying to runserver
+2013-03-13 23:20:01	<--	sjaak_trekhaak (~sjaak@52495740.cm-4-2b.dynamic.ziggo.nl) has quit (Ping timeout: 245 seconds)
+2013-03-13 23:20:01	<--	Jarus (~jarus@irc.thelabmill.de) has quit (Ping timeout: 245 seconds)
+2013-03-13 23:20:05	timg	also, it works fine in the terminal
+2013-03-13 23:20:28	-->	dali (~darylanto@eth209.vic.adsl.internode.on.net) has joined #django
+2013-03-13 23:20:31	timg	pycharm is where it is not working
+2013-03-13 23:21:20	-->	Jarus (~jarus@irc.thelabmill.de) has joined #django
+2013-03-13 23:21:46	FunkyBob	well, there's 1 point for not using an IDE
+2013-03-13 23:23:15	-->	sjaak_trekhaak (~sjaak@52495740.cm-4-2b.dynamic.ziggo.nl) has joined #django
+2013-03-13 23:24:28	<--	Bubo (~Bubo@unaffiliated/bubo) has quit
+2013-03-13 23:24:53	FunkyBob	one point for pycharm is... the auto-complete is not automatic!
+2013-03-13 23:25:08	<--	aberrant (~aberrant@unaffiliated/aberrant) has quit (Quit: aberrant)
+2013-03-13 23:25:31	-->	seagreen (~traveller@nom0048424.nomadic.ncsu.edu) has joined #django
+2013-03-13 23:26:59	<--	elmargol (~elmargol@host27-110-dynamic.31-79-r.retail.telecomitalia.it) has quit (Ping timeout: 252 seconds)
+2013-03-13 23:27:40	-->	michaelfillier (~Michael@CPE602ad0790985-CM602ad0790982.cpe.net.cable.rogers.com) has joined #django
+2013-03-13 23:28:31	-->	chrismed (~chrismed@abjy234.neoplus.adsl.tpnet.pl) has joined #django
+2013-03-13 23:31:41	<--	seagreen (~traveller@nom0048424.nomadic.ncsu.edu) has quit (Ping timeout: 245 seconds)
+2013-03-13 23:31:53	bmonty	any ideas why manage.py can find my django settings module but django-admin.py can't?  I have my settings in an app and reference it like "app.settings.production".
+2013-03-13 23:32:43	-->	elmargol (~elmargol@host27-110-dynamic.31-79-r.retail.telecomitalia.it) has joined #django
+2013-03-13 23:32:49	FunkyBob	bmonty: because that's the whole point of manage.py ?  to know where your settings are
+2013-03-13 23:33:10	<--	nedbat (~nedbat@python/psf/nedbat) has quit (Ping timeout: 252 seconds)
+2013-03-13 23:33:18	<--	anth0ny_ (~anth0ny@unaffiliated/anth0ny) has quit (Quit: This computer has gone to sleep)
+2013-03-13 23:33:23	FunkyBob	it's django-admin.py with DJANGO_SETTINGS_MODULE env var defaulted
+2013-03-13 23:33:50	bmonty	FunkyBob: I'm trying to follow some of the patterns in the two scoops of Django book and it recommends using django admin.  I also have DJANGO_SETTINGS_MODULE set.

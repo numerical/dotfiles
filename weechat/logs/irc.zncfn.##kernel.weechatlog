@@ -1,0 +1,64 @@
+2013-03-13 20:04:35	-->	numeral (~numeral@198.23.228.15) has joined ##kernel
+2013-03-13 20:04:35	--	Topic for ##kernel is "Channel for linux,unix-like kernel discussion | BOOKS lwn.net/Kernel/LDD3 | BROWSER lxr.linux.no/source | PASTEBIN codepad.org | HOWTO http://goo.gl/wzsul http://goo.gl/zi5V"
+2013-03-13 20:04:35	--	Topic set by jnxa on Mon, 12 Mar 2012 07:09:58
+2013-03-13 20:04:35	--	Nicks ##kernel: [@ChanServ [0x1a] _eko aca20031 adam_g aimka alamar alfplayer Anusko Ard1t ari-_-e Attie Badbit bernardofpc bizhanMona blami BlastHardcheese blueCmd BLZbubba Boohbah bparker Bry8Star Budd Buster carc caspinol caveat- ccxCZ cdidd Chaser_ chasmo chille_ christopher_ chronos CipherWizard classix clopez codertux codyps ColdFyre Cyclohexane Dad` danieldg dansan deavidsedice deep13 deizhu djczing dju DLange e-ndy eagles0513875 edk elbeardmorez Elecam evilicey evilman_work EViLSLuT fairuz fallout fam|work fasta Fira fire flu- fourth_node frag4 froztbyte fw Gaudasse gavinguo gothos guampa gustav_ harrow heftig heinrich5991 hi117 hziSot Iiiak ikonia impulse imunsie ivan\ ix007 james_h74 jefferai jehan jero jevin jevin_ jirka_on_d jlebar joe9 joeyli joshc JPT kantlivelong karelbarel Kasreyn kcm1700 klnlnll konqui korsi_ kurti larks lbt lipiec Losowski lpe lrak lyindArk Marex markovh master_o1_master McMAGIC--Copy Milos_SD mingdao MissionCritical misuzu mnaser moli_ mpagano_ muteki neunon nex6 nn0101 numeral nyuszika7h ohsix oneforall2 Orginator oriba otherflow pdc peper PioneerAxon pppingme quasisane RageD raineys ram_p_away Raz-- rekoil_ rezax robink roquetto Sargun Scramblejams scrts sean sftp shal3r sharky Shiina Simon- sjs205 sl33v3 sniffells so Somasis Spectral1ave SwenTjuln syst3mw0rm T-One tessier TheJH TomWij TrXuk txomon|nqas Tylerdurden2nd utopia_euphoria vad vaidy venom00ut vmeson VtS WallRat007 wapiflapi wbooze wdouglas wilder williamv WormDrink xdnny_ xeon-enouf xxtjaxx y0gurt yosafbridge zorbyte Zougloub zykes-]
+2013-03-13 20:04:35	--	Channel ##kernel: 192 nicks (1 op, 0 halfops, 0 voices, 191 normals)
+2013-03-13 20:04:39	--	Mode ##kernel [+Ccnt]
+2013-03-13 20:04:39	--	Channel created on Sun, 26 Nov 2006 01:42:43
+2013-03-13 20:07:44	<--	joeyli (~joeyli@124.11.22.254) has quit (Ping timeout: 246 seconds)
+2013-03-13 20:08:41	<--	rezax (~badly@95.167.99.2) has quit (Quit: Lost terminal)
+2013-03-13 20:18:10	-->	akong (~akong@60.10.96.22) has joined ##kernel
+2013-03-13 20:23:53	<--	wbooze (~wbooze@xdsl-87-79-194-214.netcologne.de) has quit (Read error: Connection reset by peer)
+2013-03-13 20:33:11	<--	codyps (~cody@32.97.110.52) has quit (Ping timeout: 252 seconds)
+2013-03-13 20:35:29	<--	venom00ut (~venom00@unaffiliated/venom00) has quit (Ping timeout: 240 seconds)
+2013-03-13 20:41:49	-->	verty_ (~verty_@host-92-23-99-208.as13285.net) has joined ##kernel
+2013-03-13 20:43:29	verty_	hello, what can cause this behaviour?  When I play a sound using alsa, the keyboard goes haywire and stops taking input for the duration of the song/clip -- but cpu use shows nothing, all idle
+2013-03-13 20:43:55	verty_	this started when I added a sound card that I used to have before and which worked
+2013-03-13 20:44:08	verty_	that was probably with kernel 3.2 that it worked
+2013-03-13 20:44:56	verty_	the keyboard seems to repeat the last character pressed continuously in the haywire state
+2013-03-13 20:45:11	verty_	the driver is cs46xx
+2013-03-13 20:45:31	verty_	now using 3.8
+2013-03-13 20:45:59	verty_	I don't see how the sound card can interfere with the keyboard
+2013-03-13 20:46:17	verty_	but there is nothing broken here, this is what doesn't make sense
+2013-03-13 20:46:57	<--	guampa (~guampa@unaffiliated/guampa) has quit (Ping timeout: 258 seconds)
+2013-03-13 20:47:56	verty_	I'm going to disable all OSS emulation as an attempt to simplify things
+2013-03-13 20:48:34	verty_	the only other change is that I have change video card
+2013-03-13 20:48:41	verty_	+d
+2013-03-13 20:50:09	verty_	and the cpu changed to a dual core, same board though
+2013-03-13 20:52:22	<--	otherflow (~otherflow@vil69-4-82-228-207-179.fbx.proxad.net) has quit (Quit: Quitte)
+2013-03-13 20:52:36	-->	baba (~fire@unaffiliated/security) has joined ##kernel
+2013-03-13 20:52:59	-->	master_of_master (~master_of@p4FF24BF0.dip.t-dialin.net) has joined ##kernel
+2013-03-13 20:55:30	<--	fire (~fire@unaffiliated/security) has quit (Ping timeout: 260 seconds)
+2013-03-13 20:56:19	<--	master_o1_master (~master_of@p4FF24CAD.dip.t-dialin.net) has quit (Ping timeout: 264 seconds)
+2013-03-13 20:57:05	verty_	bye
+2013-03-13 20:57:07	<--	verty_ (~verty_@host-92-23-99-208.as13285.net) has left ##kernel ("Leaving")
+2013-03-13 20:58:59	<--	caspinol (~caspinol@109.255.127.48) has quit (Quit: Leaving)
+2013-03-13 21:05:03	-->	codyps (~cody@c-24-20-25-121.hsd1.wa.comcast.net) has joined ##kernel
+2013-03-13 21:12:51	<--	baba (~fire@unaffiliated/security) has quit (Quit: WeeChat 0.4.0)
+2013-03-13 21:13:48	--	ram_p_away is now known as ram__
+2013-03-13 21:23:30	<--	oriba (~oriba@e178039068.adsl.alicedsl.de) has quit (Quit: oriba)
+2013-03-13 21:26:03	<--	Buster (Buster@buster.ipv6.rc0.ru) has quit
+2013-03-13 21:47:40	-->	master_o1_master (~master_of@p4FF244AC.dip.t-dialin.net) has joined ##kernel
+2013-03-13 21:50:55	<--	master_of_master (~master_of@p4FF24BF0.dip.t-dialin.net) has quit (Ping timeout: 264 seconds)
+2013-03-13 22:17:06	-->	jnickel (~quassel@cpe-173-172-90-110.austin.res.rr.com) has joined ##kernel
+2013-03-13 22:18:02	<--	jnickel (~quassel@cpe-173-172-90-110.austin.res.rr.com) has quit (Remote host closed the connection)
+2013-03-13 22:19:18	-->	joeyli (joeyli@nat/novell/x-owcquinysdwzizcj) has joined ##kernel
+2013-03-13 22:26:15	-->	hpt (~hpt@202.108.130.138) has joined ##kernel
+2013-03-13 22:30:29	-->	huzaifas (~huzaifas@101.63.25.176) has joined ##kernel
+2013-03-13 22:39:02	<--	Losowski (~ejm@80.50.231.58) has quit (Quit: *Exclusively Cutting Edge* | Linux Galicja 3.9.0-rc2-git-f6161aa-Pogorze-Karpackie-CUSTOM-KERNEL #1 Wed Mar 13 12:25:19 CET 2013 x86_64 GNU/Linux | ...)
+2013-03-13 22:43:14	<--	akong (~akong@60.10.96.22) has quit (Ping timeout: 255 seconds)
+2013-03-13 22:44:55	<--	huzaifas (~huzaifas@101.63.25.176) has quit (Ping timeout: 264 seconds)
+2013-03-13 22:45:06	<--	Tylerdurden2nd (~Tylerdurd@46.12.103.249.dsl.dyn.forthnet.gr) has quit (Ping timeout: 276 seconds)
+2013-03-13 22:46:25	-->	klebers (~Kleber@201.82.138.244) has joined ##kernel
+2013-03-13 23:00:47	-->	DoctorDude (~Jake@unaffiliated/doctordude) has joined ##kernel
+2013-03-13 23:03:58	<--	DoctorDude (~Jake@unaffiliated/doctordude) has left ##kernel
+2013-03-13 23:04:09	-->	s9 (~s9@CPE002401e5286c-CM00080d71304c.cpe.net.cable.rogers.com) has joined ##kernel
+2013-03-13 23:04:30	<--	s9 (~s9@CPE002401e5286c-CM00080d71304c.cpe.net.cable.rogers.com) has left ##kernel
+2013-03-13 23:06:30	-->	LiaoTao (~aden@unaffiliated/liaotao) has joined ##kernel
+2013-03-13 23:10:30	-->	akong (~akong@60.10.96.22) has joined ##kernel
+2013-03-13 23:16:17	-->	d4de (~olorin@41.129.68.1) has joined ##kernel
+2013-03-13 23:16:17	<--	d4de (~olorin@41.129.68.1) has quit (Changing host)
+2013-03-13 23:16:17	-->	d4de (~olorin@unaffiliated/d4de) has joined ##kernel
+2013-03-13 23:25:07	-->	shuduo (~sangshudu@116.213.97.190) has joined ##kernel
+2013-03-13 23:26:47	-->	studybo__ (~studybot_@gateway/tor-sasl/studybot/x-68286794) has joined ##kernel
+2013-03-13 23:32:06	-->	ksh (~user@gateway/tor-sasl/skulls) has joined ##kernel

@@ -1,0 +1,39 @@
+[user]
+	name = numeral
+	email = numerical@gmail.com
+[code]
+	editor = vim
+[color]
+	ui = on
+[merge]
+	tool = vimdiff
+	log = true
+[push]
+	default = current
+[help]
+	autocorrect = 1
+[log]
+	decorate = full
+[diff]
+	rename = copies
+[web]
+	browser = aurora
+[browser "aurora"]
+	cmd = aurora
+[alias]
+	co = checkout
+	br = branch
+[branch "master"]
+	remote = origin
+	merge = master
+[branch "upstream"]
+	remote = upstream
+	merge = master
+[sendemail]
+	smtpserver = mail.overambitio.us
+	smtpserverport = 587
+	smtpencryption = tls
+	smtpuser = numeral
+	confirm = auto
+
+# vim: set ft=gitconfig noet:

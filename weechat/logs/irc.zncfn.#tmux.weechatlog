@@ -1,0 +1,56 @@
+2013-03-13 20:04:38	-->	numeral (~numeral@198.23.228.15) has joined #tmux
+2013-03-13 20:04:38	--	Topic for #tmux is "tmux is a "terminal multiplexer" | http://tmux.sourceforge.net/ | https://lists.sourceforge.net/lists/listinfo/tmux-users | https://lists.sourceforge.net/lists/listinfo/tmux-cvs | Man page: http://www.openbsd.org/cgi-bin/man.cgi?query=tmux&sektion=1"
+2013-03-13 20:04:38	--	Topic set by mikeputnam (~mike@pdpc/supporter/active/mikeputnam) on Wed, 27 Apr 2011 09:00:22
+2013-03-13 20:04:38	--	Nicks #tmux: [[Neurotic] __JK__ _br_ _flow_ abumirqaan Airwave Altimeter amranu andrejpan Aprogas Archtivity arduix averell bdrewery bolidz bps brainvision c_14 calmar_ cargill_ caseydriscoll caveat- ccxCZ cewood chiel chlunde chris2 ChromeSilver classix claude2 Code_Bleu colona cromag cschneid Cueball_ cYmen d48 dandersson daniel_- daurnimator dbewley deepy denile der-onkel dgfitch diniwed1 djinni_ djp dominikh dropdrive druff dubium dweez_ dytrivedi eboy effekt eightyeight eMBee emid emmanuelux ephemer0l epta eres eternaleye ezpl0it faen fallout fasta faxm0dem fignew fire floppyears fosco frew ft gartenzaun gazoombo gf3 gtc guardian Guest28068 guse hagebake heckman herbnerder hlindset IcePic iElectric j416 jakllsch jasonwryan jayne_ jdav_gone jgaui jimeh joe9 johntash jrib jstemmer jtrucks jwbirdsong KaiSforza kart0ffelsack Kays kenyon kirkland kotp krok ksa lasers Lenzoid levifig luckman212 luminous lyddonb m_101 majoh marmalodak marowit matled Meldanya mephux mikeputnam mithro mokomull mren|off mrtazz mtk mva necronian Nei NicM nimrod_afk numeral nutron ocharles octal ohcibi Olipro ore ormaaj osse ozzloy peccu1 perigrin pi8027 Pikel pitrh plavcik_ pmatulis_ pothos preller prettyrobots psil q_revert Quazgaa r4nt radhermit radio23 rawplayer redbrain remi Rhonda RichardBronosky_ riddley rking robertk roknir_ rudi_s ruskie rwestphal samlt scribbles SeanTAllen setheus Silly simabeis solj sontek Squid_Tamer Sthebig swimmer t355u5 tcunha tdignan techiem2-r techlife telex Tenchworks terminalmage TeslaTest TheBrayn TheFuzzball theneb_ thomas_adam thomasvs tinystoat tittof tlonim tlp tomaw tos9 tris trn tru_tru tureba_ twisted` tyrmored Ulrar untaken vehk vmeson Voting wart_ watsonalgas Whoop WillyKaze Will| wired woddf2 xy yac Yaniel yeled Yorokobi zacts Zed` zeltak zendeavor zivester zorael zorzar zu_ Zucca zykotick9]
+2013-03-13 20:04:38	--	Channel #tmux: 235 nicks (0 ops, 0 halfops, 0 voices, 235 normals)
+2013-03-13 20:05:10	--	Mode #tmux [+cnt]
+2013-03-13 20:05:10	--	Channel created on Thu, 11 Jun 2009 15:16:11
+2013-03-13 20:05:10	-->	nemysis (noident@freebsd/contributor/pcbsd.nemysis) has joined #tmux
+2013-03-13 20:08:06	-->	erikw (~Erik@174.77.45.242) has joined #tmux
+2013-03-13 20:10:24	<--	Code_Bleu (~Code_Bleu@64-191-149-154.service.qx.net) has quit (Read error: Connection reset by peer)
+2013-03-13 20:18:16	-->	juanmabc (~juanmabc@79.109.195.199.dyn.user.ono.com) has joined #tmux
+2013-03-13 20:18:18	<--	emmanuelux (~emmanuelu@vau92-2-82-228-217-1.fbx.proxad.net) has quit (Remote host closed the connection)
+2013-03-13 20:21:24	<--	c_14 (~c_14@unaffiliated/c-14/x-8913907) has quit (Quit: WeeChat 0.4.0)
+2013-03-13 20:22:25	-->	ISF_ (~ivan@187.64.222.221) has joined #tmux
+2013-03-13 20:26:50	-->	Code_Bleu (~Code_Bleu@64-191-149-154.service.qx.net) has joined #tmux
+2013-03-13 20:27:04	-->	crimsongrade (~taurusian@c-68-80-0-91.hsd1.pa.comcast.net) has joined #tmux
+2013-03-13 20:27:32	<--	jimeh (~jimeh@host86-169-80-23.range86-169.btcentralplus.com) has quit (Quit: Computer has gone to sleep.)
+2013-03-13 20:29:12	-->	jimeh (~jimeh@host86-169-80-23.range86-169.btcentralplus.com) has joined #tmux
+2013-03-13 20:33:20	<--	calmar_ (~calmar@46-127-49-4.dynamic.hispeed.ch) has quit (Quit: Lost terminal)
+2013-03-13 20:33:21	<--	crimsongrade (~taurusian@c-68-80-0-91.hsd1.pa.comcast.net) has quit (Quit: leaving)
+2013-03-13 20:37:32	-->	Fandekasp (~Fandekasp@p5172-ipngn100202yosemiya.okinawa.ocn.ne.jp) has joined #tmux
+2013-03-13 20:41:14	<--	telex (~telex@freeshell.de) has quit (Remote host closed the connection)
+2013-03-13 20:42:37	-->	telex (~telex@freeshell.de) has joined #tmux
+2013-03-13 20:45:50	<--	brainvision (~brainvisi@host39-78-dynamic.17-87-r.retail.telecomitalia.it) has quit (Ping timeout: 252 seconds)
+2013-03-13 20:50:18	<--	TheFuzzball (~TheFuzzba@46-64-87-101.zone15.bethere.co.uk) has quit (Quit: Computer has gone to sleep.)
+2013-03-13 20:53:32	-->	baba (~fire@unaffiliated/security) has joined #tmux
+2013-03-13 20:54:57	<--	t355u5 (~t355u5@unaffiliated/t355u5) has left #tmux
+2013-03-13 20:55:30	<--	fire (~fire@unaffiliated/security) has quit (Ping timeout: 260 seconds)
+2013-03-13 21:06:26	<--	d48 (~predikt@rrcs-76-79-249-222.west.biz.rr.com) has quit (Remote host closed the connection)
+2013-03-13 21:10:53	-->	Watabou (~Watabou@unaffiliated/watabou) has joined #tmux
+2013-03-13 21:12:51	<--	baba (~fire@unaffiliated/security) has quit (Quit: WeeChat 0.4.0)
+2013-03-13 21:17:06	<--	daniel_- (~daniel_-@unaffiliated/daniel--/x-1801510) has quit (Quit: WeeChat 0.4.0)
+2013-03-13 21:19:46	-->	hafeez3000 (~hafeez@183.83.152.6) has joined #tmux
+2013-03-13 21:24:09	<--	m_101 (~m_101@AAubervilliers-752-1-18-149.w90-61.abo.wanadoo.fr) has quit (Quit: leaving)
+2013-03-13 21:28:26	<--	hafeez3000 (~hafeez@183.83.152.6) has quit (Quit: hafeez3000)
+2013-03-13 21:28:59	-->	hafeez3000 (~hafeez@183.83.152.6) has joined #tmux
+2013-03-13 21:41:39	-->	archdori (~Fandekasp@p5172-ipngn100202yosemiya.okinawa.ocn.ne.jp) has joined #tmux
+2013-03-13 21:45:29	<--	Fandekasp (~Fandekasp@p5172-ipngn100202yosemiya.okinawa.ocn.ne.jp) has quit (Ping timeout: 240 seconds)
+2013-03-13 22:08:38	-->	Zasz_ (~josh@72.186.67.64) has joined #tmux
+2013-03-13 22:11:40	<--	ChromeSilver (~chromesil@unaffiliated/chromesilver) has quit (Ping timeout: 258 seconds)
+2013-03-13 22:21:27	<--	juanmabc (~juanmabc@79.109.195.199.dyn.user.ono.com) has quit (Quit: Peace Out!)
+2013-03-13 22:30:50	<--	Zasz_ (~josh@72.186.67.64) has quit (Ping timeout: 245 seconds)
+2013-03-13 22:31:03	-->	sub0 (~PavillonN@134.117.39.62.rev.sfr.net) has joined #tmux
+2013-03-13 22:40:30	<--	gartenzaun (~gartenzau@chello080108155162.8.12.vie.surfer.at) has quit (Ping timeout: 260 seconds)
+2013-03-13 22:42:16	-->	gartenzaun (~gartenzau@chello080108155162.8.12.vie.surfer.at) has joined #tmux
+2013-03-13 22:52:45	<--	hafeez3000 (~hafeez@183.83.152.6) has quit (Ping timeout: 260 seconds)
+2013-03-13 23:01:56	-->	Fandekasp (~Fandekasp@p5172-ipngn100202yosemiya.okinawa.ocn.ne.jp) has joined #tmux
+2013-03-13 23:05:00	<--	archdori (~Fandekasp@p5172-ipngn100202yosemiya.okinawa.ocn.ne.jp) has quit (Ping timeout: 245 seconds)
+2013-03-13 23:11:12	-->	hafeez3000 (~hafeez@183.83.152.6) has joined #tmux
+2013-03-13 23:11:49	<--	watsonalgas (~diomekes@c-71-56-112-120.hsd1.ga.comcast.net) has quit (Remote host closed the connection)
+2013-03-13 23:12:45	<--	rking (~rking@unaffiliated/rking) has quit (Remote host closed the connection)
+2013-03-13 23:13:59	<--	arduix (~arduix@197.15.93.124) has quit (Ping timeout: 240 seconds)
+2013-03-13 23:19:00	-->	zer4tul (~zer4tul@unaffiliated/zer4tul) has joined #tmux
+2013-03-13 23:26:26	-->	arduix (~arduix@197.15.250.176) has joined #tmux
+2013-03-13 23:31:11	<--	zer4tul (~zer4tul@unaffiliated/zer4tul) has quit (Quit: WeeChat 0.4.0)
+2013-03-13 23:32:59	-->	zer4tul (~zer4tul@unaffiliated/zer4tul) has joined #tmux

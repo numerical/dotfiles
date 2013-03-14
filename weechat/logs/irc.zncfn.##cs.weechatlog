@@ -1,0 +1,21 @@
+2013-03-13 20:04:35	-->	numeral (~numeral@198.23.228.15) has joined ##cs
+2013-03-13 20:04:35	--	Topic for ##cs is "Computer Science & Discrete Math | DON'T ASK TO ASK, JUST ASK! | For math: #math, stats: ##statistics, programming: ##programming | CS StackExchange: http://cstheory.stackexchange.com/ | Algorithm of the $(TIME): http://en.wikipedia.org/wiki/Bogosort"
+2013-03-13 20:04:35	--	Topic set by Quadrescence (~quad@unaffiliated/quadrescence) on Sat, 04 Feb 2012 03:13:21
+2013-03-13 20:04:35	--	Nicks ##cs: [@ChanServ alamar alvarezp arborist beawesomeinstead Bigcheese causative dan64 dunpeal fire FireFly Ikarus Internet M4rius mal`` numeral peterhil peterhil` raniere realazthat rikta sam sujeet swaffles Th0mas TommehM vechnyj woggle yano zigggggy]
+2013-03-13 20:04:35	--	Channel ##cs: 30 nicks (1 op, 0 halfops, 0 voices, 29 normals)
+2013-03-13 20:04:39	--	Mode ##cs [+CFcnt]
+2013-03-13 20:04:39	--	Channel created on Tue, 05 Jan 2010 02:20:27
+2013-03-13 20:19:02	-->	cardamon (~wintermut@c-24-30-40-161.hsd1.ga.comcast.net) has joined ##cs
+2013-03-13 20:19:17	cardamon	Hi.
+2013-03-13 20:19:58	cardamon	Okay, trying to build a state diagram from this EBNF for making binary literals http://paste.debian.net/241580/ and this is what I came up with and a I'm 100% sure I'm wrong. http://i.imgur.com/8tK69FE.jpg
+2013-03-13 20:20:03		[http://is.gd/rW0bhB]
+2013-03-13 20:31:54	-->	Polynap (~Polynap@31.205.77.11) has joined ##cs
+2013-03-13 20:32:37	<--	arborist (~arborist@5.63.151.36) has quit (Read error: Operation timed out)
+2013-03-13 20:52:24	-->	baba (~fire@unaffiliated/security) has joined ##cs
+2013-03-13 20:55:30	<--	fire (~fire@unaffiliated/security) has quit (Ping timeout: 260 seconds)
+2013-03-13 20:58:36	-->	zzing (~zzing@198-91-217-153.cpe.distributel.net) has joined ##cs
+2013-03-13 21:12:51	<--	baba (~fire@unaffiliated/security) has quit (Quit: WeeChat 0.4.0)
+2013-03-13 21:30:14	cardamon	Okay, I think I wrote this in a more reconizable EBNF form. http://paste.debian.net/241586/
+2013-03-13 21:30:20		[http://is.gd/Nf8ct3]
+2013-03-13 22:26:00	<--	peterhil (~peterhil@91-157-48-10.elisa-laajakaista.fi) has quit (Ping timeout: 272 seconds)
+2013-03-13 23:11:36	<--	Polynap (~Polynap@31.205.77.11) has quit (Ping timeout: 272 seconds)

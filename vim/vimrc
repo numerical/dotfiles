@@ -1,0 +1,254 @@
+set encoding=utf-8
+set nocompatible     "Don't need compat with vi
+set number           "Line numbers by default
+set tabstop=4        "4 spaces for tabs
+set shiftwidth=4     "4 spaces for indent
+set smarttab         "tab next based on current
+set expandtab        "no hardtabs
+set autoindent       "indents
+set smartindent
+set cursorline
+set ttyfast
+set ruler
+set backspace=indent,eol,start
+
+set laststatus=2    "Always show status line
+
+let g:Powerline_symbols = 'fancy' "fancy vim-powerline symbols
+let g:dirrc_security = 0 " no prompt
+let g:dirrc_resource_name = 'vdirrc'
+let g:NERDTreeWinPos = "right"
+
+set undolevels=1000 "Undo all the things
+
+"Allow background buffers
+set hidden
+
+"Use PCRE type search regexps
+nnoremap / /\v
+vnoremap / /\v
+
+"Use ZS and ZA for quick save and quick save and exit to shell respectively
+nnoremap ZS :w<CR>
+nnoremap ZA :w<CR><C-z>
+
+"Search behavior
+set incsearch        "incremental search
+set ignorecase       "case insenstive by default
+set smartcase        "if there is mixed caps, figure it out
+set gdefault         "make searches use x/x/g by default
+set hlsearch         "highlight results
+set showmatch        "show matching brackets
+
+"Enable advanced % bracket matching
+runtime macros/matchit.vim
+
+set scrolloff=3      "always have 3 lines of context in vertial scroll
+set sidescrolloff=2
+set wrap
+set textwidth=80     "Break lines at 80 chars
+set formatoptions=qrn1
+set cmdheight=2      "two lines for cmd history
+set showfulltag      "show full tags for completion
+set magic            "regexp chars enabled
+set noerrorbells     "shut up vim
+set showcmd          "show partial commands
+set showmode         "show current mode
+set title            "show term title
+set showtabline=2    "Always show the tab bar
+
+"Allow tab in command mode to suggest more than first completion
+set wildmenu
+set wildmode=list:longest
+set wildignore=*.swp,*.bak,*.pyc,*.class "Ignore some things for tab complete
+
+"Store swp and tmp files in a centralized spot
+set backupdir=~/.vim-tmp,/var/tmp,/tmp
+set directory=~/.vim-tmp,/var/tmp,/tmp
+
+"Shorten some of the info messages
+set shortmess=atI
+
+"The <leader> key is ,
+let mapleader = ","
+
+" selectively enable 256 colors
+"if (&term == "screen" || &term == "screen-bce" || &term == "xterm" || &term == "xterm-256color")
+"  set t_Co=256
+"endif
+
+"Force 256
+set t_Co=256
+
+"Load Pathogen plugins
+call pathogen#infect()
+call pathogen#helptags()
+
+syntax enable
+let g:solarized_termcolors=256
+set background=dark
+colorscheme zenburn
+set background=dark
+
+if has("syntax")
+  syntax on
+endif
+
+if has("eval")
+  filetype on " Detect filetype by extension
+  filetype indent on " Enable indents based on extensions
+  filetype plugin on " Load filetype plugins
+endif
+
+"Use MYSQL format SQL by default
+if has("autocmd")
+  autocmd BufRead *.sql set filetype=mysql
+endif " has("autocmd") 
+
+"Fancy svn diffs
+au BufNewFile,Bufread svn-commit.* setf svn
+
+"Txt specific stuff
+au BufRead,BufNewFile *.txt,README setfiletype text
+autocmd FileType text :set nocindent | set nosmarttab | set syntax=textile
+
+"Lpc specific bits
+autocmd BufNewFile,BufRead ~/DUNE/* set syntax=lpc
+autocmd BufNewFile,BufRead ~/portal/* set syntax=lpc
+
+" Highlight text beyond the set text width
+highlight LongLines ctermfg=Red
+au BufEnter *.py,*.c,*.cpp,*.cc,*.java,*.h,*.pl,*.php exec 'match LongLines /\%>'.&textwidth.'v.\+/'
+
+" Turn off search highlight when idle
+if has("autocmd")
+   autocmd CursorHold * nohls | redraw
+endif
+
+" Show trailing whitespace visually
+" Shamelessly stolen from Ciaran McCreesh <ciaranm@gentoo.org>
+if v:version >= 700
+  set list listchars=tab:>-,trail:.,extends:>,nbsp:_
+else
+  set list listchars=tab:>-,trail:.,extends:>
+endif
+
+"Cool 7.3 stuff
+if v:version >= 730
+  set relativenumber
+  set undofile
+  set colorcolumn=85
+endif
+
+"In vis mode, tab indents. Shift tab unindents
+vmap <tab> >gv
+vmap <s-tab> <gv
+
+" <C-c><C-q> reindents current block
+imap <C-c><C-q> <C-o>=a{
+nmap <C-c><C-q> =a{
+
+" Clear search results with <leader><space>
+nnoremap <leader><space> :noh<cr>
+
+" Change tab to match bracket pairs
+nnoremap <tab> %
+vnoremap <tab> %
+
+"Press F2 on insert to go into paste mode
+nnoremap <F2> :set invpaste paste?<CR>
+set pastetoggle=<F2>
+set showmode
+
+"Map F3 to nohls (turn off highlighting -- from a search, for instance)
+nmap <silent> <F3> :silent nohls<CR>
+imap <silent> <F3> <ESC>:silent nohls<CR>i<Right>
+
+" Map F12 to line numbering
+nmap <silent> <F12> :silent set number!<CR>
+imap <silent> <F12> <ESC>:silent set number!<CR>i<Right>
+
+"Spell check can be annoying at times
+nmap <silent> <F4> :silent set spell!<CR>
+imap <silent> <F4> <ESC>:silent set spell!<CR>i<Right>
+
+"Run the note converter script on the file 
+command! -complete=file -nargs=* NoteConv call s:RunShellCommand('~/python_lib/note_converter.py -ov '.<q-args>)
+nmap <silent> <F8> :NoteConv %<CR>
+imap <silent> <F8> <ESC>:NoteConv %<CR>
+
+"Tab switching with <C-n> and <C-p>
+nmap <C-p> :tabprevious<CR>
+vmap <C-p> :tabprevious<CR>
+nmap <C-n> :tabnext<CR>
+vmap <C-n> :tabnext<CR>
+
+"Create new tab with <C-t>
+nmap <C-t> :tabnew<CR>
+vmap <C-t> :tabnew<CR>
+imap <C-t> <esc>:tabnew<CR>i
+
+"Newbie mode engage! Disable arrow keys
+nnoremap <up> <nop>
+nnoremap <down> <nop>
+nnoremap <left> <nop>
+nnoremap <right> <nop>
+
+"Disable the fucking help key
+inoremap <F1> <ESC>
+"nnoremap <F1> <ESC>
+nmap <silent> <F1> :NERDTreeToggle<CR>
+vnoremap <F1> <ESC>
+
+"Make up/down more sensible for movement
+nnoremap j gj
+nnoremap k gk
+
+"Leader key combos follow:
+"Makes <leader>W strip all training whitespace in the file
+nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
+"      <leader>q rehardwraps a paragraph
+nnoremap <leader>q gqip
+"      <leader>ev opens vimrc in a split
+nnoremap <leader>ev <C-w><C-v><C-l>:e $MYVIMRC<cr>
+
+"Split file combos:
+"open a new split and switch to it
+nnoremap <leader>w <C-w>v<C-w>l
+
+"Move around splits using CTRL-hjkl
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
+"Make shift-enter do what enter does
+imap <Esc>OM <CR>
+
+"Save a file with root when you forgot to sudo (Steve Losh trick)
+cmap w!! w !sudo tee % >/dev/null
+
+"Bind f5 to show yank ring
+nnoremap <silent> <F5> :YRShow<cr>
+inoremap <silent> <F5> <ESC>:YRShow<cr>
+
+"Runs a shell command in a window
+command! -complete=shellcmd -nargs=+ Shell call s:RunShellCommand(<q-args>)
+function! s:RunShellCommand(cmdline)
+  echo a:cmdline
+  let expanded_cmdline = a:cmdline
+  for part in split(a:cmdline, ' ')
+     if part[0] =~ '\v[%#<]'
+        let expanded_part = fnameescape(expand(part))
+        let expanded_cmdline = substitute(expanded_cmdline, part, expanded_part, '')
+     endif
+  endfor
+  botright new
+  setlocal buftype=nofile bufhidden=wipe nobuflisted noswapfile nowrap
+"  call setline(1, 'You entered:    ' . a:cmdline)
+"  call setline(2, 'Expanded Form:  ' .expanded_cmdline)
+"  call setline(3,substitute(getline(2),'.','=','g'))
+  execute '$read !'. expanded_cmdline
+  setlocal nomodifiable
+  1
+endfunction

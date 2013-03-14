@@ -1,0 +1,419 @@
+2013-03-13 20:04:37	-->	numeral (~numeral@198.23.228.15) has joined #archlinux-women
+2013-03-13 20:04:37	--	Topic for #archlinux-women is "Arch Linux Chix FTW: Join us on http://redmine.archwomen.org/ !  Project site is http://archwomen.org . IRC Rules: http://bit.ly/13rVGg5 <|||> Fourteenth IRC Meeting: Sunday April 7th at 16:00 UTC. See you there!  Agenda: http://bit.ly/YIGZ0B <|||> If you're having a problem with someone, !awops <|||> The first PKGBUILD class is Sunday March 31st 16:00 UTC."
+2013-03-13 20:04:37	--	Topic set by ChanServ on Wed, 13 Mar 2013 14:57:36
+2013-03-13 20:04:37	--	Nicks #archlinux-women: [+meskarune +tigrmesh AbigailBuccaneer alyx_ alzeih Anuska CalimeroTeknik camilasan carharttjimmy Coolgeek CryptoNaut Defaultti fsckd gtmanfred halosghost hawkgirl ioni jrex KaiSforza KylieBrooks liara maxine MobileAster MrElendig Nisstyre numeral oddmunds phrik QuantumParadox Sornaensis sudokode terra-and-luna vodik VunKruz XReaper yardena]
+2013-03-13 20:04:37	--	Channel #archlinux-women: 36 nicks (0 ops, 0 halfops, 2 voices, 34 normals)
+2013-03-13 20:04:50	--	Mode #archlinux-women [+Cnt]
+2013-03-13 20:04:50	--	Channel created on Fri, 17 Feb 2012 12:52:06
+2013-03-13 20:04:58	CalimeroTeknik	hm, the process from AUR is interactive and includes PKGBUILD edits
+2013-03-13 20:05:03	CalimeroTeknik	that said…
+2013-03-13 20:05:19	halosghost	yeah…
+2013-03-13 20:05:21	KaiSforza	from the last time i looked at it, it also decides not to save the PKGBUILDs.
+2013-03-13 20:05:29	numeral	KaiSforza: <3
+2013-03-13 20:05:30	halosghost	calling makepkg in an AUR helper is no-bueno for me
+2013-03-13 20:05:43	KaiSforza	same, halosghost 
+2013-03-13 20:05:49	CalimeroTeknik	what? AUR helpers don't call makepkg?
+2013-03-13 20:05:53	CalimeroTeknik	sounds strange
+2013-03-13 20:05:56	KaiSforza	!give CalimeroTeknik cower
+2013-03-13 20:05:56	numeral	some do
+2013-03-13 20:05:58	phrik	CalimeroTeknik: cower is the swiss army knife of the AUR -- the best thing since sliced bread: https://aur.archlinux.org/packages/cower/
+2013-03-13 20:05:59	KaiSforza	best aur helper.
+2013-03-13 20:05:59	numeral	yaourt does
+2013-03-13 20:06:01	numeral	packer does
+2013-03-13 20:06:04		[http://is.gd/U3CuyX]
+2013-03-13 20:06:20	CalimeroTeknik	so with cower, you then run makepkg yourself?
+2013-03-13 20:06:23	halosghost	yes
+2013-03-13 20:06:27	CalimeroTeknik	okay
+2013-03-13 20:06:27	halosghost	which is how it should be, imo
+2013-03-13 20:06:32	CalimeroTeknik	that's what yaourt -G is for
+2013-03-13 20:06:34	KaiSforza	↑
+2013-03-13 20:06:38	halosghost	haha
+2013-03-13 20:06:39	numeral	... vodik you beautiful bastard... I wish I had known there's a freaking plugin for weechat that catches all links and creates is.gd links for you <3
+2013-03-13 20:06:41	KaiSforza	yeah...but no one that uses yaort does that.
+2013-03-13 20:06:43	halosghost	little late there KaiSforza?
+2013-03-13 20:06:47	CalimeroTeknik	I do
+2013-03-13 20:06:56	KaiSforza	halosghost: don't make fun of my lag :<
+2013-03-13 20:07:01	 *	KaiSforza runs away crying
+2013-03-13 20:07:02	halosghost	sorry
+2013-03-13 20:07:09	numeral	halosghost: kais is always late
+2013-03-13 20:07:13	KaiSforza	numeral: don't use that.
+2013-03-13 20:07:24	halosghost	!KaiSforza
+2013-03-13 20:07:25	phrik	Is the slacker.
+2013-03-13 20:07:27	KaiSforza	numeral: use urlserver.py
+2013-03-13 20:07:33	numeral	!kaisforza2
+2013-03-13 20:07:35	phrik	https://github.com/KaiSforza
+2013-03-13 20:07:37	numeral	why?
+2013-03-13 20:07:44	KaiSforza	numeral: doesn't mess with external url shorteners.
+2013-03-13 20:08:00	numeral	why do I care?
+2013-03-13 20:08:01	fsckd	i was going to use urlgrab.py
+2013-03-13 20:08:03	CalimeroTeknik	okay so basically, the thing is that yaourt is doing too much of the job
+2013-03-13 20:08:19	KaiSforza	numeral: no issues with network connectivity, a url shortener being down, anything like that.
+2013-03-13 20:08:22	KaiSforza	also, instant.
+2013-03-13 20:08:36	numeral	all good points, but I probably don't care enough
+2013-03-13 20:08:46	numeral	I might though if I get to the point hwere I'm just like 'yeah ok I need to switch this out'
+2013-03-13 20:08:49	KaiSforza	CalimeroTeknik: and doing a pretty bad job of it...and implementing things that dont' need to be in an aur helper.
+2013-03-13 20:08:53	fsckd	CalimeroTeknik: it's mainly the newbies who don't understand AUR. for whatever reason they tend to use yaourt
+2013-03-13 20:09:12	Nisstyre	fsckd: I would first point them to the article on ABS
+2013-03-13 20:09:27	<--	vodik (~root@archlinux/op/vodik) has quit (Quit: WeeChat 0.4.1-dev)
+2013-03-13 20:09:30	fsckd	indeed, that's the usual response
+2013-03-13 20:09:36	halosghost	CalimeroTeknik: I generally dislike the concept of a pacman wrapper, but several of the AUR packages I use require source edits and the like before compile, which means cower is simply superior
+2013-03-13 20:09:36	fsckd	err
+2013-03-13 20:09:42	fsckd	the article on AUR :/
+2013-03-13 20:09:43	KaiSforza	apparently, yaourt has its own abs thing...which is just plain weird.
+2013-03-13 20:09:46	halosghost	because it doesn't call makepkg before I want it to (ever) :)
+2013-03-13 20:09:46	Nisstyre	halosghost: pacmatic is good
+2013-03-13 20:09:57	 *	fsckd needs to learn to read *before* typing
+2013-03-13 20:10:02	fsckd	:/
+2013-03-13 20:10:05	Nisstyre	it checks for .pacnew files, and then lets you use vimdiff to deal with them
+2013-03-13 20:10:09	halosghost	Nisstyre: I wouldn't know, I've never tried it, but I really don't want anything wrapping pacman
+2013-03-13 20:10:12	Nisstyre	and it also checks the mailing list for news about stuff you're installing
+2013-03-13 20:10:21	numeral	I don't really mind a helper running makepkg for me, especially if a) I know what I'm doing and b) it asks me if I'd like to edit the PKGBUILD
+2013-03-13 20:10:24	numeral	which packer does
+2013-03-13 20:10:32	Nisstyre	halosghost: it doesn't "hide" anything
+2013-03-13 20:10:40	Nisstyre	it automates some things that you should be doing but will forget to do
+2013-03-13 20:10:41	halosghost	not really my problem
+2013-03-13 20:10:46	numeral	I don't know about yaourt thouhg
+2013-03-13 20:10:51	Nisstyre	that is the point of software really
+2013-03-13 20:10:59	halosghost	I just don't want anything but me running pacman
+2013-03-13 20:11:04	KaiSforza	Nisstyre: just use pacman for all of that...
+2013-03-13 20:11:06	halosghost	I don't trust anything else to do it
+2013-03-13 20:11:14	numeral	halosghost: makepkg -i runs pacman for you
+2013-03-13 20:11:14	Nisstyre	KaiSforza: you use pacman to look at relevant mailing list posts?
+2013-03-13 20:11:17	KaiSforza	pacmatic is in the repos, if you want a wrapper.
+2013-03-13 20:11:22	KaiSforza	don't mess with yaourt.
+2013-03-13 20:11:33	halosghost	numeral: makepkg is a tool designed by the same devs who design pacman
+2013-03-13 20:11:34	KaiSforza	pacmatic ONLY wraps pacman, not the aur or anything like that.
+2013-03-13 20:11:41	Nisstyre	yeah
+2013-03-13 20:11:49	Nisstyre	I thought that was clear
+2013-03-13 20:11:51	KaiSforza	runs pacdiff and checks pacnews.
+2013-03-13 20:11:53	numeral	halosghost: by that token so is cower, so is cower allowed to run pacman?
+2013-03-13 20:12:05	--	sudokode is now known as alibaba
+2013-03-13 20:12:09	halosghost	no, cower is an unofficial tool supplied by one dev
+2013-03-13 20:12:11	KaiSforza	numeral: no, it's not
+2013-03-13 20:12:16	<--	alyx_ (~alyx@unaffiliated/xwnh) has quit (Quit: Reconnecting)
+2013-03-13 20:12:30	numeral	stop ruining my positions with facts, you bastards
+2013-03-13 20:12:31	-->	alyx_ (~alyx@unaffiliated/xwnh) has joined #archlinux-women
+2013-03-13 20:12:36	halosghost	:)
+2013-03-13 20:12:39	fsckd	!grab numeral
+2013-03-13 20:12:40	phrik	fsckd: Tada!
+2013-03-13 20:12:48	numeral	the point is the problem isn't the helpers, it's the fact that the AUR is stock full of crap PKGBUILDs
+2013-03-13 20:13:09	KaiSforza	mostly, and that there are fast tools and if you can type reasonably fast, then you're fine.
+2013-03-13 20:13:18	numeral	which isn't a problem if you know what a good PKGBUILD is and what isn't, it's a problem for the noobs (who are the ones who use yaourt and the like)
+2013-03-13 20:13:48	numeral	anyways I need a smoke...
+2013-03-13 20:13:50	KaiSforza	s/like/ilk/
+2013-03-13 20:13:50	halosghost	Oh my god
+2013-03-13 20:13:52	KaiSforza	ftfy
+2013-03-13 20:13:59	numeral	ftfy?
+2013-03-13 20:14:03	halosghost	Trilby just said that he's interested in porting TTWM to wayland
+2013-03-13 20:14:04	numeral	kais doesn't know how to type :/
+2013-03-13 20:14:11	halosghost	My heart just skipped a beat
+2013-03-13 20:14:15	fsckd	halosghost: smashing
+2013-03-13 20:14:18	numeral	kais YEAH YOU TYPE REASONABLY FAST BUT IT ALL ENDS IN MEMORY LEAKS
+2013-03-13 20:14:22	KaiSforza	numeral: fixed that for you.
+2013-03-13 20:14:25	KaiSforza	lol
+2013-03-13 20:14:41	halosghost	I know it's not really plausible, but having an X-free system would be awesome
+2013-03-13 20:15:04	KaiSforza	it's very plausible
+2013-03-13 20:15:16	fsckd	i need to test wayland now that it's installed
+2013-03-13 20:15:32	fsckd	what would wayland do to battery life?
+2013-03-13 20:15:36	numeral	hrm, I was under the impression wayland isn't really usable yet though
+2013-03-13 20:16:09	fsckd	it can run
+2013-03-13 20:16:22	KaiSforza	but it's still not really useable
+2013-03-13 20:16:32	KaiSforza	not without the X compatibility stuff.
+2013-03-13 20:16:35	halosghost	fsckd: in theory, because it should do a lot less than X, if it's being run as it should be, it should help battery life
+2013-03-13 20:16:49	<--	alyx_ (~alyx@unaffiliated/xwnh) has quit (Client Quit)
+2013-03-13 20:16:51	fsckd	interesting
+2013-03-13 20:16:54	halosghost	and there's a tiling WM that's been ported to wayland already
+2013-03-13 20:16:57	halosghost	ADWC
+2013-03-13 20:17:02	fsckd	so i heard
+2013-03-13 20:17:03	-->	alyx_ (~alyx@unaffiliated/xwnh) has joined #archlinux-women
+2013-03-13 20:17:05	halosghost	I'm tempted to package it for teh AUR as it's not there
+2013-03-13 20:17:06	KaiSforza	halosghost: wat
+2013-03-13 20:17:09	KaiSforza	i'll have to look at it
+2013-03-13 20:17:15	halosghost	http://www.phoronix.com/scan.php?page=news_item&px=MTA5MTA
+2013-03-13 20:17:17	phrik	Title: [Phoronix] ADWC: A Tiling Window Manager For Wayland (at www.phoronix.com)
+2013-03-13 20:17:20	halosghost	KaiSforza: ^
+2013-03-13 20:17:21		[http://is.gd/ELC6Sg]
+2013-03-13 20:17:30	KaiSforza	halosghost: looking at the github
+2013-03-13 20:17:39	numeral	how the fuck does one change the theme in weechat
+2013-03-13 20:17:57	halosghost	very carefully
+2013-03-13 20:18:16	fsckd	heh
+2013-03-13 20:18:35	numeral	halosghost: ++
+2013-03-13 20:18:42	halosghost	KaiSforza: if you don't immediately package it for the AUR, I'll probably do it tomorrow
+2013-03-13 20:18:53	numeral	in hebrew we say "slow and carefully"
+2013-03-13 20:18:56	KaiSforza	lol
+2013-03-13 20:19:08	fsckd	if halosghost doesn't package it tomorrow, i'll do it the day after
+2013-03-13 20:19:13	numeral	so seriously... where does weechat keep theme shit
+2013-03-13 20:19:15	KaiSforza	halosghost: I don't intend to use wayland for a while...
+2013-03-13 20:19:20	halosghost	haha
+2013-03-13 20:19:22	KaiSforza	halosghost: so just package it
+2013-03-13 20:19:30	KaiSforza	well, now you're racing against fsckd 
+2013-03-13 20:19:31	halosghost	alright, I'll take a look at it tomorrow
+2013-03-13 20:19:50	halosghost	it'd be nice if the AUR allowed for multiple maintainers of packages
+2013-03-13 20:20:05	fsckd	it requires coordination
+2013-03-13 20:20:15	halosghost	haha
+2013-03-13 20:20:29	numeral	packages should have head maintainer and submaintainers, done
+2013-03-13 20:20:41	KaiSforza	THE AUR SHOULD USE GIT AS A BACKEND>
+2013-03-13 20:20:44	KaiSforza	!next
+2013-03-13 20:20:46	phrik	Another satisfied customer! NEXT!
+2013-03-13 20:20:53	fsckd	haha +1
+2013-03-13 20:21:12	KaiSforza	i mean it. it would make things so much easier.
+2013-03-13 20:21:17	fsckd	agreed
+2013-03-13 20:21:34	KaiSforza	and it wouldn't have to deprecate the current way of submitting packages.
+2013-03-13 20:23:05	fsckd	!tigr
+2013-03-13 20:23:07	phrik	http://icanhascheezburger.files.wordpress.com/2010/11/761c4372-1f09-4c99-86dd-6e8368897a77.jpg
+2013-03-13 20:23:12		[http://is.gd/OaDy9A]
+2013-03-13 20:23:22	KaiSforza	I just have no idea what i'm doing with php for the frontend stuff.
+2013-03-13 20:23:24	halosghost	hmm, wlrandr
+2013-03-13 20:23:27	KaiSforza	the backend would be easy as hell
+2013-03-13 20:23:28	halosghost	that's exciting
+2013-03-13 20:23:41	halosghost	KaiSforza: push that idea to arch-dev-public
+2013-03-13 20:23:49	KaiSforza	halosghost: aur-dev you mean.
+2013-03-13 20:23:49	fsckd	urlgrab seems nice... will test it properly soonish
+2013-03-13 20:24:00	KaiSforza	and i'm pretty sure it's already been discussed.
+2013-03-13 20:24:03	halosghost	mm
+2013-03-13 20:24:18	KaiSforza	i know there's an old bug report about it.
+2013-03-13 20:25:05	KaiSforza	https://bugs.archlinux.org/task/23010?string=git&project=2&search_name=&type%5B0%5D=&sev%5B0%5D=&pri%5B0%5D=&due%5B0%5D=&reported%5B0%5D=&cat%5B0%5D=&status%5B0%5D=open&percent%5B0%5D=&opened=&dev=&closed=&duedatefrom=&duedateto=&changedfrom=&changedto=&openedfrom=&openedto=&closedfrom=&closedto=
+2013-03-13 20:25:06	phrik	Title: FS#23010 : Integrate git with the aur. (at bugs.archlinux.org)
+2013-03-13 20:25:08	KaiSforza	wat
+2013-03-13 20:25:10	KaiSforza	oops
+2013-03-13 20:25:10		[http://is.gd/356tMr]
+2013-03-13 20:25:27	KaiSforza	https://bugs.archlinux.org/task/23010
+2013-03-13 20:25:29	phrik	Title: FS#23010 : Integrate git with the aur. (at bugs.archlinux.org)
+2013-03-13 20:25:31	KaiSforza	short link for you kids.
+2013-03-13 20:25:33		[http://is.gd/QsY5tD]
+2013-03-13 20:26:18	-->	jy2wong (~jy2wong@corn-syrup.csclub.uwaterloo.ca) has joined #archlinux-women
+2013-03-13 20:27:42	KaiSforza	i'm tempted to set up a vm or local server with that all set up.
+2013-03-13 20:28:01	KaiSforza	but it would take time.
+2013-03-13 20:28:04	KaiSforza	hell...
+2013-03-13 20:28:07	KaiSforza	it's the end of my week.
+2013-03-13 20:28:23	KaiSforza	this is starting. at least the backend.
+2013-03-13 20:28:50	KaiSforza	hmm. if it did use git, technically it wouldn't need a dedicated frontend, it could just use cgit or gitweb.
+2013-03-13 20:30:13	fsckd	where are the settings for urlgrab.py‽
+2013-03-13 20:31:21	KaiSforza	no idea.
+2013-03-13 20:31:28	KaiSforza	use urlserver
+2013-03-13 20:31:39	KaiSforza	(it saves a list of them too.)
+2013-03-13 20:31:53	<--	alyx_ (~alyx@unaffiliated/xwnh) has quit (Quit: Reconnecting)
+2013-03-13 20:32:10	fsckd	i need something to open urls
+2013-03-13 20:32:11	-->	alyx_ (~alyx@unaffiliated/xwnh) has joined #archlinux-women
+2013-03-13 20:32:44	fsckd	because having termite do that will be complicated (opening them in the viewed tmux session)
+2013-03-13 20:33:31	fsckd	bbl
+2013-03-13 20:34:11	fsckd	lol found it
+2013-03-13 20:34:14	KaiSforza	fsckd: with urlserver, just go to http://127.0.0.1:port
+2013-03-13 20:34:22	KaiSforza	(you pick a port)
+2013-03-13 20:34:33	KaiSforza	and it'll give you a list of urls, who said the, when, and where.
+2013-03-13 20:34:43	KaiSforza	and you can have it autograb images or put youtube videos on the page too.
+2013-03-13 20:34:56	fsckd	/set urlgrab.*
+2013-03-13 20:34:58	KaiSforza	so you don't even have to click to see things.
+2013-03-13 20:35:06	numeral	no idea how to write a cover letter...
+2013-03-13 20:35:09	KaiSforza	(i don't do that, but i tried it out. it was okay.)
+2013-03-13 20:35:11	KaiSforza	numeral: vi.
+2013-03-13 20:35:13	numeral	I r great, hire me
+2013-03-13 20:35:14	KaiSforza	*vim
+2013-03-13 20:35:20	numeral	nah, just email body
+2013-03-13 20:35:22	KaiSforza	numeral: i'd hire you.
+2013-03-13 20:35:22	fsckd	KaiSforza: sounds nice but a bit too much for what i am doing
+2013-03-13 20:35:33	numeral	KaiSforza: you got a job to hire me for? :P
+2013-03-13 20:35:37	KaiSforza	nope.
+2013-03-13 20:35:43	numeral	doesn't help me :P
+2013-03-13 20:35:49	KaiSforza	lol
+2013-03-13 20:35:59	numeral	I'm applying for a job that I'm totally not gonna get... might as well try right
+2013-03-13 20:36:18	numeral	I'm just gonna boast, fucks it
+2013-03-13 20:37:07	halosghost	okay
+2013-03-13 20:37:10	halosghost	I'm a tired panda
+2013-03-13 20:37:12	halosghost	time to sleep
+2013-03-13 20:37:14	halosghost	peace out
+2013-03-13 20:37:34	numeral	actually... my professor told me if she can get supplimentary funding for her project she will want to take me to England for the summer
+2013-03-13 20:37:53	numeral	but until she gets the funding I'm not banking on it
+2013-03-13 20:38:10	KaiSforza	later, halosghost 
+2013-03-13 20:38:21	<--	halosghost (~halosghos@lit75-4-88-167-34-46.fbx.proxad.net) has quit (Quit: The strongest of thunderstorms is no more than Nature's shower.)
+2013-03-13 20:38:28	KaiSforza	numeral: start campaigning for funding for her.
+2013-03-13 20:38:43	numeral	I don't think the NRF cares what I have to say :P
+2013-03-13 20:39:00	numeral	!g national research foundation
+2013-03-13 20:39:02	phrik	numeral: National Research Foundation - Welcome to the NRF: <http://www.nrf.ac.za/>
+2013-03-13 20:39:15	numeral	hrm... did I get the name wrong...
+2013-03-13 20:39:30	KaiSforza	you never know, man.
+2013-03-13 20:40:07	numeral	oh... 
+2013-03-13 20:40:11	numeral	!g national science foundation
+2013-03-13 20:40:13	phrik	numeral: nsf.gov - National Science Foundation - US National Science ...: <http://www.nsf.gov/>
+2013-03-13 20:40:18	numeral	there we go
+2013-03-13 20:44:52	KaiSforza	numeral: just say it will cure cancer.
+2013-03-13 20:46:12	numeral	 yeah that's gonna work
+2013-03-13 20:50:26	KaiSforza	lol
+2013-03-13 21:19:07	-->	qubodup (~qubodup@91-64-93-198-dynip.superkabel.de) has joined #archlinux-women
+2013-03-13 21:32:54	fsckd	urlgrab is spammy :/
+2013-03-13 21:47:34	KaiSforza	ah, got a kind of proof of concept ish thing.
+2013-03-13 21:49:06	+tigrmesh	urlgrab is also not great when you're looking at scrollback
+2013-03-13 21:49:51	fsckd	hmm...
+2013-03-13 21:51:33	+tigrmesh	i use it, so i know
+2013-03-13 21:52:11	fsckd	heh
+2013-03-13 21:52:27	fsckd	i like the interface, /url 1
+2013-03-13 21:53:04	KaiSforza	all i need to get now is some kind of authentication stuffs.
+2013-03-13 21:53:07	KaiSforza	but i'm not worried about that now.
+2013-03-13 21:53:15	+tigrmesh	but i didn't want to use a url shortener.  and those were the only options i looked at.  in 2009...
+2013-03-13 21:53:16	KaiSforza	that can be done in git.
+2013-03-13 21:53:34	fsckd	tigrmesh: same options now heh
+2013-03-13 21:55:27	+tigrmesh	KaiSforza: how does the url handler you use handle multiple url-heavy channels and long scrollback for each?  i mean #al and -ot must each generate 100 urls a day.  or more
+2013-03-13 21:55:41	KaiSforza	tigrmesh: what do you mean?
+2013-03-13 21:56:01	fsckd	i just want a url handler which launches a command of my choice
+2013-03-13 21:56:37	KaiSforza	fsckd: just use urxvt.
+2013-03-13 21:56:44	fsckd	Oo
+2013-03-13 21:57:04	fsckd	within the tmux session weechat is running in ><
+2013-03-13 21:57:11	KaiSforza	yeah.
+2013-03-13 21:57:25	fsckd	really? how?
+2013-03-13 21:57:35	numeral	don't do it! urxvt is annoying :/
+2013-03-13 21:57:37	KaiSforza	i have my weechat running in a tmux session...
+2013-03-13 21:57:41	+tigrmesh	urlserver.py - i thought you said you can see who said the url
+2013-03-13 21:57:53	+tigrmesh	KaiSforza: screen session?
+2013-03-13 21:58:14	KaiSforza	tigrmesh: i think you can...
+2013-03-13 21:58:24	KaiSforza	yeah
+2013-03-13 21:58:27	KaiSforza	you can.
+2013-03-13 21:58:55	+tigrmesh	how does it handle heavy activity?
+2013-03-13 21:59:00	KaiSforza	well?
+2013-03-13 21:59:08	KaiSforza	it's just a local web server
+2013-03-13 21:59:14	KaiSforza	that redirects you to the outside world
+2013-03-13 21:59:32	+tigrmesh	does it show what channel they were saying it in?
+2013-03-13 21:59:37	KaiSforza	yeah
+2013-03-13 22:00:20	+tigrmesh	i know you had already said this to fsckd, but i couldn't find it when i scrolled back up
+2013-03-13 22:01:42	KaiSforza	it's all good
+2013-03-13 22:01:44	<--	alyx_ (~alyx@unaffiliated/xwnh) has quit (Ping timeout: 252 seconds)
+2013-03-13 22:02:34	-->	alyx_ (~alyx@unaffiliated/xwnh) has joined #archlinux-women
+2013-03-13 22:02:58	numeral	KaiSforza: err.. does it allow outside traffic in?
+2013-03-13 22:03:16	KaiSforza	numeral: what do you mean?
+2013-03-13 22:03:35	KaiSforza	if you're sshing to a server to weechat
+2013-03-13 22:03:49	KaiSforza	yeah, you just have to specify the address as the external ip
+2013-03-13 22:03:58	KaiSforza	so that's what is shown when a url comes through
+2013-03-13 22:04:04	KaiSforza	and then there's some setting.
+2013-03-13 22:04:08	numeral	hrm, that seems... insecure
+2013-03-13 22:04:38	KaiSforza	yeah. you can set passwords and stuff for it.
+2013-03-13 22:07:07	KaiSforza	i don't because i don't have any ports listening.
+2013-03-13 22:07:11	+tigrmesh	i'm not saying he's perfect, but flashcode is thoughtful and careful
+2013-03-13 22:07:15	KaiSforza	numeral: this is why you set up zsh)
+2013-03-13 22:07:21	KaiSforza	*znc
+2013-03-13 22:07:32	+tigrmesh	he wrote urlserver.py.  he's also the weechat dev
+2013-03-13 22:07:33	KaiSforza	i always type one when i'm thinking of the other.
+2013-03-13 22:07:48	numeral	tigrmesh: yeah I was reading the script, seems solid
+2013-03-13 22:08:03	numeral	it's probably still exploitable
+2013-03-13 22:08:22	KaiSforza	numeral: if you're going to say that
+2013-03-13 22:08:25	KaiSforza	then stop using computer.
+2013-03-13 22:08:40	numeral	if you're gonna deny it... then stop using computer
+2013-03-13 22:08:50	KaiSforza	lol
+2013-03-13 22:08:55	KaiSforza	i don't i just take that risk
+2013-03-13 22:08:57	numeral	trying to make unexploitable code will just make you go insane
+2013-03-13 22:09:08	KaiSforza	and there's a helluva lot less risk than using a public url shortening service.
+2013-03-13 22:09:11	numeral	but denying that it is exploitable just makes you seem dumb :/
+2013-03-13 22:09:32	numeral	YAY FOR MAN IN THE MIDDLE ATTACKS! depends which url shortening service you use
+2013-03-13 22:09:50	KaiSforza	s/seem dumb/easily expliotable/
+2013-03-13 22:09:52	<--	alyx_ (~alyx@unaffiliated/xwnh) has quit (Quit: Reconnecting)
+2013-03-13 22:10:08	-->	alyx_ (~alyx@unaffiliated/xwnh) has joined #archlinux-women
+2013-03-13 22:10:29	numeral	don't substitute, add...
+2013-03-13 22:10:34	numeral	s/add/concatenate
+2013-03-13 22:10:49	KaiSforza	lol
+2013-03-13 22:11:15	KaiSforza	so. I have no idea what i'm doing with php.
+2013-03-13 22:12:01	numeral	!php5
+2013-03-13 22:12:03	phrik	https://twitter.com/codinghorror/status/190943243511406592
+2013-03-13 22:12:06	numeral	!php4
+2013-03-13 22:12:08	+tigrmesh	why do you need to do anything?
+2013-03-13 22:12:08		[http://is.gd/KDluma]
+2013-03-13 22:12:09	phrik	http://www.codinghorror.com/.a/6a0120a85dcdae970b017742d249d5970d-800wi
+2013-03-13 22:12:13	numeral	!php3
+2013-03-13 22:12:14		[http://is.gd/QK2ItU]
+2013-03-13 22:12:17	phrik	You shouldn't use PHP. Read this: http://me.veekun.com/blog/2012/04/09/php-a-fractal-of-bad-design/
+2013-03-13 22:12:20	numeral	should I go on?
+2013-03-13 22:12:22	numeral	!php2
+2013-03-13 22:12:22		[http://is.gd/z1POXC]
+2013-03-13 22:12:24	phrik	PHP is to programming languages as the Salem Witch trials were to Fairness, Decency and Logic. In fact any programmer who likes PHP should be sent back to participate in those trials as a victim to understand the consequences of faulty thinking
+2013-03-13 22:13:57	KaiSforza	tigrmesh: the aur.
+2013-03-13 22:14:00	KaiSforza	:<
+2013-03-13 22:14:19	+tigrmesh	are you taking on aur dev work?
+2013-03-13 22:14:39	+tigrmesh	or aur maintaining?
+2013-03-13 22:14:51	KaiSforza	i'm writing a script to use git as a nice backend for the aur
+2013-03-13 22:14:54	KaiSforza	at least as a poc
+2013-03-13 22:14:54	numeral	there's aur dev work?
+2013-03-13 22:15:06	KaiSforza	numeral: there's quite a bit, actually.
+2013-03-13 22:15:19	numeral	linkie
+2013-03-13 22:15:36	KaiSforza	numeral: ...to wat?
+2013-03-13 22:15:47	numeral	bug tracker? development page? source code?
+2013-03-13 22:15:56	numeral	there's so many things you could link to...
+2013-03-13 22:16:02	carharttjimmy	phrik: give numeral g link to the internet
+2013-03-13 22:16:04	phrik	numeral: CenturyLink | High Speed Internet Services. See plans and offers.: <http://www.centurylink.com/home/internet/>
+2013-03-13 22:16:09		[http://is.gd/PojggZ]
+2013-03-13 22:16:11	carharttjimmy	thats not right
+2013-03-13 22:16:18	numeral	carharttjimmy: you're not right
+2013-03-13 22:16:22	KaiSforza	numeral: um...it's an arch project and it's where all the other arch projects are.
+2013-03-13 22:16:30	KaiSforza	same wiht the bug tracker
+2013-03-13 22:16:33	KaiSforza	and mailing list
+2013-03-13 22:17:27	numeral	meta-linked
+2013-03-13 22:18:35	carharttjimmy	I wish I had free time to devote to working on stuff
+2013-03-13 22:18:47	numeral	uhm... you play video games 2 hours a day at least
+2013-03-13 22:18:47	carharttjimmy	but KF is more awesomer because it releaves stess
+2013-03-13 22:18:51	carharttjimmy	strss*
+2013-03-13 22:18:56	numeral	and still can't spell...
+2013-03-13 22:19:03	carharttjimmy	stress*
+2013-03-13 22:19:11	<--	alyx_ (~alyx@unaffiliated/xwnh) has quit (Ping timeout: 245 seconds)
+2013-03-13 22:19:12	carharttjimmy	actually I play at night after hw is done
+2013-03-13 22:19:19	carharttjimmy	or when I have free time
+2013-03-13 22:19:23	carharttjimmy	or when I dont want to do hw
+2013-03-13 22:19:35	numeral	so... all the time?
+2013-03-13 22:19:50	numeral	so if you stopped playing video games for a week you would have 14 hours to work on a project... that's a lot of time
+2013-03-13 22:20:11	-->	alyx_ (~alyx@unaffiliated/xwnh) has joined #archlinux-women
+2013-03-13 22:20:27	carharttjimmy	well, tbf, I didnt play at all last night
+2013-03-13 22:20:43	 *	numeral claps
+2013-03-13 22:20:46	carharttjimmy	I was at school till 12 in the libary than came home worked till 1 and passed out doing hw
+2013-03-13 22:20:47	fsckd	numeral: https://archlinux.org somewhere on that site is AUR dev stuff
+2013-03-13 22:20:50	phrik	Title: Arch Linux (at archlinux.org)
+2013-03-13 22:20:54	-->	ident_ (~smuxi@grm-studby-128-39-149-158.studby.uia.no) has joined #archlinux-women
+2013-03-13 22:21:01	numeral	fsckd wins snark of the year award
+2013-03-13 22:21:05	numeral	<3
+2013-03-13 22:21:10	 *	fsckd bows low
+2013-03-13 22:21:17	fsckd	♥
+2013-03-13 22:21:22	carharttjimmy	numeral: the point is that I just want to devote time to stress relievers not stress creators
+2013-03-13 22:21:38	numeral	coding isn't stressful... unless you're a bad coder...
+2013-03-13 22:22:31	carharttjimmy	but it isnt killing zed...
+2013-03-13 22:22:41	<--	AbigailBuccaneer (~jetbeard@unaffiliated/jetbeard) has quit (Read error: Connection reset by peer)
+2013-03-13 22:22:44	KaiSforza	http://ix.io/4IX/bash
+2013-03-13 22:23:04	carharttjimmy	I like KaiSforza 
+2013-03-13 22:23:11	numeral	hrm... can you shebang node.js...
+2013-03-13 22:23:15	KaiSforza	!give carharttjimmy <3
+2013-03-13 22:23:17	phrik	carharttjimmy: ilu2
+2013-03-13 22:23:19	KaiSforza	who knows
+2013-03-13 22:23:46	carharttjimmy	numeral: drop node.js program in haskell!
+2013-03-13 22:24:05	<--	alyx_ (~alyx@unaffiliated/xwnh) has quit (Client Quit)
+2013-03-13 22:24:20	-->	alyx_ (~alyx@unaffiliated/xwnh) has joined #archlinux-women
+2013-03-13 22:25:07	numeral	surprisingly works... #!/usr/bin/env node
+2013-03-13 22:25:13	fsckd	:)
+2013-03-13 22:26:00	fsckd	why not just !#/wherever/node ?
+2013-03-13 22:26:06	fsckd	#!
+2013-03-13 22:26:11	carharttjimmy	!!
+2013-03-13 22:26:12	phrik	POPOZÃO!
+2013-03-13 22:26:19	fsckd	!#
+2013-03-13 22:26:24	carharttjimmy	oh I thought you were going somewhere fsckd 
+2013-03-13 22:26:33	numeral	there's a reason, I just don't remember what it is
+2013-03-13 22:26:44	numeral	env makes a fresh environment if I remember correctly
+2013-03-13 22:29:03	carharttjimmy	it looks nicer too
+2013-03-13 22:47:19	gtmanfred	KaiSforza: what did i do?
+2013-03-13 22:49:35	gtmanfred	KaiSforza: 
+2013-03-13 22:49:39	gtmanfred	KaiSforza: 
+2013-03-13 22:51:17	+tigrmesh	gtmanfred: 
+2013-03-13 22:51:20	+tigrmesh	gtmanfred: 
+2013-03-13 22:51:25	+tigrmesh	?
+2013-03-13 22:51:27	numeral	tigrmesh: 
+2013-03-13 22:51:27	numeral	tigrmesh: 
+2013-03-13 22:51:29	gtmanfred	nah i want KaiSforza  he said something earlier
+2013-03-13 22:51:34	numeral	tigrmesh: <3
+2013-03-13 22:51:41	+tigrmesh	:)
+2013-03-13 22:51:44	carharttjimmy	gtmanfred: he is driving home from class
+2013-03-13 22:51:48	gtmanfred	lame
+2013-03-13 22:51:50	carharttjimmy	or talking to his teacher about brtfs
+2013-03-13 23:27:39	-->	Artheist (~quassel@modemcable051.243-130-66.mc.videotron.ca) has joined #archlinux-women
+2013-03-13 23:31:55	--	alibaba is now known as sudokode
+2013-03-13 23:32:49	carharttjimmy	gtmanfred: I am so lost lol, I exceed the requirements for dungeon defenders but it runs so slow
+2013-03-13 23:32:55	carharttjimmy	it says its want libc 
+2013-03-13 23:33:11	carharttjimmy	but google redirects me to glibc and catalyst-utils is installed
+2013-03-13 23:33:40	gtmanfred	wellleeellell
+2013-03-13 23:33:46	gtmanfred	i assume you have lib32-catalyst
+2013-03-13 23:33:50	gtmanfred	since you play steam
+2013-03-13 23:33:55	gtmanfred	so i have no idea
+2013-03-13 23:34:04	gtmanfred	i only installed those games on my kindle
+2013-03-13 23:34:08	carharttjimmy	yeah I am lost 
+2013-03-13 23:34:09	gtmanfred	and dungeon defenders is BOSS
+2013-03-13 23:34:28	carharttjimmy	It wants 256 mb of vram, and I have 512
