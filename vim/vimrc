@@ -81,13 +81,13 @@ let mapleader = ","
 set t_Co=256
 
 "Load Pathogen plugins
-call pathogen#infect()
-call pathogen#helptags()
+"call pathogen#infect()
+"call pathogen#helptags()
 
 syntax enable
 let g:solarized_termcolors=256
 set background=dark
-colorscheme zenburn
+colorscheme diablo3
 set background=dark
 
 if has("syntax")
