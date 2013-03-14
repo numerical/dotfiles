@@ -752,3 +752,502 @@
 2013-03-14 12:23:40	<--	b4d (~b4d@unaffiliated/b4d) has quit (Ping timeout: 260 seconds)
 2013-03-14 12:24:08	<--	optixx (~optixx@optixx.org) has quit (Ping timeout: 252 seconds)
 2013-03-14 12:24:31	<--	polysix (~hoax@mew.chickenkiller.com) has quit (Ping timeout: 264 seconds)
+2013-03-14 12:25:36	<--	dougireton (~dougireto@161.181.253.20) has quit (Quit: Leaving.)
+2013-03-14 12:25:43	-->	poseidon (~joe@vps6967.inmotionhosting.com) has joined #vim
+2013-03-14 12:26:43	-->	optixx (~optixx@optixx.org) has joined #vim
+2013-03-14 12:26:50	<--	lennartalserda1 (~Adium@D57DEC5A.static.ziggozakelijk.nl) has quit (Quit: Leaving.)
+2013-03-14 12:27:28	<--	ki0 (~ki0@41.Red-88-3-155.dynamicIP.rima-tde.net) has quit (Remote host closed the connection)
+2013-03-14 12:27:33	<--	ziviani (~ziviani@201-95-54-66.dsl.telesp.net.br) has quit (Quit: Ex-Chat)
+2013-03-14 12:28:27	-->	dougireton (~dougireto@161.181.253.20) has joined #vim
+2013-03-14 12:28:40	japh	There are many ways of observing Pi Day. These include eating pie and eating pie
+2013-03-14 12:28:44	japh	oops
+2013-03-14 12:30:13	<--	apod (~apod@dsl-aaut1f.dyn.edudsl.gr) has quit
+2013-03-14 12:31:11	<--	mneorr (~mneorr@adsl-71-135-43-58.dsl.pltn13.pacbell.net) has quit (Remote host closed the connection)
+2013-03-14 12:31:12	-->	ryana (~ryana@173-8-196-70-Oregon.hfc.comcastbusiness.net) has joined #vim
+2013-03-14 12:31:37	<--	Goles (~goles.nic@pc-161-170-44-190.cm.vtr.net) has quit (Remote host closed the connection)
+2013-03-14 12:31:45	-->	polysix (hoax@mew.chickenkiller.com) has joined #vim
+2013-03-14 12:32:15	-->	drayah_ (~drayah@201-68-16-237.dsl.telesp.net.br) has joined #vim
+2013-03-14 12:32:54	<--	mizu_no_oto (~textual@gw1.mcgraw-hill.com) has quit (Quit: ["Textual IRC Client: www.textualapp.com"])
+2013-03-14 12:33:16	<--	guybrush1 (~g.kervern@ANantes-557-1-150-235.w2-1.abo.wanadoo.fr) has left #vim
+2013-03-14 12:33:23	-->	thatryana (~ryana@173-8-196-65-Oregon.hfc.comcastbusiness.net) has joined #vim
+2013-03-14 12:33:30	-->	Goles (~goles.nic@pc-161-170-44-190.cm.vtr.net) has joined #vim
+2013-03-14 12:33:37	<--	drayah (~drayah@177.138.102.173) has quit (Ping timeout: 248 seconds)
+2013-03-14 12:33:37	graywh	japh, you mean half tau day?
+2013-03-14 12:34:16	jrajav	You mean equivalent expressions of ratios day?
+2013-03-14 12:34:45	inhies	you mean pie day?
+2013-03-14 12:34:54	graywh	every day should be pie day
+2013-03-14 12:35:00	<--	taybin (~taybin@c-66-31-16-32.hsd1.ma.comcast.net) has quit (Read error: Connection reset by peer)
+2013-03-14 12:35:00	jrajav	It can be
+2013-03-14 12:35:02	jrajav	In your heart
+2013-03-14 12:35:07	-->	taybin (~taybin@c-66-31-16-32.hsd1.ma.comcast.net) has joined #vim
+2013-03-14 12:35:22	romainl	no, I think that he means "hero of lame movie" day
+2013-03-14 12:35:35	<--	drayah_ (~drayah@201-68-16-237.dsl.telesp.net.br) has quit (Remote host closed the connection)
+2013-03-14 12:35:42	graywh	it was a book first
+2013-03-14 12:35:53	romainl	can't talk about the book
+2013-03-14 12:36:13	romainl	didn't read it
+2013-03-14 12:36:14	-->	Nitro (~nitro@unaffiliated/nitro) has joined #vim
+2013-03-14 12:36:30	romainl	but I know the Piscine Molitor well
+2013-03-14 12:36:45	-->	d48 (~predikt@rrcs-76-79-249-222.west.biz.rr.com) has joined #vim
+2013-03-14 12:37:06	<--	ryana (~ryana@173-8-196-70-Oregon.hfc.comcastbusiness.net) has quit (Ping timeout: 276 seconds)
+2013-03-14 12:37:47	<--	erif_yawa (~erifneerg@c-68-80-188-22.hsd1.pa.comcast.net) has left #vim
+2013-03-14 12:37:52	<--	Goles (~goles.nic@pc-161-170-44-190.cm.vtr.net) has quit (Max SendQ exceeded)
+2013-03-14 12:37:55	-->	erifneerg (~erifneerg@c-68-80-188-22.hsd1.pa.comcast.net) has joined #vim
+2013-03-14 12:37:55	<--	punknroll (~Thunderbi@p83-219-165-60.snwdip.snw.at) has quit (Quit: punknroll)
+2013-03-14 12:38:14	<--	khauchy (~khauchy@193.54.192.15) has quit (Quit: WeeChat 0.3.7)
+2013-03-14 12:38:18	<--	maletor (~maletor@mobile-166-137-186-245.mycingular.net) has quit (Quit: Computer has gone to sleep.)
+2013-03-14 12:39:09	-->	ISF_ (~ivan@187.64.222.221) has joined #vim
+2013-03-14 12:39:29	<--	Gonzih (~gonzih@37.45.227.115) has quit (Ping timeout: 240 seconds)
+2013-03-14 12:39:55	erifneerg	Anyone know freenode says #vim has me banned?
+2013-03-14 12:40:10	romainl	erifneerg: it happens
+2013-03-14 12:40:22	romainl	noone banned you
+2013-03-14 12:40:38	MarcWeber	erifneerg: rejoin - does happen to me once a month for unkown reasons
+2013-03-14 12:40:39	japh	just must identify
+2013-03-14 12:40:50	<--	StPiere (~daniel@85.115.26.82) has quit (Quit: Verlassend)
+2013-03-14 12:40:50	-->	guidov (~jhg@82-170-200-228.ip.telfort.nl) has joined #vim
+2013-03-14 12:40:52	erifneerg	Yeah, i know. It's odd
+2013-03-14 12:40:54	-->	michimuellae (~michimuel@dslb-178-003-248-122.pools.arcor-ip.net) has joined #vim
+2013-03-14 12:41:48	guidov	is there a standard key combination in vim which inserts a newline without going to insert mode (such as o does)?
+2013-03-14 12:42:02	alkino	guidov: no. But you can map it
+2013-03-14 12:42:06	guidov	ok
+2013-03-14 12:42:07	graywh	sure, :pu_<CR>
+2013-03-14 12:42:27	-->	daaku (~daaku__@c-98-248-39-45.hsd1.ca.comcast.net) has joined #vim
+2013-03-14 12:43:14	erifneerg	Oh, since I'm here, anyone have problems getting 7.3 on debian squeezy? I've had trouble using a backports
+2013-03-14 12:43:54	japh	isn't the vim in the repos horribly broken
+2013-03-14 12:44:03	japh	at least the one in sid was
+2013-03-14 12:44:15	-->	mneorr (~mneorr@adsl-71-135-43-58.dsl.pltn13.pacbell.net) has joined #vim
+2013-03-14 12:44:38	-->	jpirko (~jirka@ip-89-103-91-114.net.upcbroadband.cz) has joined #vim
+2013-03-14 12:44:40	inhies	nnoremap <silent><A-j> :set paste<CR>m`o<Esc>``:set nopaste<CR>
+2013-03-14 12:44:42	inhies	i found that somewhere
+2013-03-14 12:44:49	inhies	i dont think it works for me tho
+2013-03-14 12:44:51	mhi^	japh: I use Debian unstable and my Vim is not broken.
+2013-03-14 12:44:53	-->	hafeez3000 (~hafeez@183.83.152.6) has joined #vim
+2013-03-14 12:45:05	-->	Goles (~goles.nic@pc-161-170-44-190.cm.vtr.net) has joined #vim
+2013-03-14 12:45:06	japh	mhi^: mine neither ;)
+2013-03-14 12:45:14	romainl	inhies: do you use vim locally or on a server?
+2013-03-14 12:45:19	-->	b4d (~b4d@unaffiliated/b4d) has joined #vim
+2013-03-14 12:45:32	inhies	yes.
+2013-03-14 12:45:35	inhies	but, locally
+2013-03-14 12:45:38	<--	mneorr (~mneorr@adsl-71-135-43-58.dsl.pltn13.pacbell.net) has quit (Remote host closed the connection)
+2013-03-14 12:45:49	inhies	it might be some other mappings i have messing it up, i dont care enough to investigate
+2013-03-14 12:45:51	 *	inhies is new to this
+2013-03-14 12:45:51	romainl	inhies: then don't bother with that
+2013-03-14 12:45:54	<--	Goles (~goles.nic@pc-161-170-44-190.cm.vtr.net) has quit (Max SendQ exceeded)
+2013-03-14 12:46:08	romainl	inhies: use "+y and "+p
+2013-03-14 12:46:22	-->	mneorr (~mneorr@adsl-71-135-43-58.dsl.pltn13.pacbell.net) has joined #vim
+2013-03-14 12:46:36	romainl	inhies: what OS? what version ofVim?
+2013-03-14 12:46:49	-->	davidfetter (~chatzilla@173-164-140-181-SFBA.hfc.comcastbusiness.net) has joined #vim
+2013-03-14 12:47:00	inhies	ubuntu 12.10 vim.... 7.3? ill check
+2013-03-14 12:47:28	inhies	yea 7.3
+2013-03-14 12:47:35	erifneerg	yea, i wasn't having luck installing vim 7.3 on my debian box at my new job. kinda wish i knew to tell the guy to install debian wheezy rather then squezy
+2013-03-14 12:48:24	romainl	inhies: the default one or one you installed from the repos
+2013-03-14 12:48:28	-->	sarkis (~sarkis@unaffiliated/sako) has joined #vim
+2013-03-14 12:48:42	inhies	from teh repo
+2013-03-14 12:48:43	-->	st1g (~SSK@ip-83-134-240-197.dsl.scarlet.be) has joined #vim
+2013-03-14 12:48:54	romainl	inhies: :echo has('clipboard')
+2013-03-14 12:49:07	romainl	inhies: what does it say?
+2013-03-14 12:49:26	inhies	0
+2013-03-14 12:49:56	romainl	inhies: $ sudo apt-get install vim-gnome
+2013-03-14 12:50:15	inhies	but i dont wanna
+2013-03-14 12:50:24	inhies	and i do half my development on a server
+2013-03-14 12:50:30	inhies	i can live without the clipboard
+2013-03-14 12:50:33	inhies	thank you though :)
+2013-03-14 12:50:38	-->	maletor (~maletor@64.124.27.219) has joined #vim
+2013-03-14 12:50:56	-->	Goles (~goles.nic@pc-161-170-44-190.cm.vtr.net) has joined #vim
+2013-03-14 12:51:01	-->	NIN101 (~NIN@p5DD28C7C.dip0.t-ipconnect.de) has joined #vim
+2013-03-14 12:51:01	romainl	inhies: read :h pastetoggle, then
+2013-03-14 12:51:04	-->	aztak (~aztak@212.247.84.125) has joined #vim
+2013-03-14 12:51:15	<--	jorick_ (~kciroj@d51A4F9DD.access.telenet.be) has quit (Remote host closed the connection)
+2013-03-14 12:52:17	-->	mezner (~mezner@67.211.2.160) has joined #vim
+2013-03-14 12:54:04	<--	pen (~pen@g1pc2n32.g1.ntu.edu.tw) has quit (Remote host closed the connection)
+2013-03-14 12:54:27	<--	thetet (~raggam-nl@ELE-130.mur.at) has quit (Quit: Leaving.)
+2013-03-14 12:54:36	-->	comand (~comand@2620:79:0:164:1ec1:deff:fe33:c08d) has joined #vim
+2013-03-14 12:55:26	<--	mneorr (~mneorr@adsl-71-135-43-58.dsl.pltn13.pacbell.net) has quit (Remote host closed the connection)
+2013-03-14 12:55:28	-->	waedt (~null@198.252.15.196) has joined #vim
+2013-03-14 12:55:36	-->	andrewjsledge (~andrew@24-178-112-134.static.sghl.ga.charter.com) has joined #vim
+2013-03-14 12:55:46	<--	Goles (~goles.nic@pc-161-170-44-190.cm.vtr.net) has quit (Remote host closed the connection)
+2013-03-14 12:55:59	<--	bosie (~bosie@91-119-97-138.dynamic.xdsl-line.inode.at) has quit (Ping timeout: 255 seconds)
+2013-03-14 12:56:05	<--	datanoise (~kent@216-189-189-068-dhcp.mia.fl.atlanticbb.net) has quit (Ping timeout: 246 seconds)
+2013-03-14 12:56:05	<--	inhies (~inhies@8.23.56.82) has quit (Quit: ZNC - http://znc.in)
+2013-03-14 12:56:30	<--	fire (~fire@unaffiliated/security) has quit (Ping timeout: 264 seconds)
+2013-03-14 12:56:37	-->	Goles (~goles.nic@pc-161-170-44-190.cm.vtr.net) has joined #vim
+2013-03-14 12:57:19	<--	Goles (~goles.nic@pc-161-170-44-190.cm.vtr.net) has quit (Max SendQ exceeded)
+2013-03-14 12:58:26	<--	rufianw (~ntrrgc@79.109.52.159.dyn.user.ono.com) has quit (Quit: Konversation terminated!)
+2013-03-14 12:58:34	-->	gffa (~unknown@unaffiliated/gffa) has joined #vim
+2013-03-14 12:59:32	-->	threesome (~threesome@ip-94-113-12-74.net.upcbroadband.cz) has joined #vim
+2013-03-14 13:00:11	-->	fire (~fire@unaffiliated/security) has joined #vim
+2013-03-14 13:00:56	<--	kopfkind_ (~axel.knau@81.173.202.25) has quit (Quit: leaving)
+2013-03-14 13:00:58	-->	inhies (~inhies@8.23.56.82) has joined #vim
+2013-03-14 13:01:06	<--	agwblack (~agwblack@2a02:390:a001:192:7535:6115:f261:f610) has quit (Ping timeout: 256 seconds)
+2013-03-14 13:01:22	<--	dv__ (~quassel@SD1.retn.net) has quit (Read error: Connection reset by peer)
+2013-03-14 13:02:17	-->	c_14 (~c_14@unaffiliated/c-14/x-8913907) has joined #vim
+2013-03-14 13:02:25	-->	gasbakid (~gasbakid@41.96.18.133) has joined #vim
+2013-03-14 13:02:44	-->	linuxnewb2 (~dfg232@64.237.37.125) has joined #vim
+2013-03-14 13:02:44	<--	linuxnewb2 (~dfg232@64.237.37.125) has quit (Changing host)
+2013-03-14 13:02:44	-->	linuxnewb2 (~dfg232@unaffiliated/linuxnewb2) has joined #vim
+2013-03-14 13:02:55	<--	dougireton (~dougireto@161.181.253.20) has quit (Quit: Leaving.)
+2013-03-14 13:03:05	<--	gasbakid (~gasbakid@41.96.18.133) has quit (Max SendQ exceeded)
+2013-03-14 13:03:07	<--	unop (~unop@firewall.ctxuk.citrix.com) has quit (Remote host closed the connection)
+2013-03-14 13:03:38	sjl	anyone know if there's a way to "cancel" an operator-pending mapping by returning something special from the function or something?
+2013-03-14 13:04:11	<--	optixx (~optixx@optixx.org) has quit (Ping timeout: 245 seconds)
+2013-03-14 13:04:50	<--	barda (~user@host224-59-static.240-95-b.business.telecomitalia.it) has quit (Quit: Leaving.)
+2013-03-14 13:05:14	-->	NiteRain (~kvirc@vpn9.evilnuts.com) has joined #vim
+2013-03-14 13:06:17	<--	wilmoore-misc (~wilmoore@vlandnat.mystrotv.com) has quit (Remote host closed the connection)
+2013-03-14 13:06:29	-->	oncenull_ (~oncenull@200.69.203.221) has joined #vim
+2013-03-14 13:06:45	-->	optixx (~optixx@optixx.org) has joined #vim
+2013-03-14 13:06:49	<--	daaku (~daaku__@c-98-248-39-45.hsd1.ca.comcast.net) has quit (Ping timeout: 256 seconds)
+2013-03-14 13:06:51	-->	Gonzih (~gonzih@37.45.227.115) has joined #vim
+2013-03-14 13:07:20	-->	Goles (~goles.nic@pc-161-170-44-190.cm.vtr.net) has joined #vim
+2013-03-14 13:08:02	sjl	oh, I can just return
+2013-03-14 13:08:06	-->	mneorr (~mneorr@adsl-71-135-43-58.dsl.pltn13.pacbell.net) has joined #vim
+2013-03-14 13:08:18	<--	amcsi_work (~amcsi_wor@81.168.2.131) has quit (Ping timeout: 276 seconds)
+2013-03-14 13:08:26	-->	lennartalserda (~Adium@D57D5A2A.static.ziggozakelijk.nl) has joined #vim
+2013-03-14 13:08:32	sjl	it's just that if I do a "change" action it always puts me into insert mode... I guess I can live with that
+2013-03-14 13:08:59	-->	gasbakid (~gasbakid@41.96.18.133) has joined #vim
+2013-03-14 13:08:59	<--	mneorr (~mneorr@adsl-71-135-43-58.dsl.pltn13.pacbell.net) has quit (Remote host closed the connection)
+2013-03-14 13:08:59	nanny	that's the whole point of change
+2013-03-14 13:09:08	nanny	what else would you want it to do?
+2013-03-14 13:10:10	-->	wilmoore-misc (~wilmoore@vlandnat.mystrotv.com) has joined #vim
+2013-03-14 13:10:13	<--	oncenull (~oncenull@200.69.203.221) has quit (Ping timeout: 256 seconds)
+2013-03-14 13:10:15	<--	balicka (~fifi@84-73-200-196.dclient.hispeed.ch) has quit (Quit: Leaving.)
+2013-03-14 13:10:22	sjl	ci<esc> -- "change inside -- oops, nevermind"
+2013-03-14 13:10:29	<--	Usse (~usse@170.3.254.213.static.dsl.itgate.net) has quit (Remote host closed the connection)
+2013-03-14 13:10:41	sjl	I want it to bail entirely when it gets an escape
+2013-03-14 13:10:46	<--	aztak (~aztak@212.247.84.125) has quit (Ping timeout: 252 seconds)
+2013-03-14 13:10:55	nanny	doesn't it? mine does
+2013-03-14 13:11:02	sjl	it does that correctly for normal ci, but not for my onoremapped thing
+2013-03-14 13:11:08	Mogget	Hey; When I do ":hi cursorline guibg = green" and then ":set cursorline" the line is just underlined instead of higlighted. Any ideas?
+2013-03-14 13:11:10	sjl	so it's probably some horrible interaction
+2013-03-14 13:11:11	<--	Grobwiefein (~Grobwiefe@fb2-pub-1.dv-nr.fh-frankfurt.de) has quit (Remote host closed the connection)
+2013-03-14 13:11:30	-->	gasbakid_ (~gasbakid@41.96.126.3) has joined #vim
+2013-03-14 13:11:33	nanny	probably
+2013-03-14 13:11:36	romainl	Mogget: you are in gvim/macvim, right ?
+2013-03-14 13:11:59	Mogget	romainl: no, using vim in linux.
+2013-03-14 13:12:13	<--	davidfetter (~chatzilla@173-164-140-181-SFBA.hfc.comcastbusiness.net) has quit (Quit: We'll meet again, don't know where, don't know when...)
+2013-03-14 13:12:15	romainl	gvim is on linux as well
+2013-03-14 13:12:17	sjl	Mogget: "guibg" says "set this color in gui vims"
+2013-03-14 13:12:28	-->	BlackIkeEagle (~BlackIkeE@archlinux/trusteduser/blackikeeagle) has joined #vim
+2013-03-14 13:12:31	-->	bad_pun (~BP@67.131.102.78) has joined #vim
+2013-03-14 13:12:31	romainl	try ctermbg
+2013-03-14 13:12:32	sjl	Mogget: "ctermbg" is for setting colors when you're in a console vim
+2013-03-14 13:12:44	Mogget	sjl: ah, I want the terminal version. Thank you both.
+2013-03-14 13:13:21	Mogget	That worked wonderfully. Is it possible to remove the underlining that I still have?
+2013-03-14 13:13:28	romainl	sjl, I think I've said bat words about your coming home to vim post a while ago
+2013-03-14 13:13:35	sjl	lol
+2013-03-14 13:13:41	sjl	it's a few years old by now
+2013-03-14 13:13:45	romainl	sjl: yes
+2013-03-14 13:14:02	mgedmin	nanananananananana bat words!
+2013-03-14 13:14:02	xintron	Batman!
+2013-03-14 13:14:05	romainl	it helped me a lot when I started
+2013-03-14 13:14:17	sjl	cool, I'm glad
+2013-03-14 13:14:33	romainl	but I did the mistake of taking it wholesale
+2013-03-14 13:14:36	<--	gasbakid (~gasbakid@41.96.18.133) has quit (Ping timeout: 264 seconds)
+2013-03-14 13:14:50	<--	DainDwarf (~Dain@wikipedia/daindwarf) has quit (Quit: Dain's default quit message)
+2013-03-14 13:15:12	romainl	since then I've changed my mind and I try to tell newcomers to not do tat mistake
+2013-03-14 13:15:16	romainl	that
+2013-03-14 13:15:41	romainl	but now, they do it with spf13, janus and friends
+2013-03-14 13:15:58	<--	rieper (~rieper@wlan251100.rz.uni-leipzig.de) has quit (Ping timeout: 240 seconds)
+2013-03-14 13:16:13	sjl	yeah, I think the right way nowadays is to start with a really basic sanity config like https://github.com/tpope/vim-sensible
+2013-03-14 13:16:17	sjl	then read practical vim
+2013-03-14 13:16:18		[http://is.gd/ffANFF]
+2013-03-14 13:16:20	romainl	so one day I put you in the same bag and I apologize for that
+2013-03-14 13:16:25	sjl	then start adding stuff
+2013-03-14 13:16:30	sjl	ah,m no worries
+2013-03-14 13:16:42	romainl	ok
+2013-03-14 13:16:46	romainl	cool
+2013-03-14 13:17:00	<--	erichynds (~ehynds@64.206.121.41) has quit
+2013-03-14 13:17:14	-->	DainDwarf (~Dain@wikipedia/daindwarf) has joined #vim
+2013-03-14 13:18:05	<--	lennartalserda (~Adium@D57D5A2A.static.ziggozakelijk.nl) has quit (Quit: Leaving.)
+2013-03-14 13:19:30	-->	hidekin (~hidekin@85-218-9-114.dclient.lsne.ch) has joined #vim
+2013-03-14 13:19:30	<--	alkino (~alkino@140-85-190-109.dsl.ovh.fr) has quit (Quit: WeeChat 0.4.0)
+2013-03-14 13:19:44	<--	meizaps_ (~meizaps@mail.carfoo.com) has quit (Ping timeout: 258 seconds)
+2013-03-14 13:20:26	`p	what is a good autocompletion plugin for vim?
+2013-03-14 13:20:44	-->	amcsi_work (~amcsi_wor@81.168.2.131) has joined #vim
+2013-03-14 13:21:00	romainl	`p: the one taht suits your needs
+2013-03-14 13:21:04	romainl	that
+2013-03-14 13:21:07	`p	yeah havent found it yet
+2013-03-14 13:21:27	`p	i want vim on my vps to be like sublime text is for me on my laptop
+2013-03-14 13:21:38	<--	optixx (~optixx@optixx.org) has quit (Ping timeout: 246 seconds)
+2013-03-14 13:21:38	romainl	haha
+2013-03-14 13:21:43	romainl	good luck
+2013-03-14 13:21:45	`p	yeah exactly
+2013-03-14 13:21:47	`p	hah
+2013-03-14 13:22:07	`p	i've learned alot in the process i'll figure out a good middle ground that I can accept
+2013-03-14 13:22:11	romainl	`p: which ones did you try?
+2013-03-14 13:22:32	-->	rippa (~flak@host-176-100-246-253.masterbit.su) has joined #vim
+2013-03-14 13:22:34	`p	autocompletion vim-autocomplete
+2013-03-14 13:22:35	-->	meizaps (~meizaps@mail.carfoo.com) has joined #vim
+2013-03-14 13:22:51	`p	im gonna try omni next
+2013-03-14 13:23:03	romainl	and what language do you use?
+2013-03-14 13:23:08	`p	ruby
+2013-03-14 13:23:11	-->	Watabou (~Watabou@unaffiliated/watabou) has joined #vim
+2013-03-14 13:23:13	`p	well mostly ruby
+2013-03-14 13:23:18	romainl	omnicompletion is built-in and not automatic
+2013-03-14 13:23:32	`p	oh i didn't know i'm reading this tutorial right now about omni complete
+2013-03-14 13:23:34	<--	suy (~quassel@236.Red-83-57-248.dynamicIP.rima-tde.net) has quit (Read error: Connection reset by peer)
+2013-03-14 13:23:51	-->	claudiu____ (uid2488@gateway/web/irccloud.com/x-qvgohcekliyieirp) has joined #vim
+2013-03-14 13:23:54	-->	chrisbuchholz_ (uid6784@gateway/web/irccloud.com/x-mtznyamavgzzgetp) has joined #vim
+2013-03-14 13:23:57	`p	http://nothingtechnicalaboutit.blogspot.com/2011/08/vim-how-to-setup-awesome-autocomplete.html
+2013-03-14 13:24:01	-->	johnlcox (uid10321@gateway/web/irccloud.com/x-hwsiwgirmktvqmmr) has joined #vim
+2013-03-14 13:24:03		[http://is.gd/pMsUpy]
+2013-03-14 13:24:16	`p	is what i'm reading right now while i setup kvm via ssh
+2013-03-14 13:24:24	-->	optixx (~optixx@optixx.org) has joined #vim
+2013-03-14 13:25:21	romainl	`p: I use autocomplpop
+2013-03-14 13:25:30	<--	inhies (~inhies@8.23.56.82) has quit (Quit: ZNC - http://znc.in)
+2013-03-14 13:26:01	`p	i like the name of that
+2013-03-14 13:26:01	-->	inhies (~inhies@8.23.56.82) has joined #vim
+2013-03-14 13:26:28	`p	what do you code in primarily?
+2013-03-14 13:26:41	romainl	web frontend
+2013-03-14 13:26:47	romainl	and php/python
+2013-03-14 13:26:55	-->	devth (~devth@207.173.121.130) has joined #vim
+2013-03-14 13:27:18	`p	i've been doing lots of stuff with rails lately
+2013-03-14 13:27:33	-->	jaequery (~jaequery@cpe-76-174-169-220.socal.res.rr.com) has joined #vim
+2013-03-14 13:27:34	`p	I just picked up a client that wants me to build a store for his new england trademarked slogans online store
+2013-03-14 13:27:38	<--	polysix (hoax@mew.chickenkiller.com) has quit (Ping timeout: 252 seconds)
+2013-03-14 13:27:43	`p	he trademarked a bunch of slogans that people in new england "use"
+2013-03-14 13:27:58	`p	like "wicked pissa" and "pawrk the cawr in hawrvawrd yahwrd"
+2013-03-14 13:28:03	`p	....
+2013-03-14 13:28:07	-->	NimeshNeema (uid2689@gateway/web/irccloud.com/x-ivlnkvpknlrrubgv) has joined #vim
+2013-03-14 13:28:11	romainl	fun!
+2013-03-14 13:28:27	sjl	ugh, do searchpair and searchpairpos not work on quotes?
+2013-03-14 13:28:29	`p	interesting to say the least
+2013-03-14 13:28:30	<--	Adaptee (~whodare@101.16.195.123) has quit (Ping timeout: 272 seconds)
+2013-03-14 13:28:33	-->	derferman (~derferman@c-98-234-232-222.hsd1.ca.comcast.net) has joined #vim
+2013-03-14 13:28:44	<--	jrajav (~jrajav@198.179.137.210) has quit (Quit: phunq, sandwich store loop, WHAT NO UNIVERSE)
+2013-03-14 13:29:03	romainl	ethnology *and* technology
+2013-03-14 13:30:15	<--	habibilus (~habibilus@2001:4830:116e:1:f182:be4e:e016:9512) has quit (Remote host closed the connection)
+2013-03-14 15:50:31	-->	numeral (~numeral@198.23.228.15) has joined #vim
+2013-03-14 15:50:31	--	Topic for #vim is "Can't Talk? Get Registered on FreeNode (HOWTO: http://ur1.ca/90niw) | Vim 7.3.854 http://vim.sf.net | Don't ask to ask! | Before you ask :help, and :helpgrep, and google | WIKI: http://vim.wikia.com | FACEBOOK: http://tinyurl.com/vim-facebook | PASTE: http://vpaste.net/?ft=vim | DONATE: http://www.vim.org/sponsor"
+2013-03-14 15:50:31	--	Topic set by jamessan (~jamessan@debian/developer/jamessan) on Thu, 07 Mar 2013 21:00:12
+2013-03-14 15:50:31	--	Nicks #vim: [[Arfrever] [dmp]_ _0s_and_1s_ _5moufl __main__ _br_ _diz _Extreme _lhx_ _moon `brian `p abyxcos accipter achiu acrocity Adaptee adiii aep AFlyingMonkey agi agile aguslr ah- ahf aimka Airwave Aji-Dahaka ajpiano akiress akosch Akranis alan_w alansaul albel727 alexander__b aloiscochard|off amcsi_work andrejpan andy753421 anekos anexus anonymuse ansc anveo Apage43 apejens aquaman Arfrever arkx Arm0rAttAk arza Asenar askedrelic asksol_ asplodius asuka averell axl_ azradric aztak b4d babene babilen bad_pun bairui bandini Bane^ bartman basepi batrick bbloom BBonifield bean Belgarion0 BeLucid bengl benizi_ benjii bhangm bilbo_pi1gouin bjoe2k4 BlackIkeEagle blenny blueyed bmcorser_ bofur bolt Bonstra boodle bosie Brando753 brandonw Brian_H brodie brodul_ bronsen Browser btipling buz bwana147 c_14 Caelum cajone calopsfr_ camt Carno caveat- ccohn ccxCZ Celelibi cespare cfricke chalcedony Chaser_ chasmo chattr Chel chewbranca chilversc chjj chlunde cho_co ChoiZ ChongLi chrisbuchholz chrisbuchholz_ chrisgeorge chrismdp chris| Chryyz chuckf ciaranm cjh` classix claudiu____ cliche cmarques cmollekopf cnf codelahoma codile CoJaBo colinbits colona comand commontime compnerd Conjuro contempt coolnalu coppro corelax Cork crankharder crater2150 crazedpsyc crdueck cschneid cstrahan Cthulhux cuba33ci cyberspace- cYmen cyt93cs d1b d3x d48 Dad` daemoneye dagerik DainDwarf daithif dajune dalurka damnick dandersson danheberden daniel_-_ darkweasel davidfetter davidha DaZ dcope ddelrio1986 ddilinger deadghost deeroh Defaultti defragger deldenk denile Derander derk0pf deryni Dettorer developej devth dflurker dgfitch dharrigan diegoyam diget dindinx diniwed1 dirtydawg dive djh djm djoot DjSlash DNZM donri dorkmafia dostoyevsky dotplus dougireton dpac dpwright Drakevr dramaturg drayah drbean dRbiG drio drodger_ Droggl dsoto_ Dtgr durarara Dweezahr dxtr dyresen dytrivedi dza e36freak edggeek efaistos efjboss efm efoster egn_ ehershey_ eikenberry ekneuss ekodan elasticdog elbeardmorez elik elimirks elliottcable emid emililix eN_Joy engy__ enkrypt entil Epelii erdbaer erichmenge erifneerg esc EToS euoia Evanlec evelyette evelyette_ Exodist eyckelboom ezrios ezzieyguywuf FabTG_ faen fallout favadi fayimora fel felher ferdev ferret_ fionnan fire FireFly fisted flavius floppyears foo fow frak_ froody1 fs111 fuleo Fullma fury_ galdor GameGamer43 gartenzaun gaveen gburch gcha gcmalloc gdott9 geekbri gerard0 gf3 gffa gg7 Gizmokid2005 gkatsev glance Goles goraxe graywh gregorg gremly grn grossing gtc guampa guardian Guedes Guest12485 Guest21096 Guest61380 guide guidov GuntherDW Gurty gxk gyaresu_ hachque_ hagebake hakunin hal Hamled hansy HarKoT hash heinrich5991 HeN heoa herbnerder heytrav hglattergotz hide hidekin hjst hlprmnky hnsr holsta Horgix horse_fwg Houl hydrox24 hyperboreean iaj ickyb0d idoru iElectric Ikarus imajes impulse inhies inimino inne inr Internet13 ipkiss_ iron_houzi ironcamel isak j0su3 j0x3 j^2 jab416171 jabirali jacky jackyyll jaimef Jakey JamesOff jamessan japh jasoncodes jayne jbroome JeffJohnson jelliott jengtron jerojasro Jesin jetblack_ jhujhiti jidar jlebar jlewis jmcantrell joar joe9 johnhamelink johnkpaul johnlcox johntramp jokajak jonas_g JonasF_ Josay_ jose1711 JoshuaA JoshuaA_ jpfuentes2 jrajav jrdn jrib jstemmer jtrucks julesw Juri_Agarin jwmann k4jcw kalopsian Kamal_ kamiis kamyl_ Kartagis Katana kaze` kcm1700 Kemist kenichi_ kermit kevincolyar kevwil kfo Khauchy Kick__ killtheliterate kisielk kloeri kmic koki KRF krisfremen krishna ksa Kulrak kupsh kurko__ Kuukunen kwtm2 lahwran laite lake lasers lausi LBRapid lennartalserda LeoNerd lethjakman levifig libertyprime lightcap linduxed linpc linuxnewb2 lipsin littlebearz lluchs lnxnt lokydor LoRe lotus luigi69 luigy luminous Luminously lusory_ lyddonb M-ou-se m3lvin macrobat madduck madhatter MagBo maggotbrain magnunor mahlon MaienM mail majoh majuscule malcolmva malesca maletor maluco Mandus MarcWeber marczak marloshouse marlun_ marmalodak master_of_master mat_ matt1s mattn_jp mattp_ mattyw mdwright Meckafett meizaps Meldanya melter memand MetaCosm_ metasyntax metaxa metellius mezner mfn mgedmin mhi^ Michael__ micols_ mikemol minerale_ Minos MissionCritical mitz mitzip mjessome ml| mmi mmtths mnemonikk Mogget moju moondoggy Morkel Moult_ mquin MrElendig mrmonday mrshoe murr4y musl muteki Muzer mwoodson mythmon myusuf3 myusuf3_ n2o4 n9mtb nanny naquad Natch nate- natechan NeonLich1 nesono_ nesthib nesti netfrog netj netmod neuro_sys neurodamage Neutron01_A nevans nfa106 nicetry nigelb nil niluje NimeshNeema nimred nimrod_afk NIN101 NiteRain Nitro nksmith nlogn nmeum noffle noj NomadJim nopf_ norge_ nuba numeral nutate nutron nym_ Nyoxi nyuszika7h n|west o11c_q Obfuscate obiwahn Occi ohama ohcibi oncenull ondrejk_ onebitaway oO0Oo optixx orafu Ori_B oriba ormaaj osfd osse otters overrider_ owain paierlep paradigm parasight parus pastos PaulB0 pbjorklund pdtpatrick pedro_junior_ peper pepper_chico perun_ Peti_ phy1729 pjotr_pan plasticboy plavcik_ polysix poohtarou porkus Porter poseidon potatoe5 poutine preflex prg318 prismatictrail przemoc psil pskosinski quaestor quake_guy queequeg1 quiznilo qz r0tha r126t_ radhermit radio23 Raging_Hog raichoo Raimondi rasmusto RawProduce rax0- redblue regedarek remi resixian rical rical_ RichardBronosky_ RichiH rickeyski-k riddle rindolf riot_dd rippa Rix rjbs- rking rmunoz robertk robustus|Off roppert rphillips rramsden rrix rtl rudi_s ruskie rwestphal ryanf S0NiC_ s0ul s0undt3ch s1gma s4muel saedelaere sakal sakkemo salamanderrake salparadise sarkis sawrubh sayd Scall schmidi scrogson scrooloose sdx23 SeanTAllen seb_ SegFaultAX segy sent_hil sente serge_sans_paill setheus seudo_tw SeySayux sh4wn ShadowGhost1 shadyabhi Shapeshifter shawns|work sheerun shennyg shoerain Shoozza shpaq Shua Silex sipior sir_lewk sir_tyrion sitaktif sivoais sjl sjohnson ska-fan skaufman skered- skizzhg sku11knight smeea Smile30 snappy solars sonda sontek sooda_ sora_h Spaceghostc2c spaceone spaceplu- sph042 sph084 spiiph sporkbox Spydemon squirtsmacintosh sqz st1g stackofcats stevenfx1 stkrzysiak Stonehea2 stopbit strictlyb strull stuffcorpse subliminal sunny256 SuperNoeMan suy sven^_ sw4- swax swimmer synfinatic Synthead sze tallest_redd talso tamaros tapout taruti taybin tbo tchopper1 tchopper_ tdn techlife Tectu Tehnix tek0_ telemachus telex teratorn TeslaTest texarcana tgs3 tharkun thatryana the_cybersphinx the_metalgamer_ TheBrayn thedeeno TheMoonMaster theo_taf theocrite thiderman thkoehler thomasg thoraxe thorsten` threesome threeve thumbs tic tim tinystoat tirengarfio tirengarfio_ tlvb tmr tnelson ToApolytoXaos toddpratt tokjos tom_ tomaw tongcx tonymec tonymec|away tos9 tote totte tplaner tpope tris troydm troyt turbolihis tureba_ twe4ked tyrmored uhu01 ulhume Ulver unkmar untaken uris utopia_euphoria v0n vantage|afk variable vehk veilig vext01 viking Villadelfia vimgor virtuose viszu w0rmdrink waedt WaGE Wagoo Watabou wchun webno weltzooo while1eq1 whilo Whoop whyrusleeping widox wikitopian Willdude123 WillyKaze Will| wilmoore-misc witquicked wizonesolutions woky WoodsDog wormwood wuehlmaus wycats__ xckpd7 xid xilo xinef xing xintron xoebus xxxHarlequin Y_Ichiro yano yezariaely yngwin yofel yogan yogiman321 Yonkie yorick Yorokobi yosafbridge yshh zacts zalineon zarac Zaran Zathrus zcram Zed` zeltak zenazn zendeavor Zharf zlate zmo zodiak zorzar zu_ Zuchto ZyX-I zz_KristianDK zz_michael_mbp]
+2013-03-14 15:50:32	--	Channel #vim: 927 nicks (0 ops, 0 halfops, 0 voices, 927 normals)
+2013-03-14 15:50:32	***	Buffer Playback...
+2013-03-14 15:50:32	inhies	[21:02:50] graywh: worked for me with a
+2013-03-14 15:50:32	nanny	[21:03:10] also worked for me, win7/gvim
+2013-03-14 15:50:32	NeuroSerpens	[21:03:22] slackware vim here
+2013-03-14 15:50:32	NeuroSerpens	[21:03:23] didn't work
+2013-03-14 15:50:32	nanny	[21:05:25] what's you `:ve`
+2013-03-14 15:50:32	graywh	[21:07:49] if you know the codepoint for the character, you can use ctrl-v
+2013-03-14 15:50:32	tongcx	[21:15:16] hi guys, what extension should i use to edit lex file with vim?
+2013-03-14 15:50:32	throstur	[21:15:55] If I write a block of code that I later realize I will have to repeat, is there a way to refactor it into a function?
+2013-03-14 15:50:32	sakkemo	[21:17:42] throstur: look into a snippets plugin, such as ultisnips or snipmate
+2013-03-14 15:50:32	throstur	[21:18:31] sakkemo: so there's no built-in way, huh... do you have experience with either of these plugins?
+2013-03-14 15:50:32	sakkemo	[21:21:08] throstur: kind of depends on exactly what you're after, as those plugins do much more than inserting a pre-defined piece of text. Vim built-in way would be abbreviations, there's :help on it.
+2013-03-14 15:50:32	throstur	[21:21:50] sakkemo: can you tell me what I should write exactly, I'm not quite sure what I'm looking for if I just do :help, since the manual is really long
+2013-03-14 15:50:32	throstur	[21:22:09] I apologize for my inexperience, I'm trying to learn but it's a long road
+2013-03-14 15:50:32	sakkemo	[21:22:27] throstur: http://vim.wikia.com/wiki/Multi-line_abbreviations
+2013-03-14 15:50:32	parallel21	[21:25:39] After opening vim a few times, it seems my entire vimrc errors.
+2013-03-14 15:50:32	nanny	[21:25:39] it's been half an hour
+2013-03-14 15:50:32	nanny	[21:25:47] I still don't have YouCompleteMe running on windows
+2013-03-14 15:50:32	nanny	[21:27:00] anyone familiar with YouCompleteMe?
+2013-03-14 15:50:32	parallel21	[21:32:07] Anyone know how to install a system wide config for vim
+2013-03-14 15:50:32	graywh	[21:38:25] parallel21, if you need to debug your vimrc, use :finish
+2013-03-14 15:50:32	quiznilo	[21:47:10] I don't get this guy's answer: http://stackoverflow.com/questions/1737163/vim-traversing-text-in-insert-mode
+2013-03-14 15:50:32	quiznilo	[21:47:49] I find myself having to do this all the time, reaching over for <END> to get to the end of the line in insert mode
+2013-03-14 15:50:32	quiznilo	[21:48:10] shift-A is so much easier because I don't have to move my hands
+2013-03-14 15:50:32	jrajav	[21:48:41] The guy is saying that even for things like that that seem really small, you will benefit in the long run for doing them in command mode.
+2013-03-14 15:50:32	nanny	[21:48:47] what don't you get about it?
+2013-03-14 15:50:32	quiznilo	[21:49:00] most of it makes sense, I suppose
+2013-03-14 15:50:32	quiznilo	[21:49:11] but I still find myself hitting <END> way too often
+2013-03-14 15:50:32	quiznilo	[21:49:48] I just want to hit ctrl-something in insert mode and be at the end, so I can hit enter and resume
+2013-03-14 15:50:32	nanny	[21:49:57] I find remapping esc helps. Or at least using ctrl-[. I remapped esc to jk. Best map I have.
+2013-03-14 15:50:32	nanny	[21:50:09] then you have just do jkA instead of <END>
+2013-03-14 15:50:32	graywh	[21:50:19] quiznilo, ctrl-o $
+2013-03-14 15:50:32	nanny	[21:50:20] s/have/can
+2013-03-14 15:50:32	quiznilo	[21:50:26] ctrl-[ shift-a seems a bit awkward too, but at least I don't have to move my hands
+2013-03-14 15:50:32	quiznilo	[21:50:31] graywh: I'll try that
+2013-03-14 15:50:32	jrajav	[21:50:45] I've used C-[ forever
+2013-03-14 15:50:32	jrajav	[21:50:58] The double pinky smash of justice
+2013-03-14 15:50:32	jrajav	[21:50:59] :P
+2013-03-14 15:50:32	quiznilo	[21:51:03] heheh
+2013-03-14 15:50:32	nanny	[21:51:16] pinky? I hit [ with ring
+2013-03-14 15:50:32	quiznilo	[21:51:18] the death grip
+2013-03-14 15:50:32	quiznilo	[21:51:29] yeah, ring finger
+2013-03-14 15:50:32	jrajav	[21:51:35] A lot of people find jk/jj mapped to escape really nice
+2013-03-14 15:50:32	jrajav	[21:51:39] And I can see why you'd like it
+2013-03-14 15:50:32	jrajav	[21:51:46] But I don't like the "conceptual impurity" of it
+2013-03-14 15:50:32	jrajav	[21:51:47] :P
+2013-03-14 15:50:32	quiznilo	[21:52:03] what, an alias?
+2013-03-14 15:50:32	nanny	[21:52:08] I tried jj, but I find jk is the best. because you can spam it and still stay on the same line
+2013-03-14 15:50:32	nanny	[21:52:21] also I think you can type jk faster
+2013-03-14 15:50:32	jrajav	[21:52:30] quiznilo: Just the idea that an otherwise unremarkable sequence of normal ASCII characters in insert mode will act as a command
+2013-03-14 15:50:32	quiznilo	[21:53:05] guys, is vim material you find in stackoverflow.com reliable?
+2013-03-14 15:50:32	mhi^	[21:53:13] quiznilo: Force you not to use End.  :nnoremap <end> <nop>
+2013-03-14 15:50:32	graywh	[21:53:23] quiznilo, sure, if the author hangs out in #vim
+2013-03-14 15:50:32	nanny	[21:53:32] quiznilo: most of the time, yes
+2013-03-14 15:50:32	mhi^	[21:53:54] The only answer to such a question is 'maybe'.
+2013-03-14 15:50:32	quiznilo	[21:53:57] well, thanks, I try this
+2013-03-14 15:50:32	nanny	[21:53:59] there's a lot of over lap with #vim as well
+2013-03-14 15:50:32	nanny	[21:54:04] such as romainl
+2013-03-14 15:50:32	nanny	[21:54:12] he overlaps with every vim community ever
+2013-03-14 15:50:32	parallel21	[21:54:44] graywh: thanks for the tip. That helped me out
+2013-03-14 15:50:32	graywh	[21:54:49] i upvote romainl on /r/vim
+2013-03-14 15:50:32	crankharder	[21:54:51] can I somehow run :BundleInstall (vundler) from the cmd line w/o really opening/closing vim so I can script the whole process?
+2013-03-14 15:50:32	nanny	[21:55:59] crankharder: yes: vim +BundleInstall +qall
+2013-03-14 15:50:32	nanny	[21:56:29] i believe that's actually in vundle's readme.md
+2013-03-14 15:50:32	crankharder	[21:57:38] nanny: yep it is, sorry :/
+2013-03-14 15:50:32	crankharder	[21:57:45] i guess that's pretty generic tho?
+2013-03-14 15:50:32	nanny	[21:58:00] No problem :) yes, you can + any command
+2013-03-14 15:50:32	ZyX-I	[21:58:33] Hello. Does anybody know syntax checker plugin that a) supports flake8 and b) is able to run on the whole project and not on the current file?
+2013-03-14 15:50:32	tos9	[21:59:04] ZyX-I: Yes, `flake8` :)?
+2013-03-14 15:50:32	nanny	[21:59:06] ZyX-I: I would just not bother using a plugin for that
+2013-03-14 15:50:32	nanny	[21:59:45] ZyX-I: you can run a shell command from vim using :!, however
+2013-03-14 15:50:32	nanny	[22:00:15] :!flake8 project
+2013-03-14 15:50:32	quiznilo	[22:00:31] I do find myself using the online help more and more, I'm getting more comfortable with it
+2013-03-14 15:50:32	ZyX-I	[22:00:46] nanny: I just don’t want to bother writing a wrapper around :make. Running shell command is not an option: no quickfix support.
+2013-03-14 15:50:32	nanny	[22:01:44] what about opening your entire project in buffers? eh?
+2013-03-14 15:50:32	nanny	[22:02:06] kind of hacky, i'm just throwing out ideas
+2013-03-14 15:50:32	quiznilo	[22:07:05] ctrl-o o is better than ctrl-o $ for what I want... need to practice these
+2013-03-14 15:50:32	nanny	[22:11:33] quiznilo: you also don't need ctrl-o for the o command, you can hit <esc>o and go straight into insert mode as well
+2013-03-14 15:50:32	niggler	[22:19:30] is there any example of multi-language syntax highlighting plugins?
+2013-03-14 15:50:32	graywh	[22:20:12] templating?  like php?
+2013-03-14 15:50:32	niggler	[22:21:09] for example, html + some-compile-to-js language
+2013-03-14 15:50:32	nanny	[22:21:25] ZyX-I: sorry, I can't seem to figure out any solution, I've been playing with it for a while :/
+2013-03-14 15:50:32	niggler	[22:21:27] actually now i feel like an idiot -- i should have checked how html+js is done
+2013-03-14 15:50:32	swimmer	[22:23:06] I got curious about that YouCompleteMe so I replaced neocomplcache with it ... ;-)
+2013-03-14 15:50:32	swimmer	[22:23:10] we'll see
+2013-03-14 15:50:32	ccxCZ	[22:26:19] ugh gtk, you make me cringe
+2013-03-14 15:50:32	RichiH	[22:26:21] how can i submit a word to vim's spelling correction?
+2013-03-14 15:50:32	ccxCZ	[22:26:55] gtk-key-theme-name = "Emacs"  # only way to get sane-ish editing
+2013-03-14 15:50:32	nanny	[22:27:02] RichiH:  like add a word to dictionary? zg
+2013-03-14 15:50:32	graywh	[22:27:42] is it not possible to use a register in a recording?!
+2013-03-14 15:50:32	deldenk	[22:27:59] hello. is there a way to work with tables in vim?
+2013-03-14 15:50:32	deldenk	[22:28:14] work = create
+2013-03-14 15:50:32	graywh	[22:28:58] oh, my recording wasn't very good
+2013-03-14 15:50:32	swimmer	[22:29:59] deldenk: you could have a look at Align (http://www.vim.org/scripts/script.php?script_id=294)
+2013-03-14 15:50:32	swimmer	[22:30:19] not sure though how sophisticated those tables will be ...
+2013-03-14 15:50:32	`p	[22:30:53] youcompleteme it is
+2013-03-14 15:50:32	`p	[22:30:56] thanks everyone
+2013-03-14 15:50:32	deldenk	[22:31:15] swimmer: thanks - i'll try this out
+2013-03-14 15:50:32	RichiH	[22:33:50] nanny: i mean upstream
+2013-03-14 15:50:32	nanny	[22:34:28] I dunno. Email Bram?
+2013-03-14 15:50:32	nanny	[22:36:00] RichiH: real answer: http://www.vim.org/mercurial.php
+2013-03-14 15:50:32	***	Playback Complete.
+2013-03-14 15:50:37		[http://is.gd/gknhbU]
+2013-03-14 15:50:37		[http://is.gd/tTXfOY]
+2013-03-14 15:50:37		[http://is.gd/0o7E3H]
+2013-03-14 15:50:37		[http://is.gd/juiLTF]
+2013-03-14 15:51:05	--	Mode #vim [+Ccnt]
+2013-03-14 15:51:05	--	Channel created on Sun, 26 Nov 2006 01:42:44
+2013-03-14 15:51:08	-->	aBound (~androirc@cpe-76-171-78-204.socal.res.rr.com) has joined #vim
+2013-03-14 15:52:07	<--	Goles (~goles.nic@pc-161-170-44-190.cm.vtr.net) has quit (Remote host closed the connection)
+2013-03-14 15:52:59	<--	ferdev (~ferdev@12.241.216.87.static.jazztel.es) has quit (Quit: ferdev)
+2013-03-14 15:53:21	-->	Kick_ (karsten@nat/redhat/x-lycnuksmzutcqflq) has joined #vim
+2013-03-14 15:53:46	<--	noffle (~noffle@69.17.142.250) has quit (Quit: leaving)
+2013-03-14 15:54:08	<--	marczak (~marczak@static-108-23-129-174.lsanca.fios.verizon.net) has left #vim
+2013-03-14 15:54:16	-->	Gonzih (~gonzih@37.45.227.115) has joined #vim
+2013-03-14 15:56:34	dorkmafia	hi
+2013-03-14 15:56:40	mhi^	Hey, dorkmafia.
+2013-03-14 15:56:49	--	nopf_ is now known as nopf
+2013-03-14 15:56:59	<--	PaulB0 (~PaulB0@c-68-57-159-139.hsd1.va.comcast.net) has quit (Remote host closed the connection)
+2013-03-14 15:57:04	dorkmafia	hello, mhi^
+2013-03-14 15:57:13	mhi^	dorkmafia: How are you?
+2013-03-14 15:57:41	dorkmafia	pretty good pretty good
+2013-03-14 15:57:48	dorkmafia	and yourself?
+2013-03-14 15:57:55	<--	lipsin (~lipsin@unaffiliated/lipsin) has quit (Ping timeout: 245 seconds)
+2013-03-14 15:58:03	<--	gaveen (~gaveen@unaffiliated/gaveen) has quit (Quit: Leaving)
+2013-03-14 15:58:09	mhi^	I'm fine, too. :)
+2013-03-14 15:58:15	-->	maxmanders (~maxmander@188-220-35-232.zone11.bethere.co.uk) has joined #vim
+2013-03-14 15:58:20	<--	nanny (~nandrysha@75-147-94-245-Philadelphia.hfc.comcastbusiness.net) has quit (Quit: Leaving)
+2013-03-14 15:58:35	dorkmafia	B) cool
+2013-03-14 15:58:42	<--	dougireton (~dougireto@161.181.253.20) has quit (Quit: Leaving.)
+2013-03-14 15:58:53	-->	staticshock (c0ea45a6@gateway/web/freenode/ip.192.234.69.166) has joined #vim
+2013-03-14 15:59:08	mhi^	Working at a new plugin and.. eating. ;)
+2013-03-14 15:59:44	-->	Goles (~goles.nic@pc-161-170-44-190.cm.vtr.net) has joined #vim
+2013-03-14 15:59:47	staticshock	anyone know of a text object that essentially executes Txtx for some ix and Fxfx for some fx?
+2013-03-14 16:00:27	<--	Goles (~goles.nic@pc-161-170-44-190.cm.vtr.net) has quit (Max SendQ exceeded)
+2013-03-14 16:00:39	-->	erikw (~Erik@dhcp-v003-001.mobile.uci.edu) has joined #vim
+2013-03-14 16:00:41	staticshock	plugin, i mean. anyone know of a text object plugin that creates text objects for some arbitrary character, matching the nearest one forwards and backwards?
+2013-03-14 16:01:06	<--	bandini (~michele@2a01:2029:1:12c3:2e41:38ff:feab:99e2) has quit (Quit: Leaving)
+2013-03-14 16:01:11	<--	bhangm (~bhangm@50-198-116-221-static.hfc.comcastbusiness.net) has quit (Remote host closed the connection)
+2013-03-14 16:01:36	dorkmafia	staticshock: what's the issue you are trying to solve with the plugin?
+2013-03-14 16:01:57	mhi^	staticshock: My plugin will do that. But I just started it today and it will take some more to make it useful actually.
+2013-03-14 16:02:03	staticshock	ok
+2013-03-14 16:02:22	phy1729	vimgor: f,ing
+2013-03-14 16:02:22	vimgor	A plugin so aptly named that you look for the pope in the credits, so well written that you're not surprised to see Raimondi there instead, and so well hyped that you need adult diapers just to get through the README - Fanf,ingTastic; - https://github.com/dahu/vim-fanfingtastic - Find a char, across lines.
+2013-03-14 16:02:28	phy1729	perhaps
+2013-03-14 16:02:28		[http://is.gd/iokcuW]
+2013-03-14 16:02:45	staticshock	dorkmafia: it comes up for me in various contexts. just now i was running into this, in a makefile: "asdf \" some|thing \" fdas", and i want to match the inner string, not the outer string
+2013-03-14 16:02:52	-->	Goles (~goles.nic@pc-161-170-44-190.cm.vtr.net) has joined #vim
+2013-03-14 16:03:18	staticshock	phy1729: that doesn't define a text object. i do use that.
+2013-03-14 16:03:23	phy1729	oh I see now
+2013-03-14 16:04:23	dorkmafia	staticshock: maybe surround?
+2013-03-14 16:04:30	<--	pepper_chico (~pepper_ch@187.56.113.108) has quit (Quit: Computer has gone to sleep.)
+2013-03-14 16:05:08	staticshock	surround also doesn't define text objects, that i know of
+2013-03-14 16:05:40	dorkmafia	yeah that wasn't helpful..
+2013-03-14 16:05:42	<--	erikw (~Erik@dhcp-v003-001.mobile.uci.edu) has quit (Ping timeout: 258 seconds)
+2013-03-14 16:05:53	dorkmafia	it's because the " are escaped
+2013-03-14 16:06:01	staticshock	mhi^: is your non-existent plugin on github?
+2013-03-14 16:06:05	dorkmafia	that's why vi" isn't working
+2013-03-14 16:06:12	staticshock	yeah, i'm aware of why it's not working
+2013-03-14 16:07:12	-->	derferman (~derferman@c-98-234-232-222.hsd1.ca.comcast.net) has joined #vim
+2013-03-14 16:07:57	-->	pepper_chico (~pepper_ch@187.56.113.108) has joined #vim
+2013-03-14 16:08:00	<--	pepper_chico (~pepper_ch@187.56.113.108) has quit (Max SendQ exceeded)
+2013-03-14 16:08:26	-->	b3niup (~b3niup@tsn77-247-182-246.dyn.nltelcom.net) has joined #vim
+2013-03-14 16:08:28	<--	Goles (~goles.nic@pc-161-170-44-190.cm.vtr.net) has quit (Max SendQ exceeded)
+2013-03-14 16:08:36	dorkmafia	do you want to select the text object? or do something else with it? I think I could give you a mapping to select something
+2013-03-14 16:08:37	-->	pepper_chico (~pepper_ch@187.56.113.108) has joined #vim
+2013-03-14 16:08:39	<--	pepper_chico (~pepper_ch@187.56.113.108) has quit (Max SendQ exceeded)
+2013-03-14 16:08:39	mhi^	staticshock: The beginnings, yes, but I won't work at it today. And I'm not sure, but I think surround let's you define your own text objects, too. Have a look at it. :)
+2013-03-14 16:09:20	-->	pepper_chico (~pepper_ch@187.56.113.108) has joined #vim
+2013-03-14 16:09:40	staticshock	surround works with custom text objects, yeah.
+2013-03-14 16:10:40	staticshock	so, the only thing i'd need, in order to surround my object with some text, which i *do not want*, is a plugin that does what i *asked for*
+2013-03-14 16:11:19	--	dpac is now known as dpac|away
+2013-03-14 16:11:30	<--	daniel_-_ (~daniel_-@g227248128.adsl.alicedsl.de) has quit (Ping timeout: 264 seconds)
+2013-03-14 16:11:33	<--	aBound (~androirc@cpe-76-171-78-204.socal.res.rr.com) has quit (Quit: AndroIRC - Android IRC Client ( http://www.androirc.com ))
+2013-03-14 16:12:05	<--	rindolf (~shlomif@bzq-79-181-196-104.red.bezeqint.net) has quit (Read error: Connection reset by peer)
+2013-03-14 16:12:42	-->	rindolf (~shlomif@bzq-79-181-196-104.red.bezeqint.net) has joined #vim
+2013-03-14 16:12:59	<--	Nitro (~nitro@unaffiliated/nitro) has quit (Quit: Hmm)
+2013-03-14 16:13:28	<--	rippa (~flak@host-176-100-246-253.masterbit.su) has quit (Ping timeout: 240 seconds)
+2013-03-14 16:14:00	<--	Watabou (~Watabou@unaffiliated/watabou) has quit (Ping timeout: 260 seconds)
+2013-03-14 16:14:11	<--	gremly (~gremly@186.28.168.128) has quit (Quit: WeeChat 0.3.8)
+2013-03-14 16:15:45	-->	Goles (~goles.nic@pc-161-170-44-190.cm.vtr.net) has joined #vim
+2013-03-14 16:15:53	dorkmafia	staticshock: http://vim.wikia.com/wiki/Creating_new_text_objects first hit on google
+2013-03-14 16:15:58		[http://is.gd/D1DAYA]
+2013-03-14 16:17:21	<--	Goles (~goles.nic@pc-161-170-44-190.cm.vtr.net) has quit (Max SendQ exceeded)
+2013-03-14 16:17:21	-->	ryana (~ryana@173-8-196-70-Oregon.hfc.comcastbusiness.net) has joined #vim
+2013-03-14 16:17:21	<--	Guest21096 (~androirc@s83-177-28-44.cust.tele2.se) has quit (Remote host closed the connection)
+2013-03-14 16:17:21	-->	ferdev (~ferdev@206.Red-83-59-96.dynamicIP.rima-tde.net) has joined #vim
+2013-03-14 16:17:21	-->	erikw (~Erik@dhcp-v003-001.mobile.uci.edu) has joined #vim
+2013-03-14 16:17:21	-->	Guest21096 (~androirc@s83-177-28-44.cust.tele2.se) has joined #vim
+2013-03-14 16:17:34	-->	daaku (~daaku__@2620:0:1cfe:25:129a:ddff:fe41:56ea) has joined #vim
+2013-03-14 16:17:35	<--	jpfuentes2 (~jacques@pool-96-248-18-72.rcmdva.fios.verizon.net) has quit (Quit: Computer has gone to sleep.)
+2013-03-14 16:18:05	<--	thedeeno (~thedeeno@pool-173-49-217-79.phlapa.fios.verizon.net) has quit (Ping timeout: 260 seconds)
+2013-03-14 16:18:06	-->	jpfuentes2 (~jacques@pool-96-248-18-72.rcmdva.fios.verizon.net) has joined #vim
+2013-03-14 16:18:36	<--	suy (~alex@3.132.14.37.dynamic.jazztel.es) has quit (Read error: Connection reset by peer)
+2013-03-14 16:18:55	-->	Clinteger (~Clint@unaffiliated/clinteger) has joined #vim
+2013-03-14 16:19:13	<--	Adaptee (~whodare@101.16.195.123) has quit (Read error: Connection reset by peer)
+2013-03-14 16:19:32	<--	thatryana (~ryana@173-8-196-65-Oregon.hfc.comcastbusiness.net) has quit (Ping timeout: 252 seconds)
+2013-03-14 16:19:36	-->	Adaptee (~whodare@101.16.195.123) has joined #vim
+2013-03-14 16:19:38	-->	jorick (~kciroj@d51A4F9DD.access.telenet.be) has joined #vim
+2013-03-14 16:19:44	<--	pjotr_pan (~niels@dslb-088-078-130-183.pools.arcor-ip.net) has quit (Quit: Leaving.)
+2013-03-14 16:20:38	<--	skaufman (~skaufman@li97-230.members.linode.com) has quit (Ping timeout: 252 seconds)
+2013-03-14 16:20:43	-->	galaxywatcher (~galaxywat@pdpc/supporter/active/galaxywatcher) has joined #vim
+2013-03-14 16:21:13	-->	Goles (~goles.nic@pc-161-170-44-190.cm.vtr.net) has joined #vim
+2013-03-14 16:21:49	-->	kilian_ (~kilian@neu67-3-82-239-81-116.fbx.proxad.net) has joined #vim
+2013-03-14 16:23:46	<--	quake_guy (~brett@gos-bketter-d1.ad.uwm.edu) has quit (Remote host closed the connection)
+2013-03-14 16:24:19	<--	asplodius (~asplodius@c-98-230-106-247.hsd1.al.comcast.net) has quit (Ping timeout: 246 seconds)
+2013-03-14 16:24:27	<--	cfricke (~cfricke@bas5-toronto47-2925109837.dsl.bell.ca) has quit (Quit: leaving)
+2013-03-14 16:24:29	-->	asplodius (~asplodius@c-98-230-106-247.hsd1.al.comcast.net) has joined #vim
+2013-03-14 16:24:54	-->	skaufman (~skaufman@li97-230.members.linode.com) has joined #vim
+2013-03-14 16:25:05	-->	suy (~alex@3.132.14.37.dynamic.jazztel.es) has joined #vim
+2013-03-14 16:26:58	<--	erikw (~Erik@dhcp-v003-001.mobile.uci.edu) has quit (Ping timeout: 240 seconds)
+2013-03-14 16:26:58	<--	agile (~mike@71-81-178-236.dhcp.ftwo.tx.charter.com) has quit (Ping timeout: 240 seconds)
+2013-03-14 16:27:36	<--	rindolf (~shlomif@bzq-79-181-196-104.red.bezeqint.net) has quit (Quit: Leaving)
+2013-03-14 16:27:37	<--	serge_sans_paill (~serge@2a01:e34:ee9e:89b0:6a5d:43ff:fe09:907a) has quit (Quit: tchô)
+2013-03-14 16:28:59	-->	dougireton (~dougireto@161.181.253.20) has joined #vim
+2013-03-14 16:30:07	-->	Watabou (~Watabou@unaffiliated/watabou) has joined #vim
+2013-03-14 16:30:07	-->	nrabett (ja@80.203.124.95) has joined #vim
+2013-03-14 16:30:27	<--	geekbri (~geekbri@64.80.49.146) has quit (Remote host closed the connection)
+2013-03-14 16:31:44	-->	viszu1 (~grzegorz@89-70-53-243.dynamic.chello.pl) has joined #vim
+2013-03-14 16:32:42	<--	viszu (~grzegorz@89-70-53-243.dynamic.chello.pl) has quit (Ping timeout: 256 seconds)
+2013-03-14 16:34:54	<--	ipkiss_ (~ipkiss@nat/ecp/x-hwsolawncwlzwxsr) has quit (Ping timeout: 264 seconds)
+2013-03-14 16:35:33	<--	Morkel (~Morkel@xdsl-78-35-196-65.netcologne.de) has quit (Read error: Connection reset by peer)
+2013-03-14 16:36:14	<--	dougireton (~dougireto@161.181.253.20) has quit (Remote host closed the connection)
+2013-03-14 16:36:55	-->	intuxicated (~intuxicat@unaffiliated/hidensoft) has joined #vim
+2013-03-14 16:37:14	-->	Morkel (~Morkel@xdsl-87-78-169-131.netcologne.de) has joined #vim
+2013-03-14 16:38:10	<--	waedt (~null@198.252.15.196) has quit (Quit: leaving)
+2013-03-14 16:38:34	<--	BlackIkeEagle (~BlackIkeE@archlinux/trusteduser/blackikeeagle) has quit (Quit: KVIrc 4.2.0 Equilibrium http://www.kvirc.net/)
+2013-03-14 16:38:42	-->	hehe123 (~hehe123@103-97-200-46.pool.ukrtel.net) has joined #vim
+2013-03-14 16:39:20	<--	Watabou (~Watabou@unaffiliated/watabou) has quit (Ping timeout: 252 seconds)
+2013-03-14 16:39:27	<--	Goles (~goles.nic@pc-161-170-44-190.cm.vtr.net) has quit (Remote host closed the connection)
+2013-03-14 16:39:59	-->	juliohm (~julio@unaffiliated/juliohm) has joined #vim

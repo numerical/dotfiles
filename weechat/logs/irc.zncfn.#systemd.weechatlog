@@ -349,3 +349,93 @@
 2013-03-14 12:23:36	-->	bizhanMona (~bizhan@nat/cisco/x-gyydktzfwtsrjioj) has joined #systemd
 2013-03-14 12:23:53	<--	marvin2 (~marvin2@14-200-139-81.static.tpgi.com.au) has quit (Ping timeout: 246 seconds)
 2013-03-14 12:24:10	mbiebl	pitti: not sure if make check requires a running systemd, I would hope it doesn't
+2013-03-14 12:24:44	pitti	mbiebl: some tests fail on a missing machine id, the journal fails on failure of journal_file_open(), etc -- it might actually
+2013-03-14 12:27:29	mbiebl	yeah /etc/machine-id is something initialized by systemd via systemd-machine-id-setup
+2013-03-14 12:29:05	pitti	mbiebl: that's it; after running that the tests work
+2013-03-14 12:30:05	-->	dwalsh (dwalsh@nat/redhat/x-sapbifhtkdeqkcdv) has joined #systemd
+2013-03-14 12:32:13	-->	AmandaC (amanda@regina.darkdna.net) has joined #systemd
+2013-03-14 12:34:36	<--	dlb76 (dlb76@unaffiliated/dlb76) has quit (Ping timeout: 245 seconds)
+2013-03-14 12:34:53	kay	tests require some files available on the system, yes
+2013-03-14 12:39:53	-->	ISF_ (~ivan@187.64.222.221) has joined #systemd
+2013-03-14 12:42:35	-->	davidz (zeuthen@nat/google/x-mtxirqdrdrhwkwtm) has joined #systemd
+2013-03-14 12:47:30	<--	jreznik (jreznik@nat/redhat/x-hieclogqvlqgndri) has quit (Ping timeout: 264 seconds)
+2013-03-14 12:48:23	zdzichuBG	https://twitter.com/yacCz/status/312233992969662465/photo/1
+2013-03-14 12:48:28		[http://is.gd/JW9TBB]
+2013-03-14 12:48:31	zdzichuBG	This is how printed #systemd documentation looks like 
+2013-03-14 12:48:43	gtmanfred	you got it bound...
+2013-03-14 12:48:46	<--	threadlock (~omni@195.14.20.220) has quit (Ping timeout: 245 seconds)
+2013-03-14 12:49:14	-->	threadlock (~omni@195.14.20.220) has joined #systemd
+2013-03-14 12:49:35	haraldh	:-)
+2013-03-14 12:50:26	zdzichuBG	it's not mine ;)
+2013-03-14 12:50:54	gtmanfred	oh lol
+2013-03-14 12:51:50	-->	Stevee (~somebody@host228-133-28-81.hiway.at) has joined #systemd
+2013-03-14 12:53:22	-->	frakturfreak (fraktur@unaffiliated/frakturfreak) has joined #systemd
+2013-03-14 12:54:11	<--	dwalsh (dwalsh@nat/redhat/x-sapbifhtkdeqkcdv) has quit (Ping timeout: 255 seconds)
+2013-03-14 12:55:47	-->	marvin2 (~marvin2@14-200-139-81.static.tpgi.com.au) has joined #systemd
+2013-03-14 12:56:20	<--	gnubien (~e@unaffiliated/gnubien) has quit (Quit: leaving)
+2013-03-14 12:59:50	-->	Kharn_ (~kharn@cs78213225.pp.htv.fi) has joined #systemd
+2013-03-14 13:00:59	<--	marvin2 (~marvin2@14-200-139-81.static.tpgi.com.au) has quit (Ping timeout: 246 seconds)
+2013-03-14 13:04:17	<--	sassmann (~sassmann@ppp-83-171-190-216.dynamic.mnet-online.de) has quit (Ping timeout: 252 seconds)
+2013-03-14 13:10:50	<--	mclasen_ (mclasen@nat/redhat/x-fqsreofsfuthstyf) has quit (Ping timeout: 260 seconds)
+2013-03-14 13:11:37	<--	Kharn_ (~kharn@cs78213225.pp.htv.fi) has quit (Quit: Lost terminal)
+2013-03-14 13:15:24	--	SeoZ is now known as SeoZ-work[AWAY]
+2013-03-14 13:18:07	<--	nphilipp (~nils@dslb-084-057-170-037.pools.arcor-ip.net) has quit (Ping timeout: 256 seconds)
+2013-03-14 13:23:22	--	fcrozat is now known as fcrozat|gone
+2013-03-14 13:24:45	-->	Md (~md@snake.enter.it) has joined #systemd
+2013-03-14 13:26:36	<--	alxchk (~alxchk@alpha.alxchk.me) has quit (Remote host closed the connection)
+2013-03-14 13:27:47	<--	Md (~md@snake.enter.it) has quit (Client Quit)
+2013-03-14 15:50:31	-->	numeral (~numeral@198.23.228.15) has joined #systemd
+2013-03-14 15:50:31	--	Topic for #systemd is "Version 198 released! || http://www.freedesktop.org/software/systemd/systemd-198.tar.xz || http://www.freedesktop.org/wiki/Software/systemd || https://www.youtube.com/watch?v=9UnEV9SPuw8"
+2013-03-14 15:50:31	--	Topic set by poettering (~poetterin@tango.0pointer.de) on Thu, 07 Mar 2013 18:04:25
+2013-03-14 15:50:31	--	Nicks #systemd: [_fritz_ _grawity _ikke_ Adys aep afiestas akl Alam_Squeeze alexqwesa algernon alub alwaysontherun- AmandaC amessina Apetrini araujo armands_ arnej arsdmthe_ auke ausbin avar Bertl bigon bizhanMona bjoe2k4 Black_Prince blami blueness bluetech bneff bnf BogdanR Boohbah bouleetbil boxofrox breiti brian Bruners c0rnel CalimeroTeknik canta cbmuser chengwei_ Choris cinelli CipherWizard cmr coling contradictioned_ dagger danmackay davidstrauss davidz demarchi_ denised derRichard dhaval Diaoul DinCahill dougsland drhouse123_ dwalsh eboettcher ecloud ekodan eliasp else- elxa elzapp erbo eternaleye Exio fabiand FabianS faen falconindy fatal fcrozat|gone fdo-vcs felixonmars Firstyear floppym flynd frakturfreak freeedrich| gaveen Genolo gmoro_ grawity groundnuty gtmanfred gwmngilfen hachque_ hagebake haraldh heftig heinrich5991 hermier hgb hi117 holtmann honschu_ hspasta hussam Hwkiller Hydrazine_ Ingmar JackWinter1 Jasper Javafant jave jds2001 jelly1 jenkins-systemd Jesin jjardon joemiller jonmasters joshc jpetersen_ JPohlman1 juergbi k-s[AWAY] KaiSforza Kamilion kangkai kay Kdecherf Ke kelvan kerolasa keruspe kklimonda_ kmacleod koen koniiiik kzak larsks lbt Lektron Liir loswillios mamikk manio marktheunissen master_of_master mbiebl mcfrisk mesx michich mickael9 microcode Mithrandir mixi MK_FG moben moltendorf mrec_ msx mue_ muep_ myrde mz|` nakamuray ndim neil niska` Nisstyre noclaf nokogiri notting npouillard nucleo numeral nyuszika7h oahong Obeliks ocharles otavio ovitters PaulePanter pdq phako Philantrop philips pitti plfiorini pocek_ poettering prometheanfire ptr_uzl quant r3pek Ratler rektide riddle Riiiis rom1504_ Rondom rworkman Sage_ saltsa_ samkottler samlt seblu SeoZ-work[AWAY] seschwar shoragan Skaarj slovdahl sofar speakman Stevee stravaiger Svedrin sztanpet tamas theinric thestinger thomasg thorsten` threadlock thrice tibbs tigerfoot timi timtaler- tpepper tridactyla trn tumppu uau umuttl vmlinuz vudentz` walters wdouglas WilliamH wishi woky wwoods ximion xrogaan xtraeme yac zbyszek zdzichuBG ZekeS zeroedout zorael]
+2013-03-14 15:50:31	--	Channel #systemd: 251 nicks (0 ops, 0 halfops, 0 voices, 251 normals)
+2013-03-14 15:50:31	***	Buffer Playback...
+2013-03-14 15:50:31	bneff	[21:23:22] Is there anything special I need to do to ensure my daemon is dumping cores?
+2013-03-14 15:50:31	bneff	[21:23:46] I have my limits file set to unlimited for both soft and hard on core
+2013-03-14 15:50:31	bneff	[21:24:40] and the WorkingDirectory of my process in the unit file is writable by my process user
+2013-03-14 15:50:31	grawity	[21:27:52] your system is probably configured to save cores in journald; check the kernel.core_pattern sysctl
+2013-03-14 15:50:31	grawity	[21:28:03] and systemd-coredumpctl >_>
+2013-03-14 15:50:31	bneff	[21:28:52] "/proc/sys/kernel/core_pattern is set to core
+2013-03-14 15:50:31	bneff	[21:29:09] and on Fedora17, I don't see reference to systemd-coredumpctl
+2013-03-14 15:50:31	thrice	[21:30:31] don't think it existed back then?  upgrade !
+2013-03-14 15:50:31	bneff	[21:31:13] doh
+2013-03-14 15:50:31	grawity	[21:41:02] Which kernel version, bneff?
+2013-03-14 15:50:31	grawity	[21:41:32] or actually, nevermind
+2013-03-14 15:50:31	bneff	[21:42:31] There are other processes on the box that don't include systemd unit files, and they can generate a core, but my app isnt.  So either my app has no bugs =), or something else is going on
+2013-03-14 15:50:31	bneff	[21:42:58] but I know it segfaulted last night, and nore core...=(
+2013-03-14 15:50:31	bneff	[21:43:03] err no core too
+2013-03-14 15:50:31	--	Notice(morgan.freenode.net): [22:18:43] [freenode-info] channel trolls and no channel staff around to help? please check with freenode support: http://freenode.net/faq.shtml#gettinghelp
+2013-03-14 15:50:31	joshc	[22:18:49] woa, that's some pretty fancy ascii art ;)
+2013-03-14 15:50:31	flynd	[22:19:28] The graph on the bootup page shows a lot of stuff before sysinit, and only sockets between sysinit and basic
+2013-03-14 15:50:31	grawity	[22:19:45] And it also shows rescue after sysinit.
+2013-03-14 15:50:31	flynd	[22:20:19] It's an embedded system that (probably) won't ever use rescue.target
+2013-03-14 15:50:31	grawity	[22:21:11] >probably
+2013-03-14 15:50:31	zbyszek	[22:21:13] flynd: ooops, I meant before multi-user.target
+2013-03-14 15:50:31	flynd	[22:21:14] The graph gives some examples for low level stuff (like init random seed) above sysinit, but nothing for basic.
+2013-03-14 15:50:31	flynd	[22:23:07] All the stuff from rc3 will go to multi-user.target, yes. But I'm trying to figure out what to do with rcS stuff. Like setting mac address for network, configuring hardware, etc
+2013-03-14 15:50:31	flynd	[22:26:16] So apart from the rescue case, what is the difference between basic.target and sysinit.target?
+2013-03-14 15:50:31	grawity	[22:27:00] basic.target also starts all enabled sockets
+2013-03-14 15:50:31	grawity	[22:27:04] as the graph shows.
+2013-03-14 15:50:31	flynd	[22:28:59] So basic services may start in parallel with sockets, and sysinit services won't... 
+2013-03-14 15:50:31	flynd	[22:30:23] Since the graph doesn't show anything else between sysinit and basic, does that mean that all early boot services should go before sysinit?
+2013-03-14 15:50:31	***	Playback Complete.
+2013-03-14 15:50:36		[http://is.gd/XpFSP2]
+2013-03-14 15:51:01	--	Mode #systemd [+ns]
+2013-03-14 15:51:01	--	Channel created on Tue, 13 Apr 2010 20:58:39
+2013-03-14 15:53:23	-->	pknirsch (pknirsch@nat/redhat/x-jgjtuivoqewgwixh) has joined #systemd
+2013-03-14 15:57:22	<--	hspasta (~Haptic@c-98-220-172-164.hsd1.in.comcast.net) has quit (Ping timeout: 256 seconds)
+2013-03-14 15:58:03	<--	gaveen (~gaveen@unaffiliated/gaveen) has quit (Quit: Leaving)
+2013-03-14 15:59:45	-->	marvin2 (~marvin2@14-200-139-81.static.tpgi.com.au) has joined #systemd
+2013-03-14 16:11:17	<--	marvin2 (~marvin2@14-200-139-81.static.tpgi.com.au) has quit (Ping timeout: 245 seconds)
+2013-03-14 16:14:19	-->	SuperHeron (~pierre@91.178.201.60) has joined #systemd
+2013-03-14 16:17:21	CipherWizard	Has anyone tried to run mgetty through systemd and then ppp through mgetty? When I set it up on my embedded box it freezes windows (screen is still there but does not respond to any input) and I can not then shut down the mgetty session in systemd.
+2013-03-14 16:17:35	--	jpetersen_ is now known as jpetersen
+2013-03-14 16:19:07	<--	Stevee (~somebody@host228-133-28-81.hiway.at) has quit (Ping timeout: 258 seconds)
+2013-03-14 16:22:48	CipherWizard	I am wondering if mgetty or ppp is just too old to work properly with systemd or if they do not work well under cgroups
+2013-03-14 16:31:31	CipherWizard	Well it appears it might just be some problem with Windows. Imagine that.
+2013-03-14 16:35:48	-->	Nisstyre-laptop (~yours@oftn/member/Nisstyre) has joined #systemd
+2013-03-14 16:38:08	-->	marvin2 (~marvin2@14-200-139-81.static.tpgi.com.au) has joined #systemd
+2013-03-14 16:38:34	-->	dvdhrm (~david@stgt-5f71a469.pool.mediaWays.net) has joined #systemd
+2013-03-14 16:38:36	-->	Phase4 (~Phase4@2001:44b8:4196:e800:1cf5:8665:4a43:70a5) has joined #systemd
+2013-03-14 16:39:20	fdo-vcs	systemd lennart master * c1dae1b src/core/main.c
+2013-03-14 16:39:20	fdo-vcs	systemd main: don't mount /sys, /dev and friends when we run with PID != 1

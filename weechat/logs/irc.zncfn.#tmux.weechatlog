@@ -161,3 +161,54 @@
 2013-03-14 12:17:36	mlue	oh yeah, I knew that, thanks :D
 2013-03-14 12:17:49	mlue	I'm seeing "activity" in the window I'm trying to make 2 panes in, but nothing happens
 2013-03-14 12:17:53	mlue	madness
+2013-03-14 12:28:36	<--	arduix (~arduix@41.225.101.220) has quit (Ping timeout: 252 seconds)
+2013-03-14 12:28:59	-->	arduix (~arduix@197.15.15.160) has joined #tmux
+2013-03-14 12:33:00	-->	copec (copec@schrodbox.unaen.org) has joined #tmux
+2013-03-14 12:33:49	copec	Is there an easy way to switch to windows >9, like control-b #0-9 do for windows 0-9
+2013-03-14 12:36:53	-->	d48 (~predikt@rrcs-76-79-249-222.west.biz.rr.com) has joined #tmux
+2013-03-14 12:39:27	-->	ISF_ (~ivan@187.64.222.221) has joined #tmux
+2013-03-14 12:40:45	<--	OK100 (~OK100@31.134.103.137) has quit (Quit: WeeChat 0.4.0)
+2013-03-14 12:41:38	-->	OK100 (~OK100@31.134.103.137) has joined #tmux
+2013-03-14 12:41:43	NicM	you can bind keys to do it
+2013-03-14 12:41:48	NicM	mlue, tell us exactly what you are doing
+2013-03-14 12:44:53	-->	hafeez3000 (~hafeez@183.83.152.6) has joined #tmux
+2013-03-14 12:47:37	<--	OK100 (~OK100@31.134.103.137) has quit (Quit: WeeChat 0.4.0)
+2013-03-14 12:48:29	-->	OK100 (~OK100@31.134.103.137) has joined #tmux
+2013-03-14 12:52:49	mlue	oh nicm, just making sure my servers are dead with tmux ls
+2013-03-14 12:52:51	mlue	and launching it again
+2013-03-14 12:53:15	-->	brainvision (~brainvisi@host39-78-dynamic.17-87-r.retail.telecomitalia.it) has joined #tmux
+2013-03-14 12:53:18	mlue	I fixed it by using select-window -t explicitly, I am going to try to find the man so I can see what the flags mean
+2013-03-14 12:56:30	<--	fire (~fire@unaffiliated/security) has quit (Ping timeout: 264 seconds)
+2013-03-14 12:59:12	-->	fire (~fire@unaffiliated/security) has joined #tmux
+2013-03-14 13:01:36	<--	amranu (~andrew@2001:470:b0ea:1:21e:37ff:fe56:cf14) has quit (Quit: Konversation terminated!)
+2013-03-14 13:02:17	-->	c_14 (~c_14@unaffiliated/c-14/x-8913907) has joined #tmux
+2013-03-14 13:04:01	<--	vdonnefort (~vdonnefor@193.5-14-84.ripe.coltfrance.com) has quit (Remote host closed the connection)
+2013-03-14 13:12:56	<--	krak3n` (~krak3n`@109.231.202.66) has quit (Remote host closed the connection)
+2013-03-14 13:13:23	-->	krak3n` (~krak3n`@109.231.202.66) has joined #tmux
+2013-03-14 13:23:11	-->	Watabou (~Watabou@unaffiliated/watabou) has joined #tmux
+2013-03-14 13:23:34	<--	suy (~quassel@236.Red-83-57-248.dynamicIP.rima-tde.net) has quit (Read error: Connection reset by peer)
+2013-03-14 13:24:53	-->	antoks (~antoks@unaffiliated/antoks) has joined #tmux
+2013-03-14 13:28:30	<--	Adaptee (~whodare@101.16.195.123) has quit (Ping timeout: 272 seconds)
+2013-03-14 15:50:31	-->	numeral (~numeral@198.23.228.15) has joined #tmux
+2013-03-14 15:50:31	--	Topic for #tmux is "tmux is a "terminal multiplexer" | http://tmux.sourceforge.net/ | https://lists.sourceforge.net/lists/listinfo/tmux-users | https://lists.sourceforge.net/lists/listinfo/tmux-cvs | Man page: http://www.openbsd.org/cgi-bin/man.cgi?query=tmux&sektion=1"
+2013-03-14 15:50:31	--	Topic set by mikeputnam (~mike@pdpc/supporter/active/mikeputnam) on Wed, 27 Apr 2011 09:00:22
+2013-03-14 15:50:31	--	Nicks #tmux: [[Neurotic] __JK__ _br_ _flow_ abumirqaan Adaptee Airwave alfism Altimeter andrejpan anonymuse antoks aphistic Aprogas Archtivity arduix averell bdrewery bolidz bphogan__ bps brainvision c_14 cargill_ caseydriscoll caveat- ccxCZ chiel chlunde chris2 ChromeSilver classix claude2 Code_Bleu colona copec Creek cromag cschneid Cueball_ cYmen d48 dandersson daniel_-_ daurnimator dbewley deepy denile der-onkel dgfitch diniwed1 djinni_ djp dominikh dropdrive druff dubium dweez_ dytrivedi eboy effekt eightyeight eMBee emid ephemer0l epta eres eternaleye ezpl0it faen fallout fasta faxm0dem fignew fire floppyears fosco frew ft gartenzaun gazoombo gf3 gtc guardian Guest84616 guse hagebake heckman herbnerder hlindset IcePic iElectric j416 jakllsch jasonwryan jayne jdav_gone jerius jgaui jimeh joe9 johntash jrib jstemmer jtrucks KaiSforza kart0ffelsack Kays kenperkins kenyon kip_litton kirkland kotp krok ksa lasers Lenzoid levifig luckman212 luminous lyddonb majoh marmalodak marowit matled megabeest Meldanya mephux mikeputnam mithro mlue mokomull mren mrtazz mtk mva necronian Nei nemysis NicM nimrod_afk numeral nutron ocharles octal ohcibi OK100 Olipro ore ormaaj osse ozzloy peccu1 perigrin phy1729 pi8027 Pikel pitrh plavcik_ pmatulis pothos preller prettyrobots psil q_revert Quazgaa r4nt radhermit radio23 rawplayer redbrain remi Rhonda RichardBronosky_ riddley rking robertk roknir rudi_s ruskie rwestphal samlt scribbles SeanTAllen setheus Silly simabeis sn0wb1rd solj sontek Sthebig sub0 swimmer tdignan techiem2-r techlife telex Tenchworks terminalmage TeslaTest TheBrayn TheFuzzball theneb_ thomas_adam thomasvs tinystoat tittof tlonim tlp tomaw tos9 tris trn tru_tru tureba_ twisted` tyrmored Ulrar untaken vehk VinSpee vmeson Voting wart_ Watabou watsonalgas Whoop WillyKaze Will| wired woddf2 xy yac Yaniel yeled Yorokobi zacts Zed` zeltak zen0|wk zendeavor zerick zivester zorael zorzar zu_ Zucca zykotick9]
+2013-03-14 15:50:31	--	Channel #tmux: 248 nicks (0 ops, 0 halfops, 0 voices, 248 normals)
+2013-03-14 15:50:31	***	Buffer Playback...
+2013-03-14 15:50:31	pmatulis	[22:46:10] how do i reference windows with number greater than 9?
+2013-03-14 15:50:31	***	Playback Complete.
+2013-03-14 15:51:03	--	Mode #tmux [+cnt]
+2013-03-14 15:51:03	--	Channel created on Thu, 11 Jun 2009 15:16:11
+2013-03-14 16:00:39	-->	erikw (~Erik@dhcp-v003-001.mobile.uci.edu) has joined #tmux
+2013-03-14 16:05:42	<--	erikw (~Erik@dhcp-v003-001.mobile.uci.edu) has quit (Ping timeout: 258 seconds)
+2013-03-14 16:11:30	<--	daniel_-_ (~daniel_-@g227248128.adsl.alicedsl.de) has quit (Ping timeout: 264 seconds)
+2013-03-14 16:14:00	<--	Watabou (~Watabou@unaffiliated/watabou) has quit (Ping timeout: 260 seconds)
+2013-03-14 16:17:21	-->	erikw (~Erik@dhcp-v003-001.mobile.uci.edu) has joined #tmux
+2013-03-14 16:19:06	jakllsch	in what context?
+2013-03-14 16:19:13	<--	Adaptee (~whodare@101.16.195.123) has quit (Read error: Connection reset by peer)
+2013-03-14 16:19:36	-->	Adaptee (~whodare@101.16.195.123) has joined #tmux
+2013-03-14 16:26:58	<--	erikw (~Erik@dhcp-v003-001.mobile.uci.edu) has quit (Ping timeout: 240 seconds)
+2013-03-14 16:30:07	-->	Watabou (~Watabou@unaffiliated/watabou) has joined #tmux
+2013-03-14 16:33:59	<--	alfism (~alfism@2620:149:4:1201:dc0:dab2:3878:aa79) has quit (Quit: alfism)
+2013-03-14 16:35:51	solj	pmatulis: c-b w letter
+2013-03-14 16:39:20	<--	Watabou (~Watabou@unaffiliated/watabou) has quit (Ping timeout: 252 seconds)

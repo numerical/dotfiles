@@ -1178,3 +1178,646 @@
 2013-03-14 12:23:51	-->	EddyC (~eddyc@dsl-087-195-217-071.solcon.nl) has joined #haskell
 2013-03-14 12:23:59	-->	conehead (~conehead@unaffiliated/conehead) has joined #haskell
 2013-03-14 12:24:04	shachaf	What is it that you want to avoid, and what is it that you want to do, and how are they different?
+2013-03-14 12:25:28	<--	tommd (~tommd@pdx.galois.com) has quit (Ping timeout: 240 seconds)
+2013-03-14 12:25:35	absence	shachaf: i want to read (and process) a file piece by piece without performing IO from pure code
+2013-03-14 12:26:02	-->	kushal (kdas@fedora/kushal) has joined #haskell
+2013-03-14 12:26:44	shachaf	Hmm.
+2013-03-14 12:26:48	shachaf	I recommend listening to mauke.
+2013-03-14 12:27:02	<--	ctype_real (~ctype@ec2-23-22-199-114.compute-1.amazonaws.com) has quit (Remote host closed the connection)
+2013-03-14 12:27:14	mauke	I recommend listening to shachaf
+2013-03-14 12:27:17	srhb	Isn't that impossible in this sense of "performing IO from pure code"?
+2013-03-14 12:27:32	fryguybob	absence: Consider what would happen if the IO failed.  What happens to the pure value?
+2013-03-14 12:27:34	srhb	I mean, you want your pure code to alter the behaviour of the file reading
+2013-03-14 12:27:53	-->	ctype_real (~ctype@ec2-23-22-199-114.compute-1.amazonaws.com) has joined #haskell
+2013-03-14 12:27:58	srhb	(Just like if I only ask for the first character in a lazily read file)
+2013-03-14 12:28:07	srhb	Which, as far as I know, requires unsafeInterleaveIO
+2013-03-14 12:28:15	<--	ctype_real (~ctype@ec2-23-22-199-114.compute-1.amazonaws.com) has quit (Remote host closed the connection)
+2013-03-14 12:28:51	-->	ctype_real (~ctype@ec2-23-22-199-114.compute-1.amazonaws.com) has joined #haskell
+2013-03-14 12:29:02	<--	ajhager (~ajhager@108-71-214-22.lightspeed.iplsin.sbcglobal.net) has quit (Ping timeout: 256 seconds)
+2013-03-14 12:29:09	<--	otend (~otend@2610:e0:a040:e097:aed:b9ff:fe38:151f) has quit (Read error: Connection reset by peer)
+2013-03-14 12:29:21	srhb	NOt that _you_ have to use unsafeInterleaveIO directly
+2013-03-14 12:29:34	<--	ctype_real (~ctype@ec2-23-22-199-114.compute-1.amazonaws.com) has quit (Remote host closed the connection)
+2013-03-14 12:29:40	absence	fryguybob: i'm not entirely sure how Control.Proxy handles that
+2013-03-14 12:29:44	srhb	And by the way, I recommend not listening to me, since I'm not sure what you're doing.
+2013-03-14 12:30:01	tertl3-laptop	what does (..) mean here module MyData
+2013-03-14 12:30:01	tertl3-laptop	    (MetricUnit(..),
+2013-03-14 12:30:04	<--	kqr1 (kqr@host155-38.etanet.se) has quit (Ping timeout: 252 seconds)
+2013-03-14 12:30:13	-->	normanrichards (~normanric@rrcs-108-178-120-144.sw.biz.rr.com) has joined #haskell
+2013-03-14 12:30:16	srhb	tertl3-laptop: Every constructor of that type
+2013-03-14 12:30:19	fryguybob	absence: Don't worry about Control.Proxy.  What does it mean for a pure value?  Can it still be "pure"?
+2013-03-14 12:30:21	absence	fryguybob: i think the pipeline breaks up and you can report an error or something, but i'm still new to this lib
+2013-03-14 12:30:26	<--	killy9999 (~killy@terminal-1-163.retsat1.com.pl) has quit (Quit: leaving)
+2013-03-14 12:30:27	<--	ozataman (~ozataman@pool-173-52-212-8.nycmny.fios.verizon.net) has quit
+2013-03-14 12:30:35	-->	ablokzijl (~arjan@46-126-12-5.dynamic.hispeed.ch) has joined #haskell
+2013-03-14 12:30:38	absence	fryguybob: Control.Proxy is the domain of my question
+2013-03-14 12:30:40	fryguybob	So sometimes your pure value is the contents of the file and sometimes it is part of the contents and an error?
+2013-03-14 12:30:43	-->	OlegYch (~OlegYch@212.98.177.78) has joined #haskell
+2013-03-14 12:30:49	fryguybob	Is that pure?
+2013-03-14 12:31:05	tertl3-laptop	srhb where is the docs for it, whats it called?
+2013-03-14 12:31:16	srhb	Wildcard something?
+2013-03-14 12:31:17	-->	ajhager (~ajhager@108-71-214-22.lightspeed.iplsin.sbcglobal.net) has joined #haskell
+2013-03-14 12:31:18	-->	kqr1 (kqr@host155-38.etanet.se) has joined #haskell
+2013-03-14 12:31:28	<--	bananagram (~bot@pool-108-56-161-155.washdc.fios.verizon.net) has quit (Ping timeout: 240 seconds)
+2013-03-14 12:31:33	-->	ctype_real (~ctype@ec2-23-22-199-114.compute-1.amazonaws.com) has joined #haskell
+2013-03-14 12:32:06	-->	c_wraith (~c_wraith@commie.pwrsrc.net) has joined #haskell
+2013-03-14 12:32:12	<--	fro0t2 (~fro0t@1.23.68.179) has quit (Ping timeout: 258 seconds)
+2013-03-14 12:32:19	srhb	tertl3-laptop: "abbreviated form" in the docs.
+2013-03-14 12:32:23	absence	fryguybob: i know what purity is. let's stick to the Control.Proxy related issue at hand :)
+2013-03-14 12:32:36	<--	thetallguy1 (~beshers@cpe-98-155-82-213.san.res.rr.com) has quit (Ping timeout: 264 seconds)
+2013-03-14 12:32:42	-->	tjohnson (~tjohnson@8-116.ptpg.oregonstate.edu) has joined #haskell
+2013-03-14 12:32:46	-->	koddsson (~koddsson@fire-out.ru.is) has joined #haskell
+2013-03-14 12:32:50	<--	koddsson (~koddsson@fire-out.ru.is) has left #haskell
+2013-03-14 12:32:54	<--	mizu_no_oto (~textual@gw1.mcgraw-hill.com) has quit (Quit: ["Textual IRC Client: www.textualapp.com"])
+2013-03-14 12:32:54	srhb	tertl3-laptop: 5.2.2
+2013-03-14 12:32:58	<--	ctype_real (~ctype@ec2-23-22-199-114.compute-1.amazonaws.com) has quit (Remote host closed the connection)
+2013-03-14 12:32:59	srhb	tertl3-laptop: Oops, here: http://www.haskell.org/onlinereport/modules.html
+2013-03-14 12:33:04		[http://is.gd/kiD4uu]
+2013-03-14 12:33:20	<--	hamid (~nithp@unaffiliated/hamid) has quit (Ping timeout: 245 seconds)
+2013-03-14 12:33:25	-->	carlocci (~carlocci@unaffiliated/carlocci) has joined #haskell
+2013-03-14 12:33:35	<--	idntfy[work] (~idntfywor@188.64.147.238) has quit (Read error: Connection reset by peer)
+2013-03-14 12:33:45	-->	dmac (~Adium@75-149-33-130-SFBA.hfc.comcastbusiness.net) has joined #haskell
+2013-03-14 12:34:16	-->	idntfy[work] (~idntfywor@188.64.147.238) has joined #haskell
+2013-03-14 12:35:11	tertl3-laptop	ok ty
+2013-03-14 12:35:30	<--	AfC (~andrew@gateway.syd.operationaldynamics.com) has quit (Ping timeout: 264 seconds)
+2013-03-14 12:36:43	-->	gridaphobe (~gridaphob@128.54.5.148) has joined #haskell
+2013-03-14 12:36:47	-->	ctype_real (~ctype@ec2-23-22-199-114.compute-1.amazonaws.com) has joined #haskell
+2013-03-14 12:37:12	<--	ctype_real (~ctype@ec2-23-22-199-114.compute-1.amazonaws.com) has quit (Remote host closed the connection)
+2013-03-14 12:37:34	<--	Jordsan (~jorge@pool-98-110-232-55.bstnma.fios.verizon.net) has quit (Remote host closed the connection)
+2013-03-14 12:38:06	<--	dmac (~Adium@75-149-33-130-SFBA.hfc.comcastbusiness.net) has quit (Ping timeout: 256 seconds)
+2013-03-14 12:38:58	-->	anRch (~markmilli@ip-64-134-98-114.public.wayport.net) has joined #haskell
+2013-03-14 12:39:02	-->	joelb (~textual@office.khanacademy.org) has joined #haskell
+2013-03-14 12:39:19	-->	ISF_ (~ivan@187.64.222.221) has joined #haskell
+2013-03-14 12:39:27	-->	ctype_real (~ctype@ec2-23-22-199-114.compute-1.amazonaws.com) has joined #haskell
+2013-03-14 12:41:15	-->	nus- (~nus@unaffiliated/nus) has joined #haskell
+2013-03-14 12:41:18	<--	JaRoel|4d (~jaroel|4d@2a03:5700:3:0:5881:4cc4:a13d:9c89) has quit (Remote host closed the connection)
+2013-03-14 12:43:23	<--	nus (~nus@unaffiliated/nus) has quit (Ping timeout: 252 seconds)
+2013-03-14 12:44:18	<--	latro`a (~Ian@c-68-48-132-195.hsd1.md.comcast.net) has quit (Read error: Connection reset by peer)
+2013-03-14 12:44:44	-->	latro`a (~Ian@c-68-48-132-195.hsd1.md.comcast.net) has joined #haskell
+2013-03-14 12:44:56	-->	edwardk (~edwardk@pdpc/supporter/professional/edwardk) has joined #haskell
+2013-03-14 12:45:15	--	nus- is now known as nus
+2013-03-14 12:45:17	-->	otend (~otend@2610:e0:a040:e097:aed:b9ff:fe38:151f) has joined #haskell
+2013-03-14 12:46:18	<--	eikke (~nicolas@85.255.197.126) has quit (Ping timeout: 264 seconds)
+2013-03-14 12:46:21	-->	wuttf (5400e87c@gateway/web/freenode/ip.84.0.232.124) has joined #haskell
+2013-03-14 12:47:11	wuttf	How can I add the parent folder to the search pathes in GHCi?
+2013-03-14 12:47:12	<--	dmarker (~dmarker@inet-hqmc03-o.oracle.com) has quit (Remote host closed the connection)
+2013-03-14 12:47:18	-->	dmarker (~dmarker@inet-hqmc03-o.oracle.com) has joined #haskell
+2013-03-14 12:47:19	wuttf	I am messing around with -idirs
+2013-03-14 12:47:28	wuttf	says no to .. ;)
+2013-03-14 12:47:30	<--	jrusnack (jrusnack@nat/redhat/x-bowojxdqkzzmvpjz) has quit (Ping timeout: 264 seconds)
+2013-03-14 12:47:40	<--	nilg (~user@ALagny-551-1-160-4.w90-35.abo.wanadoo.fr) has quit (Ping timeout: 252 seconds)
+2013-03-14 12:48:09	-->	Janne_ (53f8a270@gateway/web/freenode/ip.83.248.162.112) has joined #haskell
+2013-03-14 12:48:13	<--	adlan (~adlan@210.195.111.38) has quit (Remote host closed the connection)
+2013-03-14 12:48:41	-->	thirty2k (~thirty2k@173.252.71.189) has joined #haskell
+2013-03-14 12:49:30	-->	mcdonc (~mcdonc@lanai.palladion.com) has joined #haskell
+2013-03-14 12:49:41	<--	Sonderblade (~boo@130.144.241.83.in-addr.dgcsystems.net) has quit (Quit: Lämnar)
+2013-03-14 12:49:58	tertl3-laptop	srhb i like your definition better than that docs :)
+2013-03-14 12:50:04	<--	bark_ (~bark@2001:470:8a52:67:e81b:f95:64b1:5eb4) has quit (Quit: Leaving)
+2013-03-14 12:50:13	<--	Janne_ (53f8a270@gateway/web/freenode/ip.83.248.162.112) has quit (Client Quit)
+2013-03-14 12:50:24	-->	Jordsan (~jorge@pool-98-110-232-55.bstnma.fios.verizon.net) has joined #haskell
+2013-03-14 12:51:11	<--	quchen (~david@p54AA2466.dip.t-dialin.net) has quit (Quit: Lost terminal)
+2013-03-14 12:53:43	<--	Tharugrim (~Tharugrim@62-46-151-100.adsl.highway.telekom.at) has quit (Quit: WeeChat 0.4.0)
+2013-03-14 12:53:58	<--	nus (~nus@unaffiliated/nus) has quit (Read error: Connection reset by peer)
+2013-03-14 12:54:12	<--	sh (~sh@2a00:15b8:109:1:1::1) has quit (Remote host closed the connection)
+2013-03-14 12:54:21	-->	nus (~nus@unaffiliated/nus) has joined #haskell
+2013-03-14 12:54:29	-->	sh (~sh@2a00:15b8:109:1:1::1) has joined #haskell
+2013-03-14 12:55:18	<--	bitonic (~user@dyn1220-28.wlan.ic.ac.uk) has quit (Ping timeout: 276 seconds)
+2013-03-14 12:56:15	<--	DrChaos (~DrChaos@71.22.67.48) has quit (Ping timeout: 260 seconds)
+2013-03-14 12:56:36	<--	niklasb (~codeslay0@HSI-KBW-37-209-24-237.hsi15.kabel-badenwuerttemberg.de) has quit (Ping timeout: 276 seconds)
+2013-03-14 12:57:04	-->	calvin (81af487a@gateway/web/freenode/ip.129.175.72.122) has joined #haskell
+2013-03-14 12:57:04	calvin	#haskell
+2013-03-14 12:57:20	c_wraith	You've identified your location
+2013-03-14 12:58:22	calvin	Hi haskellers ! I would like to know what match this pattern : (n1:rest@(n2:_)) on a list of double, if someone can help me :)
+2013-03-14 12:59:01	bartavelle	for [1,2,3,4], you will have n1 = 1, n2 = 2, rest = [2,3,4]
+2013-03-14 12:59:27	calvin	thank you very much !
+2013-03-14 12:59:33	fizbin	calvin: first of all, that pattern only matches if you have at least two elements in the list. Once you do, what bartavelle said.
+2013-03-14 12:59:34	bartavelle	well you should check this :)
+2013-03-14 13:00:25	-->	threesome (~threesome@ip-94-113-12-74.net.upcbroadband.cz) has joined #haskell
+2013-03-14 13:00:26	-->	jamiely (~Adium@static-71-185-69-210.phlapa.fios.verizon.net) has joined #haskell
+2013-03-14 13:01:22	<--	dv__ (~quassel@SD1.retn.net) has quit (Read error: Connection reset by peer)
+2013-03-14 13:01:30	donri	wuttf: how about -i $PWD/..
+2013-03-14 13:01:39	calvin	I find the ocaml equivalent more understandable : n1::((n2::_) as rest)
+2013-03-14 13:01:40	donri	hm not sure the shell expands that
+2013-03-14 13:01:50	--	Shozan is now known as SHODAN
+2013-03-14 13:01:53	-->	tommd (~tommd@c-98-246-76-64.hsd1.or.comcast.net) has joined #haskell
+2013-03-14 13:01:54	<--	eff (~quassel@123.116.62.226) has quit (Ping timeout: 264 seconds)
+2013-03-14 13:02:06	-->	Xaratas (~UserNick@brln-4db80560.pool.mediaWays.net) has joined #haskell
+2013-03-14 13:02:48	<--	schovi (~schovi@194.213.198.34) has quit (Remote host closed the connection)
+2013-03-14 13:02:58	<--	dnolen (aa95640a@gateway/web/freenode/ip.170.149.100.10) has quit (Ping timeout: 245 seconds)
+2013-03-14 13:03:11	mm_freak	calvin: "@" is a flipped version of "as" there
+2013-03-14 13:03:38	fizbin	wuttf: Can you try -i `dirname $PWD` ?
+2013-03-14 13:03:38	mm_freak	haskell: identifier@pattern
+2013-03-14 13:03:45	mm_freak	ocaml: pattern as identifier
+2013-03-14 13:03:56	tomejaguar	Is there an equivalent of ghc-core for STG language?
+2013-03-14 13:04:00	mm_freak	calvin: feel free to add spaces as you see fit:  identifier @ pattern
+2013-03-14 13:04:02	wuttf	donri, fizbin I want it to work on win too. Will that?
+2013-03-14 13:04:11	fizbin	Oh, no.
+2013-03-14 13:04:12	mm_freak	tomejaguar: as STG is lower than core i doubt it
+2013-03-14 13:04:17	<--	jamiely1 (~Adium@static-71-185-69-210.phlapa.fios.verizon.net) has quit (Ping timeout: 252 seconds)
+2013-03-14 13:04:18	fizbin	That's a blatant unixism.
+2013-03-14 13:04:19	-->	eff (~quassel@123.116.62.226) has joined #haskell
+2013-03-14 13:04:22	-->	codolio (~dolio@maf2436d0.tmodns.net) has joined #haskell
+2013-03-14 13:04:36	mm_freak	tomejaguar: STG is the level immediately above C--/assembly
+2013-03-14 13:04:45	calvin	mm_freak : alright ! thank you
+2013-03-14 13:05:22	donri	absence: lazy bytestrings are chunked so there is no "single byte reads"
+2013-03-14 13:06:07	donri	absence: but with pipes, you probably want to work with strict bytestrings
+2013-03-14 13:06:16	-->	fro0t (~fro0t@1.23.68.179) has joined #haskell
+2013-03-14 13:06:34	tomejaguar	mm_freak: STG is not a huge amount lower level than core
+2013-03-14 13:06:42	<--	dolio (~dolio@gw1.mcgraw-hill.com) has quit (Ping timeout: 258 seconds)
+2013-03-14 13:07:06	<--	aCube (~cubce@dslb-088-073-235-234.pools.arcor-ip.net) has quit (Remote host closed the connection)
+2013-03-14 13:07:20	-->	aCube (~cubce@dslb-088-073-235-234.pools.arcor-ip.net) has joined #haskell
+2013-03-14 13:07:22	-->	Esa_ (~esa.syt@108-250-33-79.lightspeed.irvnca.sbcglobal.net) has joined #haskell
+2013-03-14 13:07:34	<--	jdnavarro (~danny@253.Red-88-22-34.staticIP.rima-tde.net) has quit (Quit: Leaving)
+2013-03-14 13:07:43	<--	brweber2 (~brweber2@pool-96-255-147-6.washdc.fios.verizon.net) has quit (Quit: brweber2)
+2013-03-14 13:07:53	<--	`ramses (863ab323@gateway/web/freenode/ip.134.58.179.35) has quit (Quit: Page closed)
+2013-03-14 13:09:20	--	codolio is now known as dolio
+2013-03-14 13:10:09	-->	path[l] (~vsi@173.252.71.129) has joined #haskell
+2013-03-14 13:10:31	<--	wuttf (5400e87c@gateway/web/freenode/ip.84.0.232.124) has quit (Quit: Page closed)
+2013-03-14 13:11:17	mm_freak	tomejaguar: it's still lower and the last functional level before going to machine code
+2013-03-14 13:11:18	<--	kk` (~kk@unaffiliated/kk/x-5380134) has quit (Quit: WeeChat 0.4.0)
+2013-03-14 13:11:34	mm_freak	tomejaguar: i'm not sure what would be "core of STG"
+2013-03-14 13:12:06	mm_freak	perhaps tell us what purpose you have in mind
+2013-03-14 13:12:14	tomejaguar	mm_freak: I mean a pretty-printing of the intermediate STG
+2013-03-14 13:12:28	tomejaguar	ghc-core compiles to core and pretty prints it
+2013-03-14 13:12:36	donri	absence: not on hackage yet but maybe take a look at pipes-bytestring https://github.com/Gabriel439/Haskell-Pipes-ByteString-Library
+2013-03-14 13:12:41		[http://is.gd/xGJddw]
+2013-03-14 13:12:42	tomejaguar	there could be ghc-stg which compiles to stg and pretty prints it
+2013-03-14 13:13:33	Xaratas	has the && function short circuit logic? does it stop the second part from being evaluated if the first one is false?
+2013-03-14 13:14:11	<--	bos (~bos@c-98-207-92-149.hsd1.ca.comcast.net) has quit (Remote host closed the connection)
+2013-03-14 13:14:14	supki	> False && undefined
+2013-03-14 13:14:16	lambdabot	  False
+2013-03-14 13:14:20	donri	absence: then you might want to use pipes-safe for opening file handles
+2013-03-14 13:14:32	Xaratas	> undefined && False
+2013-03-14 13:14:34	lambdabot	  *Exception: Prelude.undefined
+2013-03-14 13:14:38	-->	bos (~bos@c-98-207-92-149.hsd1.ca.comcast.net) has joined #haskell
+2013-03-14 13:14:45	absence	donri: thanks, i'm starting to realise that while trying to implement a simple file copier for testing :) i guess i just have to create some kind of buffer that downstream can request from
+2013-03-14 13:14:48	Xaratas	arg, why left first?
+2013-03-14 13:15:01	absence	donri: great, i'll check out those!
+2013-03-14 13:15:30	supki	Xaratas: why not? anyway, it's easy to define the other one
+2013-03-14 13:15:45	-->	Alice3 (~Alice@cpc18-grim14-2-0-cust478.12-3.cable.virginmedia.com) has joined #haskell
+2013-03-14 13:15:51	<--	thirty2k (~thirty2k@173.252.71.189) has quit
+2013-03-14 13:16:03	donri	absence: in particular look at fromHandleS and hGetSomeS in pipes-bytestring
+2013-03-14 13:16:47	donri	absence: they produce strict chunks of bytestrings on demand (on 'request') from the handle
+2013-03-14 13:17:00	fizbin	> let (>&&<) = flip (&&) in undefined >&&< False
+2013-03-14 13:17:02	lambdabot	  False
+2013-03-14 13:17:09	<--	derdon (~derdon@89.204.137.11) has quit (Quit: WeeChat 0.3.8)
+2013-03-14 13:17:32	-->	derdon (~derdon@89.204.137.11) has joined #haskell
+2013-03-14 13:17:45	donri	absence: for file copying you could then compose with toHandleD to write the outfile handle
+2013-03-14 13:18:15	-->	mceier (~mceier@89-69-201-93.dynamic.chello.pl) has joined #haskell
+2013-03-14 13:18:32	Xaratas	ok, noted, for my code the normal && is the "do less work" option
+2013-03-14 13:18:41	shachaf	(⅋⅋)
+2013-03-14 13:19:00	<--	papermachine (~paper@c-98-223-61-105.hsd1.in.comcast.net) has quit (Quit: Leaving)
+2013-03-14 13:19:10	<--	bos (~bos@c-98-207-92-149.hsd1.ca.comcast.net) has quit (Ping timeout: 245 seconds)
+2013-03-14 13:19:15	donri	flip it horizontally instead: &&
+2013-03-14 13:19:19	donri	> reverse "&&"
+2013-03-14 13:19:21	lambdabot	  "&&"
+2013-03-14 13:19:24	donri	\o/
+2013-03-14 13:20:07	shachaf	/o\
+2013-03-14 13:20:17	<--	derdon (~derdon@89.204.137.11) has quit (Client Quit)
+2013-03-14 13:20:51	<--	Rickasaurus (~quassel@ool-44c0bd65.dyn.optonline.net) has quit (Remote host closed the connection)
+2013-03-14 13:21:02	absence	donri: that looks very handy. how would downstream best cope with reading across bytestring boundaries though?
+2013-03-14 13:21:25	-->	anderse (~anderself@h-37-123-145-245.na.cust.bahnhof.se) has joined #haskell
+2013-03-14 13:22:10	-->	`fogus (~fogus@freedom.d-a-s.com) has joined #haskell
+2013-03-14 13:22:13	merijn	Xaratas: eh, how is left first different from "the normal &&"?
+2013-03-14 13:22:24	Xaratas	in no way
+2013-03-14 13:22:36	--	pepijndevos is now known as pepijn_away
+2013-03-14 13:22:43	<--	anderse (~anderself@h-37-123-145-245.na.cust.bahnhof.se) has quit (Client Quit)
+2013-03-14 13:22:49	Xaratas	its just that everything else in haskell is right associative
+2013-03-14 13:23:02	merijn	Is it?
+2013-03-14 13:23:05	-->	derdon (~derdon@89.204.137.11) has joined #haskell
+2013-03-14 13:23:08	-->	snowylike (~sn@91-67-171-156-dynip.superkabel.de) has joined #haskell
+2013-03-14 13:23:08	Xaratas	*nearly
+2013-03-14 13:23:12	<--	aCube (~cubce@dslb-088-073-235-234.pools.arcor-ip.net) has quit (Remote host closed the connection)
+2013-03-14 13:23:18	donri	absence: you mean a request with no respond? i think runProxy just discards those?
+2013-03-14 13:23:27	merijn	I think most are left associative, except for (.)
+2013-03-14 13:23:32	-->	aCube (~cubce@dslb-088-073-235-234.pools.arcor-ip.net) has joined #haskell
+2013-03-14 13:23:54	-->	zero7 (uid10708@gateway/web/irccloud.com/x-mbzjgxvmukkvghma) has joined #haskell
+2013-03-14 13:23:54	-->	chrisbuchholz_ (uid6784@gateway/web/irccloud.com/x-mtznyamavgzzgetp) has joined #haskell
+2013-03-14 13:24:09	absence	donri: a somewhat silly and contrieved example would be splitting the contents of the file into [Word8] chunks of a different size than defaultChunkSize
+2013-03-14 13:24:43	donri	absence: not sure i see how the chunk size matters
+2013-03-14 13:24:44	-->	Thra11_ (~thrall@37.152.193.238) has joined #haskell
+2013-03-14 13:25:31	donri	most pipes will just loop forever and request a production from upstream and process that
+2013-03-14 13:25:43	donri	what is the problem you're imagining?
+2013-03-14 13:25:56	c_wraith	merijn: nearly anything that benefits from laziness is made infixr
+2013-03-14 13:26:35	<--	phischu (~pschuster@dslb-088-077-196-150.pools.arcor-ip.net) has quit (Ping timeout: 260 seconds)
+2013-03-14 13:26:50	<--	Thra11 (~thrall@87.114.206.209) has quit (Ping timeout: 256 seconds)
+2013-03-14 13:26:56	<--	alistairclark (~alisaircl@109.174.158.82) has quit (Remote host closed the connection)
+2013-03-14 13:27:09	absence	donri: say the ByteString chunks are 128 bytes, and i want to split the file contents into chunks of 50 bytes. so you request the next bytestring, and respond once for the first 50 bytes, then again for the next 50 bytes, but now there are only 28 bytes left. another bytestring has to be requested before 50 bytes (28 from the old and 22 from the new) can be produced again, etc
+2013-03-14 13:28:00	absence	donri: i just wondered if the boundary handling has to be done explicitly by the user, or if there's some magic available :)
+2013-03-14 13:28:11	--	pepijn_away is now known as pepijndevos
+2013-03-14 13:28:44	<--	jrajav (~jrajav@198.179.137.210) has quit (Quit: phunq, sandwich store loop, WHAT NO UNIVERSE)
+2013-03-14 13:29:07	-->	edon (~user@albalug/edon) has joined #haskell
+2013-03-14 13:29:41	-->	bos (~bos@173.252.71.129) has joined #haskell
+2013-03-14 13:30:11	<--	calvin (81af487a@gateway/web/freenode/ip.129.175.72.122) has quit (Quit: Page closed)
+2013-03-14 15:50:30	-->	numeral (~numeral@198.23.228.15) has joined #haskell
+2013-03-14 15:50:30	--	Topic for #haskell is "["Haskell Platform 2012.4: http://bit.ly/Clv5r ","GHC 7.6.2 http://v.gd/oXnqjU ","Paste code/errors: http://hpaste.org/new/haskell ","Haskell News: http://reddit.com/r/haskell ","The Haskell programming language http://haskell.org ","Logs: http://bit.ly/5mwtRQ ","If Hackage is down, try: http://hdiff.luite.com "]"
+2013-03-14 15:50:30	--	Topic set by monochrom on Tue, 29 Jan 2013 12:36:42
+2013-03-14 15:50:30	--	Nicks #haskell: [@ChanServ [[zz]] [swift] \rs ]OLI[ __main__ _br_ _d3f _flow_ _janne _jmcarthur _jwest `0660 `^_^v `bps `fogus `micro `nand` `ramses a11235 A2kmm aajmakin ab9rf absence abumirqaan acfoltzer acharles aCube Adeon adimit Adios adnap adnauseam afarmer Afish aforemny agr agumonkey agundry ahf ahihi ahkurtz ajhager akahn akosch akraut alang albel727 alcz aleator_ alej alejandrogomez alexander__b Alice3 alios alkabetz alnix alpounet alshain Amadiro amiller amyers anachron_ anders^^ andrewsw aninhume1 anona anRch AntiSpamMeta apaku appamatto araujo arbn aristid arkeet arkx arlinius armlesshobo arnihr__ arun asante aszlig Athas AtnNn AtomicStryker augur augustl awgn Axman6 az azaq23 b52 b_jonas BadKitty banjiewen barrucadu bartavelle basdirks_ Baughn bbee bbloom bcoppens bd_ Belgarion0 ben_d bens benzap bergey` betawaffle bezik bgamari bholst Bigcheese BigEndian birkenfeld bitonic blackmir1oxx BlastHardcheese blooberr BMeph bobry bogner Boney Boreeas boris`` bos Botje brainproxy Brando753 brandonw brett BrianHV brisbin brixen bstrie Bwild bxc byorgey ByronJohnson bytbox C-Keen c_wraith cajla Cale caligula__ Canar canta canvon carter Catbuntu ccasin ccxCZ cdidd cdntr celery__ certainty cfricke chance charlesofarrell Chaze chirpsalot ChongLi Chousuke chr1s chrisbuchholz_ chrisirc chrra ciaranm CindyLinz cjay cl_away ClaudiusMaximus Clint clog cmsd2 cmsmcq cods coeus_ colah_ comak companion_cube conal conehead confound connelly copumpkin corruptmemory CosmicRay CoverSlide cow-orker crdueck cromain cross crs_ Cryovat ctype_real cwvh cynick cyphase d-snp dabradley dacto DaDaDosPrompt dan_johnsin danr dario DarkAceZ Dashkal davean davorak dcoutts deavidsedice Deewiant def-lkb dekuked dennda dented42 Derander derdon descender DexterLB dflemstr_ dfletcher dgvncsz0f DigitalKiwi dilinger dinox dixie_ djanatyn dju dkasak dlundy_ dmac dmarker dmwit dnolen Dodek dogmaT dolio donri doomlord dottedmag dqd Draconx Draggor drbean DrCode dreixel_ drek drewr drmegahertz dropdrive DrSyzygy dsantiago dschoepe DT` dumbhat DustyDingo Dybber dyreshark eacameron EarlGray earthy eataix ecuderpam EddyC edenc Eduard_Munteanu edwardk edwtjo eff eflister ehamberg Eiam eL_Bart0 electrogeek elgot_ Eliel_ elliott elliottcable emma endojelly ent Entroacceptor epta ericmj Eridius erkin ernst Erstarrung Esa_ Estrellas etabot ethercrow etrepum evannb Excureo eyck f8_ fabjan faen faheem FalkoPeters fall_ fayden fcr fergusnoble fgomez finnrobi fionnan FireFly fireglow fizbin floatingman Fluky flux fmapE folone formalcow fotc freiksenet frerich2 frio fro0t frontendloader froztbyte fryguybob ft Fubar^ Fuco Fullma Fuuzetsu fxrh gbarboza gbeshers gbluma gcmalloc gdeest_ gdsx geekosaur gehmehgeh gemelen gentleben gereedy gg7 ggreg ghorn_ Ghoul_ gienah Gilly Gothmog_ Gracenotes gseitz gthorslund guampa guerrilla Guest10329 Guest16384 Guest22595 Guest73244 Gunni Gurragchaa_ gustavnils gusto guy_ guymann gwern h_chiro habbbe hachiya hackagebot Hafydd hajimehoshi hallski HaltingState hanDerPeder harrison hattusili_III heath Heffalump helgikrs henk Hermit herself heruur hiptobecubic hiratara hiredman hiroyuki2 hirsch__ hive-mind horlicks hpaste hpc hpd hughfdjackson hungryblank hvr hyko iago IanKelling ibid IbnFirnas Icarot Iceland_jack identity idnar idntfy idntfy[work] idoru Igloo igstan inr int-e integral_ Internet13 ion ique isomorphic issimus1 iulian ivan\ ivan` ixian Jaak jabirali jackhill jacobw jaimef jamiely jamwt janbanan jang jao jaroslaw jaspervdj Jaxan jayne jbauman jcp jdhky jdoliner Jean Jeanne-Kamikaze jedai jeffreybaird Jello_Raptor jercos jerojasro Jesin jesyspa jix jlamothe jlewis jliikka jlouis jmelesky jml joachifm joar jodaro joe9 JoeHazzers joelb joeyh johnw joneshf jonke Jonno_FTW Jonte_ Jordsan JoshuaA jpeeters JPohlman1 jrajav jrib jrockway jrslepak jssanders jtalk jtobin_ juhp julmae- julmuri junsuijin juxovec jyyou k00mi k0ral KaiSforza kakos kallisti kalven KaneTW kaol kaoskorobase kcj Ke kennyp_ Khisanth kini Kinnison KitB__ kith kkris kloeri klugez kmels kmels_ kmic kniu knyppeldynan knz koala_man koninkje_away kosmikus kqr1 kranius krig_ kshannon ktosiek Kuba kylcarte labo lahwran lambdabot LAMMJohnson Laney latro`a lattenwald lazard LeaChim LeninParty lennart_ lenstr leoncamel leprauchan leroux levi levitation_ liesen liff lightquake linduxed Liskni_si lispy liszt liyang lokydor lopex lpsmith lpvb lucca luite Luke luksow lulf luminous lusory_ m3ga machisuji_ magaio_ magicman mahogny majoh maksbotan malorie_ malthe maltin mami mannyv mapf mapreduce marienz Martty MasseR MasterPuncher matcher11 mateu Mathnerd314_ mattp_ mattrepl matzo mauke Maxdamantus mceier McManiaC mdhopkins mechairoi mefisto megabeest Megant mel- melter memand mendez merijn message144 meyersh mgile miasma mietek mike2 mikeplus64 milessabin milli mimi_vx mimico__ mirsal mixi mjr84 MK_FG mlh mlinksva mm_freak mmaruseacph2 MoALTz mokus_ mollerst1and Mon_Ouie monique_ monochrom moonlite morazow mornfall morolin mortberg Mortchek mpu mrd mrdomino_ MrFenix mrkotfw MrMeh` mrotondo mrshoe mrsolo MrZepeda mspells mtahmed mullein munro mux__ myme mysticc Nanar Natch natechan nathanel_ natte nejucomo NemesisD netj neto neurocyte newsham Nickeeh nicoo nighty^ Nik_89 niko nikolah Nimatek nimred ninegrid ninzine Nisstyre niteria nlogax no-n noam noj nonymousa noplamodo notdan notVert NougatRillettes Nshag numeral nus- nwf obcode Obfuscate ocharles ofan OlegYch OnionKnight opqdonut ormaaj Ornedan_ ortmage osa1 osfameron osnr osxorgate otend othiym23 otterdam otters otto_s_ ousado ozataman paddymahoney PaksAway pantsman paolino parcs PartyKat2e path[l] pcapriotti pdxleif Peaker peddie peltchu pepijndevos perlite permagreen perspectival petanqk petantik petekaz peterhil peterhil` pettter pfoetchen pharaun Philippa PhilRod_ phischu PHO_ pikhq piotr Plex- plhk pmade pnielsen popz pqmodn_ pr Pranz predator117 preflex prh pricklypear PrO_OkI projedi ps-auxw Ptival ptrf purefn puzza007 pxdr pyrtsa pyykkis q66 quaestor quicksilver quuxman qwandor|quassel qwr qz r126l_ raek_ RageOfThou raichoo raid rainmaker Ralith Rarrikins_k_b Raynes Razz rcfox rcj_ rcl redjohn reiddraper Reite Rembane RenJuan replcated rfw ricepuddin RichyB rickeyski-k rio Riussi rkj rmarianski rmunoz rmunroe_ robbe- robbert rodlogic rossabaker rs0 rsimoes rsuniev123 ryanakca S11001001 s4msung_ s_quark SaBer saep Sagi saiam Saizan sambio saml sarfraz saurik scgilardi schlumpi schovi schroedinbug sclv Scott_firebeta Sculptor seafax SeanTAllen seats Sebastien-L SegFaultAX sellout- sepp2k setmeaway Sgeo sgronblo sh shachaf shanse sheerun shepheb shergill shintah SHODAN shurikas shutdown_-h_now si14 silver simon___ simpson sipa siril sjl ski skp skuggi sleepynate SLi sm smarter snits snowylike so so_ Soft sohum solarus solirc sonda Sonderblade sordina2 SoupEvil spion Spockz sproingie squidz srcerer srhb sShintah staafl Starfire stat_vi statusfailed steez stelleg stepcut stephe stepkut strax_ suiside sully sunfun_ sunnavy supki sw17ch Swizec system64 t7 t7_ tac tafryn tahu tamiko tanak____ tanakh tanakh_ Taneb Tarential taruti taterbase tavelram__ tazjin_ td123 tdammers TDJACR techlife Tehnix Tene tenmilestereo tensorpudding tertl3-laptop Tesseraction_z tessier tew88 tg tgeeky tgummerer Th0mas thalassarche Tharugrim The_third_man TheFuzzball theorbtwo thetallguy thirsteh_ Thomyho3 thorkilnaur thoughtpolice Thra11 threedaymonk threesome tieTYT tieTYT2 tim timemage tippenein tjelle tjohnson tkd tlaine tlevine tmiw TML tobiassj1sten tomaw tomboy64 tomejaguar tomh_ tomku tommd tomoj tomprince ToRA Tordek_ trevize tridactyla trolling tromp__ tsinnema tsou tswett tunixman tvaalen twanvl_ tweakism Twey u_ u_quark ulfdoz Ulrar uniquenick UziMonkey v0yager v0|d` Valodim Varakh vehk verrens vhz Vinz_ vmeson vobi Volstvok Vorpal voyd Vq VZakharov wagle walter|r Walther warpy__ Watcher7|off waterlaz wchun wei2912 weie wereHamster whaletechno WhereIsMySpoon_ whoops wilfredh Will| wjlroe wollw wolong wormphlegm wossname wting wto wtw wumpus wunki x7 xaimus_ xcv xcvii xinming XMunkki xnyhps Xorlev xplat xrl_ xymox yacks yam yan_ yano yeltzooo yitz yumike zaltekk Zariel zebr zeiris zenoli zenzike zero7 ziman zoktar zomg zorzar Zouppen zwiebel zz_nh2 Zzompp_]
+2013-03-14 15:50:30	--	Channel #haskell: 1046 nicks (1 op, 0 halfops, 0 voices, 1045 normals)
+2013-03-14 15:50:30	***	Buffer Playback...
+2013-03-14 15:50:30	ab9rf	[22:37:44] srhb: you need that anyway
+2013-03-14 15:50:30	srhb	[22:37:44] Ah I see graph embedding is on Wikipedia
+2013-03-14 15:50:30	srhb	[22:37:45] Er, true. :P
+2013-03-14 15:50:30	ab9rf	[22:37:45] srhb: although you may not inspect all edges
+2013-03-14 15:50:30	ab9rf	[22:37:45] you quit once you find Bacon
+2013-03-14 15:50:30	ab9rf	[22:37:45] you're making me hungry
+2013-03-14 15:50:30	cajla	[22:37:45] well once you know there is no shorter path i guess?
+2013-03-14 15:50:30	ab9rf	[22:37:45] cajla: the first path you find in A* is the shortest
+2013-03-14 15:50:30	srhb	[22:37:45] Dijkstras guarantees that, doesn't it?
+2013-03-14 15:50:30	srhb	[22:37:45] Yeah
+2013-03-14 15:50:30	ab9rf	[22:37:55] or is at least tied for shortest
+2013-03-14 15:50:30	ab9rf	[22:38:04] there may be others that are equally short but no path is shorter
+2013-03-14 15:50:30	cajla	[22:38:20] assuming you have the distance correct
+2013-03-14 15:50:30	srhb	[22:38:25] I have to write this now, too funny. Wikipedia will have to be a standin for real people's relations
+2013-03-14 15:50:30	ab9rf	[22:38:44] srhb: use imdb instead
+2013-03-14 15:50:30	srhb	[22:38:55] Oh yeah, that would work, too.
+2013-03-14 15:50:30	srhb	[22:39:16] Extraction might be messier though. Regexing on anything..wiki/article seems nice
+2013-03-14 15:50:30	ab9rf	[22:39:30] A* uses  the heuristic to order the fringe by likelihood of getting closer
+2013-03-14 15:50:30	ab9rf	[22:41:15] ok, yeah, i'm remembering this algorithm now
+2013-03-14 15:50:30	ab9rf	[22:41:17] it's been ages
+2013-03-14 15:50:30	armlesshobo	[22:41:45] man, this repl makes like easier.
+2013-03-14 15:50:30	ab9rf	[22:41:48] Cale: i suspect n would be quite large
+2013-03-14 15:50:30	Cale	[22:41:51] tbh, constructing that embedding is probably computationally more expensive than all pairs shortest paths
+2013-03-14 15:50:30	armlesshobo	[22:42:04] life*
+2013-03-14 15:50:30	srhb	[22:42:06] armlesshobo: :)
+2013-03-14 15:50:30	srhb	[22:42:57] Can Parsec replace regexes? Say for finding URLs that match a certain pattern in a blob of HTML?
+2013-03-14 15:50:30	ab9rf	[22:43:15] srhb: yes
+2013-03-14 15:50:30	srhb	[22:43:25] Neat, then I have an actual reason to try this. :P
+2013-03-14 15:50:30	ab9rf	[22:43:27] srhb: although it gets interesting if you want to be able to specify the blob at runtime
+2013-03-14 15:50:30	srhb	[22:43:35] Oh.
+2013-03-14 15:50:30	srhb	[22:43:38] How come?
+2013-03-14 15:50:30	ab9rf	[22:43:44] the needle to find, that is
+2013-03-14 15:50:30	Cale	[22:43:56] srhb: Because parsec parsers consist of Haskell code
+2013-03-14 15:50:30	ab9rf	[22:44:01] srhb: well, if it's a simple string
+2013-03-14 15:50:30	srhb	[22:44:01] Yes, I see.
+2013-03-14 15:50:30	geekosaur	[22:44:01] however I'd say there are some caveats; html is notoriously hard to parse and it's often better to leave it to the experts (i.e. existing well-tested libraries)
+2013-03-14 15:50:30	cajla	[22:44:08] Ok i can't understand why this ambiguous type matters. It comes from Control.Exception.catch, :: Exception e => IO a -> (e -> IO a) -> IO a, and it is the e it complains on
+2013-03-14 15:50:30	ab9rf	[22:44:15] but if you want a complicated pattern, that requires invoking the compiler
+2013-03-14 15:50:30	geekosaur	[22:44:24] especially given that HTML the spec and HTML in the wild are often two rather different things
+2013-03-14 15:50:30	srhb	[22:44:28] cajla: It needs to know what exception to catch
+2013-03-14 15:50:30	srhb	[22:44:38] ab9rf: Yeah. Hm. Not sure what is cleverest then.
+2013-03-14 15:50:30	srhb	[22:44:45] geekosaur: What libraries are good for that, then?
+2013-03-14 15:50:30	cajla	[22:44:56] Nothing int the tutorial mentions that, and this is my first encounter with exceptions
+2013-03-14 15:50:30	ab9rf	[22:45:02] srhb: regexps are good for searching for patterns that will be specified later
+2013-03-14 15:50:30	Cale	[22:45:11] cajla: You might be reading a somewhat older tutorial?
+2013-03-14 15:50:30	cajla	[22:45:18] not really
+2013-03-14 15:50:30	geekosaur	[22:45:20] the tutorial may be out of date; several of them predate extensible exceptions
+2013-03-14 15:50:30	ab9rf	[22:45:40] geekosaur: heh, yeah, html is a wild beast
+2013-03-14 15:50:30	cajla	[22:45:44] I can't finding any dates but I think it is atleast from 2010's
+2013-03-14 15:50:30	Cale	[22:45:52] cajla: The exception system was (a fair amount of time ago) replaced with this system which allows for easy introduction of new sub and superclasses of exceptions.
+2013-03-14 15:50:31	cajla	[22:46:13] regex's are only great if you know at compile the pattern, jit or otherwise
+2013-03-14 15:50:31	awgn	[22:46:21] what's the recommended linux distribution for Haskell? Arch Linux, Debian or NixOs ?
+2013-03-14 15:50:31	hiptobecubic	[22:46:30] awgn, that makes no sense.
+2013-03-14 15:50:31	srhb	[22:46:30] awgn: None or any.
+2013-03-14 15:50:31	Cale	[22:46:30] If you want to just catch anything, you can replace the handler (\e -> ...) with (\(SomeException e) -> ...)
+2013-03-14 15:50:31	Taneb	[22:46:33] awgn, it doesn't matter, at all
+2013-03-14 15:50:31	ab9rf	[22:46:38] awgn: haskell doesn't care
+2013-03-14 15:50:31	Taneb	[22:46:57] awgn, you could even use Windows!
+2013-03-14 15:50:31	ab9rf	[22:47:03] Taneb: shush :)
+2013-03-14 15:50:31	awgn	[22:47:04] I mean from the point of view of packages
+2013-03-14 15:50:31	hiptobecubic	[22:47:07] Unless you want a gui
+2013-03-14 15:50:31	srhb	[22:47:13] Doesn't matter, you get your packages via cabal
+2013-03-14 15:50:31	ab9rf	[22:47:16] awgn: cabal
+2013-03-14 15:50:31	 *	hackagebot [22:47:16] tagged 0.4.5 - Haskell 98 phantom types to avoid unsafely passing dummy arguments  http://hackage.haskell.org/package/tagged-0.4.5 (EdwardKmett)
+2013-03-14 15:50:31	hiptobecubic	[22:47:17] which is pretty ironic now that i think about it
+2013-03-14 15:50:31	monochrom	[22:47:26] arch has more packages
+2013-03-14 15:50:31	srhb	[22:47:40] arch also tends to break their Haskell packages for extended periods, it seems.
+2013-03-14 15:50:31	ab9rf	[22:47:43] i don't care if the distributio has packages, you'll just get them with cabal
+2013-03-14 15:50:31	srhb	[22:47:47] I remember that month of arch flooding in here. ugh.
+2013-03-14 15:50:31	hiptobecubic	[22:47:55] arch also tends to break their distro for extended periods
+2013-03-14 15:50:31	monochrom	[22:48:01] oh, then don't use arch's packages :)
+2013-03-14 15:50:31	aCube	[22:48:06] for me, arch is quite stable
+2013-03-14 15:50:31	cajla	[22:48:07] Cale: Gonna look at the new exceptions, because i can't say how this code in the tutorial makes any sense at all actually
+2013-03-14 15:50:31	aCube	[22:48:14] But I don't use the haskell packages
+2013-03-14 15:50:31	ab9rf	[22:48:16] i stay out of distro wars generally
+2013-03-14 15:50:31	Cale	[22:48:22] Yeah, for me the answer to which linux distribution to use is that it's a moot point because I'll be installing the GHC generic linux binary package anyway.
+2013-03-14 15:50:31	ab9rf	[22:48:24] so much religion, so little logic
+2013-03-14 15:50:31	srhb	[22:48:26] ab9rf: How about this one specifically?
+2013-03-14 15:50:31	Cale	[22:48:40] cajla: Which tutorial?
+2013-03-14 15:50:31	ab9rf	[22:48:45] srhb: i don't have any experience really, i've only used haskell on debian and on windows
+2013-03-14 15:50:31	aCube	[22:48:55] The haskell packages in arch are unusable:
+2013-03-14 15:50:31	aCube	[22:48:56] warning: cannot resolve "haskell-void=0.5.11-2", a dependency of "haskell-lens"
+2013-03-14 15:50:31	ab9rf	[22:48:59] srhb: but i've been using debian since 1999, and have had no reason to change
+2013-03-14 15:50:31	cajla	[22:49:07] Cale: http://www.haskell.org/haskellwiki/Roll_your_own_IRC_bot
+2013-03-14 15:50:31	edwardk	[22:49:21] ?
+2013-03-14 15:50:31	monochrom	[22:49:25] I stay out of distro wars too, except when people mock ubuntu's unity, and then I stand up and say I use ubuntu and unity and they work great
+2013-03-14 15:50:31	 *	geekosaur [22:49:25] is not sure what haskell package is currently blessed for html parsing
+2013-03-14 15:50:31	srhb	[22:49:31] ab9rf: Re. 1999 - I recently met a fellow on IRC that, when prompted of his distro, replied "Mandrake"
+2013-03-14 15:50:31	hiptobecubic	[22:49:40] edwardk, do you highlight on "lens" ?
+2013-03-14 15:50:31	ab9rf	[22:49:43] srhb: i nearly got a job at mandrake
+2013-03-14 15:50:31	cajla	[22:49:44] monochrom: or upstart or MIR
+2013-03-14 15:50:31	edwardk	[22:49:46] hiptobecubic: ?
+2013-03-14 15:50:31	edwardk	[22:49:46] =)
+2013-03-14 15:50:31	edwardk	[22:49:49] yes
+2013-03-14 15:50:31	Cale	[22:49:51] cajla: Yeah, that's using the old exceptions
+2013-03-14 15:50:31	edwardk	[22:50:06] its got a pretty bad false hit rate these days though so i'll probably drop it
+2013-03-14 15:50:31	ab9rf	[22:50:06] srhb: i was all but hired as supervisor of customer service when they decided to cancel the whole project
+2013-03-14 15:50:31	hiptobecubic	[22:50:09] edwardk, false alarm then :)  someone was complaining that arch's packages are incoherent
+2013-03-14 15:50:31	cajla	[22:50:12] good to know, is the type for that catch even the same?
+2013-03-14 15:50:31	srhb	[22:50:16] ab9rf: Eck.
+2013-03-14 15:50:31	***	Playback Complete.
+2013-03-14 15:50:32	Cale	cajla: You can fix it by replacing (const $ return ()) with (\(SomeException e) -> return ())
+2013-03-14 15:50:36		[http://is.gd/6ib5rJ]
+2013-03-14 15:50:36		[http://is.gd/EROCYD]
+2013-03-14 15:50:39	srhb	hiptobecubic: Are you telling that that's beyond the scope of Control.Lens?!
+2013-03-14 15:50:41	ab9rf	srhb: that was like 1998?  i forget, it was ages ago.
+2013-03-14 15:50:47	srhb	ab9rf: Sounds about right.
+2013-03-14 15:50:51	-->	BigTom (~bigtom@173.88-246-213.ippool.namesco.net) has joined #haskell
+2013-03-14 15:50:53	--	Mode #haskell [+CLcnpt]
+2013-03-14 15:50:53	--	Channel created on Sun, 26 Nov 2006 01:42:48
+2013-03-14 15:51:05	cajla	AH
+2013-03-14 15:51:20	<--	juxovec (~juxovec@ip-37-188-227-19.eurotel.cz) has quit (Remote host closed the connection)
+2013-03-14 15:51:24	Cale	hah, it looks like someone fixed it on that page farther down, but put it in a comment
+2013-03-14 15:51:28	ab9rf	maybe 2000
+2013-03-14 15:51:31	cajla	I just make an exception handler for any exception
+2013-03-14 15:51:38	ab9rf	i dunno, it was somewhere near Y2K
+2013-03-14 15:51:38	cajla	that just return ()
+2013-03-14 15:51:43	Cale	cajla: Yeah.
+2013-03-14 15:51:49	ab9rf	before i got my First Real Job
+2013-03-14 15:51:58	<--	t7 (~tommo@mailgate.ips-international.com) has quit (Quit: Leaving)
+2013-03-14 15:52:00	cajla	also, comments?
+2013-03-14 15:52:21	cajla	I see no comment system on that page
+2013-03-14 15:52:25	--	t7_ is now known as t7
+2013-03-14 15:52:38	Cale	No, in a code comment
+2013-03-14 15:52:53	-->	joneshf-laptop (~joneshf@mail.concordusapps.com) has joined #haskell
+2013-03-14 15:52:54	Cale	    loop st    = catch (runReaderT run st) (const $ return ())
+2013-03-14 15:52:54	Cale	    --           catch (runReaderT run st) (\(SomeException _) -> return ()) -- *** Control.Exception with base-4
+2013-03-14 15:52:54	Cale	 
+2013-03-14 15:53:01	monochrom	(\ ~(SomeException e) -> return ()) hehehe. (more seriously, it doesn't matter in practice, don't pull your hair out on this :) )
+2013-03-14 15:53:25	-->	hiroakip (~hiroaki@77-20-72-92-dynip.superkabel.de) has joined #haskell
+2013-03-14 15:53:31	cajla	oh im so blind
+2013-03-14 15:53:38	-->	ag90 (~ag90@184.175.42.76) has joined #haskell
+2013-03-14 15:53:50	awgn	I quit. Bye :-)
+2013-03-14 15:53:52	<--	awgn (~nb@unaffiliated/awgn) has quit (Quit: Leaving)
+2013-03-14 15:54:01	cajla	sorry to have wasted your time and thanks for the help
+2013-03-14 15:54:05	-->	xunatai (~xunatai@c-24-21-221-118.hsd1.or.comcast.net) has joined #haskell
+2013-03-14 15:54:08	Cale	Well, it is in ever-so-fucking-slightly-darker-grey on a light-grey background.
+2013-03-14 15:54:23	Cale	Like so many things on the web today
+2013-03-14 15:54:31	johnw	Cale: I SO AGREE
+2013-03-14 15:54:35	-->	cognominal (~cognomina@37.160.31.18) has joined #haskell
+2013-03-14 15:54:36	<--	Jordsan (~jorge@pool-98-110-232-55.bstnma.fios.verizon.net) has quit (Remote host closed the connection)
+2013-03-14 15:54:37	johnw	drives me nuts
+2013-03-14 15:54:45	cajla	Well
+2013-03-14 15:54:47	<--	yacks (~yacks@180.151.36.168) has quit (Quit: Leaving)
+2013-03-14 15:54:48	cajla	me too
+2013-03-14 15:54:53	johnw	there are even apps that are darkish grey on lightish grey with like 9pt fonts where nothing is configurabel
+2013-03-14 15:55:01	-->	maltem (~maltem@p508F5AB3.dip.t-dialin.net) has joined #haskell
+2013-03-14 15:55:01	cajla	the designers are fapping hardcore to that stuff
+2013-03-14 15:55:08	johnw	clearly their market demographic is 19 year olds, period
+2013-03-14 15:55:11	tomejaguar	parcs: thanks
+2013-03-14 15:55:16	srhb	johnw: Careful :P
+2013-03-14 15:55:20	monochrom	the computer can do 2^24 colours. it is important to use them all!
+2013-03-14 15:55:31	johnw	srhb: whaddisay? :)
+2013-03-14 15:55:41	johnw	19yr olds have better eyesight!
+2013-03-14 15:55:48	johnw	i'm a 15pt minimum guy nowadays
+2013-03-14 15:55:49	srhb	Haha. Sorry. :P
+2013-03-14 15:55:57	cajla	Also it works great now
+2013-03-14 15:56:01	-->	scopedTV (~j@j119027.upc-j.chello.nl) has joined #haskell
+2013-03-14 15:56:11	cajla	also designers have VA panels
+2013-03-14 15:56:34	cajla	so they actually have that many colors
+2013-03-14 15:56:42	monochrom	ideally, each pixel stands for one unicode codepoint, and so your screen can display 2000x1500 code points, or whatever your resolution is
+2013-03-14 15:56:43	cajla	unlike most of us who have 6 bits per color
+2013-03-14 15:56:46	Cale	I have very good eyesight with glasses, and can probably read it as well as anyone, but that doesn't magically excuse it from being obnoxious.
+2013-03-14 15:56:53	srhb	monochrom: "ideally"
+2013-03-14 15:57:40	<--	ulfdoz (~mary@p5B389F95.dip.t-dialin.net) has quit (Ping timeout: 260 seconds)
+2013-03-14 15:57:51	monochrom	2000-character wide source code ought to be enough for everybody!
+2013-03-14 15:58:00	Cale	It seems fpcomplete has mostly fixed their problem with it
+2013-03-14 15:58:05	<--	iago (~iago@gwlmf.di.uminho.pt) has quit (Ping timeout: 252 seconds)
+2013-03-14 15:58:08	Cale	I was about to give them some more flak
+2013-03-14 15:58:24	<--	tertl3-laptop (~tertl3-la@108-85-16-151.lightspeed.gnvlsc.sbcglobal.net) has quit (Quit: tertl3-laptop)
+2013-03-14 15:58:31	johnw	i gave flak on your behalf, Cale :)
+2013-03-14 15:58:43	Cale	There's still some of it
+2013-03-14 15:58:52	johnw	then i shall resume flakking
+2013-03-14 15:58:54	Cale	but at least their main article text is no longer light grey
+2013-03-14 15:58:59	<--	snowylike (~sn@91-67-171-156-dynip.superkabel.de) has quit (Read error: Connection reset by peer)
+2013-03-14 15:59:04	johnw	if you see mgsloan, give it to him
+2013-03-14 15:59:07	srhb	I feel like my monitor is dying when I see grey text.
+2013-03-14 15:59:09	-->	hamid (~nithp@unaffiliated/hamid) has joined #haskell
+2013-03-14 15:59:29	johnw	grey text should cause Chromatic Affective Disorder or something
+2013-03-14 15:59:39	johnw	then we excuse ourselves from work on legal grounds
+2013-03-14 15:59:50	monochrom	anyway, speaking unsarcastically, web designers should be confined to working on a 12" netbook, because that's what we normal users use, not their current quad-head 40" oh-so-awesome highend displays
+2013-03-14 16:00:03	Cale	It makes me rage that there are people who are *paid* to do this shit and should know better, and yet they don't do their jobs properly.
+2013-03-14 16:00:30	johnw	Cale: like the people who write password login code for websites, but don't even salt the pw hash?
+2013-03-14 16:00:39	Cale	yes, it's about as bad as that
+2013-03-14 16:00:52	-->	Rarrikins_k_b_y (~Rarrikins@unaffiliated/rarrikins) has joined #haskell
+2013-03-14 16:00:56	<--	Rarrikins_k_b (~Rarrikins@unaffiliated/rarrikins) has quit (Ping timeout: 255 seconds)
+2013-03-14 16:01:01	Cale	(well, obviously security is much more serious to begin with, but still)
+2013-03-14 16:01:10	<--	system64 (~system64@202.78.175.199) has quit (Remote host closed the connection)
+2013-03-14 16:01:20	monochrom	no, Cale, I think it makes you rage less if you know that their practice is being given highend displays
+2013-03-14 16:01:45	Cale	monochrom: I don't care how highend your display is. Maximise contrast.
+2013-03-14 16:01:56	<--	amyers (~quassel@c-68-48-207-151.hsd1.md.comcast.net) has quit (Ping timeout: 252 seconds)
+2013-03-14 16:02:04	cajla	Cale: it's about the UX
+2013-03-14 16:02:10	cajla	;)
+2013-03-14 16:02:22	monochrom	a web page that says "this page best in 4000x2500" is clearly made by someone who actually is given such a ridiculously out-of-earth display
+2013-03-14 16:02:51	monochrom	I think similarly web pages that uses hard-to-distinguish colours
+2013-03-14 16:02:54	Cale	It's not about the UX for these people, it's about the experience of the guy who's standing across the room and blurring his eyes while looking at the site design that has lorem ipsum text in it.
+2013-03-14 16:03:03	-->	blbrown_win3 (~blbrown_w@24-241-48-56.static.gwnt.ga.charter.com) has joined #haskell
+2013-03-14 16:03:08	-->	amyers (~quassel@c-68-48-207-151.hsd1.md.comcast.net) has joined #haskell
+2013-03-14 16:03:19	-->	Guest38848 (~ned@pulpe.poivron.org) has joined #haskell
+2013-03-14 16:03:28	Guest38848	hello
+2013-03-14 16:03:34	cajla	My company is currently looking to hire a designer
+2013-03-14 16:03:43	<--	pmade (~pmade@c-67-172-151-101.hsd1.co.comcast.net) has quit (Quit: bye.)
+2013-03-14 16:03:45	cajla	those persons i\ve met..
+2013-03-14 16:04:02	-->	vlatkoB (~vlatko@188.129.49.140) has joined #haskell
+2013-03-14 16:04:19	Guest38848	tailleGoban = 19
+2013-03-14 16:04:21	Cale	Grey text "looks better" in that it's less distracting from the site design itself, but since the text is the whole reason that the thing exists, you shouldn't be noticing the site design, and if you do, it's probably bad.
+2013-03-14 16:04:22	Guest38848	voisins (i,j) = case (i,j) of
+2013-03-14 16:04:31	monochrom	and the irony is that they say "I'm an artist, I need these high-end huge colour-accurate displays"
+2013-03-14 16:04:35	-->	Franciman (~quassel@host70-167-dynamic.27-79-r.retail.telecomitalia.it) has joined #haskell
+2013-03-14 16:05:02	ag90	With ByteString.split, is there an alternative that preserves the byte that it split on?
+2013-03-14 16:05:06	-->	toekutr (~user@50-0-51-11.dsl.static.sonic.net) has joined #haskell
+2013-03-14 16:05:18	Cale	http://www.perceptualedge.com/blog/ -- this guy makes great points about presentation of data, all the while in text which is needlessly difficult to read
+2013-03-14 16:05:23		[http://is.gd/iOOK0j]
+2013-03-14 16:05:24	-->	dhil (~dhil@0103ds4-abc.1.fullrate.dk) has joined #haskell
+2013-03-14 16:05:30	johnw	we should write a book, How To Design Websites Like GoDaddy, and then collect the names of everyone who buys it and put them on a no-work list
+2013-03-14 16:05:58	-->	danharaj (~danharaj@ool-457a8edb.dyn.optonline.net) has joined #haskell
+2013-03-14 16:06:03	 *	labo likes that idea
+2013-03-14 16:06:10	vlatkoB	Is it possible to write several bool checks in point-free style?
+2013-03-14 16:06:10	vlatkoB	Like "(\x -> isDigit x && x =='.')" to "digit.(=='.')"
+2013-03-14 16:06:14	-->	mgsloan (~mgsloan@c-50-149-84-84.hsd1.wa.comcast.net) has joined #haskell
+2013-03-14 16:06:45	Cale	ag90: break/span?
+2013-03-14 16:06:51	parcs	vlatkoB: it's possible but it's ugly
+2013-03-14 16:06:53	geekosaur	@pl \x -> isDigit x || x == '.'
+2013-03-14 16:06:53	lambdabot	liftM2 (||) isDigit ('.' ==)
+2013-03-14 16:06:57	-->	pmade (~pmade@c-67-172-151-101.hsd1.co.comcast.net) has joined #haskell
+2013-03-14 16:06:58	geekosaur	I dont think you meant && there?
+2013-03-14 16:07:11	geekosaur	there's also an Applicative phrasing
+2013-03-14 16:07:11	-->	mcstar (~mcstar@adsl-89-135-206-203.monradsl.monornet.hu) has joined #haskell
+2013-03-14 16:07:18	ag90	Cale: Doesn't it find just one split point?
+2013-03-14 16:07:20	vlatkoB	Indeed, ||
+2013-03-14 16:07:30	Cale	ag90: yeah, I had to look up what that function did
+2013-03-14 16:07:34	geekosaur	but sometimes it's clearer to just use the lambda
+2013-03-14 16:07:53	danharaj	anyone have a reference on how the type of callCC is wrong for the current MonadCont?
+2013-03-14 16:08:14	ag90	vlatkoB: (||) <$> isDigit <*> (== '.') is available too, but it's ugly as well.
+2013-03-14 16:08:20	monochrom	haskell wiki has one
+2013-03-14 16:08:49	-->	juxovec (~juxovec@ip-37-188-227-19.eurotel.cz) has joined #haskell
+2013-03-14 16:08:52	<--	otend (~otend@2610:e0:a040:e097:aed:b9ff:fe38:151f) has quit (Quit: Leaving)
+2013-03-14 16:08:58	vlatkoB	Yes, I thought there might be a short ans pretty style. it is for map, so I wanted it shorter. Thanks.
+2013-03-14 16:09:02	-->	otend (~otend@2610:e0:a040:e097:aed:b9ff:fe38:151f) has joined #haskell
+2013-03-14 16:09:09	danharaj	monochrom: the wiki one gives callCC a rank-2 type. I've heard that callCC should have a rank-3 type but I haven't seen it.
+2013-03-14 16:09:15	vlatkoB	In fact, I have HLint active and gives me the warning.
+2013-03-14 16:09:40	-->	RayNbow`TU (~kirika@s55967d29.adsl.online.nl) has joined #haskell
+2013-03-14 16:09:56	monochrom	the type you see there is already rank-3. it is mistakenly called rank-2
+2013-03-14 16:10:13	danharaj	I am so bad at counting ranks.
+2013-03-14 16:10:15	danharaj	:|
+2013-03-14 16:10:23	parcs	:t callCC
+2013-03-14 16:10:25	lambdabot	MonadCont m => ((a -> m b) -> m a) -> m a
+2013-03-14 16:10:27	monochrom	i.e., the article author mistakenly calls it rank-2. therefore, it is not just you :)
+2013-03-14 16:10:27	--	tmiw is now known as not_tommy
+2013-03-14 16:10:37	parcs	it should be (forall b. a -> m b)
+2013-03-14 16:10:50	danharaj	monochrom: also it's probably slightly nicer to write it as callCC :: ((forall b. a -> m b) -> m a) -> m a
+2013-03-14 16:11:02	danharaj	And I guess that makes the rank-3ness manifest.
+2013-03-14 16:11:25	monochrom	yeah, I do that too
+2013-03-14 16:11:40	parcs	i wonder what the practical difference of a rank-1 vs rank-2 callCC is
+2013-03-14 16:11:52	Cale	ag90: lol, you could use groupBy :)
+2013-03-14 16:12:02	Cale	ag90: groupBy (\x y -> y /= ' ')
+2013-03-14 16:12:13	Cale	Some people would consider that ugly
+2013-03-14 16:12:18	ag90	Hah
+2013-03-14 16:12:23	-->	Itkovian (~Itkovian@178-118-76-90.access.telenet.be) has joined #haskell
+2013-03-14 16:13:18	<--	squidz (~albert@141.84.69.76) has quit (Ping timeout: 264 seconds)
+2013-03-14 16:13:48	Cale	ag90: There's a really excellent package called split, which operates on lists
+2013-03-14 16:14:15	danharaj	:t groupBy (const (/= ' '))
+2013-03-14 16:14:17	lambdabot	[Char] -> [[Char]]
+2013-03-14 16:14:19	mcstar	is it possible for a function's return type to depend on one of its argument's type? (i dont mean parametrically, like a -> a, or g a -> f a)
+2013-03-14 16:14:27	Cale	I wonder how hard it would be to extend it to work on ByteStrings
+2013-03-14 16:14:49	parcs	mcstar: a -> f a ?
+2013-03-14 16:14:50	Cale	(efficiently)
+2013-03-14 16:15:02	ag90	Right now, I've just implemented a line-to-line copy of ByteString.split to keep the split character.
+2013-03-14 16:15:03	-->	kushal (kdas@fedora/kushal) has joined #haskell
+2013-03-14 16:15:05	parcs	mcstar: where f is a type function
+2013-03-14 16:15:12	mcstar	parcs: no, it possibly doesnt have 'a' in the return type
+2013-03-14 16:15:34	ag90	In fact, for this program, I seem to be using more ByteString.Internal than would be deemed advisable.
+2013-03-14 16:15:37	parcs	mcstar: that's OK if f is a type function
+2013-03-14 16:15:56	mcstar	parcs: ok, should i search the wiki for 'type function's?
+2013-03-14 16:16:03	Cale	ag90: I'd probably just write something recursive with span or break tbh
+2013-03-14 16:17:21	<--	blbrown_win3 (~blbrown_w@24-241-48-56.static.gwnt.ga.charter.com) has quit (Quit: Leaving)
+2013-03-14 16:17:21	parcs	mcstar: type families or associated types is a more accurate term
+2013-03-14 16:17:21	monochrom	imagine: callCC (\k -> if x then (k () :: m Bool) else even <$> (k () :: m Int)). this requires k () to be forall b. m b
+2013-03-14 16:17:21	donri	absence: well you can 'return' from a proxy
+2013-03-14 16:17:21	mcstar	parcs: thanks
+2013-03-14 16:17:21	<--	dhil (~dhil@0103ds4-abc.1.fullrate.dk) has quit (Quit: Leaving)
+2013-03-14 16:17:21	-->	ag90_ (~ag90@184.175.42.76) has joined #haskell
+2013-03-14 16:17:21	<--	vlatkoB (~vlatko@188.129.49.140) has quit (Quit: Leaving)
+2013-03-14 16:17:21	ag90_	My connection just dropped. What is this, 1990?
+2013-03-14 16:17:21	 *	hackagebot layers 0.1 - Modular type class machinery for monad transformer stacks.  http://hackage.haskell.org/package/layers-0.1 (ShaneOBrien)
+2013-03-14 16:17:21	-->	twanvl (~Twan@dhcp-077-250-086-217.chello.nl) has joined #haskell
+2013-03-14 16:17:23	Cale	http://hackage.haskell.org/packages/archive/split/0.2.1.2/doc/html/Data-List-Split.html
+2013-03-14 16:17:23	Cale	This library is really cool though ;)
+2013-03-14 16:17:25	Cale	It lets you define and transform strategies for splitting strings.
+2013-03-14 16:17:26	-->	tenmilestereo[aw (~tnmlstr@w-70.cust-13055.ip.static.uno.uk.net) has joined #haskell
+2013-03-14 16:17:26	Cale	also, I'm severely lagged
+2013-03-14 16:17:27		[http://is.gd/5QwI6I]
+2013-03-14 16:17:28		[http://is.gd/Xtw8Nf]
+2013-03-14 16:17:35	monochrom	1913
+2013-03-14 16:17:35	sproingie	ag90_: did you see NO CARRIER on your screen? :)
+2013-03-14 16:17:41	-->	bos_ (~bos@2620:0:1cfe:28:3e07:54ff:fe06:a85e) has joined #haskell
+2013-03-14 16:17:53	<--	agr (bae74f6a@gateway/web/freenode/ip.186.231.79.106) has quit (Quit: Page closed)
+2013-03-14 16:18:02	Cale	+++
+2013-03-14 16:18:04	--	evannb is now known as n_b
+2013-03-14 16:18:05	ag90_	You know, I wasn't looking. My client just said "disconnected."
+2013-03-14 16:18:08	monochrom	ATH
+2013-03-14 16:18:28	johnw	sproingie: you just took me back, thanks
+2013-03-14 16:18:35	johnw	+~-...~NO CARRIER
+2013-03-14 16:18:56	monochrom	my quit message is also set to "NO CARRIER"
+2013-03-14 16:19:53	<--	ag90 (~ag90@184.175.42.76) has quit (Ping timeout: 258 seconds)
+2013-03-14 16:20:16	<--	twanvl_ (~Twan@dhcp-077-250-086-217.chello.nl) has quit (Ping timeout: 258 seconds)
+2013-03-14 16:20:16	<--	tenmilestereo (~tnmlstr@w-70.cust-13055.ip.static.uno.uk.net) has quit (Ping timeout: 258 seconds)
+2013-03-14 16:20:16	<--	bos (~bos@2620:0:1cfe:28:3e07:54ff:fe06:a85e) has quit (Ping timeout: 258 seconds)
+2013-03-14 16:20:17	-->	Jordsan (~jorge@pool-98-110-232-55.bstnma.fios.verizon.net) has joined #haskell
+2013-03-14 16:20:32	Cale	I had high hopes for http://www.carrier.no/
+2013-03-14 16:21:32	<--	osxorgate (~osxorgate@82-168-113-55.ip.telfort.nl) has quit (Remote host closed the connection)
+2013-03-14 16:21:34	sproingie	norwegian refrigerated shelving manufacturer, looks like
+2013-03-14 16:22:05	sproingie	it's norway, open a window ;)
+2013-03-14 16:22:29	 *	geekosaur was thinking yes, norwegians would know a thing or two about refrigerated shelving
+2013-03-14 16:22:42	-->	bru` (~bruno`@4077.rez-gif.supelec.fr) has joined #haskell
+2013-03-14 16:22:52	dmwit	I would think the Norwegians would know a lot about heating, if anything.
+2013-03-14 16:23:07	dmwit	Ask people who live in a hot place for your refigeration tech.
+2013-03-14 16:23:20	monochrom	after all, it's Carrier
+2013-03-14 16:23:42	 *	monochrom 's home HVAC is also a Carrier
+2013-03-14 16:23:49	-->	osxorgate (~osxorgate@82-168-113-55.ip.telfort.nl) has joined #haskell
+2013-03-14 16:24:10	-->	tharper (~tomh@c83-250-198-77.bredband.comhem.se) has joined #haskell
+2013-03-14 16:24:10	<--	tharper (~tomh@c83-250-198-77.bredband.comhem.se) has quit (Changing host)
+2013-03-14 16:24:10	-->	tharper (~tomh@unaffiliated/sioraiocht) has joined #haskell
+2013-03-14 16:24:27	<--	cfricke (~cfricke@bas5-toronto47-2925109837.dsl.bell.ca) has quit (Quit: leaving)
+2013-03-14 16:24:29	<--	osxorgate (~osxorgate@82-168-113-55.ip.telfort.nl) has quit (Read error: Connection reset by peer)
+2013-03-14 16:24:35	sproingie	reminds me of that old joke: why do the English drink warm beer?  English fridges.
+2013-03-14 16:25:02	-->	squidz (~albert@141.84.69.76) has joined #haskell
+2013-03-14 16:25:08	-->	osxorgate (~osxorgate@82-168-113-55.ip.telfort.nl) has joined #haskell
+2013-03-14 16:25:17	-->	carlocci (~carlocci@unaffiliated/carlocci) has joined #haskell
+2013-03-14 16:25:23	<--	osxorgate (~osxorgate@82-168-113-55.ip.telfort.nl) has quit (Read error: Connection reset by peer)
+2013-03-14 16:25:52	-->	osxorgate (~osxorgate@82-168-113-55.ip.telfort.nl) has joined #haskell
+2013-03-14 16:25:55	parcs	do refridgerators run correctly in cold environments?
+2013-03-14 16:26:12	<--	osxorgate (~osxorgate@82-168-113-55.ip.telfort.nl) has quit (Read error: Connection reset by peer)
+2013-03-14 16:26:54	johnw	yes
+2013-03-14 16:26:56	-->	Counter-Strike (~abc@mailsh7.xs4all.nl) has joined #haskell
+2013-03-14 16:27:37	johnw	it's a contained, insulated phase-change cooling system
+2013-03-14 16:27:37	-->	osxorgate (~osxorgate@82-168-113-55.ip.telfort.nl) has joined #haskell
+2013-03-14 16:27:43	<--	xunatai (~xunatai@c-24-21-221-118.hsd1.or.comcast.net) has quit (Read error: Connection reset by peer)
+2013-03-14 16:27:45	sproingie	"phase change cooling" makes it sound so sexy when it's for computers
+2013-03-14 16:28:02	johnw	it relies on evaporation due to the pressure differential, I believe, so even if it's cold throughout it should work just fine
+2013-03-14 16:28:03	<--	osxorgate (~osxorgate@82-168-113-55.ip.telfort.nl) has quit (Read error: Connection reset by peer)
+2013-03-14 16:28:07	-->	xunatai (~xunatai@c-24-21-221-118.hsd1.or.comcast.net) has joined #haskell
+2013-03-14 16:28:18	sproingie	pretty sure the joke was a dig on british engineering :)
+2013-03-14 16:28:37	-->	imeredith (~ivan@152.201.69.111.dynamic.snap.net.nz) has joined #haskell
+2013-03-14 16:28:42	sproingie	or manufacturing anyway
+2013-03-14 16:28:58	<--	[swift] (~mfowler@75-101-60-167.dsl.static.sonic.net) has quit (Quit: [swift])
+2013-03-14 16:29:21	-->	osxorgate (~osxorgate@82-168-113-55.ip.telfort.nl) has joined #haskell
+2013-03-14 16:29:34	<--	ajhager (~ajhager@108-71-214-22.lightspeed.iplsin.sbcglobal.net) has quit (Ping timeout: 245 seconds)
+2013-03-14 16:30:07	mcstar	i dont get the joke
+2013-03-14 16:30:07	<--	osxorgate (~osxorgate@82-168-113-55.ip.telfort.nl) has quit (Read error: Connection reset by peer)
+2013-03-14 16:30:32	-->	osxorgate (~osxorgate@82-168-113-55.ip.telfort.nl) has joined #haskell
+2013-03-14 16:30:32	sproingie	it's a bit dated.  wasnt terribly hilarious in the first place.  *shrug*
+2013-03-14 16:30:44	<--	rsuniev123 (~textual@141.228.111.186) has quit (Quit: Computer has gone to sleep.)
+2013-03-14 16:31:04	mcstar	were english fridges considered unreliable at some time? or what?
+2013-03-14 16:31:10	-->	mjs2600 (~mjs2600@user-0c999kc.cable.mindspring.com) has joined #haskell
+2013-03-14 16:31:21	<--	Jordsan (~jorge@pool-98-110-232-55.bstnma.fios.verizon.net) has quit (Remote host closed the connection)
+2013-03-14 16:31:23	sproingie	one imagines so
+2013-03-14 16:31:28	-->	hamid_ (~nithp@unaffiliated/hamid) has joined #haskell
+2013-03-14 16:31:40	<--	cromain (~chris@ALille-555-1-168-115.w86-192.abo.wanadoo.fr) has quit (Quit: leaving)
+2013-03-14 16:31:47	<--	osxorgate (~osxorgate@82-168-113-55.ip.telfort.nl) has quit (Read error: Connection reset by peer)
+2013-03-14 16:31:56	-->	osxorgate (~osxorgate@82-168-113-55.ip.telfort.nl) has joined #haskell
+2013-03-14 16:32:10	geekosaur	see also lucas electrics, the prince of darkness
+2013-03-14 16:33:17	<--	osxorgate (~osxorgate@82-168-113-55.ip.telfort.nl) has quit (Read error: Connection reset by peer)
+2013-03-14 16:33:43	-->	osxorgate (~osxorgate@82-168-113-55.ip.telfort.nl) has joined #haskell
+2013-03-14 16:33:45	-->	ben22 (~benblue20@S010600226b80ad3e.cg.shawcable.net) has joined #haskell
+2013-03-14 16:34:17	<--	osxorgate (~osxorgate@82-168-113-55.ip.telfort.nl) has quit (Read error: Connection reset by peer)
+2013-03-14 16:34:37	ben22	:r
+2013-03-14 16:34:42	-->	osxorgate (~osxorgate@82-168-113-55.ip.telfort.nl) has joined #haskell
+2013-03-14 16:34:49	mcstar	oh, ben22, i read the logs
+2013-03-14 16:35:00	<--	hamid (~nithp@unaffiliated/hamid) has quit (Ping timeout: 264 seconds)
+2013-03-14 16:35:01	ben22	hi
+2013-03-14 16:35:05	mcstar	i feel like i know you already
+2013-03-14 16:35:15	ben22	really?
+2013-03-14 16:35:20	<--	osxorgate (~osxorgate@82-168-113-55.ip.telfort.nl) has quit (Read error: Connection reset by peer)
+2013-03-14 16:35:23	mcstar	yeah, you are the guy who doesnt read the books
+2013-03-14 16:35:41	<--	m3ga (~erikd@hendrix.mega-nerd.net) has quit (Quit: disappearing into the sunset)
+2013-03-14 16:35:48	-->	Nisstyre-laptop (~yours@oftn/member/Nisstyre) has joined #haskell
+2013-03-14 16:35:52	-->	osxorgate (~osxorgate@82-168-113-55.ip.telfort.nl) has joined #haskell
+2013-03-14 16:35:53	ben22	well when I was a freshman, I used to read them a lot but they never helped me that much get As and stuff
+2013-03-14 16:36:04	mcstar	yeah, i know, i read the logs
+2013-03-14 16:36:05	ben22	so I kind of got hopeless
+2013-03-14 16:36:06	<--	hughfdjackson (~hughfdjac@unaffiliated/hughfdjackson) has quit (Ping timeout: 264 seconds)
+2013-03-14 16:36:10	-->	eb4890 (~hhh@2001:470:1f09:18c8:5805:4387:3dbc:b1ce) has joined #haskell
+2013-03-14 16:36:24	<--	osxorgate (~osxorgate@82-168-113-55.ip.telfort.nl) has quit (Read error: Connection reset by peer)
+2013-03-14 16:36:26	mcstar	and your buddies seemingly didnt read and yet got good grades
+2013-03-14 16:36:29	-->	apucacao (~apucaca@12.250.157.102) has joined #haskell
+2013-03-14 16:36:30	<--	apucacao (~apucaca@12.250.157.102) has quit (Client Quit)
+2013-03-14 16:36:43	ben22	well yea, my friends are much brighter than me
+2013-03-14 16:36:55	-->	turinturambar (~jathom5@isu159154.nat.ilstu.edu) has joined #haskell
+2013-03-14 16:37:00	mcstar	in response they told you, "you dont know what hard work they did" or something like that
+2013-03-14 16:37:44	ben22	well these guys can say that cause they enjoy doing this stuff cause they discovered the language on their coffee break not at school
+2013-03-14 16:37:58	<--	cdidd (~cdidd@128-72-113-91.broadband.corbina.ru) has quit (Remote host closed the connection)
+2013-03-14 16:37:59	-->	osxorgate (~osxorgate@82-168-113-55.ip.telfort.nl) has joined #haskell
+2013-03-14 16:38:11	ben22	when you discover something at school, it tends to get depreciated than appreciated
+2013-03-14 16:38:37	ben22	mcstar, you think you can help me out with something?
+2013-03-14 16:38:37	<--	osxorgate (~osxorgate@82-168-113-55.ip.telfort.nl) has quit (Read error: Connection reset by peer)
+2013-03-14 16:39:19	mcstar	ben22: anyway, my advice: next time you pay attention to the code the others execute when you are talking to them/asking questions, you might have gotten your answer much earlier
+2013-03-14 16:39:21	mcstar	(i mean you did, just didnt notice)
+2013-03-14 16:39:23	<--	Catbuntu (~catbuntu@unaffiliated/ls-mft) has quit (Quit: Leaving)
+2013-03-14 16:39:39	ben22	I was too absorbed giving these people a good time yesterday
+2013-03-14 16:39:41	mcstar	ben22: it goes like this: you ask and someone might help
+2013-03-14 16:39:44	--	stelleg is now known as stelleg_away
+2013-03-14 16:39:44	ben22	i think they enjoyed it
+2013-03-14 16:39:49	<--	`fogus (~fogus@freedom.d-a-s.com) has quit (Quit: Leaving)
+2013-03-14 16:39:59	-->	juliohm (~julio@unaffiliated/juliohm) has joined #haskell
+2013-03-14 16:40:09	--	stelleg_away is now known as stelleg
+2013-03-14 16:40:09	-->	osxorgate (~osxorgate@82-168-113-55.ip.telfort.nl) has joined #haskell

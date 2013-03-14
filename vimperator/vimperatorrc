@@ -17,6 +17,7 @@ noremap k 7k
 
 map s :open google 
 map S :tabopen google 
+map u :back<CR>
 
 command! -nargs=1 imgur tabopen http://i.imgur.com/<args>
 

@@ -98,3 +98,56 @@
 2013-03-14 12:21:06	-->	harshpb (~harshpb@122.167.75.114) has joined ##kernel
 2013-03-14 12:22:36	-->	titankiller (~titankill@180.151.40.138) has joined ##kernel
 2013-03-14 12:23:54	-->	bizhanMona (~bizhan@nat/cisco/x-gyydktzfwtsrjioj) has joined ##kernel
+2013-03-14 12:33:39	<--	kido (~kido@unaffiliated/kido) has quit (Quit: @+)
+2013-03-14 12:34:42	-->	kido (~kido@unaffiliated/kido) has joined ##kernel
+2013-03-14 12:38:59	<--	harshpb (~harshpb@122.167.75.114) has quit (Read error: Connection reset by peer)
+2013-03-14 12:39:05	--	klnlnll is now known as Teduardo
+2013-03-14 12:39:28	-->	harshpb (~harshpb@122.167.75.114) has joined ##kernel
+2013-03-14 12:45:14	-->	clopez (~clopez@108.30.165.83.dynamic.mundo-r.com) has joined ##kernel
+2013-03-14 12:47:54	<--	harshpb (~harshpb@122.167.75.114) has quit (Read error: Connection reset by peer)
+2013-03-14 12:48:30	-->	harshpb (~harshpb@122.167.75.114) has joined ##kernel
+2013-03-14 12:51:01	-->	NIN101 (~NIN@p5DD28C7C.dip0.t-ipconnect.de) has joined ##kernel
+2013-03-14 12:56:00	<--	d4de (~olorin@unaffiliated/d4de) has quit (Ping timeout: 264 seconds)
+2013-03-14 12:56:30	<--	fire (~fire@unaffiliated/security) has quit (Ping timeout: 264 seconds)
+2013-03-14 12:56:50	<--	joeyli (~joeyli@124.11.22.254) has quit (Ping timeout: 260 seconds)
+2013-03-14 12:58:19	-->	fire (~fire@unaffiliated/security) has joined ##kernel
+2013-03-14 13:01:47	-->	ced117 (~ced117@opensuse/member/ced117) has joined ##kernel
+2013-03-14 13:02:04	<--	otherflow (~otherflow@vil69-4-82-228-207-179.fbx.proxad.net) has quit (Quit: Quitte)
+2013-03-14 13:05:29	<--	_marc` (~marc@mos6581.de) has quit (Quit: _marc`)
+2013-03-14 13:06:08	-->	Wolfgang (~Thunderbi@178-27-144-160-dynip.superkabel.de) has joined ##kernel
+2013-03-14 13:07:15	-->	napwatson (~linsys@1.23.109.174) has joined ##kernel
+2013-03-14 13:11:43	<--	Guest87397 (~christoph@c-174-54-115-236.hsd1.pa.comcast.net) has quit (Remote host closed the connection)
+2013-03-14 13:11:57	<--	harshpb (~harshpb@122.167.75.114) has quit (Read error: Connection reset by peer)
+2013-03-14 13:12:51	-->	harshpb (~harshpb@122.167.75.114) has joined ##kernel
+2013-03-14 13:15:40	-->	shylesh (~shylesh@117.192.206.207) has joined ##kernel
+2013-03-14 13:19:54	-->	snearch (~snearch@www.polruckeln.com) has joined ##kernel
+2013-03-14 13:21:18	-->	fellipe (~fellipe@200.152.100.169) has joined ##kernel
+2013-03-14 13:21:20	fellipe	hi. I am doing a comparison between two servers. one has 2.6.18-238.19.1.el5 and the other have 2.6.18-308.8.1.el5. So what's the newest and what's the meaning of the stuffs after "18" ?
+2013-03-14 13:27:42	<--	harshpb (~harshpb@122.167.75.114) has quit (Ping timeout: 264 seconds)
+2013-03-14 13:28:20	<--	Jekyll (~whodare@101.16.195.123) has quit (Ping timeout: 260 seconds)
+2013-03-14 15:50:27	-->	numeral (~numeral@198.23.228.15) has joined ##kernel
+2013-03-14 15:50:27	--	Topic for ##kernel is "Channel for linux,unix-like kernel discussion | BOOKS lwn.net/Kernel/LDD3 | BROWSER lxr.linux.no/source | PASTEBIN codepad.org | HOWTO http://goo.gl/wzsul http://goo.gl/zi5V"
+2013-03-14 15:50:27	--	Topic set by jnxa on Mon, 12 Mar 2012 07:09:58
+2013-03-14 15:50:27	--	Nicks ##kernel: [@ChanServ [0x1a] _eko _iron _marc` aca20031 AceLan adam_g aimka alamar AlbertoSilva alfplayer andersonc0d3 Anusko Ard1t ari-_-e b1rkh0ff Badbit bernardofpc bizhanMona blami BlastHardcheese blueCmd BLZbubba bparker Bry8Star Budd Buster carc caveat- ccxCZ cdidd ced117 Chaser_ chasmo chille_ chronos CipherWizard classix codertux codyps ColdFyre Cyclohexane Dad` danieldg dansan deavidsedice deep13 deizhu djczing dju DLange e-ndy eagles0513875 edk einonm elbeardmorez Elecam evilicey evilman_work EViLSLuT fairuz fallout fam|work fasta Fira fire floop_ flu- fourth_node frag4 FreeArtMan froztbyte fw Gaudasse gothos guampa Guest99624 gustav_ harrow heftig heinrich5991 hi117 hziSot Iiiak ikonia iLogical impulse ivan\ ix007 james_h74 jefferai jehan Jekyll jero jevin jevin_ jirka_on_d jlebar joe9 joshc JPT JulesX kantlivelong karelbarel1 Kasreyn kcm1700 kido kirotawa klebers konqui korsi_ ksh kurti larks lbt LiaoTao lipiec lpe lrak luneff lxsameer lyindArk Marex markovh master_of_master McMAGIC--Copy mingdao MissionCritical misuzu mitz mnaser moli_ mpagano_ muteki neunon nex6 NIN101 nn0101 numeral nyuszika7h oneforall2 Orginator oriba otherflow pdc peper petan PioneerAxon pppingme quasisane RageD raineys ram_p_away Raz-- rekoil_ robink roquetto RR42 Sargun sauleta Scramblejams scrts sean Section1 sftp shal3r sharky Shiina Simon- sl33v3 sniffells snits so Somasis Spectral1ave SwenTjuln T-One Teduardo terranova tessier Thalheim TheJH titankiller TomWij TrXuk txomon|nqas Tylerdurden2nd utopia_euphoria va_ vaidy venom00ut vmeson VtS_ WallRat007 wapiflapi wbooze wdouglas wilder williamv WormDrink xdnny_ xeon-enouf xxtjaxx y0gurt yosafbridge zenx zerick zorbyte Zougloub zykes-]
+2013-03-14 15:50:27	--	Channel ##kernel: 211 nicks (1 op, 0 halfops, 0 voices, 210 normals)
+2013-03-14 15:50:27	***	Buffer Playback...
+2013-03-14 15:50:27	fellipe	[20:52:07] frag4, ok! thanks!
+2013-03-14 15:50:27	***	Playback Complete.
+2013-03-14 15:50:32	--	Mode ##kernel [+Ccnt]
+2013-03-14 15:50:32	--	Channel created on Sun, 26 Nov 2006 01:42:43
+2013-03-14 15:56:42	<--	zenx (~serj@2.81.134.77) has quit (Ping timeout: 272 seconds)
+2013-03-14 15:57:56	<--	luneff (~yury@84.51.215.126) has quit (Quit: This computer has gone to sleep)
+2013-03-14 16:05:17	-->	bubu^ (~bubu@2a01:e35:2ef5:3d10:226:54ff:fe0b:b049) has joined ##kernel
+2013-03-14 16:07:45	<--	Section1 (~section1@181.28.155.212) has quit (Quit: Leaving)
+2013-03-14 16:12:18	-->	lyakh (~lyakh@f050092168.adsl.alicedsl.de) has joined ##kernel
+2013-03-14 16:17:58	-->	luneff (~yury@84.51.215.126) has joined ##kernel
+2013-03-14 16:21:32	<--	FreeArtMan (~fam@93.177.213.54) has quit (Read error: Connection reset by peer)
+2013-03-14 16:23:34	<--	ced117 (~ced117@opensuse/member/ced117) has quit (Quit: Quitte)
+2013-03-14 16:24:36	-->	olglory07 (~Adium@COX-66-210-91-122-static.coxinet.net) has joined ##kernel
+2013-03-14 16:27:36	-->	i7c (~i7c@212.47.190.111) has joined ##kernel
+2013-03-14 16:33:03	<--	i7c (~i7c@212.47.190.111) has left ##kernel ("WeeChat 0.4.0")
+2013-03-14 16:33:06	<--	korsi_ (~korsi@adsl-85-217-43-107.kotinet.com) has quit (Ping timeout: 264 seconds)
+2013-03-14 16:33:24	-->	darkthawt (~darkthawt@2600:100f:b111:16e6::103) has joined ##kernel
+2013-03-14 16:35:01	-->	korsi (~korsi@adsl-82-141-72-107.kotinet.com) has joined ##kernel
+2013-03-14 16:37:58	<--	cdidd (~cdidd@128-72-113-91.broadband.corbina.ru) has quit (Remote host closed the connection)
+2013-03-14 16:39:41	<--	lxsameer (~lxsameer@unaffiliated/lxsameer) has quit (Quit: Leaving)

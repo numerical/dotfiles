@@ -435,3 +435,182 @@
 2013-03-14 12:22:03	<--	binaryhat (~binaryhat@99-119-205-0.lightspeed.wepbfl.sbcglobal.net) has quit (Quit: Leaving)
 2013-03-14 12:23:05	-->	thiago (~thiago@kde/thiago) has joined #kde
 2013-03-14 12:23:16	<--	mck182 (~quassel@kde/developer/mklapetek) has quit (Ping timeout: 272 seconds)
+2013-03-14 12:26:54	--	Kopp__ is now known as K00pi3
+2013-03-14 12:28:34	<--	rdale___ (~richardd@82-68-191-81.dsl.posilan.com) has quit (Read error: No route to host)
+2013-03-14 12:28:41	<--	voondo (~quassel@78.250.212.31) has quit (Remote host closed the connection)
+2013-03-14 12:28:49	<--	siddvicious (siddviciou@fedora/h4xordood) has quit (Quit: Ухожу я от вас)
+2013-03-14 12:29:34	-->	rdale_ (~richardd@82-68-191-81.dsl.posilan.com) has joined #kde
+2013-03-14 12:29:45	<--	vLassi (~lassi@jarru.tontut.fi) has quit (Remote host closed the connection)
+2013-03-14 12:30:23	<--	niqt (~nicola@2.228.80.129) has quit (Quit: Konversation terminated!)
+2013-03-14 12:31:40	<--	drdanz (~quassel@90.147.26.237) has quit (Remote host closed the connection)
+2013-03-14 12:32:36	-->	ivanich__ (~ivanich@onapp-LT-97-154.tenet.odessa.ua) has joined #kde
+2013-03-14 12:32:49	<--	ivanich_work (~ivanich@onapp-LT-97-154.tenet.odessa.ua) has quit (Remote host closed the connection)
+2013-03-14 12:33:08	<--	wotan147 (~max@HSI-KBW-091-089-007-118.hsi2.kabelbw.de) has quit (Quit: Konversation terminated!)
+2013-03-14 12:34:42	<--	ironfroggy (~ironfrogg@ec2-50-16-218-141.compute-1.amazonaws.com) has quit (Excess Flood)
+2013-03-14 12:35:17	-->	vLassi (~lassi@jarru.tontut.fi) has joined #kde
+2013-03-14 12:35:36	-->	shaun_ (~shaun@nat-alex-runet-out-7.rutgers.edu) has joined #kde
+2013-03-14 12:35:37	--	shaun_ is now known as shaun413
+2013-03-14 12:36:08	-->	binaryhat (~binaryhat@99-119-205-0.lightspeed.wepbfl.sbcglobal.net) has joined #kde
+2013-03-14 12:36:19	-->	moruk (moruk@wikipedia/morruk) has joined #kde
+2013-03-14 12:36:30	mva	hi there!
+2013-03-14 12:37:00	Okitain	Hi mva
+2013-03-14 12:37:19	mva	anonsvn.kde.org (means eu.svn.anonscm.local-kde.org) is don't listen svn port via IPv6
+2013-03-14 12:37:42	mva	can I ask somebody to fix it?
+2013-03-14 12:38:26	<--	Gibba (gwhite@nat/ibm/x-dexjrsdbkukgziov) has quit (Ping timeout: 255 seconds)
+2013-03-14 12:38:32	-->	voondo (~quassel@gra21-2-82-225-169-12.fbx.proxad.net) has joined #kde
+2013-03-14 12:40:09	einar77_work	mva: ask in #kde-sysadmin
+2013-03-14 12:43:28	<--	niteshnarayanlal (~nitesh@fedora/niteshnarayanlal) has quit (Ping timeout: 240 seconds)
+2013-03-14 12:43:34	-->	ironfroggy (~ironfrogg@ec2-50-16-218-141.compute-1.amazonaws.com) has joined #kde
+2013-03-14 12:45:10	-->	mck182 (~quassel@189.Red-88-6-171.staticIP.rima-tde.net) has joined #kde
+2013-03-14 12:45:10	<--	mck182 (~quassel@189.Red-88-6-171.staticIP.rima-tde.net) has quit (Changing host)
+2013-03-14 12:45:10	-->	mck182 (~quassel@kde/developer/mklapetek) has joined #kde
+2013-03-14 12:47:30	<--	jreznik (jreznik@nat/redhat/x-hieclogqvlqgndri) has quit (Ping timeout: 264 seconds)
+2013-03-14 12:48:17	<--	Linex (~quassel@115.132.9.181) has quit (Quit: No Ping reply in 180 seconds.)
+2013-03-14 12:49:04	-->	Linex (~quassel@115.132.9.181) has joined #kde
+2013-03-14 12:52:38	gnuLix	Hello, guys. I am using QProcess to start "ssh". When I start the process the state is Running and I use my_process->write("pwd"); to execute "pwd" command. But I receive just "pwd" as a result and not the current directory. Can someone help me what I am doing wrong?
+2013-03-14 12:53:17	-->	cb400f (~cb400f@opensuse/member/Cb400f) has joined #kde
+2013-03-14 12:53:41	-->	cristianonet (~cristi@79.113.86.123) has joined #kde
+2013-03-14 12:54:10	-->	oini_ (~oini@117.194.6.113) has joined #kde
+2013-03-14 12:54:16	<--	LeeJunFan (~junfan@97-83-113-254.static.trcy.mi.charter.com) has quit (Ping timeout: 252 seconds)
+2013-03-14 12:54:23	--	oini_ is now known as oini
+2013-03-14 12:54:37	Okitain	gnuLix: try something more qt-related?
+2013-03-14 12:56:45	-->	VladimirBel (~vladimir@188.114.7.170) has joined #kde
+2013-03-14 12:57:26	-->	teddyp1cker (~teddyp1ck@5cfcedb3.dynamic.mv.ru) has joined #kde
+2013-03-14 12:58:26	<--	rufianw (~ntrrgc@79.109.52.159.dyn.user.ono.com) has quit (Quit: Konversation terminated!)
+2013-03-14 12:58:32	-->	Shaan7 (~quassel@kde/shantanu) has joined #kde
+2013-03-14 12:59:05	gnuLix	Okitain: what do you mean by more qt-related?
+2013-03-14 12:59:41	Okitain	I mean, this is #kde, and your problem seems like qt development.
+2013-03-14 13:00:38	<--	Neandre (~sacha@oslo.neandre.eu) has quit (Ping timeout: 272 seconds)
+2013-03-14 13:00:45	-->	kaste (~kaste@unaffiliated/kaste) has joined #kde
+2013-03-14 13:01:42	kaste	Hi, I'm using konsole with zsh and just can't get it to not beep, what could i do?
+2013-03-14 13:02:05	<--	mck182 (~quassel@kde/developer/mklapetek) has quit (Quit: No Ping reply in 180 seconds.)
+2013-03-14 13:02:29	Kitzu	kaste, use alsamixer and mute beep ;)
+2013-03-14 13:02:30	kaste	I tried set NOBEEP, setterm -blength 0, xset b off, xset b 0 0 0, echo 'set bell-style none' >> ~/.inputrc and unticking all bell settings in the konsole settings
+2013-03-14 13:03:02	kaste	Kitzu: there is no mixer left that isn't muted other than headphone and master, and i still want to listen to audio
+2013-03-14 13:03:16	kaste	I just want that incredibly annoying beep to vanish
+2013-03-14 13:03:27	-->	Kame2 (~manuel@dslb-088-070-118-022.pools.arcor-ip.net) has joined #kde
+2013-03-14 13:03:30	-->	mck182 (~quassel@kde/developer/mklapetek) has joined #kde
+2013-03-14 13:04:01	<--	floe (~flo@f052099068.adsl.alicedsl.de) has quit (Ping timeout: 258 seconds)
+2013-03-14 13:09:22	<--	ironfroggy (~ironfrogg@ec2-50-16-218-141.compute-1.amazonaws.com) has left #kde ("Konversation terminated!")
+2013-03-14 13:13:48	<--	fuchs12 (~fuchs24@p5B131720.dip.t-dialin.net) has quit (Quit: Leaving)
+2013-03-14 13:15:26	-->	Joupi (~Joupi@2a01:e35:2e99:d700:54e8:33f9:5043:701c) has joined #kde
+2013-03-14 13:15:58	<--	rieper (~rieper@wlan251100.rz.uni-leipzig.de) has quit (Ping timeout: 240 seconds)
+2013-03-14 13:16:37	<--	jaafar (~jet@adsl-99-169-134-44.dsl.pltn13.sbcglobal.net) has quit (Quit: Konversation terminated!)
+2013-03-14 13:18:25	<--	SJr (~sjr@S010600fb42f573f0.vc.shawcable.net) has quit (Quit: ZNC - http://znc.sourceforge.net)
+2013-03-14 13:18:58	<--	yashshah (~yash@14.139.122.114) has quit (Read error: Connection reset by peer)
+2013-03-14 13:19:00	-->	SJr (~sjr@S010600fb42f573f0.vc.shawcable.net) has joined #kde
+2013-03-14 13:19:22	-->	yashshah (~yash@14.139.122.114) has joined #kde
+2013-03-14 13:22:10	<--	lkrejci (lkrejci@redhat/jboss/lkrejci) has quit (Ping timeout: 272 seconds)
+2013-03-14 13:22:42	<--	shaun413 (~shaun@nat-alex-runet-out-7.rutgers.edu) has quit (Quit: Konversation terminated!)
+2013-03-14 13:23:25	-->	ninan_ (~ninan@ppp-93-104-45-191.dynamic.mnet-online.de) has joined #kde
+2013-03-14 13:23:32	<--	Joupi (~Joupi@2a01:e35:2e99:d700:54e8:33f9:5043:701c) has left #kde ("Quitte")
+2013-03-14 13:23:34	<--	suy (~quassel@236.Red-83-57-248.dynamicIP.rima-tde.net) has quit (Read error: Connection reset by peer)
+2013-03-14 13:23:45	-->	sandman667 (~Grayson@p4FC61636.dip.t-dialin.net) has joined #kde
+2013-03-14 13:23:47	<--	Jarris (~quassel@static-87-79-94-28.netcologne.de) has quit (Read error: Connection reset by peer)
+2013-03-14 13:26:24	<--	iserantes (~quassel@142.13.27.77.dynamic.mundo-r.com) has quit (Remote host closed the connection)
+2013-03-14 13:27:11	-->	iserantes (~quassel@142.13.27.77.dynamic.mundo-r.com) has joined #kde
+2013-03-14 13:28:00	<--	thiago (~thiago@kde/thiago) has quit (Ping timeout: 252 seconds)
+2013-03-14 13:28:30	<--	Adaptee (~whodare@101.16.195.123) has quit (Ping timeout: 272 seconds)
+2013-03-14 13:29:30	<--	abe__ (~abe@pcd357234.netvigator.com) has quit (Ping timeout: 260 seconds)
+2013-03-14 13:30:20	-->	zephyr_ (~soumeng@115.187.53.227) has joined #kde
+2013-03-14 13:30:28	-->	samxan (~sam@kde/developer/bairagya) has joined #kde
+2013-03-14 13:30:32	-->	kde_pepo (~pepo@p5B3B9408.dip.t-dialin.net) has joined #kde
+2013-03-14 13:30:43	-->	mollach_ (~davidr@host-92-7-185-168.as43234.net) has joined #kde
+2013-03-14 15:50:31	-->	numeral (~numeral@198.23.228.15) has joined #kde
+2013-03-14 15:50:31	--	Topic for #kde is "KDE SC 4.10 is out! See www.kde.org | http://userbase.kde.org | http://forum.kde.org | Don't flood the channel, use http://paste.kde.org | Distro related questions go in your distro channel | Offtopic in #kde-chat | State your distribution and KDE version when asking questions | Don't delete ~/.kde or ~/.kde4"
+2013-03-14 15:50:31	--	Topic set by neverendingo (neverend@kde/www/imalchow) on Wed, 06 Feb 2013 09:38:35
+2013-03-14 15:50:31	--	Nicks #kde: [@ChanServ _2M1R_ _protagoras271_ _Zaister ABCD abchirk abner aboudreault abveritas AciD` Adaptee Adys ahiemstra aitorpazos Aji-Dahaka akaWolf AlexZion alienBOB alk_ almoxarife Almtesh amingv Ammler apoi apokryphos- apt aracele Ard1t ArGGu^^ argonel Aristide armands_ armin asfyxia atomik auri|afk az az7_ backjlack BadDesign BadMagic beasty BeerSerc_ bleomycin blubb BluesKaj BogdanR bonsaikitten bootkiller boubbin Brian_H brot BrummbQ Bry8Star BtbN burntoto buscher caravel Caster cb400f CESSMASTER chalcedony chasmo chronos chuckf cire cmagina cmr codertux coinspelunk comawhite CosmicB crashmag cristianonet Cthulhux Cybertinus cyndis d4 DaemonFC dahlia dani_l Danio danmackay dansushi Darkwing DarthCodus DarthGandalf Daskreech DaZ deathadder denysonique Derega desti destrudo deufrai dh64 Dhraakellian dijonyummy dlesage doerner dotCOMmie drhouse123_ Driver_ Droste Dunedan dv_ dvratil ealexp Eddi|zuHause edulix2 eeanm egant einar77_work elena-IK eljefe__ Elv1313 emilsedgh emma enderw enhydra err-or erry eshlox esing fatalerrors FL1SK FlameReaper FlameReaper-PC flami fling floe Floppwobbles foolano freeedrich| fury_ fxrh gavrila__ gdebure Genolo Gentle geomyidae_ Gibba gmoro_ Goliath23 google01103 gpoesia graft groundnuty Guest27784 hacosta hagebake HandheldPenguin hays_ hcc23 heath heirecka Heis| hermier hnsz2002 Husar idoru Inkane invariant iserantes ivan`` ivanich ivanich__ jaafar jachin_cloud JackBauer24 JackWinter1 jacky james147 JanKusanagi Janusz1 jarkko^_ jasonwert jayne jazka jcolby jehan jemparing_ Jikan jillsmitt JLP JoeSomebody jrd0 jtalk jthomas__ Juan Jucato julupu jussi jyc K00pi3 k2s k4tfish kaasinees Kame2 Kardos kaste kbana kc8hfi khindenburg Killsudo kirin` Kitzu kiwicam konadr koshie_ KRF kuantkid lacerda lainlives LapsedPacifist larksyrm LeeJunFan Lenzoid licensed likewhoa Linex LjL lliehu Maccer MadAGu Magiobiwan magyar Mamarok Manko10 mapyth marass markand_ masch_ Mathnerd314_ mato_ maybeArgh mck182 mcorteel mcurve Mez Miles MissionCritical mithnae mixi MJD mnx MoDaXaS monokrome moruk Moult_ mrec_ mrguitar msx mtk muep_ murthy Muzer mva MxG Nakato Nakkel Natenom neoclust neverendingo Niek_ Nikoli nikosapi nortti notVert npm_ numeral nwoki_away nyloc oberling oget oini ompaul ovidiu-florin ozzzy pa padde paddymahoney palasso PasNox PaulW2U Pensacola peppe peremen pete petteyg pfoo PhilRod_ PhilSli5 Phr33d0m phunyguy phuzion planetmaker Plastefuchs PrivacyChain prkc pumphaus Qwc R_Rios Rasi rdieter remus rindolf RingtailedFox Rix rmbell roasted Roin RR42 rrix RushPL ryanakca rysiek|pl saigkill_ SamuraiGhost samxan sandman667 Sash SaveTheRobots ScytheBlade1 SeySayux shadeslayer shal3r Sho_ shumski sig_wall silver_hook sinobell sipherdee_ SJr skfin sladen Smile30 smokex Sonderblade soredz spacetime Sput SSJ_GZ stackofcats SteveRiley stimpy267 stuffcorpse sungami svuorela swarfega Systemlord_ Syvolc szal tan Tanktalus Taoki tapout task_struct tdfischer tdignan tdn techlife TeslaTest tetris4 Th3R0b TheFuzzball TheWoozle Ticho_ timi tjablin tm258 Tm_T Tomasu tomcat_berlin tonymc Torch tosky totte tsimpson tsukasa tweakism twobitsprite txwikinger2 u-foka underscores unixfreak V0id valorie vblazquez vdv vHanda vLassi vmeson Vojtaeus voondo weltzooo Weust` whilo white WindPower WinstonSmith withnale wujek ximion xxtjaxx xy Ycarene yerodin yofel yopher z16a Z_God_Z zaki ZeDestructor zegenie ZenGuy311 zenguy_pc zenlunatic zephyr_ Zephyrus Zepp_ zeratul_ zeroedout zizzfizzix zorael]
+2013-03-14 15:50:31	--	Channel #kde: 425 nicks (1 op, 0 halfops, 0 voices, 424 normals)
+2013-03-14 15:50:31	***	Buffer Playback...
+2013-03-14 15:50:31	Eddi|zuHause	[21:02:07] hello, i just updated to kde 4.10.0, and kwin gets really unperforming (high cpu usage when switching windows) when effects are disabled
+2013-03-14 15:50:31	Eddi|zuHause	[21:02:15] (third try)
+2013-03-14 15:50:31	cb400f	[21:09:02] Eddi|zuHause: so enable effects .. and consider disabling all the individual effects
+2013-03-14 15:50:31	cb400f	[21:09:23] that supposedly gives the best performance... compositing on, all effects off
+2013-03-14 15:50:31	cb400f	[21:09:40] also try if disabling the oxygen animations in 'oxygen-settings' helps
+2013-03-14 15:50:31	cb400f	[21:09:56] I assume you have nvidia gfx?
+2013-03-14 15:50:31	Eddi|zuHause	[21:10:03] no, amd
+2013-03-14 15:50:31	Eddi|zuHause	[21:11:02] with fgrlx-legacy on xorg 12.x
+2013-03-14 15:50:31	Eddi|zuHause	[21:11:34] or 1.12.x, not sure what the versioning is
+2013-03-14 15:50:31	dk0r	[21:16:19] Anyone have issues w/ xchat freezing in KDE?
+2013-03-14 15:50:31	wiztech	[21:26:33]     System Tray Network management icon not visible on boot up. I can hover over the blank area and access it fine though. If I remove and re-add it to the tray all is fine. Running Mint14 KDE4.10.1 any ideas?
+2013-03-14 15:50:31	rdieter	[21:29:50] wiztech: when not visible, are you actively connected or not ?
+2013-03-14 15:50:31	wiztech	[21:32:03] redieter: Doesn't matter whether connected or not
+2013-03-14 15:50:31	wiztech	[21:33:15] redieter: There is a blank area where the icon should be.. It functions fine just not visible
+2013-03-14 15:50:31	wiztech	[21:33:55] rdieter sorry :)
+2013-03-14 15:50:31	rdieter	[21:34:09] odd
+2013-03-14 15:50:31	wiztech	[21:35:15] But as I said if i remove it and then re add it it appears fine.
+2013-03-14 15:50:31	wiztech	[21:37:16] I've just changed the visibility from auto to always visible. Will power down and see if that rectifies the problem
+2013-03-14 15:50:31	wiztech	[21:41:36] rdieter: That appears to have fixed the problem
+2013-03-14 15:50:31	alainus	[21:53:47] okay so I made an action for Klipper that translates a copied url into a shortened url. it works and adds the shortened url to the clipboard but only when I invoke the action manually through Ctrl-Alt-R on the selection.  I have "Automatic" checked in Action Properties and "Replace Output" for Output Handling. Any suggestions on how to make it automatic?
+2013-03-14 15:50:31	Taoki	[21:59:20] Hi. Anyone know why /media was moved to /var/run/media? Is this permanent?
+2013-03-14 15:50:31	Inkane	[22:03:55] Taoki: that has nothing to do with KDE, but is udisk related
+2013-03-14 15:50:31	Inkane	[22:04:05] I guess you're using a distro with udisk2
+2013-03-14 15:50:31	Taoki	[22:04:20] ok. Noticed it with an external drive and thought it's a KDE 4.10 change. Thanks for clarifying
+2013-03-14 15:50:31	***	Playback Complete.
+2013-03-14 15:50:55	--	Mode #kde [+LPcnt]
+2013-03-14 15:50:55	--	Channel created on Sun, 26 Nov 2006 01:42:41
+2013-03-14 15:51:36	-->	kirun (~kirun@78-86-154-194.zone2.bethere.co.uk) has joined #kde
+2013-03-14 15:51:36	<--	vblazquez (~vic@248.71.15.37.dynamic.jazztel.es) has quit (Read error: Connection reset by peer)
+2013-03-14 15:52:24	<--	Magiobiwan (IRC@unaffiliated/magiobiwan) has quit (Excess Flood)
+2013-03-14 15:53:14	-->	Magiobiwan (IRC@unaffiliated/magiobiwan) has joined #kde
+2013-03-14 15:53:50	-->	vblazquez (~vic@248.71.15.37.dynamic.jazztel.es) has joined #kde
+2013-03-14 15:53:59	-->	ungethym (~ungethym@77-56-191-62.dclient.hispeed.ch) has joined #kde
+2013-03-14 15:54:16	<--	Heis| (~quassel@p578F6691.dip0.t-ipconnect.de) has quit (Remote host closed the connection)
+2013-03-14 15:56:08	-->	unixfreak_ (~punk@host86-177-46-188.range86-177.btcentralplus.com) has joined #kde
+2013-03-14 15:56:36	-->	Heis (~quassel@p578F6691.dip0.t-ipconnect.de) has joined #kde
+2013-03-14 15:57:07	Taoki	Anyone know why since upgrading to 4.10, some large icons appear blurred? It's like their resolution isn't updated any more at some sizes
+2013-03-14 15:57:40	<--	unixfreak (~punk@host86-177-46-188.range86-177.btcentralplus.com) has quit (Ping timeout: 258 seconds)
+2013-03-14 15:57:59	<--	akaWolf (~akaWolf@unaffiliated/akawolf) has quit (Ping timeout: 272 seconds)
+2013-03-14 15:58:54	<--	rdieter (~rdieter@fedora/rdieter) has quit (Ping timeout: 264 seconds)
+2013-03-14 15:59:04	-->	gb_master (~gb_master@2a02-8424-05a0-8a00-ae81-12ff-fe4f-db8e.rev.sfr.net) has joined #kde
+2013-03-14 15:59:22	<--	AlexZion (~quassel@187.143.144.109) has quit (Remote host closed the connection)
+2013-03-14 15:59:42	-->	fuchs13 (~quassel@dslb-088-066-041-065.pools.arcor-ip.net) has joined #kde
+2013-03-14 16:00:24	-->	rdieter (~rdieter@fedora/rdieter) has joined #kde
+2013-03-14 16:03:13	<--	sandman667 (~Grayson@p4FC61636.dip.t-dialin.net) has quit (Remote host closed the connection)
+2013-03-14 16:03:51	<--	Vojtaeus (~vojta@opensuse/member/vojtaeus) has quit (Quit: Odcházím...)
+2013-03-14 16:03:52	-->	AlexZion (~quassel@187.143.144.109) has joined #kde
+2013-03-14 16:04:06	-->	thiago (~thiago@kde/thiago) has joined #kde
+2013-03-14 16:05:41	--	auri|afk is now known as Auri
+2013-03-14 16:07:11	<--	oini (~oini@117.194.0.169) has quit (Ping timeout: 246 seconds)
+2013-03-14 16:07:20	-->	|oop (~pool@c-68-81-109-22.hsd1.pa.comcast.net) has joined #kde
+2013-03-14 16:09:12	<--	tosky (tosky@nat/redhat/x-ghiourzbruohuipd) has quit (Quit: Konversation terminated!)
+2013-03-14 16:10:04	<--	SSJ_GZ (~SSJ@cpc8-sotn8-2-0-cust403.15-1.cable.virginmedia.com) has quit
+2013-03-14 16:10:36	<--	gb_master (~gb_master@2a02-8424-05a0-8a00-ae81-12ff-fe4f-db8e.rev.sfr.net) has quit (Quit: Konversation terminated!)
+2013-03-14 16:12:05	<--	rindolf (~shlomif@bzq-79-181-196-104.red.bezeqint.net) has quit (Read error: Connection reset by peer)
+2013-03-14 16:12:42	-->	rindolf (~shlomif@bzq-79-181-196-104.red.bezeqint.net) has joined #kde
+2013-03-14 16:13:07	-->	Sparxz__ (~mark@188.141.74.28) has joined #kde
+2013-03-14 16:14:08	<--	LeeJunFan (~junfan@2602:30a:c0cb:57d0:258a:ebf9:1d50:93fb) has quit (Ping timeout: 258 seconds)
+2013-03-14 16:15:42	-->	wiztech (~quassel@58.109.22.98) has joined #kde
+2013-03-14 16:15:43	<--	vblazquez (~vic@248.71.15.37.dynamic.jazztel.es) has quit (Read error: Connection reset by peer)
+2013-03-14 16:17:21	-->	MercurialAlchemi (~mercurial@178.157.200.13) has joined #kde
+2013-03-14 16:17:21	-->	LeeJunFan (~junfan@142.sub-70-199-104.myvzw.com) has joined #kde
+2013-03-14 16:18:15	-->	vblazquez (~vic@248.71.15.37.dynamic.jazztel.es) has joined #kde
+2013-03-14 16:18:20	-->	Linex_ (~quassel@115.132.9.181) has joined #kde
+2013-03-14 16:19:13	<--	Adaptee (~whodare@101.16.195.123) has quit (Read error: Connection reset by peer)
+2013-03-14 16:19:13	<--	prkc (~negusnyul@dsl51B68226.pool.t-online.hu) has quit (Read error: Connection reset by peer)
+2013-03-14 16:19:23	<--	Kame2 (~manuel@dslb-088-070-118-022.pools.arcor-ip.net) has quit (Ping timeout: 255 seconds)
+2013-03-14 16:19:36	-->	Adaptee (~whodare@101.16.195.123) has joined #kde
+2013-03-14 16:20:16	<--	Linex (~quassel@115.132.9.181) has quit (Ping timeout: 258 seconds)
+2013-03-14 16:20:50	<--	vblazquez (~vic@248.71.15.37.dynamic.jazztel.es) has quit (Read error: Connection reset by peer)
+2013-03-14 16:21:15	<--	vLassi (~lassi@jarru.tontut.fi) has quit (Quit: Konversation terminated!)
+2013-03-14 16:23:25	-->	vblazquez (~vic@248.71.15.37.dynamic.jazztel.es) has joined #kde
+2013-03-14 16:23:26	<--	thiago (~thiago@kde/thiago) has quit (Ping timeout: 256 seconds)
+2013-03-14 16:24:10	-->	vLassi (~lassi@jarru.tontut.fi) has joined #kde
+2013-03-14 16:24:34	<--	LeeJunFan (~junfan@142.sub-70-199-104.myvzw.com) has quit (Ping timeout: 256 seconds)
+2013-03-14 16:25:06	<--	shumski (~shumski@cpe-188-252-137-210.zg5.cable.xnet.hr) has quit (Quit: Konversation terminated!)
+2013-03-14 16:27:14	-->	Dutchman (~quassel@host-69-146-140-250.msl-mt.client.bresnan.net) has joined #kde
+2013-03-14 16:27:36	<--	rindolf (~shlomif@bzq-79-181-196-104.red.bezeqint.net) has quit (Quit: Leaving)
+2013-03-14 16:27:37	-->	15SAA48EM (~negusnyul@dsl51B68226.pool.t-online.hu) has joined #kde
+2013-03-14 16:28:03	-->	shumski (~shumski@cpe-188-252-137-210.zg5.cable.xnet.hr) has joined #kde
+2013-03-14 16:28:06	--	15SAA48EM is now known as prkc
+2013-03-14 16:30:07	<--	mnx (~mnx@p5B34CC8C.dip.t-dialin.net) has quit (Quit: Konversation terminated!)
+2013-03-14 16:32:33	<--	Dutchman (~quassel@host-69-146-140-250.msl-mt.client.bresnan.net) has quit (Quit: Time to go!)
+2013-03-14 16:33:21	-->	LeeJunFan (~junfan@97-83-113-254.static.trcy.mi.charter.com) has joined #kde
+2013-03-14 16:33:51	<--	kc8hfi (~camey@157.182.180.68) has quit (Quit: home)
+2013-03-14 16:34:15	-->	leuty (~leuty@xdsl-188-154-60-15.adslplus.ch) has joined #kde
+2013-03-14 16:36:09	-->	zir0faive (~zir0faive@cty37-1-78-214-92-19.fbx.proxad.net) has joined #kde
+2013-03-14 16:38:18	<--	Sho_ (~sho@kde/hein) has quit (Quit: Konversation terminated!)
+2013-03-14 16:38:35	-->	lueo (~lueo@61-62-99-132-adsl-tai.dynamic.so-net.net.tw) has joined #kde
+2013-03-14 16:39:20	<--	lueo (~lueo@61-62-99-132-adsl-tai.dynamic.so-net.net.tw) has quit (Quit: Konversation terminated!)
+2013-03-14 16:39:41	-->	lueo (~lueo@61-62-99-132-adsl-tai.dynamic.so-net.net.tw) has joined #kde
+2013-03-14 16:39:58	-->	Dutchman (~quassel@host-69-146-140-250.msl-mt.client.bresnan.net) has joined #kde

@@ -379,3 +379,238 @@
 2013-03-14 12:20:34	-->	_Caleb_ (~Caleb@archlinux/op/caleb) has joined #weechat
 2013-03-14 12:20:39	-->	wd (~wd@wd.ebash.it) has joined #weechat
 2013-03-14 12:24:09	-->	higuita (~higuita@2001:b18:400f:0:3dfd:daa5:1250:38f9) has joined #weechat
+2013-03-14 12:27:36	j416	still though... disable colours, anyone=
+2013-03-14 12:27:38	j416	?
+2013-03-14 12:27:50	j416	I think I managed to do it once. But I forgot how.. :/
+2013-03-14 12:28:25	JimShoe	j416: you mean disable all colos?
+2013-03-14 12:28:28	JimShoe	colors*
+2013-03-14 12:28:47	j416	yeah
+2013-03-14 12:28:53	j416	make it monochrome
+2013-03-14 12:29:14	j416	I think it was just one command
+2013-03-14 12:29:27	j416	I may be mistaken though (maybe it was a tmux thing.. hm)
+2013-03-14 12:30:09	<--	talisein (~talisein@pdpc/supporter/student/talisein) has quit (Quit: WeeChat 0.4.1-dev)
+2013-03-14 12:30:25	<--	KiSM (~KiSM@CPE-121-215-84-233.lnse1.pie.bigpond.net.au) has quit (Read error: Connection reset by peer)
+2013-03-14 12:30:35	inhies	maybe in yoru terminal?
+2013-03-14 12:31:28	<--	bananagram (~bot@pool-108-56-161-155.washdc.fios.verizon.net) has quit (Ping timeout: 240 seconds)
+2013-03-14 12:33:48	<--	higuita (~higuita@2001:b18:400f:0:3dfd:daa5:1250:38f9) has quit (Ping timeout: 264 seconds)
+2013-03-14 12:33:49	-->	moruk (moruk@wikipedia/morruk) has joined #weechat
+2013-03-14 12:35:39	<--	diffycat (~diffycat@85.113.55.206) has quit (Ping timeout: 256 seconds)
+2013-03-14 12:39:05	-->	ISF_ (~ivan@187.64.222.221) has joined #weechat
+2013-03-14 12:40:27	j416	lol inhies, I think that might have been it
+2013-03-14 12:41:01	j416	found a disable colours setting in the terminal settings. Silly me.
+2013-03-14 12:41:21	j416	would be cool to have a global enable/disable colours setting in weechat, nonetheless. :)
+2013-03-14 12:41:52	inhies	na
+2013-03-14 12:42:10	j416	..
+2013-03-14 12:42:12	inhies	that would take valuable focus away from the time travel features
+2013-03-14 12:42:15	-->	thorsten2 (~thorsten@gw.zoomint.com) has joined #weechat
+2013-03-14 12:42:20	Kagee	indeed.
+2013-03-14 12:43:10	<--	pfsmorigo (pfsmorigo@nat/ibm/x-wucuwikrdilihler) has quit (Quit: Good morning, that's a nice tnetennba)
+2013-03-14 12:43:14	inhies	wonder how hard it woudl be to add current channel nicknames to the spell checker
+2013-03-14 12:43:26	inhies	nvm
+2013-03-14 12:43:28	inhies	it already does that
+2013-03-14 12:43:31	 *	inhies wanders off
+2013-03-14 12:43:32	-->	pfsmorigo (pfsmorigo@nat/ibm/x-pnjgfmzkdjhqfaeh) has joined #weechat
+2013-03-14 12:44:06	j416	inhies: you are implying that we would time travel in full colour
+2013-03-14 12:44:44	dominikh	unless you're travelling back before 1953
+2013-03-14 12:44:56	dominikh	*back to
+2013-03-14 12:45:22	j416	sounds dangerous
+2013-03-14 12:46:47	-->	Raugturi (~Raugturi@unaffiliated/raugturi) has joined #weechat
+2013-03-14 12:47:27	<--	pfsmorigo (pfsmorigo@nat/ibm/x-pnjgfmzkdjhqfaeh) has quit (Client Quit)
+2013-03-14 12:47:44	-->	pfsmorigo (pfsmorigo@nat/ibm/x-hcmtjwpanrikbels) has joined #weechat
+2013-03-14 12:49:08	-->	gwash (~gwash@41.46.189.164) has joined #weechat
+2013-03-14 12:50:13	thorsten2	I
+2013-03-14 12:50:20	dominikh	Legend
+2013-03-14 12:50:28	thorsten2	I'd like to rename a buffer with autosetbuffer
+2013-03-14 12:50:38	thorsten2	How can I find out the name of a buffer?
+2013-03-14 12:53:13	-->	brainvision (~brainvisi@host39-78-dynamic.17-87-r.retail.telecomitalia.it) has joined #weechat
+2013-03-14 12:53:24	-->	frakturfreak (fraktur@unaffiliated/frakturfreak) has joined #weechat
+2013-03-14 12:53:27	nils_2	/buffer localvar
+2013-03-14 12:54:52	@FlashCode	thorsten2: you should change only the "short_name" which is used for display
+2013-03-14 12:55:07	nils_2	http://dev.weechat.org/post/2011/10/28/Change-short-name-of-buffers
+2013-03-14 12:55:12		[http://is.gd/Qq5tt6]
+2013-03-14 12:56:05	<--	inhies (~inhies@8.23.56.82) has quit (Quit: ZNC - http://znc.in)
+2013-03-14 12:56:26	<--	nioncode (~quassel@dslb-088-065-070-064.pools.arcor-ip.net) has quit (Remote host closed the connection)
+2013-03-14 12:56:30	<--	fire (~fire@unaffiliated/security) has quit (Ping timeout: 264 seconds)
+2013-03-14 12:57:54	-->	fire (~fire@unaffiliated/security) has joined #weechat
+2013-03-14 12:58:13	<--	gwash (~gwash@41.46.189.164) has quit (Read error: Connection reset by peer)
+2013-03-14 12:59:02	-->	gwash (~gwash@41.46.189.164) has joined #weechat
+2013-03-14 13:00:34	<--	gwash (~gwash@41.46.189.164) has quit (Read error: Connection reset by peer)
+2013-03-14 13:00:58	-->	inhies (~inhies@8.23.56.82) has joined #weechat
+2013-03-14 13:02:17	-->	c_14 (~c_14@unaffiliated/c-14/x-8913907) has joined #weechat
+2013-03-14 13:02:38	thorsten2	FlashCode, this works here in freenode but as far as I can see not in my BitlBee channels
+2013-03-14 13:03:17	thorsten2	FlashCode, I have "irc.mybitlbee.#&bitlbee.short_name = "#&ZZZ"" in buffer_autoset.conf and it doesn't work
+2013-03-14 13:03:56	@FlashCode	not #&bitlbee but &bitlbee
+2013-03-14 13:04:34	xt	FlashCode: any updates on mem leaks?
+2013-03-14 13:04:56	nils_2	thorsten2: and try with "/buffer set short_name #buffername" first
+2013-03-14 13:05:54	thorsten2	nils_2, will try
+2013-03-14 13:08:44	nils_2	then use "/autosetbuffer add [tab]" to autocomplete channel-name and property. i suppose you edit the config file with an editor 
+2013-03-14 13:08:48	@FlashCode	xt: no, it happens only when sending something to server (mass-sending)
+2013-03-14 13:09:04	@FlashCode	I'm not even sure if it's really a mem leak or not
+2013-03-14 13:09:24	xt	ok
+2013-03-14 13:09:26	xt	will you take my patch?
+2013-03-14 13:09:56	@FlashCode	your patch with lua_pop?
+2013-03-14 13:10:07	xt	aye
+2013-03-14 13:10:16	@FlashCode	it was committed yesterday! ;)
+2013-03-14 13:10:25	thorsten2	nils_2, yes, did with editor
+2013-03-14 13:10:47	@FlashCode	(I changed a bit the function to always pop, even in case of error)
+2013-03-14 13:10:51	<--	pfsmorigo (pfsmorigo@nat/ibm/x-hcmtjwpanrikbels) has quit (Quit: Good morning, that's a nice tnetennba)
+2013-03-14 13:11:10	-->	pfsmorigo (pfsmorigo@nat/ibm/x-jfjsexnxplzkcurh) has joined #weechat
+2013-03-14 13:11:38	xt	FlashCode: no credits?! rude! :)
+2013-03-14 13:11:42	xt	but thanks for fixing
+2013-03-14 13:11:49	xt	maybe I'll write some scripts again now
+2013-03-14 13:12:07	@FlashCode	yeah I forgot to mention you in commit msg :p
+2013-03-14 13:12:10	nils_2	thorsten2: you should not edit your conferg files. as you see, you made it wrong. use in-build command or scripts (like iset.pl)
+2013-03-14 13:12:59	thorsten2	nils_2, it's hard to find out the syntax
+2013-03-14 13:13:27	thorsten2	nils_2, for instance I could not find the command for buffer_autoset
+2013-03-14 13:15:02	-->	gwash (~gwash@41.46.189.164) has joined #weechat
+2013-03-14 13:17:37	<--	pfsmorigo (pfsmorigo@nat/ibm/x-jfjsexnxplzkcurh) has quit (Quit: Good morning, that's a nice tnetennba)
+2013-03-14 13:17:56	-->	pfsmorigo (pfsmorigo@nat/ibm/x-ubztokzaxkleeekc) has joined #weechat
+2013-03-14 13:22:45	nils_2	/script install buffer_autoset.py
+2013-03-14 13:23:10	-->	Watabou (~Watabou@unaffiliated/watabou) has joined #weechat
+2013-03-14 13:23:28	nils_2	the command name is /autosetbuffer
+2013-03-14 13:24:12	thorsten2	nils_2, I know this now after looking into the script
+2013-03-14 13:24:50	thorsten2	nils_2, when you can't find the name, you edit the config file
+2013-03-14 13:25:16	nils_2	simply ask in #weechat ;-)
+2013-03-14 13:25:26	thorsten2	nils_2, hehe
+2013-03-14 13:25:29	dominikh	and when you don't understand the config format, you don't edit it :>
+2013-03-14 13:25:30	<--	inhies (~inhies@8.23.56.82) has quit (Quit: ZNC - http://znc.in)
+2013-03-14 13:26:01	-->	inhies (~inhies@8.23.56.82) has joined #weechat
+2013-03-14 13:26:49	njoka5	is this correct way of adding required highlight nicks: /set irc.look.highlight_channel "nick1,nick2,nick3" ?
+2013-03-14 13:27:41	<--	thorsten2 (~thorsten@gw.zoomint.com) has quit (Quit: The only way to exit is going piece by piece)
+2013-03-14 15:50:32	-->	numeral (~numeral@198.23.228.15) has joined #weechat
+2013-03-14 15:50:32	--	Topic for #weechat is "http://weechat.org/ | Latest stable version: 0.4.0 | English support channel, *ONLY* about WeeChat software | Please read doc before asking! | Bug reports are welcome ONLY for latest stable or devel | Off-topic chan: #weechat-offtopic | Fingerprint for gpg key used to sign packages: A9AB 5AB7 78FA 5C35 22FD 0378 F82F 4B16 DEC4 08F8"
+2013-03-14 15:50:32	--	Topic set by FlashCode (~FlashCode@zeta.flashtux.org) on Sun, 20 Jan 2013 05:28:29
+2013-03-14 15:50:32	--	Nicks #weechat: [@ChanServ @FlashCode @kolter +weebot [bsx] \Harbinger\ _`_ _Caleb_ _flow_ _grawity `nand` Ac-town adaptr Adran Aexoden ahuemer ainmosni aji Akranis alexandros_c architekt Archtivity arza asmodai aspiers assezpale astra05 atgeek AzziWeaver batrick Bio bizarro_1 blackspark bloony BluABK blueyed bolidz bolidz_ bpeak bps brainproxy brainvision Brando753 brenden1 bronsen Bruners BullShark burl_ C2H6O c_14 ccxCZ cfh chaingun Chewtoy Chiku chridal CissWit cmile codile coredump crater2150 crazedpsyc Dan39 daniel_-_ dankles darkstar DarthRamone Defaultti Deltafire derrida Dewr diniwed1 DNS dominikh Dominique DonAman Dopefish dorftrottel draco drbean dregin Drohne drubin DrZaius dubf EgS eightyeight else- ember314 emid erry Exio Exio4 f8l faen fayek felher felipe FestHest fire firebird fireglow FiXato flexd fours fracek frakturfreak frb frew Furai gardar gb gg7 Goatbert goraxe GoshaZa Gotisch grawity gtmanfred Guest59163 gui guntha gunthler gwash happy0 haste hggdh hlindset hokkaido hrubi Hydrazine_ ianj iElectric inhies j416 jacky jaset jayne jgeboski jiffe98 JimShoe jjacky jmreicha jrib jsec juhu_chapa jvolkman JyZyXEL jzelinskie k-man k1ngsqueak Kaare Kabaka Kagee KaiSforza kalpik kanyl kart0ffelsack kaze` kelnoky KenjiE20 kgb KindOne kingkong|here kirin` kkh kloeri klonkr kmic KokaKiwi koolfy Kovensky ksa Kunsi kunwon1 lastebil leo_rockway linduxed linopolu1 LiuYan lluchs LordOfLA LostInInaka loswillios lrvick Luceo Lumpio- m4v mahlon majoh mama Matrixiumn mave_ Mayi meingtsla meskarune mh0 mickkk miniCruzer mixi Mkaysi moju monty moruk moyam01 MrElendig Mrokii mrtux msx mumixam MurkyBanana musl mva myme mythmon nazty necronian neferty Nei nemesit|znc nesthib nils_2 nisshh njoka5 nokogiri numeral nutate nyuszika7h Obfuscate obiwahn Occi oddmunds ole ormaaj Paddez1 panaggio PaulW2U pbos peccu1 perun_ Pest pfsmorigo PhilK phlux phryk Pixelz pmo pragma- prime Proxypoke ptitlouis pythonsnake quizzlo R1cochet r4 random_cat Rasi Ratler Raugturi RBecker redblue resixian rking Rockj Rokkross ruediger ruuk1 rvalles s_edrik sairakaS Sakarias sakkemo SAL9000 sanova Scall se7en1 Sembei seschwar setkeh ShawnR__ shoerain sigterm Silex Simon- sitaktif sjl sjohnson skynet2000 sleo slystone Soft soh335 solez Soliton soltys sontek spaceone spaceplu- Sparkler sphinx ssedano Starvirus staticsafe SteelHawk steeve stfn Sthebig stiell StingRay` Stravy sub0 sudokode SuperTux88 sw4- swimmer talisein Tanami tchan tdy_ techlife tehlarsie tg the-kenny TheBrayn ThePink thorsten2 thykka tigrmesh Timbo Tit0_ tLap tlonim tmr tomaw tomboy64 tomoe_mami TomServo torque Trashlord trn Twey ubergeek42 Ulrar unixcat user utanapischti v0n v3gard vacum vehk velcroshooz Vinylourson vith vmlinuz Voldenet Voronoi WakiMiko Watabou wayneeseguin wd webvictim weissbier while1eq1 Whoop WillyKaze wysiwtf xorp xpt xt xy yano yardena yeled yoklar Yorokobi yosafbridge Ytserman zamba zeltak zu_ Zucca]
+2013-03-14 15:50:32	--	Channel #weechat: 381 nicks (3 ops, 0 halfops, 1 voice, 377 normals)
+2013-03-14 15:50:32	***	Buffer Playback...
+2013-03-14 15:50:32	@FlashCode	[21:07:57] new stats for weechat, now auto-built by a python script: http://weechat.org/stats/
+2013-03-14 15:50:32	@FlashCode	[21:08:11] (graphs are SVG, you can move your mouse over graphs/legends for detail)
+2013-03-14 15:50:32	@FlashCode	[21:09:02] (and for people interested, I'll share the small python script that builds that from a git repository (it's generic))
+2013-03-14 15:50:32	stfn	[21:10:29] wow pretty :)
+2013-03-14 15:50:32	inhies	[21:16:11] neat
+2013-03-14 15:50:32	@FlashCode	[21:16:56] less than one second to build all graphs (collect data in git + build graphs) :)
+2013-03-14 15:50:32	hiptobecubic	[21:18:33] Is there something like announce_url_title that doesn't broadcast it to the channel?
+2013-03-14 15:50:32	Dan39	[21:18:56] lol @ 2 commits by FlashCode
+2013-03-14 15:50:32	hiptobecubic	[21:19:17] I just want it to tell me what the title is similar to how isgd.pl does
+2013-03-14 15:50:32	hiptobecubic	[21:19:25] it's in the buffer, but not sent to the server
+2013-03-14 15:50:32	@FlashCode	[21:19:39] Dan39: yes, residues of a bad git config :p
+2013-03-14 15:50:32	stfn	[21:20:31] hiptobecubic: I could also add an option to isgd.pl to shorten incomding URLs automatically.
+2013-03-14 15:50:32	Dan39	[21:20:32] 661 scripts...
+2013-03-14 15:50:32	Dan39	[21:20:41] didnt think there was that many
+2013-03-14 15:50:32	stfn	[21:20:41] hiptobecubic: if that's what you mean?
+2013-03-14 15:50:32	hiptobecubic	[21:20:51] stfn, that would be good too.
+2013-03-14 15:50:32	Dan39	[21:21:06] FlashCode: is there going to be a whole set of OS utlities built within weechat soon? :D
+2013-03-14 15:50:32	Dan39	[21:21:10] like emacs
+2013-03-14 15:50:32	Dan39	[21:21:17] lol
+2013-03-14 15:50:32	@FlashCode	[21:21:22] hiptobecubic: you have an option "announce_public" in announce_url_title script
+2013-03-14 15:50:32	@FlashCode	[21:21:28] hiptobecubic: try /iset announce_url_title
+2013-03-14 15:50:32	@FlashCode	[21:21:33] (if you have iset.pl)
+2013-03-14 15:50:32	hiptobecubic	[21:21:39] hiptobecubic, aha
+2013-03-14 15:50:32	hiptobecubic	[21:21:58] Dan39, i only see 237..
+2013-03-14 15:50:32	Dan39	[21:22:10] in the stats
+2013-03-14 15:50:32	@FlashCode	[21:22:30] 661 is a number of commits, not a number of scripts
+2013-03-14 15:50:32	stfn	[21:22:34] hiptobecubic: alright I'll do that :)
+2013-03-14 15:50:32	Dan39	[21:22:36] o
+2013-03-14 15:50:32	@FlashCode	[21:23:10] number of scripts is not on this stats page at all
+2013-03-14 15:50:32	Dan39	[21:23:16] FlashCode: you have any other popular projects right now?
+2013-03-14 15:50:32	@FlashCode	[21:24:02] no, I'm focused only on weechat (and qweechat, but it's very small compared to weechat)
+2013-03-14 15:50:32	hiptobecubic	[21:24:15] FlashCode, what's your day job?
+2013-03-14 15:50:32	@FlashCode	[21:24:25] software dev
+2013-03-14 15:50:32	Dan39	[21:25:49] never would have guessed
+2013-03-14 15:50:32	hiptobecubic	[21:27:15] urlgrab does not seem to honor historysize
+2013-03-14 15:50:32	hiptobecubic	[21:27:52] this list of urls is thousands long and takes several seconds to generate
+2013-03-14 15:50:32	***	Playback Complete.
+2013-03-14 15:51:09	--	Mode #weechat [+nt]
+2013-03-14 15:51:09	--	Channel created on Sun, 26 Nov 2006 01:42:51
+2013-03-14 15:53:19	<--	bpeak (~user@unaffiliated/bpeak) has quit (Remote host closed the connection)
+2013-03-14 15:54:51	-->	nioncode (~quassel@dslb-088-065-070-064.pools.arcor-ip.net) has joined #weechat
+2013-03-14 16:00:50	-->	eydaimon (~eydaimon@unaffiliated/anywho) has joined #weechat
+2013-03-14 16:01:38	eydaimon	Is there a way to alias a name for someone ? 
+2013-03-14 16:06:01	-->	x2xx3x (~x2x@chello080109066023.18.15.vie.surfer.at) has joined #weechat
+2013-03-14 16:06:20	user	WeeChat 0.3.8 [compiled on Jun  4 2012 18:37:58]
+2013-03-14 16:06:52	user	So if I got this rigth, I dont need to restart weechat for it to be new version?
+2013-03-14 16:06:57	@FlashCode	eydaimon: replace a nick by something else in nicklist/chat ?
+2013-03-14 16:06:57	xt	/upgrade
+2013-03-14 16:07:11	eydaimon	FlashCode: yes
+2013-03-14 16:07:19	@FlashCode	then, not possible
+2013-03-14 16:08:06	eydaimon	FlashCode: using weechat to connec to bitlbee as a bridge for another service. The nicknames that result are bad (some kind of ID). If I could have changed the nick to something more familiar, that would have been great
+2013-03-14 16:08:21	@FlashCode	ah, this is possible in bitlbee
+2013-03-14 16:08:26	@FlashCode	I did that for gtalk
+2013-03-14 16:08:35	tigrmesh	m4v: ping
+2013-03-14 16:08:35	eydaimon	oh you're right. I remember that now
+2013-03-14 16:08:41	eydaimon	it's been ages since I did this
+2013-03-14 16:08:45	eydaimon	thanks ;)
+2013-03-14 16:09:05	@FlashCode	eydaimon: http://wiki.bitlbee.org/HowtoGtalk  you have a tip here
+2013-03-14 16:09:10		[http://is.gd/WDpxOt]
+2013-03-14 16:09:17	eydaimon	thanks
+2013-03-14 16:09:51	m4v	tigrmesh: pong
+2013-03-14 16:11:28	Dan39	m4v: tigrmesh dooonnngggg
+2013-03-14 16:11:30	<--	daniel_-_ (~daniel_-@g227248128.adsl.alicedsl.de) has quit (Ping timeout: 264 seconds)
+2013-03-14 16:11:37	tigrmesh	hey Dan39
+2013-03-14 16:11:43	tigrmesh	hey FlashCode
+2013-03-14 16:11:44	eydaimon	rename command was the one 
+2013-03-14 16:11:49	user	Oh my, I did something, now half my terminal is black
+2013-03-14 16:12:25	nils_2	remove your towel :-)
+2013-03-14 16:12:41	tigrmesh	m4v: moment
+2013-03-14 16:12:55	user	Oh, it was only a screen thing
+2013-03-14 16:14:00	<--	Watabou (~Watabou@unaffiliated/watabou) has quit (Ping timeout: 260 seconds)
+2013-03-14 16:17:54	<--	gwash (~gwash@41.46.189.164) has quit (Ping timeout: 245 seconds)
+2013-03-14 16:20:13	<--	nioncode (~quassel@dslb-088-065-070-064.pools.arcor-ip.net) has quit (Remote host closed the connection)
+2013-03-14 16:21:58	tigrmesh	m4v: i've been using chanop 0.3-dev, then i saw a new chanop version is on the weechat site. then i saw a new version on gihub
+2013-03-14 16:22:04	tigrmesh	i got confused because there are a lot of differences between the one on github and the one on weechat.org
+2013-03-14 16:22:19	<--	eydaimon (~eydaimon@unaffiliated/anywho) has left #weechat ("WeeChat 0.4.0")
+2013-03-14 16:23:42	m4v	tigrmesh: the one in weechat is mostly the old chanop with bugfixes that I backport from github
+2013-03-14 16:23:54	tigrmesh	ok
+2013-03-14 16:24:06	thorsten2	I'm having problems with Skype group chats via BitlBee IRC gateway. Whenever I close a chat buffer [Ctrl-D] Skype "unsubscribes" me from this group. I cannot join myself afterwards again...
+2013-03-14 16:24:17	tigrmesh	m4v: now i see the history and versions 
+2013-03-14 16:24:47	-->	gwash (~gwash@41.46.189.164) has joined #weechat
+2013-03-14 16:25:15	Dan39	tigrmesh: whats this, chanop?
+2013-03-14 16:25:38	Dan39	a script for channel ops?
+2013-03-14 16:25:40	<--	user (~sebastija@unaffiliated/energy-/x-7653247) has quit (Quit: WeeChat 0.4.0)
+2013-03-14 16:26:42	tigrmesh	Dan39: m4v wrote a wonderful script for channel ops.  you can op yourself and kick someone with one command.  same with banning
+2013-03-14 16:26:56	tigrmesh	and deop after a set time
+2013-03-14 16:27:08	firebird	Dan39, yes, quite a nice script, thanks for creating it m4v.
+2013-03-14 16:27:36	--	nils_2 is now known as w8rabbit
+2013-03-14 16:27:36	Dan39	o so its like a "freenode coolguyop script"
+2013-03-14 16:27:36	firebird	same with quieting...
+2013-03-14 16:27:36	tigrmesh	lol
+2013-03-14 16:27:37	Dan39	ya where i op, i got a nice ~ next to my name all the time :D
+2013-03-14 16:27:37	 *	firebird puts on shades and looks cool... (I do look cool, right?) :)
+2013-03-14 16:27:40	--	RBecker is now known as rbecker
+2013-03-14 16:27:51	tigrmesh	hehe
+2013-03-14 16:27:54	Dan39	squigly!!
+2013-03-14 16:28:12	Dan39	id just like something for quicker zlines
+2013-03-14 16:28:18	Dan39	so i dont have to /whois and copy the ip
+2013-03-14 16:28:37	-->	user (~user@unaffiliated/energy-/x-7653247) has joined #weechat
+2013-03-14 16:28:45	tigrmesh	maybe you can copy that part of the code
+2013-03-14 16:28:52	Dan39	o does it have that?
+2013-03-14 16:29:00	tigrmesh	i don't think so
+2013-03-14 16:29:15	tigrmesh	there's a chatzilla script that might do it
+2013-03-14 16:29:23	-->	Watabou (~Watabou@unaffiliated/watabou) has joined #weechat
+2013-03-14 16:30:07	user	Can I bind mouse enable to a and mouse disable to e?
+2013-03-14 16:30:07	tigrmesh	iirc it was more for server ops than channel ops
+2013-03-14 16:30:27	Dan39	actually now that i tested it
+2013-03-14 16:30:35	Dan39	i can do /gzline <nick> on unreal
+2013-03-14 16:30:44	Dan39	lol the dam help never told me that
+2013-03-14 16:30:52	firebird	lol
+2013-03-14 16:31:28	Dan39	the /helpop is usually pretty comprehensive
+2013-03-14 16:32:50	user	Also is there a list of usefull scripts?
+2013-03-14 16:32:54	user	Like not just names
+2013-03-14 16:33:00	tigrmesh	!scripts
+2013-03-14 16:33:00	+weebot	WeeChat scripts: http://weechat.org/scripts
+2013-03-14 16:33:09	tigrmesh	user: ^^
+2013-03-14 16:33:36	tigrmesh	Dan39: you can also always use alias.  that's what i did until i found chanop
+2013-03-14 16:33:52	Dan39	yea i have a few set up already 
+2013-03-14 16:34:35	Dan39	what i was thinking about also doing
+2013-03-14 16:35:06	Dan39	is making something for basic aliases but with lil power to it like $nick $host, and maybe if/else loops and ya know
+2013-03-14 16:35:22	--	w8rabbit is now known as nils_2
+2013-03-14 16:35:43	Dan39	writing a script for something small just seems like overkill, have to do all the registerin and hookin :P
+2013-03-14 16:36:24	tigrmesh	true
+2013-03-14 16:36:39	tigrmesh	can aliases have if/else?
+2013-03-14 16:36:44	Dan39	no
+2013-03-14 16:36:47	--	rbecker is now known as RBecker
+2013-03-14 16:36:57	Dan39	just commands you can normaly do with /
+2013-03-14 16:37:09	tigrmesh	sounds like script time
+2013-03-14 16:37:44	Dan39	i mean how many people actually remember the arguments that hook_command takes? haha
+2013-03-14 16:37:44	Dan39	i have to open the docs every time
+2013-03-14 16:39:20	<--	Watabou (~Watabou@unaffiliated/watabou) has quit (Ping timeout: 252 seconds)

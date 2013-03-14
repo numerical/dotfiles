@@ -1313,3 +1313,343 @@
 2013-03-14 12:22:02	hh4a	damn
 2013-03-14 12:22:16	-->	KendovNorok (~sergey@95-28-106-83.broadband.corbina.ru) has joined #archlinux-offtopic
 2013-03-14 12:22:51	hh4a	Nuts
+2013-03-14 12:25:43	-->	poseidon (~joe@vps6967.inmotionhosting.com) has joined #archlinux-offtopic
+2013-03-14 12:27:36	hh4a	Erebor was lost
+2013-03-14 12:31:59	-->	Mezenir (~Mezenir@105-236-247-189.access.mtnbusiness.co.za) has joined #archlinux-offtopic
+2013-03-14 12:41:20	-->	eyescream (~eyescream@unaffiliated/eyescream) has joined #archlinux-offtopic
+2013-03-14 12:50:30	-->	camilasan (~camilasan@91-64-80-97-dynip.superkabel.de) has joined #archlinux-offtopic
+2013-03-14 12:51:17	-->	jemofthewest (~jeremy@d192-24-162-111.nap.wideopenwest.com) has joined #archlinux-offtopic
+2013-03-14 12:53:26	<--	hh4a (~hh4a@84-255-197-79.static.t-2.net) has quit (Quit: going away and always astray)
+2013-03-14 12:53:43	<--	Tharugrim (~Tharugrim@62-46-151-100.adsl.highway.telekom.at) has quit (Quit: WeeChat 0.4.0)
+2013-03-14 12:53:55	<--	crooksey_ (~quassel@195.149.4.197) has quit (Ping timeout: 260 seconds)
+2013-03-14 12:54:13	<--	cyrus1 (89c9f282@gateway/web/freenode/ip.137.201.242.130) has quit (Ping timeout: 245 seconds)
+2013-03-14 12:56:37	mar77i	omg
+2013-03-14 12:56:53	<--	jemofthewest (~jeremy@d192-24-162-111.nap.wideopenwest.com) has quit (Ping timeout: 255 seconds)
+2013-03-14 12:57:12	mar77i	today I literally js-wrapped with all evil stuff .toSource().replace() etc
+2013-03-14 12:57:43	mar77i	I'm proud of dumbing down
+2013-03-14 12:57:50	-->	freakazoid (~freakazoi@2620:0:1cfe:18:8e70:5aff:fe47:89d8) has joined #archlinux-offtopic
+2013-03-14 12:59:25	<--	AndrevS (~andre_bk@2001:980:55e0:1:20f:eaff:fe58:28f8) has quit (Quit: Leaving)
+2013-03-14 12:59:57	mar77i	oh, happy pi day to #aot. gonna buy pie now
+2013-03-14 13:00:13	mar77i	and then beer time again :)
+2013-03-14 13:02:57	 *	halosghost gets another glass of wine
+2013-03-14 13:03:00	<--	thewizord (~root@gateway/tor-sasl/djmer/x-88024201) has quit (Remote host closed the connection)
+2013-03-14 13:03:30	gtmanfred	whine is gross
+2013-03-14 13:03:39	KaiSforza	shaddup
+2013-03-14 13:04:00	KaiSforza	gingers just can't appreciate good wine.
+2013-03-14 13:04:27	-->	thewizord (~root@gateway/tor-sasl/djmer/x-88024201) has joined #archlinux-offtopic
+2013-03-14 13:04:30	gtmanfred	GINGERS INVENTED WINE! YOU DON"T EVEN KNOW!
+2013-03-14 13:04:32	skope	wine lol
+2013-03-14 13:04:33	gtmanfred	...
+2013-03-14 13:04:43	skope	women and fags drink wine, which one are you?
+2013-03-14 13:04:51	halosghost	…
+2013-03-14 13:04:53	--	Mode #archlinux-offtopic [+o gtmanfred] by ChanServ
+2013-03-14 13:04:57	<--	skope (skope@psykedelia.org) has left #archlinux-offtopic (requested by gtmanfred (language))
+2013-03-14 13:05:07	--	Mode #archlinux-offtopic [+q $a:skope] by gtmanfred
+2013-03-14 13:05:09	--	Mode #archlinux-offtopic [-o gtmanfred] by gtmanfred
+2013-03-14 13:05:18	halosghost	Thank you gtmanfred
+2013-03-14 13:05:39	-->	skope (skope@psykedelia.org) has joined #archlinux-offtopic
+2013-03-14 13:05:57	KaiSforza	gtmanfred: HOW CAN YOU NOT LIKE WINE
+2013-03-14 13:06:09	gtmanfred	it is ok
+2013-03-14 13:06:14	KaiSforza	unless the only wine you've had is box wine.
+2013-03-14 13:07:34	-->	HuMu_ (~Huub@41.203.192.36) has joined #archlinux-offtopic
+2013-03-14 13:08:21	-->	velusip (~velusip@CPE001d73111113-CM18593340f926.cpe.net.cable.rogers.com) has joined #archlinux-offtopic
+2013-03-14 13:08:35	gtmanfred	nah i had some nicer wine
+2013-03-14 13:11:13	thewizord	gtmanfred: luser
+2013-03-14 13:11:45	halosghost	some wine is good
+2013-03-14 13:11:46	halosghost	some is awful
+2013-03-14 13:12:04	KaiSforza	this is true.
+2013-03-14 13:12:17	thewizord	KaiSforza: you made me die last night jerk
+2013-03-14 13:12:19	KaiSforza	but saying 'wine is gross' is like saying 'cheese is gross' or something.
+2013-03-14 13:12:23	thewizord	we coulda won that
+2013-03-14 13:12:23	KaiSforza	thewizord: loooool
+2013-03-14 13:12:31	KaiSforza	thewizord: dude...i got raped.
+2013-03-14 13:12:35	gtmanfred	all wine tastes the same to me, like alcohol and grapes
+2013-03-14 13:12:40	thewizord	I don't recall what happened to you
+2013-03-14 13:12:42	thewizord	I just remmeber me
+2013-03-14 13:12:43	mar77i	!curlpaste
+2013-03-14 13:12:44	phrik	'best damn pastebin client out there' -- Ghost1227: community/curlpaste
+2013-03-14 13:12:52	KaiSforza	thewizord: two scrakes came up on me.
+2013-03-14 13:12:53	mar77i	!paste
+2013-03-14 13:12:54	phrik	To paste into the channel use a pastebin: https://wiki.archlinux.org/index.php/Common_Applications#Pastebin_Clients
+2013-03-14 13:12:59		[http://is.gd/LCsbgs]
+2013-03-14 13:13:02	KaiSforza	thewizord: and there we a but ton of clots
+2013-03-14 13:13:02	thewizord	two rakes?
+2013-03-14 13:13:03	thewizord	lol
+2013-03-14 13:13:08	KaiSforza	thewizord: oh right, rakes.
+2013-03-14 13:13:16	KaiSforza	thewizord: that deadly gardening equipment.
+2013-03-14 13:13:17	thewizord	"dun throw grenades at the rake"
+2013-03-14 13:13:28	KaiSforza	s/grenades/gurnades/
+2013-03-14 13:13:43	thewizord	right gurnades
+2013-03-14 13:13:43	thewizord	lol
+2013-03-14 13:13:50	KaiSforza	ftfy.
+2013-03-14 13:14:33	thewizord	silly carharttjimmy
+2013-03-14 13:16:43	<--	See- (~mva@glo44-4-82-239-69-98.fbx.proxad.net) has quit (Ping timeout: 264 seconds)
+2013-03-14 13:18:28	thewizord	where is the jimmy?
+2013-03-14 13:18:34	thewizord	driving 2 hours to hillbilly college?
+2013-03-14 13:19:30	-->	hidekin (~hidekin@85-218-9-114.dclient.lsne.ch) has joined #archlinux-offtopic
+2013-03-14 13:19:35	KaiSforza	probably.
+2013-03-14 13:19:44	KaiSforza	going to learn how to work a combine.
+2013-03-14 13:21:39	thewizord	lol
+2013-03-14 13:21:59	thewizord	i need coffee my head hurts
+2013-03-14 13:25:49	<--	GSF1200S (~poeticrpm@unaffiliated/gsf1200s) has quit (Read error: Connection reset by peer)
+2013-03-14 13:27:07	-->	Tear__ (~tear@user-164-126-120-116.play-internet.pl) has joined #archlinux-offtopic
+2013-03-14 13:28:53	-->	Jeaye (~Jeaye@pdpc/supporter/monthlygold/jeaye) has joined #archlinux-offtopic
+2013-03-14 15:50:29	-->	numeral (~numeral@198.23.228.15) has joined #archlinux-offtopic
+2013-03-14 15:50:29	--	Topic for #archlinux-offtopic is "Welcome to #archlinux-offtopic, the friendliest dictatorship in the world. <+> http://img1.ak.crunchyroll.com/i/spire4/533bfc2958daca64f49f2c6e9b5ebe241362333633_full.jpg"
+2013-03-14 15:50:29	--	Topic set by tigrmesh (~arch@archlinux/op/tigrmesh) on Sun, 03 Mar 2013 14:14:27
+2013-03-14 15:50:29	--	Nicks #archlinux-offtopic: [_Caleb_ _eye `lorim acuzio alexwh alienvenom Anders_J antihero Archian autumn axanon azradric BadKitty Bane^ bentlux big_t bin_bash bin_ksh bjoe2k4 bkc_ BladedThesis bleomycin Boohbah bougyman brachyonic camerin carharttjimmy caveat- ChauffeR chee cheesecakes Chromeboy cinelli Cirrus_Minor clarkm classix codependant Codynyx comhack companion Cor-Ai Corey crazedpsyc CryptoNaut cyberspace- cyrus1 dagerik Dan39 Danio danmackay dario dasbjo DaZ Die18ink5 dimeshake DinCahill djinni_ dopee dots dsschnau1 dude051 dunz0r du|dx dxtr e36freak eir Ertyle ethail eto eyescream faen favadi felipe` frankyboy_ freakazoid frojnd_ frots Genolo GGLucas gholen GI_Jack GlitchMr- GSF1200S gtmanfred halosghost Hardolaf hasufell heftig hejki hekel henkye herangr hi117 hidekin hobbily hrnz hs_maxim HuMu Hwkiller iflema ikonia ioni iotku iv597 james147 jdost Jeaye jemofthewest JHeaton john_f johnhamelink johntramp johskar jrd0 jryan KaiSforza kamada kerrick-work kevku kj4 kry73n kubit kungsget1n laumars liara Lifkug linduxed linux_probe LookTJ Lorem-Ipsum lstarnes Lysergic1reams matteotom matuka megustavo memand meskarune Mezenir mikeplus64 Mishke Moridin mquin MrElendig mrmackie MrRee MutantTurkey mysteriousdarren Nabobalis netmonger ninjabox Nisstyre nixin nodame Nuck numeral opt1mus Overand Paul-S petantik phrik pittaxx poseidon prinny pythonsnake r4 reashlin rickeyski-k rob``` Roukoswarf Roukoswarf-M ruan sa1 sammyf Schorfi sensae setkeh Shados Shapeshifter shrp Shyde sigtrm silentmike skope skrblr Sn4keBite Somasis Sornaensis spell spychalski Srf stackofcats stnly sudokode sw0rdfish SyAchmed syrinx_ t0x7bb Tam taotetek tasidus Tear__ tenmilestereo TeslaTest th3voic3 Tharugrim thehoff themattbeballin TheMaverick` thewizord thr tigrmesh tlonim tlvb vee velcroshooz velusip Vithon_ webspid0r Wntrvnm woddf2 woznme_ wulax xcrustyx xorp XReaper yogiman321 yoshi314 zcram ZekeS zendeavor zml2008 Zum]
+2013-03-14 15:50:29	--	Channel #archlinux-offtopic: 232 nicks (0 ops, 0 halfops, 0 voices, 232 normals)
+2013-03-14 15:50:29	***	Buffer Playback...
+2013-03-14 15:50:29	carharttjimmy	[21:41:51] lol
+2013-03-14 15:50:29	carharttjimmy	[21:42:00] thewizord: techincally I never mentioned the r-word
+2013-03-14 15:50:29	thewizord	[21:42:12] lol
+2013-03-14 15:50:29	carharttjimmy	[21:43:19] but I have posted this before in here
+2013-03-14 15:50:29	carharttjimmy	[21:43:22] :P
+2013-03-14 15:50:29	thewizord	[21:43:25] carharttjimmy: https://i.minus.com/irGFNEyLtCQhv.jpg
+2013-03-14 15:50:29	carharttjimmy	[21:44:19] http://www.youtube.com/watch?v=L1SKf9YU4QQ
+2013-03-14 15:50:29	phrik	[21:44:20] Title: The Whitest Kids U Know - Dinosaur Rap (HQ) - YouTube (at www.youtube.com)
+2013-03-14 15:50:29	carharttjimmy	[21:44:32] fuck that shit thewizord
+2013-03-14 15:50:29	carharttjimmy	[21:44:41] I'd rather drive a F-150
+2013-03-14 15:50:29	thewizord	[21:44:46] that pacer has you're name all over it
+2013-03-14 15:50:29	carharttjimmy	[21:44:50] no
+2013-03-14 15:50:29	carharttjimmy	[21:44:53] fuck no
+2013-03-14 15:50:29	thewizord	[21:44:56] cinder-block stopped and everything.
+2013-03-14 15:50:29	carharttjimmy	[21:44:59] no as in fuck fuck no
+2013-03-14 15:50:29	thewizord	[21:45:02] who carries a block to stop their car?
+2013-03-14 15:50:29	carharttjimmy	[21:45:08] yo momma
+2013-03-14 15:50:29	carharttjimmy	[21:45:15] oh wait she is the block
+2013-03-14 15:50:29	thewizord	[21:45:43] lol
+2013-03-14 15:50:29	thewizord	[21:45:57] my momma drives a Cadillac CTS-V bud
+2013-03-14 15:50:29	carharttjimmy	[21:46:14] I drive a Nissan Sentra
+2013-03-14 15:50:29	thewizord	[21:46:29] my stepfather drives a beater for whatever reason
+2013-03-14 15:50:29	thewizord	[21:46:33] a 1980's Toyota T-100
+2013-03-14 15:50:29	thewizord	[21:46:39] with 600,000+ miles
+2013-03-14 15:50:29	thewizord	[21:46:47] it was his first car, they keep it forwhatever ungodly reason
+2013-03-14 15:50:29	carharttjimmy	[21:47:13] lol
+2013-03-14 15:50:29	thewizord	[21:47:17] i think i have a photo where he was attempting ot illegal dump yard debris and it got stuck 4 feet in the mud
+2013-03-14 15:50:29	carharttjimmy	[21:47:31] lol
+2013-03-14 15:50:29	 *	thewizord [21:47:54] looks over old photos
+2013-03-14 15:50:29	thewizord	[21:52:35] carharttjimmy: i have it somewhere
+2013-03-14 15:50:29	thewizord	[21:52:39] i cant recall where at this time but its there.
+2013-03-14 15:50:29	carharttjimmy	[21:54:33] k
+2013-03-14 15:50:29	carharttjimmy	[21:56:53] this lab computer sucks ass
+2013-03-14 15:50:29	carharttjimmy	[21:57:04] core 2 duo
+2013-03-14 15:50:29	carharttjimmy	[21:57:09] and like 2 gigs ram
+2013-03-14 15:50:29	woddf2	[21:57:18] carharttjimmy: That's not that bad.
+2013-03-14 15:50:29	cyrus1	[21:57:51] I've seen worse lab computers
+2013-03-14 15:50:29	carharttjimmy	[21:57:55] actually
+2013-03-14 15:50:29	carharttjimmy	[21:58:04] 3.87 gig of ram usuable
+2013-03-14 15:50:29	carharttjimmy	[21:58:45] clocked at 3.00 GHz
+2013-03-14 15:50:29	carharttjimmy	[21:58:53] just runs slow as fuck with windows
+2013-03-14 15:50:29	carharttjimmy	[21:59:13] well I am off to Java
+2013-03-14 15:50:29	carharttjimmy	[21:59:15] yay me
+2013-03-14 15:50:29	thewizord	[21:59:39] carharttjimmy: stfu
+2013-03-14 15:50:29	thewizord	[22:00:37] man i never realized how unorganized i am without someone else sorting my shit out
+2013-03-14 15:50:29	thewizord	[22:03:01] carharttjimmy: this is why i cant keep admin assistants very long
+2013-03-14 15:50:29	thewizord	[22:03:09] im a fuckin chaotic whirlwind of misplaced shit
+2013-03-14 15:50:29	thewizord	[22:03:45] i just discovered I own an ibook i never knew or at least entirely forgot about
+2013-03-14 15:50:29	halosghost	[22:04:44] needs moar wine
+2013-03-14 15:50:29	thewizord	[22:05:12] halosghost: it'll be interesting if this even turns on
+2013-03-14 15:50:29	thewizord	[22:05:25] i dont remember even owning a mac
+2013-03-14 15:50:29	thewizord	[22:05:30] but its in bad shape
+2013-03-14 15:50:29	thewizord	[22:06:06] wrolds slowest boot
+2013-03-14 15:50:29	halosghost	[22:07:26] haha
+2013-03-14 15:50:29	halosghost	[22:07:38] why did you get a Mac?
+2013-03-14 15:50:29	carharttjimmy	[22:09:25] lol thewizord
+2013-03-14 15:50:29	thewizord	[22:09:35] halosghost: i dont know
+2013-03-14 15:50:29	bin_bash	[22:09:35] Anyone else having problems waking from sleep on 3.7.10-1?
+2013-03-14 15:50:29	thewizord	[22:09:37] i dont even remmeber it
+2013-03-14 15:50:29	thewizord	[22:09:43] but it actually turend on and connected to my current wifi
+2013-03-14 15:50:29	halosghost	[22:09:47] should be fun for you thewizord :)
+2013-03-14 15:50:29	halosghost	[22:09:50] bin_bash: nope
+2013-03-14 15:50:29	thewizord	[22:09:50] which means i came to possess it in the last 5 years
+2013-03-14 15:50:29	thewizord	[22:10:01] i'll investigate it more later.
+2013-03-14 15:50:29	bin_bash	[22:10:08] okay. just have to downgrade then
+2013-03-14 15:50:29	carharttjimmy	[22:10:36] i wake from sleep just fine
+2013-03-14 15:50:29	thewizord	[22:10:43] halosghost: like i said it doesnt stir my memory ever using it
+2013-03-14 15:50:29	thewizord	[22:10:51] so it may be something i came to possess briefly played with and put away
+2013-03-14 15:50:29	carharttjimmy	[22:10:52] lol
+2013-03-14 15:50:29	thewizord	[22:10:53] and just found now
+2013-03-14 15:50:29	halosghost	[22:11:04] haha
+2013-03-14 15:50:29	halosghost	[22:11:07] nice
+2013-03-14 15:50:29	thewizord	[22:11:12] i've got a stack of laptops on a shelf in the basemetn laundry area
+2013-03-14 15:50:29	thewizord	[22:11:15] most of which i rmemeber using though
+2013-03-14 15:50:29	thewizord	[22:11:21] my Asus a8js was my favorite
+2013-03-14 15:50:29	thewizord	[22:11:25] but the hinges are faulty
+2013-03-14 15:50:29	carharttjimmy	[22:12:30] thewizord: use the lvds connection and use rhat to connect to a lcd tv
+2013-03-14 15:50:29	carharttjimmy	[22:12:52] usually internally they are using ldvs connects
+2013-03-14 15:50:29	carharttjimmy	[22:13:01] which laptops use
+2013-03-14 15:50:29	woddf2	[22:18:44] s/si/ci/
+2013-03-14 15:50:29	halosghost	[22:19:22] woddf2: :)
+2013-03-14 15:50:29	halosghost	[22:24:35] wow
+2013-03-14 15:50:29	halosghost	[22:24:38] that is a lot nicer
+2013-03-14 15:50:29	thewizord	[22:27:47] carharttjimmy: i dont think I'll bother farming them
+2013-03-14 15:50:29	KaiSforza	[22:29:02] he'd be busy farming your sisters.
+2013-03-14 15:50:29	KaiSforza	[22:29:10] if you know what i mean.
+2013-03-14 15:50:29	thewizord	[22:29:10] hahahahahahhahahaha
+2013-03-14 15:50:29	cyrus1	[22:29:10] lol
+2013-03-14 15:50:29	KaiSforza	[22:29:12] wink wink
+2013-03-14 15:50:29	KaiSforza	[22:29:15] nudge nudge
+2013-03-14 15:50:29	thewizord	[22:29:23] shh he gets butthurt when i talk about hurting the butts of his sisters
+2013-03-14 15:50:29	cyrus1	[22:29:30] oh,
+2013-03-14 15:50:29	cyrus1	[22:29:30] I get it!
+2013-03-14 15:50:29	cyrus1	[22:29:30] he means fucking
+2013-03-14 15:50:29	KaiSforza	[22:29:34] and their hurt
+2013-03-14 15:50:29	cyrus1	[22:29:44] haha, it's funnier now
+2013-03-14 15:50:29	thewizord	[22:30:47] carharttjimmy: your sisters are safe I couldn't bring myself to ever fuck a hillbilly. The thought of cross-breeding a child, even by mistake, with the lackluster IQ of NC blood lines... Yikes
+2013-03-14 15:50:29	KaiSforza	[22:31:01] looooooooool
+2013-03-14 15:50:29	thewizord	[22:32:10] have to be embarrassed every day when the short bus arrives to pick it up for school.
+2013-03-14 15:50:29	 *	thewizord [22:32:38] hides from jimmy'
+2013-03-14 15:50:29	***	Playback Complete.
+2013-03-14 15:50:34		[http://is.gd/eVIMST]
+2013-03-14 15:50:35		[http://is.gd/mY4Uiz]
+2013-03-14 15:50:39	--	Mode #archlinux-offtopic [+Ccnt]
+2013-03-14 15:50:39	--	Channel created on Thu, 29 Mar 2007 00:10:02
+2013-03-14 15:52:45	-->	Mkman (~tiago@188.251.80.41) has joined #archlinux-offtopic
+2013-03-14 15:54:19	Mkman	Hey!
+2013-03-14 15:54:53	bin_bash	hi
+2013-03-14 15:57:04	cyrus1	herro
+2013-03-14 15:57:19	tigrmesh	hi
+2013-03-14 15:57:43	MutantTurkey	The guy across from me in a different deparetment and different cubicle layout (I can't see him)
+2013-03-14 15:57:50	MutantTurkey	is passibe aggressively tapping whenever I tap to music
+2013-03-14 15:58:02	MutantTurkey	it's very strange
+2013-03-14 15:58:22	cyrus1	hmmm. sounds like the perfect opportunity for a drum battle
+2013-03-14 15:58:26	MutantTurkey	one day he might burst and jump over the wall
+2013-03-14 15:58:31	MutantTurkey	it's preposterous
+2013-03-14 15:58:34	KaiSforza	!give MutantTurkey doit
+2013-03-14 15:58:36	phrik	MutantTurkey: Dooooooooo eeeeeeeettttttttt
+2013-03-14 15:58:39	MutantTurkey	if he wants me to stop he should just ask!
+2013-03-14 15:59:03	GI_Jack	lol
+2013-03-14 15:59:48	cyrus1	http://www.youtube.com/watch?v=iYrKYETorM8  <=== it'll be like this, but with tapping.
+2013-03-14 15:59:50	KaiSforza	MutantTurkey: start slowly tapping louder...
+2013-03-14 15:59:53	KaiSforza	and louder...
+2013-03-14 15:59:54		[http://is.gd/fFoQUJ]
+2013-03-14 15:59:55	GI_Jack	cubicles are creepy
+2013-03-14 16:00:09	KaiSforza	!ping
+2013-03-14 16:00:11	phrik	pony
+2013-03-14 16:00:19	numeral	!pong
+2013-03-14 16:00:20	phrik	Fuck off, I'm busy.
+2013-03-14 16:00:24	numeral	:(
+2013-03-14 16:00:26	woddf2	!pang
+2013-03-14 16:00:27	phrik	Fuck you.
+2013-03-14 16:00:29	numeral	!pony
+2013-03-14 16:00:31	phrik	http://lkml.org/lkml/2009/12/11/450
+2013-03-14 16:00:33	KaiSforza	!give numeral píng
+2013-03-14 16:00:35	phrik	numeral: póny
+2013-03-14 16:00:36		[http://is.gd/q0t0Xu]
+2013-03-14 16:00:37	woddf2	!peng
+2013-03-14 16:00:38	phrik	Fuck you more.
+2013-03-14 16:00:45	KaiSforza	!pyng
+2013-03-14 16:00:46	phrik	Ta ma de!
+2013-03-14 16:00:54	woddf2	!pung
+2013-03-14 16:00:55	-->	bug2000 (~bug2000@unaffiliated/bug2000) has joined #archlinux-offtopic
+2013-03-14 16:00:59	numeral	!pungent
+2013-03-14 16:01:32	halosghost	!give KaiSforza dragons
+2013-03-14 16:01:33	phrik	KaiSforza: Careful, my friend. Here, there be dragons.
+2013-03-14 16:01:53	woddf2	"Here be dragons." ---wmii source
+2013-03-14 16:02:24	cyrus1	I always comment my code with "here be dragons".... it's easy to grep for.
+2013-03-14 16:02:32	woddf2	!grab cyrus1
+2013-03-14 16:02:33	<--	GI_Jack (~G_Jack@pdpc/supporter/active/gi-jack) has quit (Read error: Connection reset by peer)
+2013-03-14 16:02:33	phrik	woddf2: Tada!
+2013-03-14 16:02:47	halosghost	I should start doing that
+2013-03-14 16:03:27	-->	GI_Jack (~G_Jack@pdpc/supporter/active/gi-jack) has joined #archlinux-offtopic
+2013-03-14 16:03:31	<--	_eye (~eye@unaffiliated/eye/x-1653358) has quit (Quit: Lost terminal)
+2013-03-14 16:03:35	numeral	cyrus1: my stderr outputs usually look like "really brah, wtf brah"
+2013-03-14 16:03:55	-->	_eye (~eye@unaffiliated/eye/x-1653358) has joined #archlinux-offtopic
+2013-03-14 16:04:01	MutantTurkey	GI_Jack: Ilove my cubicle
+2013-03-14 16:04:08	MutantTurkey	It keeps me from looking at the other annoying co-workers?
+2013-03-14 16:04:35	halosghost	IT shocks me that there are people that use file managers
+2013-03-14 16:04:41	halosghost	s/IT/It/
+2013-03-14 16:04:56	halosghost	coreutils does pretty much everything you could need
+2013-03-14 16:05:14	taotetek	o/
+2013-03-14 16:05:15	<--	_eye (~eye@unaffiliated/eye/x-1653358) has quit (Client Quit)
+2013-03-14 16:05:40	-->	_eye (~eye@unaffiliated/eye/x-1653358) has joined #archlinux-offtopic
+2013-03-14 16:05:46	GI_Jack	cubicles are the death of humanity
+2013-03-14 16:06:20	<--	jemofthewest (~jeremy@d192-24-162-111.nap.wideopenwest.com) has quit (Ping timeout: 255 seconds)
+2013-03-14 16:06:34	-->	Tom^ (~Tom@unaffiliated/tom/x-6084202) has joined #archlinux-offtopic
+2013-03-14 16:06:42	<--	cyrus1 (89c9f282@gateway/web/freenode/ip.137.201.242.130) has quit (Ping timeout: 245 seconds)
+2013-03-14 16:07:21	numeral	halosghost: MY GUI OR MY LIFE
+2013-03-14 16:07:26	halosghost	eww
+2013-03-14 16:07:35	 *	numeral emulates lusers
+2013-03-14 16:07:38	Tom^	heh someone threw his bios pasword locked laptop that bsod on boot in the dumpster , replaced hdd runs fine :> , now the fun begins try to mount and STEAL THE CONTENTS BWAHAHAHA
+2013-03-14 16:08:00	 *	Tom^ hopes for nude pics on blonde girl
+2013-03-14 16:08:19	numeral	why blonde?
+2013-03-14 16:08:24	Tom^	idk
+2013-03-14 16:08:25	numeral	you have something against brunettes? redheads?
+2013-03-14 16:08:27	Tom^	why not?
+2013-03-14 16:08:53	Tom^	it must be a blonde since it was threwn away for such a simple little ntfs malfunctions :P
+2013-03-14 16:09:19	GI_Jack	happy pi day everyone
+2013-03-14 16:09:33	GI_Jack	and aparantly its also "steak and blowjob" day
+2013-03-14 16:09:35	numeral	HAPPY PI DAY
+2013-03-14 16:09:42	Tom^	GI_Jack give me one
+2013-03-14 16:10:11	GI_Jack	what, steak or a blow job?
+2013-03-14 16:10:20	Tom^	take a pick ;)
+2013-03-14 16:10:51	GI_Jack	well, steaks, because your not my type
+2013-03-14 16:11:09	KaiSforza	lol
+2013-03-14 16:14:57	halosghost	reverted to pacman 4.0
+2013-03-14 16:15:01	halosghost	I miss cower too much
+2013-03-14 16:15:03	halosghost	:(
+2013-03-14 16:17:21	<--	Roukoswarf (~Roukoswar@unaffiliated/roukoswarf) has quit (Quit: TTFN)
+2013-03-14 16:17:35	-->	cyrus1 (89c9f282@gateway/web/freenode/ip.137.201.242.130) has joined #archlinux-offtopic
+2013-03-14 16:17:35	-->	tenmilestereo[aw (~tnmlstr@w-70.cust-13055.ip.static.uno.uk.net) has joined #archlinux-offtopic
+2013-03-14 16:17:46	Tom^	halosghost why aint you using it then?
+2013-03-14 16:18:09	halosghost	cower hasn't been updated to function correctly with the libalpm update in pacman 4.1
+2013-03-14 16:18:21	halosghost	believe me, I would have just stuck with the 4.1rc if it had
+2013-03-14 16:18:28	halosghost	but I really like cower
+2013-03-14 16:18:40	halosghost	and I'm lazy
+2013-03-14 16:19:00	<--	herangr (~arch@91.148.20.58) has quit (Quit: WeeChat 0.4.0)
+2013-03-14 16:19:52	<--	Tom^ (~Tom@unaffiliated/tom/x-6084202) has quit (Quit: FBI is raiding the house.)
+2013-03-14 16:20:16	<--	tenmilestereo (~tnmlstr@w-70.cust-13055.ip.static.uno.uk.net) has quit (Ping timeout: 258 seconds)
+2013-03-14 16:23:09	-->	hh4a (~hh4a@84-255-197-79.static.t-2.net) has joined #archlinux-offtopic
+2013-03-14 16:25:43	hh4a	hi
+2013-03-14 16:25:50	KaiSforza	halosghost: what?
+2013-03-14 16:25:56	KaiSforza	halosghost: i'm using cower with 4.1...
+2013-03-14 16:26:09	halosghost	are you using the rc package, or testing?
+2013-03-14 16:26:21	KaiSforza	i'm using pacman-git
+2013-03-14 16:26:24	halosghost	haha
+2013-03-14 16:26:31	halosghost	your own, or the one on the AUR
+2013-03-14 16:26:33	halosghost	?
+2013-03-14 16:26:43	halosghost	because the one on the AUR appears to be 4.0.x
+2013-03-14 16:26:54	KaiSforza	halosghost: you've got to run makepkg on it.
+2013-03-14 16:27:18	halosghost	on cower? I tried to rebuild it multiple times
+2013-03-14 16:27:22	halosghost	the rebuild just failed
+2013-03-14 16:27:35	halosghost	throwing errors about invalid libalpm calls
+2013-03-14 16:27:36	KaiSforza	but to build pacman-git you have to use makepkg from pacman-git.
+2013-03-14 16:27:37	KaiSforza	it will update the pkgver.
+2013-03-14 16:27:46	halosghost	yeah
+2013-03-14 16:27:46	KaiSforza	halosghost: you've got to use cower-git
+2013-03-14 16:27:51	KaiSforza	and use the pacman41 branch.
+2013-03-14 16:27:53	halosghost	I'm using cower-git
+2013-03-14 16:27:55	halosghost	:)
+2013-03-14 16:28:00	halosghost	I'll just wait for 4.1 stable
+2013-03-14 16:28:00	KaiSforza	and use the pacman41 branch.
+2013-03-14 16:28:07	halosghost	I was on the 4.1 rc
+2013-03-14 16:28:41	KaiSforza	halosghost: falconindy's not a noob, he knows that libalpm changed and he made a branch for pacman 4.1
+2013-03-14 16:28:47	KaiSforza	called pacma41.
+2013-03-14 16:28:54	halosghost	…
+2013-03-14 16:29:04	halosghost	oh, you mean a branch of cower?
+2013-03-14 16:29:09	KaiSforza	yeeeees.
+2013-03-14 16:30:12	KaiSforza	halosghost: if you're using pacman 4.1, i have a pkgbuild for cower-git on my git repo
+2013-03-14 16:30:18	KaiSforza	that you can grab if you want.
+2013-03-14 16:30:21	halosghost	eh
+2013-03-14 16:30:28	halosghost	I already reverted to 4.0.x
+2013-03-14 16:30:36	KaiSforza	laaaaaame.
+2013-03-14 16:31:37	opt1mus	pacman-4.1 come to daddy
+2013-03-14 16:32:18	GI_Jack	use packer
+2013-03-14 16:32:26	opt1mus	D:
+2013-03-14 16:33:11	halosghost	GI_Jack: get out
+2013-03-14 16:33:37	<--	jryan (~jryan@inet-hqmc02-o.oracle.com) has quit (Quit: WeeChat 0.4.0)
+2013-03-14 16:34:38	halosghost	Mixing spaces and tabs in config files annoys me to no end
+2013-03-14 16:34:55	GI_Jack	no u7
+2013-03-14 16:35:28	hh4a	hi
+2013-03-14 16:35:48	-->	Nisstyre-laptop (~yours@oftn/member/Nisstyre) has joined #archlinux-offtopic
+2013-03-14 16:35:52	halosghost	?
+2013-03-14 16:36:33	hh4a	hi
+2013-03-14 16:36:38	hh4a	i said fuckin hi
+2013-03-14 16:36:42	hh4a	damn you all
+2013-03-14 16:36:45	hh4a	...
+2013-03-14 16:37:13	dunz0r	All you damn
+2013-03-14 16:37:22	cyrus1	you all damn
+2013-03-14 16:37:44	GI_Jack	hai
+2013-03-14 16:37:46	hh4a	hi
+2013-03-14 16:40:10	halosghost	hai

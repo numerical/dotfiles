@@ -456,3 +456,196 @@
 2013-03-14 12:11:33	-->	hh4a (~hh4a@84-255-197-79.static.t-2.net) has joined #archlinux-women
 2013-03-14 12:12:08	-->	camilasan (~camilasan@91-64-80-97-dynip.superkabel.de) has joined #archlinux-women
 2013-03-14 12:19:56	<--	camilasan (~camilasan@91-64-80-97-dynip.superkabel.de) has quit (Ping timeout: 260 seconds)
+2013-03-14 12:28:43	KaiSforza	halosghost: put the ./configure, and make in the build function.
+2013-03-14 12:28:53	halosghost	KaiSforza: mkay
+2013-03-14 12:28:58	KaiSforza	halosghost: only the `make install` needs to be in the package func.
+2013-03-14 12:28:59	hh4a	KaiSforza: o/
+2013-03-14 12:29:04	KaiSforza	hh4a: \o
+2013-03-14 12:29:12	hh4a	KaiSforza: how are you doing
+2013-03-14 12:29:21	KaiSforza	doing good. just woke up.
+2013-03-14 12:29:25	KaiSforza	yourself?
+2013-03-14 12:30:27	hh4a	sobering up hehe
+2013-03-14 12:30:49	halosghost	KaiSforza: build still fails though; fsckd and I are in agreement that it appears to be a missing dependency
+2013-03-14 12:31:02	KaiSforza	halosghost: hmm.
+2013-03-14 12:31:47	fsckd	that's one guess
+2013-03-14 12:32:03	fsckd	my other guess is it's too old and wayland has moved on
+2013-03-14 12:32:21	fsckd	a third guess is it never worked in the first place
+2013-03-14 12:32:37	fsckd	proposed solution, contact upstream dev and yell at him
+2013-03-14 12:32:40	KaiSforza	woah, woah.
+2013-03-14 12:32:44	KaiSforza	woah.
+2013-03-14 12:32:46	halosghost	?
+2013-03-14 12:32:48	KaiSforza	that looks like a dwm config file.
+2013-03-14 12:33:02	fsckd	it's a port of a fork of dwm
+2013-03-14 12:33:28	KaiSforza	nice
+2013-03-14 12:33:44	halosghost	haha
+2013-03-14 12:34:16	fsckd	this is the house that jack built
+2013-03-14 12:37:17	hh4a	hehe
+2013-03-14 12:38:43	fsckd	happy π day XD
+2013-03-14 12:39:05	halosghost	mmmmm, π
+2013-03-14 12:43:00	hh4a	yay
+2013-03-14 12:50:30	-->	camilasan (~camilasan@91-64-80-97-dynip.superkabel.de) has joined #archlinux-women
+2013-03-14 12:53:26	<--	hh4a (~hh4a@84-255-197-79.static.t-2.net) has quit (Quit: going away and always astray)
+2013-03-14 13:06:56	KaiSforza	sub-10s boot times.
+2013-03-14 13:06:58	KaiSforza	aaaah.
+2013-03-14 13:14:18	-->	lynn (~LynnLove@scn-202-9.airstudent.imsa.edu) has joined #archlinux-women
+2013-03-14 13:14:23	CalimeroTeknik	only on ssd's if using systemd
+2013-03-14 13:14:36	KaiSforza	yuuuup.
+2013-03-14 13:14:40	KaiSforza	:>
+2013-03-14 13:15:34	<--	lynn (~LynnLove@scn-202-9.airstudent.imsa.edu) has left #archlinux-women
+2013-03-14 13:15:48	CalimeroTeknik	otherwise you could have under 10s boots, but not using systemd
+2013-03-14 13:16:11	-->	LynnLove (~LynnLove@scn-202-9.airstudent.imsa.edu) has joined #archlinux-women
+2013-03-14 13:16:38	gtmanfred	CalimeroTeknik: pfft, i had sub 10 seconds with a hdd
+2013-03-14 13:16:54	gtmanfred	i got it all the way down to 7 seconds and still started everything
+2013-03-14 13:17:42	CalimeroTeknik	hum, I hacked my boot scripts a lot :>
+2013-03-14 13:17:49	KaiSforza	gtmanfred: including firmware?
+2013-03-14 13:17:54	gtmanfred	no not including firmware
+2013-03-14 13:17:58	KaiSforza	yeah.
+2013-03-14 13:17:59	gtmanfred	are you crazy?
+2013-03-14 13:18:04	CalimeroTeknik	firmware?
+2013-03-14 13:18:05	KaiSforza	exactly.
+2013-03-14 13:18:07	KaiSforza	10 seconds including firmware.
+2013-03-14 13:18:15	gtmanfred	KaiSforza: pfft
+2013-03-14 13:18:16	CalimeroTeknik	why so slow?
+2013-03-14 13:18:20	KaiSforza	lol
+2013-03-14 13:18:25	KaiSforza	3 seconds without it
+2013-03-14 13:18:29	KaiSforza	XD
+2013-03-14 13:18:43	gtmanfred	Startup finished in 331ms 2us (kernel) + 2s 654ms 721us (initrd) + 838ms 250us (userspace) = 3s 823ms 973us
+2013-03-14 13:18:54	gtmanfred	mine isn't loading the firmware stuff anymore
+2013-03-14 13:19:24	KaiSforza	obviously you failed at something.
+2013-03-14 13:19:46	CalimeroTeknik	custom kernel?
+2013-03-14 13:20:01	KaiSforza	the arch kernel should work fine...
+2013-03-14 13:20:02	CalimeroTeknik	wait no, you wouldn't have an initrd
+2013-03-14 13:20:09	KaiSforza	at least it did last time i did it.
+2013-03-14 13:20:17	KaiSforza	CalimeroTeknik: i have a custom kernel with an initrd...
+2013-03-14 13:20:27	gtmanfred	KaiSforza: it isn't :(
+2013-03-14 13:20:30	KaiSforza	Startup finished in 5s 274ms 102us (firmware) + 1s 187ms 483us (loader) + 244ms 385us (kernel) + 652ms 26us (initrd) + 1s 665ms 774us (userspace) = 9s 23ms 770us
+2013-03-14 13:20:35	CalimeroTeknik	complicated partitioning scheme?
+2013-03-14 13:20:56	CalimeroTeknik	where do you have that startup finished thing?
+2013-03-14 13:21:00	KaiSforza	CalimeroTeknik: no, very simple one, actually. I just don't see a reason not to have one.
+2013-03-14 13:21:07	KaiSforza	CalimeroTeknik: systemd-analyze
+2013-03-14 13:21:13	CalimeroTeknik	reason? speed!
+2013-03-14 13:21:40	KaiSforza	CalimeroTeknik: that initrd startup was one of the slower initrds i've had in a long time.
+2013-03-14 13:21:45	KaiSforza	last time it was <300ms.
+2013-03-14 13:22:22	KaiSforza	but i've had a good 3 day uptime.
+2013-03-14 13:22:26	KaiSforza	so i'm not terribly worried.
+2013-03-14 13:23:27	CalimeroTeknik	hum, startup finished, until what?
+2013-03-14 13:23:31	KaiSforza	i was just talking about systemd to some of the people at the linux administration class the other day.
+2013-03-14 13:23:46	KaiSforza	CalimeroTeknik: until all of your enabled services and their dependencies are started
+2013-03-14 13:24:07	CalimeroTeknik	it pretends to start in 12secs but it does in fact have 28s of uptime when my conky appears
+2013-03-14 13:24:49	KaiSforza	hmm. that's odd. sounds like conky being slow.
+2013-03-14 13:25:04	KaiSforza	do you have conky as a systemd user unit?
+2013-03-14 13:25:13	gtmanfred	i do
+2013-03-14 13:25:20	KaiSforza	gtmanfred: i don't. because conky.
+2013-03-14 13:25:23	KaiSforza	ew conky.
+2013-03-14 13:26:29	CalimeroTeknik	er, I have this that runs the X session: http://sprunge.us/UFhL
+2013-03-14 13:26:56	KaiSforza	ah
+2013-03-14 13:27:14	CalimeroTeknik	made it with my little pawns
+2013-03-14 13:27:16	gtmanfred	CalimeroTeknik: eww...
+2013-03-14 13:27:22	KaiSforza	systemctl status user@<your username>.service
+2013-03-14 13:27:25	gtmanfred	no pam authentication
+2013-03-14 13:27:40	CalimeroTeknik	well, if I add it, it doesn't work. if I don't, it does
+2013-03-14 13:27:42	CalimeroTeknik	don't ask me
+2013-03-14 13:27:52	gtmanfred	add what?
+2013-03-14 13:27:53	CalimeroTeknik	it's login doing the pam stuff.
+2013-03-14 13:27:56	CalimeroTeknik	don't worry
+2013-03-14 13:28:12	CalimeroTeknik	I struggled a bit to get the pam auth right
+2013-03-14 13:28:13	<--	LynnLove (~LynnLove@scn-202-9.airstudent.imsa.edu) has quit (Quit: leaving)
+2013-03-14 13:28:33	gtmanfred	wat... where is it doing pam authentication?
+2013-03-14 13:28:45	CalimeroTeknik	at the line ExecStart
+2013-03-14 13:29:00	KaiSforza	http://ix.io/4Jh
+2013-03-14 13:29:02	gtmanfred	-p ?
+2013-03-14 13:29:22	gtmanfred	CalimeroTeknik: PAMName=login
+2013-03-14 13:29:25	CalimeroTeknik	er, no, just the fact that it logs in
+2013-03-14 13:29:41	CalimeroTeknik	login does the work
+2013-03-14 13:30:18	gtmanfred	... ok ... that still wat... ok
+2013-03-14 13:30:54	CalimeroTeknik	I tried also to let systemd do the pam auth, and just run startx directly
+2013-03-14 15:50:29	-->	numeral (~numeral@198.23.228.15) has joined #archlinux-women
+2013-03-14 15:50:29	--	Topic for #archlinux-women is "Arch Linux Chix FTW: Join us on http://redmine.archwomen.org/ !  Project site is http://archwomen.org . IRC Rules: http://bit.ly/13rVGg5 <|||> Fourteenth IRC Meeting: Sunday April 7th at 16:00 UTC. See you there!  Agenda: http://bit.ly/YIGZ0B <|||> If you're having a problem with someone, !awops <|||> The first PKGBUILD class is Sunday March 31st 16:00 UTC."
+2013-03-14 15:50:29	--	Topic set by fsckd on Wed, 13 Mar 2013 14:57:36
+2013-03-14 15:50:29	--	Nicks #archlinux-women: [+meskarune +tigrmesh AbigailBuccaneer alyx_ alzeih Anuska CalimeroTeknik carharttjimmy Coolgeek CryptoNaut Defaultti fsckd gtmanfred halosghost hawkgirl ioni jrex jy2wong KaiSforza KylieBrooks liara maxine MrElendig Nisstyre numeral oddmunds phrik QuantumParadox Sornaensis sudokode terra-and-luna VunKruz XReaper yardena]
+2013-03-14 15:50:29	--	Channel #archlinux-women: 34 nicks (0 ops, 0 halfops, 2 voices, 32 normals)
+2013-03-14 15:50:29	***	Buffer Playback...
+2013-03-14 15:50:29	KaiSforza	[21:02:54] gtmanfred: we should get people with -git packages to have the git clones be bare and to $SRCDEST, not $srcdir.
+2013-03-14 15:50:29	gtmanfred	[21:03:16] why
+2013-03-14 15:50:29	gtmanfred	[21:03:26] send a patch to abs
+2013-03-14 15:50:29	gtmanfred	[21:03:38] also send a patch to abs for -darc
+2013-03-14 15:50:29	gtmanfred	[21:03:39] s
+2013-03-14 15:50:29	gtmanfred	[21:03:41] removing the --partial
+2013-03-14 15:50:29	gtmanfred	[21:04:07] KaiSforza: it is all changing in a few weeks
+2013-03-14 15:50:29	gtmanfred	[21:04:13] we can yell at them all then 
+2013-03-14 15:50:29	KaiSforza	[21:04:14] i know
+2013-03-14 15:50:29	KaiSforza	[21:04:26] but this would ease the transition...and make it not pacman 4.1's fault.
+2013-03-14 15:50:29	KaiSforza	[21:04:29] lol
+2013-03-14 15:50:29	gtmanfred	[21:04:30] i am going to do a massive sweep through the aur commenting them
+2013-03-14 15:50:29	gtmanfred	[21:04:56] finding all the ones that have _gitroot in them
+2013-03-14 15:50:29	KaiSforza	[21:05:53] heh
+2013-03-14 15:50:29	gtmanfred	[21:06:18] maybe i should just start nuking stuff manually so people don't get notifications
+2013-03-14 15:50:29	gtmanfred	[21:06:21] sounds like
+2013-03-14 15:50:29	gtmanfred	[21:06:24] a great idea
+2013-03-14 15:50:29	KaiSforza	[21:06:27] i just adopted the deluge-stable package.
+2013-03-14 15:50:29	gtmanfred	[21:06:32] lolwat
+2013-03-14 15:50:29	gtmanfred	[21:06:36] !aurpkg deluge-stable
+2013-03-14 15:50:29	phrik	[21:06:37] https://aur.archlinux.org/packages/deluge-stable
+2013-03-14 15:50:29	KaiSforza	[21:06:46] it should be deluge-stable-git
+2013-03-14 15:50:29	KaiSforza	[21:06:56] but i'm going to wait till i can use 4.1 syntax to replace it.
+2013-03-14 15:50:29	gtmanfred	[21:06:57] it also should just be deluge-git
+2013-03-14 15:50:29	KaiSforza	[21:07:02] no
+2013-03-14 15:50:29	gtmanfred	[21:07:03] there is no such thing as -stable
+2013-03-14 15:50:29	KaiSforza	[21:07:05] there is already deluge-git
+2013-03-14 15:50:29	KaiSforza	[21:07:11] deluge has 2 branches
+2013-03-14 15:50:29	gtmanfred	[21:07:14] AHH
+2013-03-14 15:50:29	KaiSforza	[21:07:16] master and '1.3-stable'
+2013-03-14 15:50:29	gtmanfred	[21:07:16] ok 
+2013-03-14 15:50:29	gtmanfred	[21:07:31] meh
+2013-03-14 15:50:29	KaiSforza	[21:08:16] i figure that if i can do a good enough job, i can ask the deluge-git maintainer if i can take over that package
+2013-03-14 15:50:29	gtmanfred	[21:08:48] http://imgur.com/gallery/mjHg108
+2013-03-14 15:50:29	phrik	[21:08:49] Title: Whaaaaaaaaaaat? - Imgur (at imgur.com)
+2013-03-14 15:50:29	gtmanfred	[21:08:51] yes please
+2013-03-14 15:50:29	KaiSforza	[21:09:12] dude
+2013-03-14 15:50:29	KaiSforza	[21:09:35] that's kind of awesome.
+2013-03-14 15:50:29	***	Playback Complete.
+2013-03-14 15:50:35		[http://is.gd/A2GdVO]
+2013-03-14 15:50:35		[http://is.gd/pU3gbL]
+2013-03-14 15:50:41	--	Mode #archlinux-women [+Cnt]
+2013-03-14 15:50:41	--	Channel created on Fri, 17 Feb 2012 12:52:06
+2013-03-14 16:10:43	KaiSforza	!ping
+2013-03-14 16:10:45	phrik	pony
+2013-03-14 16:11:07	yardena	so basically 99% of software vulnerabilities would not happen if our filesystems were like git repos
+2013-03-14 16:11:28	CalimeroTeknik	you mean hammerFS or nilfs2
+2013-03-14 16:11:34	CalimeroTeknik	or zfs
+2013-03-14 16:11:41	yardena	like if i could be sure at a glance that everything on my webserver filesystem was the way i left it before
+2013-03-14 16:11:55	yardena	then i literally would not care if there was a rootkit or whatever
+2013-03-14 16:11:58	KaiSforza	so make your whole filesystem a git repo.l
+2013-03-14 16:12:11	KaiSforza	someone should develop a gitfs.
+2013-03-14 16:12:16	CalimeroTeknik	/etc in a git repo is good
+2013-03-14 16:12:21	CalimeroTeknik	KaiSforza, that's called hammerFS
+2013-03-14 16:12:29	CalimeroTeknik	and is native in dragonfly bsd
+2013-03-14 16:12:38	KaiSforza	i see
+2013-03-14 16:12:43	yardena	i mean it's another thing when you have users with passwords and emails
+2013-03-14 16:13:05	yardena	but then again, if the REST of their software ecosystems were less shitty
+2013-03-14 16:13:11	CalimeroTeknik	on linux you can use nilfs2, but I'm told it's less complete
+2013-03-14 16:13:22	CalimeroTeknik	rest?
+2013-03-14 16:13:23	yardena	i.e. less spam, equally hardened systems everywhere else
+2013-03-14 16:13:27	yardena	then that wouldn't matter so much either
+2013-03-14 16:13:42	CalimeroTeknik	http://java-0day.com/ 7 days dammit, new record
+2013-03-14 16:13:43	phrik	Title: Java 0day countdown (at java-0day.com)
+2013-03-14 16:13:55	yardena	like all we want our computers to be are appliances that answer simple questions
+2013-03-14 16:14:33	yardena	like we spend all this effort worrying about whether the toaster is really laying dinosaur eggs somewhere in the back
+2013-03-14 16:14:51	yardena	it's such a cesspool
+2013-03-14 16:15:23	yardena	on the other hand, the filesystem itself and userland tools could easily be compromised :P
+2013-03-14 16:15:29	yardena	lol never mind
+2013-03-14 16:17:21	halosghost	!java-0day
+2013-03-14 16:17:21	yardena	now i'm remembering cory doctorow's point http://www.youtube.com/watch?v=gbYXBJOFgeI
+2013-03-14 16:17:21	phrik	Title: Cory Doctorow: "The Coming Civil War over General-purpose Computing", Talks at Google - YouTube (at www.youtube.com)
+2013-03-14 16:17:21	yardena	maybe me trying to keep spambots off my servers is the same thing as apple trying to keep pirated movies off their customers' laptops
+2013-03-14 16:17:21	phrik	http://istherejava0day.com/
+2013-03-14 16:17:21	yardena	sorry i'm rambling :3
+2013-03-14 16:17:27		[http://is.gd/nuvJ8Z]
+2013-03-14 16:23:09	-->	hh4a (~hh4a@84-255-197-79.static.t-2.net) has joined #archlinux-women
+2013-03-14 16:25:40	hh4a	hi
+2013-03-14 16:38:14	KaiSforza	\o
+2013-03-14 16:38:35	hh4a	sup kai
+2013-03-14 16:39:19	KaiSforza	nm.
+2013-03-14 16:39:19	KaiSforza	watching the video that yardena linked
+2013-03-14 16:40:05	hh4a	whoa
+2013-03-14 16:40:10	hh4a	post here

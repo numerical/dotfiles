@@ -1,15 +1,15 @@
-[2013-03-14 11:02:40] WeeChat 0.4.0 (compiled on Jan 20 2013 12:34:26)
-[2013-03-14 11:02:40] Reading configuration file weechat.conf
-[2013-03-14 11:02:40] Reading configuration file plugins.conf
-[2013-03-14 11:02:40] Reading configuration file xfer.conf
-[2013-03-14 11:02:40] Reading configuration file script.conf
-[2013-03-14 11:02:40] Reading configuration file aspell.conf
-[2013-03-14 11:02:40] Reading configuration file alias.conf
-[2013-03-14 11:02:40] Reading configuration file irc.conf
-[2013-03-14 11:02:40] irc: connecting to server pic.kles.us/4444...
-[2013-03-14 11:02:40] Reading configuration file iset.conf
-[2013-03-14 11:02:40] Reading configuration file buffers.conf
-[2013-03-14 11:02:41] Reading configuration file logger.conf
-[2013-03-14 11:02:41] Reading configuration file charset.conf
-[2013-03-14 11:02:41] Reading configuration file relay.conf
-[2013-03-14 11:02:41] Reading configuration file rmodifier.conf
+[2013-03-14 15:50:22] WeeChat 0.4.0 (compiled on Jan 20 2013 12:34:26)
+[2013-03-14 15:50:22] Reading configuration file weechat.conf
+[2013-03-14 15:50:22] Reading configuration file plugins.conf
+[2013-03-14 15:50:22] Reading configuration file xfer.conf
+[2013-03-14 15:50:22] Reading configuration file script.conf
+[2013-03-14 15:50:22] Reading configuration file aspell.conf
+[2013-03-14 15:50:22] Reading configuration file alias.conf
+[2013-03-14 15:50:22] Reading configuration file irc.conf
+[2013-03-14 15:50:22] irc: connecting to server pic.kles.us/4444...
+[2013-03-14 15:50:22] Reading configuration file iset.conf
+[2013-03-14 15:50:22] Reading configuration file buffers.conf
+[2013-03-14 15:50:22] Reading configuration file logger.conf
+[2013-03-14 15:50:22] Reading configuration file charset.conf
+[2013-03-14 15:50:23] Reading configuration file relay.conf
+[2013-03-14 15:50:23] Reading configuration file rmodifier.conf

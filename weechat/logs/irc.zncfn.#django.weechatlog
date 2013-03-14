@@ -671,3 +671,415 @@
 2013-03-14 12:23:36	-->	arturrro (~Artur@94.42.173.57) has joined #django
 2013-03-14 12:24:08	<--	optixx (~optixx@optixx.org) has quit (Ping timeout: 252 seconds)
 2013-03-14 12:24:14	<--	arturrro (~Artur@94.42.173.57) has quit (Read error: Connection reset by peer)
+2013-03-14 12:25:27	<--	jcarbaugh (~jcarbaugh@coronal-mass-ejection.sunlightfoundation.com) has quit
+2013-03-14 12:26:01	-->	mihasya (~mihasya@184.23.0.252) has joined #django
+2013-03-14 12:26:22	iiie	tbaxter: starting with cron is a good simple option
+2013-03-14 12:26:24	-->	optixx (~optixx@optixx.org) has joined #django
+2013-03-14 12:26:48	-->	kushal (kdas@fedora/kushal) has joined #django
+2013-03-14 12:27:14	tbaxter	that's where I'm leaning, as I don't have a problem with cron, but was wondering if there were "nicer" options.
+2013-03-14 12:27:30	--	radez is now known as radez_g0n3
+2013-03-14 12:28:09	-->	bojo (~bojo@93-141-68-147.adsl.net.t-com.hr) has joined #django
+2013-03-14 12:28:28	<--	rudasn (~nicolas@82.102.99.155) has quit (Ping timeout: 240 seconds)
+2013-03-14 12:32:27	<--	aberrant (~aberrant@unaffiliated/aberrant) has quit (Quit: aberrant)
+2013-03-14 12:33:10	-->	mezner (~mezner@67.211.2.160) has joined #django
+2013-03-14 12:34:22	-->	rudasn (~nicolas@82.102.99.155) has joined #django
+2013-03-14 12:34:42	<--	ironfroggy (~ironfrogg@ec2-50-16-218-141.compute-1.amazonaws.com) has quit (Excess Flood)
+2013-03-14 12:36:40	<--	craigkerstiens (~craigkers@c-76-126-162-38.hsd1.ca.comcast.net) has quit (Quit: Computer has gone to sleep.)
+2013-03-14 12:37:50	<--	RuslanPopov (~rad@ppp-188-65-14-123-bras2.istra.ru) has quit (Ping timeout: 272 seconds)
+2013-03-14 12:38:23	<--	dirn (~dirn@199.108.68.1) has quit (Remote host closed the connection)
+2013-03-14 12:38:34	henryk_	which IDE do you use??
+2013-03-14 12:39:48	-->	dirn (~dirn@199.108.68.1) has joined #django
+2013-03-14 12:39:49	<--	dono (~dono@h221.156.216.66.static.ip.windstream.net) has quit (Quit: dono)
+2013-03-14 12:41:35	-->	ironfroggy (~ironfrogg@ec2-50-16-218-141.compute-1.amazonaws.com) has joined #django
+2013-03-14 12:41:40	-->	Mahonar (keekekke@151.75.251.209) has joined #django
+2013-03-14 12:42:06	Jygga	tbaxter: if you have several tasks, using an existing solution to kick off all of them with a single cron is "nicer" than having several crons. Another thing to keep in mind is "what if my task fails", which is where celery allows you to handle different requirements "nicely".
+2013-03-14 12:42:26	-->	baconbeckons (~baconbeck@unaffiliated/baconbeckons) has joined #django
+2013-03-14 12:42:41	<--	fle (~fle@lgp44-3-82-235-70-135.fbx.proxad.net) has quit (Remote host closed the connection)
+2013-03-14 12:42:46	jfw	tbaxter: also, using cron encourages you to write your jobs as management commands, which just makes it that much easier to run manually
+2013-03-14 12:42:46	-->	bmispelon (~baptiste@catv-176-63-106-163.catv.broadband.hu) has joined #django
+2013-03-14 12:42:46	<--	bmispelon (~baptiste@catv-176-63-106-163.catv.broadband.hu) has quit (Client Quit)
+2013-03-14 12:42:47	<--	revolunet (~juju@212-198-228-11.rev.numericable.fr) has quit (Quit: revolunet)
+2013-03-14 12:42:50	<--	Rozza (~Rozza@37.157.32.150) has quit (Remote host closed the connection)
+2013-03-14 12:42:57	-->	riseriyo (~riseriyo@108-83-1-92.lightspeed.sndgca.sbcglobal.net) has joined #django
+2013-03-14 12:43:06	-->	bmispelon (~baptiste@catv-176-63-106-163.catv.broadband.hu) has joined #django
+2013-03-14 12:47:59	-->	tdelam (~tdelam@216.223.125.162) has joined #django
+2013-03-14 12:48:06	-->	whyzgeek (~whyzgeek@37.235.54.188) has joined #django
+2013-03-14 12:48:41	<--	rudasn (~nicolas@82.102.99.155) has quit (Ping timeout: 258 seconds)
+2013-03-14 12:49:27	<--	EvilDMP (~daniele@campus-dip-pool11.dip.cf.ac.uk) has quit (Quit: EvilDMP)
+2013-03-14 12:52:31	<--	zoumpis (~quassel@host109-145-27-112.range109-145.btcentralplus.com) has quit (Remote host closed the connection)
+2013-03-14 12:54:29	-->	rudasn (~nicolas@82.102.99.155) has joined #django
+2013-03-14 12:54:59	-->	honi (~honi@200-63-165-93.static.speedy.com.ar) has joined #django
+2013-03-14 12:55:36	-->	andrewjsledge (~andrew@24-178-112-134.static.sghl.ga.charter.com) has joined #django
+2013-03-14 12:55:47	-->	iapain_ (~iapain@89-67-197-248.dynamic.chello.pl) has joined #django
+2013-03-14 12:56:19	-->	tensory (~tensory@75-149-58-169-SFBA.hfc.comcastbusiness.net) has joined #django
+2013-03-14 12:56:57	-->	cewing (~cewing@71-35-151-107.tukw.qwest.net) has joined #django
+2013-03-14 12:57:16	-->	ajhansen (~Thunderbi@93-161-101-117-dynamic.dk.customer.tdc.net) has joined #django
+2013-03-14 12:57:35	<--	trang_ (~trang@rrcs-184-74-190-214.nyc.biz.rr.com) has quit (Quit: trang_)
+2013-03-14 12:57:50	-->	jdunck (~jdunck@django/committer/jdunck) has joined #django
+2013-03-14 12:58:28	<--	dan00b_river (dan00b_riv@123.201.36.240) has quit (Ping timeout: 240 seconds)
+2013-03-14 12:59:45	<--	jSanp (~Thunderbi@fwcirb.irisnet.be) has quit (Quit: jSanp)
+2013-03-14 12:59:58	-->	jSanp (~Thunderbi@fwcirb.irisnet.be) has joined #django
+2013-03-14 13:00:01	<--	jSanp (~Thunderbi@fwcirb.irisnet.be) has quit (Client Quit)
+2013-03-14 13:00:27	<--	kenbolton (~kenbolton@ool-45757d25.dyn.optonline.net) has quit (Quit: kenbolton)
+2013-03-14 13:00:51	<--	MicahCarrick (~MicahCarr@173-164-68-213-Oregon.hfc.comcastbusiness.net) has quit (Ping timeout: 245 seconds)
+2013-03-14 13:01:08	<--	jjmalina (~jjmalina@NYUFGA-WLESSAUTHCLIENTS-07.NATPOOL.NYU.EDU) has quit (Quit: jjmalina)
+2013-03-14 13:01:17	<--	markvl (~anonymous@D57D6B92.static.ziggozakelijk.nl) has quit (Quit: markvl)
+2013-03-14 13:02:00	-->	kenbolton (~kenbolton@ool-321d15c2.dyn.optonline.net) has joined #django
+2013-03-14 13:02:08	-->	Chubbs (~Chubbs@76.9.195.37) has joined #django
+2013-03-14 13:02:08	<--	maZrtr (d4cb008a@gateway/web/freenode/ip.212.203.0.138) has quit (Ping timeout: 245 seconds)
+2013-03-14 13:02:46	<--	chrislkeller (~chrislkel@63.237.174.130) has quit (Quit: Leaving.)
+2013-03-14 13:03:22	-->	dan00b_river (dan00b_riv@219.91.209.59) has joined #django
+2013-03-14 13:03:23	Chubbs	I have two types of admin users in my django project, and I want to be able to filter the content provided to the admin views based on their user group, can anyone point me in the right direction?
+2013-03-14 13:03:55	<--	kezabelle (~Adium@78.154.123.162) has quit (Quit: Leaving.)
+2013-03-14 13:04:03	dan00b_river	Are you identifying the kind of user by group? by permission?
+2013-03-14 13:04:08	<--	rudasn (~nicolas@82.102.99.155) has quit (Ping timeout: 246 seconds)
+2013-03-14 13:04:10	<--	scott_w (~quassel@93-97-174-114.zone5.bethere.co.uk) has quit (Remote host closed the connection)
+2013-03-14 13:04:11	<--	optixx (~optixx@optixx.org) has quit (Ping timeout: 245 seconds)
+2013-03-14 13:04:40	-->	rudasn (~nicolas@82.102.99.155) has joined #django
+2013-03-14 13:04:59	-->	MicahCarrick (~MicahCarr@173-164-68-213-Oregon.hfc.comcastbusiness.net) has joined #django
+2013-03-14 13:05:23	Chubbs	By group
+2013-03-14 13:05:36	-->	rogi (~rogi@70-36-226-155.dsl.static.sonic.net) has joined #django
+2013-03-14 13:06:18	Chubbs	basically I have a super-user who should be able to see and edit all content, and a content admin, who I only want to be able to see content posted by certain users
+2013-03-14 13:06:24	-->	optixx (~optixx@optixx.org) has joined #django
+2013-03-14 13:06:26	dan00b_river	second question. the object_list that you want to filter, does it contain a foreign key reference to the user?
+2013-03-14 13:06:29	<--	kenbolton (~kenbolton@ool-321d15c2.dyn.optonline.net) has quit (Ping timeout: 252 seconds)
+2013-03-14 13:06:30	Chubbs	I just dont see any group or user based filtering in ModelAdmin
+2013-03-14 13:06:47	Chubbs	yes
+2013-03-14 13:07:06	<--	hyperair (~hyperair@ubuntu/member/hyperair) has quit (Ping timeout: 245 seconds)
+2013-03-14 13:07:21	dan00b_river	Chubbs, you can override the ModelManager class and define any kind of queryset. Check this out: http://hunterford.me/django-custom-model-manager-chaining/
+2013-03-14 13:07:26		[http://is.gd/CGtD21]
+2013-03-14 13:07:53	<--	zatan (~zatan@78-105-98-58.zone3.bethere.co.uk) has quit (Remote host closed the connection)
+2013-03-14 13:08:00	tbaxter	Chubbs: your superuser can see everything in the admin. The content admins will only see things they have permissions to see (based on the group permissions). However, those permissions are app-level. Permissions for items in the object_list is another problem.
+2013-03-14 13:08:02	-->	hyperair (~hyperair@ubuntu/member/hyperair) has joined #django
+2013-03-14 13:08:07	jfw	Chubbs: it might be easier to define the permissions that you're actually interested in, and give them to that group: https://docs.djangoproject.com/en/1.4/topics/auth/#permissions
+2013-03-14 13:08:12		[http://is.gd/dew8D4]
+2013-03-14 13:08:18	-->	gasbakid (~gasbakid@41.96.18.133) has joined #django
+2013-03-14 13:08:34	-->	voidus (~Adium@wikipedia/voidus) has joined #django
+2013-03-14 13:08:35	<--	gasbakid (~gasbakid@41.96.18.133) has quit (Read error: Connection reset by peer)
+2013-03-14 13:09:01	jfw	oh, i'm sorry: i misread it as a certain *type* of content, not certain content
+2013-03-14 13:09:34	Chubbs	Yeah I have permission based filters in effect already, but now I want to filter the object list as well
+2013-03-14 13:09:37	-->	gasbakid (~gasbakid@41.96.18.133) has joined #django
+2013-03-14 13:09:57	Chubbs	dan00b_river: thanks Ill check that out
+2013-03-14 13:09:58	<--	jumoit (~so@116.230.235.50) has left #django
+2013-03-14 13:10:20	jfw	you might want to look into one of these, then: https://www.djangopackages.com/grids/g/perms/
+2013-03-14 13:10:25		[http://is.gd/zaukg1]
+2013-03-14 13:10:54	jfw	what dan00b_river said is definitely correct, but you might end up making more work for yourself if you keep adding things like that
+2013-03-14 13:11:10	dan00b_river	Alternately, if you don;t want to override ModelManager, you can also use the follow-through relation in the filter, i.e. .filter(user__groups='group_name')
+2013-03-14 13:11:41	-->	markalanevans (~markalane@71-95-209-242.static.mtpk.ca.charter.com) has joined #django
+2013-03-14 13:11:56	<--	markalanevans (~markalane@71-95-209-242.static.mtpk.ca.charter.com) has quit (Remote host closed the connection)
+2013-03-14 13:12:15	-->	BlueDreams (~matt@24-205-95-34.dhcp.psdn.ca.charter.com) has joined #django
+2013-03-14 13:12:21	-->	koenb (~Thunderbi@d54C29B1D.access.telenet.be) has joined #django
+2013-03-14 13:12:24	<--	koenb (~Thunderbi@d54C29B1D.access.telenet.be) has quit (Client Quit)
+2013-03-14 13:12:28	-->	markalanevans (~markalane@71-95-209-242.static.mtpk.ca.charter.com) has joined #django
+2013-03-14 13:12:34	<--	ovnicraft (~ovnicraft@mail.azuay.gob.ec) has quit (Read error: Connection reset by peer)
+2013-03-14 13:12:56	<--	krak3n` (~krak3n`@109.231.202.66) has quit (Remote host closed the connection)
+2013-03-14 13:12:57	dan00b_river	the user in the above example, would actually be whatever the attribute name is for the object-user foreign key..
+2013-03-14 13:13:05	<--	gawry (~gawry@177.134.32.63) has quit (Ping timeout: 252 seconds)
+2013-03-14 13:13:14	<--	blaxter (~blaxter@85.251.33.140.dyn.user.ono.com) has quit (Ping timeout: 246 seconds)
+2013-03-14 13:13:14	<--	rafaduran (~rdc@140.pool85-53-67.dynamic.orange.es) has left #django
+2013-03-14 13:13:19	<--	twoface (~twoface@87-104-57-162-dynamic-customer.profibernet.dk) has quit (Ping timeout: 245 seconds)
+2013-03-14 13:13:29	-->	krak3n` (~krak3n`@109.231.202.66) has joined #django
+2013-03-14 13:13:44	-->	cXhristian (~cXhristia@ti0062a380-dhcp2362.bb.online.no) has joined #django
+2013-03-14 13:13:52	-->	ovnicraft (~ovnicraft@mail.azuay.gob.ec) has joined #django
+2013-03-14 13:13:58	<--	rudasn (~nicolas@82.102.99.155) has quit (Ping timeout: 240 seconds)
+2013-03-14 13:14:36	<--	gasbakid (~gasbakid@41.96.18.133) has quit (Ping timeout: 264 seconds)
+2013-03-14 13:14:44	-->	NahimN (~textual@184-94-59-178.dedicated.allstream.net) has joined #django
+2013-03-14 13:14:44	-->	rudasn (~nicolas@82.102.99.155) has joined #django
+2013-03-14 13:16:09	<--	Coffeeninja (~kristian@85.19.64.66) has quit (Quit: Lost terminal)
+2013-03-14 13:16:32	<--	henryk_ (~henryk@host204-206-static.14-79-b.business.telecomitalia.it) has quit (Quit: Leaving)
+2013-03-14 13:17:10	-->	jjmalina (~jjmalina@NYUFGA-WLESSAUTHCLIENTS-01.NATPOOL.NYU.EDU) has joined #django
+2013-03-14 13:17:12	<--	mgrouchy (~mgrouchy@ip-64-134-220-138.public.wayport.net) has quit (Quit: Computer has gone to sleep.)
+2013-03-14 13:17:54	<--	Leeds (~richardc@42-3-156-242.static.netvigator.com) has quit (Quit: Leaving)
+2013-03-14 13:18:03	<--	tensory (~tensory@75-149-58-169-SFBA.hfc.comcastbusiness.net) has left #django
+2013-03-14 13:18:30	<--	ajhansen (~Thunderbi@93-161-101-117-dynamic.dk.customer.tdc.net) has quit (Quit: ajhansen)
+2013-03-14 13:18:37	-->	gawry (~gawry@189.27.163.32.dynamic.adsl.gvt.net.br) has joined #django
+2013-03-14 13:18:51	-->	aberrant (~aberrant@unaffiliated/aberrant) has joined #django
+2013-03-14 13:19:01	-->	Kuldev (~KuldevB@106.204.165.169) has joined #django
+2013-03-14 13:19:32	<--	EyePulp (~eyepulp@173-18-228-191.client.mchsi.com) has quit (Quit: EyePulp)
+2013-03-14 13:20:01	-->	gazumps (~anonymous@S0106002618185fee.vc.shawcable.net) has joined #django
+2013-03-14 13:20:56	-->	mgrouchy (~mgrouchy@dhcp107-17-55-16.hil-sfofhhh.sfo.wayport.net) has joined #django
+2013-03-14 13:21:11	-->	Ariel_Calzada (~aricalso@201.184.195.165) has joined #django
+2013-03-14 13:21:38	<--	optixx (~optixx@optixx.org) has quit (Ping timeout: 246 seconds)
+2013-03-14 13:21:53	<--	baconbeckons (~baconbeck@unaffiliated/baconbeckons) has quit (Quit: baconbeckons)
+2013-03-14 13:22:07	<--	alesdotio (~alesdotio@213.189.154.40) has quit (Quit: Leaving...)
+2013-03-14 13:23:24	<--	Kuldev (~KuldevB@106.204.165.169) has quit (Quit: Nettalk6 - www.ntalk.de)
+2013-03-14 13:23:56	-->	zero7 (uid10708@gateway/web/irccloud.com/x-mbzjgxvmukkvghma) has joined #django
+2013-03-14 13:24:00	-->	NimeshNeema (uid2689@gateway/web/irccloud.com/x-ivlnkvpknlrrubgv) has joined #django
+2013-03-14 13:24:05	-->	optixx (~optixx@optixx.org) has joined #django
+2013-03-14 13:25:35	-->	kip_litton (~kip@gateway/tor-sasl/kiplitton/x-61093280) has joined #django
+2013-03-14 13:25:55	<--	fission6 (~fission6@cpe-74-69-111-201.rochester.res.rr.com) has quit (Quit: fission6)
+2013-03-14 13:26:28	-->	sputnikus (~sputnikus@ip-89-102-7-58.net.upcbroadband.cz) has joined #django
+2013-03-14 13:26:56	<--	alistairclark (~alisaircl@109.174.158.82) has quit (Remote host closed the connection)
+2013-03-14 13:27:56	-->	pycorbin (~pycorbin@r74-192-212-60.bcstcmta02.clsttx.tl.dh.suddenlink.net) has joined #django
+2013-03-14 13:28:23	-->	yassine (~yassine@unaffiliated/yassine) has joined #django
+2013-03-14 13:28:24	Kronuz	does anybody know any other libraries like django-templatetag-sugar out there (to make writing templatetags easier)?
+2013-03-14 13:28:36	<--	NahimN (~textual@184-94-59-178.dedicated.allstream.net) has quit (Quit: Computer has gone to sleep.)
+2013-03-14 13:28:55	<--	rudasn (~nicolas@82.102.99.155) has quit (Ping timeout: 260 seconds)
+2013-03-14 13:30:06	-->	fle (~fle@lgp44-3-82-235-70-135.fbx.proxad.net) has joined #django
+2013-03-14 13:30:11	tbaxter	Kronuz: template tags are stupid easy nowadays. Forget the old-style, and write assignment tags, simple tags and inclusion tags.
+2013-03-14 13:30:16	-->	twoface (~twoface@87-104-57-162-dynamic-customer.profibernet.dk) has joined #django
+2013-03-14 13:30:57	-->	NahimN (~textual@184-94-59-178.dedicated.allstream.net) has joined #django
+2013-03-14 15:50:29	-->	numeral (~numeral@198.23.228.15) has joined #django
+2013-03-14 15:50:29	--	Topic for #django is "1.5 released! https://www.djangoproject.com/weblog/2013/feb/26/15/ || Welcome to #django || Please provide code and __full__ traceback || Logs at: http://django-irc-logs.com/ || Pastebin at: http://dpaste.org || DjangoCon Europe is on: http://2013.djangocon.eu/"
+2013-03-14 15:50:29	--	Topic set by ptone (~ptone@django/committer/ptone) on Tue, 26 Feb 2013 14:56:01
+2013-03-14 15:50:30	--	Nicks #django: [@ChanServ [ilin] [o__o] \u03b5 __main__ _Nord_ _unary aberrant aboudreault abyss42 Adys aidan ainmosni ajhansen aleperalta alextucker amigo andredieb anthonydb AntiSpamMeta apollo13 arbitraryuser Ariel_Calzada askedrelic askhader avelino averell avium axelmagn Azelphur baccenfutter backjlack BakaKuna baudtack bbrandt belak bigkevmcd bkowshik blaxter Bloc bmcorser bmn bojo BombStrike brewmaster Browser bturner Bubo carljm carze cd75 cdunklau centran cereal cewing chaingun chance cheese1756 cheshair ChkDigit chrishas35 chrisramon chronos cjohnston coaster Codewaffle cramm crazedpsyc crobison cronosa cyberj cyberspace- cyphase daenney dan00b_river dan_johnsin dannib danux DarkSector davidbrenneman Daviey dddh Defektro delaman deni Derailed derks Dev0n devhost DFieldFL diegobz digicyc digitalfiz dimadima Diranged dirn disturbedmime DLange dlogs dmclain dodobas dols donnex dpn` dqd drager Draggor dross dstufft Dulcin dxtr echos edong23 EdwardIII ehc elements elmargol ElPollo_ ender979 endra eofs erik` eshlox eternicode ex-parrot explodes falxx farciarz84 FarmKing felipe ferrouswheel fhahn fission6 fle fleetfox flrnk fpk^away frb freakboy3742 freannrak fredyr FrejConnolly frequant Frosh FSCV FunkyBob fxdgear gabrielo garryp gawry gazumps gcbirzan GDorn gerard0 gg7 Gika Goopyo GorillaPatch gremly Guddu hackerdownunder hackeron hahainternet Hawkerz hays_ hd1 heedly hefest hekman hive-mind home honi hop hwrd|work hyperair ianawilson iapain_ iiie iivvoo ilian impaired insatsu intr1nsic ionelmc iphelix ircnode0 ironfroggy is_null isomorph ivan` j_syk JackSparrow jaddison Jakey jamxNL JanC Jarus jayne jbn jbub jcarbaugh jdunck jeremy jeremyb_ jeroengerits jeverling jezdez jfw Jikan jjasinski jmoiron jo` Jochem johnpaulett johnraz jonasliljestrand jonathanchu josePhoenix joshbaptiste joshfinnie jpadilla jranck88 js_ jtiai juanriaza JustinWilson jvc26 jwa Jygga KA Kaimei kallek kanja kanyl Katharsis kenny kimett kip_litton kirotawa kklimonda_ klobucar kmt KnightHawk3 koniiiik koobs Kristina Kronuz ksa ktosiek kuja kurol l3on L42y lapilofu Laybunz ldlework LeaChim les_sylvains lfaraone LiamM lietu lighty Linovia lokai loltu luanp lubyou luminous Luyt m3lvin macgregor Mahonar markalanevans MarkusH marmalodak mastergreg matt1s mattmcc maxorator mbrochh McMAGIC--Copy melinath merlin83 mezner mfisher MicahCarrick mihasya mihow mikalv mikeshultz milkandtang Milossh minism Mitar mito__ mnaser mnx Mogget Morthez mrhanky mstr mstrcnvs murr4y mvt MVXA mythmon myusuf3 mz|` NahimN naquad natmaster Neithan newzen nickaugust nicku nielsle nigelb nihilista niluje NimeshNeema Nistur nkryptic nkuttler nn0101 noah256 NomadJim non_117 NoNaMeNo nseger NullableCX numeral oblikoamorale octarine odinho offbyone ojii|afk olasd ole Oli ollie optixx optiz0r osirisx11 Osmose1000 pagenoare paltman pasen passy paulproteus Petazz pfeifer pgurumur phantomcircuit phildini phix phobi phoochka phrame phuzion picasso Pici picoguy Pilate pjs prtcl psino psyolus ptomblin ptone pwf pycorbin quake_guy quantumi Quarryman radez rafales Raisins rakm randomdrake rastem rbmk rclsilver rdeguy ready RedXIII res22 resixian restless_being restorer_ rethaw riboflavin ric` rickeyski-k riddle riseriyo rizumu rje rmarko RobbieAB rogi roidelapluie Rundll ryannielson samu sayan schinckel schmilblick scottmizo scottyob sduncan_afk seagreen sebleblanc sebleier semarjt Sembei semente seocam sephii setmeaway Seveas sh4wn Sharebear Shariq simensen simme siovene sipsniffa sitaktif sjaak_trekhaak Skiba slackorama Sonderblade spirals ssbr ssfrr Steve^ stooj streety su-joc suchbeat sudobangbang superdmp Svedrin Synthead tankbusta tbaxter tdelam TDJACR tdy_ TeamMat telex telling Terminus- tga the_rat theDrumm thehandler theneb therick Therion theskumar thiderman ticketbot timg tinio tkd tm8522010 ToApolytoXaos tobias1 TodPunk tomaw tomds tompaw trang trwired tswett Tuim tuv tvsutton twoface Tykling uberj ubernostrum ulope unbit Unode uris urth v0lksman Vadtec VadtecWk vetsin viper0984 vivekrai voidus wassup whyzgeek willer_ Will| winkey_ witchdoc Wu Xard xastey xorox90 xpen yac yakamo yardena yassine yuwang Z_A_M zadark Zaha zaze ZDBioHazard zedas ZeiP zemanel zero7 zerok zoumpis Zuchto]
+2013-03-14 15:50:30	--	Channel #django: 523 nicks (1 op, 0 halfops, 0 voices, 522 normals)
+2013-03-14 15:50:30	***	Buffer Playback...
+2013-03-14 15:50:30	tbaxter	[22:11:37] Dulcin: in the view or on the query set is generally best, I think
+2013-03-14 15:50:30	tbaxter	[22:12:07] jfw: agreed, with the caveat that META affects all queries for the object, all the time
+2013-03-14 15:50:30	jpadilla	[22:12:19] jfw: so I can go ahead and disconnect and connect them after?
+2013-03-14 15:50:30	Dulcin	[22:12:31] tbaxter, but the view is impossible, because I can only order the top comments, the cascaded comments are generated recursively in the template
+2013-03-14 15:50:30	Dulcin	[22:12:50] tbaxter, but ill look into meta ordering,
+2013-03-14 15:50:30	tbaxter	[22:13:04] Dulcin: ah.. I think meta or a manager would be best then.
+2013-03-14 15:50:30	jfw	[22:13:08] tbaxter: oh, totally. i generally define one there, and then override it as necessary in my queries. *most* data tends to have a reasonable ordering to it
+2013-03-14 15:50:30	Kristina	[22:18:49] Hmmmm, I just had an idea.
+2013-03-14 15:50:30	jfw	[22:18:54] Kristina: i find it hard to believe that memcache is too slow; what are you doing?
+2013-03-14 15:50:30	Kristina	[22:19:11] I'm pretty sure Linux provides a thing to receive filesystem event notifications.
+2013-03-14 15:50:30	jfw	[22:19:29] inotify, sure
+2013-03-14 15:50:30	Kristina	[22:19:40] jfw: I'm not saying it's slow, I'm saying that caching the data in a process is a lot faster in terms of read access.
+2013-03-14 15:50:30	jfw	[22:20:17] that's *not* saying memcache is too slow?
+2013-03-14 15:50:30	mstrcnvs	[22:20:50] is there a method on the QuerySet class that "prepares" or "pre-process" the fields that are going to be looked up? I'm looking on the source but found nothing until now
+2013-03-14 15:50:30	jfw	[22:21:19] mstrcnvs: pre-process how?
+2013-03-14 15:50:30	mstrcnvs	[22:21:22] it would be awesome, I need to do some-filtering before the queryset gets executed
+2013-03-14 15:50:30	Kristina	[22:21:26] jfw: It's not an issue with memcached itself, it has more to do with the fact that any IPC would result in overhead.
+2013-03-14 15:50:30	jfw	[22:21:40] Kristina: so memory is really tight?
+2013-03-14 15:50:30	VadtecWk	[22:21:55] if im not using anything to invovled, will a blind upgrade from 1.4 to 1.5 cause any major hickups? i have a small personal blog on the intranet here at work that i want to upgrade, but i dont wanna break it and have to rebuild the virtualenv
+2013-03-14 15:50:30	mstrcnvs	[22:22:00] jfw: like def prepare(self, **kwargs): kwargs.pop('somefield'); return **kwargs;
+2013-03-14 15:50:30	Kristina	[22:22:37] jfw: I really want to avoid IPC in scenarios when it's not really needed. Although I guess using memcached would be more scalable in this scenario.
+2013-03-14 15:50:30	jfw	[22:23:09] mstrcnvs: err, i mean what are you trying to *do*? i know what "filter" means, but what are you actually removing?
+2013-03-14 15:50:30	mstrcnvs	[22:23:29] jfw: I'm currently doing this way http://dpaste.org/quF9O/
+2013-03-14 15:50:30	Kristina	[22:23:55] However, the data in question changes twice a month.
+2013-03-14 15:50:30	jfw	[22:23:55] Kristina: yes, definitely. that's what it's for. it's stupidly simple to set up, so try it out, and if there's too much overhead, switch it out
+2013-03-14 15:50:30	jfw	[22:24:26] Kristina: oh, that's it? then you don't want in memory or in process caching at all--cache it to the database
+2013-03-14 15:50:30	mstrcnvs	[22:24:27] jfw: so instead of doing queryset.filter(object_id=..., object_content_type=..) I can only do queryset.filter(obj=instance)
+2013-03-14 15:50:30	Kristina	[22:24:45] jfw: The data is read for every request.
+2013-03-14 15:50:30	Kristina	[22:25:09] We need really fast reads, but slow-ish writes.
+2013-03-14 15:50:30	Kristina	[22:25:17] Without restarting the web server.
+2013-03-14 15:50:30	jfw	[22:25:38] that's what a query cache is for
+2013-03-14 15:50:30	jfw	[22:25:46] or RAM, really
+2013-03-14 15:50:30	jfw	[22:25:59] if it's a file, the OS will keep it in RAM
+2013-03-14 15:50:30	jfw	[22:26:08] so new reads will be instantaneous
+2013-03-14 15:50:30	jfw	[22:26:14] don't forget about your OS :)
+2013-03-14 15:50:30	Kristina	[22:26:15] jfw: You mean mmap?
+2013-03-14 15:50:30	jfw	[22:26:26] no, you don't need to use anything else
+2013-03-14 15:50:30	Kristina	[22:27:13] If you read a file into memory, it will be cached, yes. Permamently.
+2013-03-14 15:50:30	Kristina	[22:27:49] another thought I had involved having an IPC server inside each fcgi process.
+2013-03-14 15:50:30	jfw	[22:28:13] mstrcnvs: i understand your code, but i guess not your question
+2013-03-14 15:50:30	Kristina	[22:28:18] So I could broadcast a message to all FCGI workers and force them to reload the data.
+2013-03-14 15:50:30	jfw	[22:28:39] Kristina: is this system in production?
+2013-03-14 15:50:30	Kristina	[22:28:45] Yes.
+2013-03-14 15:50:30	jfw	[22:28:52] Kristina: have you profiled it?
+2013-03-14 15:50:30	mstrcnvs	[22:28:54] jfw: just asking if there's a method on the QuerySet class that "prepares" the fields to be lookuped, so I can inherit it and prepare my way, instead of needing to inherit, filter, get_or_create, etc.
+2013-03-14 15:50:30	Kristina	[22:30:16] jfw: Yes. Using the socket-based cache approach has two problems: minimum of two context switches per read and the overhead of deserializing data every time.
+2013-03-14 15:50:30	Kristina	[22:30:43] The data in question is a multi-level hashtable.
+2013-03-14 15:50:30	jfw	[22:30:45] mstrcnvs: it seems that you're doing that already by overriding filter--i think that's really what you want
+2013-03-14 15:50:30	jfw	[22:31:14] Kristina: i know there's overhead in those things; are they actually a bottleneck, though?
+2013-03-14 15:50:30	mstrcnvs	[22:31:20] jfw: k, thank you
+2013-03-14 15:50:30	FarmKing	[22:31:23] is there a good guide on very simple template tags that can reference the current user?  I'm confused between all the decorators, renderers, etc...
+2013-03-14 15:50:30	jfw	[22:32:41] mstrcnvs: no prob
+2013-03-14 15:50:30	Kristina	[22:32:46] jfw: Not a significant one, no. But I want to do it in the most efficient way possible, up to a sensible extent.
+2013-03-14 15:50:30	jfw	[22:33:00] Kristina: if it's not a bottleneck, then it's not sensible to optimize it
+2013-03-14 15:50:30	jfw	[22:33:28] memcache, disk, database--all sensible options
+2013-03-14 15:50:30	jfw	[22:33:38] database with a query cache would be the best one, i think
+2013-03-14 15:50:30	nkryptic	[22:35:55] FarmKing: if you're using the request and auth context processors, you should be able to access the user without an issue
+2013-03-14 15:50:30	nkryptic	[22:36:07] FarmKing: what are you trying to do?
+2013-03-14 15:50:30	FarmKing	[22:36:57] I'm storing a number in a profile with a onetoone relationship to the user model that I'd like to make available through a templatetag
+2013-03-14 15:50:30	FarmKing	[22:37:29] it seems like I should be able to return a number using a simple_tag
+2013-03-14 15:50:30	Kristina	[22:37:44] jfw: I could stick a ZMQ pub listener in the WSGI server.
+2013-03-14 15:50:30	Kristina	[22:37:45] Which would let me broadcast messages across all servers.
+2013-03-14 15:50:30	Kristina	[22:37:45] That's probablt the best approach.
+2013-03-14 15:50:30	jfw	[22:37:45] yeah... but why? you could also just have a cronjob (or whatever generates the data) dump it into your (shared, right) database
+2013-03-14 15:50:30	Kristina	[22:37:52] And reading it from the database requires socket IO :(
+2013-03-14 15:50:30	nkryptic	[22:38:21] FarmKing: instead of just doing {{ user.profile.myattribute }} ?
+2013-03-14 15:50:30	jfw	[22:38:28] which you've said isn't a bottleneck.
+2013-03-14 15:50:30	jfw	[22:38:33] but whatever--it's your time
+2013-03-14 15:50:30	Kristina	[22:38:37] Having this cached in the actual process is around 30x more efficient than doing this using sockets though.
+2013-03-14 15:50:30	jfw	[22:39:11] that 30x could be 30 times 2ns for all i know
+2013-03-14 15:50:30	Kristina	[22:39:33] Well ... yeah ... but I'm very OCD about those things.
+2013-03-14 15:50:30	jfw	[22:39:47] but: i don't care. you're just the 2nd person in this channel today that i've tried to convince not to optimize something that probaby doesn't need it
+2013-03-14 15:50:30	jfw	[22:39:52] :)
+2013-03-14 15:50:30	FarmKing	[22:40:01] nkryptic: was hoping to use a templatetag for cachability and to leave it open for localization in the futer
+2013-03-14 15:50:30	FarmKing	[22:40:52] didn't expect this to be a challenging thing to do.  Never written a templatetag before and figured this would be a simple way to get started
+2013-03-14 15:50:30	Osmose1000	[22:41:02] jfw: Don't lose faith, you're doing the BDFL's work. :P
+2013-03-14 15:50:30	jfw	[22:41:20] Osmose1000: hah, thanks :) i try
+2013-03-14 15:50:30	Osmose1000	[22:41:42] I now realize that replacing lord with BDFL isn't super-effective at making a statement non-religios and clear
+2013-03-14 15:50:30	nkryptic	[22:41:45] FarmKing: it's pretty simple then: https://docs.djangoproject.com/en/1.5/howto/custom-template-tags/#simple-tags
+2013-03-14 15:50:30	jpadilla	[22:41:46] what's the prefer way to write this long orm call for valid PEP8 https://gist.github.com/jpadilla/5164508
+2013-03-14 15:50:30	Osmose1000	[22:41:51] *religious
+2013-03-14 15:50:30	jfw	[22:42:00] Osmose1000: oh, but i like it much better.
+2013-03-14 15:50:30	Osmose1000	[22:42:10] Heh
+2013-03-14 15:50:30	jfw	[22:42:33] Guido > Jesus in my book ;)
+2013-03-14 15:50:30	nkryptic	[22:42:47] FarmKing: simple tag to get something like {% mytag user %}
+2013-03-14 15:50:30	Osmose1000	[22:43:09] jpadilla: I saw http://stackoverflow.com/questions/4768941/how-to-break-a-line-of-chained-methods-in-python/4768979#4768979 and really like it
+2013-03-14 15:50:30	tbaxter	[22:43:29] jaw <= displaying enormous patience today
+2013-03-14 15:50:30	nkryptic	[22:43:42] FarmKing: or you can do a simple tag with context (then inside your tag code you'd get the user with context['user'])
+2013-03-14 15:50:30	jfw	[22:43:47] Osmose1000, jpadilla : that's nicer than all those ugly \
+2013-03-14 15:50:30	jfw	[22:45:15] and much more inline w/ PEP8: http://www.python.org/dev/peps/pep-0008/#maximum-line-length
+2013-03-14 15:50:30	FarmKing	[22:45:37] nkryptic: ahh!  Now I see that simple_tag *can* take the takes_context kwarg
+2013-03-14 15:50:30	jpadilla	[22:45:49] jfw Osmose1000: oh that actually looks nice
+2013-03-14 15:50:30	FarmKing	[22:45:49] I thought I read somewhere that it couldn't
+2013-03-14 15:50:30	FarmKing	[22:45:50] thanks
+2013-03-14 15:50:30	nkryptic	[22:46:29] FarmKing: to be sure, you're on django 1.5?
+2013-03-14 15:50:30	FarmKing	[22:48:09] nkryptic: yes.  Did this recently change?  I have other sites on 1.4 still
+2013-03-14 15:50:30	nkryptic	[22:48:52] FarmKing: no, the simple tag has been context aware since 1.3
+2013-03-14 15:50:30	FarmKing	[22:49:01] rockin
+2013-03-14 15:50:30	FarmKing	[22:49:08] thanks for the help
+2013-03-14 15:50:30	chrisramon	[22:50:21] Hi, I am working with django formsets, I need to add extra fields to a form, I am using inlineformset_factory, which receives 2 forms as parameters (form and formset) when adding the extra field to form it does not show up, but when adding the extra field to formset, it works, why is that ? anyone can explain me?
+2013-03-14 15:50:30	***	Playback Complete.
+2013-03-14 15:50:32	-->	guhcampos (~Gustavo@186.249.5.2) has joined #django
+2013-03-14 15:50:35		[http://is.gd/BiJGsc]
+2013-03-14 15:50:35		[http://is.gd/Wl57VE]
+2013-03-14 15:50:35		[http://is.gd/NYT8kt]
+2013-03-14 15:50:35		[http://is.gd/4NKn5X]
+2013-03-14 15:50:51	--	Mode #django [+cnrt]
+2013-03-14 15:50:51	--	Channel created on Sun, 26 Nov 2006 01:42:41
+2013-03-14 15:51:12	-->	youngster (~YKim@205.251.168.1) has joined #django
+2013-03-14 15:51:35	guhcampos	I'm taking a look at Dajax but noticed that in documentation they mention importing django.utils.simplejson - Since this has been deprecated in 1.5, is it safe to adopt Dajax for a Django 1.5 project?
+2013-03-14 15:52:11	<--	JustinWilson (~Adium@72.187.220.115) has quit (Quit: Leaving.)
+2013-03-14 15:55:02	<--	fle (~fle@lgp44-3-82-235-70-135.fbx.proxad.net) has quit (Remote host closed the connection)
+2013-03-14 15:57:28	-->	yacek19 (1f0b998d@gateway/web/freenode/ip.31.11.153.141) has joined #django
+2013-03-14 15:57:30	yacek19	hi
+2013-03-14 15:57:34	<--	mstrcnvs (~rafael@189.120.131.87) has left #django
+2013-03-14 15:58:34	yacek19	I would like to have one connection to REDIS from django. I wouldn't like to open and close connection to redis on every request. How can I do that?
+2013-03-14 15:59:13	<--	Kristina (~christina@crna.cc) has left #django
+2013-03-14 15:59:14	youngster	Hello, I'm trying to get {% if user.is_authenticated %} to work in my template, but it does not appear to be working.  I have added "django.contrib.auth.context_processors.auth" to TEMPLATE_CONTEXT_PROCESSORS with my settings.  Is there something else to check?  Within my view code, it also check for authenticated and therefore I know my page I'm viewing is an authenticated user.  What am I
+2013-03-14 15:59:14	youngster	missing here?
+2013-03-14 16:00:30	<--	ryannielson (~ryanniels@blk-212-112-110.eastlink.ca) has quit (Quit: ryannielson)
+2013-03-14 16:00:31	jfw	guhcampos: just use "json" instead
+2013-03-14 16:00:39	Tuim	youngster  did you add the middleware too?
+2013-03-14 16:00:53	jfw	yacek19: why?
+2013-03-14 16:00:58	Tuim	MIDDLEWARE_CLASSES = (     'django.contrib.auth.middleware.AuthenticationMiddleware',)
+2013-03-14 16:00:59	-->	Kristina (~christina@crna.cc) has joined #django
+2013-03-14 16:01:02	chrisramon	youngster does  {{ user.is_authenticated }} give you a error?
+2013-03-14 16:01:05	jeremy	has anyone gone through and migrated an existing app to use the custom user model stuff in django 1.5?  I was hoping to do so to give me an easier way of allowing longer email addresses for my users but it's looking increasingly non-trivial (unless I'm missing something)
+2013-03-14 16:01:09	guhcampos	jfw: cool, from the Django release notes I assumed it would work fine, but wanted to hear from somebody =)
+2013-03-14 16:01:15	-->	revolunet (~juju@nor75-25-88-172-150-223.fbx.proxad.net) has joined #django
+2013-03-14 16:01:15	Kristina	Actually, I was meaning to ask, are global variables meant to be bad?
+2013-03-14 16:01:28	youngster	Tuim: I did not add that.  Is that required as well?
+2013-03-14 16:01:46	jfw	guhcampos: well, don't count me as that somebody--i haven't tried it. they're compatible, though, so i don't know of any reason it would be unsafe
+2013-03-14 16:01:47	Kristina	So if I have a factory class, having that factory class in a global variable would be bad?
+2013-03-14 16:01:51	youngster	chrisramon: it doesn't appear to be an error as much as it just skips that if block
+2013-03-14 16:02:08	yacek19	jfw: it would be unnecessary job for django
+2013-03-14 16:02:17	chrisramon	if {{ user.is_authenticated }} prints false, is because user is not authenticated ...
+2013-03-14 16:02:23	guhcampos	Kristina: the big bad problem with globals is that you can never assume a state for them, since everybody can change them
+2013-03-14 16:02:29	jfw	Kristina: yes. global variables are bad. factory classes should use singletons (generally)
+2013-03-14 16:02:41	jfw	yacek19: i don't follow
+2013-03-14 16:02:47	-->	m8 (~mor@unaffiliated/m8) has joined #django
+2013-03-14 16:02:55	-->	areski (~areski@80.174.255.7.dyn.user.ono.com) has joined #django
+2013-03-14 16:03:07	guhcampos	Kristina: you can have your factory class defined wherever you find fit, but you should instantiate objects of it as close to their scope as possible
+2013-03-14 16:03:07	Kristina	guhcampos: I'm making the assumption that no one is going to change the global variable.
+2013-03-14 16:03:14	yacek19	jfw: for every call of my view I need to check something in redis
+2013-03-14 16:03:23	youngster	chrisramon: when I render my page, the first thing I check in the view is authentication through the request.user.is_authenticated(), which passes along the template, other wise I bounce to a login form.  the login form does not show.
+2013-03-14 16:03:30	yacek19	jfw: so I open connection to redis, read sth and close connection
+2013-03-14 16:03:36	Kristina	Everybody can change everything in python.
+2013-03-14 16:03:39	yacek19	jfw: and again and again for every call
+2013-03-14 16:03:56	jfw	yacek19: you mean for every request, not every call, right?
+2013-03-14 16:04:02	yacek19	jfw:yes
+2013-03-14 16:04:13	guhcampos	Kristina: well, you should not. Unless of course it's a one person project with a few files. In that case whatever you do regarding programming best practices does not really count - they are intended for multi person projects, big projects, to be more manageable
+2013-03-14 16:04:30	<--	blaxter (~blaxter@85.251.33.140.dyn.user.ono.com) has quit (Quit: foo)
+2013-03-14 16:04:36	jfw	yacek19: and what's wrong with that?
+2013-03-14 16:04:36	Kristina	It's a massive project managed by one person.
+2013-03-14 16:04:36	chrisramon	youngster: this might help you https://docs.djangoproject.com/en/dev/topics/auth/default/#django.contrib.auth.login
+2013-03-14 16:04:36	ticketbot	https://docs.djangoproject.com/en/stable/topics/auth/default/#django.contrib.auth.login
+2013-03-14 16:04:41		[http://is.gd/RwyXcg]
+2013-03-14 16:04:42		[http://is.gd/ncVyJn]
+2013-03-14 16:04:47	-->	OldCoder_ (~OldCoder_@209.237.22.146) has joined #django
+2013-03-14 16:04:51	yacek19	jfw: I don't know, unnecessary job?
+2013-03-14 16:05:06	guhcampos	Kristina: if it's massive, trust me: you'll lose track of the global state somewhere in the future.
+2013-03-14 16:05:25	jfw	yacek19: is it actually causing any problems, performance or otherwise?
+2013-03-14 16:05:49	yacek19	jfw: nope, but I am testing it with one user for now, that is myself :)
+2013-03-14 16:05:53	guhcampos	Kristina: one day you are going to modify some global for some reason and get astonished of how many stuff you broke by doing that
+2013-03-14 16:05:55	Kristina	guhcampos: They are defined in a single scope.
+2013-03-14 16:06:07	jfw	yacek19: okay, then change it when it actually becomes a problem :)
+2013-03-14 16:06:18	guhcampos	Kristina: defined, yes, but accessed from many different scopes
+2013-03-14 16:06:32	yacek19	jfw: but then, how could I do that?
+2013-03-14 16:06:50	yacek19	jfw: (in case I have to act quickly and change it)
+2013-03-14 16:07:00	youngster	chrisramon: I am using the default login provided by django.contrib.auth.views.login, is that relevant in the link you provided?
+2013-03-14 16:07:02	-->	fallenhitokiri (~fallenhit@178-25-238-119-dynip.superkabel.de) has joined #django
+2013-03-14 16:07:06	guhcampos	Kristina: so one day you decide the global var CAT should be renamed to MAD, or should have a field more, or less and things start to break
+2013-03-14 16:07:19	jfw	yacek19: it doesn't matter now--what i mean is, look into the problem when there's actually a problem to look into. what makes you think that one redis connection is going to be a problem in the future?
+2013-03-14 16:07:19	Kristina	guhcampos: I could also use introspection to fuck with some core classes such as WSGI base classes. But I'm not going to.
+2013-03-14 16:07:31	youngster	chrisramon: i'm assuming then it logs me in properly whe using that
+2013-03-14 16:07:32	-->	Unifox (~sschwarz@188-194-66-80-dynip.superkabel.de) has joined #django
+2013-03-14 16:07:40	guhcampos	Kristina: you can do pretty much whatever you want. That's within your rights =)
+2013-03-14 16:07:41	-->	cewing_ (~cewing@71-35-129-18.tukw.qwest.net) has joined #django
+2013-03-14 16:07:42	Kristina	guhcampos: So one day, django decides to rename the django package into "djano" ...
+2013-03-14 16:07:43	jfw	Kristina: remind me never to work on any code you've touched
+2013-03-14 16:08:29	Kristina	Making certain assumptions is fundamental.
+2013-03-14 16:08:36	yacek19	jfw: no, I would like to have one redis connection, now it makes connection for every request
+2013-03-14 16:08:47	<--	anthonydb (~adb703@host-7.131.54.159.gannett.com) has quit (Ping timeout: 245 seconds)
+2013-03-14 16:08:57	chrisramon	youngster: make sure your user is authenticated, make sure ur using authenticate, login from django.contrib.auth
+2013-03-14 16:09:10	-->	anthonydb (~adb703@host-7.131.54.159.gannett.com) has joined #django
+2013-03-14 16:09:15	Kristina	Singleton classes are just like global variables.
+2013-03-14 16:09:17	<--	cewing (~cewing@71-35-151-107.tukw.qwest.net) has quit (Ping timeout: 246 seconds)
+2013-03-14 16:09:17	--	cewing_ is now known as cewing
+2013-03-14 16:09:41	Kristina	... since singletons would rely on globals.
+2013-03-14 16:10:11	Kristina	Well, not globals, but class variables.
+2013-03-14 16:10:24	Kristina	Which are basically globals with a limited scope.
+2013-03-14 16:10:26	jfw	yacek19: by "one connection" i meant "one per request".
+2013-03-14 16:10:30	<--	dirn (~dirn@199.108.68.1) has quit (Remote host closed the connection)
+2013-03-14 16:10:35	<--	fission6 (~fission6@cpe-74-69-111-201.rochester.res.rr.com) has quit (Quit: fission6)
+2013-03-14 16:10:35	tbaxter	This is one of those days where I keep having one phrase go through my head "What's the simplest thing that could possibly work"
+2013-03-14 16:10:39	yacek19	jfw: ah, ok
+2013-03-14 16:10:42	youngster	chrisramon: i believe my user is logged in, otherwise I would not be able to arrive to the url I'm getting at because I bounce to a login page if not logged in.  I have tested login/logout using the django default views for login and log out and going through my application.
+2013-03-14 16:10:46	jfw	Kristina: meaning: not global.
+2013-03-14 16:11:05	-->	maZtaiR (~maZtaiR@unaffiliated/maztah) has joined #django
+2013-03-14 16:11:22	guhcampos	Kristina: singleton are **a bit** better than globals, but still someway problematic. There's some big hype on avoiding singletons around some dev communities.
+2013-03-14 16:11:55	<--	Mahonar (keekekke@151.75.251.209) has quit (Read error: Connection reset by peer)
+2013-03-14 16:12:12	yacek19	jfw: thanks for help
+2013-03-14 16:12:19	Kristina	guhcampos: Ah, so you suggest passing the SQL connection descriptor down the call chain?
+2013-03-14 16:12:21	jfw	yacek19: no prob!
+2013-03-14 16:12:49	chrisramon	youngster: a pastebin of your views would help
+2013-03-14 16:13:49	Z_A_M	Anyone familiar with djangotables2 link or template column?
+2013-03-14 16:14:03	guhcampos	Kristina: how to avoid them depends. Each case has it's answers. For your case you might want to take a look at the Pool Design Pattern.
+2013-03-14 16:14:11	<--	gremly (~gremly@186.28.168.128) has quit (Quit: WeeChat 0.3.8)
+2013-03-14 16:14:30	<--	phoochka (~phoochka@122.169.2.84) has quit (Remote host closed the connection)
+2013-03-14 16:14:54	Kristina	guhcampos: So how does Django keep track of DB sessions?
+2013-03-14 16:15:10	guhcampos	Kristina: I haven't the slightest idea. I'm no Django dev, just a user =)
+2013-03-14 16:15:14	<--	Goopyo (~Goopyo@pool-71-163-21-161.washdc.fios.verizon.net) has quit (Quit: Goopyo)
+2013-03-14 16:15:28	Kristina	Because every model somehow has access to the global database session implicitly.
+2013-03-14 16:15:49	-->	kushal (kdas@fedora/kushal) has joined #django
+2013-03-14 16:15:52	Skiba	Kristina what is it you are trying to do?
+2013-03-14 16:17:21	Kristina	Oh, I'm just debating on whether global states are bad.
+2013-03-14 16:17:21	<--	jfw (~jfw@c-24-20-145-178.hsd1.or.comcast.net) has quit (Quit: Leaving)
+2013-03-14 16:17:21	Kristina	By global I mean, irregardless of scope.
+2013-03-14 16:17:21	-->	vaninwagen (~vaninwage@port-92-195-71-155.dynamic.qsc.de) has joined #django
+2013-03-14 16:17:21	<--	hackerdownunder (~Atul@184.139.70.115.static.exetel.com.au) has quit (Ping timeout: 245 seconds)
+2013-03-14 16:17:35	-->	dlam (user@conference/pycon/x-ywmsrwbaatcacble) has joined #django
+2013-03-14 16:17:35	Kristina	So for the purpose of this, a class variable is the same as a module variable.
+2013-03-14 16:18:06	youngster	chrisramon: I think I found my problem.  I am using HttpResponse as return in my view, where I need to pass in the context?  Here is a sample of my index view: http://pastie.org/6498980
+2013-03-14 16:18:38	Skiba	Kristina i would say it's generally not good to rely on a variable to store your state, especially if another process somewhere can change it from under you
+2013-03-14 16:18:44	<--	dan00b_river (dan00b_riv@219.91.209.59) has quit (Ping timeout: 258 seconds)
+2013-03-14 16:19:00	Kristina	Skiba: Django stores the DB session globally.
+2013-03-14 16:19:41	-->	kenbolton (~kenbolton@ool-43506689.dyn.optonline.net) has joined #django
+2013-03-14 16:20:34	Skiba	Kristina i mean, there's a lot of things that you have to take for granted. if someone wanted, they could change settings as well in code.
+2013-03-14 16:21:16	-->	seanbrant (~seanbrant@108.71.82.84) has joined #django
+2013-03-14 16:22:24	Kristina	The only way of doing this without globals would involve opening a connection for every request and then passing the DB session around.
+2013-03-14 16:23:08	-->	shredding (~shredding@cable-158-181-69-216.cust.telecolumbus.net) has joined #django
+2013-03-14 16:23:18	<--	gawry (~gawry@189.27.163.32.dynamic.adsl.gvt.net.br) has quit (Quit: gawry)
+2013-03-14 16:23:26	<--	sayan (~sayanchow@fedora/sayan) has quit (Ping timeout: 255 seconds)
+2013-03-14 16:23:27	Kristina	Which would be fun, especially since this disregards one of the biggest advantages of FCGI, which is being able to cache things like file descriptors in your processes,
+2013-03-14 16:23:46	<--	quake_guy (~brett@gos-bketter-d1.ad.uwm.edu) has quit (Remote host closed the connection)
+2013-03-14 16:25:18	-->	zandauxzan (~ahayes@external.roi.com.au) has joined #django
+2013-03-14 16:27:37	-->	craigkerstiens (craigkerst@conference/pycon/x-wgskqzktuyzfnolw) has joined #django
+2013-03-14 16:29:10	youngster	hello, can someone help me figure out why I can't get user to work in my django template?  I have a {% if user.is_authenticated %} in my template, and I know I'm authenticated by checking for authentication in the view call.  Any ideas?
+2013-03-14 16:30:07	<--	joshfinnie (~joshfinni@westover-group.com) has quit (Quit: Computer has gone to sleep.)
+2013-03-14 16:30:07	<--	mnx (~mnx@p5B34CC8C.dip.t-dialin.net) has quit (Quit: Konversation terminated!)
+2013-03-14 16:30:28	youngster	here's my view index: http://pastie.org/6498980
+2013-03-14 16:30:54	-->	zeograd (~zeograd@pcedev.com) has joined #django
+2013-03-14 16:31:07	Skiba	youngster you don't add user to your context
+2013-03-14 16:31:30	<--	home (~home@unaffiliated/home) has quit (Read error: No route to host)
+2013-03-14 16:31:34	youngster	so that is required to pass into context? I thought it was automatically given to me
+2013-03-14 16:32:10	mattmcc	youngster: Use render.  https://docs.djangoproject.com/en/1.4/topics/http/shortcuts/#render
+2013-03-14 16:32:16		[http://is.gd/vAAIWd]
+2013-03-14 16:32:49	<--	twoface (~twoface@87-104-57-162-dynamic-customer.profibernet.dk) has quit (Quit: WeeChat 0.3.2)
+2013-03-14 16:33:12	Skiba	i think you could do request.user to do it if you have the right ocntext processor
+2013-03-14 16:33:23	-->	twoface (~twoface@87-104-57-162-dynamic-customer.profibernet.dk) has joined #django
+2013-03-14 16:34:37	-->	joshfinnie (~joshfinni@westover-group.com) has joined #django
+2013-03-14 16:35:52	-->	dirn (~dirn@199.108.68.1) has joined #django
+2013-03-14 16:37:58	-->	nicklo (~nicklo@ppp121-44-38-48.lns20.syd6.internode.on.net) has joined #django
+2013-03-14 16:38:34	<--	amigo (~amigo@unaffiliated/amigo) has quit (Quit: leaving)
+2013-03-14 16:38:44	<--	Diranged (~Adium@ec2-50-18-44-83.us-west-1.compute.amazonaws.com) has left #django
+2013-03-14 16:39:19	-->	Eediot (~user@pool-173-73-65-16.washdc.fios.verizon.net) has joined #django
+2013-03-14 16:39:58	-->	Diranged (~Adium@ec2-50-18-44-83.us-west-1.compute.amazonaws.com) has joined #django
+2013-03-14 16:40:09	<--	dirn (~dirn@199.108.68.1) has quit (Remote host closed the connection)

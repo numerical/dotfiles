@@ -1,5 +1,12 @@
-set encoding=utf-8
 set nocompatible     "Don't need compat with vi
+
+filetype off
+runtime bundle/pathogen/autoload/pathogen.vim
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+
+
+set encoding=utf-8
 set number           "Line numbers by default
 set tabstop=4        "4 spaces for tabs
 set shiftwidth=4     "4 spaces for indent
