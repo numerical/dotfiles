@@ -349,3 +349,320 @@
 2013-03-13 23:33:18	<--	anth0ny_ (~anth0ny@unaffiliated/anth0ny) has quit (Quit: This computer has gone to sleep)
 2013-03-13 23:33:23	FunkyBob	it's django-admin.py with DJANGO_SETTINGS_MODULE env var defaulted
 2013-03-13 23:33:50	bmonty	FunkyBob: I'm trying to follow some of the patterns in the two scoops of Django book and it recommends using django admin.  I also have DJANGO_SETTINGS_MODULE set.
+2013-03-14 11:02:47	-->	numeral (~numeral@198.23.228.15) has joined #django
+2013-03-14 11:02:47	--	Topic for #django is "1.5 released! https://www.djangoproject.com/weblog/2013/feb/26/15/ || Welcome to #django || Please provide code and __full__ traceback || Logs at: http://django-irc-logs.com/ || Pastebin at: http://dpaste.org || DjangoCon Europe is on: http://2013.djangocon.eu/"
+2013-03-14 11:02:47	--	Topic set by ptone (~ptone@django/committer/ptone) on Tue, 26 Feb 2013 14:56:01
+2013-03-14 11:02:47	--	Nicks #django: [@ChanServ [ilin] [o__o] \u03b5 __main__ _Nord_ _unary aberrant aboudreault Adys aidan ainmosni ajhansen alesdotio alextucker alistairclark amigo andredieb anthonydb AntiSpamMeta apollo13 arbitraryuser areil areski arturrro askedrelic askhader avelino averell avium Azelphur baccenfutter backjlack BakaKuna baudtack bbrandt belak bigkevmcd bkowshik Bloc bmcorser bmispelon bmn BombStrike brewmaster Browser bturner Bubo carljm carze cd75 cdunklau centran cereal chaingun chance cheese1756 cheshair ChkDigit chrishas35 chronos cjohnston coaster Codewaffle cramm crazedpsyc crobison cronosa cyberj cyberspace- cyphase daenney dan00b_river dan_johnsin dannib danux DarkSector davidbrenneman Daviey dddh Defektro delaman deni Derailed derks Dev0n devhost DFieldFL diegobz digicyc digitalfiz dimadima disturbedmime DLange dlogs dmclain dmpayton dodobas dols donnex dpn` dqd drager Draggor dross dstufft Dulcin dust-otc dxtr echos edong23 EdwardIII ehc elements elmargol ElPollo_ ender979 endra eofs epiloque erik` eshlox eternicode EvilDMP ex-parrot explodes falxx farciarz84 fcoelho felipe fero ferrouswheel fhahn fission6 flashingpumpkin fle fleetfox flrnk frankoid frb freakboy3742 fredyr freesteph FrejConnolly frequant Frosh FSCV FunkyBob Furao fxdgear gabrielo garryp gawry gcbirzan GDorn gerard0 gg7 Gika GorillaPatch greg_f gremly gumol hackerdownunder hackeron hahainternet Hawkerz hays_ heedly hefest hekman hive-mind honi hoot hop hyperair ianawilson iiie iivvoo impaired inad922 insatsu intr1nsic ionelmc iphelix ircnode0 ironfroggy is_null ivan` j_syk JackSparrow Jakey jamxNL JanC jargon Jarus jayne jbn jbub jcarbaugh jeremy jeremyb_ jeroengerits jeverling jezdez Jikan jjasinski jmoiron jnhghy jo` Jochem johnpaulett jonasliljestrand jonathanchu josePhoenix joshbaptiste jranck88 js_ jSanp jtiai juanriaza jvc26 jvennik jwa Jygga KA Kaimei kallek kanyl Katharsis keimlink kenny kezabelle kimett kirotawa kklimonda_ kl4us klobucar kmt KnightHawk3 koniiiik koobs krak3n` Kronuz ksa ktosiek kuja kurol l3on L42y lapilofu Laybunz ldlework LeaChim Leeds leetrout LiamM lietu lighty Linovia lokai loltu luanp lubyou luminous Luyt m0n5t3r m3lvin macgregor markalanevans MarkusH markvl marmalodak mastergreg matt1s mattmcc maxorator maZrtr mbrochh McMAGIC--Copy melinath merlin83 mfisher mgrouchy mihasya mikalv Milossh minism mintos Mitar mito__ mnaser Mogget Morthez mrhanky mstr murr4y mvt MVXA mythmon myusuf3 mz|` NahimN naquad naro natmaster Nebros Neithan newzen nickaugust nicku nielsle nigelb nihilista niluje NimeshNeema Nistur nkryptic nkuttler nn0101 noah256 NomadJim non_117 NoNaMeNo nseger NullableCX numeral oblikoamorale octarine odinho offbyone ojii|afk olasd OldCoder_ ole Oli ollie onthestairs opi optixx optiz0r osirisx11 Osmose1000 osom ovnicraft pagenoare paltman pasen passy paulproteus Petazz pfeifer pgurumur phantomcircuit phix phobi phrame phuzion picasso Pici picoguy Pilate pjs psino psyolus ptomblin ptone pwf quake_guy quantumi Quarryman radez rafaduran rafales rakm randomdrake rastem rbmk rclsilver rdeguy ready res22 resixian restless_being restorer_ rethaw revolunet riboflavin ric` rickeyski-k riddle rizumu rje rmarko RobbieAB roidelapluie Rozza Rundll RuslanPopov S-Work samu schinckel schmilblick scott_w scottmizo scottyob sduncan sebleblanc sebleier sedeki semarjt Sembei semente seocam sephii setmeaway Seveas sh4wn Sharebear Shariq shredding simensen simme siovene sipsniffa sitaktif sjaak_trekhaak spirals ssbr ssfrr Steve^ stooj streety su-joc suchbeat sudobangbang Svedrin swi Synthead tankbusta tbaxter TDJACR tdy_ TeamMat telex telling Terminus- tga the_rat thehandler theneb therick theskumar thiderman ticketbot tigerfinch timg tinio tkd tm8522010 tobias1 TodPunk tomaw tomds tompaw trang_ trwired tswett Tuim tuv tvsutton Tykling uberj ubernostrum ulope unbit Unifox Unode upper2bits uris urth v0lksman Vadtec VadtecWk vaninwagen vetsin viper0984 vivekrai void vvinothkumar wassup wenzhixue willer_ Will| winkey_ witchdoc Wu xorox90 xpen yac yakamo yardena yuwang zadark Zaha zatan zaze ZDBioHazard zedas ZeiP Zeograd zero7 zerok zoraj Zuchto]
+2013-03-14 11:02:48	--	Channel #django: 514 nicks (1 op, 0 halfops, 0 voices, 513 normals)
+2013-03-14 11:02:48	***	Buffer Playback...
+2013-03-14 11:02:48	aero1	[17:02:42] gp: how about you go ahead and google "customizing the django admin interface" like a good little boy/girl
+2013-03-14 11:02:48	fission6	[17:02:51] well you can create a custom admin page to do whatever you want
+2013-03-14 11:02:48	fission6	[17:03:31] Do you have some modeling like SlideShow which has a m2m to Slides
+2013-03-14 11:02:48	fission6	[17:03:33] or something
+2013-03-14 11:02:48	Nebros	[17:03:41] ret = request.POST is to load the input of the form, but what is it for the link?  path = request.?
+2013-03-14 11:02:48	Nebros	[17:04:00] or is there another way?
+2013-03-14 11:02:48	fission6	[17:04:21] what do you mean the link
+2013-03-14 11:02:48	fission6	[17:04:26] the referrer?
+2013-03-14 11:02:48	fission6	[17:04:31] request.path i think?
+2013-03-14 11:02:48	Nebros	[17:04:35] http://portal/ch
+2013-03-14 11:02:48	Nebros	[17:04:41] like this...
+2013-03-14 11:02:48	fission6	[17:04:51] https://docs.djangoproject.com/en/dev/ref/request-response/#httprequest-objects
+2013-03-14 11:02:48	ticketbot	[17:04:52] https://docs.djangoproject.com/en/stable/ref/request-response/#httprequest-objects
+2013-03-14 11:02:48	fission6	[17:05:07] Nebros: ?
+2013-03-14 11:02:48	fission6	[17:05:21] whats up with ticketbot, it just copies what i entered 95% of the time
+2013-03-14 11:02:48	Nebros	[17:05:22] ah lol, i tried it with P and not p -.-
+2013-03-14 11:02:48	rdeguy	[17:05:24] hello. how can I select a specify a specific database for only a few of my models? (in app/models/__init__.py)
+2013-03-14 11:02:48	Nebros	[17:05:33] thats why it want work. thank you :)
+2013-03-14 11:02:48	rdeguy	[17:05:40] "specify a specific" huho
+2013-03-14 11:02:48	fission6	[17:05:46] rdeguy: checkout the Meta on the model
+2013-03-14 11:02:48	gp	[17:06:33] Whats up with all the snarky comments.  When I log in and answer peoples questions I don't have snarky responses.  Kind of rude
+2013-03-14 11:02:48	rdeguy	[17:06:33] i thought there only was db_table in Meta
+2013-03-14 11:02:48	lokai	[17:07:05] hm, what do I call .update() on? The model itself has no such method, only QuerySet    .update(F3=F('F1')+F('F2'))
+2013-03-14 11:02:48	fission6	[17:07:53] rdeguy: maybe a router? why do you have more than 1 db out of curiousity
+2013-03-14 11:02:48	fission6	[17:08:04] lokai: thats right
+2013-03-14 11:02:48	fission6	[17:08:10] update is on the model manager
+2013-03-14 11:02:48	VadtecWk	[17:08:13] is it possible to make a model return instances of itself? i have a model i need to build some algorithims into, and it makes more sense to have a class function that takes care of the processing and returns a query set of itself
+2013-03-14 11:02:48	fission6	[17:08:19] gp, early in the morning, people are cranky
+2013-03-14 11:02:48	fission6	[17:08:45] VadtecWk: do exactly that
+2013-03-14 11:02:48	fission6	[17:08:48] make a model method
+2013-03-14 11:02:48	fission6	[17:08:53] in your model class
+2013-03-14 11:02:48	lokai	[17:09:00] ah, so in order to get F3=myModel.F1+myModel.F3 I create an instance of myModel, call save(), then call myModel.objects.update() ?
+2013-03-14 11:02:48	fission6	[17:09:03] def something(self): print self # this is your model instance
+2013-03-14 11:02:48	fission6	[17:09:41] lokai: i don't know what you'r doing i think you were working with apollo13
+2013-03-14 11:02:48	dan00b_river	[17:09:43] gp: Tried using Grappelli?
+2013-03-14 11:02:48	rdeguy	[17:10:15] fission6: i have to create "shadow models" (some fields restrictions stripped) for deleted customers, they will be saved in an alternative db
+2013-03-14 11:02:48	fission6	[17:10:33] oh like an archive thing
+2013-03-14 11:02:48	rdeguy	[17:10:36] yes
+2013-03-14 11:02:48	fission6	[17:10:44] why does it have to be in another database?
+2013-03-14 11:02:48	VadtecWk	[17:11:03] fission6, what i mean is, i need the model to query the database for the models data so it can process it, and then it needs to pass the processed data on to view functions as a query set so it can be displayed
+2013-03-14 11:02:48	rdeguy	[17:11:39] I don't know, that's what I was asked to do, they probably prefer Customer and ShadowCustomer to be separated
+2013-03-14 11:02:48	VadtecWk	[17:11:42] fission6, so basically, can I have a model that queries all instances of itself, or would i be limitted to a single instance
+2013-03-14 11:02:48	fission6	[17:11:47] VadtecWk: whats the actual issue you are solving, explain from a high level the model you have and what you want your view to do
+2013-03-14 11:02:48	fission6	[17:12:16] there is only one instance of a model, generally speaking, in the database as a row
+2013-03-14 11:02:48	fission6	[17:12:39] so your question is unclear, tell me more form a high level about the Model you have and what you want to display
+2013-03-14 11:02:48	VadtecWk	[17:13:44] fission6, i have a model that is used to gather profiling data for some network infrastructure, based on the report i want to generate, i query the model in the view, process it, etc, but it makes the view code cumbersome to deal with
+2013-03-14 11:02:48	VadtecWk	[17:14:05] fission6, i want to move the code responsible for creating the queryset into the model itself
+2013-03-14 11:02:48	tga	[17:14:06] EvilDMP: cool, thanks for the recommendation
+2013-03-14 11:02:48	lokai	[17:14:32] fission6, trying to make a model field F3=m.F1+m.F2. Calling m.objects.update(F3=F('F1')+F('F2')) works, but I'd like to put this call where I define the model class m. Is it safe to do this by adding this line (overrideing) to m.save()?
+2013-03-14 11:02:48	VadtecWk	[17:14:39] so that instead of having to do all the processing in the view function it self, it is reduces to data = MyModel.get_report_X()
+2013-03-14 11:02:48	tga	[17:14:46] I want to have a "recent events" feed for my app -- how would you store urls to parts of the application so that they are not absolute?
+2013-03-14 11:02:48	VadtecWk	[17:15:05] and let the function do all the processing and return the queryset to the view code
+2013-03-14 11:02:48	EvilDMP	[17:15:24] tga: what do you mean by a feed?
+2013-03-14 11:02:48	tga	[17:15:28] I would need to store something that I could pass to reverse(), right?
+2013-03-14 11:02:48	tga	[17:16:02] EvilDMP: I have a ProjectEvent model that takes a text and an url -- anywhere in the app views can generate feed events
+2013-03-14 11:02:48	tga	[17:16:20] thing is, I want random views to be able to also add urls
+2013-03-14 11:02:48	tga	[17:16:42] obviously I can't keep the urls as strings because as soon as I move the app everything would break
+2013-03-14 11:02:48	VadtecWk	[17:17:13] fission6, worded another way: i need to have a model that can query all rows of itself from the database rather than just one row, as if i were executing a query for the model in a view function
+2013-03-14 11:02:48	VadtecWk	[17:17:49] tbh, im not sure what im asking for can even be done, so im not sure how to word it...
+2013-03-14 11:02:48	fission6	[17:18:21] VadtecWk: a model manager?
+2013-03-14 11:02:48	fission6	[17:18:51] can  you explain one more time, again using the actual model you have
+2013-03-14 11:02:48	fission6	[17:18:55] whats the name of it
+2013-03-14 11:02:48	tga	[17:18:58] can I somehow pass reverse() kwargs as text?
+2013-03-14 11:02:48	tga	[17:19:20] or do I have to turn them into json and back?
+2013-03-14 11:02:48	fission6	[17:19:31] json?
+2013-03-14 11:02:48	tga	[17:19:43] I want to run a reverse() with data from the db
+2013-03-14 11:02:48	tga	[17:19:52] I can store the view name, but what about the args?
+2013-03-14 11:02:48	VadtecWk	[17:19:53] fission6, the name of the model is ProcNetStat, it is responsbile for logging network data/stats
+2013-03-14 11:02:48	fission6	[17:20:22] tag what sort of data is it?
+2013-03-14 11:02:48	fission6	[17:20:30] is it to construct a url for a model?
+2013-03-14 11:02:48	fission6	[17:20:36] get_absolute_url?
+2013-03-14 11:02:48	VadtecWk	[17:20:39] fission6, right now, i have several view functions that query information from ProcNetStat and generate reports
+2013-03-14 11:02:48	fission6	[17:20:47] ok
+2013-03-14 11:02:48	fission6	[17:21:00] i follow you
+2013-03-14 11:02:48	VadtecWk	[17:21:12] fission6, i wan to be able to do: data = ProcNetStat.get_report_X()
+2013-03-14 11:02:48	VadtecWk	[17:21:29] instead of data = ProcNetStat.objects.filter()
+2013-03-14 11:02:48	fission6	[17:21:38] yes you can do that
+2013-03-14 11:02:48	fission6	[17:21:43] django model managers
+2013-03-14 11:02:48	fission6	[17:21:45] thats what you want
+2013-03-14 11:02:48	VadtecWk	[17:22:05] fission6, kk, i havent had a reason to mess with managers at all
+2013-03-14 11:02:48	VadtecWk	[17:22:18] so i wasnt sure how to explain this
+2013-03-14 11:02:48	fission6	[17:22:34] no worries
+2013-03-14 11:02:48	fission6	[17:22:35] https://docs.djangoproject.com/en/dev/topics/db/managers/#managers
+2013-03-14 11:02:48	ticketbot	[17:22:35] https://docs.djangoproject.com/en/stable/topics/db/managers/#managers
+2013-03-14 11:02:48	VadtecWk	[17:22:49] yeah, i just looked that up
+2013-03-14 11:02:48	fission6	[17:22:57] you create your own custome method on ProcNetStat.objects
+2013-03-14 11:02:48	fission6	[17:23:09] so in your case ProcNetStat.objects.get_hourly_report()
+2013-03-14 11:02:48	VadtecWk	[17:24:19] fission6, many thanks, this is exactly what i was looking for
+2013-03-14 11:02:48	fission6	[17:24:38] yep
+2013-03-14 11:02:48	fission6	[17:25:09] you also may want to check out how to chain queries, that ends up biting a lot of people who make model manager methods and then say, oh i want to chain these like filter or something
+2013-03-14 11:02:48	kezabelle	[17:25:49] thank goodness for passthroughmanager ;)
+2013-03-14 11:02:48	VadtecWk	[17:26:13] fission6, i use chaining often, but in this case im more interested in the graphic algos I have to use, so these functions will be one-shot queries and processing, ergo no need to chain
+2013-03-14 11:02:48	VadtecWk	[17:26:34] fission6, and i tried chaining, it didnt lend itself well due to how the filtering works
+2013-03-14 11:02:48	fission6	[17:26:34] kezabelle: yea, i also like http://hunterford.me/django-custom-model-manager-chaining/
+2013-03-14 11:02:48	fission6	[17:26:50] Vadtec: well one step at a time
+2013-03-14 11:02:48	kezabelle	[17:27:32] fission6: interesting, not seen the mixin style before ;)
+2013-03-14 11:02:48	VadtecWk	[17:28:06] fission6, the main reason i want to do this is i can do a single query that gives me all the information i need, where as in the view function i was having to do multiple queries for each part of the reports (in order to get the filters to narrow down the data set)
+2013-03-14 11:02:48	VadtecWk	[17:32:33] fission6, many thanks again, this is *exactly* what i was looking for
+2013-03-14 11:02:48	xorox90	[17:47:35] How can I delete app cleanly(including tables, file, static images..)?
+2013-03-14 11:02:48	xorox90	[17:51:58] What shop framework is ready for production? Is there anyone would recommend it?
+2013-03-14 11:02:48	***	Playback Complete.
+2013-03-14 11:02:53		[http://is.gd/o4PYVd]
+2013-03-14 11:02:53		[http://is.gd/Gil23h]
+2013-03-14 11:02:53		[http://is.gd/J9zeTU]
+2013-03-14 11:02:53		[http://is.gd/XVOVjD]
+2013-03-14 11:02:53		[http://is.gd/CGtD21]
+2013-03-14 11:02:57	<--	mgrouchy (~mgrouchy@dhcp107-17-55-16.hil-sfofhhh.sfo.wayport.net) has quit (Quit: Computer has gone to sleep.)
+2013-03-14 11:03:07	--	Mode #django [+cnrt]
+2013-03-14 11:03:07	--	Channel created on Sun, 26 Nov 2006 01:42:41
+2013-03-14 11:03:41	-->	rudasn (~nicolas@82.102.99.155) has joined #django
+2013-03-14 11:03:43	<--	jargon (~dayo@unaffiliated/jargon-) has quit (Ping timeout: 245 seconds)
+2013-03-14 11:04:30	-->	prabampm (~Thunderbi@117.239.68.18) has joined #django
+2013-03-14 11:04:38	<--	gawry (~gawry@177.134.32.63) has quit (Quit: gawry)
+2013-03-14 11:04:59	-->	iapain_ (~iapain@89-67-197-248.dynamic.chello.pl) has joined #django
+2013-03-14 11:05:21	-->	hwrd|work (~textual@unaffiliated/hwrdprkns) has joined #django
+2013-03-14 11:05:26	<--	ovnicraft (~ovnicraft@mail.azuay.gob.ec) has quit (Read error: Connection reset by peer)
+2013-03-14 11:05:45	<--	jnhghy (567bbf06@gateway/web/freenode/ip.86.123.191.6) has left #django
+2013-03-14 11:05:51	-->	joshfinnie (~joshfinni@westover-group.com) has joined #django
+2013-03-14 11:06:04	-->	ovnicraft (~ovnicraft@mail.azuay.gob.ec) has joined #django
+2013-03-14 11:06:30	-->	EyePulp (~eyepulp@173-18-228-191.client.mchsi.com) has joined #django
+2013-03-14 11:06:34	<--	iapain_ (~iapain@89-67-197-248.dynamic.chello.pl) has quit (Client Quit)
+2013-03-14 11:06:43	-->	jjmalina (~jjmalina@NYUFGA-WLESSAUTHCLIENTS-07.NATPOOL.NYU.EDU) has joined #django
+2013-03-14 11:06:49	-->	dardoleker (~dardoleke@46-65-45-84.zone16.bethere.co.uk) has joined #django
+2013-03-14 11:06:56	-->	iapain_ (~iapain@89-67-197-248.dynamic.chello.pl) has joined #django
+2013-03-14 11:07:05	<--	dardoleker (~dardoleke@46-65-45-84.zone16.bethere.co.uk) has left #django
+2013-03-14 11:07:15	-->	sputnikus (~sputnikus@ip-89-102-7-58.net.upcbroadband.cz) has joined #django
+2013-03-14 11:08:18	-->	blaxter (~blaxter@85.251.33.140.dyn.user.ono.com) has joined #django
+2013-03-14 11:08:41	-->	mgrouchy (~mgrouchy@ip-64-134-220-138.public.wayport.net) has joined #django
+2013-03-14 11:09:28	-->	johnraz (~jonathan@unaffiliated/johnraz) has joined #django
+2013-03-14 11:10:01	<--	vvinothkumar (~vinothkum@122.167.94.194) has quit (Ping timeout: 245 seconds)
+2013-03-14 11:10:02	-->	ilian (~ilian@84.238.212.239) has joined #django
+2013-03-14 11:11:24	<--	prabampm (~Thunderbi@117.239.68.18) has quit (Ping timeout: 256 seconds)
+2013-03-14 11:11:27	<--	wenzhixue (~wenzhixue@165.254.85.1) has quit (Remote host closed the connection)
+2013-03-14 11:12:21	<--	FSCV (~FSCV@65.19.131.247) has quit (Ping timeout: 256 seconds)
+2013-03-14 11:12:49	<--	randomdrake (~randomdra@stt6638.broadband.vi) has quit (Quit: randomdrake)
+2013-03-14 11:13:20	<--	rudasn (~nicolas@82.102.99.155) has quit (Ping timeout: 245 seconds)
+2013-03-14 11:13:24	-->	zoumpis (~quassel@host109-145-27-112.range109-145.btcentralplus.com) has joined #django
+2013-03-14 11:13:50	-->	rudasn (~nicolas@82.102.99.155) has joined #django
+2013-03-14 11:14:06	<--	hwrd|work (~textual@unaffiliated/hwrdprkns) has quit (Quit: Computer has gone to sleep.)
+2013-03-14 11:14:09	<--	NimeshNeema (uid2689@gateway/web/irccloud.com/x-fywowlngpavynbdl) has quit (Read error: Operation timed out)
+2013-03-14 11:14:09	<--	zero7 (uid10708@gateway/web/irccloud.com/x-onurhrxjrconsyyk) has quit (Read error: Operation timed out)
+2013-03-14 11:14:26	<--	tobias1 (~tobias@ec2-23-22-153-172.compute-1.amazonaws.com) has quit (Read error: Operation timed out)
+2013-03-14 11:14:29	<--	NahimN (~textual@184-94-59-178.dedicated.allstream.net) has quit (Quit: Computer has gone to sleep.)
+2013-03-14 11:14:44	<--	chronos (~quassel@unaffiliated/chronos) has quit (Read error: Operation timed out)
+2013-03-14 11:15:08	-->	tobias1 (~tobias@ec2-23-22-153-172.compute-1.amazonaws.com) has joined #django
+2013-03-14 11:16:38	-->	NahimN (~textual@184-94-59-178.dedicated.allstream.net) has joined #django
+2013-03-14 11:16:40	-->	randomdrake (~randomdra@stt6638.broadband.vi) has joined #django
+2013-03-14 11:17:21	-->	zzing (~zzing@198-91-217-153.cpe.distributel.net) has joined #django
+2013-03-14 11:17:49	-->	chronos (~quassel@unaffiliated/chronos) has joined #django
+2013-03-14 11:18:22	<--	OldCoder_ (~OldCoder_@c-69-181-139-128.hsd1.ca.comcast.net) has quit (Remote host closed the connection)
+2013-03-14 11:19:23	<--	newzen (~newzen@190.205.250.150) has quit (Read error: Connection reset by peer)
+2013-03-14 11:19:39	-->	newzen (~newzen@190.205.250.150) has joined #django
+2013-03-14 11:20:29	-->	Coffeeninja (~kristian@85.19.64.66) has joined #django
+2013-03-14 11:20:50	-->	kenbolton (~kenbolton@ool-45757d25.dyn.optonline.net) has joined #django
+2013-03-14 11:21:40	shredding	Can I add dynamically clauses to a filter?
+2013-03-14 11:21:42	kezabelle	anyone think of [or know of an app which does] a way to Feed discovery which isn't just looping installed apps trying to import a feeds file? :)
+2013-03-14 11:21:42	<--	rudasn (~nicolas@82.102.99.155) has quit (Ping timeout: 264 seconds)
+2013-03-14 11:21:51	kezabelle	*to do Feed discovery
+2013-03-14 11:21:52	<--	optixx (~optixx@optixx.org) has quit (Ping timeout: 252 seconds)
+2013-03-14 11:22:24	shredding	Like: client.filter(startTime__gte=someDatetime); if endTime is not None: ...
+2013-03-14 11:22:25	kezabelle	shredding: sure, using */** expansion of a list/dict into appropriate args
+2013-03-14 11:22:42	kezabelle	wait, what? what's dynamic about that?
+2013-03-14 11:22:42	shredding	kezabelle: whats */**?
+2013-03-14 11:23:01	shredding	I want to have a method in my model that accepts start time and endtime.
+2013-03-14 11:23:03	<--	opi (~Thunderbi@pc-54030.zdnet.com.pl) has quit (Quit: opi)
+2013-03-14 11:23:05	kezabelle	star-expansion of lists/dicts, like you would for doing *args, **kwargs
+2013-03-14 11:23:07	shredding	if not given, i want to retrieve all.
+2013-03-14 11:23:19	-->	nedbat (nedbat@python/psf/nedbat) has joined #django
+2013-03-14 11:23:25	-->	optixx (~optixx@optixx.org) has joined #django
+2013-03-14 11:23:30	kezabelle	… so just do a normal if clause?
+2013-03-14 11:23:46	kezabelle	without a proper dpaste example, IDK what to tell you, I'm afraid.
+2013-03-14 11:23:55	-->	rudasn (~nicolas@82.102.99.155) has joined #django
+2013-03-14 11:23:57	shredding	I can just give a kwargs to filter()?
+2013-03-14 11:24:02	shredding	that makes sense.
+2013-03-14 11:24:10	shredding	So I can give a dict.
+2013-03-14 11:24:32	kezabelle	of course, there's nothing particularly special about it
+2013-03-14 11:24:46	bmispelon	shredding: you can do something like this: http://dpaste.com/1022803/
+2013-03-14 11:25:11	shredding	bmispelon: Okay, that's exactly what I need.
+2013-03-14 11:25:15	shredding	Thanks.
+2013-03-14 11:25:19	-->	freannrak (~freannrak@32.221.190.90.dyn.estpak.ee) has joined #django
+2013-03-14 11:25:20	bmispelon	the ** is a python operator that basically transforms a dict in to keyword arguments
+2013-03-14 11:25:21	kezabelle	danke bmispelon ;)
+2013-03-14 11:25:44	bmispelon	you're all welcome :)
+2013-03-14 11:25:46	-->	Skiba (~Skiba@173-160-206-245-Washington.hfc.comcastbusiness.net) has joined #django
+2013-03-14 11:26:40	-->	Therion (~dean@68-114-137-48.dhcp.jcsn.tn.charter.com) has joined #django
+2013-03-14 11:26:51	-->	rasca (~rasca@190.244.146.73) has joined #django
+2013-03-14 11:27:09	EdwardIII	hrm stuck on something simple with feincms heh, trying to get my own home page. the docs just say "If you want to define a page as home page for the whole site, you can give it an override_url value of '/'."
+2013-03-14 11:27:12	-->	twoface (~twoface@87-104-57-162-dynamic-customer.profibernet.dk) has joined #django
+2013-03-14 11:31:06	-->	ryannielson (~ryanniels@blk-212-112-110.eastlink.ca) has joined #django
+2013-03-14 11:31:27	<--	rudasn (~nicolas@82.102.99.155) has quit (Ping timeout: 276 seconds)
+2013-03-14 11:31:41	-->	hd1 (~hdiwan@50-0-145-228.dsl.static.sonic.net) has joined #django
+2013-03-14 11:32:13	hd1	what's the recommended templating engine for HTML with django?
+2013-03-14 11:32:22	hd1	is it still cherryPy?
+2013-03-14 11:32:41	twoface	uhm... what? django has its own templating engine
+2013-03-14 11:32:48	twoface	and cherrypy is certainly not a templating engine :)
+2013-03-14 11:32:54	hd1	twoface: does it?
+2013-03-14 11:32:59	 *	hd1 is new to django
+2013-03-14 11:33:10	twoface	did you see the tutorial?
+2013-03-14 11:33:19	-->	mihow (~mihow@rrcs-50-75-208-18.nyc.biz.rr.com) has joined #django
+2013-03-14 11:33:27	hd1	twoface: yea
+2013-03-14 11:34:00	-->	rudasn (~nicolas@82.102.99.155) has joined #django
+2013-03-14 11:34:11	twoface	its in part 2, so obviously not :) https://docs.djangoproject.com/en/dev/intro/tutorial02/#customize-the-admin-look-and-feel
+2013-03-14 11:34:11	ticketbot	https://docs.djangoproject.com/en/stable/intro/tutorial02/#customize-the-admin-look-and-feel
+2013-03-14 11:34:13	<--	epiloque (~epiloque@46.70.235.185) has quit (Remote host closed the connection)
+2013-03-14 11:34:17		[http://is.gd/TeQwUq]
+2013-03-14 11:34:17		[http://is.gd/iWPOpx]
+2013-03-14 11:34:36	<--	hyperair (~hyperair@ubuntu/member/hyperair) has quit (Ping timeout: 245 seconds)
+2013-03-14 11:35:01	hd1	tutorial01
+2013-03-14 11:35:11	hd1	not 02 and subsequent ones
+2013-03-14 11:36:29	twoface	well, i doubt you are going to get much help in here, before you have finished the tutorial :)
+2013-03-14 11:36:30	<--	ajhansen (~Thunderbi@93-161-101-117-dynamic.dk.customer.tdc.net) has quit (Quit: ajhansen)
+2013-03-14 11:37:03	hd1	twoface: not from you, clearly
+2013-03-14 11:37:35	-->	les_sylvains (~les_sylva@68.67.45.242) has joined #django
+2013-03-14 11:38:12	<--	swi (~swi@altlinux/developer/swi) has quit (Quit: To bind us beyond end of time, to thee I give a ring of gold)
+2013-03-14 11:38:20	hd1	https://docs.djangoproject.com/en/dev/topics/http/views/ makes one thing there is no template language
+2013-03-14 11:38:20	ticketbot	https://docs.djangoproject.com/en/stable/topics/http/views/
+2013-03-14 11:38:25		[http://is.gd/0MWMlo]
+2013-03-14 11:38:25		[http://is.gd/F1HX3v]
+2013-03-14 11:38:33	-->	dono (~dono@h221.156.216.66.static.ip.windstream.net) has joined #django
+2013-03-14 11:38:49	hd1	which is what lead me to think that I'd need cherrypy, twoface
+2013-03-14 11:39:27	<--	rasca (~rasca@190.244.146.73) has quit (Quit: Konversation terminated!)
+2013-03-14 11:39:29	twoface	its a random example in the middle of the docs
+2013-03-14 11:39:32	-->	dlam (user@conference/pycon/x-zeptdhalfnwudjuw) has joined #django
+2013-03-14 11:39:43	-->	prtcl (~prtcl@2620:100:f00d:a150:223:32ff:fe31:a38) has joined #django
+2013-03-14 11:39:44	twoface	and cherrypy is a web framework - it has nothing to do with being a templating engine
+2013-03-14 11:39:51	bmispelon	hd1: if you're new to django, I highly suggest you go through the tutorial
+2013-03-14 11:40:00	-->	m0rpho (~Thunderbi@190.67.63.166) has joined #django
+2013-03-14 11:40:04	bmispelon	it should introduce you to django's basic concepts
+2013-03-14 11:40:31	hd1	bmispelon: is it really that different than any other WSGI-based web framework?
+2013-03-14 11:40:40	bmispelon	django's views are not tied to templates, that's probably why the documentation for them doesn't mention templates
+2013-03-14 11:40:42	hd1	I know Turbogears rather well
+2013-03-14 11:40:45	-->	natea (~natea@mba0536d0.tmodns.net) has joined #django
+2013-03-14 11:41:12	<--	iapain_ (~iapain@89-67-197-248.dynamic.chello.pl) has quit (Quit: iapain_)
+2013-03-14 11:41:15	bmispelon	hd1: it'll introduce you to django's architecture and general layout
+2013-03-14 11:41:27	bmispelon	and show things like the admin and how to write views that use templates
+2013-03-14 11:41:35	<--	mintos (mvaliyav@nat/redhat/x-xfbeuqdijfzerdxx) has quit (Ping timeout: 260 seconds)
+2013-03-14 11:41:56	bmispelon	if you're already familiar with another web framework, you can porbably read through it rather quickly
+2013-03-14 11:42:00	<--	sputnikus (~sputnikus@ip-89-102-7-58.net.upcbroadband.cz) has quit (Ping timeout: 256 seconds)
+2013-03-14 11:42:00	Osmose1000	FWIW that document actually mentions templates plenty of times
+2013-03-14 11:42:06	<--	rudasn (~nicolas@82.102.99.155) has quit (Ping timeout: 245 seconds)
+2013-03-14 11:42:23	hd1	bmispelon: that's what I did, guess I read through too quickly
+2013-03-14 11:42:45	-->	mintos (mvaliyav@nat/redhat/x-gnqdkagkmsxexgrq) has joined #django
+2013-03-14 11:43:04	bmispelon	hd1: also make sure you're reading the tutorial corresponding to the version of django you're using
+2013-03-14 11:43:29	bmispelon	(there's a widget allowing you to change which version of the doc you're viewing on the lower right hand corner of every page)
+2013-03-14 11:43:35	hd1	yep
+2013-03-14 11:43:35	twoface	and read all the tutorial pages - they cover different aspects of django
+2013-03-14 11:43:39	hd1	I noticed as much
+2013-03-14 11:43:41	Osmose1000	hd1: I think they're referring to the entire tutorial, not just the first part (it's not 4 tutorials, it's one tutorial in 4 parts)
+2013-03-14 11:43:57	 *	Osmose1000 can't remember if it's 4 or more
+2013-03-14 11:44:05	-->	rudasn (~nicolas@82.102.99.155) has joined #django
+2013-03-14 11:44:12	bmispelon	Osmose1000: there's a fifth installment now
+2013-03-14 11:44:15	bmispelon	since 1.5
+2013-03-14 11:44:34	maZrtr	hi guys. using a form wizard, is it possible to set an initial value of a multiwidget form field within the get_form_initial() method of the form wizard? and if so: how?
+2013-03-14 11:44:40	Osmose1000	bmispelon: Aha, adds testing, nice
+2013-03-14 11:45:07	-->	sayan (~sayanchow@fedora/sayan) has joined #django
+2013-03-14 11:45:55	-->	jaddison (~jaddison@184.66.16.213) has joined #django
+2013-03-14 11:47:01	<--	honi (~honi@200-63-165-93.static.speedy.com.ar) has quit (Quit: honi)
+2013-03-14 11:47:06	-->	opi (~Thunderbi@pc-54030.zdnet.com.pl) has joined #django
+2013-03-14 11:49:21	<--	osom (~osom@112.209.50.207) has quit (Remote host closed the connection)
+2013-03-14 11:49:23	-->	hwrd|work (~textual@unaffiliated/hwrdprkns) has joined #django
+2013-03-14 11:49:39	<--	mihasya (~mihasya@c-98-210-7-215.hsd1.ca.comcast.net) has quit (Quit: Computer has gone to sleep.)
+2013-03-14 11:50:39	--	sduncan is now known as sduncan_afk
+2013-03-14 11:51:52	-->	lfaraone (~quassel@TEAM-ROCKET.MIT.EDU) has joined #django
+2013-03-14 11:52:13	lfaraone	Is there a reason I shouldn't set FILE_UPLOAD_MAX_MEMORY_SIZE to 0? I sort of want all uploaded files to be stored as temporary files.
+2013-03-14 11:52:26	-->	sligodave (~sligodave@2604:9a00:2010:a012:11::12c) has joined #django
+2013-03-14 11:52:58	<--	rudasn (~nicolas@82.102.99.155) has quit (Ping timeout: 240 seconds)
+2013-03-14 11:54:08	-->	henryk_ (~henryk@host204-206-static.14-79-b.business.telecomitalia.it) has joined #django
+2013-03-14 11:54:12	-->	rudasn (~nicolas@82.102.99.155) has joined #django
+2013-03-14 11:57:11	-->	craigkerstiens (~craigkers@c-76-126-162-38.hsd1.ca.comcast.net) has joined #django
+2013-03-14 11:57:51	<--	jvennik (~jvennik@90-145-138-249.bbserv.nl) has quit (Remote host closed the connection)
+2013-03-14 11:59:03	<--	natea (~natea@mba0536d0.tmodns.net) has quit (Quit: natea)
+2013-03-14 12:00:10	<--	phuzion (~phuzion@ipv6.irc.teh-server.com) has quit (Quit: No Ping reply in 180 seconds.)
+2013-03-14 12:00:54	-->	jumoit (~so@116.230.235.50) has joined #django
+2013-03-14 12:01:54	<--	optixx (~optixx@optixx.org) has quit (Ping timeout: 264 seconds)
+2013-03-14 12:02:02	-->	dirn (~dirn@199.108.68.1) has joined #django
+2013-03-14 12:02:07	hd1	ahh.. I recall "using an alternate template system"
+2013-03-14 12:02:22	-->	hyperair (~hyperair@ubuntu/member/hyperair) has joined #django
+2013-03-14 12:03:05	<--	randomdrake (~randomdra@stt6638.broadband.vi) has quit (Quit: randomdrake)
+2013-03-14 12:03:18	<--	bmispelon (~bmispelon@1F2E940F.dsl.pool.telekom.hu) has quit (Quit: Leaving)
+2013-03-14 12:03:40	<--	Nebros (52dc01cd@gateway/web/freenode/ip.82.220.1.205) has quit (Quit: Page closed)
+2013-03-14 12:03:42	-->	jpadilla (~jpadilla@173.215.221.137) has joined #django
+2013-03-14 12:03:49	-->	optixx (~optixx@optixx.org) has joined #django
+2013-03-14 12:03:49	-->	MicahCarrick (~MicahCarr@173-164-68-213-Oregon.hfc.comcastbusiness.net) has joined #django
+2013-03-14 12:04:07	rdeguy	hey how can I have more info on my database routers settings ? I am running manage.py syncdb --database shadow, no error but nothing is created.
+2013-03-14 12:04:42	jpadilla	Hey guys, anyone remember a django app that was open sourced recently that allowed a superuser to switch/impersonate another user?
+2013-03-14 12:04:46	rdeguy	I mean more infos on what is happening as it runs. I have tried adding print statements in my router methods but nothing is printeed
+2013-03-14 12:05:42	<--	mintos (mvaliyav@nat/redhat/x-gnqdkagkmsxexgrq) has quit (Quit: Leaving)
+2013-03-14 12:06:38	-->	gawry (~gawry@177.134.32.63) has joined #django
+2013-03-14 12:07:11	-->	phildini (~phildini@174.46.233.226) has joined #django
+2013-03-14 12:07:34	<--	shredding (~shredding@cable-158-181-69-216.cust.telecolumbus.net) has quit (Quit: shredding)
+2013-03-14 12:07:35	-->	phuzion (~phuzion@ipv6.irc.teh-server.com) has joined #django
+2013-03-14 12:08:36	<--	rudasn (~nicolas@82.102.99.155) has quit (Ping timeout: 264 seconds)
+2013-03-14 12:10:16	rdeguy	ha I got it running properly, i see some printed stuff now
+2013-03-14 12:10:23	-->	chrisramon (~chrisramo@200.106.21.141) has joined #django
+2013-03-14 12:10:43	rdeguy	I had to change my router's place in settings.DATABASE_ROUTERS
+2013-03-14 12:11:45	-->	chrislkeller (~chrislkel@63.237.174.130) has joined #django
+2013-03-14 12:12:20	<--	S-Work (~aars@unaffiliated/s-work) has quit (Ping timeout: 246 seconds)
+2013-03-14 12:13:01	<--	Furao (~Furao@pcd423152.netvigator.com) has quit (Quit: Furao)
+2013-03-14 12:13:11	<--	void (~Adium@wikipedia/voidus) has quit (Quit: Leaving.)
+2013-03-14 12:14:17	-->	rudasn (~nicolas@82.102.99.155) has joined #django
+2013-03-14 12:14:56	<--	kl4us (~kl4us@151.9.20.57) has quit (Quit: Leaving)
+2013-03-14 12:14:57	<--	sligodave (~sligodave@2604:9a00:2010:a012:11::12c) has left #django
+2013-03-14 12:14:57	<--	m0rpho (~Thunderbi@190.67.63.166) has quit (Ping timeout: 258 seconds)
+2013-03-14 12:17:12	-->	randomdrake (~randomdra@stt6638.broadband.vi) has joined #django
+2013-03-14 12:18:13	<--	zoraj (~zoraj@188.165.101.178) has quit (Quit: zoraj)
+2013-03-14 12:19:41	<--	iiie (iiie@conference/pycon/x-qnvqqbeilbihsplb) has quit (Ping timeout: 246 seconds)
+2013-03-14 12:20:06	-->	jfw (~jfw@c-24-20-145-178.hsd1.or.comcast.net) has joined #django
+2013-03-14 12:20:07	-->	natea (natea@conference/pycon/x-upwszgpjjnnxfptz) has joined #django
+2013-03-14 12:20:12	-->	iiie (~iiie@50-201-74-2-static.hfc.comcastbusiness.net) has joined #django
+2013-03-14 12:20:17	<--	NahimN (~textual@184-94-59-178.dedicated.allstream.net) has quit (Quit: Computer has gone to sleep.)
+2013-03-14 12:21:53	<--	markalanevans (~markalane@cpe-76-172-2-29.socal.res.rr.com) has quit (Quit: markalanevans)

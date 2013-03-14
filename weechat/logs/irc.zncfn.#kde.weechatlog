@@ -178,3 +178,258 @@
 2013-03-13 23:25:01	<--	dh64 (~dh64@174-21-217-209.tukw.qwest.net) has quit (Ping timeout: 245 seconds)
 2013-03-13 23:29:43	<--	Jucato (~jucato@kde/developer/jucato) has quit (Quit: Konversation terminated!)
 2013-03-13 23:33:04	-->	Jucato (~jucato@kde/developer/jucato) has joined #kde
+2013-03-14 11:02:48	-->	numeral (~numeral@198.23.228.15) has joined #kde
+2013-03-14 11:02:48	--	Topic for #kde is "KDE SC 4.10 is out! See www.kde.org | http://userbase.kde.org | http://forum.kde.org | Don't flood the channel, use http://paste.kde.org | Distro related questions go in your distro channel | Offtopic in #kde-chat | State your distribution and KDE version when asking questions | Don't delete ~/.kde or ~/.kde4"
+2013-03-14 11:02:48	--	Topic set by neverendingo (neverend@kde/www/imalchow) on Wed, 06 Feb 2013 09:38:35
+2013-03-14 11:02:48	--	Nicks #kde: [@ChanServ _2M1R__ _protagoras271_ _Zaister ABCD abchirk abe__ abner aboudreault abveritas AciD` Adaptee Adys aheinecke ahiemstra aitorpazos Aji-Dahaka akaWolf alienBOB alk_ almoxarife Almtesh altin amingv Ammler apoi apokryphos- apt aracele Ard1t ArGGu^^ argonel armands_ armin auri|afk az az7_ b0stik backjlack beasty BeerSerc_ bleomycin blubb BluesKaj BogdanR bonsaikitten boom1992 bootkiller boubbin Brian_H brot BrummbQ Bry8Star BtbN burntoto buscher Caster CESSMASTER chalcedony chasmo chronos chuckf cire cmagina cmr codertux coinspelunk comawhite CosmicB crashmag Cthulhux Cybertinus Cymew cyndis d4 dahlia dani_l Danio danmackay dansushi Darkwing DarthGandalf Daskreech DaZ deathadder denysonique Derega desti destrudo deufrai dh64 Dhraakellian dijonyummy dk0r dlesage doerner dotCOMmie drdanz Driver_ Droste1 Dudalus Dunedan dv_ dvratil ealexp Eddi|zuHause edulix2 eeanm egant einar77_work elcuco elena-IK eljefe__ emilsedgh emma enderw enhydra err-or_ erry eshlox esing fatalerrors filipesaraiva FL1SK FlameReaper FlameReaper-PC flami fling floe Floppwobbles foolano freeedrich| fuchs12 fury_ fxrh gavrila__ Genolo Gentle geomyidae_ Gibba giorgiodinapoli gnumdk google01103 gpoesia graft groundnuty Guest27784 hacosta hagebake HandheldPenguin hateball hays_ hcc23 hdevalence heath heirecka Heis| hermier hnsz2002 Husar ibancioiu Icewind idoru Inkane invariant irith ironfroggy iserantes ivan`` ivanich ivanich_work jachin_cloud JackBauer24 JackWinter1 jacky james147 JanKusanagi Janusz1 jarkko^_ Jarris jayne jazka jcolby jehan jemparing_ jgrulich Jikan jillsmitt JLP JoeSomebody jrd0 jreznik jtalk jthomas__ Juan Jucato julupu jussi jyc K00pi3 k2s k4tfish kaasinees Kardos kc8hfi kdepepo khindenburg killown Killsudo kirin` Kitzu kiwicam kkszysiu_work konadr konelix koshie_ KRF kuantkid lacerda LapsedPacifist larksyrm LeeJunFan Lenzoid likewhoa Linex LjL lkrejci lliehu Maccer MadAGu Magiobiwan magyar Mamarok Manko10 marass markand_ masch_ Mathnerd314_ mato_ maybeArgh mbriza mck182|afk mcurve Mez Miles MissionCritical mithnae_ mixi MJD mkyral MoDaXaS monokrome Moult_ mrec_ mrguitar msx mtk muep_ murthy Muzer mva MxG Nakato Nakkel Natenom Neandre neoclust neverendingo Niek_ Nikoli nikosapi niqt niteshnarayanlal nortti Noughmad npm_ numeral nwoki nyloc oberling oget Okitain ovidiu-florin ozzzy pa padde paddymahoney PasNox PaulW2U Pensacola peppe peremen pete petteyg pfoo PhilRod_ PhilSli5 Phr33d0m phunyguy phuzion planetmaker Plastefuchs ponpat prkc pumphaus R_Rios RamchandraApte Rasi rdale___ rdieter remus Richlv rieper rindolf RingtailedFox Rish Rix rmbell rndbit roasted Roin royboy626 RR42 rrix rufianw RushPL ryanakca rysiek|pl saigkill saLOUt SamuraiGhost Sash SaveTheRobots ScytheBlade1 sertsa SeySayux shadeslayer shal3r Sho_ shumski_out siddvicious sig_wall silver_hook sinobell sipherdee_ SJr skfin sladen Smile30 smokex soredz spacetime Sparxz_ Sput stackofcats SteveRiley stimpy267 stuffcorpse sujith_h sungami suy svuorela swarfega Systemlord_ Syvolc szal tan Tanktalus Taoki tapout tdfischer tdignan tdn techlife TeslaTest tetris4 Th3R0b TheFuzzball TheWoozle Ticho_ timi tjablin tm258 Tm_T Tomasu tonymc Torch tosky totte tsimpson tsukasa tweakism twobitsprite txwikinger2 u-foka V0id valorie vblazquez vHanda vmeson Vojtaeus voondo weltzooo wesbluemarine Weust` whilo white WindPower WinstonSmith withnale wotan147 wujek ximion xxtjaxx xy yashshah Ycarene yerodin yofel yopher z16a Z_God_Z zaki ZeDestructor zegenie ZenGuy311 zenguy_pc zenlunatic Zephyrus Zepp_ zeratul_ zeroedout zizzfizzix zorael |oop]
+2013-03-14 11:02:48	--	Channel #kde: 435 nicks (1 op, 0 halfops, 0 voices, 434 normals)
+2013-03-14 11:02:48	***	Buffer Playback...
+2013-03-14 11:02:48	tms	[12:26:46] where can I find my vpn config files in .kde
+2013-03-14 11:02:48	tms	[12:26:47] ?
+2013-03-14 11:02:48	Mamarok	[12:38:22] tms: I don't think they are in .kde, search the home folder for other hidden config files
+2013-03-14 11:02:48	Mamarok	[12:38:58] tms: totally depends on what vpn you are suing
+2013-03-14 11:02:48	Mamarok	[12:39:07] using*
+2013-03-14 11:02:48	tms	[12:39:09] VPNC
+2013-03-14 11:02:48	Mamarok	[12:39:32] ~/.kde/ is for KDE applications only
+2013-03-14 11:02:48	tms	[12:40:15] ok. I was trying to find something related to networking
+2013-03-14 11:02:48	Mamarok	[12:41:16] well, it is not a KDE app, so no need to search there, and I can't really help with vpn, sorry
+2013-03-14 11:02:48	tms	[12:41:45] Mamarok: ok. thanks
+2013-03-14 11:02:48	murthy	[12:56:20] hello everyone
+2013-03-14 11:02:48	kesha	[13:20:46]  I am not able to mount audiocd .Plz help
+2013-03-14 11:02:48	ychaouche	[13:56:17] Hello. Has anybody managed to lock the zoom in semantik ?
+2013-03-14 11:02:48	dknight	[14:02:22] how can I disable kparts plugin?
+2013-03-14 11:02:48	Jucato	[14:03:08] what do you mean?
+2013-03-14 11:02:48	Jucato	[14:03:29] can you be more precise please?
+2013-03-14 11:02:48	dknight	[14:04:40] Jucato: kparts is the plugin that my browser loads for various mime types; but I dont want kparts to be used any more
+2013-03-14 11:02:48	Jucato	[14:04:59] you mean konqueror?
+2013-03-14 11:02:48	dknight	[14:05:47] Jucato: nope, in firefox and chromium
+2013-03-14 11:02:48	Jucato	[14:06:01] eh?
+2013-03-14 11:02:48	Jucato	[14:06:14] firefox and chromium don't use kparts
+2013-03-14 11:02:48	ychaouche	[14:07:31] http://superuser.com/questions/565794/how-to-lock-the-zoom-in-semantik
+2013-03-14 11:02:48	dknight	[14:08:25] Jucato: they do. nevermind, I found it. I have to disable them in plugins section.
+2013-03-14 11:02:48	Jucato	[14:08:54] really? that's new to me. at least by default Firefox doesn't have that. unless it's a 3rd party extension
+2013-03-14 11:02:48	dknight	[14:11:53] Jucato: yeah, default FF does not have that; but you can enable it if you wish
+2013-03-14 11:02:48	Jucato	[14:12:05] enable? like how?
+2013-03-14 11:02:48	dknight	[14:16:23] Jucato: https://wiki.archlinux.org/index.php/Browser_Plugins#kpartsplugin
+2013-03-14 11:02:49	Jucato	[14:17:41] dknight: yeah that's what I meant. it's not something you can just "enable/disable". you have to install it too :) (not sure if fedora even has it packaged)
+2013-03-14 11:02:49	Jucato	[14:17:46] anyway, thanks
+2013-03-14 11:02:49	dknight	[14:21:13] ah, I assumed that installation would be implicit. no problem :)
+2013-03-14 11:02:49	Eddi|zuHause	[14:50:34] hello, i just updated to kde 4.10.0, and kwin gets really unperforming when effects are disabled
+2013-03-14 11:02:49	ibancioiu	[15:44:13] hi
+2013-03-14 11:02:49	ibancioiu	[15:44:29] i have a problem with my bt adapter on fedora with kde
+2013-03-14 11:02:49	Phr33d0m	[15:44:54] and what's wrong?
+2013-03-14 11:02:49	ibancioiu	[15:45:14] bluetooth configuration error
+2013-03-14 11:02:49	ibancioiu	[15:45:24] i allready open a bug report
+2013-03-14 11:02:49	ibancioiu	[15:45:25] on
+2013-03-14 11:02:49	ibancioiu	[15:45:27] bugzilla
+2013-03-14 11:02:49	ibancioiu	[15:45:34] but nothing moves :(
+2013-03-14 11:02:49	Phr33d0m	[15:45:43] link me to the bug report
+2013-03-14 11:02:49	ibancioiu	[15:46:14] https://bugzilla.redhat.com/show_bug.cgi?id=882693
+2013-03-14 11:02:49	Phr33d0m	[15:47:51] this does not seem to be a KDE related issue at all
+2013-03-14 11:02:49	ibancioiu	[15:48:27] ok
+2013-03-14 11:02:49	ibancioiu	[15:48:29] thanks
+2013-03-14 11:02:49	ibancioiu	[15:48:31] :)
+2013-03-14 11:02:49	Phr33d0m	[15:48:41] and it's a good idea to attach LARGE logs as text files to the bug instead of pasting them in the comment area
+2013-03-14 11:02:49	ibancioiu	[15:49:18] ok
+2013-03-14 11:02:49	ibancioiu	[15:53:13] @phr33d0m an other problem...
+2013-03-14 11:02:49	ibancioiu	[15:53:29] on krfb...
+2013-03-14 11:02:49	ibancioiu	[15:53:43] how do i get the external ip if i'm on a router?
+2013-03-14 11:02:49	Phr33d0m	[15:58:59] ibancioiu you don't know your external IP or you want to set your external IP in the application?
+2013-03-14 11:02:49	ibancioiu	[16:19:34] i wanna set it in my app
+2013-03-14 11:02:49	Phr33d0m	[16:21:10] ibancioiu it doesn't matter if you get your internal IP in there, it's common for the app to get your internal IP (which is the one assigned to your network interface), just give other people your external IP and if you have your ports opened they should be able to connect
+2013-03-14 11:02:49	ibancioiu	[16:25:46] and how do i check the ports?
+2013-03-14 11:02:49	BluesKaj	[17:02:53] Hey all
+2013-03-14 11:02:49	Phr33d0m	[17:08:23] hey you
+2013-03-14 11:02:49	roasted	[17:11:46] hello friends
+2013-03-14 11:02:49	Phr33d0m	[17:13:14] hello unknown person from the internet
+2013-03-14 11:02:49	roasted	[17:19:18] Phr33d0m: :D
+2013-03-14 11:02:49	Richlv	[17:43:02] i wanted to edit text files side by side in a beter way than two kwrite windows could do. i recalled that kate had some more advanced capabilities, so i installed and started it. the first tip i got was about splitting windows.
+2013-03-14 11:02:49	Richlv	[17:43:14] feel free to put that as a testimonial on kate site or something :D
+2013-03-14 11:02:49	Richlv	[17:43:21] that was a slightly weird feeling, too
+2013-03-14 11:02:49	Okitain	[17:44:45] Maaaybe kde reads your thoughts.
+2013-03-14 11:02:49	Okitain	[17:45:21] and kate is grossed out by your private browsing habits.
+2013-03-14 11:02:49	Richlv	[17:46:51] is shee puritan or something ?
+2013-03-14 11:02:49	Richlv	[17:46:55] anyway... damn - https://bugs.kde.org/show_bug.cgi?id=115734
+2013-03-14 11:02:49	Richlv	[17:47:03] the joy was not complete :)
+2013-03-14 11:02:49	Richlv	[17:47:52] (everybody should vote on that !)
+2013-03-14 11:02:49	Inkane	[17:53:52] Richlv: what should that do exactly? Scroll down the other view when one view is scrolled?
+2013-03-14 11:02:49	Inkane	[17:53:59] Or apply some matching magic?
+2013-03-14 11:02:49	Inkane	[17:54:06] to synchronize different versions
+2013-03-14 11:02:49	Inkane	[17:54:14] of the same file
+2013-03-14 11:02:49	Richlv	[18:01:27] Inkane, no, just scroll both of them
+2013-03-14 11:02:49	Inkane	[18:01:43] so, just keeping them in sync
+2013-03-14 11:02:49	Richlv	[18:01:47] simply by line number; but some way to introduce offset would be great, too
+2013-03-14 11:02:49	Richlv	[18:01:49] yep
+2013-03-14 11:02:49	Inkane	[18:01:54] I guess  that should be easy to implement
+2013-03-14 11:02:49	Richlv	[18:01:55] i'm comparing two translation files
+2013-03-14 11:02:49	Richlv	[18:02:05] and now i scroll them manually, counting mousewheel turns
+2013-03-14 11:02:49	Inkane	[18:02:12] if I find some time, I guess I can implement it
+2013-03-14 11:02:49	Inkane	[18:02:40] but even then it probably won't  be available before 4.11
+2013-03-14 11:02:49	***	Playback Complete.
+2013-03-14 11:02:49		[http://is.gd/ULKyGX]
+2013-03-14 11:02:51	-->	Elv1313 (~lepagee@98.143.213.169) has joined #kde
+2013-03-14 11:02:54		[http://is.gd/q9gM6M]
+2013-03-14 11:02:54		[http://is.gd/vUR4Yp]
+2013-03-14 11:02:54		[http://is.gd/ULT4Do]
+2013-03-14 11:03:11	--	Mode #kde [+LPcnt]
+2013-03-14 11:03:11	--	Channel created on Sun, 26 Nov 2006 01:42:41
+2013-03-14 11:04:01	<--	filipesaraiva (~filipe@177.35.45.244) has quit (Remote host closed the connection)
+2013-03-14 11:06:23	-->	serafean (~martin@host-184-97.wifi.fsid.cvut.cz) has joined #kde
+2013-03-14 11:06:24	AciD`	is there anyway to activate adblock for the web pages opened in akregator ?
+2013-03-14 11:07:13	-->	lainlives (~lainlives@mn-10k-dhcp6-889.dsl.hickorytech.net) has joined #kde
+2013-03-14 11:09:09	-->	palasso (~palasso@palassopoulosge.ath.forthnet.gr) has joined #kde
+2013-03-14 11:10:23	Richlv	Inkane, huge thanks in advance - and that's totally fine if it only appears in 4.11, as long as it happens :)
+2013-03-14 11:10:58	<--	gnumdk (~gnumdk@arch.ensat.fr) has quit (Quit: Konversation terminated!)
+2013-03-14 11:12:10	Richlv	hmm... kate does not disable save icon if there are no changes to save
+2013-03-14 11:12:29	<--	mkyral (mkyral@nat/redhat/x-myvgdvpslxlvzkkj) has quit (Ping timeout: 255 seconds)
+2013-03-14 11:13:44	-->	JoeJe (~joe@cpc16-watf10-2-0-cust210.15-2.cable.virginmedia.com) has joined #kde
+2013-03-14 11:14:32	<--	jgrulich (~jgrulich@89-24-21-192.i4g.tmcz.cz) has quit (Quit: Konversation terminated!)
+2013-03-14 11:14:44	<--	chronos (~quassel@unaffiliated/chronos) has quit (Read error: Operation timed out)
+2013-03-14 11:14:52	-->	jgrulich (~jgrulich@89-24-21-192.i4g.tmcz.cz) has joined #kde
+2013-03-14 11:15:44	<--	ivanich_work (~ivanich@onapp-LT-97-154.tenet.odessa.ua) has quit (Quit: Konversation terminated!)
+2013-03-14 11:15:47	<--	royboy626 (~rhumble@99-178-169-114.lightspeed.rlghnc.sbcglobal.net) has quit (Quit: Konversation terminated!)
+2013-03-14 11:17:28	<--	serafean (~martin@host-184-97.wifi.fsid.cvut.cz) has quit (Ping timeout: 240 seconds)
+2013-03-14 11:17:49	-->	chronos (~quassel@unaffiliated/chronos) has joined #kde
+2013-03-14 11:18:15	-->	jasonwert (~w3rt@75-134-81-98.static.aldl.mi.charter.com) has joined #kde
+2013-03-14 11:18:15	-->	DarthCodus (~anmolan@unaffiliated/darthcodus) has joined #kde
+2013-03-14 11:18:46	<--	irith (~michela@host101-92-dynamic.25-79-r.retail.telecomitalia.it) has left #kde ("Konversation terminated!")
+2013-03-14 11:19:18	<--	altin (~altin@flossk/altin) has quit (Ping timeout: 272 seconds)
+2013-03-14 11:20:08	<--	jreznik (jreznik@nat/redhat/x-fdoqmknhqdbhcazl) has quit (Quit: Konversation terminated!)
+2013-03-14 11:21:08	<--	elcuco (~elcuco@109.66.106.6) has quit (Remote host closed the connection)
+2013-03-14 11:21:12	<--	floe (~flo@f052099068.adsl.alicedsl.de) has quit (Ping timeout: 272 seconds)
+2013-03-14 11:21:26	-->	jreznik (jreznik@nat/redhat/x-hieclogqvlqgndri) has joined #kde
+2013-03-14 11:21:48	--	RamchandraApte is now known as `
+2013-03-14 11:21:50	--	` is now known as ``
+2013-03-14 11:21:51	<--	JoeJe (~joe@cpc16-watf10-2-0-cust210.15-2.cable.virginmedia.com) has quit (Quit: Konversation terminated!)
+2013-03-14 11:21:51	--	`` is now known as ```
+2013-03-14 11:21:55	--	``` is now known as ````
+2013-03-14 11:22:17	<--	yashshah (~yash@14.139.122.114) has quit (Read error: Connection reset by peer)
+2013-03-14 11:22:18	-->	ivanich_work (~ivanich@onapp-LT-97-154.tenet.odessa.ua) has joined #kde
+2013-03-14 11:22:42	-->	yashshah (~yash@14.139.122.114) has joined #kde
+2013-03-14 11:23:23	--	```` is now known as RamchandraApte
+2013-03-14 11:25:18	<--	hateball (~quassel@unaffiliated/hateball) has quit (Remote host closed the connection)
+2013-03-14 11:26:56	<--	Rish (~quassel@117.196.80.42) has quit (Remote host closed the connection)
+2013-03-14 11:28:42	-->	PrivacyChain (~alexandre@187.67.117.175) has joined #kde
+2013-03-14 11:28:53	-->	konelix_ (~konelix@190.143.215.18) has joined #kde
+2013-03-14 11:29:36	<--	konelix (~konelix@190.143.236.108) has quit (Ping timeout: 245 seconds)
+2013-03-14 11:31:25	-->	floe (~flo@f052099068.adsl.alicedsl.de) has joined #kde
+2013-03-14 11:32:20	-->	DaemonFC (~daemonfc@unaffiliated/daemonfc) has joined #kde
+2013-03-14 11:33:08	--	konelix_ is now known as konelix
+2013-03-14 11:33:29	-->	elcuco (~elcuco@109.66.106.6) has joined #kde
+2013-03-14 11:34:02	<--	floe (~flo@f052099068.adsl.alicedsl.de) has quit (Remote host closed the connection)
+2013-03-14 11:34:23	<--	RamchandraApte (~quassel@122.166.180.41) has quit (Quit: http://quassel-irc.org - Chat comfortably. Anywhere.)
+2013-03-14 11:34:45	-->	floe (~flo@f052099068.adsl.alicedsl.de) has joined #kde
+2013-03-14 11:35:56	-->	drhouse123 (~drhouse12@2.134.150.171) has joined #kde
+2013-03-14 11:36:48	-->	RamchandraApte (~quassel@122.166.157.228) has joined #kde
+2013-03-14 11:37:45	-->	jaafar (~jet@adsl-99-169-134-44.dsl.pltn13.sbcglobal.net) has joined #kde
+2013-03-14 11:39:04	<--	rdieter (~rdieter@fedora/rdieter) has quit (Remote host closed the connection)
+2013-03-14 11:39:52	-->	rdieter (~rdieter@fedora/rdieter) has joined #kde
+2013-03-14 11:41:24	<--	google01103 (~smiley@pool-96-240-237-191.spfdma.east.verizon.net) has quit (Remote host closed the connection)
+2013-03-14 11:41:35	<--	siddvicious (siddviciou@fedora/h4xordood) has quit (Ping timeout: 260 seconds)
+2013-03-14 11:41:44	roasted	Any of you fine KDE folks using Kubuntu with the backports PPA by chance? I'm curious as to why Homerun is 0.2.1 in the backports PPA but I cannot seem to upgrade to it. I'm stuck at 0.1.1.
+2013-03-14 11:42:30	-->	thiago (~thiago@kde/thiago) has joined #kde
+2013-03-14 11:42:44	<--	ponpat (~ponpat@ip-178-203-95-73.unitymediagroup.de) has quit (Quit: You know what you are doing? You read a quit-message!)
+2013-03-14 11:42:50	-->	siddvicious (siddviciou@fedora/h4xordood) has joined #kde
+2013-03-14 11:42:53	Jucato	roasted: tried asking in #kubuntu ?
+2013-03-14 11:43:11	roasted	yep
+2013-03-14 11:43:22	roasted	pretty dead there, figured I'd at least try here to see if it sparked anything.
+2013-03-14 11:43:43	Jucato	though chances are anyone using Kubuntu in here would also be in there
+2013-03-14 11:44:03	roasted	oh I know. Figured if nothing else it was worth a shot. :P
+2013-03-14 11:44:26	<--	PasNox (~PasNox@beg33-4-78-237-93-55.fbx.proxad.net) has quit (Quit: Leaving)
+2013-03-14 11:44:36	-->	google01103 (~smiley@pool-96-240-237-191.spfdma.east.verizon.net) has joined #kde
+2013-03-14 11:44:41	<--	boom1992 (~quassel@BA1222.ballee.wh.tu-darmstadt.de) has quit (Remote host closed the connection)
+2013-03-14 11:45:07	-->	BadMagic (~brad@69.51.117.30) has joined #kde
+2013-03-14 11:45:44	-->	Dudalus_ (~quassel@cust.static.84-253-44-241.cybernet.ch) has joined #kde
+2013-03-14 11:46:15	<--	Dudalus (~quassel@cust.static.84-253-44-241.cybernet.ch) has quit (Ping timeout: 260 seconds)
+2013-03-14 11:46:16	-->	binaryhat (~binaryhat@99-119-205-0.lightspeed.wepbfl.sbcglobal.net) has joined #kde
+2013-03-14 11:46:21	Okitain	Still, it's an apt-get question rather than Homerun.
+2013-03-14 11:46:40	roasted	either way, I'm not understanding why I'm seeing what I'm seeing.
+2013-03-14 11:46:59	Okitain	I'd recommend a reinstall, an update and then search for flags to enable that particular repo.
+2013-03-14 11:46:59	-->	i-bird (~i-bird@cbg-off-client.mpi-cbg.de) has joined #kde
+2013-03-14 11:47:15	Okitain	or rather, search only in it.
+2013-03-14 11:47:18	roasted	a reinstall?
+2013-03-14 11:47:23	Okitain	Yep.
+2013-03-14 11:47:32	roasted	or the OS or the PPA/application?
+2013-03-14 11:47:44	Okitain	app, of course!
+2013-03-14 11:47:53	roasted	okay - you scared me for a second there...
+2013-03-14 11:48:17	<--	heath (quassel@unaffiliated/ybit) has quit (Read error: Connection reset by peer)
+2013-03-14 11:48:39	<--	i-bird (~i-bird@cbg-off-client.mpi-cbg.de) has quit (Client Quit)
+2013-03-14 11:49:20	Okitain	Don't worry, I'm not a big proponent of Windows.
+2013-03-14 11:49:31	roasted	oh wow. I suck so badly.
+2013-03-14 11:49:41	roasted	I don't know why but I had unchecked the backports entries in my sources...
+2013-03-14 11:49:49	roasted	Okitain: why am I such a failure? :(
+2013-03-14 11:49:58	<--	kkszysiu_work (~quassel@79.110.199.97) has quit (Remote host closed the connection)
+2013-03-14 11:50:16	Okitain	roasted: Time to write an emo song or two!
+2013-03-14 11:50:24	<--	Cymew (~user@fw01d.snowmen.se) has quit (Ping timeout: 245 seconds)
+2013-03-14 11:51:00	-->	jayrulez (~jayrulez@65.183.7.58) has joined #kde
+2013-03-14 11:51:03	-->	heath (~quassel@unaffiliated/ybit) has joined #kde
+2013-03-14 11:51:15	<--	jgrulich (~jgrulich@89-24-21-192.i4g.tmcz.cz) has quit (Ping timeout: 245 seconds)
+2013-03-14 11:51:35	-->	crazydude101 (~quassel@122.167.106.56) has joined #kde
+2013-03-14 11:51:52	<--	RamchandraApte (~quassel@122.166.157.228) has quit (Read error: Connection reset by peer)
+2013-03-14 11:52:24	--	crazydude101 is now known as RamchandraApte
+2013-03-14 11:52:32	roasted	look at that. 0.2.1. durp durp.
+2013-03-14 11:52:42	roasted	Okitain: your patience with my idiotic issue is appreciated.
+2013-03-14 11:53:25	Okitain	My pleasure, roasted.
+2013-03-14 11:54:04	Okitain	I want to try it out, but maintainers haven't packaged it.
+2013-03-14 11:54:11	-->	drhouse123_ (~drhouse12@2.134.144.103) has joined #kde
+2013-03-14 11:54:22	roasted	Okitain: try out... homerun?
+2013-03-14 11:54:38	Okitain	because everybody's on ubuntu.
+2013-03-14 11:55:12	roasted	I was on Ubuntu for years. Some of my machines are still Ubuntu and our 2,000 Linux machines at work are Ubuntu...
+2013-03-14 11:55:19	roasted	but I just switched to Kubuntu on my personal and work machines.
+2013-03-14 11:55:27	Okitain	Oh, biiiig change here!
+2013-03-14 11:55:43	<--	drhouse123 (~drhouse12@2.134.150.171) has quit (Ping timeout: 264 seconds)
+2013-03-14 11:55:55	Okitain	(seriously, the branding's different, but it's basically one metapackage away from each other.)
+2013-03-14 11:55:59	roasted	I like the idea of knowing if my DE enrages me enough and I leave, that my DE will follow. Unity is Ubuntu is Unity is Ubuntu, so that's not possible there.
+2013-03-14 11:56:19	roasted	By going to Kubuntu, I stay on my familiar base with a different DE. But that DE in question is transferrable to other distros. Profit. ;)
+2013-03-14 11:57:02	Okitain	Oh.
+2013-03-14 11:57:08	<--	ibancioiu (~iosif@92.84.13.138) has quit (Quit: Konversation terminated!)
+2013-03-14 11:57:12	Okitain	So anybody actually likes Unity?
+2013-03-14 11:57:14	roasted	Homerun Launcher, however, was the last nail that coaxed me into KDE full time. Iknow it sounds stupid that a launcher did me in but, I just kept looking at Unity and Gnome Shell thinking about how much more I preferred their launchers even though I like KDE's community significantly better.
+2013-03-14 11:57:27	roasted	KDE + Homerun = Unity on steroids, imo.
+2013-03-14 11:57:49	Okitain	And what about Plasma Active's standard one?
+2013-03-14 11:57:51	roasted	I personally like the idea of Unity, but I'm not a big fan of the way things are organized in the dash. If I'm a mouse centric user, to get to one app requires 2x as many clicks as Gnome 2.x.
+2013-03-14 11:57:55	roasted	Kickoff?
+2013-03-14 11:58:31	roasted	I'm not sure what you mean by plasma active...
+2013-03-14 11:58:34	Okitain	No, I mean, that one on Vivaldi.
+2013-03-14 11:58:44	roasted	I've only been a dedicated KDE user for like, a week...
+2013-03-14 11:58:55	<--	RamchandraApte (~quassel@122.167.106.56) has quit (Ping timeout: 260 seconds)
+2013-03-14 11:59:10	-->	konelix_ (~konelix@190.143.199.102) has joined #kde
+2013-03-14 11:59:11	<--	Richlv (~rich@nirual.versatel.de) has left #kde
+2013-03-14 11:59:24	<--	konelix (~konelix@190.143.215.18) has quit (Read error: Connection reset by peer)
+2013-03-14 12:00:10	<--	phuzion (~phuzion@ipv6.irc.teh-server.com) has quit (Quit: No Ping reply in 180 seconds.)
+2013-03-14 12:00:37	Okitain	Here, let me take pictures.
+2013-03-14 12:01:12	-->	K00p (K00pi3@94-21-115-72.pool.digikabel.hu) has joined #kde
+2013-03-14 12:01:35	<--	rdieter (~rdieter@fedora/rdieter) has quit (Ping timeout: 252 seconds)
+2013-03-14 12:02:02	--	mck182|afk is now known as mck182
+2013-03-14 12:02:22	Eddi|zuHause	hello, i just updated to kde 4.10.0, and kwin gets really unperforming (high cpu usage when switching windows) when effects are disabled
+2013-03-14 12:02:56	<--	elcuco (~elcuco@109.66.106.6) has quit (Remote host closed the connection)
+2013-03-14 12:04:09	-->	Kopp__ (koop@62-165-248-151.pool.digikabel.hu) has joined #kde
+2013-03-14 12:04:17	<--	Dudalus_ (~quassel@cust.static.84-253-44-241.cybernet.ch) has quit (Read error: Operation timed out)
+2013-03-14 12:04:19	-->	rdieter (~rdieter@fedora/rdieter) has joined #kde
+2013-03-14 12:04:54	<--	K00pi3 (K00pi3@84-236-51-159.pool.digikabel.hu) has quit (Ping timeout: 264 seconds)
+2013-03-14 12:06:22	-->	K00pi3 (K00pi3@84-236-99-161.pool.digikabel.hu) has joined #kde
+2013-03-14 12:06:46	-->	gnuLix (~x@185.4.32.1) has joined #kde
+2013-03-14 12:06:59	-->	notVert (~quassel@94-195-239-197.zone9.bethere.co.uk) has joined #kde
+2013-03-14 12:07:06	Okitain	roasted: http://makeplaylive.com/
+2013-03-14 12:07:35	-->	phuzion (~phuzion@ipv6.irc.teh-server.com) has joined #kde
+2013-03-14 12:07:50	<--	K00p (K00pi3@94-21-115-72.pool.digikabel.hu) has quit (Ping timeout: 260 seconds)
+2013-03-14 12:08:12	Okitain	and also http://www.youtube.com/watch?feature=player_embedded&v=ulcizzAj-N4
+2013-03-14 12:08:17		[http://is.gd/1gqerg]
+2013-03-14 12:08:19	<--	thiago (~thiago@kde/thiago) has quit (Ping timeout: 264 seconds)
+2013-03-14 12:09:12	<--	Kopp__ (koop@62-165-248-151.pool.digikabel.hu) has quit (Ping timeout: 256 seconds)
+2013-03-14 12:09:39	-->	K00p (koop@92-249-132-91.pool.digikabel.hu) has joined #kde
+2013-03-14 12:11:40	--	konelix_ is now known as konelix
+2013-03-14 12:12:35	roasted	Okitain: is this something I can put on a Nexus 7>?
+2013-03-14 12:13:07	Okitain	I think so.
+2013-03-14 12:13:18	<--	K00pi3 (K00pi3@84-236-99-161.pool.digikabel.hu) has quit (Ping timeout: 264 seconds)
+2013-03-14 12:14:12	roasted	Okitain: I have Ubuntu Touch on my tablet now. I'm bored of it. I was going to put Android back on but I'm sort of procrastinating until I find the time to explore a plasma alternative.
+2013-03-14 12:14:29	Okitain	Maybe there's apt-get there?
+2013-03-14 12:14:34	-->	task_struct (~Kernel@95.111.8.217) has joined #kde
+2013-03-14 12:14:39	-->	Kopp__ (koop@94-21-107-70.pool.digikabel.hu) has joined #kde
+2013-03-14 12:18:21	-->	sertsa_ (~sertsa@245.205.118.66.brainstorminternet.net) has joined #kde
+2013-03-14 12:18:21	<--	sertsa_ (~sertsa@245.205.118.66.brainstorminternet.net) has quit (Read error: Connection reset by peer)
+2013-03-14 12:18:31	<--	K00p (koop@92-249-132-91.pool.digikabel.hu) has quit (Ping timeout: 260 seconds)
+2013-03-14 12:18:45	<--	sertsa (~sertsa@245.205.118.66.brainstorminternet.net) has quit (Ping timeout: 245 seconds)
+2013-03-14 12:19:52	-->	mcorteel (~max@min31-5-88-162-221-72.fbx.proxad.net) has joined #kde
+2013-03-14 12:20:24	-->	vLassi (~lassi@jarru.tontut.fi) has joined #kde
+2013-03-14 12:22:03	<--	binaryhat (~binaryhat@99-119-205-0.lightspeed.wepbfl.sbcglobal.net) has quit (Quit: Leaving)

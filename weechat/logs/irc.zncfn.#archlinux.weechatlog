@@ -1420,3 +1420,874 @@
 2013-03-13 23:34:14	qrwteyrutiyoup	hm. never tried qtwebkit with qtcreator, Hoyt, so I cannot help
 2013-03-13 23:34:16	sudokode	!vim
 2013-03-13 23:34:18	phrik	You can't stop here! You're in VIM country!
+2013-03-14 11:02:46	-->	numeral (~numeral@198.23.228.15) has joined #archlinux
+2013-03-14 11:02:46	--	Topic for #archlinux is "Welcome to Arch Linux World Domination, Inc. <+> Read http://5z8.info/b00bs_pkwj or Allan will break your box. <+> qt4 replaces qt https://www.archlinux.org/news/qt4-replaces-qt/ <+> NO MORE INITSCRIPT SUPPORT https://www.archlinux.org/news/final-sysvinit-deprecation-warning/ <+> If a key is missing during update: pacman -S archlinux-keyring"
+2013-03-14 11:02:46	--	Topic set by gtmanfred (root@archlinux/trusteduser/gtmanfred) on Fri, 01 Mar 2013 15:06:11
+2013-03-14 11:02:46	--	Nicks #archlinux: [@sudokode [Author] [deXter] [LeStAt] [vEX] \pub\bash0r \varnothing ]OLI[ ^Inuyasha^ _2M1R__ _D_ _Extreme _grawity _ikke_ _schulte_ _TB_ `bps `lorim a0x a1i a3Dman a7ndrew_ AaaA aapzak aat_ AbigailBuccaneer AbortRetryFail AbX abyss acfrazier acuzio aditya adlan Adran Adys Aegir aep Afwas agumonkey agwblack ahihi aiBo` aisbaa_ aitorpazos Aivaras ak5 ak5_ akawaka akiva akl akosch albelaj aleb_ alexandros_c AlexP alexwh alienvenom Almehdin Almtesh alorence alub alucryd alveraan alzeih amaurea amranu amstan amunak amyers an0xx anachron_ andares Anders_J andreasrs AndreeeCZ AndrevS andrew12 andreyv AndyW angelsl angvp anon7345 anonfriese_ Anonycat anrxc anstei antbody antihero anuxi aod Apage43 Apes APexiI apod apollo79_ Apsu` aravind arbn arborist Arcalyth arcanis arch-bugbot ArchElf argentodtw ArGGu^^ Ark_ armin artv61 arza asch asdf-chan asfethan ashnur Asoteric astiak aszc atamisk athetius_ AthlonRo1 Atmoz ausbin autumn avawn_ averell avocado awole20 axanon AxForest axil42 azradric b4d BadAtom BadKitty BadLarry Bakerboy BaldFat_ bandroidx Bane^ Banish barch Bassquale batrick bazz bc547_ bcremer bdeferme beatrice BeepDog BeholdMyGlory benine benjii benoror_ benpro bentglasstube bentlux bezerker biberao bier big_t billybob billybong binarypie Biolunar_ bizarro_1 bjoe2k4 bjonnh bkc_ Bl_nK Blaasvis_ Black_Prince BlackIkeEagle BladedThesis BlastHardcheese bleomycin BlindHunter bloony blu BluABK blubb blubbo_ Bluewind blut boak BombStrike bond` Bonstra Boohbah boom1992 boris`` bortzmeyer BotoX bougyman boustrophedon boxofrox bparker bpeak brachyonic brandon_ brandonw breakage breiti brewmaster brian brisbin bspar_ buchno Bugson buhman buq2 bureq Byan bytbox C-S-B c1phertxt c4nuck C5OK5Y Cadair cajone CalimeroTeknik camerin CandyAngel canta capleton Captain-n00dle CaptainKnots CarbonChauvinist carlmro CausaMortis__ causasui_ caveat- Cavedude CCfan cduez cduez_ cedeel centrelink CESSMASTER cgar chaky chance ChaozZBubi cHarNe2 ChauffeR chee cheesecakes cheezymuffins Chewtoy chimay china chjj Chocobo cholin ChongLi choupydance chridal chris2 chron cinelli Cirrus_Minor clarkm classix cliche clinch cloq cmal_ cmr codeworkx codey_work codile Codynyx colona commontime companion cool Cor-Ai cored coredump Cork cornu_ Count_0 CoverSlide CR0W crashmag crawlman crazedpsyc CrazyJoeDavola_ crdueck Creek creese crooksey_ crs_ crw CrypticSquared CryptoCrack CryptoNaut Cubox cullum curtism cvr Cyber_Akuma CyberSix cyberspace- cyen cyndis CyrilPeponnet czardoz d-ash d10n d_garbage daBrado dabreaka Dad` Daenyth dagerik damentz Dan39 Danio danking danmackay dared dario dark8 darklajid DarkSim DarkUranium darrend dasbjo Dashkal DasMoeh datagutt daurnimator dav1d Dave123 Dave123-road davetherat davidstrauss dawey DaZ daze dazoe dcharles deadalus deadc Deathspawn debu_ deekeff deepinskin deeplloyd deeroh Deewiant Defaultti defekt deizhu delaman delcoyote DeLord delqn demarchi_ Demios demonicm1niac demonicmaniac3 denstark desade desg Desoxy dethredic Dettorer devilirium DexterLB dflurker Dhraakellian Diamondcite Die18ink5 Dieterbe diffycat digilink DigitalKiwi dimaursu16 dimeshake Dimmuxx DinCahill disasm divVerent djmattyg djweezy dk0r dkasak dking DLange dodobas doerner donch dorftrottel dotpyfe dots dougpiston dracman dramz_ Drathir dRbiG Dreamer3 DRiKE Drohne droolendug dropdrive DRW_ DrZingo dsschnau dsschnau1 Dtgr Ducky^ dude051 dunz0r DURgod duxklr du|dx dv_ dvance Dwarf dxtr dylix dza e36freak ealexp Earnestly eataix ecraven EdLin EdwardIII EIHoppe eiphuntard eiphunter eir ekeih El_Angelo elaoin-ng Elecam elliottcable elmhire enderst endiruna Enjolras1 ephemer0l Ephexeve epitron eqyiel ered erg erkin Ertyle esdf eskileu espensb estan etank ethanol eto Evanlec EViLSLuT evpuneq exciton ezdiy ezzieyguywuf faen falchie Falx4444 fam|work fasta favadi FEC felipe` Fenaralan fest feyd fflam fhahn Fififox Fingel fionnan FIQ Fira fire firesock Firestone fisted fiyawerx flaccid__ flexd FliPPeh flo` floatingman flocke floft flowsnake flughafen Fluke fnord0 foohey forks foutrelis frank604 frank604_ frankyboy_ fraxinath frb freetg Freso fuchs12 fulafisken Fullma FunkyAss futpib_ fxrh gabriel9|work gabx gagan662 gaisten_ gajop gamer1990 GarBage gardar garrik Gary13579 gbarboza GEEK1 geekitus- geewid gehidore gejr Genolo gentoogravy GH0S1_R33P0R gholen ghost64 gimbel Gishten glebihan glide GlitchMr- gnubien GNULinuxGuy gnumdk GoGi goodmen gospodin gracent graChe28 Grachev graphitemaster grawity gregburd greybott greymalkin GrimKriegor groundnuty grulfen GSF1200S gsko gtmanfred guelfey Guest80893 Guest97878 Guest99410 Guilherme guiniol gumble Gup Gussi gwash Gyroplast haaja habmala hacosta hagebake halfie hallman halosghost hamid Hapsbanan Hardolaf Hasselsaurus heckman hectorlopez heftig hegemoOn Heikai heinrich5991 hejki hekel helgikrs hellerbarde hendry HenrikJuul_ZNC hfatih hhehw hhenkel hi117 HK416 hobbily Hodapp homelinen hosk houmles howell hrnz hrubi HuMu hunger hurricane hw_ Hwkiller Hydrazine_ i7c ianj ianni iasov Icewing ichigo-roku iflema ighea Iiiak ikonia ilj illuminatis inad922 incredulous indascrnfx infojunky ingenious insatsu Insecta Internet13 InTheBlue invalido invisiblek ioni iotku ircubic ironcamel Ishaq itu ivan\ ivan`` j3zz4h jabirali JackBauer24 JackWinter1 jadesoturi james147 jamesbond-4711 Janhouse Jarris jaseemabid jasonwryan javier2 jayne jazen jben1 jbollden jchen jcornwall jdost jeekl jekle Jekyll jelly1 jemark jeremydei jham jhark jhartigan JHeaton jillsmitt jjacky JKL1234- jlewis jmaister_ jnbek jnials Jobbe^ jockej Joe5 joem86 JoeyJo0 john_f johnhamelink johntramp JohnUK89 johskar jokke joko JonathanD Jonimus JOR-Coder joshbaptiste josuebc jpo jrd0 jrex jryan jsec jsteel jswagner jtan189 juju2143_ julesw julius2 Jupelius jvolkman jwr jxn jyc K-Shadow K0D3R k2s k6b kahtahs_ KaiSforza kalithlev kalli Kanerix KanocX kanyl kAPU3 kart0ffelsack kaste Kauhsa KBme kbrosnan KD0BPV keenerd keks_ kelnoky kelvan kemmotar kennae kent\n kerrick ketamine kevin06 kevku killown Killswitch478|Aw Kilroo1 KindOne KiSM KitB__ KitH151 kivutar kj4 kleph klim klip kloeri Klowner kmshanah_ KnightHawk3 kniu kode54 Koigreen kolazic_ komori KonsoleArch korsi_ kraM kravlin krion_ KrolYN ktwo kubit kungsget1n kupsh Kurlon kutio kvbx Kwpolska ky7en KylieBrooks l2esonance L42y l4m6da l4than-d3vers lahwran lake languitar larsks Lartza lartza_ Lasse- lassulus lastebil lattenwald LauJensen laumars launchy Lektron leming Lenny_ Leon_Nardella leprechau lianj liara libertas Likvidy lilstevie Limoto linduxed linoge linux_probe linuxguy101 lithiumpt littlebearz lksd Lky lliehu lonewulf` LookTJ loose Lord^Anubis lordheavy Lorem-Ipsum LostPw lowprize loxley lrvick LSD` lstarnes Luceo Lucifer7 luct luigy luizribe` lukem luksow Lulzon LunaVorax lunchdump-away lundh Lurq luuuciano lyddonb Lysergic1reams lytedev m1sc m4tt_ Maccer macrobat Mad_Hatter_93 MadAGu maddogie madm1ke madnificent MafProd magicrhesus magnus_ majikstreet majuscule malcolmva maletor mAniAk-_- mantiz maotm|2 maplebeats mar77i marienz MarkS- markus___ MarkusH marpho Marqin marquicus martasd martinp marvin2 masoudd mathieui Mathnerd314_ mati-ck mattb matteotom matthiaskrgr matuka max-k Max401 Maxa maxexcloo Mayachiel MayorDefacto mbaragiola mbr mcurve Mechanimal medum_ mefistofeles megustavo meitzo_ Mekaari melpo memand memno meow meskarune Messenger_bird mesx metasyntax meyithi mickael9 Micki microcode miffe migueldvb mike][inq MikeN MikeWatt_ mikroflops milian milosn_ mimor minaguib mindcruft MindlessDrone Minos MIOW mirelsol Mishke MissionCritical misterswag mith mjacob mjevans mjms mklappstuhl Mkman MogDog Mohan moltendorf monokrome Moose- Moridin Morrolan mortdeus Mosu moted mouche movl mowe mquin mr_unclevver mrbanie mrdragons MrElendig mrmackie mrmoku MrOpposite MrRee mrshu mrtux mSSM msx mtn mudkipz mukti multikaos murphy_ murr4y musca MVXA Mxchael mychris mylvari_ mysteriousdarren mysticc mystiiq mythmon MZK mz|` N0_Named_Guy N0BOX n17ikh n2deep N30N N3RG4L Nabobalis nagarkot Nahiyan Nahlidge Nakato naquad Naruni nasedo nathan7 nathaniel nauski nbg necreo necrogami Nekos nemaeon Neozaru Neozaru_ nephyrin nesti netmod netmonger netzvieh neunon neynt Niamkik NickHu nickoe niczy NightKhaos NiHP niklasb NiklosKoda niko nil niloc132 nimred Nine5102 ninjabox nioncode Nisstyre nixin njbair nmeum nobo__ noclaf noctux nodame noffle nokogiri noplamodo nosklo NotLim noway NoXzema nsf nuba Nuck NucWin nullie nullpuppy numeral NWMonster nwoki nXqd nyloc nym_ nyuszika7h odavilar Oddity ofan ohcibi OK100 okt ole olegfusion onebitaway onny oO0Oo opatut openess Opiumozor opt1mus opted|away orbisvicis Orphis osiman oso96_2000 osse otend Overand overrider_ ovidiusoft owain Ox31c0 oystetl P-l p1r_ p8m paddymahoney palou_ passbe Paul-S paullik pcarrier_ pdq peeaivo Pei peper pepijndevos Peps perun_ pesterie petantik petelewis PetrVod Peuc phenom phignuto1 Phr33d0m phrik phrodo_00 pi3ch pii1 Pikel pingveno pinstripes pittaxx pkiller plaisn plustwo Poesghost poljar portix poseidon pouete praedo PreZGN prg318 prinny prinnysocks Prokurent|Asleep Psi-Jack pskept psyk3 ptrxyz pukne pumphaus Puppet_Master pushp0p Pyro pythonsnake q5sys QKO qrwteyrutiyoup qu1ckkkk r4 R_Rios rabidfur1y raedwulf rafalm raijin Raist raj Raku^ rams Raptors Raptors_ Rash Rasi Ratty rauch_ ravomavain rcn reactormonk realitygaps reashlin recompile rednovae RedoXyde redsoup Repentinus resixian restless_being rewtraw reZo Ricaz richardbranson Riiiis rindolf rizumu Rn0 Roach` robjk rocker2344 Roenie roknir roquetto Roukoswarf Rovanion rson rspkt ruan Ruckus russo79 rw rymate1234 ryukafalz S0lign0c s0ma_ s1gk1ll s1gma sa1 Sacro sakaru sakkemo saltsa_ sammyf Samos123 samrat___ samruger samu SamuraiGhost Sanky SanskritFritz Schorfi Scifi^ Scimmia sco` ScottG Scub scythe- seafax sebleblanc sec0nd See- seemawn sensae sentis Sequence sertsa setkeh seyz sh4wn shad0VV shade34321 Shados Shadowized shadyabhi Shahid shammancer Shapeshifter shardz_ Shauni shawnjgoff Shiina shining shinjikun Shinryuu shupac Shyde siaw sig_wall sigma_g sigtrm silentmike Sin` sinkigobopo SirDeiu skate_forever skope skp skrblr skrite Skry skug_ skyj sl33v3 sledgehammer SleepyFloyd slimjimf1im Sling slo- slovdahl sluggr smartin smu Sn4keBite snap__ snarkpit sniffells snorre Snowman sodoku___ Somasis somnambu1ant sonda sooda_ Sora1995|Cloud Sorcier_FXK Sornaensis Sorunome Soulou spacekevin spaceone speak specious speechless spell sphinx spicewiesel spl1ff Spliffer splump spooky85 spuk_ spychalski spY|da Srf srijan4 ssmy stackofcats stanner stardiviner starkline statusfailed Steve-W stevepoppers stfn stif Stiletto StMichel stnly storage strangelyNormal_ Strog stufe1 suare sub0 subliminal sulx svenstaro sw0rdfish sw4- sweet_kid SwordManX SyAchmed syntax Synthead sysadamin t0rc t0x7bb tabasko Tabz tacitNomad tafryn tailf takeshix talsemgeest Tam tapout Taranis tasidus tb01110100 tchebb tchiroux td123 TDJACR tdreyer1 tdy_ Tea Tear_ techlife Tectu tehvdood telmich tenthirteen teprrr TeslaTest Tetsumaki tewlz Texhex_ Th0mas th3voic3 Tha-Fox thadood thalassarche Tharugrim the_metalgamer_ The_Pacifist theclaw_ TheFuzzball thegorn thehoff themattbeballin TheMaverick` theoros thomas_sch thomasba Thorne Thra11 Thra11_ thrak_ threadlock tibs01 tibyke tigrmesh Tiktalik timahvo1 timewa1ker timi Timmy_L TimorLee timtux TingPing tinystoat tittentei Titus titzer tjbenator tjiggi_fo TKal tlonim tlvb tm tme tnettenba tolbrino tomaw TommehM tommis toofishes toppform torpet totokaka totte toty Touhou11 tranqil Trashlord tripleslash trsitan tsbtmn ttl- tumppu Turski Tutkah Twey tybalt89 Tylerdurden2nd tzero u-foka ugg undecim underdog` undersc0re97 unexist Unlix untitaker uro useless_s_grant v0n Vardyr vechnyj vee vegai vehk velcroshooz vesz vhost- vihcs vincent_wang Vinilox viper0984 virtuose ViruSzZ Visage Viski Vithon_ VivienHayazaki vladan Vlavv Voronoi vostok4 vravlzd VSpike VunKruz Vuokko w00tc0d3 w0bni w0ng WakiMiko Wanz warddr wassup watsonalgas wavded_ wayne wdiz webno webspid0r Weegee WeissLeh1er weltzooo WhereIsMySpoon_ while1eq1 WhoBe whodevil willemw_ williewillus WillyKaze WindPower witquicked witquicked|L Wntrvnm woddf2 Wojo wolong wooyea WormDrink woznme_ wreckimnaked wting wwraith xarragon xat`` xBytez xcrustyx xdarklight XenGi Xeph Xeross xilo xlog xorp xpander69 XReaper xrogaan xy xymox xyproto Xyrtic yaccin YaManicKill yano yanoo yaps8 yetr2 yibe_ yogiman321 yoklar yorick yoshi314 Ypsy_ yxol z0k3b3r ZaB|SHC| ZadYree_ zalineon zarac Zardvark Zariel zarrsh zavulon Zbyshek zcram zed45 ZeDestructor Zekah ZekeS zeltak zendeavor zenguy_pc zenptr Zenther zephrax zetoz zhvtar Ziemas zizzfizzix zkrm zml2008 zmode zomg1114 zorael zoran119 Zrax Zucca Zuchto zxiiro {Nathan}]
+2013-03-14 11:02:47	--	Channel #archlinux: 1573 nicks (1 op, 0 halfops, 0 voices, 1572 normals)
+2013-03-14 11:02:47	***	Buffer Playback...
+2013-03-14 11:02:47	Earnestly	[17:47:38] The latter, although I haven't thought about it as I'm not particularly worried either way
+2013-03-14 11:02:47	glide	[17:47:42] built it last july
+2013-03-14 11:02:47	divVerent	[17:47:56] Earnestly: hehe, and my guess is the former, to not break backwards compatibility
+2013-03-14 11:02:47	divVerent	[17:48:11] as Linus Torvalds is unlikely to depend on systemd from the kernel
+2013-03-14 11:02:47	divVerent	[17:48:26] but we'll see
+2013-03-14 11:02:47	Earnestly	[17:48:26] divVerent: Indeed. I think using a symlink is an elegant solution overall
+2013-03-14 11:02:47	glide	[17:48:26] got something to do this evening
+2013-03-14 11:02:47	divVerent	[17:48:42] also, symlink has "precedence"... e.g. upstart also installs to /sbin/init
+2013-03-14 11:02:47	Earnestly	[17:49:19] divVerent: In fact, now that I've thought about it, using a symlink should be the correct way to do it. This allows you to very easily swap out your default init
+2013-03-14 11:02:47	divVerent	[17:49:21] does Ubuntu even have plans to switch from upstart to systemd?
+2013-03-14 11:02:47	grawity	[17:49:29] lol
+2013-03-14 11:02:47	divVerent	[17:49:39] I recently had a lot to do with upstart... and I hate it
+2013-03-14 11:02:47	divVerent	[17:49:42] (on the Nokia N900)
+2013-03-14 11:02:47	Earnestly	[17:49:47] Ubuntu is moving to systemd-logind, I imagine they will eventually move from upstart
+2013-03-14 11:02:47	gtmanfred	[17:49:52] divVerent: no
+2013-03-14 11:02:47	divVerent	[17:49:55] it apparently is virtually impossible to non intrusively insert a daemon's start between two others
+2013-03-14 11:02:47	divVerent	[17:50:02] without editing other service files
+2013-03-14 11:02:47	divVerent	[17:50:09] systemd at least has the hack of inserting extra .wants links
+2013-03-14 11:02:47	Chocobo	[17:50:16] Has anyone ever experienced a completely locked up nfs mount?  I can not unmount it, ls the mount... anything
+2013-03-14 11:02:47	divVerent	[17:50:18] that doesn't CHANGE other files, so it plays well with package management
+2013-03-14 11:02:47	grawity	[17:50:31] Chocobo: that's kind of normal when the nfs server goes down
+2013-03-14 11:02:47	grawity	[17:50:37] Chocobo: try `umount -f`
+2013-03-14 11:02:47	Earnestly	[17:50:38] At least the Ubuntu dev (Matt ...someone) working on systemd/udev and now logind thinks Ubuntu will eventually have to move to systemd as, in his opinion, it's clearly better.
+2013-03-14 11:02:47	grawity	[17:50:47] the -f option is there specifically for locked-up NFS mounts :P
+2013-03-14 11:02:47	divVerent	[17:50:59] Earnestly: hehe...
+2013-03-14 11:02:47	divVerent	[17:51:09] I still don't like systemd much, but upstart is IMHO even a step back from sysvinit
+2013-03-14 11:02:47	divVerent	[17:51:27] especially due to no good means to inject extra dependencies
+2013-03-14 11:02:47	Chocobo	[17:51:28] grawity: I tried that.   No luck.  The interesting thing is the mount seems fine on the nodes.
+2013-03-14 11:02:47	divVerent	[17:51:32] which EVEN sysvinit sort of had
+2013-03-14 11:02:47	Earnestly	[17:51:39] divVerent: This guy: https://plus.google.com/107564545827215425270/posts
+2013-03-14 11:02:47	divVerent	[17:52:10] ah, good then
+2013-03-14 11:02:47	Earnestly	[17:52:18] https://plus.google.com/107564545827215425270/posts/15va4vhty9T
+2013-03-14 11:02:47	Earnestly	[17:52:32] "I'm now running my workstation without consolekit and only with logind."
+2013-03-14 11:02:47	glide	[17:53:07] did you guys read that rant about gtk on reddit
+2013-03-14 11:02:47	divVerent	[17:53:16] the way systemd supports to inject dependencies has about the same power (or more, if you need more than 100 daemons :P) as sysvinit's numbering stuff
+2013-03-14 11:02:47	divVerent	[17:53:44] while in upstart, you can define a service that "will be started when service X is done starting", but that's it
+2013-03-14 11:02:47	divVerent	[17:53:59] making a service that has to run BEFORE the login session comes up is simply impossible to define in upstart
+2013-03-14 11:02:47	Earnestly	[17:54:09] glide: I'm dubious about gtk rants because they're usually by fairly ignorant people (e.g. ignorantguru)
+2013-03-14 11:02:47	Chocobo	[17:54:14] No...  something very bad is going on
+2013-03-14 11:02:47	divVerent	[17:54:38] WHICH gtk rant? :P
+2013-03-14 11:02:47	gtmanfred	[17:54:47] Earnestly: shit... is ubuntu going ... YES
+2013-03-14 11:02:47	gtmanfred	[17:54:52] Earnestly: good
+2013-03-14 11:02:47	divVerent	[17:55:14] gtmanfred: Ubuntu won't go good. They will go bad in other ways, don't worry.
+2013-03-14 11:02:47	divVerent	[17:55:16] ;)
+2013-03-14 11:02:47	gtmanfred	[17:55:23] oh i know
+2013-03-14 11:02:47	gtmanfred	[17:55:27] but as long as upstart dies
+2013-03-14 11:02:47	Freso	[17:55:38] Wow.
+2013-03-14 11:02:47	Earnestly	[17:55:41] At the moment they will essentially be using systemd but keeping their upstart init.
+2013-03-14 11:02:47	Freso	[17:55:41] That's awesome.
+2013-03-14 11:02:47	glide	[17:56:08] https://groups.google.com/forum/?fromgroups=#!topic/chromium-dev/uJq5mgyEi4k
+2013-03-14 11:02:47	phrik	[17:56:09] Title: Google Groups (at groups.google.com)
+2013-03-14 11:02:47	vegai	[17:56:09] what, Ubuntu is going systemd?
+2013-03-14 11:02:47	vegai	[17:56:37] or just to logind
+2013-03-14 11:02:47	glide	[17:57:00] that's not it
+2013-03-14 11:02:47	glide	[17:57:04] wft
+2013-03-14 11:02:47	divVerent	[17:57:23] vegai: it is not YET going anywhere... but they seem to eventually plan to switch to systemd, apparently
+2013-03-14 11:02:47	divVerent	[17:57:34] vegai: but the way I read it, nothing is set in stone yet
+2013-03-14 11:02:47	feyd	[17:58:00] I have a simple script that checks a txt file vs. a curl command, if they're different, run a command - it's not working, and running it from a terminal does nothing, it also doesn't finish and just leaves the cursor on nothing, it doesn't return me back to the prompt
+2013-03-14 11:02:47	petantik	[17:58:25] feyd: what part is failing?
+2013-03-14 11:02:47	feyd	[17:58:32] sorry I forgot to link it http://codepad.org/Rt0dHq5o
+2013-03-14 11:02:47	glide	[17:58:34] divVerent, http://www.linuxuser.co.uk/opinion/a-linux-conspiracy-theory
+2013-03-14 11:02:47	phrik	[17:58:37] Title: Plain Text code - 8 lines - codepad (at codepad.org)
+2013-03-14 11:02:47	phrik	[17:58:38] Title: A Linux Conspiracy Theory | Linux User (at www.linuxuser.co.uk)
+2013-03-14 11:02:47	glide	[17:58:57] Earnestly, you did read it
+2013-03-14 11:02:47	Aegir	[17:59:00] now for the most difficult part of the installation process: picking a hostname.
+2013-03-14 11:02:47	gtmanfred	[17:59:23] feyd: use diff instead
+2013-03-14 11:02:47	gtmanfred	[17:59:38] feyd: diff webcheck.txt <(curl www.domain.com)
+2013-03-14 11:02:47	petantik	[17:59:51] or compare checksums.
+2013-03-14 11:02:47	mSSM	[17:59:52] I want to kill a window of which I know the PID through xprop; however, even pkill -9 $PID refuses to kill it. Window is still there!
+2013-03-14 11:02:47	gtmanfred	[17:59:55] if it returns true ; they are the same
+2013-03-14 11:02:47	mSSM	[17:59:56] How do I kill it with fire?!
+2013-03-14 11:02:47	gtmanfred	[18:00:01] feyd: yeah, or checksums
+2013-03-14 11:02:47	feyd	[18:00:03] petantik: I'm assuming the curl -d command in the if statement, but there's no output in the script so I don't really know if theres something wrong before that
+2013-03-14 11:02:47	divVerent	[18:00:20] mSSM: is the process still visible in ps?
+2013-03-14 11:02:47	Earnestly	[18:00:27] glide: Some of it, I find it ironic when our own porti can make an exceptional browser using gtk and he's just one guy. These chrome devs are pansies :P
+2013-03-14 11:02:47	divVerent	[18:00:31] does it happen to be in "D" state?
+2013-03-14 11:02:47	divVerent	[18:00:46] Earnestly: which browser? :P
+2013-03-14 11:02:47	mSSM	[18:00:47] Ducky^: yeah
+2013-03-14 11:02:47	mSSM	[18:00:49] wrong person
+2013-03-14 11:02:47	mSSM	[18:00:52] divVerent: ^
+2013-03-14 11:02:47	divVerent	[18:01:09] mSSM: processes in D state cannot be killed directly.
+2013-03-14 11:02:47	Earnestly	[18:01:11] glide: I will only be happy once people finally realise they can use both gtk *&* qt programs on the same system just fine.
+2013-03-14 11:02:47	Earnestly	[18:01:18] divVerent: dwb
+2013-03-14 11:02:47	divVerent	[18:01:19] you need to find out what is is trying to do, and help it finish/error there
+2013-03-14 11:02:47	mSSM	[18:01:25] divVerent: what's a D state?
+2013-03-14 11:02:47	feyd	[18:01:26] gtmanfred: will do, thanks
+2013-03-14 11:02:47	divVerent	[18:01:36] a process that is waiting for something in the kernel that cannot be interrupted
+2013-03-14 11:02:47	pukne	[18:01:40] Earnestly: out of curiosity, what browser?
+2013-03-14 11:02:47	divVerent	[18:01:41] e.g. a broken down NFS mount
+2013-03-14 11:02:47	glide	[18:01:43] Earnestly, as is hte case with most distros
+2013-03-14 11:02:47	Earnestly	[18:01:46] pukne: dwb
+2013-03-14 11:02:47	grawity	[18:02:02] I think processes hung on NFS can still be killed with SIGKILL
+2013-03-14 11:02:47	mSSM	[18:02:08] divVerent: It's just a PDF reader...
+2013-03-14 11:02:47	mSSM	[18:02:11] :-/
+2013-03-14 11:02:47	pukne	[18:02:13] Oh, dwb, I like it.
+2013-03-14 11:02:47	divVerent	[18:02:15] grawity: depends on mount options
+2013-03-14 11:02:47	divVerent	[18:02:20] mSSM: but "ps" does show it in D state?
+2013-03-14 11:02:47	feyd	[18:02:29] gtmanfred: if diff?
+2013-03-14 11:02:47	grawity	[18:02:30] divVerent: that's what the nfs manpage says, right next to the note saying "option 'soft' is now ineffective as if 2.6.25"
+2013-03-14 11:02:47	divVerent	[18:02:32] dwb... actually maybe should try it on Maemo
+2013-03-14 11:02:47	***	Playback Complete.
+2013-03-14 11:02:50	divVerent	grawity: yes, for the specific case of NFS it is now "fixed"
+2013-03-14 11:02:50	<--	greybott (~User@52.240.broadband17.iol.cz) has quit (Max SendQ exceeded)
+2013-03-14 11:02:51	--	Mode #archlinux [+Cnt]
+2013-03-14 11:02:51	--	Channel created on Sun, 15 Feb 2004 00:08:31
+2013-03-14 11:02:52		[http://is.gd/3RCnbv]
+2013-03-14 11:02:52		[http://is.gd/xBwAHC]
+2013-03-14 11:02:52		[http://is.gd/wfpCwt]
+2013-03-14 11:02:52		[http://is.gd/uz5Ts0]
+2013-03-14 11:02:56	mSSM	divVerent: That I don't know: is “STAT“ the state? There it shows Sl
+2013-03-14 11:03:00	gtmanfred	feyd: if ! diff webcheck.txt <(curl www.domain.com) &>/dev/null ; then
+2013-03-14 11:03:04	divVerent	oh, then it's NOW in D state
+2013-03-14 11:03:05	<--	Thra11_ (~thrall@87.114.136.205) has quit (Ping timeout: 264 seconds)
+2013-03-14 11:03:09	divVerent	and kill -9 $PID does not kill it?
+2013-03-14 11:03:10	-->	mavvert (~mavvert@524B3045.cm-4-4a.dynamic.ziggo.nl) has joined #archlinux
+2013-03-14 11:03:17	divVerent	pkill maybe was just the wrong program
+2013-03-14 11:03:26	gtmanfred	...
+2013-03-14 11:03:27	<--	toty (~thomas@p5795CBE2.dip.t-dialin.net) has left #archlinux
+2013-03-14 11:03:32	gtmanfred	pkill also has a -9
+2013-03-14 11:03:37	feyd	gtmanfred: cool, thanks
+2013-03-14 11:03:38	divVerent	yes, he used that
+2013-03-14 11:03:40	mSSM	divVerent: divVerent kill works
+2013-03-14 11:03:41	divVerent	but he killed by PID
+2013-03-14 11:03:43	mSSM	pkill didn't work
+2013-03-14 11:03:46	divVerent	pkill searches process name
+2013-03-14 11:03:49	mSSM	oh
+2013-03-14 11:03:52	divVerent	and you tried pkill on a PID
+2013-03-14 11:03:58	mSSM	Now that doesn't work!
+2013-03-14 11:04:03	mSSM	Silly mSSM.
+2013-03-14 11:04:07	<--	storage (~storage@odnb-4db72064.pool.mediaWays.net) has left #archlinux
+2013-03-14 11:04:08	divVerent	well, problem solved :P
+2013-03-14 11:04:16	mSSM	It's weird.
+2013-03-14 11:04:20	mSSM	This happens with some PDFs.
+2013-03-14 11:04:26	divVerent	and as for D state, if that should ever hit you... a hanging FUSE file system e.g. also can cause this
+2013-03-14 11:04:33	divVerent	killing the FUSE process however fixes everything then
+2013-03-14 11:04:34	Earnestly	glide: It looks like most of the antagonists don't really know what they're talking about. No loss
+2013-03-14 11:04:34	<--	endiruna (~endiendir@poisson.phc.unipi.it) has quit (Remote host closed the connection)
+2013-03-14 11:04:37	divVerent	e.g. curlftpfs does that to me sometimes
+2013-03-14 11:04:44	mSSM	Usually the old, 70s kind, which are mainly from scanned articles ... those are very naughty.
+2013-03-14 11:04:53	-->	endiruna (~endiendir@poisson.phc.unipi.it) has joined #archlinux
+2013-03-14 11:04:57	pukne	Installing "mesa" seems to want to install the wayland package too. Is this ok?
+2013-03-14 11:05:00	<--	roknir (~roknir@unaffiliated/roknir) has quit (Ping timeout: 264 seconds)
+2013-03-14 11:05:10	-->	moigagoo (~kmolchano@ul.cs-cart.com) has joined #archlinux
+2013-03-14 11:05:12	-->	greybott (~User@52.240.broadband17.iol.cz) has joined #archlinux
+2013-03-14 11:05:14	gtmanfred	pukne: yes
+2013-03-14 11:05:17	gtmanfred	!give pukne waylandbug
+2013-03-14 11:05:18	phrik	pukne: https://bugs.archlinux.org/task/33848
+2013-03-14 11:05:20	gtmanfred	!give pukne mesa
+2013-03-14 11:05:21	phrik	pukne: https://mailman.archlinux.org/pipermail/arch-dev-public/2013-February/024459.html
+2013-03-14 11:05:24		[http://is.gd/5NilAj]
+2013-03-14 11:05:26		[http://is.gd/1hsNk2]
+2013-03-14 11:05:31	Earnestly	glide: Case in point: They're talking about DirectFB of all things. Why? Who the fuck knows. Maybe they wikipedia'd a bunch of possible methods for displaying a GUI on Linux and fixated on it. Either way, it's not a huge loss
+2013-03-14 11:05:34	pukne	Thank you, gtmanfred.
+2013-03-14 11:05:43	<--	greybott (~User@52.240.broadband17.iol.cz) has quit (Max SendQ exceeded)
+2013-03-14 11:06:15	_ikke_	I have a problem with certain things logged to syslog not showing up anywhere. For example, I don't see anything logged by postfix (while it used to log before I switched to systemd). Anyone got a clue what might be wrong? (I enabled and started the syslog-ng.service)
+2013-03-14 11:06:35	-->	arduix (~arduix@197.15.20.247) has joined #archlinux
+2013-03-14 11:06:47	-->	toty (~thomas@p5795CBE2.dip.t-dialin.net) has joined #archlinux
+2013-03-14 11:06:49	-->	Wusel_ (~muench@g224199163.adsl.alicedsl.de) has joined #archlinux
+2013-03-14 11:07:07	-->	greybott (~User@52.240.broadband17.iol.cz) has joined #archlinux
+2013-03-14 11:07:19	-->	sputnikus (~sputnikus@ip-89-102-7-58.net.upcbroadband.cz) has joined #archlinux
+2013-03-14 11:07:26	_ikke_	/etc/syslog-ng/syslog-ng.conf is setup to log to /run/systemd/journal/syslog
+2013-03-14 11:07:36	<--	v0n (~vivien@207.96.182.162) has quit (Ping timeout: 260 seconds)
+2013-03-14 11:07:37	grawity	Do the messages show up in the journal?
+2013-03-14 11:07:38	<--	greybott (~User@52.240.broadband17.iol.cz) has quit (Max SendQ exceeded)
+2013-03-14 11:07:40	<--	moigagoo (~kmolchano@ul.cs-cart.com) has left #archlinux ("Konversation terminated!")
+2013-03-14 11:07:43	Earnestly	_ikke_: You really don't need to yse syslog-ng as the journal will intercept syslog() calls.
+2013-03-14 11:07:47	Earnestly	s/use
+2013-03-14 11:08:00	_ikke_	Hmm, ok. But journalctl doesn't show them (executed as root)
+2013-03-14 11:08:07	-->	Marty_Stoopid (~Marty_Sto@189.78.140.88.rev.sfr.net) has joined #archlinux
+2013-03-14 11:08:12	grawity	Earnestly: I installed syslog-ng yesterday too, just because `journalctl -fa` takes a freaking long time to start
+2013-03-14 11:08:12	-->	topolinux (~paolo@151.77.117.61) has joined #archlinux
+2013-03-14 11:08:19	<--	toty (~thomas@p5795CBE2.dip.t-dialin.net) has left #archlinux
+2013-03-14 11:08:21	<--	marvin2 (~marvin2@14-200-139-81.static.tpgi.com.au) has quit (Ping timeout: 245 seconds)
+2013-03-14 11:08:28	Earnestly	grawity: Add in a -b
+2013-03-14 11:08:41	-->	lou_ (~lou@dslc-082-083-137-222.pools.arcor-ip.net) has joined #archlinux
+2013-03-14 11:08:49	-->	CausaMortis (~CausaMort@195.169.186.253) has joined #archlinux
+2013-03-14 11:08:49	<--	CausaMortis (~CausaMort@195.169.186.253) has quit (Changing host)
+2013-03-14 11:08:49	-->	CausaMortis (~CausaMort@unaffiliated/causamortis) has joined #archlinux
+2013-03-14 11:08:54	Earnestly	Because journalctrl is -fab \o/
+2013-03-14 11:08:58	<--	vehk (~vehk@unaffiliated/vehk) has quit (Ping timeout: 240 seconds)
+2013-03-14 11:09:02	-->	greybott (~User@52.240.broadband17.iol.cz) has joined #archlinux
+2013-03-14 11:09:07	_ikke_	lol
+2013-03-14 11:09:21	Earnestly	s/ctrl/ctl
+2013-03-14 11:09:24	<--	untitaker (~untitaker@91-113-1-190.adsl.highway.telekom.at) has quit (Ping timeout: 252 seconds)
+2013-03-14 11:09:33	<--	greybott (~User@52.240.broadband17.iol.cz) has quit (Max SendQ exceeded)
+2013-03-14 11:09:41	_ikke_	But I don't see anything related to mail / postfix
+2013-03-14 11:10:22	-->	finiks (~finiks@modemcable029.72-200-24.mc.videotron.ca) has joined #archlinux
+2013-03-14 11:10:32	-->	Bunish (~Banish@h173n3-j-d4.ias.bredband.telia.com) has joined #archlinux
+2013-03-14 11:10:39	<--	libertas (1200@65.2.103.87.rev.vodafone.pt) has quit (Ping timeout: 276 seconds)
+2013-03-14 11:10:58	<--	gnumdk (~gnumdk@arch.ensat.fr) has quit (Quit: Konversation terminated!)
+2013-03-14 11:10:58	<--	Guilherme (~guilherme@unaffiliated/capeta) has quit (Ping timeout: 240 seconds)
+2013-03-14 11:11:54	-->	greybott (~User@52.240.broadband17.iol.cz) has joined #archlinux
+2013-03-14 11:11:54	-->	drot (~user@93.180.96.124) has joined #archlinux
+2013-03-14 11:12:05	<--	Banish (~Banish@h173n3-j-d4.ias.bredband.telia.com) has quit (Ping timeout: 252 seconds)
+2013-03-14 11:12:06	--	Bunish is now known as Banish
+2013-03-14 11:12:09	-->	roknir (~roknir@unaffiliated/roknir) has joined #archlinux
+2013-03-14 11:12:09	tb01110100	Woah, sudokode iz da OPZ!
+2013-03-14 11:12:19	_ikke_	If I use the logger command, should that show up in journalctl?
+2013-03-14 11:12:20	<--	wooyea (~chatzilla@116.10.166.110) has quit (Quit: ChatZilla 0.9.90 [Firefox 19.0.2/20130309001430])
+2013-03-14 11:12:22	-->	shape (~shape@unaffiliated/shape) has joined #archlinux
+2013-03-14 11:12:25	<--	greybott (~User@52.240.broadband17.iol.cz) has quit (Max SendQ exceeded)
+2013-03-14 11:12:28	-->	snackoverflow (toaster@l-176-143.sheridanc.on.ca) has joined #archlinux
+2013-03-14 11:12:29	<--	mefistofeles (~Tathar@unaffiliated/mefistofeles) has quit (Ping timeout: 255 seconds)
+2013-03-14 11:12:30	Earnestly	No idea. journald should intercept BSD style prefixes, e.g. "<13>Permission Denied", syslog() calls, e.g. syslog(MSG_ERROR, "Brokened!1"); and stdout and stderr of the daemon in the service file started by systemctl
+2013-03-14 11:12:43	shape	Hello, can someone please tell me what program they are using for that nice ASCII image and info? http://fc01.deviantart.net/fs42/f/2009/060/5/e/ArchLinux_Openbox_by_skwo357.png
+2013-03-14 11:12:48		[http://is.gd/3ExRR0]
+2013-03-14 11:12:50	grawity	i'm going to guess archey
+2013-03-14 11:12:52	 *	grawity opens image
+2013-03-14 11:12:58	<--	CausaMortis__ (~CausaMort@195.169.186.253) has quit (Ping timeout: 272 seconds)
+2013-03-14 11:13:13	-->	greybott (~User@52.240.broadband17.iol.cz) has joined #archlinux
+2013-03-14 11:13:14	tb01110100	!give shape aurpkg archey
+2013-03-14 11:13:16	phrik	shape: https://aur.archlinux.org/packages/archey
+2013-03-14 11:13:18	Earnestly	That's a custom archey
+2013-03-14 11:13:19	-->	Icedman (~Icedman@unaffiliated/icedman) has joined #archlinux
+2013-03-14 11:13:19	-->	mefistofeles (~Tathar@unaffiliated/mefistofeles) has joined #archlinux
+2013-03-14 11:13:20	<--	ianni (~ianni@dysis.math.uni-augsburg.de) has quit (Quit: Leaving)
+2013-03-14 11:13:21		[http://is.gd/DNkQXG]
+2013-03-14 11:13:31	Earnestly	As it's using `o` and `s` instead of `#`
+2013-03-14 11:13:40	shape	grawity: but I see that program on many distros, it doesn't matter right?
+2013-03-14 11:13:44	<--	greybott (~User@52.240.broadband17.iol.cz) has quit (Max SendQ exceeded)
+2013-03-14 11:13:51	<--	billybob (~billybob@2001:da8:201:1036:21e:68ff:feae:c1cb) has quit (Remote host closed the connection)
+2013-03-14 11:14:00	<--	aat_ (~alec@216.55.3.234) has quit (Ping timeout: 258 seconds)
+2013-03-14 11:14:03	<--	tolbrino (~tino@p57974EA3.dip.t-dialin.net) has quit (Ping timeout: 256 seconds)
+2013-03-14 11:14:05	Earnestly	shape: It's unfortunately bloated to all hell and can be used to display virtually every distro logo in ascii
+2013-03-14 11:14:09	<--	itu (~fb1@wikipedia/itu) has quit (Read error: Operation timed out)
+2013-03-14 11:14:09	<--	ekeih (~ekeih@unaffiliated/ekeih) has quit (Read error: Operation timed out)
+2013-03-14 11:14:09	<--	timtux (~ove@de-10.2.0.32.it-roteln.narkotikapolisen.se) has quit (Read error: Operation timed out)
+2013-03-14 11:14:09	<--	fest (~fest@94.30.245.88) has quit (Read error: Operation timed out)
+2013-03-14 11:14:10	<--	DeLord (~DeLord@renepasing.de) has quit (Read error: Operation timed out)
+2013-03-14 11:14:14	-->	timtux (~ove@77.81.242.150) has joined #archlinux
+2013-03-14 11:14:23	<--	Viski (vjokelai@hilla.kapsi.fi) has quit (Read error: Operation timed out)
+2013-03-14 11:14:23	-->	fest (~fest@94.30.245.88) has joined #archlinux
+2013-03-14 11:14:23	shape	Earnestly: I see, thanks!
+2013-03-14 11:14:32	<--	Fingel (~fingel@c-71-198-175-32.hsd1.ca.comcast.net) has quit (Ping timeout: 252 seconds)
+2013-03-14 11:14:39	-->	greybott (~User@52.240.broadband17.iol.cz) has joined #archlinux
+2013-03-14 11:14:50	<--	endiruna (~endiendir@poisson.phc.unipi.it) has quit (Remote host closed the connection)
+2013-03-14 11:14:59	-->	itu (~fb1@static.41.130.46.78.clients.your-server.de) has joined #archlinux
+2013-03-14 11:15:07	-->	endiruna (~endiendir@poisson.phc.unipi.it) has joined #archlinux
+2013-03-14 11:15:10	<--	greybott (~User@52.240.broadband17.iol.cz) has quit (Max SendQ exceeded)
+2013-03-14 11:15:35	_ikke_	hmf
+2013-03-14 11:15:40	-->	lagagnon (~larry@S0106001c109e9980.gv.shawcable.net) has joined #archlinux
+2013-03-14 11:15:50	-->	Eastux (~colypso@113.229.20.203) has joined #archlinux
+2013-03-14 11:15:58	-->	ekeih (~ekeih@newland.hackrid.de) has joined #archlinux
+2013-03-14 11:16:01	feyd	if a command outputs to stdout, is there something I can run on the output to just give me a number of lines that it put out?
+2013-03-14 11:16:14	-->	untitaker (~untitaker@178-190-21-6.adsl.highway.telekom.at) has joined #archlinux
+2013-03-14 11:16:20	_ikke_	| wc -l
+2013-03-14 11:16:27	Earnestly	`wc`?
+2013-03-14 11:16:32	feyd	money, thanks 
+2013-03-14 11:16:35	<--	shape (~shape@unaffiliated/shape) has left #archlinux
+2013-03-14 11:16:40	-->	aat_ (~alec@216.55.3.234) has joined #archlinux
+2013-03-14 11:16:44	feyd	perfect
+2013-03-14 11:16:58	<--	niloc132 (~colin@c-67-180-167-61.hsd1.ca.comcast.net) has quit (Ping timeout: 240 seconds)
+2013-03-14 11:17:05	-->	andyrtr (~andyrtr@archlinux/developer/andyrtr) has joined #archlinux
+2013-03-14 11:17:06	<--	Thra11 (~thrall@31.185.188.91) has quit (Ping timeout: 245 seconds)
+2013-03-14 11:17:08	-->	greybott (~User@52.240.broadband17.iol.cz) has joined #archlinux
+2013-03-14 11:17:14	<--	olegfusion (~olegfusio@46.191.225.80) has quit (Read error: Connection reset by peer)
+2013-03-14 11:17:20	<--	Eastux (~colypso@113.229.20.203) has left #archlinux
+2013-03-14 11:17:21	Earnestly	Apparently google is removing programs from their "AppStore" which block advertisements
+2013-03-14 11:17:39	<--	greybott (~User@52.240.broadband17.iol.cz) has quit (Max SendQ exceeded)
+2013-03-14 11:17:41	microcode	hahaha
+2013-03-14 11:17:46	-->	Viski (vjokelai@hilla.kapsi.fi) has joined #archlinux
+2013-03-14 11:17:50	tb01110100	Meh. I never notice ads in the first place.
+2013-03-14 11:17:52	t0rc	lol shocker
+2013-03-14 11:17:59	Earnestly	http://www.androidpolice.com/2013/03/13/breaking-google-has-begun-purging-ad-blocking-apps-from-the-play-store/
+2013-03-14 11:17:59	-->	Icarot (~Icarot@199-188-193-9.PUBLIC.monkeybrains.net) has joined #archlinux
+2013-03-14 11:18:01	phrik	Title: Breaking: Google Has Begun Purging Ad-Blocking Apps From The Play Store (at www.androidpolice.com)
+2013-03-14 11:18:01	microcode	I hope you mean the android stuff
+2013-03-14 11:18:04		[http://is.gd/kW9WZU]
+2013-03-14 11:18:09	microcode	and not the webstore
+2013-03-14 11:18:14	divVerent	16:17:21        Earnestly | Apparently google is removing programs from their "AppStore" which block advertisements
+2013-03-14 11:18:17	divVerent	OF COURSE
+2013-03-14 11:18:20	-->	RougeR (~anon@unaffiliated/rouger) has joined #archlinux
+2013-03-14 11:18:21	<--	vincent_wang (~vincent_w@114.253.160.4) has quit (Ping timeout: 245 seconds)
+2013-03-14 11:18:22	divVerent	I am surprised they only do it now
+2013-03-14 11:18:32	t0rc	!wtf
+2013-03-14 11:18:33	phrik	t0rc: wtf [is] <something>
+2013-03-14 11:18:33	webspid0r	they pretty much invented webadvertising
+2013-03-14 11:18:34	<--	masoudd (~masoudd@86.57.55.247) has quit (Ping timeout: 252 seconds)
+2013-03-14 11:18:40	webspid0r	so no wonder
+2013-03-14 11:18:45	divVerent	and Apple does it for their own appstore for years now
+2013-03-14 11:19:15	divVerent	fact is, Google and Apple have virtually the same business model for their app store
+2013-03-14 11:19:21	pukne	Not quite arch-related but... is there a way to open a link when using irssi (such as that Google one) in lynx?
+2013-03-14 11:19:22	-->	greybott (~User@52.240.broadband17.iol.cz) has joined #archlinux
+2013-03-14 11:19:24	divVerent	so they need similar means to protect it
+2013-03-14 11:19:30	webspid0r	pukne: set BROWSER
+2013-03-14 11:19:53	<--	greybott (~User@52.240.broadband17.iol.cz) has quit (Max SendQ exceeded)
+2013-03-14 11:19:58	-->	zer4tul (~zer4tul@unaffiliated/zer4tul) has joined #archlinux
+2013-03-14 11:20:01	<--	maddogie (~jim@178-27-224-53-dynip.superkabel.de) has quit (Quit: Konversation terminated!)
+2013-03-14 11:20:22	-->	schoewilliam (~william@41.213.157.35) has joined #archlinux
+2013-03-14 11:20:25	webspid0r	pukne: but tell me, why the worst text-browser
+2013-03-14 11:20:34	Earnestly	I am starting to agree more and more with Zed Shaw, never thought I'd think that.
+2013-03-14 11:20:38	<--	hfatih (~quassel@unaffiliated/hfatih) has quit (Read error: Connection reset by peer)
+2013-03-14 11:20:55	pukne	webspid0r: mostly out of habit and because it supports gopher.
+2013-03-14 11:20:57	-->	greybott (~User@52.240.broadband17.iol.cz) has joined #archlinux
+2013-03-14 11:21:05	-->	jxn_ (~jxn@xdsl-87-78-55-61.netcologne.de) has joined #archlinux
+2013-03-14 11:21:11	Earnestly	At least, some of his points
+2013-03-14 11:21:14	webspid0r	pukne: wait, how old are you
+2013-03-14 11:21:26	pukne	webspid0r: not that much. :)
+2013-03-14 11:21:28	<--	greybott (~User@52.240.broadband17.iol.cz) has quit (Max SendQ exceeded)
+2013-03-14 11:21:39	numeral	I think I broke goog 
+2013-03-14 11:21:40	-->	joebew (c1cdd220@gateway/web/freenode/ip.193.205.210.32) has joined #archlinux
+2013-03-14 11:21:42	numeral	or goog broke me...
+2013-03-14 11:21:52	-->	DeLord (~DeLord@renepasing.de) has joined #archlinux
+2013-03-14 11:21:52	-->	jakobw (~jakobw@park743.koll.au.dk) has joined #archlinux
+2013-03-14 11:21:53	<--	jakobw (~jakobw@park743.koll.au.dk) has quit (Changing host)
+2013-03-14 11:21:53	-->	jakobw (~jakobw@archlinux/developer/jakobw) has joined #archlinux
+2013-03-14 11:22:04	-->	Tom^ (~Tom@unaffiliated/tom/x-6084202) has joined #archlinux
+2013-03-14 11:22:04	webspid0r	"not that much" hardly answers that question
+2013-03-14 11:22:05	-->	henkye (~henk@32.111.broadband13.iol.cz) has joined #archlinux
+2013-03-14 11:22:07	-->	greybott (~User@52.240.broadband17.iol.cz) has joined #archlinux
+2013-03-14 11:22:20	numeral	webspid0r: it kinda does... at least psychologically
+2013-03-14 11:22:29	joebew	anybody would join with me in the development of a free software program?
+2013-03-14 11:22:37	<--	bortzmeyer (~stephane@2001:df8:0:16:bc1a:907:f712:15c1) has quit (Quit: Leaving.)
+2013-03-14 11:22:37	gtmanfred	phrik: is Earnestly being sane?
+2013-03-14 11:22:38	phrik	Perhaps so!
+2013-03-14 11:22:38	<--	greybott (~User@52.240.broadband17.iol.cz) has quit (Max SendQ exceeded)
+2013-03-14 11:22:44	gtmanfred	Earnestly: phrik approves!
+2013-03-14 11:22:46	gtmanfred	bbl
+2013-03-14 11:22:52	Earnestly	numeral: is.gd :: Goog is broken by design for my needs, whenever I try to copy the text into my primary selection, it pops up this annoying "Press Ctrl+C" to copy. I don't have "Ctrl+C" bound to copy, just let me copy the fucking text. D:
+2013-03-14 11:22:56	webspid0r	numeral: look, if the question were "How much do you fap?", "not that much" would have been a more appropriate answer
+2013-03-14 11:23:04	joebew	contact me in private for further info
+2013-03-14 11:23:11	feyd	ok new script, am I doing this right? http://codepad.org/dv9siWCG - just checking if string appears more than 1 time on a page
+2013-03-14 11:23:12	phrik	Title: Plain Text code - 7 lines - codepad (at codepad.org)
+2013-03-14 11:23:20	<--	crawlman (~crawlman@41-135-63-201.dsl.mweb.co.za) has quit (Ping timeout: 246 seconds)
+2013-03-14 11:23:22	webspid0r	joebew: lol, you'll hardly find people without giving out the idea
+2013-03-14 11:23:31	webspid0r	joebew: and remember, these are a dime a dozen
+2013-03-14 11:23:40	-->	greybott (~User@52.240.broadband17.iol.cz) has joined #archlinux
+2013-03-14 11:23:40	keenerd	joebew: Or what you are willing to pay per hour.
+2013-03-14 11:23:48	Earnestly	VCs are everywhere!
+2013-03-14 11:24:07	joebew	this is the project: https://github.com/joebew42/cwatch/tree/1.0experimental
+2013-03-14 11:24:08	phrik	Title: joebew42/cwatch at 1.0experimental · GitHub (at github.com)
+2013-03-14 11:24:11	<--	greybott (~User@52.240.broadband17.iol.cz) has quit (Max SendQ exceeded)
+2013-03-14 11:24:12		[http://is.gd/yFBJoT]
+2013-03-14 11:24:19	-->	crawlman (~crawlman@41-135-63-201.dsl.mweb.co.za) has joined #archlinux
+2013-03-14 11:24:27	Earnestly	Takin' our softwares and not givin' back, make a quick buck and scarper! Dat's tha VC way.
+2013-03-14 11:24:34	<--	wreckimnaked (~wreckimna@212.87.32.10) has quit (Read error: No route to host)
+2013-03-14 11:24:41	-->	wreckimn1 (~wreckimna@212.87.32.10) has joined #archlinux
+2013-03-14 11:24:42	<--	jxn (~jxn@xdsl-213-168-119-28.netcologne.de) has quit (Ping timeout: 264 seconds)
+2013-03-14 11:24:48	numeral	Earnestly: google talk is pissing me off :/
+2013-03-14 11:25:03	Earnestly	numeral: Why's that?
+2013-03-14 11:25:05	<--	endiruna (~endiendir@poisson.phc.unipi.it) has quit (Remote host closed the connection)
+2013-03-14 11:25:23	-->	endiruna (~endiendir@poisson.phc.unipi.it) has joined #archlinux
+2013-03-14 11:25:32	<--	endiruna (~endiendir@poisson.phc.unipi.it) has quit (Client Quit)
+2013-03-14 11:25:40	<--	joem86 (~joe@97.101.50.167) has quit (Quit: WeeChat 0.4.0)
+2013-03-14 11:25:57	<--	Bassquale (~pfaber@p5485C2C3.dip0.t-ipconnect.de) has quit (Quit: leaving)
+2013-03-14 11:26:10	-->	knapper__ (~knapper@216.16.130.122) has joined #archlinux
+2013-03-14 11:26:11	numeral	Earnestly: cause it's not working :/
+2013-03-14 11:26:14	-->	greybott (~User@52.240.broadband17.iol.cz) has joined #archlinux
+2013-03-14 11:26:30	-->	twoface (~twoface@87-104-57-162-dynamic-customer.profibernet.dk) has joined #archlinux
+2013-03-14 11:26:37	Earnestly	Well that's usually a good enough reason
+2013-03-14 11:26:45	<--	greybott (~User@52.240.broadband17.iol.cz) has quit (Max SendQ exceeded)
+2013-03-14 11:27:10	<--	SleepyFloyd (~sleepy@p5B17FEAE.dip.t-dialin.net) has quit (Read error: Connection reset by peer)
+2013-03-14 11:27:46	numeral	I need to teach my friend how to use IRC so he can go ask people in #web (or whatever the channel is) noob questions :/
+2013-03-14 11:27:47	-->	greybott (~User@52.240.broadband17.iol.cz) has joined #archlinux
+2013-03-14 11:27:54	<--	Marty_Stoopid (~Marty_Sto@189.78.140.88.rev.sfr.net) has quit (Quit: bye)
+2013-03-14 11:27:55	-->	snqL (~snql@unaffiliated/snql) has joined #archlinux
+2013-03-14 11:27:59	webspid0r	Earnestly: it's the whole reason why people here recommend different software
+2013-03-14 11:28:06	numeral	it's kinda funny taking a classics major and teaching him some web dev stuff :P
+2013-03-14 11:28:09	<--	_D_ (~dennis@ip66-12-211-87.adsl2.static.versatel.nl) has quit (Quit: leaving)
+2013-03-14 11:28:18	<--	greybott (~User@52.240.broadband17.iol.cz) has quit (Max SendQ exceeded)
+2013-03-14 11:28:23	<--	NWMonster (~NWMonster@p10180-ipngn100302sizuokaden.shizuoka.ocn.ne.jp) has quit (Quit: Leaving)
+2013-03-14 11:28:33	Earnestly	webspid0r: What is the whole reason?
+2013-03-14 11:28:52	-->	toty (~thomas@p5795CBE2.dip.t-dialin.net) has joined #archlinux
+2013-03-14 11:28:54	webspid0r	err, that is a good question
+2013-03-14 11:29:06	webspid0r	more than the half-assed reason surely
+2013-03-14 11:29:37	numeral	organic coffee... what will they think up next
+2013-03-14 11:29:37	Nahiyan	uhh
+2013-03-14 11:29:48	-->	trewe (~trewe@87.196.222.246) has joined #archlinux
+2013-03-14 11:29:49	Nahiyan	I'd like to build 3.8.2 using makepkg..
+2013-03-14 11:29:55	-->	tokomer (~arktokome@unaffiliated/arkydo) has joined #archlinux
+2013-03-14 11:29:58	sledgehammer	go ahead
+2013-03-14 11:30:06	-->	bortzmeyer (~stephane@dhcp-106f.meeting.ietf.org) has joined #archlinux
+2013-03-14 11:30:12	sledgehammer	you don't need to ask for permission
+2013-03-14 11:30:12	glide	google owns doubleclick, so no surprise there
+2013-03-14 11:30:15	_ikke_	On my local machine, when I execute logger, I can see it in my journal, but on my server, it doesn't show anything. It seems like syslog calls aren't logged somehow
+2013-03-14 11:30:22	-->	greybott (~User@52.240.broadband17.iol.cz) has joined #archlinux
+2013-03-14 11:30:42	Nahiyan	I'm not sure about changing the versions in the PKGBUILD
+2013-03-14 11:30:47	Nahiyan	:D
+2013-03-14 11:30:53	<--	greybott (~User@52.240.broadband17.iol.cz) has quit (Max SendQ exceeded)
+2013-03-14 11:30:58	-->	greggerz (~greggerz@198.102.36.250) has joined #archlinux
+2013-03-14 11:31:11	memand	When I try to transcode something with ffmpeg and it asks me 'do you want to overwrite somefile? [y/N]?' it just writes ^M when I press return... WTF ffmpeg???
+2013-03-14 11:31:18	<--	toty (~thomas@p5795CBE2.dip.t-dialin.net) has left #archlinux
+2013-03-14 11:31:38	Nahiyan	memand, isn't ffmpeg discontinued?
+2013-03-14 11:31:46	-->	tolbrino (~tino@p57974EA3.dip.t-dialin.net) has joined #archlinux
+2013-03-14 11:31:46	_ikke_	Nahiyan: No?
+2013-03-14 11:31:57	mefistofeles	it was forked
+2013-03-14 11:31:58	glide	numeral, as opposed to inorganic coffee
+2013-03-14 11:31:59	-->	ManoloMtnez (~manolo@cpe-24-90-56-253.nyc.res.rr.com) has joined #archlinux
+2013-03-14 11:32:11	-->	farangoth (~clement@ARouen-651-1-381-161.w109-209.abo.wanadoo.fr) has joined #archlinux
+2013-03-14 11:32:17	memand	mefistofeles: what is the fork called? and is it better?
+2013-03-14 11:32:25	ManoloMtnez	Do you guys know of an AUR package of vim (not gvim) compiled with X clipboard support? 
+2013-03-14 11:32:27	numeral	webspid0r, Earnestly: you think I should give my friend vim or sublime text, mind you totally a noob
+2013-03-14 11:32:33	-->	libertas (1200@16.154.189.46.rev.vodafone.pt) has joined #archlinux
+2013-03-14 11:32:34	ManoloMtnez	And of a way to search the AUR that doesn't suc?
+2013-03-14 11:32:34	Nahiyan	libav or some other
+2013-03-14 11:32:34	numeral	glide: yes, I was being facetious...
+2013-03-14 11:32:34	mefistofeles	I don't remember the name right now, and no, I haven't tried it yet
+2013-03-14 11:32:38	-->	prtcl (~prtcl@2620:100:f00d:a150:223:32ff:fe31:a38) has joined #archlinux
+2013-03-14 11:32:43	mefistofeles	libav yeah, I think that's the one
+2013-03-14 11:32:44	glide	numeral, so was i :)
+2013-03-14 11:32:49	-->	greybott (~User@52.240.broadband17.iol.cz) has joined #archlinux
+2013-03-14 11:32:55	<--	chron (~chron@cl-877.cgn-01.de.sixxs.net) has quit (Ping timeout: 264 seconds)
+2013-03-14 11:32:59	numeral	glide: so we were being facetious together yay!
+2013-03-14 11:33:02	numeral	!define facetious
+2013-03-14 11:33:04	_ikke_	Any one got a clue why systemd / journal doesn't log syslog calls?
+2013-03-14 11:33:06	phrik	numeral: wn: facetious adj 1: cleverly amusing in tone; "a bantering tone"; "facetious remarks"; "tongue-in-cheek advice" [syn: {bantering}, {facetious}, {tongue-in-cheek}]; gcide: Facetious \Fa*ce"tious\, a. [Cf. F. fac['e]tieux. See {Faceti[ae]}.] 1. Given to wit and good humor; merry; sportive; jocular; as, a facetious companion. [1913 Webster] 2. Characterized by wit and pleasantry; exciting laughter; as, a (2 more messages)
+2013-03-14 11:33:06	<--	OK100 (~OK100@31.134.103.137) has quit (Ping timeout: 264 seconds)
+2013-03-14 11:33:06	memand	ManoloMtnez: You just want a sane way to paste from clipboard?
+2013-03-14 11:33:18	ManoloMtnez	memand: actually, yes
+2013-03-14 11:33:21	<--	greybott (~User@52.240.broadband17.iol.cz) has quit (Max SendQ exceeded)
+2013-03-14 11:33:21	<--	zomg1114 (~zomg@AAubervilliers-154-1-47-100.w90-3.abo.wanadoo.fr) has quit (Ping timeout: 245 seconds)
+2013-03-14 11:33:23	webspid0r	numeral: it's ok, you can learn enough vim to be faster than any other text editor (except emacs of course) in two - four weeks
+2013-03-14 11:33:29	-->	ajashton (~ajashton@c-98-218-228-75.hsd1.dc.comcast.net) has joined #archlinux
+2013-03-14 11:33:45	mefistofeles	let's start the flame war
+2013-03-14 11:33:49	Nahiyan	uh
+2013-03-14 11:33:50	numeral	!lswar
+2013-03-14 11:33:52	phrik	0:wm, 1:lang, 2:aur-helpers, 3:distros, 4:editors, 5:irc clients, 6:spam, 7:continents, 8:DEs, 9:rcs, 10:browsers, 11:biscuits, 12:fonts, 13:war, 14:storage, 15:religion, 16:compression, 17:programming, 18:games, 19:kernels, 20:multiplexers, 21:pastebins, 22:video cards, 23:men, 24:systemd, 25:oceanic isps, 26:video downloaders, 27:keyboard layouts, 28:markup specs, 29:bootloaders, !lswar2
+2013-03-14 11:33:54	-->	OK100 (~OK100@31.134.103.137) has joined #archlinux
+2013-03-14 11:33:56	numeral	!war3
+2013-03-14 11:33:56	<--	maletor (~maletor@c-69-181-33-169.hsd1.ca.comcast.net) has quit (Quit: Computer has gone to sleep.)
+2013-03-14 11:33:58	phrik	are we talking about distros again?
+2013-03-14 11:34:07	numeral	!war4
+2013-03-14 11:34:07	mefistofeles	how is C-X C-c faster than :q ?
+2013-03-14 11:34:09	phrik	Are we talking about text editors again?
+2013-03-14 11:34:11	-->	greybott (~User@52.240.broadband17.iol.cz) has joined #archlinux
+2013-03-14 11:34:11	<--	Zardvark (~admiraldr@142.204.70.21) has quit (Ping timeout: 245 seconds)
+2013-03-14 11:34:13	numeral	there we go
+2013-03-14 11:34:14	memand	ManoloMtnez: Check out :h pastetoggle
+2013-03-14 11:34:16	memand	;)
+2013-03-14 11:34:20	<--	witquicked (~witquicke@50-193-55-245-static.hfc.comcastbusiness.net) has quit (Quit: Leaving)
+2013-03-14 11:34:24	mefistofeles	:P
+2013-03-14 11:34:24	numeral	mefistofeles: vim user, yet I would never use that as an example...
+2013-03-14 11:34:24	ManoloMtnez	I'd liketo have some of war28
+2013-03-14 11:34:29	-->	zomg1114 (~zomg@AAubervilliers-154-1-21-75.w90-3.abo.wanadoo.fr) has joined #archlinux
+2013-03-14 11:34:32	ManoloMtnez	memand: thanks, will do :)
+2013-03-14 11:34:36	numeral	how to get out of your editor as fast as possible is not a good example as to how fast it is
+2013-03-14 11:34:40	webspid0r	ManoloMtnez: check the registers
+2013-03-14 11:34:42	<--	greybott (~User@52.240.broadband17.iol.cz) has quit (Max SendQ exceeded)
+2013-03-14 11:35:03	numeral	webspid0r: you're part of the cult of emacs?
+2013-03-14 11:35:11	-->	marvin2 (~marvin2@14-200-139-81.static.tpgi.com.au) has joined #archlinux
+2013-03-14 11:35:39	-->	greybott (~User@52.240.broadband17.iol.cz) has joined #archlinux
+2013-03-14 11:35:40	webspid0r	ManoloMtnez: "+yy
+2013-03-14 11:35:43	memand	ManoloMtnez: np :)
+2013-03-14 11:35:56	-->	Thra11 (~thrall@87.114.206.209) has joined #archlinux
+2013-03-14 11:35:56	webspid0r	ManoloMtnez: yanks into CLIPBOARD and works with the vim from the gvim package
+2013-03-14 11:36:03	ManoloMtnez	webspid0r: the two relevant registers ("+ and "*) only work when vim is compiled with X-clipboard support, no?
+2013-03-14 11:36:10	<--	greybott (~User@52.240.broadband17.iol.cz) has quit (Max SendQ exceeded)
+2013-03-14 11:36:11	Repentinus	numeral, there is no cult of emacs. There are the church of emacs and the cult of vi.
+2013-03-14 11:36:24	numeral	Repentinus: only if you're an emacs user
+2013-03-14 11:36:25	ManoloMtnez	webspid0r: that's what I meant: I'd prefer not to have to install the gvim package (I do atm)
+2013-03-14 11:36:33	webspid0r	numeral: no, I just accept that it's powerful enough to rival vim
+2013-03-14 11:36:34	<--	schoewilliam (~william@41.213.157.35) has quit (Read error: Connection timed out)
+2013-03-14 11:36:37	numeral	doesn't matter, I use ed most of the time
+2013-03-14 11:36:39	ManoloMtnez	webspid0r: it's no big deal
+2013-03-14 11:36:43	-->	oskude (~oskude@p54B0878D.dip0.t-ipconnect.de) has joined #archlinux
+2013-03-14 11:36:52	numeral	ed is the standard UNIX editor
+2013-03-14 11:36:58	webspid0r	ManoloMtnez: I'd check the official PKGBUILD then
+2013-03-14 11:37:04	ManoloMtnez	so, anyway, markup: I'm partial to pandoc markdown
+2013-03-14 11:37:25	Repentinus	Unfortunately for you, I'm a vim user.
+2013-03-14 11:37:31	petantik	ManoloMtnez: does pandoc have it's own markdown or is it just rst?
+2013-03-14 11:37:40	Repentinus	But emacs ain't cool enough to have a cult.
+2013-03-14 11:37:40	petantik	its*
+2013-03-14 11:37:52	ManoloMtnez	petantik: it has the sanest markdown extension available, I think. It's not rst
+2013-03-14 11:37:54	-->	greybott (~User@52.240.broadband17.iol.cz) has joined #archlinux
+2013-03-14 11:37:56	numeral	heh
+2013-03-14 11:38:05	ManoloMtnez	petantik: although it can convert rst to pandoc markdown
+2013-03-14 11:38:17	-->	l3nkz (~l3nkz@p54B33891.dip.t-dialin.net) has joined #archlinux
+2013-03-14 11:38:25	<--	greybott (~User@52.240.broadband17.iol.cz) has quit (Max SendQ exceeded)
+2013-03-14 11:38:26	<--	linoge (~carlos@190-76-1-229.dyn.movilnet.com.ve) has quit (Read error: Connection reset by peer)
+2013-03-14 11:38:27	numeral	to be fair, the whole emacs/vi thing is outdated, they're both operating systems at this point
+2013-03-14 11:38:49	numeral	the one thing I wonder about is... does emacs still do stupid large file handling...
+2013-03-14 11:38:51	-->	pyToolmaker (~pyToolmak@agsb-5d87faff.pool.mediaWays.net) has joined #archlinux
+2013-03-14 11:38:52	<--	lou_ (~lou@dslc-082-083-137-222.pools.arcor-ip.net) has quit (Ping timeout: 260 seconds)
+2013-03-14 11:38:53	Nahiyan	numeral, they are VM hosts?
+2013-03-14 11:38:55	kaste	gtmanfred: If you are still here interested here is my journal log http://nopaste.info/0cb74beb49.html
+2013-03-14 11:38:57	phrik	Title: nopaste.info - free nopaste script and service (at nopaste.info)
+2013-03-14 11:39:00		[http://is.gd/GKVbr6]
+2013-03-14 11:39:07	petantik	ManoloMtnez: are you sure pandoc has its own format?
+2013-03-14 11:39:09	-->	linoge (~carlos@190-76-1-229.dyn.movilnet.com.ve) has joined #archlinux
+2013-03-14 11:39:10	<--	MZK (~quassel@28.219.15.37.dynamic.jazztel.es) has quit (Read error: Connection reset by peer)
+2013-03-14 11:39:13	ManoloMtnez	petantik: I am positive
+2013-03-14 11:39:24	numeral	Nahiyan: the words I used and the words you used are not equivalent
+2013-03-14 11:39:25	numeral	!next
+2013-03-14 11:39:28	phrik	Another satisfied customer! NEXT!
+2013-03-14 11:39:34	-->	Bassquale (~pfaber@p5485C2C3.dip0.t-ipconnect.de) has joined #archlinux
+2013-03-14 11:39:37	memand	ManoloMtnez: Are you.... HIV positive?
+2013-03-14 11:39:41	-->	MikalD (~MikalD@146.247.224.22) has joined #archlinux
+2013-03-14 11:39:43	petantik	ManoloMtnez: Pandoc   a universal document converter ...
+2013-03-14 11:39:45	-->	greybott (~User@52.240.broadband17.iol.cz) has joined #archlinux
+2013-03-14 11:39:49	ManoloMtnez	petantik: pandoc is two things: a markdown extension and a document converter
+2013-03-14 11:39:50	-->	MZK (~quassel@28.219.15.37.dynamic.jazztel.es) has joined #archlinux
+2013-03-14 11:39:54	Nahiyan	numeral, </badpun>
+2013-03-14 11:39:56	webspid0r	pandoc is great
+2013-03-14 11:40:02	webspid0r	if only it weren't a pain to install
+2013-03-14 11:40:02	ManoloMtnez	petantik: the first of those is an abstract object. The second is a program.
+2013-03-14 11:40:14	ManoloMtnez	webspid0r: like every other Haskell program. I agree
+2013-03-14 11:40:16	<--	greybott (~User@52.240.broadband17.iol.cz) has quit (Max SendQ exceeded)
+2013-03-14 11:40:18	gtmanfred	kaste: hrm... i do not know :/
+2013-03-14 11:40:22	chridal	faen: you must be norwegian?
+2013-03-14 11:40:28	webspid0r	ManoloMtnez: I must admit xmonad was way easier
+2013-03-14 11:40:32	chridal	Sorry, wrong chan.
+2013-03-14 11:40:38	webspid0r	ManoloMtnez: just install it and the contrib package and there you go
+2013-03-14 11:40:38	-->	developej (~developej@cable-24-135-200-157.dynamic.sbb.rs) has joined #archlinux
+2013-03-14 11:40:48	petantik	ManoloMtnez: oh, i'm just trying to figure out the extension part.
+2013-03-14 11:40:48	kaste	it's really weird, but well I'll just ignite, that one's faster anyway
+2013-03-14 11:40:50	oskude	hmm, does any text editor have "dynamic shortcuts"? like it sees my keyboard layout, and puts the shortcuts that was thought for (most likely) us layout, to the same physical place in my layout?
+2013-03-14 11:41:02	<--	Bassquale (~pfaber@p5485C2C3.dip0.t-ipconnect.de) has quit (Client Quit)
+2013-03-14 11:41:04	ManoloMtnez	webspid0r: I prefer to use cabal for my Haskell programs. 
+2013-03-14 11:41:11	ManoloMtnez	petantik: man pandoc_markdown
+2013-03-14 11:41:25	ManoloMtnez	petantik: or John MacFarlane's pandoc webpage
+2013-03-14 11:41:26	-->	mithot (~mithot@123.21.222.226) has joined #archlinux
+2013-03-14 11:41:38	-->	Bassquale (~pfaber@p5485C2C3.dip0.t-ipconnect.de) has joined #archlinux
+2013-03-14 11:41:39	-->	PragCypher (~cypher@208.157.149.45) has joined #archlinux
+2013-03-14 11:41:41	chridal	Ah, so you do know what it means :)
+2013-03-14 11:41:50	petantik	ManoloMtnez: cheers, i know where my confusion comes from ... there's also sphinx which is rst based.
+2013-03-14 11:41:52	-->	Pillz (~Steel@bas1-montreal23-1176230954.dsl.bell.ca) has joined #archlinux
+2013-03-14 11:41:55	webspid0r	oskude: give up and use qwerty
+2013-03-14 11:42:00	<--	sputnikus (~sputnikus@ip-89-102-7-58.net.upcbroadband.cz) has quit (Ping timeout: 256 seconds)
+2013-03-14 11:42:11	oskude	webspid0r: then i would have to take it with me to work
+2013-03-14 11:42:13	-->	greybott (~User@52.240.broadband17.iol.cz) has joined #archlinux
+2013-03-14 11:42:34	chridal	What display manager do you guys use, and which application launcher; if any?
+2013-03-14 11:42:44	<--	greybott (~User@52.240.broadband17.iol.cz) has quit (Max SendQ exceeded)
+2013-03-14 11:43:00	ManoloMtnez	petantik: anyway, I get the impression that many use MMD, when pandoc looks vastly superior. I wonder why that is.
+2013-03-14 11:43:02	petantik	chridal: i use nodm, i.e, startx. and dmenu
+2013-03-14 11:43:04	<--	BaldFat_ (~mtelesha@mail.cscinc.org) has quit (Quit: KVIrc 4.0.4 Insomnia http://www.kvirc.net/)
+2013-03-14 11:43:17	suare	startx, monsterwm and dmenu
+2013-03-14 11:43:30	ManoloMtnez	yep, startx here too
+2013-03-14 11:43:45	ManoloMtnez	and dmenu :)
+2013-03-14 11:43:49	Repentinus	gdm, XFCE
+2013-03-14 11:43:52	numeral	pfft who doesn't use dmenu
+2013-03-14 11:43:59	-->	BaldFat (~mtelesha@mail.cscinc.org) has joined #archlinux
+2013-03-14 11:44:07	ManoloMtnez	numeral: gnome users?
+2013-03-14 11:44:18	-->	linux_18 (~linux_18@115.115.131.170) has joined #archlinux
+2013-03-14 11:44:19	-->	greybott (~User@52.240.broadband17.iol.cz) has joined #archlinux
+2013-03-14 11:44:35	-->	v0n (~vivien@207.96.182.162) has joined #archlinux
+2013-03-14 11:44:35	petantik	kde users.
+2013-03-14 11:44:41	<--	boom1992 (~quassel@BA1222.ballee.wh.tu-darmstadt.de) has quit (Remote host closed the connection)
+2013-03-14 11:44:48	<--	drot (~user@93.180.96.124) has quit (Quit: rcirc on GNU Emacs 24.2.1)
+2013-03-14 11:45:00	megustavo	hm
+2013-03-14 11:45:01	-->	Lifkug (~bart@53559C37.cm-6-6c.dynamic.ziggo.nl) has joined #archlinux
+2013-03-14 11:45:04	<--	phrodo_00 (~phrodo_00@190.196.62.164) has quit (Quit: leaving)
+2013-03-14 11:45:07	 *	mefistofeles uses kde and i3wm depending on the needs
+2013-03-14 11:45:12	megustavo	when i ran ubuntu, i wondered what the point of dmenu was
+2013-03-14 11:45:15	-->	Midasx (~Midasx@host86-130-0-247.range86-130.btcentralplus.com) has joined #archlinux
+2013-03-14 11:45:25	<--	marvin2 (~marvin2@14-200-139-81.static.tpgi.com.au) has quit (Ping timeout: 245 seconds)
+2013-03-14 11:45:53	-->	spl1ff_ (~spliff@190.153.252.68) has joined #archlinux
+2013-03-14 11:45:58	<--	Aegir (~simon@87-61-129-88-dynamic.dk.customer.tdc.net) has quit (Ping timeout: 240 seconds)
+2013-03-14 11:46:09	-->	bananagram (~bot@pool-108-56-161-155.washdc.fios.verizon.net) has joined #archlinux
+2013-03-14 11:46:11	Midasx	When I boot up for a split second I see an error from grub about a file not being found. It doesn't seem to affect the system, but the fact there is an error is getting on my nerves! Where could I find a log of the error or set the timeout to longer than 0 so that I can see the error?
+2013-03-14 11:46:11	<--	Thra11 (~thrall@87.114.206.209) has quit (Ping timeout: 252 seconds)
+2013-03-14 11:46:11	-->	giovanni (~giovanni@archlinux/developer/giovanni) has joined #archlinux
+2013-03-14 11:46:47	antihero	how do I find out what's taking up space on /
+2013-03-14 11:46:49	Midasx	*I'm using UEFI by the ay
+2013-03-14 11:46:50	<--	LunaVorax (~LunaVorax@163.5.47.89) has quit (Ping timeout: 260 seconds)
+2013-03-14 11:46:53	antihero	without touching othe rpartitions?
+2013-03-14 11:46:55	Midasx	antihero: df -h /
+2013-03-14 11:46:57	megustavo	Midasx: menu.list / grub.conf is where youd change the timeout
+2013-03-14 11:47:00	<--	mystiiq (~mystiiq@18.30.190.90.dyn.estpak.ee) has quit (Quit: WeeChat 0.4.0)
+2013-03-14 11:47:05	<--	stardiviner (~stardivin@122.236.244.146) has quit (Quit: my website: http://stardiviner.dyndns-blog.com/)
+2013-03-14 11:47:09	antihero	Midasx: That just tells me I have no space
+2013-03-14 11:47:13	memand	I have just installed libfdk-aac but when I do 'ffmpeg -decoders | grep aac' it does not show up. So how do I get ffmpeg to recognize the new encoder?
+2013-03-14 11:47:17	megustavo	not sure if UEFI changes that.. Midasx 
+2013-03-14 11:47:19	antihero	I need a breakdown
+2013-03-14 11:47:25	mefistofeles	antihero: du -h / 
+2013-03-14 11:47:27	mefistofeles	long list though
+2013-03-14 11:47:34	petantik	pipe it to less
+2013-03-14 11:47:36	-->	TomFyuri (~tomfyuri@130-0-61-82.broadband.tenet.odessa.ua) has joined #archlinux
+2013-03-14 11:47:37	amyers	antihero: filelight is nice
+2013-03-14 11:47:42	amyers	or 
+2013-03-14 11:47:42	antihero	mefistofeles: That will get all the stuff on other drivers
+2013-03-14 11:47:44	mefistofeles	yeah I use filelight as well
+2013-03-14 11:47:45	antihero	*drives
+2013-03-14 11:47:48	antihero	like /home and /media/
+2013-03-14 11:47:49	amyers	antihero: du -sh /*
+2013-03-14 11:47:55	megustavo	Midasx: menu.lst*
+2013-03-14 11:47:56	-->	Aegir (~simon@87-61-129-88-dynamic.dk.customer.tdc.net) has joined #archlinux
+2013-03-14 11:47:58	-->	kvarley (~kevin@unaffiliated/kvarley) has joined #archlinux
+2013-03-14 11:48:02	Midasx	du / | sort -n perhaps
+2013-03-14 11:48:05	<--	movl (~movlex@unaffiliated/movl) has quit (Read error: Connection reset by peer)
+2013-03-14 11:48:13	petantik	ManoloMtnez: what is MMD?
+2013-03-14 11:48:14	mefistofeles	what amyers said
+2013-03-14 11:48:15	megustavo	under /boot
+2013-03-14 11:48:24	antihero	grep -v media | grep -v home
+2013-03-14 11:48:26	antihero	ah
+2013-03-14 11:48:26	<--	bytbox (~s@129-2-129-85.wireless.umd.edu) has quit (Ping timeout: 272 seconds)
+2013-03-14 11:48:29	oskude	Midasx: new install?
+2013-03-14 11:48:39	Midasx	oskude: A few months old I htink
+2013-03-14 11:48:45	<--	greybott (~User@52.240.broadband17.iol.cz) has quit (Ping timeout: 245 seconds)
+2013-03-14 11:48:45	<--	arduix (~arduix@197.15.20.247) has quit (Ping timeout: 245 seconds)
+2013-03-14 11:48:48	petantik	ManoloMtnez: don't worry, i'm just being lazy.
+2013-03-14 11:48:53	oskude	Midasx: wild guess, got dostfstools installed?
+2013-03-14 11:49:18	oskude	*dosfstools
+2013-03-14 11:49:18	<--	zenptr (~zenptr@gateway/tor-sasl/zenptr) has quit (Quit: leaving)
+2013-03-14 11:49:20	-->	drot (~user@93.180.96.124) has joined #archlinux
+2013-03-14 11:49:24	<--	Spliffer (~spliff@190.153.252.68) has quit (Ping timeout: 264 seconds)
+2013-03-14 11:49:35	antihero	cool my mpd log is 1.8gb
+2013-03-14 11:49:39	oskude	Midasx: just guessing its fsck.vfat missing (for efi partition)
+2013-03-14 11:49:39	Midasx	oskude: Nope, I think it has to do with my trial and error approach to getting UEFI to work
+2013-03-14 11:49:42	megustavo	o.o
+2013-03-14 11:49:52	ManoloMtnez	petantik: np, MultiMarkDown
+2013-03-14 11:49:53	-->	ubuntufan123 (~caesar100@port-92-201-11-99.dynamic.qsc.de) has joined #archlinux
+2013-03-14 11:49:57	antihero	and I have 25GB of mysql !?
+2013-03-14 11:50:04	Midasx	Is there not a grub error log of some description?
+2013-03-14 11:50:32	megustavo	im not aware of there being one, but assume there is..
+2013-03-14 11:50:46	antihero	oh yay /var/log/journal is 4.6GB
+2013-03-14 11:50:48	antihero	can I delete that?
+2013-03-14 11:50:52	oskude	Midasx: i wonder if the pause key pauses anything these days
+2013-03-14 11:51:05	petantik	antihero: i think you can. will just get recreated iirc
+2013-03-14 11:51:10	<--	Neozaru_ (~Neozaru@ks3262689.kimsufi.com) has quit (Quit: Quitte)
+2013-03-14 11:51:11	-->	LynnLove (~LynnLove@scn-202-9.airstudent.imsa.edu) has joined #archlinux
+2013-03-14 11:51:19	-->	FlorianJW-mars (~florian@2a01:488:66:1000:b24d:60b4:0:1) has joined #archlinux
+2013-03-14 11:51:21	<--	LynnLove (~LynnLove@scn-202-9.airstudent.imsa.edu) has quit (Client Quit)
+2013-03-14 11:51:31	megustavo	oskude: i forget that exists xD
+2013-03-14 11:51:33	Midasx	oskude: Wowsa I'll try that. I edited my grub cfg to have a long timeout now so I shall reboot and see what happens!
+2013-03-14 11:51:36	Midasx	thanks
+2013-03-14 11:51:38	<--	Midasx (~Midasx@host86-130-0-247.range86-130.btcentralplus.com) has quit (Quit: leaving)
+2013-03-14 11:51:41	<--	Icarot (~Icarot@199-188-193-9.PUBLIC.monkeybrains.net) has quit (Ping timeout: 245 seconds)
+2013-03-14 11:53:05	<--	kaste (~kaste@unaffiliated/kaste) has left #archlinux ("WeeChat 0.4.0")
+2013-03-14 11:53:17	-->	omg|its|otr (~ebon@uwsclient-155-170.uws.ualberta.ca) has joined #archlinux
+2013-03-14 11:53:17	-->	Midasx (~Midasx@host86-130-0-247.range86-130.btcentralplus.com) has joined #archlinux
+2013-03-14 11:53:26	<--	arborist (~arborist@46.23.64.90) has quit (Ping timeout: 246 seconds)
+2013-03-14 11:53:29	-->	masoudd (~masoudd@92.50.19.115) has joined #archlinux
+2013-03-14 11:53:37	-->	movl (~movlex@89.47.83.116) has joined #archlinux
+2013-03-14 11:53:37	<--	movl (~movlex@89.47.83.116) has quit (Changing host)
+2013-03-14 11:53:37	-->	movl (~movlex@unaffiliated/movl) has joined #archlinux
+2013-03-14 11:53:40	<--	FlorianJW-mars (~florian@2a01:488:66:1000:b24d:60b4:0:1) has quit (Remote host closed the connection)
+2013-03-14 11:53:44	-->	witquicked (~witquicke@50-193-55-245-static.hfc.comcastbusiness.net) has joined #archlinux
+2013-03-14 11:53:49	-->	FlorianJW-mars (~florian@2a01:488:66:1000:b24d:60b4:0:1) has joined #archlinux
+2013-03-14 11:54:11	<--	Poesghost (~poesghost@adsl-98-74-163-185.ilm.bellsouth.net) has quit (Quit: leaving)
+2013-03-14 11:54:11	omg|its|otr	I used to have my home directory on the same partition as / but now there's a new disk mounted as /home. The files are still on my sda1 (/) partition taking up space though. How can I delete all of them, becuase I can't cd to /home, that brings me to the new disk
+2013-03-14 11:54:16	Midasx	The error is coming up before the grub menu and is only there for a split second. I'm pretty sure it is a grub error saying about a file missing. Increasing the timeout just meant I could see the menu and mashin pause break didn't have an effect. Any other suggestions?
+2013-03-14 11:54:39	oskude	use gummiboot :P
+2013-03-14 11:55:02	ManoloMtnez	omg|its|otr: use a livecd, unmount /home, delete /home, no?
+2013-03-14 11:55:16	omg|its|otr	Yeah, I was afraid of that
+2013-03-14 11:55:22	-->	Icarot (~Icarot@199-188-193-9.PUBLIC.monkeybrains.net) has joined #archlinux
+2013-03-14 11:55:23	ManoloMtnez	omg|its|otr: (there'll be no need to unmount /home, of course)
+2013-03-14 11:55:25	omg|its|otr	I was hoping there were some way to do it on my current system
+2013-03-14 11:55:34	<--	orbisvicis (~orbisvici@pool-173-63-161-52.nwrknj.fios.verizon.net) has quit (Changing host)
+2013-03-14 11:55:34	-->	orbisvicis (~orbisvici@unaffiliated/orbisvicis) has joined #archlinux
+2013-03-14 11:55:46	Midasx	oskude: I did try gummiboot to start with but couldn't get it working with UEFI for some reason, probably my own ineptitude mind.
+2013-03-14 11:55:58	<--	frank604 (~asus@64-46-25-138.dyn.novuscom.net) has quit (Ping timeout: 240 seconds)
+2013-03-14 11:56:06	oskude	Midasx: or maybe its error from your efi hardware, trying to boot something else first
+2013-03-14 11:56:12	<--	an0xx (~an0xx@193.108.249.9) has quit (Quit: an0xx)
+2013-03-14 11:56:26	ManoloMtnez	omg|its|otr: you could probably do it as root (unmount /home, etc), but I wouldn't risk it
+2013-03-14 11:56:35	<--	davetherat (~Dave@199.102.214.250) has quit (Remote host closed the connection)
+2013-03-14 11:56:37	oskude	Midasx: got a video camera? :D
+2013-03-14 11:56:49	-->	davetherat (~Dave@199.102.214.250) has joined #archlinux
+2013-03-14 11:56:56	-->	Zardvark (~admiraldr@142.204.70.21) has joined #archlinux
+2013-03-14 11:57:22	gtmanfred	bougyman: in case you want to follow what ubuntu is doing with it ... https://blueprints.launchpad.net/ubuntu/+spec/foundations-1303-consolekit-logind-migration
+2013-03-14 11:57:24	phrik	Title: Migrate from ConsoleKit to logind : Blueprints : Ubuntu (at blueprints.launchpad.net)
+2013-03-14 11:57:27		[http://is.gd/57YYIi]
+2013-03-14 11:57:28	-->	dcrouse (~dcrouse@50-201-69-34-static.hfc.comcastbusiness.net) has joined #archlinux
+2013-03-14 11:57:50	antihero	now journalctl doesn't even output anything
+2013-03-14 11:58:04	-->	nCrazed (~nCrazed@cpc1-uddi16-0-0-cust113.uddi.cable.virginmedia.com) has joined #archlinux
+2013-03-14 11:58:04	gtmanfred	antihero: sure it does :)
+2013-03-14 11:58:21	Midasx	oskude: Yeah that is a point, I shall check my boot order, and I could try filiming I guess lol. I had a real hard time with UEFI so there was quite a lot of butchered attempts before I got it working so I reckon it is one of those most likely
+2013-03-14 11:58:24	antihero	perhaps a reboot will fix
+2013-03-14 11:58:33	omg|its|otr	Yeah I guess i"ll just do it when I get home tonight. Thanks ManoloMtnez 
+2013-03-14 11:58:33	<--	omg|its|otr (~ebon@uwsclient-155-170.uws.ualberta.ca) has quit (Quit: Leaving)
+2013-03-14 11:58:43	gtmanfred	antihero: did you join systemd-journal goup?
+2013-03-14 11:59:07	antihero	gtmanfred: yep, this is with reboot. This is after rming the contents of /var/log/journal
+2013-03-14 11:59:14	gtmanfred	no
+2013-03-14 11:59:16	gtmanfred	wat
+2013-03-14 11:59:20	gtmanfred	why did you do that...
+2013-03-14 11:59:26	antihero	it was taking up like 10GB
+2013-03-14 11:59:42	<--	trewe (~trewe@87.196.222.246) has quit (Quit: Quit)
+2013-03-14 11:59:49	antihero	systemfiles, I don't need them
+2013-03-14 11:59:55	gtmanfred	so set the maximum in /etc/systemd/journald.conf
+2013-03-14 12:00:14	FliPPeh	Anyone else having lag problems with Cinnamon (or GNOME3 in general) and nvidia? The whole desktop "feels" slow and *is* slow when you drag a window or jump in and out of a fullscreen video. I've got a GTX 560 Ti so my hardware shouldn't be at fault, Xfce does not lag and unity does not lag, but Cinnamon and GNOME shell do.
+2013-03-14 12:00:21	petantik	gtmanfred: setting the maximum doesn't/didn't trim the exisitng files
+2013-03-14 12:00:21	Midasx	Right ima try and film a reboot... will be amazed if this works lol
+2013-03-14 12:00:25	<--	Midasx (~Midasx@host86-130-0-247.range86-130.btcentralplus.com) has quit (Quit: leaving)
+2013-03-14 12:00:28	megustavo	lolol
+2013-03-14 12:00:31	<--	pukne (~pukne@225.Red-83-33-83.dynamicIP.rima-tde.net) has quit (Quit: leaving)
+2013-03-14 12:00:35	-->	arduix (~arduix@41.225.101.220) has joined #archlinux
+2013-03-14 12:00:39	megustavo	filming a monitory
+2013-03-14 12:00:41	megustavo	-y
+2013-03-14 12:00:59	<--	Vardyr (~Vardyr@unaffiliated/vardyr) has quit (Ping timeout: 240 seconds)
+2013-03-14 12:01:11	FliPPeh	The googleverse lists a few people that suffer the same but no one appears to have a solution dispite many [SOLVED] threads :/
+2013-03-14 12:01:18	<--	CausaMortis (~CausaMort@unaffiliated/causamortis) has quit (Ping timeout: 264 seconds)
+2013-03-14 12:01:19	FliPPeh	despite even
+2013-03-14 12:01:24	-->	HardlySeen (~HardlySee@wsip-68-109-228-234.ri.ri.cox.net) has joined #archlinux
+2013-03-14 12:01:25	<--	centrelink (~daniel@unaffiliated/okay) has quit (Ping timeout: 260 seconds)
+2013-03-14 12:01:27	petantik	antihero: reboot should be fine, i just did the exact same thing.
+2013-03-14 12:01:32	antihero	neat
+2013-03-14 12:01:35	-->	nachtwandler (~nachtwand@p57AD7831.dip.t-dialin.net) has joined #archlinux
+2013-03-14 12:01:48	gtmanfred	FliPPeh: link to one of them?
+2013-03-14 12:02:17	antihero	TBH journalctl has been taking longer and longer to actually start outputting things
+2013-03-14 12:02:26	gtmanfred	antihero: journalctl -b
+2013-03-14 12:02:34	<--	OK100 (~OK100@31.134.103.137) has quit (Ping timeout: 252 seconds)
+2013-03-14 12:02:40	gtmanfred	or --since
+2013-03-14 12:02:49	antihero	gtmanfred: Is it because without -b it is going over all the logs since ever
+2013-03-14 12:02:53	antihero	but -b is last boot only
+2013-03-14 12:02:55	gtmanfred	yes
+2013-03-14 12:03:06	FliPPeh	gtmanfred: http://forums.linuxmint.com/viewtopic.php?f=208&t=119938 this is one of the unsolved ones I think
+2013-03-14 12:03:07	phrik	Title: Linux Mint Forums View topic - Muffin lag + DE "unknown" (at forums.linuxmint.com)
+2013-03-14 12:03:07	antihero	so I'll use -afb in future
+2013-03-14 12:03:11		[http://is.gd/HyEJKL]
+2013-03-14 12:03:29	<--	alucryd (~alucryd@dou59-8-78-249-146-19.fbx.proxad.net) has quit (Quit: Leaving)
+2013-03-14 12:03:33	gtmanfred	FliPPeh: no, i want a link to a solved one, perferably from one of our mailing lists
+2013-03-14 12:03:35	gtmanfred	err
+2013-03-14 12:03:36	petantik	indeed, journalctl -b is quite useful, journalctl -b -p warning is a good first step to debugging too
+2013-03-14 12:03:37	gtmanfred	from our bbs*
+2013-03-14 12:03:41	-->	unknwn (~unknown@78.63.245.215) has joined #archlinux
+2013-03-14 12:03:41	<--	unknwn (~unknown@78.63.245.215) has quit (Changing host)
+2013-03-14 12:03:41	-->	unknwn (~unknown@unaffiliated/unknwn) has joined #archlinux
+2013-03-14 12:03:53	-->	OK100 (~OK100@31.134.103.137) has joined #archlinux
+2013-03-14 12:04:14	antihero	just did -afb and it still just sits there :\
+2013-03-14 12:04:17	<--	kerrick (~kerrick@c-67-180-210-197.hsd1.ca.comcast.net) has quit (Ping timeout: 246 seconds)
+2013-03-14 12:04:22	-->	enz-0 (~root@unaffiliated/enz-0) has joined #archlinux
+2013-03-14 12:04:28	FliPPeh	gtmanfred: https://bbs.archlinux.org/viewtopic.php?id=137893
+2013-03-14 12:04:29	phrik	Title: [SOLVED] Windows lag when moved...? (Page 1) / Applications & Desktop Environments / Arch Linux Forums (at bbs.archlinux.org)
+2013-03-14 12:04:32	antihero	oh there we go, only took ~20secs
+2013-03-14 12:04:33		[http://is.gd/j4VAuV]
+2013-03-14 12:04:42	-->	Midasx (~Midasx@host86-130-0-247.range86-130.btcentralplus.com) has joined #archlinux
+2013-03-14 12:04:43	-->	dikos (~dikos@46.109.250.181) has joined #archlinux
+2013-03-14 12:04:45	FliPPeh	Solved using some clutter environment magic I did, but it didn't work for me
+2013-03-14 12:05:22	gtmanfred	FliPPeh: so you have an xorg.conf?
+2013-03-14 12:05:27	Midasx	Muhahaha that worked. 
+2013-03-14 12:05:54	<--	sec0nd (~second@gateway/tor-sasl/sec0nd) has quit (Ping timeout: 276 seconds)
+2013-03-14 12:05:56	<--	espensb (~espensb@ti0035a380-0925.bb.online.no) has quit (Quit: Leaving)
+2013-03-14 12:06:03	-->	Wr4i7h (~abc@a81-84-107-192.cpe.netcabo.pt) has joined #archlinux
+2013-03-14 12:06:05	FliPPeh	gtmanfred: I did, but I don't have it anymore since the one that another thread suggested could fix it didn't.
+2013-03-14 12:06:14	<--	gwash (~gwash@41.46.191.122) has quit (Ping timeout: 252 seconds)
+2013-03-14 12:06:14	<--	tokomer (~arktokome@unaffiliated/arkydo) has quit (Read error: Connection reset by peer)
+2013-03-14 12:06:26	-->	Vardyr (~Vardyr@unaffiliated/vardyr) has joined #archlinux
+2013-03-14 12:06:34	gtmanfred	FliPPeh: soo you were just exaclty copying and pasting xorg.confs?
+2013-03-14 12:06:37	FliPPeh	gtmanfred: I tried the one nvidia-xconfig generates, I tried using nouveau, none of that does
+2013-03-14 12:06:45	-->	bytbox (~s@129-2-129-85.wireless.umd.edu) has joined #archlinux
+2013-03-14 12:06:49	gtmanfred	FliPPeh: don't use nvidia-xconfig
+2013-03-14 12:06:54	<--	DarkUranium (~DarkUran@eduroam9081.uni-mb.si) has quit (Remote host closed the connection)
+2013-03-14 12:06:54	<--	lagagnon (~larry@S0106001c109e9980.gv.shawcable.net) has quit (Ping timeout: 258 seconds)
+2013-03-14 12:06:56	gtmanfred	FliPPeh: generate one with nvidia-settings
+2013-03-14 12:07:17	-->	LunaVorax (~LunaVorax@163.5.47.89) has joined #archlinux
+2013-03-14 12:07:30	<--	seyz (~seyz@85.234.217.115.static.edpnet.net) has quit (Remote host closed the connection)
+2013-03-14 12:07:38	<--	lstarnes (lstarnes@uncyclopedia/Starnestommy) has quit (Ping timeout: 245 seconds)
+2013-03-14 12:07:57	FliPPeh	gtmanfred: Alright
+2013-03-14 12:08:07	-->	jacres (~textual@24.246.7.200) has joined #archlinux
+2013-03-14 12:08:18	oskude	Midasx: and, what is it not finding?
+2013-03-14 12:08:21	Earnestly	And then split it off into xorg.conf.d/nvidia.conf where appropriate. You sort of have to know the very basics of configuring X to do this
+2013-03-14 12:08:21	<--	Aegir (~simon@87-61-129-88-dynamic.dk.customer.tdc.net) has quit (Ping timeout: 245 seconds)
+2013-03-14 12:08:30	Midasx	"error: file /boot/grub/locale/en_us.gz not found", I think. It is hard to make out on my shitty phone
+2013-03-14 12:08:30	-->	emg (~emg@74.217.148.5) has joined #archlinux
+2013-03-14 12:08:38	-->	maletor (~maletor@mobile-166-137-186-245.mycingular.net) has joined #archlinux
+2013-03-14 12:08:41	Midasx	Where would the grub locale be set? in grub.cfg?
+2013-03-14 12:08:44	gtmanfred	!give Midasx wiki grub2
+2013-03-14 12:08:45	phrik	Midasx: https://wiki.archlinux.org/index.php/GRUB2
+2013-03-14 12:08:46	oskude	locales in boot loader, lols...
+2013-03-14 12:08:51		[http://is.gd/MbfpUV]
+2013-03-14 12:08:53	gtmanfred	Midasx: it tells you how to copy the locales in that
+2013-03-14 12:08:57	gtmanfred	!g grub invaders
+2013-03-14 12:08:58	phrik	gtmanfred: GRUB invaders - coreboot: <http://www.coreboot.org/GRUB_invaders>
+2013-03-14 12:09:04		[http://is.gd/3Ujhwy]
+2013-03-14 12:09:06	gtmanfred	brb
+2013-03-14 12:09:32	<--	TomFyuri (~tomfyuri@130-0-61-82.broadband.tenet.odessa.ua) has quit (Ping timeout: 246 seconds)
+2013-03-14 12:09:36	-->	camilasan (~camilasan@91-64-80-97-dynip.superkabel.de) has joined #archlinux
+2013-03-14 12:09:38	halosghost	hey gtmanfred, and thoughts on why the wiki plugin fails to find some pages?
+2013-03-14 12:09:48	halosghost	!give halosghost wiki TTWM
+2013-03-14 12:09:49	phrik	halosghost: Google found nothing.
+2013-03-14 12:09:52	halosghost	^ for instance
+2013-03-14 12:09:57	FliPPeh	gtmanfred: Okay, did that and restarted X, still lagging
+2013-03-14 12:10:08	<--	camilasan (~camilasan@91-64-80-97-dynip.superkabel.de) has quit (Client Quit)
+2013-03-14 12:11:06	-->	guildencrantz (~guildencr@c-98-245-75-35.hsd1.co.comcast.net) has joined #archlinux
+2013-03-14 12:11:33	-->	hh4a (~hh4a@84-255-197-79.static.t-2.net) has joined #archlinux
+2013-03-14 12:11:40	-->	bru` (~bruno`@4077.rez-gif.supelec.fr) has joined #archlinux
+2013-03-14 12:12:06	-->	collin_ (~collin@CPE002129ce62e2-CM0026f30ca5ed.cpe.net.cable.rogers.com) has joined #archlinux
+2013-03-14 12:12:07	-->	camilasan (~camilasan@91-64-80-97-dynip.superkabel.de) has joined #archlinux
+2013-03-14 12:12:26	-->	marvin2 (~marvin2@14-200-139-81.static.tpgi.com.au) has joined #archlinux
+2013-03-14 12:12:47	<--	poseidon (~joe@vps6967.inmotionhosting.com) has quit (Ping timeout: 255 seconds)
+2013-03-14 12:12:58	<--	Arcalyth (~arcalyth@unaffiliated/arcalyth) has quit (Read error: Operation timed out)
+2013-03-14 12:13:10	<--	bru` (~bruno`@4077.rez-gif.supelec.fr) has quit (Client Quit)
+2013-03-14 12:13:11	-->	_eye (~eye@unaffiliated/eye/x-1653358) has joined #archlinux
+2013-03-14 12:13:45	gtmanfred	FliPPeh: lemme see the xorg.conf now
+2013-03-14 12:13:57	<--	zavulon (~zavulon@94.197.127.152.threembb.co.uk) has quit (Quit: bye)
+2013-03-14 12:14:05	gtmanfred	halosghost: because google doesn't find it
+2013-03-14 12:14:22	FliPPeh	gtmanfred: http://sprunge.us/hUSH
+2013-03-14 12:14:27	halosghost	!g wiki TTWM
+2013-03-14 12:14:29	phrik	halosghost: Tiny Tiler / Tabbed Tiler WM (v2.0a in ttwm-git) (Page 1 ...: <https://bbs.archlinux.org/viewtopic.php?id=146889>
+2013-03-14 12:14:34		[http://is.gd/nVStJX]
+2013-03-14 12:14:37	<--	BlackIkeEagle (~BlackIkeE@archlinux/trusteduser/blackikeeagle) has quit (Quit: KVIrc 4.2.0 Equilibrium http://www.kvirc.net/)
+2013-03-14 12:14:49	halosghost	hmm
+2013-03-14 12:14:51	halosghost	k
+2013-03-14 12:14:53	-->	OxHaK (~oxhak@lns-bzn-51f-62-147-243-58.adsl.proxad.net) has joined #archlinux
+2013-03-14 12:15:00	<--	paullik (~paullik@unaffiliated/paullik) has quit (Ping timeout: 245 seconds)
+2013-03-14 12:15:24	<--	nXqd (~root@1508889108.dhcp.dbnet.dk) has quit (Ping timeout: 245 seconds)
+2013-03-14 12:15:31	<--	enz-0 (~root@unaffiliated/enz-0) has quit (Ping timeout: 264 seconds)
+2013-03-14 12:15:31	<--	deepinskin (~chenwei76@218.11.179.47) has quit (Ping timeout: 264 seconds)
+2013-03-14 12:15:40	-->	Thra11 (~thrall@87.114.206.209) has joined #archlinux
+2013-03-14 12:15:55	-->	mufasa27 (~jchamplin@aei-tech.com) has joined #archlinux
+2013-03-14 12:15:58	gtmanfred	FliPPeh: ok, so from this one, follow this https://bbs.archlinux.org/viewtopic.php?pid=1073991#p1073991 because i don't think you checked off the things when you generated that one
+2013-03-14 12:16:00	phrik	Title: [SOLVED] Windows lag when moved...? (Page 1) / Applications & Desktop Environments / Arch Linux Forums (at bbs.archlinux.org)
+2013-03-14 12:16:02	<--	collin_ (~collin@CPE002129ce62e2-CM0026f30ca5ed.cpe.net.cable.rogers.com) has quit (Client Quit)
+2013-03-14 12:16:04		[http://is.gd/MriEJX]
+2013-03-14 12:16:20	<--	Midasx (~Midasx@host86-130-0-247.range86-130.btcentralplus.com) has quit (Quit: leaving)
+2013-03-14 12:16:28	gtmanfred	FliPPeh: i want you to set it up again, caus i wanna see the xorg.0.log when you have this set up
+2013-03-14 12:16:44	gtmanfred	FliPPeh: actually if you could post xorg.0.log right now before doing that too
+2013-03-14 12:16:48	FliPPeh	gtmanfred: The whole compiz stuff as well or just triple buffering?
+2013-03-14 12:17:09	-->	Xao (~Xao@unaffiliated/xao/x-1209382) has joined #archlinux
+2013-03-14 12:17:11	gtmanfred	the nvidia stuff triple buffer 
+2013-03-14 12:17:13	gtmanfred	and the
+2013-03-14 12:17:16	gtmanfred	vblank
+2013-03-14 12:17:16	FliPPeh	Because compiz apparently works fine since it did under unity
+2013-03-14 12:17:19	FliPPeh	Okay
+2013-03-14 12:17:20	<--	vihcs (~schiv@archlinux/developer/schiv) has quit (Quit: I quit!)
+2013-03-14 12:17:22	gtmanfred	and refresh rate
+2013-03-14 12:17:32	Prokurent|Asleep	hey hey hey
+2013-03-14 12:17:41	gtmanfred	!give " Prokurent|Asleep " away
+2013-03-14 12:17:42	phrik	 Prokurent|Asleep : Automatic status messages? Don't: http://sackheads.org/~bnaylor/spew/away_msgs.html
+2013-03-14 12:17:44	memand	Hey I have found out that I need to rebuild ffmpeg to get it too recognize my new encoder, but apparently this is not done by doing 'sudo pacman -Rdd ffmpeg' and then 'sudo pacman -S ffmpeg'. So my question is how do I rebuild a package?
+2013-03-14 12:17:47		[http://is.gd/CEDbbz]
+2013-03-14 12:18:00	gtmanfred	!give memand abs
+2013-03-14 12:18:01	phrik	memand: https://wiki.archlinux.org/index.php/Arch_Build_System
+2013-03-14 12:18:07		[http://is.gd/9D0okT]
+2013-03-14 12:18:17	--	Prokurent|Asleep is now known as Prokurent
+2013-03-14 12:18:21	-->	sertsa_ (~sertsa@245.205.118.66.brainstorminternet.net) has joined #archlinux
+2013-03-14 12:18:21	<--	sertsa_ (~sertsa@245.205.118.66.brainstorminternet.net) has quit (Read error: Connection reset by peer)
+2013-03-14 12:18:24	-->	lagagnon (~larry@S0106001c109e9980.gv.shawcable.net) has joined #archlinux
+2013-03-14 12:18:32	gtmanfred	memand: arch isnt ubuntu or debian, we don't reconfigure packages once they are installed using dpkg
+2013-03-14 12:18:32	-->	ripe (~ripe@dsl-olubrasgw1-50dca0-100.dhcp.inet.fi) has joined #archlinux
+2013-03-14 12:18:33	-->	olegfusion (~olegfusio@46.191.225.80) has joined #archlinux
+2013-03-14 12:18:34	<--	opt1mus (~~@unaffiliated/opt1mus) has quit (Quit: opt1mus)
+2013-03-14 12:18:39	Prokurent	okay
+2013-03-14 12:18:45	<--	sertsa (~sertsa@245.205.118.66.brainstorminternet.net) has quit (Ping timeout: 245 seconds)
+2013-03-14 12:18:47	memand	gtmanfred: Is that not only for when one has downloaded a source code?
+2013-03-14 12:19:03	gtmanfred	memand: you have to rebuild it
+2013-03-14 12:19:06	feyd	if I set a variable in a bash script, that var stays in the script right? It doesn't persist outside of it?
+2013-03-14 12:19:25	grawity	right.
+2013-03-14 12:19:29	feyd	groovy
+2013-03-14 12:19:29	-->	collin_ (~collin@CPE002129ce62e2-CM0026f30ca5ed.cpe.net.cable.rogers.com) has joined #archlinux
+2013-03-14 12:19:29	gtmanfred	feyd: use local
+2013-03-14 12:19:40	-->	chase|Linux (~chase@cpe-72-190-49-155.tx.res.rr.com) has joined #archlinux
+2013-03-14 12:19:42	memand	gtmanfred: Ok, I'll read the ABS wiki and get back :)
+2013-03-14 12:19:48	gtmanfred	grawity: it does even if you haven't used local?
+2013-03-14 12:19:56	<--	camilasan (~camilasan@91-64-80-97-dynip.superkabel.de) has quit (Ping timeout: 260 seconds)
+2013-03-14 12:20:05	<--	HardlySeen (~HardlySee@wsip-68-109-228-234.ri.ri.cox.net) has quit (Quit: leaving)
+2013-03-14 12:20:08	grawity	gtmanfred: yes, since each process has a copy of the envvars
+2013-03-14 12:20:11	feyd	gtmanfred: thats just a 'local ' prefix on the var right?
+2013-03-14 12:20:17	grawity	gtmanfred: (copied at fork time)
+2013-03-14 12:20:22	gtmanfred	oh right
+2013-03-14 12:20:24	grawity	'local' doesn't even work outside functions
+2013-03-14 12:20:32	-->	nXqd (~root@87-58-63-38-static.dk.customer.tdc.net) has joined #archlinux
+2013-03-14 12:20:34	-->	_Caleb_ (~Caleb@cpe-098-121-134-089.nc.res.rr.com) has joined #archlinux
+2013-03-14 12:20:34	<--	_Caleb_ (~Caleb@cpe-098-121-134-089.nc.res.rr.com) has quit (Changing host)
+2013-03-14 12:20:34	-->	_Caleb_ (~Caleb@archlinux/op/caleb) has joined #archlinux
+2013-03-14 12:20:42	-->	Aegir (~aegir@87-61-129-88-dynamic.dk.customer.tdc.net) has joined #archlinux
+2013-03-14 12:20:43	grawity	on the other hand, envvars *do* leak outside functions if you forget 'local' or 'declare'
+2013-03-14 12:20:50	<--	mefistofeles (~Tathar@unaffiliated/mefistofeles) has quit (Ping timeout: 245 seconds)
+2013-03-14 12:20:53	FliPPeh	gtmanfred: That's the log before I added triple buffering: http://sprunge.us/YOCP
+2013-03-14 12:21:08	gtmanfred	FliPPeh: what card do you have?
+2013-03-14 12:21:15	FliPPeh	GTX 560 Ti
+2013-03-14 12:21:23	gtmanfred	ok
+2013-03-14 12:21:40	Aegir	hi. I'm trying to install a bootloader, but I find the information in install.txt and on the grub page on the arch wiki kind of confusing. it's as if install.txt encourages me to use grub and syslinux, and the grub page has a buttload of information but no single "this is how you do it". am I reading past something?
+2013-03-14 12:21:41	gtmanfred	FliPPeh: read the log file, it has some interesting messages that might be of interest to you :P
+2013-03-14 12:21:52	FliPPeh	There's a lot of EDID messages that I never got rid off
+2013-03-14 12:21:52	-->	mefistofeles (~Tathar@190.84.235.177) has joined #archlinux
+2013-03-14 12:21:52	<--	mefistofeles (~Tathar@190.84.235.177) has quit (Changing host)
+2013-03-14 12:21:52	-->	mefistofeles (~Tathar@unaffiliated/mefistofeles) has joined #archlinux
+2013-03-14 12:22:01	gtmanfred	Aegir: yes
+2013-03-14 12:22:02	<--	Mkman (~tiago@188.251.80.41) has quit (Quit: Lost terminal)
+2013-03-14 12:22:03	Prokurent	like
+2013-03-14 12:22:05	Prokurent	hi[
+2013-03-14 12:22:05	Aegir	(also, the grub page discourages "grub legacy" and syslinux.
+2013-03-14 12:22:09	Prokurent	guize
+2013-03-14 12:22:26	gtmanfred	Aegir: you have to figure out how your disk is setup to boot... and follow the correc tmethod on the grub2 wiki
+2013-03-14 12:22:34	gtmanfred	Aegir: use whichever you want, i use syslinux

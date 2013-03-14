@@ -54,3 +54,110 @@
 2013-03-13 23:26:26	-->	arduix (~arduix@197.15.250.176) has joined #tmux
 2013-03-13 23:31:11	<--	zer4tul (~zer4tul@unaffiliated/zer4tul) has quit (Quit: WeeChat 0.4.0)
 2013-03-13 23:32:59	-->	zer4tul (~zer4tul@unaffiliated/zer4tul) has joined #tmux
+2013-03-14 11:02:49	-->	numeral (~numeral@198.23.228.15) has joined #tmux
+2013-03-14 11:02:49	--	Topic for #tmux is "tmux is a "terminal multiplexer" | http://tmux.sourceforge.net/ | https://lists.sourceforge.net/lists/listinfo/tmux-users | https://lists.sourceforge.net/lists/listinfo/tmux-cvs | Man page: http://www.openbsd.org/cgi-bin/man.cgi?query=tmux&sektion=1"
+2013-03-14 11:02:49	--	Topic set by mikeputnam (~mike@pdpc/supporter/active/mikeputnam) on Wed, 27 Apr 2011 09:00:22
+2013-03-14 11:02:49	--	Nicks #tmux: [[Neurotic] __JK__ _br_ _flow_ abumirqaan Adaptee agarnier Airwave Altimeter amranu andrejpan Aprogas Archtivity aswen averell bdrewery bolidz bphogan__ bps cargill_ caseydriscoll caveat- ccxCZ chiel chlunde chris2 ChromeSilver classix claude2 Code_Bleu colona Creek cromag cschneid Cueball_ cYmen dandersson daniel_-_ daurnimator dbewley deepy denile der-onkel dgfitch diniwed1 djinni_ djp dominikh dropdrive druff dubium dweez_ dytrivedi eboy effekt eightyeight eMBee emid ephemer0l epta eres eternaleye ezpl0it faen fallout fasta faxm0dem fignew fire floppyears fosco frew ft gartenzaun gazoombo gf3 gtc guardian Guest84616 guse hagebake heckman herbnerder hlindset IcePic iElectric j416 jakllsch jasonwryan jayne jdav_gone jerius jgaui jimeh joe9 johntash jrib jstemmer jtrucks KaiSforza kart0ffelsack Kays kenyon kip_litton kirkland kotp krak3n` krok ksa lasers Lenzoid levifig luckman212 luminous lyddonb majoh mar77i marmalodak marowit matled Meldanya mephux mikeputnam mithro mokomull mren|off mrtazz mtk mva necronian Nei nemysis NicM nimrod_afk numeral nutron ocharles octal ohcibi OK100 Olipro ore ormaaj osse ozzloy peccu1 perigrin pi8027 Pikel pitrh plavcik_ pmatulis_ pothos preller prettyrobots psil q_revert Quazgaa r4nt radhermit radio23 rawplayer redbrain remi Rhonda RichardBronosky_ riddley rking robertk roknir rudi_s ruskie samlt scribbles SeanTAllen setheus seyz Silly simabeis sn0wb1rd solj sontek Sthebig sub0 suy swimmer tcunha tdignan techiem2-r techlife telex Tenchworks terminalmage TeslaTest tessellated TheBrayn TheFuzzball theneb_ thomas_adam thomasvs tinystoat tittof tlonim tlp tomaw tos9 tris trn tru_tru tureba_ twisted` tyrmored Ulrar untaken vdonnefort vehk VinSpee vmeson Voting wart_ Watabou watsonalgas Whoop WillyKaze Will| wired woddf2 xy yac Yaniel yeled Yorokobi zacts Zed` zeltak zendeavor zerick zivester zorael zorzar zu_ Zucca zykotick9]
+2013-03-14 11:02:49	--	Channel #tmux: 243 nicks (0 ops, 0 halfops, 0 voices, 243 normals)
+2013-03-14 11:02:49	***	Buffer Playback...
+2013-03-14 11:02:49	faxm0dem	[10:34:12] Rhonda: my tmux script, or the CMU thing?
+2013-03-14 11:02:49	faxm0dem	[10:35:06] Rhonda: as for tmux, it probably is too business-specific, as I'm querying our datacenter db to choose hosts to connect to (e.g. give me a console or ssh on all servers in Cabinet XY)
+2013-03-14 11:02:49	Rhonda	[10:45:26] I see, but I am interested in the rxvt font part specificly. :)
+2013-03-14 11:02:49	faxm0dem	[10:45:58] oh, that I borrowed from some scripts let me dig that part out for you
+2013-03-14 11:02:49	faxm0dem	[10:47:13] I'm storing the font size in a temp file, but I should probably use an env variable instead ^^
+2013-03-14 11:02:49	faxm0dem	[10:49:29] Rhonda: https://gist.github.com/faxm0dem/b9fb2bfdcf10a5de6ad3
+2013-03-14 11:02:49	faxm0dem	[10:50:30] it's really the penultimate line which does the magic
+2013-03-14 11:02:49	faxm0dem	[10:51:15] the nice part being tmux resizing panes on-the-go
+2013-03-14 11:02:49	Rhonda	[11:09:09] Thanks. :)
+2013-03-14 11:02:49	NicM	[14:45:55] hmm i hate ^ and v instead of arrows
+2013-03-14 11:02:49	NicM	[14:46:00] what can i use instead
+2013-03-14 11:02:49	radio23	[14:48:10] Unicode.
+2013-03-14 11:02:49	NicM	[14:48:25] yes but i can't do that on terminals without Unicode
+2013-03-14 11:02:49	NicM	[14:49:22] hmf wtf is there no standard for ACS arrows
+2013-03-14 11:02:49	NicM	[14:52:38] hmm there is but not consistently used apparently
+2013-03-14 11:02:49	NicM	[15:07:13] aha found a solution that doesn't need it
+2013-03-14 11:02:49	NicM	[15:07:15] yay
+2013-03-14 11:02:49	ore	[15:19:06] why do I get the feeling that this "only draw half the line" thing will generate lots of bug reports
+2013-03-14 11:02:49	faxm0dem	[15:20:53] from the TODO: "hooks to which commands may be attached". Will that allow to add a hook when a particular pane is active?
+2013-03-14 11:02:49	NicM	[15:40:54] argh google are dropping google reader
+2013-03-14 11:02:49	NicM	[15:41:02] hmmf
+2013-03-14 11:02:49	NicM	[15:43:27] hmm now to find an alternative that isn't an app and wasn't designed by a five-year-old mactard
+2013-03-14 11:02:49	faxm0dem	[15:45:27] the best part is they have an app designed to help you move away from an app they're dropping
+2013-03-14 11:02:49	faxm0dem	[15:45:32] Google Takeout
+2013-03-14 11:02:49	tdignan	[15:45:32] someone's going to have to code a new one :)
+2013-03-14 11:02:49	zykotick9	[15:48:54] faxm0dem: according to this post, exporting data might not be so easy?  http://glandium.org/blog/?p=2961  but this does function as a good example of cloud-failure
+2013-03-14 11:02:49	faxm0dem	[15:50:06] at least they (kind of?) opensourced Wave
+2013-03-14 11:02:49	ore	[15:50:37] yeah, but Wave was useless
+2013-03-14 11:02:49	faxm0dem	[15:52:24] to you and me maybe, not to others
+2013-03-14 11:02:49	faxm0dem	[15:52:42] true enough, reader is older and probably has a much larger user base
+2013-03-14 11:02:49	tdignan	[15:53:28] the libraries and frameworks we have today make it much easier to develop an rss aggregator like google reader and get it ready for prime time than were available when google reader was developed.
+2013-03-14 11:02:49	tdignan	[15:54:13] if it was open sourced i'm not sure what the appeal would be -- except maybe for just hosting it yourself.
+2013-03-14 11:02:49	faxm0dem	[15:55:07] hadn't thought about that. but mayhaps it was rewritten a gazillion times
+2013-03-14 11:02:49	NicM	[15:55:27] exporting the data is easy, the problem is finding somewhere to put it
+2013-03-14 11:02:49	tdignan	[15:56:05] i'm sure there are hundreds of developers hammering away at rss readers to fill the void already.
+2013-03-14 11:02:49	tdignan	[15:56:29] who wouldn't want to cash in on this opportunity.
+2013-03-14 11:02:49	ore	[15:56:36] how many of those will be any good?
+2013-03-14 11:02:49	tdignan	[15:56:50] 1 or 2
+2013-03-14 11:02:49	tdignan	[15:57:12] whoever actually gives a damn and finishes the job
+2013-03-14 11:02:49	NicM	[15:57:16] maybe i'll go back to getting them by email
+2013-03-14 11:02:49	tdignan	[15:57:22] a trait not commonly found in any kind of craftsmanship
+2013-03-14 11:02:49	NicM	[16:01:43] hmm feedreader online is okish but it appears to have no import button and takes about 30 seconds to add each feed manually
+2013-03-14 11:02:49	faxm0dem	[16:02:44] maybe I'll stop reading rss
+2013-03-14 11:02:49	Yaniel	[16:03:01] some say rss has been dead for a while now
+2013-03-14 11:02:49	ore	[16:03:33] it's dead in the same way console apps died in the 90s
+2013-03-14 11:02:49	faxm0dem	[16:04:10] :)
+2013-03-14 11:02:49	faxm0dem	[16:05:01] NicM: is it you planning on implementing command hooks?
+2013-03-14 11:02:49	NicM	[16:05:10] thomas_adam is implementing them
+2013-03-14 11:02:49	edu____22	[16:07:04] hi there, is some way from bash to launch tmux + tmuxScript? like tmux -scriptToRun path/to/script?
+2013-03-14 11:02:49	thomas_adam	[16:09:01] Yes.
+2013-03-14 11:02:49	thomas_adam	[16:09:18] I'm so sorry for taking time over this; I'm just pretty busy at the moment.
+2013-03-14 11:02:49	faxm0dem	[16:10:34] thomas_adam: no worries, I was just wondering if this would be possible
+2013-03-14 11:02:49	faxm0dem	[16:11:13] thomas_adam: I'd like to add hooks to a specific pane, when activating and deactivating it
+2013-03-14 11:02:49	thomas_adam	[16:12:17] Sure.
+2013-03-14 11:02:49	faxm0dem	[17:09:12] does this require labeling the given pane?
+2013-03-14 11:02:49	***	Playback Complete.
+2013-03-14 11:02:54		[http://is.gd/9OIrVI]
+2013-03-14 11:02:54		[http://is.gd/xPqbeq]
+2013-03-14 11:03:19	--	Mode #tmux [+cnt]
+2013-03-14 11:03:19	--	Channel created on Thu, 11 Jun 2009 15:16:11
+2013-03-14 11:05:00	<--	roknir (~roknir@unaffiliated/roknir) has quit (Ping timeout: 264 seconds)
+2013-03-14 11:06:24	<--	guse (~guse@gateway/tor-sasl/guse) has quit (Remote host closed the connection)
+2013-03-14 11:06:43	-->	arduix (~arduix@197.15.20.247) has joined #tmux
+2013-03-14 11:08:58	<--	vehk (~vehk@unaffiliated/vehk) has quit (Ping timeout: 240 seconds)
+2013-03-14 11:12:09	-->	roknir (~roknir@unaffiliated/roknir) has joined #tmux
+2013-03-14 11:14:10	<--	pmatulis_ (~peter@64.34.151.178) has quit (Read error: Operation timed out)
+2013-03-14 11:15:45	-->	pmatulis (~peter@64.34.151.178) has joined #tmux
+2013-03-14 11:19:58	-->	zer4tul (~zer4tul@unaffiliated/zer4tul) has joined #tmux
+2013-03-14 11:32:34	-->	guse (~guse@gateway/tor-sasl/guse) has joined #tmux
+2013-03-14 11:33:06	<--	OK100 (~OK100@31.134.103.137) has quit (Ping timeout: 264 seconds)
+2013-03-14 11:33:54	-->	OK100 (~OK100@31.134.103.137) has joined #tmux
+2013-03-14 11:34:42	-->	aphistic (~aphistic@96.126.122.171) has joined #tmux
+2013-03-14 11:35:39	-->	mlue (~mlue@unaffiliated/mlue) has joined #tmux
+2013-03-14 11:47:36	-->	anonymuse (~anonymuse@client-58.568-ether.bway.net) has joined #tmux
+2013-03-14 11:48:45	<--	arduix (~arduix@197.15.20.247) has quit (Ping timeout: 245 seconds)
+2013-03-14 11:58:45	<--	marowit (~marowit@unaffiliated/marowit) has quit (Ping timeout: 256 seconds)
+2013-03-14 12:00:26	-->	marowit (~marowit@unaffiliated/marowit) has joined #tmux
+2013-03-14 12:00:43	-->	arduix (~arduix@41.225.101.220) has joined #tmux
+2013-03-14 12:02:34	<--	OK100 (~OK100@31.134.103.137) has quit (Ping timeout: 252 seconds)
+2013-03-14 12:03:30	<--	aswen (~aswen@smtp3.nedap.com) has quit (Quit: Ik ga weg)
+2013-03-14 12:03:53	-->	OK100 (~OK100@31.134.103.137) has joined #tmux
+2013-03-14 12:03:57	<--	tessellated (~mih@77.117.246.94.wireless.dyn.drei.com) has quit (Remote host closed the connection)
+2013-03-14 12:05:35	<--	agarnier (~agarnier@80.82.229.117) has quit (Quit: Quitte)
+2013-03-14 12:07:30	<--	seyz (~seyz@85.234.217.115.static.edpnet.net) has quit (Remote host closed the connection)
+2013-03-14 12:10:09	mlue	is there a reason the .tmux.conf isn't being read when I just launch a server and attach a client to that server with just 'tmux'
+2013-03-14 12:12:24	<--	Watabou (~Watabou@unaffiliated/watabou) has quit (Ping timeout: 276 seconds)
+2013-03-14 12:13:24	NicM	you didn't restart tmux entirely
+2013-03-14 12:14:08	mlue	tmux ls says no sessions up
+2013-03-14 12:14:34	mlue	This is super weird
+2013-03-14 12:14:39	mlue	my conf only gets executed when I attach
+2013-03-14 12:14:40	mlue	:\
+2013-03-14 12:14:57	Yorokobi	mlue, are you creating windows in your conf?
+2013-03-14 12:15:17	mlue	I am trying to at the bottom
+2013-03-14 12:15:22	mlue	is that a nono?
+2013-03-14 12:15:25	mlue	is that why people source it to a bind
+2013-03-14 12:15:32	Yorokobi	No. But you get to use 'tmux attach' all the time now.
+2013-03-14 12:16:06	mlue	I am a little confused, does this mean that this is working as intended?
+2013-03-14 12:17:19	Yorokobi	As I understand it, yes. You can shorten it to 'tmux at' or write an alias.
+2013-03-14 12:17:36	mlue	oh yeah, I knew that, thanks :D
+2013-03-14 12:17:49	mlue	I'm seeing "activity" in the window I'm trying to make 2 panes in, but nothing happens
+2013-03-14 12:17:53	mlue	madness

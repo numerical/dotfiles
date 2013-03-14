@@ -812,3 +812,360 @@
 2013-03-13 23:34:20	Nomad	> 2==9
 2013-03-13 23:34:22	lambdabot	  False
 2013-03-13 23:34:29	Nomad	pfft, everyone knows 2==9 is true
+2013-03-14 11:02:48	-->	numeral (~numeral@198.23.228.15) has joined #haskell
+2013-03-14 11:02:48	--	Topic for #haskell is "["Haskell Platform 2012.4: http://bit.ly/Clv5r ","GHC 7.6.2 http://v.gd/oXnqjU ","Paste code/errors: http://hpaste.org/new/haskell ","Haskell News: http://reddit.com/r/haskell ","The Haskell programming language http://haskell.org ","Logs: http://bit.ly/5mwtRQ ","If Hackage is down, try: http://hdiff.luite.com "]"
+2013-03-14 11:02:48	--	Topic set by monochrom on Tue, 29 Jan 2013 12:36:42
+2013-03-14 11:02:48	--	Nicks #haskell: [@ChanServ [[zz]] \rs ]OLI[ __main__ _br_ _flow_ _janne _jmcarthur `0660 `^_^v `bps `micro `nand` `ramses a11235 A2kmm aajmakin ab9rf absence_ abumirqaan acfoltzer acharles aCube Adeon adimit Adios adlan adnap adnauseam aforemny agr agumonkey agundry ahf ahihi ahkurtz_ ajhager akahn akosch akraut alang albel727 alcz aleator_ alec__ alej alejandrogomez alexander__b alios_ alistairclark alkabetz alnix alpounet alshain Amadiro amiller amyers anachron_ anders^^ andrewsw aninhume1 anona AntiSpamMeta apaku aphury appamatto araujo arbn Argue aristid arkeet arkx arlinius armlesshobo arnihr__ arun asante aszlig Athas AtnNn augur augustl Aune Axman6 az b52 b_jonas BadKitty banjiewen barrucadu bartavelle basdirks Baughn bbloom bcoppens bd_ Belgarion0 bens benzap bergey` betawaffle bezik bgamari bholst Bigcheese BigEndian birkenfeld bitonic blackmir1oxx BlastHardcheese blooberr BMeph bobry bogner Boney Boreeas boris`` bos Botje brainproxy Brando753 brandonw brett_ BrianHV brisbin brixen bstrie Bwild bxc byorgey ByronJohnson bytbox C-Keen c_wraith cajla Cale caligula__ Canar canta canvon ccasin ccxCZ cdidd cdntr celery__ certainty chance charlesofarrell Chaze chirpsalot ChongLi Chousuke chr1s chrisbuchholz_ chrisirc chrra ciaranm CindyLinz cjay cl_away ClaudiusMaximus Clint clog cmsd2 cmsmcq cods coeus_ colah_ comak companion_cube confound connelly copumpkin corruptmemory CosmicRay CoverSlide cow-orker crdueck cromain cross crs_ Cryovat ctype_real cwvh cynick cyphase d-snp dabradley DaDaDosPrompt dan_johnsin danbru danr dario DarkAceZ Dashkal davean davorak dcoutts deavidsedice deepinskin Deewiant def-lkb dennda dented42 Derander derdon descender DexterLB dflemstr_ dfletcher dgvncsz0f DigitalKiwi dilinger dinox dixie_ djanatyn dju dkasak dlundy_ dmarker dmwit Dodek dogmaT DolphR donri doomlord dottedmag dqd Draconx Draggor drbean DrChaos DrCode dreixel_ drek drewr drmegahertz dropdrive DrSyzygy dsantiago DT` dumbhat DustyDingo dv__ Dybber dyreshark eacameron EarlGray earthy eataix ecuderpam edenc edon edsko edwardk edwtjo eff eflister ehamberg Eiam eikke eL_Bart0 electrogeek elgot_ Eliel_ elliott elliottcable emma end3rW endojelly ent Entroacceptor epta ericmj Eridius erkin ernst Erstarrung Estrellas etabot ethercrow etrepum evannb Excureo eyck f8_ fabjan faen faheem FalkoPeters fall_ fayden fcr fergusnoble fgomez finnrobi fionnan FireFly fireglow fizbin floatingman Fluky flux folone formalcow fotc freiksenet frerich2 frio fro0t frontendloader froztbyte fryguybob ft Fubar^ Fuco Fullma Fuuzetsu fxrh gbarboza gbeshers gbluma gcmalloc gdeest_ gdsx geekosaur gehmehgeh gemelen gentleben gereedy gg7 ggreg ghorn_ Ghoul_ gienah Gilly Gothmog_ Gracenotes gseitz gthorslund guampa guerrilla Guest Guest10329 Guest16384 Guest22595 Guest73244 Gunni Gurragchaa_ gustavnils gusto guy_ guymann gwern h_chiro habbbe hachiya hackagebot Hafydd hajimehoshi HaltingState hamid hamishmack hanDerPeder harrison hattusili_III heath Heffalump helgikrs henk Hermit herself heruur hiptobecubic hiratara hiredman hiroyuki2 hirsch__ hive-mind hkBst horlicks hpaste hpc hpd HugoDaniel hungryblank hvr hyko iago IanKelling ibid IbnFirnas Iceland_jack Icewing identity idnar idntfy2 idntfy[work] idoru Igloo igstan inad922 inr int-e integral_ Internet13 ion ique isomorphic issimus1 iulian ivan\ ivan` ixian Jaak jabirali jackhill jacobw jaimef jamwt janbanan jang JaRoel|4d jaroslaw jaspervdj Jaxan jayne jbauman jcp jdhky jdnavarro jdoliner Jean Jello_Raptor jercos jerojasro jesyspa jix jlamothe jlewis jliikka jlouis jml joachifm joar jodaro joe9 JoeHazzers joeyh johnw joneshf joneshf-laptop jonke Jonno_FTW Jonte_ Jordsan JoshuaA JPohlman1 jrib jrockway jrslepak jrusnack jssanders jtalk jtobin_ juhp julmae- julmuri junsuijin jyyou k00mi k0ral KaiSforza kakos kallisti kalven KaneTW kaol kaoskorobase kartoffel_ Ke kennyd kennyp_ kerrick Khisanth killy9999 kini Kinnison Kiryx KitB__ kith kk` kkris kloeri klugez kmels kmels_ kmic kniu knyppeldynan knz koala_man koninkje_away korpz kosmikus kqr1 kranius krig_ kshannon ktosiek Kuba lahwran lambdabot LAMMJohnson Laney latro`a lattenwald lazard LeaChim LeninParty lennart_ lenstr leoncamel leprauchan leroux levi levitation_ liesen liff lightquake linduxed Liskni_si lispy liszt liyang lokydor lopex lpsmith lpvb LtWorf lucca luite Luke luksow lulf luminous lusory_ m3ga machisuji_ magaio_ magicman mahogny majoh maksbotan malorie_ malthe maltin mami mannyv mapf mapreduce marienz Martty MasseR MasterPuncher matcher11 mateu Mathnerd314_ mattp_ mattrepl matzo mauke Maxdamantus mceier McManiaC mechairoi mefisto Megant mel- melter memand mendez merijn message144 meyersh mgile miasma mietek mike2 mikeplus64 milessabin milli milStaja mimi_vx mimico__ mirsal mixi mizu_no_oto mjr84 mjs2600 MK_FG mlh mlinksva mm_freak mmaruseacph2 MnO2 MoALTz mokus_ mollerst1and monique_ monochrom moonlite morazow mornfall morolin mortberg Mortchek mpu mrd_ mrdomino_ MrFenix mrkotfw MrMeh` MroiZo mrotondo mrshoe MrZepeda mspells msuszczy mtahmed mugenken_ mullein munro mux__ myme mysticc Nanar Natch natechan nathanel_ natte netj neto neurocyte newsham nexx Nickeeh nicoo nighty^ Nik_89 niklasb niko nikolah nilg niloc132 Nimatek nimred ninegrid ninzine Nisstyre niteria nlogax no-n noam noj nonymousa noplamodo notdan NougatRillettes Nshag numeral nus nwf obcode Obfuscate ocharles ofan OlegYch OnionKnight opqdonut ormaaj Ornedan_ ortmage osfameron osnr otend othiym23 otterdam otto_s_ ousado owst ozataman paddymahoney PaksAway paolino parcs PartyKat2e pcapriotti pcc pdxleif_away peddie peltchu pepijndevos perlite permagreen perspectival petanqk petantik petekaz peterhil peterhil` petermw pettter pfoetchen pharaun Philippa PhilRod_ PHO_ pikhq piotr plcplc Plex- plhk pmade pnielsen popz pqmodn_ pr predator117 preflex prh pricklypear PrO_OkI ps-auxw pshr ptek Ptival ptrf purefn puzza007 pxdr pyrtsa pyykkis q66 quaestor quchen quicksilver quuxman qwandor|quassel qwr qz r126l_ raek_ RageOfThou raichoo raid rainmaker Ralith Rarrikins_k_b Raynes Razz rcfox rcj_ rcl redjohn reiddraper Rembane RenJuan rfw ricepuddin RichyB Rickasaurus rickeyski-k rio Riussi rkj rmarianski rmunoz rmunroe_ robbe- robbert rodlogic romanb rossabaker rs0 rsimoes rsuniev123 ryanakca S11001001 s4msung_ s_quark SaBer saep Sagi saiam Saizan sambio saml sanemat sarfraz saurik sbahra scgilardi schlumpi schroedinbug sclv Scott_firebeta Sculptor seafax SeanTAllen seats Sebastien-L SegFaultAX sellout- sepp2k setmeaway Sgeo sgronblo sh shachaf shanse sheerun shepheb shergill shintah Shozan shurikas shutdown_-h_now si14 silver simon___ simpson sipa siril sjl ski skp skuggi sleepynate SLi sm smarter so so_ Soft sohum solarus solirc sonda Sonderblade sopvop sordina2 SoupEvil spion sproingie squidz srcerer srhb sShintah staafl Starfire stat_vi statusfailed steez stelleg stepcut stephe stepkut strax_ suiside sully sunfun_ sunnavy supki sw17ch Swizec system64 t7 tafryn tahu tamiko tanak____ tanakh tanakh_ Tarential taruti tavelram__ tazjin_ td123 tdammers TDJACR techlife Tehnix Tene tensorpudding Tesseraction_z tessier tew88 tg tgeeky tgummerer Th0mas thalassarche Tharugrim The_third_man TheFuzzball theorbtwo thetallguy thetallguy1 thirsteh_ ThomasLocke Thomyho3 thorkilnaur thoughtpolice Thra11 Thra11_ threedaymonk threesome tibbe tieTYT tieTYT2 timemage tippenein tjelle tkd tlaine tlevine tmiw TML tobiassj1sten tomaw tomboy64 tomejaguar tomh_ tomku tomprince ToRA Tordek trevize tridactyla trolling tromp__ tsinnema tsou tswett tunixman turiya tvaalen tweakism Twey typoclass u_ u_quark Ulrar uniquenick UziMonkey v0yager v0|d` Valodim Varakh vehk verrens vhz vili Vinz_ vmeson vobi Volstvok Vorpal voyd Vq VZakharov wagle walter|r Walther warpy__ Watcher7|off waterlaz wchun wei2912 weie wereHamster WhereIsMySpoon_ whoops wilfredh Will| wjlroe wollw wolong wormphlegm wossname wting wto wtw wumpus wunki x7 xaimus_ Xaratas xcombelle xcv xcvii xinming XMunkki xnyhps Xorlev xplat xrl_ xunatai xymox yacks yam yan_ yano yeltzooo yumike zaltekk Zariel zebr zeiris zenoli zenzike zero7 ziman zoktar zomg zorzar Zouppen zwiebel zz_nh2 Zzompp_]
+2013-03-14 11:02:48	--	Channel #haskell: 1032 nicks (1 op, 0 halfops, 0 voices, 1031 normals)
+2013-03-14 11:02:48	***	Buffer Playback...
+2013-03-14 11:02:48	turiya	[17:18:08] johnw: but doesn't the !acc evaluate those thunks
+2013-03-14 11:02:48	johnw	[17:18:21] !acc does not force evaluation
+2013-03-14 11:02:48	johnw	[17:18:24] it sequences evaluation
+2013-03-14 11:02:48	quchen	[17:18:46] Well, it forces WHNF
+2013-03-14 11:02:48	johnw	[17:18:50] also, it's only WHNF
+2013-03-14 11:02:48	turiya	[17:18:57] oh..
+2013-03-14 11:02:48	johnw	[17:19:02] tuples are a classic place where people accumulate thunks
+2013-03-14 11:02:48	byorgey	[17:19:09] weak head normal form for a tuple is  (THUNK, THUNK)
+2013-03-14 11:02:48	turiya	[17:19:13] can i use something like deepseq
+2013-03-14 11:02:48	byorgey	[17:19:15] as opposed to just THUNK
+2013-03-14 11:02:48	johnw	[17:19:18] deepseq is overkill
+2013-03-14 11:02:48	johnw	[17:19:31] just using strictness annotations for the values you're putting in the tuples
+2013-03-14 11:02:48	johnw	[17:19:52] either x `seq` (i,x), or let !x ... in (i,x)
+2013-03-14 11:02:48	turiya	[17:20:12] johnw: i see, i will try that
+2013-03-14 11:02:48	johnw	[17:20:50] you could also use ghc-heap-vis to look at your list before you print it
+2013-03-14 11:02:48	johnw	[17:20:57] that might be very illuminating
+2013-03-14 11:02:48	turiya	[17:20:57] ab9rf: i could not follow "just generate backwards"
+2013-03-14 11:02:48	supki	[17:21:46] turiya: iterate from m*n-1 to 0
+2013-03-14 11:02:48	supki	[17:22:12] (without acc, that is)
+2013-03-14 11:02:48	ab9rf	[17:22:46] yes thank you
+2013-03-14 11:02:48	turiya	[17:22:47] i will try both the solutions and get back.. thanks
+2013-03-14 11:02:48	ab9rf	[17:22:51] you don't need acc at all
+2013-03-14 11:02:48	ab9rf	[17:23:03] just have allAdjRefsf generate one list (possibly empty)
+2013-03-14 11:02:48	johnw	[17:23:20] yes, if you can build the list such that earlier values are not needed after being printed, and later values are not generated until they are needed, then your total heap utilization will be close to the size of a single tuple!
+2013-03-14 11:02:48	ab9rf	[17:23:25] use 0 as your bottom casestart at n, and go backwards
+2013-03-14 11:02:48	ab9rf	[17:23:41] you don't need t accumulate
+2013-03-14 11:02:48	ab9rf	[17:23:55] you can eliminate the accumulator entirely
+2013-03-14 11:02:48	turiya	[17:24:34] i will try to see if i can do that
+2013-03-14 11:02:48	ab9rf	[17:29:13] d;oh
+2013-03-14 11:02:48	ab9rf	[17:29:56] wow, that spews a lot of output
+2013-03-14 11:02:48	hpaste	[17:30:27] turiya revised “memory”: “memory” at http://hpaste.org/84031
+2013-03-14 11:02:48	johnw	[17:31:14] turiya: return Maybe (Int,Int) from allAdjRefsf
+2013-03-14 11:02:48	johnw	[17:31:24] and use catMaybes instead of folding ++
+2013-03-14 11:02:48	ab9rf	[17:31:35] johnw: needs to be [(Int,Int)], it can return two tuples in some cases
+2013-03-14 11:02:48	johnw	[17:31:39] ah
+2013-03-14 11:02:48	johnw	[17:31:51] then use a DList at least
+2013-03-14 11:02:48	johnw	[17:31:56] folding ++ is going to suck
+2013-03-14 11:02:48	turiya	[17:31:58] oh..i see
+2013-03-14 11:02:48	johnw	[17:32:18] or does Haskell know to do in-place snocs?
+2013-03-14 11:02:48	johnw	[17:32:39] turiya: or, you could use Data.Sequence
+2013-03-14 11:02:48	shachaf	[17:32:42] Instead, you should foldr (++)
+2013-03-14 11:02:48	ab9rf	[17:32:43] hm, i wouldn't fold ++
+2013-03-14 11:02:48	supki	[17:32:43] foldring (++) should be ok
+2013-03-14 11:02:48	shachaf	[17:32:57] (++) wants to be foldred, not foldl'ed.
+2013-03-14 11:02:48	johnw	[17:32:58] ah, foldr (++), that's the trick
+2013-03-14 11:02:48	ab9rf	[17:32:59] i actually wrote an explicit recursion
+2013-03-14 11:02:48	ab9rf	[17:33:03] but foldr (++) is fine
+2013-03-14 11:02:48	shachaf	[17:33:39] @src concat
+2013-03-14 11:02:48	lambdabot	[17:33:39] concat = foldr (++) []
+2013-03-14 11:02:48	johnw	[17:33:47] shachaf: doh!
+2013-03-14 11:02:48	supki	[17:33:49] @src concatMap
+2013-03-14 11:02:48	lambdabot	[17:33:50] concatMap f = foldr ((++) . f) []
+2013-03-14 11:02:48	johnw	[17:34:05] shachaf: sometimes I miss the forest for the trees
+2013-03-14 11:02:48	supki	[17:34:48] so allAdjRegs would be  VU.fromList (concatMap allAdjRegsf [0..n*m-1])
+2013-03-14 11:02:48	supki	[17:35:03] ..and I think you forgot to reverse iteration
+2013-03-14 11:02:48	ab9rf	[17:35:08] turiya: i think one of your cases is incorrect, too
+2013-03-14 11:02:48	turiya	[17:35:36] ab9rf: oh, which one
+2013-03-14 11:02:48	turiya	[17:35:49] i just tried foldr1, it works very well
+2013-03-14 11:02:48	ab9rf	[17:35:50] in the x==0 case you generate [(i,i+1),(i,i+1)], which is the same tuple twice
+2013-03-14 11:02:48	ab9rf	[17:36:04] i don't think that's what you intend
+2013-03-14 11:02:48	shachaf	[17:36:12] turiya: Please take supki's advice.
+2013-03-14 11:02:48	shachaf	[17:36:59] There are a few advices here: Use foldr (with [] as the base case) instead of foldr1. Use concat instead of foldr (++) []. Use concatMap instead of concat and and a list comprehension (optional).
+2013-03-14 11:02:48	turiya	[17:37:49] ab9rf: true, one of them is (i,i+n), thanks
+2013-03-14 11:02:48	ab9rf	[17:38:23] do you care what order the tuples are generated in?
+2013-03-14 11:02:48	turiya	[17:38:33] no
+2013-03-14 11:02:48	ab9rf	[17:38:45] if not, then just concatMap the inner function over the list comprehension
+2013-03-14 11:02:48	johnw	[17:38:54] shachaf: what's wrong with foldr1?
+2013-03-14 11:02:48	shachaf	[17:39:11] It's partial.
+2013-03-14 11:02:48	johnw	[17:39:19] ah, true
+2013-03-14 11:02:48	shachaf	[17:39:33] There is no point to using it here, given that (++) has a simple identity.
+2013-03-14 11:02:48	turiya	[17:39:37] with foldr1, my heap size became 70mb (from 291 mb)
+2013-03-14 11:02:48	shachaf	[17:40:17] :-(
+2013-03-14 11:02:48	johnw	[17:40:49] i haven't seen a shachaf frownie in ages
+2013-03-14 11:02:48	turiya	[17:41:01] i did not understand the concatMap route
+2013-03-14 11:02:48	shachaf	[17:41:12] Well, that part is optional.
+2013-03-14 11:02:48	johnw	[17:41:19] turiya: it's the same route, just more succinct
+2013-03-14 11:02:48	shachaf	[17:41:23] > foldr1 (++) ["ab","cde"]
+2013-03-14 11:02:48	lambdabot	[17:41:26]   "abcde"
+2013-03-14 11:02:48	shachaf	[17:41:31] > foldr1 (++) []
+2013-03-14 11:02:48	lambdabot	[17:41:34]   *Exception: Prelude.foldr1: empty list
+2013-03-14 11:02:48	shachaf	[17:41:51] > (foldr (++) [] ["ab","cde"], foldr (++) [] [])
+2013-03-14 11:02:48	lambdabot	[17:41:53]   ("abcde",[])
+2013-03-14 11:02:48	ab9rf	[17:41:59] shachaf: allAdjRegsfff len = concatMap allAdjRegsf [0..len]
+2013-03-14 11:02:48	shachaf	[17:42:05] ab9rf: I know.
+2013-03-14 11:02:48	shachaf	[17:42:11] Therefore you should use foldr instead of foldr1.
+2013-03-14 11:02:48	shachaf	[17:42:17] Now, foldr (++) [] has a name:
+2013-03-14 11:02:48	shachaf	[17:42:20] @src concat
+2013-03-14 11:02:48	ab9rf	[17:42:20] shachaf: sorry, wrong complete
+2013-03-14 11:02:48	lambdabot	[17:42:20] concat = foldr (++) []
+2013-03-14 11:02:48	ab9rf	[17:42:21] i'm tired
+2013-03-14 11:02:48	ab9rf	[17:42:47] and i have trouble thinking when blue's clues is on in any case (the wonders of having small children)
+2013-03-14 11:02:48	turiya	[17:51:15] i would not have understood what was wrong with my program without all of your help.. thanks
+2013-03-14 11:02:48	turiya	[17:52:26] i am now thinking if i can still reduce the heap size (from 70mb)..
+2013-03-14 11:02:48	ab9rf	[17:52:58] i'm wondering how much of that is the Vector
+2013-03-14 11:02:48	turiya	[17:53:32] how can I know that
+2013-03-14 11:02:48	turiya	[17:55:13] i think i can remove the Vector and see !
+2013-03-14 11:02:48	turiya	[17:58:50] ab9rf: wow, without the Vector, i get 1MB. :)
+2013-03-14 11:02:48	ab9rf	[17:59:29] turiya: go figure
+2013-03-14 11:02:48	supki	[17:59:57] (that doesn't mean vector takes 69mb)
+2013-03-14 11:02:48	 *	hackagebot [18:02:04] monomorphic 0.0.1.2 - Library to convert polymorphic datatypes to/from its monomorphic represetation  http://hackage.haskell.org/package/monomorphic-0.0.1.2 (HiromiIshii)
+2013-03-14 11:02:48	***	Playback Complete.
+2013-03-14 11:02:50	turiya	i will try to figure why this is so, may be later..
+2013-03-14 11:02:54		[http://is.gd/hR0qeB]
+2013-03-14 11:02:58	turiya	thanks for all your help
+2013-03-14 11:03:05	<--	Thra11_ (~thrall@87.114.136.205) has quit (Ping timeout: 264 seconds)
+2013-03-14 11:03:09	--	Mode #haskell [+CLcnpt]
+2013-03-14 11:03:09	--	Channel created on Sun, 26 Nov 2006 01:42:48
+2013-03-14 11:03:20	turiya	ab9rf++
+2013-03-14 11:03:24	turiya	supki++
+2013-03-14 11:03:36	turiya	shachaf++
+2013-03-14 11:03:40	turiya	johnw++
+2013-03-14 11:03:44	 *	johnw claps
+2013-03-14 11:04:05	-->	schovi (~schovi@194.213.198.34) has joined #haskell
+2013-03-14 11:04:33	<--	turiya (~phanindra@14.96.28.101) has quit (Quit: Leaving)
+2013-03-14 11:04:38	johnw	well, the vector has to represent the whole list in memory
+2013-03-14 11:04:49	johnw	as a lazy list, you only ever need to represent a single tuple at a time
+2013-03-14 11:04:58	johnw	if all you're doing is printing them, that is
+2013-03-14 11:05:05	johnw	oh, he's gone
+2013-03-14 11:05:14	-->	mikmik (~mike@S0106001ff33f033b.vc.shawcable.net) has joined #haskell
+2013-03-14 11:05:30	-->	hallski (~hallski@80.239.169.202) has joined #haskell
+2013-03-14 11:06:14	<--	MasterPuncher (~erinehart@208.117.200.94) has quit (Ping timeout: 245 seconds)
+2013-03-14 11:06:56	<--	sanemat (~sanemat@7c2947bf.i-revonet.jp) has quit (Remote host closed the connection)
+2013-03-14 11:07:59	<--	sopvop (~lonokhov@213.170.88.44) has quit (Quit: Leaving.)
+2013-03-14 11:08:58	<--	vehk (~vehk@unaffiliated/vehk) has quit (Ping timeout: 240 seconds)
+2013-03-14 11:09:27	-->	taterbase (~taterbase@c-67-169-241-198.hsd1.ut.comcast.net) has joined #haskell
+2013-03-14 11:10:31	-->	fmapE (~fmapE@2001:18e8:2:10f4:7dbb:6dac:9da3:3100) has joined #haskell
+2013-03-14 11:11:24	-->	twomashi (~Adium@83-244-243-242.cust-83.exponential-e.net) has joined #haskell
+2013-03-14 11:12:05	 *	hackagebot monitor 0.1.0 - Do things when files change.  http://hackage.haskell.org/package/monitor-0.1.0 (MartinStensgard)
+2013-03-14 11:12:11		[http://is.gd/p41aVd]
+2013-03-14 11:14:03	<--	guymann (~c@unaffiliated/guymann) has quit (Ping timeout: 256 seconds)
+2013-03-14 11:14:03	-->	Tordek_ (tordek@gateway/shell/blinkenshell.org/x-jrayhsizortdnpmn) has joined #haskell
+2013-03-14 11:14:09	<--	zero7 (uid10708@gateway/web/irccloud.com/x-onurhrxjrconsyyk) has quit (Read error: Operation timed out)
+2013-03-14 11:14:09	<--	chrisbuchholz_ (uid6784@gateway/web/irccloud.com/x-qveoqfybxpibenaa) has quit (Read error: Operation timed out)
+2013-03-14 11:14:09	<--	Tordek (tordek@gateway/shell/blinkenshell.org/x-dbxtbudesxpsgvpm) has quit (Read error: Operation timed out)
+2013-03-14 11:14:09	<--	CosmicRay (~jgoerzen@glockenspiel.complete.org) has quit (Read error: Operation timed out)
+2013-03-14 11:14:14	<--	kranius (~kranius@lafitte.pro) has quit (Read error: Operation timed out)
+2013-03-14 11:14:17	<--	ousado (~ousado@unaffiliated/ousado) has quit (Read error: Operation timed out)
+2013-03-14 11:14:23	<--	alios_ (~alios@alios.alios.net) has quit (Read error: Connection reset by peer)
+2013-03-14 11:14:31	-->	alios (~alios@alios.alios.net) has joined #haskell
+2013-03-14 11:14:32	<--	kaol (kaol@piperka.net) has quit (Read error: Operation timed out)
+2013-03-14 11:14:35	<--	sheerun (~sheerun@89.32.147.148) has quit (Read error: Operation timed out)
+2013-03-14 11:14:36	-->	ousado (~ousado@31-18-108-39-dynip.superkabel.de) has joined #haskell
+2013-03-14 11:14:36	<--	mrd_ (~md@50.57.107.153) has quit (Read error: Operation timed out)
+2013-03-14 11:14:40	-->	kaol (kaol@piperka.net) has joined #haskell
+2013-03-14 11:14:42	-->	mrd (~md@debian/developer/mrd) has joined #haskell
+2013-03-14 11:14:42	-->	anRch (~markmilli@static-71-184-226-33.bstnma.fios.verizon.net) has joined #haskell
+2013-03-14 11:14:53	<--	alshain (~alshain@124-171.1-85.cust.bluewin.ch) has quit (Read error: Operation timed out)
+2013-03-14 11:15:03	-->	sheerun (~sheerun@89.32.147.148) has joined #haskell
+2013-03-14 11:15:04	-->	CosmicRay (~jgoerzen@glockenspiel.complete.org) has joined #haskell
+2013-03-14 11:15:08	-->	guymann (~c@unaffiliated/guymann) has joined #haskell
+2013-03-14 11:15:10	-->	alshain (~alshain@124-171.1-85.cust.bluewin.ch) has joined #haskell
+2013-03-14 11:15:27	-->	kranius (~kranius@lafitte.pro) has joined #haskell
+2013-03-14 11:15:51	-->	favonia (~favonia@pdpc/supporter/student/favonia) has joined #haskell
+2013-03-14 11:16:33	-->	bark_ (~bark@2001:470:8a52:67:1dce:53b6:42c2:4e1f) has joined #haskell
+2013-03-14 11:16:58	<--	niloc132 (~colin@c-67-180-167-61.hsd1.ca.comcast.net) has quit (Ping timeout: 240 seconds)
+2013-03-14 11:17:06	<--	Thra11 (~thrall@31.185.188.91) has quit (Ping timeout: 245 seconds)
+2013-03-14 11:17:19	<--	plcplc (~quassel@192.38.109.188) has quit (Remote host closed the connection)
+2013-03-14 11:17:22	byorgey	hmm, looks like 'monitor' is linux-only?
+2013-03-14 11:17:47	-->	Icarot (~Icarot@199-188-193-9.PUBLIC.monkeybrains.net) has joined #haskell
+2013-03-14 11:21:32	johnw	byorgey: hobbes does the same thing, and works on mac
+2013-03-14 11:22:37	ocharles	heh, hobbes is our test/ci server - I was a bit confused reading that at first :)
+2013-03-14 11:23:06	<--	tibbe (~tibbe@207.198.105.19) has quit (Quit: tibbe)
+2013-03-14 11:23:46	byorgey	oh, looks like there's fsnotify, which is used by yesod and claims to be cross-platform
+2013-03-14 11:24:00	ocharles	I just use inotifytools and a little bit of bash
+2013-03-14 11:24:02	<--	bark_ (~bark@2001:470:8a52:67:1dce:53b6:42c2:4e1f) has quit (Quit: Leaving)
+2013-03-14 11:24:13	johnw	there you go, 4 solutions to the same problem
+2013-03-14 11:24:18	johnw	if only I could mappend them...
+2013-03-14 11:24:21	<--	favonia (~favonia@pdpc/supporter/student/favonia) has quit (Read error: Connection reset by peer)
+2013-03-14 11:25:07	<--	twomashi (~Adium@83-244-243-242.cust-83.exponential-e.net) has quit (Quit: Leaving.)
+2013-03-14 11:25:36	<--	quchen (~david@wthp166d.physik.uni-wuerzburg.de) has quit (Ping timeout: 276 seconds)
+2013-03-14 11:26:07	-->	dolio (~dolio@gw1.mcgraw-hill.com) has joined #haskell
+2013-03-14 11:26:27	-->	phischu (~pschuster@dslb-088-077-196-150.pools.arcor-ip.net) has joined #haskell
+2013-03-14 11:27:27	<--	ousado (~ousado@31-18-108-39-dynip.superkabel.de) has quit (Changing host)
+2013-03-14 11:27:27	-->	ousado (~ousado@unaffiliated/ousado) has joined #haskell
+2013-03-14 11:27:52	<--	mefisto (~quassel@192.81.216.48) has quit (Quit: No Ping reply in 180 seconds.)
+2013-03-14 11:28:11	-->	mefisto (~quassel@192.81.216.48) has joined #haskell
+2013-03-14 11:29:15	-->	jmelesky (~jmelesky@173-164-68-213-Oregon.hfc.comcastbusiness.net) has joined #haskell
+2013-03-14 11:29:17	-->	MasterPuncher (~erinehart@208.117.200.94) has joined #haskell
+2013-03-14 11:29:56	-->	Itkovian (~Itkovian@178-118-76-90.access.telenet.be) has joined #haskell
+2013-03-14 11:30:55	-->	bark_ (~bark@2001:470:8a52:67:e81b:f95:64b1:5eb4) has joined #haskell
+2013-03-14 11:31:45	-->	LK4D4 (~LK4D4@2002:c35d:cf2c:2::2102) has joined #haskell
+2013-03-14 11:31:47	-->	tibbe (tibbe@nat/google/x-tsguodrhilxkzwqk) has joined #haskell
+2013-03-14 11:33:08	-->	jeffreybaird (~jeffreyba@38.122.227.186) has joined #haskell
+2013-03-14 11:33:30	-->	dmac (~Adium@75-149-33-130-SFBA.hfc.comcastbusiness.net) has joined #haskell
+2013-03-14 11:34:03	<--	MnO2 (~MnO2@1.34.43.236) has quit (Quit: MnO2)
+2013-03-14 11:34:16	<--	milStaja (~milStaja@KHP059139243021.ppp-bb.dion.ne.jp) has quit (Quit: Leaving...)
+2013-03-14 11:34:40	<--	gusto (~gusto@ppp-93-104-69-167.dynamic.mnet-online.de) has quit (Quit: leaving)
+2013-03-14 11:35:35	<--	pmade (~pmade@c-67-172-151-101.hsd1.co.comcast.net) has quit (Quit: bye.)
+2013-03-14 11:35:41	<--	xcv (~xcv@89.204.130.153) has quit (Remote host closed the connection)
+2013-03-14 11:35:48	-->	Thra11 (~thrall@87.114.206.209) has joined #haskell
+2013-03-14 11:36:26	-->	jrajav (~jrajav@198.179.137.210) has joined #haskell
+2013-03-14 11:36:33	-->	AfC (~andrew@gateway.syd.operationaldynamics.com) has joined #haskell
+2013-03-14 11:37:02	<--	fro0t (~fro0t@1.23.68.179) has quit (Ping timeout: 272 seconds)
+2013-03-14 11:37:06	-->	fro0t2 (~fro0t@1.23.68.179) has joined #haskell
+2013-03-14 11:37:07	-->	dschoepe (~dschoepe@unaffiliated/dschoepe) has joined #haskell
+2013-03-14 11:37:40	<--	edon (~user@albalug/edon) has quit (Ping timeout: 272 seconds)
+2013-03-14 11:37:56	<--	DolphR (~dolph@0803ds1-hvi.0.fullrate.dk) has quit (Quit: Leaving.)
+2013-03-14 11:38:00	<--	dmac (~Adium@75-149-33-130-SFBA.hfc.comcastbusiness.net) has quit (Ping timeout: 264 seconds)
+2013-03-14 11:38:04	<--	taterbase (~taterbase@c-67-169-241-198.hsd1.ut.comcast.net) has quit (Remote host closed the connection)
+2013-03-14 11:38:32	-->	twomashi (~Adium@83-244-243-242.cust-83.exponential-e.net) has joined #haskell
+2013-03-14 11:39:10	<--	wollw (~wollw@unaffiliated/wollw) has quit (Ping timeout: 245 seconds)
+2013-03-14 11:39:10	<--	c_wraith (~c_wraith@commie.pwrsrc.net) has quit (Quit: This computer has gone to sleep)
+2013-03-14 11:39:15	-->	collin (~collin@50-196-169-45-static.hfc.comcastbusiness.net) has joined #haskell
+2013-03-14 11:39:35	-->	Pranz (~Zorro_24@c80-217-216-30.bredband.comhem.se) has joined #haskell
+2013-03-14 11:39:37	<--	joneshf-laptop (~joneshf@c-98-208-37-38.hsd1.ca.comcast.net) has quit (Remote host closed the connection)
+2013-03-14 11:40:23	-->	wollw (~wollw@unaffiliated/wollw) has joined #haskell
+2013-03-14 11:40:29	-->	Eduard_Munteanu (~Eduard_Mu@188.25.245.135) has joined #haskell
+2013-03-14 11:40:53	-->	pmade (~pmade@c-67-166-44-144.hsd1.co.comcast.net) has joined #haskell
+2013-03-14 11:41:35	-->	dnolen (aa95640a@gateway/web/freenode/ip.170.149.100.10) has joined #haskell
+2013-03-14 11:41:46	<--	twomashi (~Adium@83-244-243-242.cust-83.exponential-e.net) has quit (Client Quit)
+2013-03-14 11:42:08	-->	tac (266a8ff8@gateway/web/freenode/ip.38.106.143.248) has joined #haskell
+2013-03-14 11:42:50	<--	system64 (~system64@202.78.175.199) has quit (Remote host closed the connection)
+2013-03-14 11:43:13	-->	jamiely1 (~Adium@static-71-185-69-210.phlapa.fios.verizon.net) has joined #haskell
+2013-03-14 11:43:44	<--	hallski (~hallski@80.239.169.202) has quit (Ping timeout: 245 seconds)
+2013-03-14 11:44:05	-->	system64 (~system64@202.78.175.199) has joined #haskell
+2013-03-14 11:44:09	<--	agr (bae74f6a@gateway/web/freenode/ip.186.231.79.106) has quit (Quit: Page closed)
+2013-03-14 11:44:29	-->	agr (bae74f6a@gateway/web/freenode/ip.186.231.79.106) has joined #haskell
+2013-03-14 11:46:11	<--	Thra11 (~thrall@87.114.206.209) has quit (Ping timeout: 252 seconds)
+2013-03-14 11:46:13	-->	bananagram (~bot@pool-108-56-161-155.washdc.fios.verizon.net) has joined #haskell
+2013-03-14 11:47:29	<--	Kiryx (~Kiryx@85-202-48-130.internetia.net.pl) has quit (Ping timeout: 246 seconds)
+2013-03-14 11:47:44	<--	OlegYch (~OlegYch@86.57.158.170) has quit (Ping timeout: 260 seconds)
+2013-03-14 11:47:57	<--	MroiZo (~quassel@95.209.254.5.bredband.3.dk) has quit (Remote host closed the connection)
+2013-03-14 11:48:09	-->	timebomb (~tb@arubacs1.louisiana.edu) has joined #haskell
+2013-03-14 11:48:12	<--	killy9999 (~killy@terminal-1-163.retsat1.com.pl) has quit (Ping timeout: 260 seconds)
+2013-03-14 11:48:12	<--	pmade (~pmade@c-67-166-44-144.hsd1.co.comcast.net) has quit (Ping timeout: 264 seconds)
+2013-03-14 11:48:16	-->	Moggle (~chatzilla@S01061859333fe9b7.wp.shawcable.net) has joined #haskell
+2013-03-14 11:48:17	<--	heath (quassel@unaffiliated/ybit) has quit (Read error: Connection reset by peer)
+2013-03-14 11:48:26	<--	bytbox (~s@129-2-129-85.wireless.umd.edu) has quit (Ping timeout: 272 seconds)
+2013-03-14 11:49:29	-->	AtomicStryker (AtomicStry@ip-95-223-55-89.unitymediagroup.de) has joined #haskell
+2013-03-14 11:49:34	<--	edwardk (~edwardk@pdpc/supporter/professional/edwardk) has quit (Quit: Computer has gone to sleep.)
+2013-03-14 11:49:58	<--	eff (~quassel@123.116.62.226) has quit (Ping timeout: 240 seconds)
+2013-03-14 11:50:02	<--	tibbe (tibbe@nat/google/x-tsguodrhilxkzwqk) has quit (Quit: tibbe)
+2013-03-14 11:51:02	-->	heath (~quassel@unaffiliated/ybit) has joined #haskell
+2013-03-14 11:51:12	<--	noam (~noam@213.57.201.130) has quit (Ping timeout: 264 seconds)
+2013-03-14 11:51:41	<--	Icarot (~Icarot@199-188-193-9.PUBLIC.monkeybrains.net) has quit (Ping timeout: 245 seconds)
+2013-03-14 11:52:38	-->	ebpanic (~textual@c-67-188-239-223.hsd1.ca.comcast.net) has joined #haskell
+2013-03-14 11:52:49	saml	hey
+2013-03-14 11:52:54	-->	_d3f (~gnu@nl2.ovpn.to) has joined #haskell
+2013-03-14 11:53:23	-->	brweber2 (~brweber2@pool-96-255-147-6.washdc.fios.verizon.net) has joined #haskell
+2013-03-14 11:53:34	-->	eff (~quassel@123.116.62.226) has joined #haskell
+2013-03-14 11:54:12	<--	Itkovian (~Itkovian@178-118-76-90.access.telenet.be) has quit (Quit: Itkovian)
+2013-03-14 11:54:40	-->	schlaftier (~daniel@g225123160.adsl.alicedsl.de) has joined #haskell
+2013-03-14 11:55:10	-->	Icarot (~Icarot@199-188-193-9.PUBLIC.monkeybrains.net) has joined #haskell
+2013-03-14 11:55:26	<--	junsuijin (~junsuijin@c-76-17-174-68.hsd1.mn.comcast.net) has quit (Remote host closed the connection)
+2013-03-14 11:56:16	<--	Moggle (~chatzilla@S01061859333fe9b7.wp.shawcable.net) has quit (Remote host closed the connection)
+2013-03-14 11:56:25	-->	osa1 (~omer@176.237.145.253) has joined #haskell
+2013-03-14 11:56:45	-->	junsuijin (~junsuijin@c-76-17-174-68.hsd1.mn.comcast.net) has joined #haskell
+2013-03-14 11:57:02	<--	hkBst (~marijn@gentoo/developer/hkbst) has quit (Quit: Konversation terminated!)
+2013-03-14 11:57:30	<--	kmels (~Thunderbi@frbg-4d028a7c.pool.mediaWays.net) has quit (Ping timeout: 245 seconds)
+2013-03-14 11:57:31	-->	pmade (~pmade@c-67-172-151-101.hsd1.co.comcast.net) has joined #haskell
+2013-03-14 11:57:48	-->	xcv (~xcv@89.204.130.111) has joined #haskell
+2013-03-14 11:57:48	<--	kmels_ (~kmels@frbg-4d028a7c.pool.mediaWays.net) has quit (Ping timeout: 264 seconds)
+2013-03-14 11:58:22	srhb	saml: Hey!
+2013-03-14 11:58:44	saml	srhb, how do you deserialize json to polymorphic data?
+2013-03-14 11:58:51	<--	AfC (~andrew@gateway.syd.operationaldynamics.com) has quit (Ping timeout: 258 seconds)
+2013-03-14 11:58:56	saml	let's say you have data Foo, Bar  both are instance of typeclass FooBar
+2013-03-14 11:59:05	saml	given json, I want a FooBar instance
+2013-03-14 11:59:16	saml	Foo has constructors Foo1, Foo2, ...
+2013-03-14 11:59:34	saml	depending on json structure, i want to get a data
+2013-03-14 11:59:39	<--	mrotondo (~mrotondo@50-0-18-170.dsl.static.sonic.net) has quit (Quit: mrotondo)
+2013-03-14 11:59:46	saml	maybe i should just write this manually
+2013-03-14 12:00:00	-->	clintm (~user@c-76-121-226-80.hsd1.wa.comcast.net) has joined #haskell
+2013-03-14 12:00:01	-->	mrotondo (~mrotondo@50-0-18-170.dsl.static.sonic.net) has joined #haskell
+2013-03-14 12:00:03	<--	pcc (~pchapin@155.42.86.56) has left #haskell ("Leaving")
+2013-03-14 12:00:15	<--	idntfy2 (~idntfy@109.106.154.205) has quit (Quit: Nettalk6 - www.ntalk.de)
+2013-03-14 12:00:22	saml	you can't get a tree of all instances and constructors of FooBar  with their signature (types, names for records..) to unify it with json, right?
+2013-03-14 12:00:23	-->	idntfy (~idntfy@109.106.154.205) has joined #haskell
+2013-03-14 12:00:38	-->	tibbe (tibbe@nat/google/x-pfezbcxvafjzbmjl) has joined #haskell
+2013-03-14 12:01:29	-->	hughfdjackson (~hughfdjac@unaffiliated/hughfdjackson) has joined #haskell
+2013-03-14 12:01:35	<--	hughfdjackson (~hughfdjac@unaffiliated/hughfdjackson) has quit (Client Quit)
+2013-03-14 12:01:48	srhb	saml: Isn't that basically what aeson does?
+2013-03-14 12:01:51	-->	conal (~conal@173-166-248-200-stockton.hfc.comcastbusiness.net) has joined #haskell
+2013-03-14 12:01:59	srhb	Well, It does the parsing at least
+2013-03-14 12:02:16	-->	Taneb (~nathan@host-78-148-13-114.as13285.net) has joined #haskell
+2013-03-14 12:02:39	<--	basdirks (~basdirks@185.6.205.4) has quit (Ping timeout: 276 seconds)
+2013-03-14 12:02:39	-->	AfC (~andrew@gateway.syd.operationaldynamics.com) has joined #haskell
+2013-03-14 12:02:40	<--	edsko (~edsko@79.97.126.24) has quit (Quit: This computer has gone to sleep)
+2013-03-14 12:02:53	srhb	I'm not sure it's particuarly useful to have a tree of those values though, but I may be wrong.
+2013-03-14 12:04:17	<--	kerrick (~kerrick@c-67-180-210-197.hsd1.ca.comcast.net) has quit (Ping timeout: 246 seconds)
+2013-03-14 12:04:22	saml	let me try aeson
+2013-03-14 12:04:36	<--	mceier (~mceier@77-252-246-25.ip.netia.com.pl) has quit (Quit: leaving)
+2013-03-14 12:05:13	-->	apucacao (~apucaca@12.250.157.102) has joined #haskell
+2013-03-14 12:05:28	-->	_jwest (~jordan@108-245-186-81.lightspeed.sntcca.sbcglobal.net) has joined #haskell
+2013-03-14 12:05:28	<--	_jwest (~jordan@108-245-186-81.lightspeed.sntcca.sbcglobal.net) has quit (Changing host)
+2013-03-14 12:05:28	-->	_jwest (~jordan@unaffiliated/jwest/x-8002332) has joined #haskell
+2013-03-14 12:05:35	<--	Xaratas (~UserNick@brln-4db80560.pool.mediaWays.net) has quit (Quit: Going offline, see ya! (www.adiirc.com))
+2013-03-14 12:05:47	<--	mikmik (~mike@S0106001ff33f033b.vc.shawcable.net) has quit (Quit: mikmik)
+2013-03-14 12:06:16	-->	noam (~noam@213.57.201.130) has joined #haskell
+2013-03-14 12:06:45	-->	bytbox (~s@129-2-129-85.wireless.umd.edu) has joined #haskell
+2013-03-14 12:06:59	-->	notVert (~quassel@94-195-239-197.zone9.bethere.co.uk) has joined #haskell
+2013-03-14 12:07:06	absence_	is there a way to convert a strict bytestring to lazy? pack . unpack?
+2013-03-14 12:07:09	srhb	saml: If you just want to see the direction serialization, decode yourJsonHere :: Result JSValue
+2013-03-14 12:07:20	<--	threesome (~threesome@customer-79-127-150-148.net.angelnet.cz) has quit (Ping timeout: 260 seconds)
+2013-03-14 12:07:22	--	absence_ is now known as absence
+2013-03-14 12:07:32	srhb	absence: Something that rhymes with chunk, I think.
+2013-03-14 12:07:41	mauke	fromChunks . (: [])
+2013-03-14 12:08:14	absence	cool, thanks
+2013-03-14 12:09:13	<--	pmade (~pmade@c-67-172-151-101.hsd1.co.comcast.net) has quit (Ping timeout: 258 seconds)
+2013-03-14 12:09:41	-->	killy9999 (~killy@terminal-1-163.retsat1.com.pl) has joined #haskell
+2013-03-14 12:10:02	<--	romanb (~romanbors@pd95cdbd8.dip0.t-ipconnect.de) has quit (Quit: This computer has gone to sleep)
+2013-03-14 12:10:14	byorgey	absence: pack . unpack is like going to the store, buying some groceries, and then shipping them to your uncle in New Zealand and asking him to ship them back to your house
+2013-03-14 12:11:40	-->	bru` (~bruno`@4077.rez-gif.supelec.fr) has joined #haskell
+2013-03-14 12:11:40	-->	Hannibal_Smith (~ff130493@host168-14-dynamic.51-82-r.retail.telecomitalia.it) has joined #haskell
+2013-03-14 12:11:41	<--	aphury (~aphury@p579B9725.dip.t-dialin.net) has quit (Remote host closed the connection)
+2013-03-14 12:12:01	-->	tertl3-laptop (~tertl3-la@108-85-16-151.lightspeed.gnvlsc.sbcglobal.net) has joined #haskell
+2013-03-14 12:12:14	absence	so if i want to process a huge binary file using Control.Proxy instead of lazy io, can i just make a producer that reads a fixed amount of bytes from the handle (say 64k) and then use fromChunks to get a lazy bytestring i can read single bytes from as if it was the full file, without destroying performance due to single-byte reads?
+2013-03-14 12:12:30	<--	typoclass (~typoclass@p4FC93E47.dip.t-dialin.net) has quit (Ping timeout: 272 seconds)
+2013-03-14 12:12:40	<--	killy9999 (~killy@terminal-1-163.retsat1.com.pl) has quit (Read error: Operation timed out)
+2013-03-14 12:13:00	shachaf	Didn't you just say you want to avoid "lazy io"?
+2013-03-14 12:13:10	<--	bru` (~bruno`@4077.rez-gif.supelec.fr) has quit (Client Quit)
+2013-03-14 12:13:27	-->	papermachine (~paper@c-98-223-61-105.hsd1.in.comcast.net) has joined #haskell
+2013-03-14 12:14:07	<--	anRch (~markmilli@static-71-184-226-33.bstnma.fios.verizon.net) has quit (Quit: anRch)
+2013-03-14 12:15:12	ab9rf	byorgey: heh
+2013-03-14 12:15:31	<--	deepinskin (~chenwei76@218.11.179.47) has quit (Ping timeout: 264 seconds)
+2013-03-14 12:15:39	<--	ThomasLocke (~ThomasLoc@pdpc/supporter/active/thomaslocke) has quit (Ping timeout: 276 seconds)
+2013-03-14 12:15:41	-->	Thra11 (~thrall@87.114.206.209) has joined #haskell
+2013-03-14 12:15:56	absence	shachaf: yes
+2013-03-14 12:16:13	shachaf	So I'm not sure what you mean by "lazy bytestring".
+2013-03-14 12:16:14	fryguybob	byorgey: What if you live in New Zealand with your uncle?
+2013-03-14 12:16:15	-->	edsko (~edsko@79.97.126.24) has joined #haskell
+2013-03-14 12:16:21	-->	taterbase (~taterbase@63.226.99.118) has joined #haskell
+2013-03-14 12:17:07	<--	tibbe (tibbe@nat/google/x-pfezbcxvafjzbmjl) has quit (Quit: tibbe)
+2013-03-14 12:17:34	absence	shachaf: just that :) the idea was that Control.Proxy will trigger the producer, causing a strict read, whenever the lazy bytestring is out of data
+2013-03-14 12:18:13	shachaf	So -- you want lazy I/O?
+2013-03-14 12:18:20	fryguybob	I suppose that's when you have {-# RULES "pack/unpack" ... #-}
+2013-03-14 12:18:32	shachaf	I must be misunderstanding.
+2013-03-14 12:19:05	-->	basdirks (~basdirks@5352A1E5.cm-6-3c.dynamic.ziggo.nl) has joined #haskell
+2013-03-14 12:19:08	absence	shachaf: "lazy io" without the unsafePerformIO stuff
+2013-03-14 12:19:35	fryguybob	"trigger ... causing a strict read..." => unsafePerformIO
+2013-03-14 12:20:14	absence	fryguybob: except it's not unsafe in this case, since the producer is in the IO monad and has the handle
+2013-03-14 12:20:15	-->	pmade (~pmade@c-67-172-151-101.hsd1.co.comcast.net) has joined #haskell
+2013-03-14 12:20:31	srhb	I'm not sure unsafe means what you think it means
+2013-03-14 12:20:40	mauke	absence: how is that not unsafe?
+2013-03-14 12:20:43	-->	quchen (~david@p54AA2466.dip.t-dialin.net) has joined #haskell
+2013-03-14 12:20:48	<--	rsuniev123 (~textual@212.140.174.166) has quit (Quit: Computer has gone to sleep.)
+2013-03-14 12:20:59	mauke	all possible "producers" are in the IO monad, otherwise unsafePerformIO foo wouldn't typecheck
+2013-03-14 12:21:14	absence	mauke: it doesn't perform IO outside the IO monad
+2013-03-14 12:21:18	-->	tommd (~tommd@pdx.galois.com) has joined #haskell
+2013-03-14 12:21:24	<--	Aune (~arne@teyla.lysator.liu.se) has quit (Remote host closed the connection)
+2013-03-14 12:21:28	mauke	yes, that's what unsafePerformIO does
+2013-03-14 12:21:48	absence	unsafePerformIO performs IO outside the IO monad right?
+2013-03-14 12:21:53	<--	Sculptor (~Sculptor@unaffiliated/sculptor) has quit (Read error: Connection reset by peer)
+2013-03-14 12:21:56	mauke	does it?
+2013-03-14 12:22:05	-->	Noldorin (~noldorin@unaffiliated/noldorin) has joined #haskell
+2013-03-14 12:22:06	 *	hackagebot binary-bits 0.3 - Bit parsing/writing on top of binary.  http://hackage.haskell.org/package/binary-bits-0.3 (LennartKolmodin)
+2013-03-14 12:22:06	absence	you can call it from pure code
+2013-03-14 12:22:12		[http://is.gd/6DtmW9]
+2013-03-14 12:22:13	mauke	yes
+2013-03-14 12:22:19	shachaf	I think you mean unsafeInterleaveIO, not unsafePerformIO.
+2013-03-14 12:22:26	mauke	that's what you're saying you want to do
+2013-03-14 12:22:37	absence	mauke: that's what i'm saying i DONT want :)

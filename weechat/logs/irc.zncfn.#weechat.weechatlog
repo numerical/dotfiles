@@ -137,3 +137,244 @@
 2013-03-13 23:31:11	<--	zer4tul (~zer4tul@unaffiliated/zer4tul) has quit (Quit: WeeChat 0.4.0)
 2013-03-13 23:31:55	--	alibaba is now known as sudokode
 2013-03-13 23:32:59	-->	zer4tul (~zer4tul@unaffiliated/zer4tul) has joined #weechat
+2013-03-14 11:02:50	-->	numeral (~numeral@198.23.228.15) has joined #weechat
+2013-03-14 11:02:50	--	Topic for #weechat is "http://weechat.org/ | Latest stable version: 0.4.0 | English support channel, *ONLY* about WeeChat software | Please read doc before asking! | Bug reports are welcome ONLY for latest stable or devel | Off-topic chan: #weechat-offtopic | Fingerprint for gpg key used to sign packages: A9AB 5AB7 78FA 5C35 22FD 0378 F82F 4B16 DEC4 08F8"
+2013-03-14 11:02:50	--	Topic set by FlashCode (~FlashCode@zeta.flashtux.org) on Sun, 20 Jan 2013 05:28:29
+2013-03-14 11:02:50	--	Nicks #weechat: [@ChanServ @FlashCode @kolter +weebot [bsx] \Harbinger\ _`_ _flow_ _grawity `nand` abeluck Ac-town adaptr Adran Aexoden ahuemer ainmosni aji Akranis alexandros_c architekt Archtivity arza asmodai aspiers assezpale astra05 atgeek AzziWeaver batrick Bio bizarro_1 blackspark bloony BluABK blueyed bolidz bolidz_ bpeak bps brainproxy Brando753 brenden1 bronsen Bruners BullShark burl_ ccxCZ cfh chaingun Chewtoy Chiku chimay chridal CissWit cmile codile coredump crater2150 crazedpsyc Dan39 daniel_-_ dankles darkstar DarthRamone Defaultti Deltafire derrida Dewr diffycat diniwed1 dkoby DNS dominikh Dominique DonAman Dopefish dorftrottel draco drbean dregin Drohne drubin DrZaius dubf EgS eightyeight else- ember314 emid erry Exio Exio4 f8l faen fayek felher felipe FestHest fire firebird fireglow FiXato flexd fours fracek frb frew Furai gardar gb gg7 Goatbert goraxe GoshaZa Gotisch grawity gtmanfred Guest59163 gui guntha gunthler gwash happy0 haste hggdh hlindset hokkaido hrubi Hydrazine_ ianj iElectric inhies j416 jacky jaset jayne jgeboski jiffe98 JimShoe jjacky jmreicha jrib jsec juhu_chapa jvolkman JyZyXEL jzelinskie k-man k1ngsqueak Kaare Kabaka Kagee KaiSforza kalpik kanyl kart0ffelsack kaze` kelnoky KenjiE20 kgb KindOne kingkong|here kirin` KiSM kkh kloeri klonkr kmic KokaKiwi koolfy Kovensky ksa Kunsi kunwon1 kurkale6ka lastebil leo_rockway linduxed linopolu1 LiuYan lluchs LordOfLA LostInInaka loswillios lrvick Luceo Lumpio- m4v mahlon majoh mama Matrixiumn mave_ Mayi meingtsla meskarune mh0 mickkk miniCruzer mixi Mkaysi mnemonicj moju monty moyam01 MrElendig Mrokii mrtux msx mumixam MurkyBanana musl mva myme mythmon necronian neferty Nei nemesit|znc nesthib newt nils_2 nioncode nisshh njoka5 nokogiri numeral nutate nyuszika7h Obfuscate obiwahn Occi oddmunds ole ormaaj Paddez1 panaggio PaulW2U pbos peccu1 perun_ pfsmorigo PhilK phlux phryk Pixelz pmo pragma- prime Proxypoke ptitlouis pythonsnake quizzlo R1cochet r4 random_cat Rasi Ratler rbecker redblue resixian rking Rockj roidal ruediger ruuk1 rvalles s_edrik sairakaS Sakarias sakkemo SAL9000 Scall se7en1 Sembei seschwar setkeh ShawnR__ shoerain sigterm Silex Simon- sitaktif sjl sjohnson skynet2000 sleo slystone Soft soh335 solez Soliton soltys sontek spaceone spaceplu- Sparkler sphinx ssedano Starvirus staticsafe SteelHawk steeve stfn Sthebig stiell StingRay` Stravy sub0 sudokode SuperTux88 sw4- swimmer talisein Tanami tchan tdy_ techlife tehlarsie tg the-kenny TheBrayn ThePink thykka tigrmesh Timbo Tit0_ tLap tlonim tmr tomaw tomboy64 tomoe_mami TomServo torque Trashlord trn Twey ubergeek42 Ulrar unixcat user utanapischti v0n v3gard vacum vehk velcroshooz Vinylourson vith vmlinuz Voldenet Voronoi WakiMiko Watabou wayneeseguin wd webvictim weissbier while1eq1 Whoop WillyKaze wysiwtf xorp xpt xt xy yano yardena yeled yoklar Yorokobi yosafbridge Ytserman zamba zeltak zu_ Zucca]
+2013-03-14 11:02:50	--	Channel #weechat: 379 nicks (3 ops, 0 halfops, 1 voice, 375 normals)
+2013-03-14 11:02:50	***	Buffer Playback...
+2013-03-14 11:02:50	gitsu-sa	[14:27:26] ?
+2013-03-14 11:02:50	s3xym0nk3y	[14:27:30] Ok then it should work 
+2013-03-14 11:02:50	gitsu-sa	[14:27:33] Kagee: thanks
+2013-03-14 11:02:50	inhies	[15:58:33] any takers on explaining how correction_autocompletion.py works?
+2013-03-14 11:02:50	gtmanfred	[17:12:38] what was the plugin to change a nicks color?
+2013-03-14 11:02:50	Dan39	[17:12:50] colorize?
+2013-03-14 11:02:50	gtmanfred	[17:13:19] colorize_nicks.py colorizes the nicks in messages
+2013-03-14 11:02:50	Dan39	[17:13:30] o
+2013-03-14 11:02:50	user	[17:16:49] Is there a way to install ALL the scripts?
+2013-03-14 11:02:50	xt	[17:17:21] don't do that
+2013-03-14 11:02:50	user	[17:18:01] But there is so many of them. 
+2013-03-14 11:02:50	@FlashCode	[17:18:43] your weechat may explode :D
+2013-03-14 11:02:50	inhies	[17:19:14] do it for science!
+2013-03-14 11:02:50	@FlashCode	[17:19:54] user: if you really want to do that, download that: http://weechat.org/files/src/weechat-scripts.tar.gz
+2013-03-14 11:02:50	@FlashCode	[17:20:07] and unpack scripts in appropriate directories (~/.weechat/<language>/)
+2013-03-14 11:02:50	stfn	[17:20:45] the script plugin needs an "install all" feature. :>
+2013-03-14 11:02:50	dominikh	[17:21:35] let's call it /fuckupmyweechat :D
+2013-03-14 11:02:50	user	[17:23:07] weechat autologs?
+2013-03-14 11:02:50	seschwar	[17:24:13] gtmanfred: weechat doesn't need a script to do that
+2013-03-14 11:02:50	seschwar	[17:24:17] just set weechat.color.chat_nick_colors
+2013-03-14 11:02:50	seschwar	[17:25:33] and irc.look.color_nicks_in_*
+2013-03-14 11:02:50	j416	[17:38:40] hey
+2013-03-14 11:02:50	j416	[17:38:45] I'm allergic to trailing whitespace.
+2013-03-14 11:02:50	j416	[17:38:57] can weechat trim trailing whitespace from messages that I send?
+2013-03-14 11:02:50	TheBrayn	[17:39:13]    why?
+2013-03-14 11:02:50	j416	[17:39:52] I have no trouble with leading whitespace
+2013-03-14 11:02:50	j416	[17:40:13] oh I don't know why.. it's just a thing.
+2013-03-14 11:02:50	j416	[17:40:20] unnecessary byte wasted
+2013-03-14 11:02:50	j416	[17:40:23] ugly
+2013-03-14 11:02:50	dominikh	[17:40:28] ugly? nobody will see them
+2013-03-14 11:02:50	j416	[17:40:30] :D
+2013-03-14 11:02:50	j416	[17:40:34] I see them in my logs
+2013-03-14 11:02:50	j416	[17:40:37] :P
+2013-03-14 11:02:50	dominikh	[17:40:38] fun idea: don't type trailing whitespace :P
+2013-03-14 11:02:50	j416	[17:40:48] well it happens when I autocomplete a nick
+2013-03-14 11:02:50	dominikh	[17:40:49] or write a script.
+2013-03-14 11:02:50	dominikh	[17:41:08] you shouldn't autocomplete a nick and not include any message :P
+2013-03-14 11:02:50	j416	[17:41:17] I mean in the end of a message
+2013-03-14 11:02:50	j416	[17:41:21] I mean in the end of a message, dominikh 
+2013-03-14 11:02:50	dominikh	[17:41:43] oh well, hit backspace :P
+2013-03-14 11:02:50	dominikh	[17:42:00] weechat supports ruby, write a script ;)
+2013-03-14 11:02:50	j416	[17:42:01] hah, it does distinguish between tab-completed nick in the beginning of the line, and middle or end
+2013-03-14 11:02:50	j416	[17:42:13] maybe middle or end could just _not_ include that trailing space
+2013-03-14 11:02:50	j416	[17:42:17] I don't get the point of it
+2013-03-14 11:02:50	dominikh	[17:42:32] if it didn't include one in the middle, that'd be annoying. and when typing a message, there's no end yet
+2013-03-14 11:02:50	j416	[17:42:42] it's a reflex for me to type a space anyway if I'm continuing the sentence, so i end up with double space that I have to edit out
+2013-03-14 11:02:50	dominikh	[17:43:00] but TAB is a form of space, so typing a second space is technically redundant
+2013-03-14 11:02:50	j416	[17:43:10] but you told me not to use tab
+2013-03-14 11:02:50	j416	[17:43:15] you also told me to use double space
+2013-03-14 11:02:50	j416	[17:43:18] now I am confused.
+2013-03-14 11:02:50	dominikh	[17:43:21] I did not.
+2013-03-14 11:02:50	JimShoe	[17:43:22] How may times do you end a sentence with a user-name j416 
+2013-03-14 11:02:50	j416	[17:43:36] not _that_ often, JimShoe
+2013-03-14 11:02:50	mave_	[17:43:37] what's up JimShoe ?
+2013-03-14 11:02:50	j416	[17:43:41] loll
+2013-03-14 11:02:50	mave_	[17:43:43] see the point? :P
+2013-03-14 11:02:50	dominikh	[17:43:56] in some languages, a space before the ? is valid, isn't it? :P
+2013-03-14 11:02:50	JimShoe	[17:44:02] Not really, I can still parse it.
+2013-03-14 11:02:50	mave_	[17:44:02] nope
+2013-03-14 11:02:50	j416	[17:44:08] come on we're not french
+2013-03-14 11:02:50	mave_	[17:44:12] hahaha
+2013-03-14 11:02:50	mave_	[17:44:22] Sacre bleu!
+2013-03-14 11:02:50	j416	[17:44:30] hah
+2013-03-14 11:02:50	dominikh	[17:44:33] cordon bleu
+2013-03-14 11:02:50	mave_	[17:44:37] :D
+2013-03-14 11:02:50	j416	[17:44:43] or as the hindu french say: mes dieux!
+2013-03-14 11:02:50	j416	[17:46:53] still though. I vote for no space after non-leading tab-completed nickname.
+2013-03-14 11:02:50	dominikh	[17:47:09] and I vote for not breaking the habits of thousands of existing user for the newcomer
+2013-03-14 11:02:50	dominikh	[17:47:20] *users
+2013-03-14 11:02:50	j416	[17:47:40] bah just make it a setting then :P
+2013-03-14 11:02:50	j416	[17:47:47] (and default it to no space)
+2013-03-14 11:02:50	dominikh	[17:47:48] just write that script already ;)
+2013-03-14 11:02:50	j416	[17:47:57] some day I will.
+2013-03-14 11:02:50	dominikh	[17:47:57] trim_trailing_whitespace.rb
+2013-03-14 11:02:50	j416	[17:48:00] lol
+2013-03-14 11:02:50	dominikh	[17:48:07] will be about 10 lines of code
+2013-03-14 11:02:50	j416	[17:48:11] it's hilarious.
+2013-03-14 11:02:50	j416	[17:48:15] I just might do it.
+2013-03-14 11:02:50	user	[17:48:53] j416: Dont, then I cant install all the scripts without writing a script that adds the whitespace your script removes
+2013-03-14 11:02:50	j416	[17:49:19] user: haha what
+2013-03-14 11:02:50	user	[17:49:46] j416: I dont want the effort of deciding what scripts to add
+2013-03-14 11:02:50	user	[17:49:51] So I thougth Id add all of them
+2013-03-14 11:02:50	j416	[17:50:06] ...you installed all scripts? o_O
+2013-03-14 11:02:50	mave_	[17:50:25] lol
+2013-03-14 11:02:50	user	[17:50:41] j416: not yet, it proved to be an effort
+2013-03-14 11:02:50	 *	j416 [17:50:52] wouldn't want user as his sysadmin lol
+2013-03-14 11:02:50	user	[17:50:54] How do I shortcut w to start weechat-curses?
+2013-03-14 11:02:50	moju	[17:51:09] Learn how to use *nix
+2013-03-14 11:02:50	dominikh	[17:51:22] and learn that w is already in use.
+2013-03-14 11:02:50	mave_	[17:51:35] in use by w
+2013-03-14 11:02:50	mave_	[17:51:37] :+
+2013-03-14 11:02:50	user	[17:51:37] j416: Neither would I, I get drunk and wake up with /var/www moved to /tmp and /tmp as document root
+2013-03-14 11:02:50	j416	[17:51:50] "hey I didn't know what stuff you needed so I just downloaded and installed everything I could find on the interwebs yesterday, just in case"
+2013-03-14 11:02:50	dominikh	[17:52:15] j416: that's how my first ever linux install (when I was 14) went. SUSE, selected *all* the packages
+2013-03-14 11:02:50	j416	[17:52:20] lol
+2013-03-14 11:02:50	dominikh	[17:52:24] it was a bad idea.
+2013-03-14 11:02:50	j416	[17:52:28] :D
+2013-03-14 11:02:50	dominikh	[17:52:42] still was faster than a normal Windows installation of that time, though :D
+2013-03-14 11:02:50	j416	[17:52:47] hahaha
+2013-03-14 11:02:50	moju	[17:52:49] lol
+2013-03-14 11:02:50	***	Playback Complete.
+2013-03-14 11:02:55		[http://is.gd/hW2lS9]
+2013-03-14 11:03:25	--	Mode #weechat [+nt]
+2013-03-14 11:03:25	--	Channel created on Sun, 26 Nov 2006 01:42:51
+2013-03-14 11:06:36	<--	wd (~wd@85.159.32.25) has quit (Quit: WeeChat 0.3.9.2)
+2013-03-14 11:07:36	<--	v0n (~vivien@207.96.182.162) has quit (Ping timeout: 260 seconds)
+2013-03-14 11:08:58	<--	vehk (~vehk@unaffiliated/vehk) has quit (Ping timeout: 240 seconds)
+2013-03-14 11:09:27	user	can I make weechat look like irssi?
+2013-03-14 11:14:09	<--	Stravy (~Stravy@ks351299.kimsufi.com) has quit (Read error: Operation timed out)
+2013-03-14 11:14:09	<--	guntha (~guntha@unaffiliated/guntha) has quit (Read error: Operation timed out)
+2013-03-14 11:14:12	<--	Tit0_ (~tito@ethylix.be) has quit (Read error: Operation timed out)
+2013-03-14 11:14:42	<--	else- (~else@towelie.iodev.org) has quit (Read error: Operation timed out)
+2013-03-14 11:14:47	-->	Stravy (~Stravy@ks351299.kimsufi.com) has joined #weechat
+2013-03-14 11:14:55	-->	Tit0_ (~tito@ethylix.be) has joined #weechat
+2013-03-14 11:15:48	-->	else- (~else@towelie.iodev.org) has joined #weechat
+2013-03-14 11:16:08	-->	guntha (~guntha@unaffiliated/guntha) has joined #weechat
+2013-03-14 11:18:06	-->	Pest (~Pest@178.70.188.49) has joined #weechat
+2013-03-14 11:19:58	-->	zer4tul (~zer4tul@unaffiliated/zer4tul) has joined #weechat
+2013-03-14 11:20:20	Nei	weechat doesnt support themes
+2013-03-14 11:20:31	user	daw
+2013-03-14 11:20:47	user	Without the nicklist, the aligning, and the colours it would be perfect
+2013-03-14 11:20:58	Nei	there are a lot of settings to toggle
+2013-03-14 11:21:09	Nei	you can probably create something similar
+2013-03-14 11:21:19	Nei	to the default irssi look
+2013-03-14 11:21:24	user	How do I scroll nicklist?
+2013-03-14 11:21:33	Nei	!keys
+2013-03-14 11:21:33	+weebot	WeeChat default keys: http://weechat.org/files/doc/devel/weechat_user.en.html#key_bindings
+2013-03-14 11:21:36	Nei	read that ^^
+2013-03-14 11:21:38		[http://is.gd/1XxPwq]
+2013-03-14 11:21:57	Nei	you can also use mouse if enabled
+2013-03-14 11:22:07	user	I tried, didnt work
+2013-03-14 11:22:10	user	mouse
+2013-03-14 11:22:34	Nei	did you type /mouse enable 
+2013-03-14 11:23:39	user	no
+2013-03-14 11:24:19	mave_	lol
+2013-03-14 11:24:32	user	Doh, I opened like 4 pms before itd let me scroll
+2013-03-14 11:25:08	user	Can I change a users colour? 
+2013-03-14 11:25:27	j416	user: yes.
+2013-03-14 11:25:42	user	how?
+2013-03-14 11:25:49	j416	user: weechat.color.chat_nick_colors
+2013-03-14 11:26:07	j416	user: you can turn off colours altogether if you prefer.
+2013-03-14 11:26:19	Nei	if you want to change a specific user, /script install quick_force_color.py
+2013-03-14 11:26:31	user	j416: But if I want you to be yellow, because I feel you have yellow personality.. oh Nei told me how
+2013-03-14 11:26:38	j416	Nei: hm, that can be done without a script, no?
+2013-03-14 11:26:41	-->	nazty (n@70.44.5.252.res-cmts.bus.ptd.net) has joined #weechat
+2013-03-14 11:26:57	j416	user: you should be able to say something like "j416:yellow" in that config
+2013-03-14 11:27:26	user	Now I can't copy text anymore
+2013-03-14 11:27:48	Nei	probably because you enabled the mouse
+2013-03-14 11:27:50	user	it says script isnt a command
+2013-03-14 11:28:04	j416	ah, irc.look.nick_color_force it is
+2013-03-14 11:28:14	Nei	then you need to install new version of weechat, yours is probably very outdated
+2013-03-14 11:28:24	Nei	you can show us your version with /v -o
+2013-03-14 11:28:29	user	WeeChat 0.3.8 [compiled on Jun  4 2012 18:37:58]
+2013-03-14 11:28:37	j416	cool it worked
+2013-03-14 11:28:40	Nei	looke it's 2013 now
+2013-03-14 11:28:44	j416	Option changed: irc.look.nick_color_force = "user:yellow"  (default: "")
+2013-03-14 11:28:47	j416	Option changed: irc.look.nick_color_force = "user:yellow"  (default: "")
+2013-03-14 11:28:49	j416	oops sorry for double
+2013-03-14 11:28:56	j416	now you are yellow, user :)
+2013-03-14 11:28:58	Nei	current version is 0.4.0 and it also has some important security issues fixed
+2013-03-14 11:29:23	j416	WeeChat 0.4.0 [compiled on Mar  3 2013 11:48:02]
+2013-03-14 11:29:25	j416	ooh.
+2013-03-14 11:29:40	user	oh
+2013-03-14 11:29:46	user	So I have to compile?
+2013-03-14 11:30:00	Nei	you can check if there is a package for your linux distro...
+2013-03-14 11:30:37	user	Ubuntu
+2013-03-14 11:30:48	<--	abeluck (~abeluck@gateway/tor-sasl/abeluck) has quit (Ping timeout: 276 seconds)
+2013-03-14 11:30:54	user	Nei: say something
+2013-03-14 11:31:20	Nei	you can go to http://www.weechat.org/download/ and there you will find link to "ppa" for ubuntu
+2013-03-14 11:31:26		[http://is.gd/xLbJ1Q]
+2013-03-14 11:31:30	user	dammit, you are still blue
+2013-03-14 11:31:46	Nei	too bad
+2013-03-14 11:31:51	user	hex didnt work either
+2013-03-14 11:32:07	j416	stop complaining user you are magenta a.k.a. girl's colour
+2013-03-14 11:32:21	j416	:P
+2013-03-14 11:32:27	faen	!colors
+2013-03-14 11:32:27	+weebot	256 colors: http://weechat.org/files/doc/devel/weechat_user.en.html#colors
+2013-03-14 11:32:33		[http://is.gd/2NXSud]
+2013-03-14 11:32:43	user	16:29:12     weechat     | Option changed: irc.look.nick_color_force = "= "nei:yellow""
+2013-03-14 11:32:45	user	16:30:39     weechat     | Option changed: irc.look.nick_color_force = "= "Nei:yellow""
+2013-03-14 11:32:47	user	16:31:33     weechat     | Option changed: irc.look.nick_color_force = "= "Nei:555""
+2013-03-14 11:33:15	Nei	it doesnt support hex, only the colours that are shown when you do weechat-curses -c on your terminal
+2013-03-14 11:33:31	faen	and you don't include the = when you /set
+2013-03-14 11:33:37	user	faen: daw, I guess I should look for a client with 257 colors
+2013-03-14 11:34:02	-->	abeluck (~abeluck@gateway/tor-sasl/abeluck) has joined #weechat
+2013-03-14 11:34:03	j416	lol my current terminal (putty) supports a whopping _eight_ colours
+2013-03-14 11:34:03	faen	you should mostly look at 3.9.1. Basic colors
+2013-03-14 11:34:56	faen	/set irc.look.nick_color_force "Nei:yellow"
+2013-03-14 11:35:17	j416	hm well 16 effectively since bold makes another colour
+2013-03-14 11:35:22	user	faen: I did that, but he didnt talk anymore
+2013-03-14 11:35:45	Nei	did you remove the = that you had in there?
+2013-03-14 11:35:52	user	Also what does the 5(6,12) the numbers in the () mean?
+2013-03-14 11:35:58	user	Nei: yes, now you are yellow
+2013-03-14 11:36:06	Nei	at least something
+2013-03-14 11:36:25	Nei	they mean numeber of unread important and unimportant messages or something like that
+2013-03-14 11:36:34	j416	hm what is the setting to turn colour output off again? I cannot seem to find it
+2013-03-14 11:36:37	user	How do they know if they are important?
+2013-03-14 11:37:15	faen	messages vs joins/parts
+2013-03-14 11:37:21	faen	or highlights vs messages
+2013-03-14 11:37:41	<--	dkoby (~dmitry@115.106.188.90.etth.tomsknet.ru) has quit (Quit: WeeChat 0.4.0)
+2013-03-14 11:40:46	chridal	faen: You must be norwegian?
+2013-03-14 11:41:23	faen	chridal: I'm afraid I'm not :(
+2013-03-14 11:41:28	faen	I just like the word :>
+2013-03-14 11:41:54	chridal	Ah, so you do know what it means :D
+2013-03-14 11:44:55	-->	v0n (~vivien@207.96.182.162) has joined #weechat
+2013-03-14 11:45:13	--	rbecker is now known as RBecker
+2013-03-14 11:46:09	-->	bananagram (~bot@pool-108-56-161-155.washdc.fios.verizon.net) has joined #weechat
+2013-03-14 11:46:26	j416	does 'faen' mean the devil?
+2013-03-14 11:47:53	Kagee	j416: "fuck" in norwegian :P
+2013-03-14 11:48:23	j416	Kagee: are you norwegian?
+2013-03-14 11:48:54	 *	Kagee is a fullblood viking
+2013-03-14 11:49:02	<--	pfsmorigo (pfsmorigo@nat/ibm/x-gfzcrxgxkpyntcbc) has quit (Quit: Good morning, that's a nice tnetennba)
+2013-03-14 11:49:14	j416	ok :)
+2013-03-14 11:49:27	j416	so it is actually a verb meaning 'to have intercourse'?
+2013-03-14 11:49:32	Kagee	vell, no.
+2013-03-14 11:49:39	Kagee	it's a commons swereword.
+2013-03-14 11:49:44	j416	hence my question
+2013-03-14 11:50:07	j416	in Swedish we say 'fan', which means 'the devil', so I though perhaps it's the same thing
+2013-03-14 11:50:16	Kagee	j416: direct translation would be the devil/satan
+2013-03-14 11:50:20	j416	thanks :)
+2013-03-14 11:50:49	xt	j416: it does mean devil, literally, but noone uses it literally anymore. 
+2013-03-14 11:50:54	xt	Kagee probably just forgot that
+2013-03-14 11:51:08	j416	we use the word in expressions
+2013-03-14 11:51:10	j416	sometimes
+2013-03-14 11:51:29	j416	but the expressions themselves tend to be kind of be used as long swear words anyway
+2013-03-14 11:51:31	j416	heh
+2013-03-14 11:55:46	-->	pfsmorigo (pfsmorigo@nat/ibm/x-wucuwikrdilihler) has joined #weechat
+2013-03-14 12:06:14	<--	gwash (~gwash@41.46.191.122) has quit (Ping timeout: 252 seconds)
+2013-03-14 12:12:24	<--	Watabou (~Watabou@unaffiliated/watabou) has quit (Ping timeout: 276 seconds)
+2013-03-14 12:14:16	<--	thykka (~thykka@unaffiliated/thykka) has quit (Remote host closed the connection)
+2013-03-14 12:14:33	-->	thykka (~thykka@ip-static-94-242-209-196.as5577.net) has joined #weechat
+2013-03-14 12:20:34	-->	_Caleb_ (~Caleb@cpe-098-121-134-089.nc.res.rr.com) has joined #weechat
+2013-03-14 12:20:34	<--	_Caleb_ (~Caleb@cpe-098-121-134-089.nc.res.rr.com) has quit (Changing host)
+2013-03-14 12:20:34	-->	_Caleb_ (~Caleb@archlinux/op/caleb) has joined #weechat
+2013-03-14 12:20:39	-->	wd (~wd@wd.ebash.it) has joined #weechat

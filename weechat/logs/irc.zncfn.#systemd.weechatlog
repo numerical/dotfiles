@@ -119,3 +119,229 @@
 2013-03-13 23:23:17	<--	marvin2 (~marvin2@14-200-139-81.static.tpgi.com.au) has quit (Ping timeout: 255 seconds)
 2013-03-13 23:27:26	<--	dhaval (~dhaval@CPEbcc810004cde-CMbcc810004cdb.cpe.net.cable.rogers.com) has quit (Ping timeout: 272 seconds)
 2013-03-13 23:28:06	<--	Md (~md@freenode/staff/md) has quit (Quit: 私のホバークラフト は鰻が一杯です。)
+2013-03-14 11:02:49	-->	numeral (~numeral@198.23.228.15) has joined #systemd
+2013-03-14 11:02:49	--	Topic for #systemd is "Version 198 released! || http://www.freedesktop.org/software/systemd/systemd-198.tar.xz || http://www.freedesktop.org/wiki/Software/systemd || https://www.youtube.com/watch?v=9UnEV9SPuw8"
+2013-03-14 11:02:49	--	Topic set by poettering (~poetterin@tango.0pointer.de) on Thu, 07 Mar 2013 18:04:25
+2013-03-14 11:02:49	--	Nicks #systemd: [_fritz_ _grawity Adys aep akl Alam_Squeeze alexqwesa algernon alub alwaysontherun- alxchk AmandaC amessina Apetrini araujo armands_ arnej arsdmthe auke ausbin avar Bertl bigon bizhanMona bjoe2k4 Black_Prince blami blueness bnf_ BogdanR Boohbah bouleetbil boxofrox breiti brian Bruners c0rnel CalimeroTeknik canta cbmuser chengwei_ Choris cinelli CipherWizard cmr coling contradictioned_ dagger danmackay davidstrauss demarchi_ denised derRichard Diaoul DinCahill dlb76 dmach dougsland dvdhrm dwalsh eboettcher ecloud ekodan eliasp else- elxa elzapp erbo eternaleye Exio fabiand FabianS faen falconindy fatal fcrozat fdo-vcs felixonmars Firstyear floppym flynd freeedrich| gander gaveen Genolo gnubien grawity groundnuty gtmanfred gwmngilfen hachque_ hagebake haraldh heftig heinrich5991 hermier hgb hi117 holtmann honschu hussam Hwkiller Hydrazine_ ianni Ingmar JackWinter1 Jasper Javafant jave jds2001 jelly1 jenkins-systemd jjardon joemiller jonmasters joshc jpetersen JPohlman1 jreznik juergbi k-s[AWAY] KaiSforza Kamilion kangkai kay Kdecherf Ke kelvan kerolasa keruspe kklimonda_ kmacleod koen koniiiik kzak larsks lbt Lektron lnykryn loswillios mamikk manio marktheunissen marvin2 master_of_master mbiebl mbriza mcfrisk mckoan Md mesx michich mickael9 microcode ming_lei Mithrandir mixi MK_FG moben moltendorf mrec_ msekleta msx mue_ muep_ myrde mz|` nakamuray ndim neil niska` Nisstyre noclaf nokogiri notting nphilipp npouillard nucleo numeral nyuszika7h oahong Obeliks ocharles ohsix otavio ovitters PaulePanter pdq phako Philantrop philips pknirsch pocek_ poettering prajnoha prometheanfire ptr_uzl quant r3pek Ratler rektide riddle Riiiis rom1504_ Rondom rworkman Sage_ saltsa_ samkottler samlt sassmann seblu SeoZ seschwar shawnjgoff shoragan slovdahl smartin sofar speakman Svedrin sztanpet tamas theinric thestinger thomasg thorsten` threadlock thrice tibbs tigerfoot timi timtaler- tpepper tridactyla trn tumppu uau umuttl vmlinuz vudentz` walters wdouglas WilliamH wishi woky wwoods ximion xrogaan xtraeme yac zbyszek zdzichuBG ZekeS zeroedout zorael]
+2013-03-14 11:02:49	--	Channel #systemd: 256 nicks (0 ops, 0 halfops, 0 voices, 256 normals)
+2013-03-14 11:02:49	***	Buffer Playback...
+2013-03-14 11:02:49	haraldh	[15:25:43] x-initrd-root.mount ??
+2013-03-14 11:02:49	kay	[15:25:51] sysroot is where you mount the stuff inside the initrd?
+2013-03-14 11:02:49	haraldh	[15:25:56] yes
+2013-03-14 11:02:49	haraldh	[15:26:12]  /sysroot is pretty much hardcoded now
+2013-03-14 11:02:49	haraldh	[15:26:14] in systemd
+2013-03-14 11:02:49	kay	[15:26:41] root-fs.target is handled only in the initrd, or does it matter in the real root in any way?
+2013-03-14 11:02:49	haraldh	[15:26:51] no it does not
+2013-03-14 11:02:49	haraldh	[15:27:24] I think, right now, we are free to choose another name, if that does not fit
+2013-03-14 11:02:49	 *	kzak [15:38:30] reboots to test /boot = ESP
+2013-03-14 11:02:49	grawity	[15:43:32] kay: so I'm still planning to install a second distro on my laptop. If I used the recommended "/boot = ESP" scheme, what should I do to avoid potential file name conflicts? (It's tricky to know in advance how any distro names its kernels/initrds.)
+2013-03-14 11:02:49	kay	[15:45:38] grawity: http://www.freedesktop.org/software/systemd/man/kernel-install.html
+2013-03-14 11:02:49	muep_	[15:45:52] what is a "/boot = ESP" ?
+2013-03-14 11:02:49	grawity	[15:46:55] yeah, but I'm talking about currently existing distros, and current packages which don't use kernel-install yet :(
+2013-03-14 11:02:49	thrice	[15:47:12] all you need is arch, grawity !
+2013-03-14 11:02:49	kay	[15:47:33] grawity: they usually have distro stuff in the name? vmlinuz-3.9.0-0.rc2.git0.3.fc19.x86_64 like fc19 here?
+2013-03-14 11:02:49	kay	[15:49:32] muep_: means: mount the "efi system partition" directly at /boot 
+2013-03-14 11:02:49	kay	[15:50:35] muep_: and use efi and the kernel itself as the boot loader, and no other filesystem in between -- if that fits your setup ...
+2013-03-14 11:02:49	kay	[15:50:59] muep_: it's the setup gummiboot supports
+2013-03-14 11:02:49	muep_	[15:51:50] kay: thanks
+2013-03-14 11:02:49	umuttl	[15:52:24] I would like to create a patch to configure TTYPath= in debug-shell.service with ./configure. I was wondering if it would be accepted. 
+2013-03-14 11:02:49	grawity	[15:52:25] if I could tell that in advance, sure. I guess Ubuntu does that too. Arch just calls it "vmlinuz-linux", though.
+2013-03-14 11:02:49	kay	[15:52:51] grawity: looks like this here: http://fpaste.org/Ko3Z/
+2013-03-14 11:02:49	umuttl	[15:53:37] I am aware of the new way of overriding services with service.d/.conf but I believe having a custom TTYPath= for embedded system is more of a general required customization
+2013-03-14 11:02:49	grawity	[15:56:32] it's like this http://sprunge.us/fcEW here.
+2013-03-14 11:02:49	grawity	[15:57:19] I guess I'm just trying to express disappointment at support for existing separate-ESP systems being refused
+2013-03-14 11:02:49	grawity	[16:15:00] (as in, loss of functionality for no practical gain; it's not even broken in the way that a separate /usr would be)
+2013-03-14 11:02:49	kay	[16:19:20] grawity: your layout does not separate boot from ESP, you just mount the all-in-the-esp partition below an almost needless other filesystem :)
+2013-03-14 11:02:49	kay	[16:19:40] grawity: what "functionality" does that provide?
+2013-03-14 11:02:49	 *	thrice [16:20:18] isn't clever enough to understand all of the ESP stuff, to change his laptop from BIOS
+2013-03-14 11:02:49	Ke	[16:21:41] it's just a partition with a special identifier
+2013-03-14 11:02:49	Ke	[16:22:02] afaik
+2013-03-14 11:02:49	Ke	[16:22:32] C12A7328-F81F-11D2-BA4B-00A0C93EC93B
+2013-03-14 11:02:49	grawity	[16:22:56] kay: a guarantee that I can safely install other distros :D -- yes, I'd really like to have just a single partition there, and will probably merge them sometime when 3.9 is out, but all current distros assume they have full control over /boot :( so giving each a separate /boot is cheaper than worrying about a shared one
+2013-03-14 11:02:49	grawity	[16:23:56] although on the second thought, my plans to dualboot it go back to 2011, so I might as well just merge them now
+2013-03-14 11:02:49	kay	[16:24:05] grawity: sure, but n times /boot on a disk will not solve the problem how a new installer should find and sort out the existing mess on disk :)
+2013-03-14 11:02:49	kay	[16:24:43] grawity: all that will only be useful if we can agree on some scheme we use in the future, and we need to start somewhere ...
+2013-03-14 11:02:49	mbiebl	[16:29:12] kay: if I want to bind a service to a network interface I use an instantiated service
+2013-03-14 11:02:49	mbiebl	[16:29:27] where eth0 is passed as template name
+2013-03-14 11:02:49	mbiebl	[16:29:37] is there a way to get the correct device for BindTo?
+2013-03-14 11:02:49	grawity	[16:30:26] BindsTo=sys-subsystem-net-devices-%i.device
+2013-03-14 11:02:49	mbiebl	[16:30:51] grawity: thanks, will try that
+2013-03-14 11:02:49	felixonmars	[16:35:41] hi all, i'd like to ask a question about snippets introduced in 198
+2013-03-14 11:02:49	felixonmars	[16:36:03] it says the lines in snippets will possibly extending or overriding original settings, but when I added an ExecStart line under [Service] for rtkit-daemon.service (which of course has one ExecStart already), im getting "rtkit-daemon.service has more than one ExecStart setting, which is only allowed for Type=oneshot services. Refusing."
+2013-03-14 11:02:49	grawity	[16:37:14] some settings can have multiple values, and these are just appended; AFAIK there's no syntax for overriding existing values yet
+2013-03-14 11:02:49	felixonmars	[16:37:43] grawity: ohh, thanks... so i still have to use the old way - copy to /etc and modify :P
+2013-03-14 11:02:49	muep_	[16:49:41] grawity: wasn'
+2013-03-14 11:02:49	muep_	[16:49:44] argh
+2013-03-14 11:02:49	muep_	[16:49:54] wasn't there supposed to be a way like ExecStart=
+2013-03-14 11:02:49	muep_	[16:50:07] i.e. setting first to empty and then to the actual values
+2013-03-14 11:02:49	grawity	[16:52:37] that was just one of the suggested syntaxes, IIRC
+2013-03-14 11:02:49	 *	grawity [16:52:51] likes ".unset ExecStart", personally
+2013-03-14 11:02:49	felixonmars	[17:07:07] it seems working
+2013-03-14 11:02:49	felixonmars	[17:07:50] muep_: thanks
+2013-03-14 11:02:49	muep_	[17:08:35] felixonmars: nice to hear that it worked :-)
+2013-03-14 11:02:49	larsks	[17:20:46] Ooo, that is a nifty feature (overrriding stock config via snippets).
+2013-03-14 11:02:49	larsks	[17:20:57] I need to pay more attention to release announcements.
+2013-03-14 11:02:49	felixonmars	[17:22:59] I used it once when overriding an option that not present in original unit
+2013-03-14 11:02:49	felixonmars	[17:23:11] and now i know how to override others :P
+2013-03-14 11:02:49	c0rnel	[17:27:04] how do i find out in which order targets are reached when system starts?
+2013-03-14 11:02:49	haraldh	[17:27:56] c0rnel, 
+2013-03-14 11:02:49	haraldh	[17:27:58] $ systemctl list-dependencies default.target
+2013-03-14 11:02:49	c0rnel	[17:28:11] haraldh, thank you very much
+2013-03-14 11:02:49	 *	c0rnel [17:28:28] should've chacked faq and tips* first
+2013-03-14 11:02:49	c0rnel	[17:29:39] v43 doesn't even have this option :(
+2013-03-14 11:02:49	zdzichuBG	[17:31:43] v198 has
+2013-03-14 11:02:49	zdzichuBG	[17:31:53] v43 is ancient history
+2013-03-14 11:02:49	larsks	[17:32:59] And v44 is what's in F17.  I sure wish Fedora would provide systemd updates.
+2013-03-14 11:02:49	larsks	[17:33:13] Time to go build my own 198 package...
+2013-03-14 11:02:49	zdzichuBG	[17:33:48] f17 is released, receives bugfixes only
+2013-03-14 11:02:49	zdzichuBG	[17:33:58] for 4-5 months more
+2013-03-14 11:02:49	muep_	[17:34:23] F18 is already available for people who want newer versions of things
+2013-03-14 11:02:49	larsks	[17:34:42] Yeah, and there are bugs in systemd v44 :).
+2013-03-14 11:02:49	larsks	[17:34:51] It's also not clear that F18 is going to get systemd updates, either.
+2013-03-14 11:02:49	larsks	[17:35:04] They're on 197 right now, and I don't know if there are plans to update past that.
+2013-03-14 11:02:49	muep_	[17:35:29] would seem unlikely that it'd get any further feature updates
+2013-03-14 11:02:49	larsks	[17:35:31] Other than a newer systemd, F18 doesn't really seem like a compelling upgrade.
+2013-03-14 11:02:49	zdzichuBG	[17:35:32] i wouldn't count on it
+2013-03-14 11:02:49	zdzichuBG	[17:35:38] f19 is on 198
+2013-03-14 11:02:49	zdzichuBG	[17:35:49] f20/rawhide too, fwiw
+2013-03-14 11:02:49	muep_	[17:35:59] so far, systemd mostly has not been receiving feature updates in fedora
+2013-03-14 11:02:49	muep_	[17:36:27] just some backported bugfixes for important issues, like most of the other core packages
+2013-03-14 11:02:49	larsks	[17:36:28] zdzichuBG: Yup.  I guess my contention is that if they're going to adopt something moving as rapidly as systemd they should either commit to integrate new versions or just drop it and wait for it to stabilize.
+2013-03-14 11:02:49	muep_	[17:36:43] the kernel in fedora is an interesting exception to this
+2013-03-14 11:02:49	larsks	[17:36:59] ...but obviously my opinion in this isn't particularly relevant.
+2013-03-14 11:02:49	fcrozat	[17:37:06] coling: quick question. How do you cope with ACL on /dev/nvidia* ?
+2013-03-14 11:02:49	muep_	[17:37:35] in my experience, the systemd versions shipped in fedora have worked nicely
+2013-03-14 11:02:49	zdzichuBG	[17:40:41] michich does a lot of work backporting bugfixes to relased fedora versions
+2013-03-14 11:02:49	muep_	[17:41:46] mostly the expectation in fedora is that user-visible changes in functionality are postponed to future fedora releases
+2013-03-14 11:02:49	c0rnel	[17:44:08] this should be tru for other things also, like kernel
+2013-03-14 11:02:49	muep_	[17:45:27] the kernel definitely does get upgraded to new major versions, and even quite aggressively
+2013-03-14 11:02:49	c0rnel	[17:45:56] yes#and even broking various things on the process :)
+2013-03-14 11:02:49	muep_	[17:46:11] at least introducing new bugs
+2013-03-14 11:02:49	muep_	[17:46:49] but at least new kernel releases are not supposed to change anything user-visible
+2013-03-14 11:02:49	c0rnel	[17:48:14] sorry for the change of topic, anyione knows why dbus.service is wanted by multi-user.target while there's no install section in the service file?
+2013-03-14 11:02:49	c0rnel	[17:48:21] let's say fedora 18
+2013-03-14 11:02:49	 *	c0rnel [17:48:43] thinks it should ask in #fedora
+2013-03-14 11:02:49	zdzichuBG	[17:51:42] c0rnel: dbus.service could be statically enable by package creating symlink
+2013-03-14 11:02:49	c0rnel	[17:52:36] zdzichuBG: sure, i know that. but i was wondering if it's a kind of protection ...
+2013-03-14 11:02:49	thorsten`	[17:53:50] what's the best way to configure a static wired network with systemd?
+2013-03-14 11:02:49	grawity	[17:55:08] use NetworkManager, connman, or your distro's own network management tools
+2013-03-14 11:02:49	***	Playback Complete.
+2013-03-14 11:02:54		[http://is.gd/gQYLvy]
+2013-03-14 11:03:17	--	Mode #systemd [+ns]
+2013-03-14 11:03:17	--	Channel created on Tue, 13 Apr 2010 20:58:39
+2013-03-14 11:08:21	<--	marvin2 (~marvin2@14-200-139-81.static.tpgi.com.au) has quit (Ping timeout: 245 seconds)
+2013-03-14 11:11:36	<--	AmandaC (amanda@regina.darkdna.net) has quit (Read error: Operation timed out)
+2013-03-14 11:13:20	<--	ianni (~ianni@dysis.math.uni-augsburg.de) has quit (Quit: Leaving)
+2013-03-14 11:13:54	-->	_ikke_ (~kevin@ikke.info) has joined #systemd
+2013-03-14 11:14:38	_ikke_	I'm having problems with the logging of postfix. Since I switched to systemd, I don't see any entries from postfix. Anyone got a clue what might going on?
+2013-03-14 11:14:42	<--	bnf_ (~ben@bnfr.net) has quit (Read error: Operation timed out)
+2013-03-14 11:14:42	<--	else- (~else@towelie.iodev.org) has quit (Read error: Operation timed out)
+2013-03-14 11:14:50	-->	bnf (~ben@bnfr.net) has joined #systemd
+2013-03-14 11:15:01	samlt	thorsten`, there is simple net.service to do just that
+2013-03-14 11:15:04	<--	prajnoha (prajnoha@nat/redhat/x-lgcqdeibbzhebrko) has quit (Quit: Leaving.)
+2013-03-14 11:15:51	<--	dmach (dmach@nat/redhat/x-vcmtgsmvilnoqaoy) has quit
+2013-03-14 11:15:52	-->	else- (~else@towelie.iodev.org) has joined #systemd
+2013-03-14 11:16:25	samlt	you might have to adapt it if you need ipv4&ipv6 at the same time. but it's prett straightforward
+2013-03-14 11:17:56	c0rnel	Process: 120 ExecStart=/usr/lib/systemd/systemd-journald (code=exited, status=1/FAILURE
+2013-03-14 11:18:06	c0rnel	what would be the reason for this?
+2013-03-14 11:18:15	c0rnel	kernel not having some capabilities?
+2013-03-14 11:18:16	grawity	c0rnel: check dmesg
+2013-03-14 11:18:20	c0rnel	ok
+2013-03-14 11:18:36	-->	mclasen_ (mclasen@nat/redhat/x-wmzcmemvytblyphi) has joined #systemd
+2013-03-14 11:19:52	coling	fcrozat, no idea... I don't own any nvidia... oh actually tell a lie, I do... I dunno tho'.
+2013-03-14 11:20:07	coling	fcrozat, I'll look on my media centre tonight.
+2013-03-14 11:20:08	<--	jreznik (jreznik@nat/redhat/x-fdoqmknhqdbhcazl) has quit (Quit: Konversation terminated!)
+2013-03-14 11:20:15	fcrozat	coling: I'm seeing some "/dev/nvidia*" stuff remaining in your systemd / udev package
+2013-03-14 11:20:19	fcrozat	probably leftover :)
+2013-03-14 11:20:31	coling	fcrozat, most likely!
+2013-03-14 11:20:57	c0rnel	grawity: dmesg | grep journal returns nothing
+2013-03-14 11:21:08	fcrozat	nvidia driver isn't allowed to use the device symbol, which means logind don't apply ACL on it :(
+2013-03-14 11:21:26	-->	jreznik (jreznik@nat/redhat/x-hieclogqvlqgndri) has joined #systemd
+2013-03-14 11:22:24	coling	fcrozat, Where do you see the nvidia stuff in the systemd pkg by the way? I can't see anything while grepping the SOURCES folder....
+2013-03-14 11:22:35	c0rnel	grawity: i was looking into the host :)
+2013-03-14 11:22:37	fcrozat	in the specfile :)
+2013-03-14 11:22:43	coling	d'oh
+2013-03-14 11:23:01	coling	fcrozat, hmm, no match their either...
+2013-03-14 11:23:09	fcrozat	oh, wait, it is the mandriva package 
+2013-03-14 11:23:10	coling	Can you send a link :)
+2013-03-14 11:23:13	fcrozat	damn completion
+2013-03-14 11:23:14	coling	fcrozat, ahh :)
+2013-03-14 11:23:30	<--	mclasen_ (mclasen@nat/redhat/x-wmzcmemvytblyphi) has quit (Ping timeout: 264 seconds)
+2013-03-14 11:23:48	fcrozat	coling: sorry for disturbing you :)
+2013-03-14 11:24:05	coling	fcrozat, you can by me a beer in a couple weeks to make up for it :D
+2013-03-14 11:24:15	coling	fcrozat, incidentally, entirely off topic.... can I PM?
+2013-03-14 11:24:15	fcrozat	hehe :)
+2013-03-14 11:24:23	fcrozat	coling: yep :)
+2013-03-14 11:29:09	c0rnel	grawity: at boot time, i only see: journal starts, started, failes
+2013-03-14 11:29:15	c0rnel	and this is repeated several times
+2013-03-14 11:29:34	c0rnel	i was wondering was exit code=1 means
+2013-03-14 11:29:40	 *	c0rnel has to find the source
+2013-03-14 11:35:10	_ikke_	Anyone knows why systemd / journal might nog log syslog calls (one system, "logger test" shows up in journalctl, other system it doesn't show up)
+2013-03-14 11:35:11	-->	marvin2 (~marvin2@14-200-139-81.static.tpgi.com.au) has joined #systemd
+2013-03-14 11:35:56	-->	drhouse123 (~drhouse12@2.134.150.171) has joined #systemd
+2013-03-14 11:35:59	-->	mclasen_ (mclasen@nat/redhat/x-fqsreofsfuthstyf) has joined #systemd
+2013-03-14 11:39:31	-->	Skaarj (~quassel@p57AD247D.dip0.t-ipconnect.de) has joined #systemd
+2013-03-14 11:40:51	sztanpet	versions differing, ratelimit being hit etc etc
+2013-03-14 11:41:37	-->	arjan (~arjan@134.134.139.76) has joined #systemd
+2013-03-14 11:42:09	_ikke_	sztanpet: No syslog messages at all seem to show up in the journal
+2013-03-14 11:42:49	sztanpet	so check the version, maybe its an ancient systemd where it doesnt work?
+2013-03-14 11:42:58	sztanpet	check the kernel version, maybe its too old?
+2013-03-14 11:43:22	_ikke_	systemd 197
+2013-03-14 11:43:54	_ikke_	kernal 3.2.5
+2013-03-14 11:43:57	_ikke_	kernel*
+2013-03-14 11:44:51	sztanpet	how are you viewing the logs
+2013-03-14 11:45:12	_ikke_	journalctl 
+2013-03-14 11:45:17	_ikke_	journalctl -n
+2013-03-14 11:45:19	sztanpet	nothing else?
+2013-03-14 11:45:25	<--	marvin2 (~marvin2@14-200-139-81.static.tpgi.com.au) has quit (Ping timeout: 245 seconds)
+2013-03-14 11:45:26	sztanpet	as root right
+2013-03-14 11:45:47	_ikke_	sztanpet: Yes, as root, though, the user is also part of the adm group
+2013-03-14 11:46:20	sztanpet	sure, but thats "broken" with 197
+2013-03-14 11:46:33	sztanpet	anyway as root everything should be showing up
+2013-03-14 11:46:49	_ikke_	sztanpet: Well, as root it's still not showing
+2013-03-14 11:47:00	sztanpet	yea, i have no idea
+2013-03-14 11:47:32	_ikke_	If new versions are installed, do I have to reboot for changes to take effect?
+2013-03-14 11:51:22	sztanpet	for journal updates yes
+2013-03-14 11:51:29	sztanpet	for systemd no
+2013-03-14 11:51:36	_ikke_	Ok
+2013-03-14 11:52:18	<--	mckoan (~marco@unaffiliated/mckoan) has left #systemd
+2013-03-14 11:54:11	-->	drhouse123_ (~drhouse12@2.134.144.103) has joined #systemd
+2013-03-14 11:54:30	_ikke_	Current version of systemd installed is 197
+2013-03-14 11:54:31	<--	arjan (~arjan@134.134.139.76) has quit (Ping timeout: 264 seconds)
+2013-03-14 11:54:36	_ikke_	(package)
+2013-03-14 11:54:52	<--	samkottler (~samkottle@redhat/samkottler) has quit (Quit: http://quassel-irc.org - Chat comfortably. Anywhere.)
+2013-03-14 11:54:59	_ikke_	Same as my local pc
+2013-03-14 11:55:06	-->	samkottler (~samkottle@198.211.102.9) has joined #systemd
+2013-03-14 11:55:43	<--	drhouse123 (~drhouse12@2.134.150.171) has quit (Ping timeout: 264 seconds)
+2013-03-14 11:55:45	_ikke_	sztanpet: Do you know if there is some config that might influence this?
+2013-03-14 11:55:52	<--	samkottler (~samkottle@198.211.102.9) has quit (Changing host)
+2013-03-14 11:55:52	-->	samkottler (~samkottle@redhat/samkottler) has joined #systemd
+2013-03-14 11:56:06	sztanpet	you can look at journald.conf sure
+2013-03-14 11:56:31	-->	dhaval (~dhaval@undead.csl.utoronto.ca) has joined #systemd
+2013-03-14 11:56:48	_ikke_	Both are vanilla
+2013-03-14 12:08:48	<--	dwalsh (dwalsh@nat/redhat/x-xxezxenztllpfflm) has quit (Ping timeout: 252 seconds)
+2013-03-14 12:12:17	-->	pitti (~pitti@ubuntu/member/pitti) has joined #systemd
+2013-03-14 12:12:26	-->	marvin2 (~marvin2@14-200-139-81.static.tpgi.com.au) has joined #systemd
+2013-03-14 12:17:15	-->	honschu_ (~honschu@p4FD82F6D.dip.t-dialin.net) has joined #systemd
+2013-03-14 12:17:15	<--	honschu_ (~honschu@p4FD82F6D.dip.t-dialin.net) has quit (Changing host)
+2013-03-14 12:17:16	-->	honschu_ (~honschu@shackspace/j4fun) has joined #systemd
+2013-03-14 12:19:14	pitti	mbiebl: does "make check" actually succeed for you without fakeroot? I get 6 failed tests (out of the 26)
+2013-03-14 12:19:40	mbiebl	it doesn't
+2013-03-14 12:19:41	xtraeme	got an interesting finding
+2013-03-14 12:19:51	mbiebl	noticed the fakeroot problem myself
+2013-03-14 12:19:59	<--	honschu (~honschu@shackspace/j4fun) has quit (Ping timeout: 245 seconds)
+2013-03-14 12:20:02	<--	bizhanMona (~bizhan@nat/cisco/x-lsrvwbdyxhoijjmf) has quit (Remote host closed the connection)
+2013-03-14 12:20:03	mbiebl	I tried to poke poettering about that a few days ago
+2013-03-14 12:20:10	mbiebl	but didn't get a response so fare
+2013-03-14 12:20:45	mbiebl	runs fine without fakeroot, though
+2013-03-14 12:20:56	<--	Md (~md@freenode/staff/md) has quit (Quit: Dans ce pays-ci il est bon de tuer de temps en temps un amiral pour encourager les autres.)
+2013-03-14 12:21:02	pitti	mbiebl: that was my question -- it doesn't here
+2013-03-14 12:21:02	xtraeme	https://gist.github.com/5162757
+2013-03-14 12:21:08		[http://is.gd/0Taba7]
+2013-03-14 12:21:09	xtraeme	please fix this ASAP, systemd-198
+2013-03-14 12:21:12	xtraeme	it's a serious bug
+2013-03-14 12:21:24	pitti	mbiebl: I get the 6 failures from git master and release 198, with and without fakeroot
+2013-03-14 12:21:34	mbiebl	oh, misunderstood you then
+2013-03-14 12:21:43	pitti	ok, I'll investigate
+2013-03-14 12:21:50	mbiebl	no, it runs fine for me without fakeroot
+2013-03-14 12:21:56	mbiebl	and hangs with fakeroot

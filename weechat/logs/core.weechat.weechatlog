@@ -50,3 +50,6 @@
 2013-03-13 20:16:39		  tcl
 2013-03-13 20:16:39		[rmodifier]
 2013-03-13 20:16:39		  rmodifier
+2013-03-14 11:02:41	=!=	python: warning, license "Public Domain" for script "facebook_rename" differs from plugin license ("GPL3")
+2013-03-14 11:02:41		python scripts loaded: chanop, colorize_nicks, facebook_rename, shell, shortenurl
+2013-03-14 11:02:41		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, ruby, script, tcl, xfer

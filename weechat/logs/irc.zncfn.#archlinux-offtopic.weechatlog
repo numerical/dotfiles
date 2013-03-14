@@ -1129,3 +1129,186 @@
 2013-03-13 23:27:53	-->	kerrick_ (~kerrick@c-67-180-210-197.hsd1.ca.comcast.net) has joined #archlinux-offtopic
 2013-03-13 23:28:21	<--	Mezenir (~Mezenir@105-236-247-189.access.mtnbusiness.co.za) has quit (Remote host closed the connection)
 2013-03-13 23:31:55	--	alibaba is now known as sudokode
+2013-03-14 11:02:47	-->	numeral (~numeral@198.23.228.15) has joined #archlinux-offtopic
+2013-03-14 11:02:47	--	Topic for #archlinux-offtopic is "Welcome to #archlinux-offtopic, the friendliest dictatorship in the world. <+> http://img1.ak.crunchyroll.com/i/spire4/533bfc2958daca64f49f2c6e9b5ebe241362333633_full.jpg"
+2013-03-14 11:02:47	--	Topic set by tigrmesh (~arch@archlinux/op/tigrmesh) on Sun, 03 Mar 2013 14:14:27
+2013-03-14 11:02:47	--	Nicks #archlinux-offtopic: [`lorim acuzio alexwh alienvenom Anders_J AndrevS antihero Arcalyth Archian autumn axanon azradric BadKitty Bane^ bentlux big_t bin_ksh bjoe2k4 bkc_ BladedThesis bleomycin Boohbah bougyman brachyonic camerin carharttjimmy caveat- ChauffeR chee cheesecakes Chromeboy cinelli Cirrus_Minor clarkm classix codependant Codynyx comhack companion Cor-Ai Corey crazedpsyc crooksey_ CryptoNaut cyberspace- cyrus1 czardoz Daenyth dagerik Dan39 Danio danmackay dario dasbjo DaZ Die18ink5 dimeshake DinCahill djinni_ dots dsschnau1 dude051 dunz0r du|dx dxtr e36freak eir Ertyle eto faen favadi felipe` Fififox frankyboy_ frojnd_ frots Genolo GGLucas gholen GlitchMr- GSF1200S gtmanfred halosghost Hardolaf hasufell heftig hejki hekel hi117 HK416 hobbily hrnz hs_maxim HuMu Hwkiller iflema ikonia ioni iotku iv597 james147 jdost JHeaton john_f johnhamelink johntramp johskar jrd0 jryan KaiSforza kamada KendovNorok kerrick kerrick-work kevku kj4 kubit kungsget1n laumars liara linduxed linux_probe LookTJ Lorem-Ipsum lstarnes Lysergic1reams mar77i masoudd matteotom matuka megustavo memand meskarune mikeplus64 Mishke Mkman Moridin mquin MrElendig mrmackie MrRee MutantTurkey mysteriousdarren Nabobalis netmonger NiHP ninjabox Nisstyre nixin nodame Nuck numeral opt1mus Overand paramecium Paul-S petantik phrik pittaxx poseidon prinny pythonsnake r4 reashlin rickeyski-k Roukoswarf ruan sa1 sammyf Schorfi See- sensae setkeh Shados Shapeshifter shrp Shyde sigtrm silentmike skope skrblr Sn4keBite Somasis Sornaensis spell spychalski Srf stackofcats stnly sudokode sw0rdfish SyAchmed syrinx_ t0x7bb Tam taotetek tasidus Tear_ TeslaTest th3voic3 Tharugrim thehoff themattbeballin TheMaverick` thewizord thr tigrmesh tlonim tlvb vee velcroshooz Vithon_ webspid0r Wntrvnm woddf2 woznme_ xcrustyx xorp XReaper yogiman321 yoshi314 zcram ZekeS zendeavor zenptr zml2008 Zum]
+2013-03-14 11:02:47	--	Channel #archlinux-offtopic: 227 nicks (0 ops, 0 halfops, 0 voices, 227 normals)
+2013-03-14 11:02:47	***	Buffer Playback...
+2013-03-14 11:02:47	halosghost	[16:06:53] nope
+2013-03-14 11:02:47	halosghost	[16:06:56] it doesn't
+2013-03-14 11:02:47	halosghost	[16:06:58] :(
+2013-03-14 11:02:47	dunz0r	[16:07:31] halosghost: What's the output?
+2013-03-14 11:02:47	hh4a	[16:07:40] I need some porn
+2013-03-14 11:02:47	hh4a	[16:07:43] dammit
+2013-03-14 11:02:47	halosghost	[16:07:44] let me get the ix for you
+2013-03-14 11:02:47	dunz0r	[16:07:57] halosghost: Procedure is ./autogen.sh&&./configure --<some options> && make
+2013-03-14 11:02:47	halosghost	[16:08:22] dunz0r: yeah, that's what I have in the PKGBUILD, plus make install, at the end, of course
+2013-03-14 11:02:47	halosghost	[16:08:49] though, I don't know what options to put after ./configure, so at the moment, it's just ./configure
+2013-03-14 11:02:47	halosghost	[16:09:50] dunz0r: http://ix.io/4Jb/sh
+2013-03-14 11:02:47	mar77i	[16:10:23] !rq mar77i
+2013-03-14 11:02:47	phrik	[16:10:24] <mar77i> that wasn't funny.
+2013-03-14 11:02:47	mar77i	[16:10:29] !q hh4a
+2013-03-14 11:02:47	phrik	[16:10:30] mar77i: <hh4a> She said no
+2013-03-14 11:02:47	hh4a	[16:10:45] !multirq hh4a
+2013-03-14 11:02:47	phrik	[16:10:47] <hh4a> mar77i: why i can assure you i am of many things but liar is not one of those <hh4a> all i wanted was my porn <hh4a> heh i have to manually drink beer lol, and all <hh4a> bin_bash: better than sex <hh4a> fsckd: hard to find my private static final double stateOfMind;
+2013-03-14 11:02:47	mar77i	[16:10:52] !q hh4a
+2013-03-14 11:02:47	phrik	[16:10:53] mar77i: <hh4a> She said no
+2013-03-14 11:02:47	dunz0r	[16:10:57] halosghost: It seems that some library is missing.
+2013-03-14 11:02:47	halosghost	[16:11:18] dunz0r: hmm, fair enough, I'll look into it
+2013-03-14 11:02:47	mar77i	[16:11:27] !rq mar77i
+2013-03-14 11:02:47	phrik	[16:11:27] <mar77i> a man's stretched anus.
+2013-03-14 11:02:47	dunz0r	[16:11:40] That's usually what it means when there's syntax errors.
+2013-03-14 11:02:47	mar77i	[16:11:49] !grab dunz0r
+2013-03-14 11:02:47	phrik	[16:11:50] mar77i: Tada!
+2013-03-14 11:02:47	mar77i	[16:12:00] that'll fit perfectly out of context
+2013-03-14 11:02:47	mar77i	[16:12:14] !rq dunz0r
+2013-03-14 11:02:47	phrik	[16:12:15] <dunz0r> irl is like irc. but more bloat
+2013-03-14 11:02:47	mar77i	[16:12:20] !rq dunz0r
+2013-03-14 11:02:47	phrik	[16:12:22] <dunz0r> My testicle hurts.
+2013-03-14 11:02:47	cyrus1	[16:12:42] hah
+2013-03-14 11:02:47	cyrus1	[16:12:43] irl
+2013-03-14 11:02:47	cyrus1	[16:12:47] lol
+2013-03-14 11:02:47	hh4a	[16:13:16] lol
+2013-03-14 11:02:47	mar77i	[16:17:06] !rq
+2013-03-14 11:02:47	phrik	[16:17:08] <turks> i like looking through the pastebin
+2013-03-14 11:02:47	mar77i	[16:17:11] !rq
+2013-03-14 11:02:47	phrik	[16:17:11] <Jasa> There is always 2 reasons why they don't go in the matter in other way of, there could been multiple dead persons there on ...
+2013-03-14 11:02:47	mar77i	[16:17:37] http://pastebin.com/2qbRKh3R
+2013-03-14 11:02:47	phrik	[16:17:42] Title: ALL CREDIT CARD PIN CODES IN THE WORLD LEAKED - Pastebin.com (at pastebin.com)
+2013-03-14 11:02:47	hh4a	[16:18:10] Do or do not, there is no try
+2013-03-14 11:02:47	cyrus1	[16:18:11] OMG! THAT'S MY PIN!
+2013-03-14 11:02:47	halosghost	[16:22:01] I have no idea what library it's missing
+2013-03-14 11:02:47	halosghost	[16:22:03] I am sadface
+2013-03-14 11:02:47	dunz0r	[16:23:27] halosghost: Look at the file in question, might point you in the right direction
+2013-03-14 11:02:47	halosghost	[16:25:39] hmm
+2013-03-14 11:02:47	halosghost	[16:25:41] which file?
+2013-03-14 11:02:47	dunz0r	[16:26:37] halosghost: 290 In file included from shell.c:35:0:
+2013-03-14 11:02:47	dunz0r	[16:26:38] 291 compositor.h:109:25: error: field 'input_device' has incomplete type
+2013-03-14 11:02:47	dunz0r	[16:26:45] That's the first error message.
+2013-03-14 11:02:47	halosghost	[16:27:20] okay
+2013-03-14 11:02:47	dunz0r	[16:27:42] It seems so at least.
+2013-03-14 11:02:47	halosghost	[16:28:37] hmm
+2013-03-14 11:02:47	halosghost	[16:28:44] doesn't look wrong to me
+2013-03-14 11:02:47	mar77i	[16:43:37] hmm, do you have everything wayland you need?
+2013-03-14 11:02:47	halosghost	[16:45:05] I thought I did
+2013-03-14 11:02:47	mar77i	[16:46:06] hmm
+2013-03-14 11:02:47	mar77i	[16:46:24] there seems to be wl_keyboard and wl_pointer instead of wl_input_device
+2013-03-14 11:02:47	mar77i	[16:47:33] I bet it would work if you compiled against 0.85
+2013-03-14 11:02:47	mar77i	[16:47:49] (and ran on that)
+2013-03-14 11:02:47	halosghost	[16:48:13] hmm, good call
+2013-03-14 11:02:47	halosghost	[16:48:15] I'll look into it
+2013-03-14 11:02:47	mar77i	[16:48:21] otoh, this http://permalink.gmane.org/gmane.comp.freedesktop.wayland.devel/3158
+2013-03-14 11:02:47	phrik	[16:48:22] Title: [PATCH weston] Convert wl_input_device to wl_seat (and friends) (at permalink.gmane.org)
+2013-03-14 11:02:47	mar77i	[16:48:50] wl_seat might just be what runs on the new version
+2013-03-14 11:02:47	halosghost	[16:52:25] hmm, wl_seat may have worked fine actually
+2013-03-14 11:02:47	halosghost	[16:52:31] but it looks like there are a lot of errors
+2013-03-14 11:02:47	mar77i	[16:52:45] yeah, what's left?
+2013-03-14 11:02:47	halosghost	[16:54:05] haha, give me a moment, I'll have to redo the edit and rebuild to pass you the log
+2013-03-14 11:02:47	mar77i	[16:54:10] :)
+2013-03-14 11:02:47	mar77i	[16:54:27] halosghost: you could ride the mailing list archives yourself
+2013-03-14 11:02:47	halosghost	[16:54:42] how do you mean?
+2013-03-14 11:02:47	mar77i	[16:55:12] well, they surely noted all changes on that list, so if you run into an error, there's a not about what happened to it.
+2013-03-14 11:02:47	mar77i	[16:55:37] like what I just did
+2013-03-14 11:02:47	halosghost	[16:55:54] probably, but see, I figure that what's actually happening here is that I'm just doing the build wrong in some stupid way
+2013-03-14 11:02:47	halosghost	[16:56:11] which is why I'm not focusing heavily on this
+2013-03-14 11:02:47	mar77i	[16:56:13] of course it could also be that there are more errors because the struct members may not bear wl_ prefixes
+2013-03-14 11:02:47	mar77i	[16:56:29] but I'm pretty sure you're aware of that
+2013-03-14 11:02:47	halosghost	[16:57:07] yep
+2013-03-14 11:02:47	halosghost	[17:18:30] !echo [users], man
+2013-03-14 11:02:47	phrik	[17:18:32] idiots , man
+2013-03-14 11:02:47	halosghost	[17:18:38] TRAILING SPACES
+2013-03-14 11:02:47	halosghost	[17:18:41] CURSE YOU!
+2013-03-14 11:02:47	gtmanfred	[17:18:51] !concat [users], man
+2013-03-14 11:02:47	phrik	[17:18:52] idiots, man
+2013-03-14 11:02:47	dunz0r	[17:18:54] You're trailing spaces
+2013-03-14 11:02:47	webspid0r	[17:22:21] and I always thought trailing spaces were spaces following the last non-whitespace occurence
+2013-03-14 11:02:47	Mkman	[17:39:14] Hey!
+2013-03-14 11:02:47	dunz0r	[17:39:20] H0!
+2013-03-14 11:02:47	skope	[17:40:22] let's go
+2013-03-14 11:02:47	gtmanfred	[17:48:39] !plugin action
+2013-03-14 11:02:47	dunz0r	[17:49:41] !action
+2013-03-14 11:02:47	 *	phrik [17:49:42] 
+2013-03-14 11:02:47	dunz0r	[17:49:46] Heh.
+2013-03-14 11:02:47	gtmanfred	[17:51:36] !help action
+2013-03-14 11:02:47	gtmanfred	[17:51:47] wtf
+2013-03-14 11:02:47	gtmanfred	[17:51:52] !literal action
+2013-03-14 11:02:47	phrik	[17:51:53] gtmanfred: <action>
+2013-03-14 11:02:47	gtmanfred	[17:51:55] ok
+2013-03-14 11:02:47	***	Playback Complete.
+2013-03-14 11:02:52		[http://is.gd/xvfipa]
+2013-03-14 11:02:57	--	Mode #archlinux-offtopic [+Ccnt]
+2013-03-14 11:02:57	--	Channel created on Thu, 29 Mar 2007 00:10:02
+2013-03-14 11:07:46	<--	paramecium (~paramecio@r186-53-183-108.dialup.adsl.anteldata.net.uy) has quit (Quit: paramecium)
+2013-03-14 11:18:34	<--	masoudd (~masoudd@86.57.55.247) has quit (Ping timeout: 252 seconds)
+2013-03-14 11:22:04	-->	Tom^ (~Tom@unaffiliated/tom/x-6084202) has joined #archlinux-offtopic
+2013-03-14 11:22:05	-->	henkye (~henk@32.111.broadband13.iol.cz) has joined #archlinux-offtopic
+2013-03-14 11:26:08	<--	KendovNorok (~sergey@95-28-106-83.broadband.corbina.ru) has quit (Quit: Ушел.)
+2013-03-14 11:30:54	cyrus1	happy pi day
+2013-03-14 11:32:46	numeral	HAPPY PI DAY
+2013-03-14 11:33:11	halosghost	!echo Happy [math calc pi] day!
+2013-03-14 11:33:13	phrik	Happy 3.14159265359 day!
+2013-03-14 11:41:25	numeral	I think I'm addicted to phdcomics.com
+2013-03-14 11:44:25	petantik	numeral: are you doing a phd?
+2013-03-14 11:45:01	-->	Lifkug (~bart@53559C37.cm-6-6c.dynamic.ziggo.nl) has joined #archlinux-offtopic
+2013-03-14 11:48:01	numeral	petantik: no but I work with a bunch of them...
+2013-03-14 11:49:18	<--	zenptr (~zenptr@gateway/tor-sasl/zenptr) has quit (Quit: leaving)
+2013-03-14 11:49:27	petantik	numeral: insider knowledge! "it's all part of the game yo" - Dr. Omar
+2013-03-14 11:50:58	numeral	http://www.phdcomics.com/comics/archive.php?comicid=101 I've seen this type, it's sad :/
+2013-03-14 11:53:29	-->	masoudd (~masoudd@92.50.19.115) has joined #archlinux-offtopic
+2013-03-14 11:56:22	-->	micorg (~micorg@96-33-0-151.dhcp.jcsn.tn.charter.com) has joined #archlinux-offtopic
+2013-03-14 11:56:27	<--	micorg (~micorg@96-33-0-151.dhcp.jcsn.tn.charter.com) has quit (Client Quit)
+2013-03-14 12:02:22	-->	KendovNorok (~sergey@95-28-106-83.broadband.corbina.ru) has joined #archlinux-offtopic
+2013-03-14 12:02:41	<--	KendovNorok (~sergey@95-28-106-83.broadband.corbina.ru) has quit (Client Quit)
+2013-03-14 12:04:17	<--	kerrick (~kerrick@c-67-180-210-197.hsd1.ca.comcast.net) has quit (Ping timeout: 246 seconds)
+2013-03-14 12:05:09	petantik	numeral: very often the case in large research labs.
+2013-03-14 12:07:38	<--	lstarnes (lstarnes@uncyclopedia/Starnestommy) has quit (Ping timeout: 245 seconds)
+2013-03-14 12:09:36	-->	camilasan (~camilasan@91-64-80-97-dynip.superkabel.de) has joined #archlinux-offtopic
+2013-03-14 12:10:08	<--	camilasan (~camilasan@91-64-80-97-dynip.superkabel.de) has quit (Client Quit)
+2013-03-14 12:10:46	woddf2	halosghost: That was a clever use of phrik. o_O
+2013-03-14 12:11:07	halosghost	woddf2: ?
+2013-03-14 12:11:14	woddf2	11:33:12 < halosghost> !echo Happy [math calc pi] day!
+2013-03-14 12:11:33	-->	hh4a (~hh4a@84-255-197-79.static.t-2.net) has joined #archlinux-offtopic
+2013-03-14 12:11:39	halosghost	oh
+2013-03-14 12:11:44	halosghost	thanks, I liked it :)
+2013-03-14 12:12:05	hh4a	wololo
+2013-03-14 12:12:08	-->	camilasan (~camilasan@91-64-80-97-dynip.superkabel.de) has joined #archlinux-offtopic
+2013-03-14 12:12:14	hh4a	halosghost: i like it too, but i dont know what?
+2013-03-14 12:12:47	<--	poseidon (~joe@vps6967.inmotionhosting.com) has quit (Ping timeout: 255 seconds)
+2013-03-14 12:12:58	<--	Arcalyth (~arcalyth@unaffiliated/arcalyth) has quit (Read error: Operation timed out)
+2013-03-14 12:13:11	-->	_eye (~eye@unaffiliated/eye/x-1653358) has joined #archlinux-offtopic
+2013-03-14 12:13:24	halosghost	:P
+2013-03-14 12:16:00	hh4a	halosghost: care to share bro
+2013-03-14 12:16:09	halosghost	share what?
+2013-03-14 12:16:17	halosghost	the thing that woddf2 just quoted of me
+2013-03-14 12:16:18	halosghost	?
+2013-03-14 12:16:24	hh4a	yeah
+2013-03-14 12:17:18	hh4a	go on
+2013-03-14 12:17:22	halosghost	…
+2013-03-14 12:17:26	hh4a	hop hop hop
+2013-03-14 12:17:34	hh4a	make your time
+2013-03-14 12:17:38	hh4a	ha ha ha
+2013-03-14 12:17:51	halosghost	!action is confuse
+2013-03-14 12:18:02	hh4a	hmm
+2013-03-14 12:18:04	halosghost	wat
+2013-03-14 12:18:13	hh4a	halosghost: so how are you doing today?
+2013-03-14 12:18:22	halosghost	I'm doin alright, and you?
+2013-03-14 12:18:27	hh4a	Ok
+2013-03-14 12:18:32	hh4a	stalking this girl on fb
+2013-03-14 12:18:34	<--	opt1mus (~~@unaffiliated/opt1mus) has quit (Quit: opt1mus)
+2013-03-14 12:18:38	numeral	well done sir
+2013-03-14 12:19:16	hh4a	indeed
+2013-03-14 12:19:56	<--	camilasan (~camilasan@91-64-80-97-dynip.superkabel.de) has quit (Ping timeout: 260 seconds)
+2013-03-14 12:19:58	hh4a	meh
+2013-03-14 12:20:05	hh4a	ever for ever for ever for ever
+2013-03-14 12:20:12	hh4a	iam hungrey
+2013-03-14 12:20:17	hh4a	hungreey
+2013-03-14 12:20:27	hh4a	not just hungry but hungrey
+2013-03-14 12:20:34	-->	_Caleb_ (~Caleb@cpe-098-121-134-089.nc.res.rr.com) has joined #archlinux-offtopic
+2013-03-14 12:20:34	<--	_Caleb_ (~Caleb@cpe-098-121-134-089.nc.res.rr.com) has quit (Changing host)
+2013-03-14 12:20:34	-->	_Caleb_ (~Caleb@archlinux/op/caleb) has joined #archlinux-offtopic
+2013-03-14 12:21:43	hh4a	diablo 3
+2013-03-14 12:21:45	hh4a	wooooo
+2013-03-14 12:22:02	<--	Mkman (~tiago@188.251.80.41) has quit (Quit: Lost terminal)
+2013-03-14 12:22:02	hh4a	damn
+2013-03-14 12:22:16	-->	KendovNorok (~sergey@95-28-106-83.broadband.corbina.ru) has joined #archlinux-offtopic

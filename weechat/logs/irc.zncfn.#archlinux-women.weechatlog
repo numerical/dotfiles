@@ -417,3 +417,42 @@
 2013-03-13 23:34:08	carharttjimmy	yeah I am lost 
 2013-03-13 23:34:09	gtmanfred	and dungeon defenders is BOSS
 2013-03-13 23:34:28	carharttjimmy	It wants 256 mb of vram, and I have 512
+2013-03-14 11:02:47	-->	numeral (~numeral@198.23.228.15) has joined #archlinux-women
+2013-03-14 11:02:47	--	Topic for #archlinux-women is "Arch Linux Chix FTW: Join us on http://redmine.archwomen.org/ !  Project site is http://archwomen.org . IRC Rules: http://bit.ly/13rVGg5 <|||> Fourteenth IRC Meeting: Sunday April 7th at 16:00 UTC. See you there!  Agenda: http://bit.ly/YIGZ0B <|||> If you're having a problem with someone, !awops <|||> The first PKGBUILD class is Sunday March 31st 16:00 UTC."
+2013-03-14 11:02:47	--	Topic set by ChanServ on Wed, 13 Mar 2013 14:57:36
+2013-03-14 11:02:47	--	Nicks #archlinux-women: [+meskarune +tigrmesh AbigailBuccaneer alyx_ alzeih Anuska CalimeroTeknik carharttjimmy Coolgeek CryptoNaut Defaultti fsckd gtmanfred halosghost hawkgirl ioni jrex jy2wong KaiSforza KylieBrooks liara maxine MrElendig Nisstyre numeral oddmunds phrik QuantumParadox Sornaensis sudokode terra-and-luna VunKruz XReaper yardena]
+2013-03-14 11:02:47	--	Channel #archlinux-women: 34 nicks (0 ops, 0 halfops, 2 voices, 32 normals)
+2013-03-14 11:02:47	***	Buffer Playback...
+2013-03-14 11:02:47	hh4a	[13:05:47] hi
+2013-03-14 11:02:47	halosghost	[13:07:05] hai
+2013-03-14 11:02:47	hh4a	[13:10:36] hi
+2013-03-14 11:02:47	hh4a	[13:13:56] I said hello
+2013-03-14 11:02:47	halosghost	[13:16:42] and I said "hai"
+2013-03-14 11:02:47	hh4a	[13:17:15] halosghost: You my friend said many things...
+2013-03-14 11:02:47	halosghost	[13:17:26] I don't say things
+2013-03-14 11:02:47	halosghost	[13:17:28] lies
+2013-03-14 11:02:47	hh4a	[13:17:58] halosghost: you will not be forgotten
+2013-03-14 11:02:47	halosghost	[13:18:03] … wat
+2013-03-14 11:02:47	hh4a	[13:18:39] hi
+2013-03-14 11:02:47	hh4a	[13:19:26] Awaiting Godot
+2013-03-14 11:02:47	terra-and-luna	[13:31:15] Awaiting Rufus Wainright?
+2013-03-14 11:02:47	hh4a	[13:32:24] Who would that be?
+2013-03-14 11:02:47	halosghost	[13:39:38] KaiSforza: gtmanfred , I don't understand makefiles, can you take a look at a PKGBUILD and help me figure out while it doesn't want to build?
+2013-03-14 11:02:47	halosghost	[13:40:03] http://ix.io/4J4
+2013-03-14 11:02:47	hh4a	[13:41:46] halosghost: make files are files that make, they really do
+2013-03-14 11:02:47	halosghost	[13:42:08] hh4a: that makes more sense
+2013-03-14 11:02:47	halosghost	[13:42:10] …
+2013-03-14 11:02:47	hh4a	[13:42:27] halosghost: seems legit, sorry i can not be of any assistance today....
+2013-03-14 11:02:47	halosghost	[13:47:03] no big deal :)
+2013-03-14 11:02:47	***	Playback Complete.
+2013-03-14 11:02:59	--	Mode #archlinux-women [+Cnt]
+2013-03-14 11:02:59	--	Channel created on Fri, 17 Feb 2012 12:52:06
+2013-03-14 12:04:04	<--	fsckd (~joggle@unaffiliated/fsckd) has quit (Quit: reboot)
+2013-03-14 12:04:43	<--	maxine (~maxineb@fedora/maxine) has quit (Ping timeout: 245 seconds)
+2013-03-14 12:06:16	-->	maxine (~maxineb@fedora/maxine) has joined #archlinux-women
+2013-03-14 12:09:36	-->	camilasan (~camilasan@91-64-80-97-dynip.superkabel.de) has joined #archlinux-women
+2013-03-14 12:09:51	-->	fsckd (~joggle@unaffiliated/fsckd) has joined #archlinux-women
+2013-03-14 12:10:08	<--	camilasan (~camilasan@91-64-80-97-dynip.superkabel.de) has quit (Client Quit)
+2013-03-14 12:11:33	-->	hh4a (~hh4a@84-255-197-79.static.t-2.net) has joined #archlinux-women
+2013-03-14 12:12:08	-->	camilasan (~camilasan@91-64-80-97-dynip.superkabel.de) has joined #archlinux-women
+2013-03-14 12:19:56	<--	camilasan (~camilasan@91-64-80-97-dynip.superkabel.de) has quit (Ping timeout: 260 seconds)

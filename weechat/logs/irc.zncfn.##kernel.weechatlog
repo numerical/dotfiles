@@ -62,3 +62,38 @@
 2013-03-13 23:25:07	-->	shuduo (~sangshudu@116.213.97.190) has joined ##kernel
 2013-03-13 23:26:47	-->	studybo__ (~studybot_@gateway/tor-sasl/studybot/x-68286794) has joined ##kernel
 2013-03-13 23:32:06	-->	ksh (~user@gateway/tor-sasl/skulls) has joined ##kernel
+2013-03-14 11:02:45	-->	numeral (~numeral@198.23.228.15) has joined ##kernel
+2013-03-14 11:02:45	--	Topic for ##kernel is "Channel for linux,unix-like kernel discussion | BOOKS lwn.net/Kernel/LDD3 | BROWSER lxr.linux.no/source | PASTEBIN codepad.org | HOWTO http://goo.gl/wzsul http://goo.gl/zi5V"
+2013-03-14 11:02:45	--	Topic set by jnxa on Mon, 12 Mar 2012 07:09:58
+2013-03-14 11:02:45	--	Nicks ##kernel: [@ChanServ [0x1a] _eko _iron _marc` aca20031 AceLan adam_g aimka alamar AlbertoSilva alfplayer andersonc0d3 Anusko Ard1t ari-_-e Attie b1rkh0ff Badbit bernardofpc bizhanMona blami BlastHardcheese blueCmd BLZbubba bparker Bry8Star Budd Buster carc caveat- ccxCZ cdidd chasmo chille_ christopher_ chronos CipherWizard classix codertux codyps ColdFyre Cyclohexane d4de Dad` danieldg dansan deavidsedice deep13 deizhu djczing dju DLange e-ndy eagles0513875 edk einonm elbeardmorez Elecam evilicey evilman_work EViLSLuT factor fairuz fallout fam|work fasta Fira fire flu- fourth_node frag4 froztbyte fw Gaudasse gothos guampa gustav_ harrow harshpb heftig heinrich5991 herdingcat hi117 hziSot ian-kun_ Iiiak ikonia iLogical impulse ivan\ ix007 james_h74 jefferai jehan Jekyll jero jevin jevin_ jirka_on_d jlebar joe9 joeyli joshc JPT kantlivelong karelbarel1 Kasreyn kcm1700 kirotawa klebers klnlnll konqui korsi_ ksh kurti larks lbt LiaoTao lipiec lpe lrak luneff lyakh lyindArk Marex markovh master_of_master McMAGIC--Copy mdpai mingdao MissionCritical misuzu mitz mnaser moli_ mpagano_ muteki neunon nex6 nn0101 numeral nyuszika7h ohsix oneforall2 Orginator otherflow pdc peper petan PioneerAxon plakhera pppingme quasisane RageD raineys ram_p_away Raz-- rekoil_ robink roquetto RR42 Sargun sauleta Scramblejams sean Section1 sftp shal3r sharky Shiina Simon- sjs205 sl33v3 sniffells so Somasis Spectral1ave Svenne SwenTjuln T-One tessier TheJH TomWij TrXuk txomon|nqas Tylerdurden2nd utopia_euphoria va_ vmeson VtS_ WallRat007 wapiflapi wbooze wdouglas wilder williamv WormDrink xdnny_ xeon-enouf xxtjaxx y0gurt yosafbridge zenx zerick zorbyte Zougloub zykes-]
+2013-03-14 11:02:46	--	Channel ##kernel: 208 nicks (1 op, 0 halfops, 0 voices, 207 normals)
+2013-03-14 11:02:46	***	Buffer Playback...
+2013-03-14 11:02:46	fellipe	[14:23:00]  hi. Do anyone know if there is any issue related to high latency in ip forward in kernel 2.6.18-308.8.1.el5 (CentOS)  ?
+2013-03-14 11:02:46	pierre_	[16:28:32] I have noticed that many variables in the file global scope are declared as static, why is it so important ?
+2013-03-14 11:02:46	***	Playback Complete.
+2013-03-14 11:02:50	--	Mode ##kernel [+Ccnt]
+2013-03-14 11:02:50	--	Channel created on Sun, 26 Nov 2006 01:42:43
+2013-03-14 11:02:53	-->	vaidy (~sv@117.192.62.190) has joined ##kernel
+2013-03-14 11:06:16	-->	floop_ (~dan@41333086.cst.lightpath.net) has joined ##kernel
+2013-03-14 11:07:44	raineys	static variable names don't get exported
+2013-03-14 11:08:42	raineys	eg pollute the greater global namespace
+2013-03-14 11:10:35	<--	mdpai (~Fairuz@192.94.92.14) has quit (Remote host closed the connection)
+2013-03-14 11:14:44	<--	chronos (~quassel@unaffiliated/chronos) has quit (Read error: Operation timed out)
+2013-03-14 11:17:49	-->	chronos (~quassel@unaffiliated/chronos) has joined ##kernel
+2013-03-14 11:20:36	<--	harshpb (~harshpb@122.167.75.114) has quit (Ping timeout: 264 seconds)
+2013-03-14 11:26:14	-->	bhat (~bhat@122.167.180.224) has joined ##kernel
+2013-03-14 11:34:18	<--	christopher_ (~christoph@c-174-54-115-236.hsd1.pa.comcast.net) has quit (Ping timeout: 264 seconds)
+2013-03-14 11:48:20	<--	plakhera (prashant@nat/redhat/x-cbvdzpdvutmfpapf) has quit (Remote host closed the connection)
+2013-03-14 11:48:55	-->	scrts (~quassel@unaffiliated/scrts) has joined ##kernel
+2013-03-14 11:51:10	-->	christopher_ (~christoph@c-174-54-115-236.hsd1.pa.comcast.net) has joined ##kernel
+2013-03-14 11:58:35	-->	akashj87 (~akashj87@59.177.15.139) has joined ##kernel
+2013-03-14 12:00:46	<--	christopher_ (~christoph@c-174-54-115-236.hsd1.pa.comcast.net) has quit (Ping timeout: 258 seconds)
+2013-03-14 12:02:53	<--	akashj87 (~akashj87@59.177.15.139) has quit (Ping timeout: 246 seconds)
+2013-03-14 12:03:13	<--	herdingcat (~huli@222.128.168.146) has quit (Remote host closed the connection)
+2013-03-14 12:04:01	-->	christopher (~christoph@c-174-54-115-236.hsd1.pa.comcast.net) has joined ##kernel
+2013-03-14 12:04:25	--	christopher is now known as Guest87397
+2013-03-14 12:08:40	<--	Svenne (~Svenne@212.37.8.206) has quit
+2013-03-14 12:08:55	-->	kido (~kido@unaffiliated/kido) has joined ##kernel
+2013-03-14 12:20:02	<--	bizhanMona (~bizhan@nat/cisco/x-lsrvwbdyxhoijjmf) has quit (Remote host closed the connection)
+2013-03-14 12:21:06	-->	harshpb (~harshpb@122.167.75.114) has joined ##kernel
+2013-03-14 12:22:36	-->	titankiller (~titankill@180.151.40.138) has joined ##kernel

@@ -297,3 +297,140 @@
 2013-03-13 23:33:04	<--	MikeWatt (~MikeWatt@xdsl-87-78-20-169.netcologne.de) has quit (Remote host closed the connection)
 2013-03-13 23:33:30	+carharttjimmy	I do that a lot :P
 2013-03-13 23:33:33	+carharttjimmy	well the stupid part
+2013-03-14 11:02:47	-->	numeral (~numeral@198.23.228.15) has joined #archlinux-newbie
+2013-03-14 11:02:47	--	Topic for #archlinux-newbie is "Welcome to the Arch community. This is a space to learn and try new things, without fear of ridicule. | RULES: https://gist.github.com/nyux/aa55651de42818f6f971 | Please don't be an ass."
+2013-03-14 11:02:47	--	Topic set by KaiSforza (~wgiokas@unaffiliated/kaisforza) on Sat, 02 Mar 2013 00:50:51
+2013-03-14 11:02:47	--	Nicks #archlinux-newbie: [+carharttjimmy +fsckd +halosghost +KaiSforza +KylieBrooks +meskarune +sudokode +terra-and-luna +tigrmesh +yardena Afwas Atmoz bspar_ CalimeroTeknik Cirrus_Minor comhack CryptoNaut dh64 dsschnau dsschnau1 Erika_Mustermann Ketsuban kj4 lattenwald matuka maxine Mayachiel mcurve MikeWatt_ Nisstyre numeral phrik Ricaz sakaru SirDeiu ttag Wntrvnm Xyrtic z3bra]
+2013-03-14 11:02:47	--	Channel #archlinux-newbie: 39 nicks (0 ops, 0 halfops, 10 voices, 29 normals)
+2013-03-14 11:02:47	***	Buffer Playback...
+2013-03-14 11:02:47	+halosghost	[12:55:38] oh great
+2013-03-14 11:02:47	+halosghost	[12:55:57] that ADWC git uses a ~500 line install script
+2013-03-14 11:02:47	+halosghost	[12:56:07] packaging this should be fun
+2013-03-14 11:02:47	+terra-and-luna	[13:21:54] ADWC?
+2013-03-14 11:02:47	+halosghost	[13:34:57] It's the first (?) tiling window manager ported to being a Wayland compositor
+2013-03-14 11:02:47	+halosghost	[13:35:13] ADWC == A Dynamic Wayland Compositor (fork of ADWM)
+2013-03-14 11:02:47	+halosghost	[13:35:37] also, I was wrong about how complicated the PKGBUILD would have to be
+2013-03-14 11:02:47	+halosghost	[13:35:44] though, my current version fails to build
+2013-03-14 11:02:47	 *	terra-and-luna [13:36:47] nods
+2013-03-14 11:02:47	+halosghost	[15:23:32] there we go
+2013-03-14 11:02:47	sakaru	[15:50:40] halosghost: how does it work? I remember watching a youtube video about the WM a while back, iirc the creator said it was of a hack than a long term project
+2013-03-14 11:02:47	+halosghost	[15:51:00] sakaru: I still haven't gotten it to build correctly
+2013-03-14 11:02:47	sakaru	[15:51:06] ah. ok
+2013-03-14 11:02:47	+halosghost	[15:51:11] that "there we go" comment was in reference to another project :)
+2013-03-14 11:02:47	sakaru	[15:51:15] ah. ok
+2013-03-14 11:02:47	+halosghost	[15:51:27] I'll go back to trying to get it to build after I've finished up this one
+2013-03-14 11:02:47	+halosghost	[15:52:35] which is now
+2013-03-14 11:02:47	+halosghost	[15:58:47] okay, I'll just need to wait for fsckd, I'm way out of my depth trouble-shooting makefiles
+2013-03-14 11:02:47	sakaru	[16:01:20] heh. sounds painful
+2013-03-14 11:02:47	+halosghost	[16:02:02] haha
+2013-03-14 11:02:47	+halosghost	[16:02:04] eh
+2013-03-14 11:02:47	+halosghost	[17:21:50] fsckd!
+2013-03-14 11:02:47	+halosghost	[17:21:57] want to help me build that ADWC package?
+2013-03-14 11:02:47	+fsckd	[17:22:19] sure
+2013-03-14 11:02:47	+fsckd	[17:22:23] gimme an hour
+2013-03-14 11:02:47	+halosghost	[17:26:39] haha
+2013-03-14 11:02:47	+halosghost	[17:27:17] fsckd: just let me know :)
+2013-03-14 11:02:47	+fsckd	[17:48:19] halosghost: where is ADWC upstream?
+2013-03-14 11:02:47	+fsckd	[17:49:38] don't tell me https://github.com/detomastah/adwc ><
+2013-03-14 11:02:47	phrik	[17:49:40] Title: detomastah/adwc · GitHub (at github.com)
+2013-03-14 11:02:47	+fsckd	[17:52:03] wow "EFL has complete Wayland support."
+2013-03-14 11:02:47	+halosghost	[17:55:13] fsckd: here's the PKGBUILD as I have it so far: http://ix.io/4J4
+2013-03-14 11:02:47	+fsckd	[17:56:11] why is detomastah a contributor? is he an arch user?
+2013-03-14 11:02:47	+halosghost	[17:57:38] no, but is it not standard procedure to put the upstream maintainer as a contributor?
+2013-03-14 11:02:47	+halosghost	[17:57:43] that's what I've always done
+2013-03-14 11:02:47	+fsckd	[17:57:45] no
+2013-03-14 11:02:47	+halosghost	[17:57:50] haha
+2013-03-14 11:02:47	+halosghost	[17:57:51] okay
+2013-03-14 11:02:47	+fsckd	[17:58:04] what if it's gnome, will the PKGBUILD be 300 lines of contributor?
+2013-03-14 11:02:47	+fsckd	[17:58:55] contributor identifies people who helped with the PKGBUILD, it's courtesy and not required
+2013-03-14 11:02:47	+fsckd	[17:59:13] usually it's past maintainers
+2013-03-14 11:02:47	+halosghost	[17:59:20] mkay
+2013-03-14 11:02:47	+halosghost	[17:59:28] I should go update all my other PKGBUILDs :P
+2013-03-14 11:02:47	+fsckd	[17:59:32] hehe
+2013-03-14 11:02:47	+fsckd	[18:02:12] did you test it?
+2013-03-14 11:02:47	+fsckd	[18:02:33] i've never used wayland before ><
+2013-03-14 11:02:47	***	Playback Complete.
+2013-03-14 11:02:52		[http://is.gd/IfEPTE]
+2013-03-14 11:02:55	--	Mode #archlinux-newbie [+Cgnt]
+2013-03-14 11:02:55	--	Channel created on Wed, 27 Feb 2013 22:13:33
+2013-03-14 11:04:36	+halosghost	yeah, it fails to build
+2013-03-14 11:04:45	+fsckd	oh hmm
+2013-03-14 11:06:41	+fsckd	trying weston
+2013-03-14 11:07:45	+fsckd	that failed...
+2013-03-14 11:09:23	+fsckd	halosghost: some missing dep
+2013-03-14 11:09:28	+halosghost	yeah
+2013-03-14 11:09:31	+halosghost	That's what I figured
+2013-03-14 11:09:35	+halosghost	but I have no idea what it could be
+2013-03-14 11:10:29	+fsckd	it's a fork of weston i think
+2013-03-14 11:10:38	+fsckd	so let's see what weston requires :)
+2013-03-14 11:11:08	+halosghost	It is a fork of ADWC I think, rebased on Weston
+2013-03-14 11:11:14	+halosghost	s/WC/WM?
+2013-03-14 11:12:21	+fsckd	where's the original ADWC?
+2013-03-14 11:12:30	+fsckd	oh
+2013-03-14 11:12:32	+fsckd	nvm
+2013-03-14 11:12:38	+fsckd	no, remind
+2013-03-14 11:13:26	 *	fsckd found the Agua Dulce Women's Club
+2013-03-14 11:13:36	+halosghost	http://sourceforge.net/p/adwm/home/Home/
+2013-03-14 11:13:37	phrik	Title: adwm / Home / Home (at sourceforge.net)
+2013-03-14 11:13:41		[http://is.gd/1SO8WY]
+2013-03-14 11:13:48	+fsckd	ty :)
+2013-03-14 11:14:14	+halosghost	:D
+2013-03-14 11:14:38	+fsckd	is there no adwm package in al?
+2013-03-14 11:15:00	+halosghost	not that I'm aware of
+2013-03-14 11:15:14	+halosghost	not in the official repos/AUR at least
+2013-03-14 11:15:43	+fsckd	it's a fork of dwm which has very low deps
+2013-03-14 11:16:42	+fsckd	hmm... i have all of the deps for weston installed
+2013-03-14 11:16:49	+halosghost	me too
+2013-03-14 11:17:27	+halosghost	I'm wondering if it might be xwayland
+2013-03-14 11:17:58	+halosghost	I don't have that installed
+2013-03-14 11:18:59	+fsckd	upstream activity was last a year ago
+2013-03-14 11:19:11	+halosghost	of xwayland?
+2013-03-14 11:19:18	+fsckd	of adwc
+2013-03-14 11:19:23	+halosghost	oh
+2013-03-14 11:19:26	+fsckd	looking at teh commit history
+2013-03-14 11:19:29	+halosghost	that doesn't really matter
+2013-03-14 11:20:02	+fsckd	it might with wayland stuff... how much changed?
+2013-03-14 11:20:48	+halosghost	no, I mean, I think it needs xwayland
+2013-03-14 11:20:57	+halosghost	!give aurpkg xwayland-git
+2013-03-14 11:21:10	+halosghost	!give fsckd aurpkg xwayland-git
+2013-03-14 11:21:12	phrik	fsckd: https://aur.archlinux.org/packages/xwayland-git
+2013-03-14 11:21:18		[http://is.gd/6wuOcs]
+2013-03-14 11:22:51	+fsckd	ok... try with that...
+2013-03-14 11:23:06	+halosghost	haha
+2013-03-14 11:23:30	 *	fsckd has only 210 MiB in / free
+2013-03-14 11:26:46	+fsckd	i can't strat weston either :(
+2013-03-14 11:28:37	+halosghost	haha
+2013-03-14 11:28:52	+halosghost	alright, I'll try compiling xwayland and give it a shot
+2013-03-14 11:29:00	+halosghost	but I can't do that for a little while
+2013-03-14 11:30:51	+fsckd	ok
+2013-03-14 11:41:28	 *	fsckd is done with working with broken software for today :P
+2013-03-14 11:41:37	+fsckd	s/broken/unfinished/
+2013-03-14 11:47:09	+halosghost	Trilby might be my favorite dev of all time
+2013-03-14 11:47:21	+fsckd	:D
+2013-03-14 11:47:34	+fsckd	he's porting his wm to wayland?
+2013-03-14 11:47:42	+halosghost	haha
+2013-03-14 11:48:12	+halosghost	He's still looking into it, but no, at the moment it's because he's implementing like five features into TTWM that I love
+2013-03-14 11:48:24	+halosghost	and yet, TTWM as a whole is still <1000 SLoC
+2013-03-14 11:48:58	+fsckd	cool... what features?
+2013-03-14 11:52:47	+halosghost	:D
+2013-03-14 11:54:03	+fsckd	that seems useful, i'm tempted to switch just for that :P
+2013-03-14 11:54:10	+fsckd	j/k signing into forums now
+2013-03-14 11:58:52	+halosghost	he's contemplating tab icons, which could be fun, window open positioning and really well-done multi-monitor support
+2013-03-14 11:59:04	+halosghost	supporting up to 16 external displays :P
+2013-03-14 11:59:20	+fsckd	so i saw :D
+2013-03-14 11:59:59	+halosghost	I
+2013-03-14 12:00:07	+halosghost	am so excited for it
+2013-03-14 12:02:11	+fsckd	XD
+2013-03-14 12:02:54	numeral	!wiki ttwm
+2013-03-14 12:02:56	phrik	numeral: Google found nothing.
+2013-03-14 12:03:12	+halosghost	I think I'm gonna go fix the formatting for the default config.h…
+2013-03-14 12:03:21	+halosghost	numeral: https://wiki.archlinux.org/index.php/TTWM
+2013-03-14 12:03:22	phrik	Title: TTWM - ArchWiki (at wiki.archlinux.org)
+2013-03-14 12:03:26		[http://is.gd/cXGJDj]
+2013-03-14 12:03:29	+halosghost	something's wrong with the wiki plugin
+2013-03-14 12:04:04	<--	fsckd (~joggle@unaffiliated/fsckd) has quit (Quit: reboot)
+2013-03-14 12:04:43	<--	maxine (~maxineb@fedora/maxine) has quit (Ping timeout: 245 seconds)
+2013-03-14 12:06:16	-->	maxine (~maxineb@fedora/maxine) has joined #archlinux-newbie
+2013-03-14 12:09:29	numeral	thanks halos
+2013-03-14 12:09:51	-->	fsckd (~joggle@unaffiliated/fsckd) has joined #archlinux-newbie
+2013-03-14 12:09:52	--	Mode #archlinux-newbie [+v fsckd] by ChanServ
