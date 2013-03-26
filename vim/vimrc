@@ -23,7 +23,6 @@ set laststatus=2    "Always show status line
 
 let g:Powerline_symbols = 'fancy' "fancy vim-powerline symbols
 let g:dirrc_security = 0 " no prompt
-let g:dirrc_resource_name = 'vdirrc'
 let g:NERDTreeWinPos = "right"
 
 set undolevels=1000 "Undo all the things
@@ -79,23 +78,8 @@ set shortmess=atI
 "The <leader> key is ,
 let mapleader = ","
 
-" selectively enable 256 colors
-"if (&term == "screen" || &term == "screen-bce" || &term == "xterm" || &term == "xterm-256color")
-"  set t_Co=256
-"endif
-
-"Force 256
-set t_Co=256
-
-"Load Pathogen plugins
-"call pathogen#infect()
-"call pathogen#helptags()
-
 syntax enable
-let g:solarized_termcolors=256
-set background=dark
 colorscheme diablo3
-set background=dark
 
 if has("syntax")
   syntax on
@@ -234,10 +218,6 @@ imap <Esc>OM <CR>
 
 "Save a file with root when you forgot to sudo (Steve Losh trick)
 cmap w!! w !sudo tee % >/dev/null
-
-"Bind f5 to show yank ring
-nnoremap <silent> <F5> :YRShow<cr>
-inoremap <silent> <F5> <ESC>:YRShow<cr>
 
 "Runs a shell command in a window
 command! -complete=shellcmd -nargs=+ Shell call s:RunShellCommand(<q-args>)

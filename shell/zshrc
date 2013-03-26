@@ -47,6 +47,8 @@ alias combinePDFs='gs -dNOPAUSE -sDEVICE=pdfwrite -sOUTPUTFILE=combined.pdf -dBA
 alias tree='tree -F'
 alias gcc='gcc -Wall -std=c11'
 alias g++='g++ -Wall -std=c++11'
+alias v='gvim --remote-silent'
+alias vim='gvim --remote-silent'
 
 #color man pages
 export LESS_TERMCAP_mb=$'\E[01;31m'

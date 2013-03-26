@@ -37,3 +37,5 @@
 	confirm = auto
 
 # vim: set ft=gitconfig noet:
+[core]
+	editor = vim

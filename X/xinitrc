@@ -2,4 +2,3 @@
 [[ -f ~/.xbindkeysrc ]] && xbindkeys
 systemd --user &
 exec dwm
-dwmstatus&
