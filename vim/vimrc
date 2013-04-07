@@ -18,6 +18,7 @@ set cursorline
 set ttyfast
 set ruler
 set backspace=indent,eol,start
+set foldmethod=syntax
 
 set laststatus=2    "Always show status line
 
@@ -155,6 +156,9 @@ set showmode
 nmap <silent> <F3> :silent nohls<CR>
 imap <silent> <F3> <ESC>:silent nohls<CR>i<Right>
 
+"Map F5 to toggle Gundo
+nmap <silent> <F5> :GundoToggle<CR>
+
 " Map F12 to line numbering
 nmap <silent> <F12> :silent set number!<CR>
 imap <silent> <F12> <ESC>:silent set number!<CR>i<Right>
@@ -162,11 +166,6 @@ imap <silent> <F12> <ESC>:silent set number!<CR>i<Right>
 "Spell check can be annoying at times
 nmap <silent> <F4> :silent set spell!<CR>
 imap <silent> <F4> <ESC>:silent set spell!<CR>i<Right>
-
-"Run the note converter script on the file 
-command! -complete=file -nargs=* NoteConv call s:RunShellCommand('~/python_lib/note_converter.py -ov '.<q-args>)
-nmap <silent> <F8> :NoteConv %<CR>
-imap <silent> <F8> <ESC>:NoteConv %<CR>
 
 "Tab switching with <C-n> and <C-p>
 nmap <C-p> :tabprevious<CR>

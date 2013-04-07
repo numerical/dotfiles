@@ -6,6 +6,7 @@ ZSH=/usr/share/oh-my-zsh/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME="robbyrussell"
+#ZSH_THEME="pygmallion"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -42,13 +43,19 @@ if [ "$TMUX" = "" ]; then tmux -2; fi
 PATH="$PATH:$HOME/bin"
 export PATH
 
-# Custome aliases
+# Custom aliases
 alias combinePDFs='gs -dNOPAUSE -sDEVICE=pdfwrite -sOUTPUTFILE=combined.pdf -dBATCH '
 alias tree='tree -F'
 alias gcc='gcc -Wall -std=c11'
 alias g++='g++ -Wall -std=c++11'
 alias v='gvim --remote-silent'
 alias vim='gvim --remote-silent'
+# Suffix aliases
+alias -s html=vim
+alias -s c=vim
+alias -s cpp=vim
+alias -s py=vim
+alias -s tex=vim
 
 #color man pages
 export LESS_TERMCAP_mb=$'\E[01;31m'
