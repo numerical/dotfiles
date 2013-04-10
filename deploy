@@ -39,10 +39,21 @@ dotfiles_vimperator()  { link vimperator/vimperatorrc;                         }
 dotfiles_weechat()     { link weechat;                                         }
 #dotfiles_xmonad()      { link xmonad;                                          }
 
+#dotfiles_shell() {
+#  link shell/zshrc
+#  link shell/zprofile
+#  link shell/profile
+#}
+
 dotfiles_shell() {
+  link prezto .zprezto
+
+  link prezto/runcoms/zlogin
+  link prezto/runcoms/zlogout
+  link prezto/runcoms/zpreztorc
+  link prezto/runcoms/zprofile
+  link prezto/runcoms/zshenv
   link shell/zshrc
-  link shell/zprofile
-  link shell/profile
 }
 
 #dotfiles_task() {
