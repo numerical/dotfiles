@@ -50,10 +50,10 @@ dotfiles_shell() {
 
   link prezto/runcoms/zlogin
   link prezto/runcoms/zlogout
-  link prezto/runcoms/zpreztorc
   link prezto/runcoms/zprofile
   link prezto/runcoms/zshenv
   link shell/zshrc
+  link shell/zpreztorc
 }
 
 #dotfiles_task() {

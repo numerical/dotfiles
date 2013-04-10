@@ -12,7 +12,7 @@ fi
 
 # Customize...
 
-if [ "$TMUX" = "" ]; then tmux -2; fi
+#if [ "$TMUX" = "" ]; then tmux -2; fi
 PATH="$PATH:$HOME/bin"
 export PATH
 
