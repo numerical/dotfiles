@@ -25,6 +25,7 @@ set laststatus=2    "Always show status line
 let g:Powerline_symbols = 'fancy' "fancy vim-powerline symbols
 let g:dirrc_security = 0 " no prompt
 let g:NERDTreeWinPos = "right"
+let g:syntastic_always_populate_loc_list = 1
 
 set undolevels=1000 "Undo all the things
 
@@ -32,8 +33,8 @@ set undolevels=1000 "Undo all the things
 set hidden
 
 "Use PCRE type search regexps
-nnoremap / /\v
-vnoremap / /\v
+" nnoremap / /\v
+" vnoremap / /\v
 
 "Use ZS and ZA for quick save and quick save and exit to shell respectively
 nnoremap ZS :w<CR>
@@ -201,10 +202,19 @@ nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 nnoremap <leader>q gqip
 "      <leader>ev opens vimrc in a split
 nnoremap <leader>ev <C-w><C-v><C-l>:e $MYVIMRC<cr>
+"      <leader>ee populates the loc list
+nnoremap <leader>ee :Errors<CR>
 
 "Split file combos:
 "open a new split and switch to it
 nnoremap <leader>w <C-w>v<C-w>l
+
+"Some tabby remaps
+nnoremap tt :tabnew<CR>
+nnoremap tk :tabprev<CR>
+nnoremap th :tabprev<CR>
+nnoremap tj :tabnext<CR>
+nnoremap tl :tabnext<CR>
 
 "Move around splits using CTRL-hjkl
 nnoremap <C-h> <C-w>h
