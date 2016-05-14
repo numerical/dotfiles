@@ -35,7 +35,8 @@ zstyle ':prezto:load' pmodule \
   'prompt' \
   'tmux' \
   'git' \
-  'pacman'
+  'pacman' \
+  'history-substring-search'
 
 #
 # Editor
@@ -66,7 +67,7 @@ zstyle ':prezto:module:editor' keymap 'emacs'
 #
 
 # Set the Pacman frontend.
-zstyle ':prezto:module:pacman' frontend 'cower'
+zstyle ':prezto:module:pacman' frontend 'pacman'
 
 #
 # Prompt
@@ -127,5 +128,5 @@ zstyle ':prezto:module:terminal' auto-title 'yes'
 #
 
 # Auto start a session when Zsh is launched.
-zstyle ':prezto:module:tmux' auto-start 'yes'
+# zstyle ':prezto:module:tmux' auto-start 'yes'
 
