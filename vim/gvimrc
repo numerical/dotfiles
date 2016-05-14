@@ -4,7 +4,7 @@
 
 "colorscheme molokai
 
-set guifont=Source\ Code\ Pro\ for\ Powerline\ 11
+set guifont=Source\ Code\ Pro\ 13
 set guioptions=agpi
 set guicursor=a:blinkon0
 set mousef
