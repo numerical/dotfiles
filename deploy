@@ -38,6 +38,7 @@ dotfiles_tmux()        { link tmux/tmux.conf;                                  }
 dotfiles_vimperator()  { link vimperator/vimperatorrc;                         }
 dotfiles_weechat()     { link weechat;                                         }
 #dotfiles_xmonad()      { link xmonad;                                          }
+dotfiles_flake8()         { link flake8 .config/flake8;                        }
 
 #dotfiles_shell() {
 #  link shell/zshrc
